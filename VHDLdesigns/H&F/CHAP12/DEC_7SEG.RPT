@@ -1,0 +1,687 @@
+Project Information                             e:\max2work\robot\dec_7seg.rpt
+
+MAX+plus II Compiler Report File
+Version 7.21 Student Edition
+Compiled: 11/13/98 09:57:32
+
+Copyright (C) 1991-1997 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+DEC_7SEG
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+dec_7seg  EPF10K20RC240-4  4      7      0    0         0  %    24       2  %
+
+User Pins:                 4      7      0  
+
+
+
+Device-Specific Information:                    e:\max2work\robot\dec_7seg.rpt
+dec_7seg
+
+***** Logic for device 'dec_7seg' compiled without errors.
+
+
+
+
+Device: EPF10K20RC240-4
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+                                                                        h   h                                                            
+                                                                        e   e                                                            
+                R R R R R R R R   R R R R R R R   R R R R R R R   R R R x   x R R R R   R R R R R R R   R R R R R R R   R R R R R R R R  
+                E E E E E E E E   E E E E E E E   E E E E E E E   E E E _   _ E E E E   E E E E E E E   E E E E E E E   E E E E E E E E  
+                S S S S S S S S G S S S S S S S V S S S S S S S G S S S d G d S S S S V S S S S S S S G S S S S S S S V S S S S S S S S  
+                E E E E E E E E N E E E E E E E C E E E E E E E N E E E i N i E E E E C E E E E E E E N E E E E E E E C E E E E E E E E  
+                R R R R R R R R D R R R R R R R C R R R R R R R D R R R g D g R R R R C R R R R R R R D R R R R R R R C R R R R R R R R  
+                V V V V V V V V I V V V V V V V I V V V V V V V I V V V i I i V V V V I V V V V V V V I V V V V V V V I V V V V V V V V  
+                E E E E E E E E N E E E E E E E N E E E E E E E N E E E t N t E E E E N E E E E E E E N E E E E E E E N E E E E E E E E  
+                D D D D D D D D T D D D D D D D T D D D D D D D T D D D 0 T 1 D D D D T D D D D D D D T D D D D D D D T D D D D D D D D  
+              --------------------------------------------------------------------------------------------------------------------------_ 
+             / 240 238 236 234 232 230 228 226 224 222 220 218 216 214 212 210 208 206 204 202 200 198 196 194 192 190 188 186 184 182   |_ 
+            /    239 237 235 233 231 229 227 225 223 221 219 217 215 213 211 209 207 205 203 201 199 197 195 193 191 189 187 185 183 181    | 
+      #TCK |  1                                                                                                                         180 | ^DATA0 
+^CONF_DONE |  2                                                                                                                         179 | ^DCLK 
+     ^nCEO |  3                                                                                                                         178 | ^nCE 
+      #TDO |  4                                                                                                                         177 | #TDI 
+    VCCINT |  5                                                                                                                         176 | GNDINT 
+ segment_a |  6                                                                                                                         175 | segment_b 
+  RESERVED |  7                                                                                                                         174 | segment_c 
+  RESERVED |  8                                                                                                                         173 | segment_g 
+  RESERVED |  9                                                                                                                         172 | segment_e 
+    GNDINT | 10                                                                                                                         171 | segment_f 
+  RESERVED | 11                                                                                                                         170 | VCCINT 
+  RESERVED | 12                                                                                                                         169 | segment_d 
+  RESERVED | 13                                                                                                                         168 | RESERVED 
+  RESERVED | 14                                                                                                                         167 | RESERVED 
+  RESERVED | 15                                                                                                                         166 | RESERVED 
+    VCCINT | 16                                                                                                                         165 | GNDINT 
+  RESERVED | 17                                                                                                                         164 | RESERVED 
+  RESERVED | 18                                                                                                                         163 | RESERVED 
+  RESERVED | 19                                                                                                                         162 | RESERVED 
+  RESERVED | 20                                                                                                                         161 | RESERVED 
+  RESERVED | 21                                                                                                                         160 | VCCINT 
+    GNDINT | 22                                                                                                                         159 | RESERVED 
+  RESERVED | 23                                                                                                                         158 | RESERVED 
+  RESERVED | 24                                                                                                                         157 | RESERVED 
+  RESERVED | 25                                                                                                                         156 | RESERVED 
+  RESERVED | 26                                                                                                                         155 | GNDINT 
+    VCCINT | 27                                                                                                                         154 | RESERVED 
+  RESERVED | 28                                                                                                                         153 | RESERVED 
+  RESERVED | 29                                                                                                                         152 | RESERVED 
+  RESERVED | 30                                                                                                                         151 | RESERVED 
+  RESERVED | 31                                                     EPF10K20RC240-4                                                     150 | VCCINT 
+    GNDINT | 32                                                                                                                         149 | RESERVED 
+  RESERVED | 33                                                                                                                         148 | RESERVED 
+  RESERVED | 34                                                                                                                         147 | RESERVED 
+  RESERVED | 35                                                                                                                         146 | RESERVED 
+  RESERVED | 36                                                                                                                         145 | GNDINT 
+    VCCINT | 37                                                                                                                         144 | RESERVED 
+  RESERVED | 38                                                                                                                         143 | RESERVED 
+  RESERVED | 39                                                                                                                         142 | RESERVED 
+  RESERVED | 40                                                                                                                         141 | RESERVED 
+  RESERVED | 41                                                                                                                         140 | VCCINT 
+    GNDINT | 42                                                                                                                         139 | RESERVED 
+  RESERVED | 43                                                                                                                         138 | RESERVED 
+  RESERVED | 44                                                                                                                         137 | RESERVED 
+  RESERVED | 45                                                                                                                         136 | RESERVED 
+  RESERVED | 46                                                                                                                         135 | GNDINT 
+    VCCINT | 47                                                                                                                         134 | RESERVED 
+  RESERVED | 48                                                                                                                         133 | RESERVED 
+  RESERVED | 49                                                                                                                         132 | RESERVED 
+  RESERVED | 50                                                                                                                         131 | RESERVED 
+  RESERVED | 51                                                                                                                         130 | VCCINT 
+    GNDINT | 52                                                                                                                         129 | RESERVED 
+  RESERVED | 53                                                                                                                         128 | RESERVED 
+  RESERVED | 54                                                                                                                         127 | RESERVED 
+  RESERVED | 55                                                                                                                         126 | RESERVED 
+  RESERVED | 56                                                                                                                         125 | GNDINT 
+    VCCINT | 57                                                                                                                         124 | ^MSEL0 
+      #TMS | 58                                                                                                                         123 | ^MSEL1 
+    #nTRST | 59                                                                                                                         122 | VCCINT 
+  ^nSTATUS | 60                                                                                                                         121 | ^nCONFIG 
+           |      62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104 106 108 110 112 114 116 118 120  _| 
+            \   61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109 111 113 115 117 119   | 
+             \--------------------------------------------------------------------------------------------------------------------------- 
+                R R R R R R R R G R R R R R R R V R R R R R R R G R R R V h G h G R R V R R R R R R R G R R R R R R R V R R R R R R R R  
+                E E E E E E E E N E E E E E E E C E E E E E E E N E E E C e N e N E E C E E E E E E E N E E E E E E E C E E E E E E E E  
+                S S S S S S S S D S S S S S S S C S S S S S S S D S S S C x D x D S S C S S S S S S S D S S S S S S S C S S S S S S S S  
+                E E E E E E E E I E E E E E E E I E E E E E E E I E E E I _ I _ I E E I E E E E E E E I E E E E E E E I E E E E E E E E  
+                R R R R R R R R N R R R R R R R N R R R R R R R N R R R N d N d N R R N R R R R R R R N R R R R R R R N R R R R R R R R  
+                V V V V V V V V T V V V V V V V T V V V V V V V T V V V T i T i T V V T V V V V V V V T V V V V V V V T V V V V V V V V  
+                E E E E E E E E   E E E E E E E   E E E E E E E   E E E   g   g   E E   E E E E E E E   E E E E E E E   E E E E E E E E  
+                D D D D D D D D   D D D D D D D   D D D D D D D   D D D   i   i   D D   D D D D D D D   D D D D D D D   D D D D D D D D  
+                                                                          t   t                                                          
+                                                                          2   3                                                          
+
+
+N.C. = Not Connected.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (3.3 or 5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND (5.0 volts).
+GNDIO = Dedicated ground pin or unused dedicated input, which MUST be connected to GND (3.3 or 5.0 volts).
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which will be tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary Scan Testing Pin.
+
+
+Device-Specific Information:                    e:\max2work\robot\dec_7seg.rpt
+dec_7seg
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clear/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Preset   Interconnect
+A1       8/ 8(100%)   0/ 8(  0%)   4/ 8( 50%)    0/2    0/2       7/22( 31%)   
+A2       3/ 8( 37%)   0/ 8(  0%)   3/ 8( 37%)    0/2    0/2       4/22( 18%)   
+A3       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+A4       8/ 8(100%)   0/ 8(  0%)   4/ 8( 50%)    0/2    0/2       8/22( 36%)   
+A5       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+A6       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+A7       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+A8       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 4/6      ( 66%)
+Total I/O pins used:                             7/183    (  3%)
+Total logic cells used:                         24/1152   (  2%)
+Total embedded cells used:                       0/48     (  0%)
+Total EABs used:                                 0/6      (  0%)
+Average fan-in:                                 3.79/4    ( 94%)
+Total fan-in:                                  91/4608    (  1%)
+
+Total input pins required:                       4
+Total input registers required:                  0
+Total output pins required:                      7
+Total output registers required:                 0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                     24
+Total flipflops required:                        0
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         6/1152   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  EA  13  14  15  16  17  18  19  20  21  22  23  24  Total(LC/EC)
+ A:      8   3   1   8   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     24/0  
+ B:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ C:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ D:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ E:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ F:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+
+Total:   8   3   1   8   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     24/0  
+
+
+
+Device-Specific Information:                    e:\max2work\robot\dec_7seg.rpt
+dec_7seg
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code     INP  FBK  OUT  FBK  Name
+ 212      -     -    -    --      INPUT               0    0    0   15  hex_digit0
+ 210      -     -    -    --      INPUT               0    0    0   15  hex_digit1
+  90      -     -    -    --      INPUT               0    0    0   11  hex_digit2
+  92      -     -    -    --      INPUT               0    0    0   11  hex_digit3
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                    e:\max2work\robot\dec_7seg.rpt
+dec_7seg
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code     INP  FBK  OUT  FBK  Name
+   6      -     -    A    --     OUTPUT               0    1    0    0  segment_a
+ 175      -     -    A    --     OUTPUT               0    1    0    0  segment_b
+ 174      -     -    A    --     OUTPUT               0    1    0    0  segment_c
+ 169      -     -    A    --     OUTPUT               0    1    0    0  segment_d
+ 172      -     -    A    --     OUTPUT               0    1    0    0  segment_e
+ 171      -     -    A    --     OUTPUT               0    1    0    0  segment_f
+ 173      -     -    A    --     OUTPUT               0    1    0    0  segment_g
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                    e:\max2work\robot\dec_7seg.rpt
+dec_7seg
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code     INP  FBK  OUT  FBK  Name
+   -      6     -    A    04        OR2       !       4    0    0    4  :468
+   -      5     -    A    04        OR2       !       4    0    0    4  :480
+   -      1     -    A    05        OR2       !       4    0    0    3  :492
+   -      1     -    A    01        OR2       !       2    1    0    3  :516
+   -      2     -    A    01        OR2   s   !       2    2    0    2  ~519~1
+   -      3     -    A    01       AND2               2    1    0    4  :528
+   -      1     -    A    02        OR2   s   !       2    0    0    5  ~540~1
+   -      8     -    A    01       AND2               2    1    0    4  :540
+   -      3     -    A    02        OR2       !       4    0    1    0  :543
+   -      2     -    A    02        OR2       !       4    0    1    0  :591
+   -      1     -    A    08        OR2   s           2    2    0    2  ~630~1
+   -      3     -    A    03        OR2       !       4    0    1    0  :639
+   -      8     -    A    04        OR2   s           4    0    0    1  ~687~1
+   -      1     -    A    04        OR2   s           0    4    0    1  ~687~2
+   -      7     -    A    01        OR2       !       0    4    1    0  :687
+   -      1     -    A    07        OR2       !       4    0    0    1  :719
+   -      2     -    A    04        OR2       !       0    4    0    1  :731
+   -      5     -    A    01        OR2       !       0    4    1    0  :735
+   -      1     -    A    06        OR2       !       4    0    0    1  :767
+   -      3     -    A    04       AND2       !       0    4    0    1  :771
+   -      6     -    A    01        OR2       !       0    4    1    0  :783
+   -      7     -    A    04        OR2       !       4    0    0    1  :815
+   -      4     -    A    04       AND2   s           0    4    0    1  ~825~1
+   -      4     -    A    01        OR2       !       0    4    1    0  :833
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:                    e:\max2work\robot\dec_7seg.rpt
+dec_7seg
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       1/ 96(  1%)    15/ 48( 31%)     0/ 48(  0%)    0/16(  0%)      7/16( 43%)     0/16(  0%)
+B:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+C:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+D:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+E:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+F:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+02:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+03:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+20:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:                    e:\max2work\robot\dec_7seg.rpt
+dec_7seg
+
+** EQUATIONS **
+
+hex_digit0 : INPUT;
+hex_digit1 : INPUT;
+hex_digit2 : INPUT;
+hex_digit3 : INPUT;
+
+-- Node name is 'segment_a' 
+-- Equation name is 'segment_a', type is output 
+segment_a = !_LC3_A2;
+
+-- Node name is 'segment_b' 
+-- Equation name is 'segment_b', type is output 
+segment_b = !_LC2_A2;
+
+-- Node name is 'segment_c' 
+-- Equation name is 'segment_c', type is output 
+segment_c = !_LC3_A3;
+
+-- Node name is 'segment_d' 
+-- Equation name is 'segment_d', type is output 
+segment_d = !_LC7_A1;
+
+-- Node name is 'segment_e' 
+-- Equation name is 'segment_e', type is output 
+segment_e = !_LC5_A1;
+
+-- Node name is 'segment_f' 
+-- Equation name is 'segment_f', type is output 
+segment_f = !_LC6_A1;
+
+-- Node name is 'segment_g' 
+-- Equation name is 'segment_g', type is output 
+segment_g = !_LC4_A1;
+
+-- Node name is ':468' 
+-- Equation name is '_LC6_A4', type is buried 
+!_LC6_A4 = _LC6_A4~NOT;
+_LC6_A4~NOT = LCELL( _EQ001);
+  _EQ001 =  hex_digit0
+         # !hex_digit1
+         #  hex_digit3
+         # !hex_digit2;
+
+-- Node name is ':480' 
+-- Equation name is '_LC5_A4', type is buried 
+!_LC5_A4 = _LC5_A4~NOT;
+_LC5_A4~NOT = LCELL( _EQ002);
+  _EQ002 =  hex_digit3
+         # !hex_digit2
+         # !hex_digit0
+         #  hex_digit1;
+
+-- Node name is ':492' 
+-- Equation name is '_LC1_A5', type is buried 
+!_LC1_A5 = _LC1_A5~NOT;
+_LC1_A5~NOT = LCELL( _EQ003);
+  _EQ003 =  hex_digit0
+         #  hex_digit1
+         #  hex_digit3
+         # !hex_digit2;
+
+-- Node name is ':516' 
+-- Equation name is '_LC1_A1', type is buried 
+!_LC1_A1 = _LC1_A1~NOT;
+_LC1_A1~NOT = LCELL( _EQ004);
+  _EQ004 =  hex_digit0
+         # !hex_digit1
+         # !_LC1_A2;
+
+-- Node name is '~519~1' 
+-- Equation name is '~519~1', location is LC2_A1, type is buried.
+-- synthesized logic cell 
+!_LC2_A1 = _LC2_A1~NOT;
+_LC2_A1~NOT = LCELL( _EQ005);
+  _EQ005 =  hex_digit0 &  hex_digit1 &  _LC1_A2
+         #  _LC1_A1;
+
+-- Node name is ':528' 
+-- Equation name is '_LC3_A1', type is buried 
+_LC3_A1  = LCELL( _EQ006);
+  _EQ006 =  hex_digit0 & !hex_digit1 &  _LC1_A2;
+
+-- Node name is '~540~1' 
+-- Equation name is '~540~1', location is LC1_A2, type is buried.
+-- synthesized logic cell 
+!_LC1_A2 = _LC1_A2~NOT;
+_LC1_A2~NOT = LCELL( _EQ007);
+  _EQ007 =  hex_digit3
+         #  hex_digit2;
+
+-- Node name is ':540' 
+-- Equation name is '_LC8_A1', type is buried 
+_LC8_A1  = LCELL( _EQ008);
+  _EQ008 = !hex_digit0 & !hex_digit1 &  _LC1_A2;
+
+-- Node name is ':543' 
+-- Equation name is '_LC3_A2', type is buried 
+!_LC3_A2 = _LC3_A2~NOT;
+_LC3_A2~NOT = LCELL( _EQ009);
+  _EQ009 =  hex_digit0 & !hex_digit1 &  hex_digit2 &  hex_digit3
+         #  hex_digit0 &  hex_digit1 & !hex_digit2 &  hex_digit3
+         #  hex_digit0 & !hex_digit1 & !hex_digit2 & !hex_digit3
+         # !hex_digit0 & !hex_digit1 &  hex_digit2 & !hex_digit3;
+
+-- Node name is ':591' 
+-- Equation name is '_LC2_A2', type is buried 
+!_LC2_A2 = _LC2_A2~NOT;
+_LC2_A2~NOT = LCELL( _EQ010);
+  _EQ010 =  hex_digit0 &  hex_digit1 &  hex_digit3
+         #  hex_digit1 &  hex_digit2 &  hex_digit3
+         # !hex_digit0 &  hex_digit1 &  hex_digit2
+         # !hex_digit0 &  hex_digit2 &  hex_digit3
+         #  hex_digit0 & !hex_digit1 &  hex_digit2 & !hex_digit3;
+
+-- Node name is '~630~1' 
+-- Equation name is '~630~1', location is LC1_A8, type is buried.
+-- synthesized logic cell 
+_LC1_A8  = LCELL( _EQ011);
+  _EQ011 = !_LC1_A2 & !_LC1_A5
+         # !hex_digit0 & !_LC1_A5
+         # !hex_digit1 & !_LC1_A5;
+
+-- Node name is ':639' 
+-- Equation name is '_LC3_A3', type is buried 
+!_LC3_A3 = _LC3_A3~NOT;
+_LC3_A3~NOT = LCELL( _EQ012);
+  _EQ012 =  hex_digit1 &  hex_digit2 &  hex_digit3
+         # !hex_digit0 &  hex_digit2 &  hex_digit3
+         # !hex_digit0 &  hex_digit1 & !hex_digit2 & !hex_digit3;
+
+-- Node name is '~687~1' 
+-- Equation name is '~687~1', location is LC8_A4, type is buried.
+-- synthesized logic cell 
+_LC8_A4  = LCELL( _EQ013);
+  _EQ013 = !hex_digit3
+         #  hex_digit0 &  hex_digit1 &  hex_digit2
+         # !hex_digit0 &  hex_digit1 & !hex_digit2;
+
+-- Node name is '~687~2' 
+-- Equation name is '~687~2', location is LC1_A4, type is buried.
+-- synthesized logic cell 
+_LC1_A4  = LCELL( _EQ014);
+  _EQ014 = !_LC5_A4 & !_LC6_A4 &  _LC8_A4
+         #  _LC1_A5;
+
+-- Node name is ':687' 
+-- Equation name is '_LC7_A1', type is buried 
+!_LC7_A1 = _LC7_A1~NOT;
+_LC7_A1~NOT = LCELL( _EQ015);
+  _EQ015 =  _LC1_A4 &  _LC2_A1 & !_LC8_A1
+         #  _LC3_A1 & !_LC8_A1;
+
+-- Node name is ':719' 
+-- Equation name is '_LC1_A7', type is buried 
+!_LC1_A7 = _LC1_A7~NOT;
+_LC1_A7~NOT = LCELL( _EQ016);
+  _EQ016 =  hex_digit0 &  hex_digit1 &  hex_digit2 & !hex_digit3
+         #  hex_digit0 & !hex_digit1 & !hex_digit2 &  hex_digit3;
+
+-- Node name is ':731' 
+-- Equation name is '_LC2_A4', type is buried 
+!_LC2_A4 = _LC2_A4~NOT;
+_LC2_A4~NOT = LCELL( _EQ017);
+  _EQ017 = !_LC1_A7 & !_LC6_A4
+         #  _LC5_A4
+         # !_LC1_A8;
+
+-- Node name is ':735' 
+-- Equation name is '_LC5_A1', type is buried 
+!_LC5_A1 = _LC5_A1~NOT;
+_LC5_A1~NOT = LCELL( _EQ018);
+  _EQ018 = !_LC1_A1 & !_LC2_A4 & !_LC8_A1
+         #  _LC3_A1 & !_LC8_A1;
+
+-- Node name is ':767' 
+-- Equation name is '_LC1_A6', type is buried 
+!_LC1_A6 = _LC1_A6~NOT;
+_LC1_A6~NOT = LCELL( _EQ019);
+  _EQ019 =  hex_digit0 &  hex_digit1 &  hex_digit2 & !hex_digit3
+         #  hex_digit0 & !hex_digit1 &  hex_digit2 &  hex_digit3;
+
+-- Node name is ':771' 
+-- Equation name is '_LC3_A4', type is buried 
+!_LC3_A4 = _LC3_A4~NOT;
+_LC3_A4~NOT = LCELL( _EQ020);
+  _EQ020 = !_LC1_A5 & !_LC1_A6 & !_LC5_A4 & !_LC6_A4;
+
+-- Node name is ':783' 
+-- Equation name is '_LC6_A1', type is buried 
+!_LC6_A1 = _LC6_A1~NOT;
+_LC6_A1~NOT = LCELL( _EQ021);
+  _EQ021 = !_LC2_A1 & !_LC8_A1
+         #  _LC3_A1 & !_LC8_A1
+         # !_LC3_A4 & !_LC8_A1;
+
+-- Node name is ':815' 
+-- Equation name is '_LC7_A4', type is buried 
+!_LC7_A4 = _LC7_A4~NOT;
+_LC7_A4~NOT = LCELL( _EQ022);
+  _EQ022 =  hex_digit0 &  hex_digit1 &  hex_digit2 & !hex_digit3
+         # !hex_digit0 & !hex_digit1 &  hex_digit2 &  hex_digit3;
+
+-- Node name is '~825~1' 
+-- Equation name is '~825~1', location is LC4_A4, type is buried.
+-- synthesized logic cell 
+_LC4_A4  = LCELL( _EQ023);
+  _EQ023 =  _LC1_A8 & !_LC5_A4 & !_LC6_A4 & !_LC7_A4;
+
+-- Node name is ':833' 
+-- Equation name is '_LC4_A1', type is buried 
+!_LC4_A1 = _LC4_A1~NOT;
+_LC4_A1~NOT = LCELL( _EQ024);
+  _EQ024 =  _LC3_A1
+         #  _LC8_A1
+         # !_LC1_A1 &  _LC4_A4;
+
+
+
+Project Information                             e:\max2work\robot\dec_7seg.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic I/O Cell Registers        = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interface Menu Commands
+-----------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:01
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:01
+   Partitioner                            00:00:00
+   Fitter                                 00:00:02
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:02
+   --------------------------             --------
+   Total Time                             00:00:06
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 13,534K

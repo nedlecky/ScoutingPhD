@@ -1,0 +1,3504 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  dpreg.vhd
+Options:    -m -q -yv2 -e10 -w100 -o2 -ygs -fO -fP -v10 -dc375i -pCY7C375I-125AC dpreg.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Mon Feb 16 22:44:32 1998
+
+Library 'work' => directory 'lc375i'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab 7; Dual Port Registers\lc375i\dflop.vif'.
+Linking 'C:\EE Courses\Ee231\Lab 7; Dual Port Registers\lc375i\nreg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Mon Feb 16 22:44:33 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab 7; Dual Port Registers\lc375i\dflop.vif'.
+Linking 'C:\EE Courses\Ee231\Lab 7; Dual Port Registers\lc375i\nreg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic0'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic1'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic2'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic3'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic4'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic5'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic6'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nreg_generic7'.
+Note:  Removing wires from arch. 'regfile_arch' of entity 'regfile'.
+
+C:\warp\bin\tovif.exe:  No errors.
+
+
+C:\warp\bin\topld.exe V4 IR x77:  Synthesis and optimization
+Mon Feb 16 22:44:33 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab 7; Dual Port Registers\lc375i\dflop.vif'.
+Linking 'C:\EE Courses\Ee231\Lab 7; Dual Port Registers\lc375i\nreg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+Linking 'C:\warp\lib\lc370\stdlogic\c370.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 0 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+Note:  Virtual equation for 'regen_0' has been expanded (cost = 128):
+regen_0 <= ((not asel_2 and not asel_1 and not asel_0 and wr));
+
+Note:  Virtual equation for 'regen_1' has been expanded (cost = 128):
+regen_1 <= ((not asel_2 and not asel_1 and asel_0 and wr));
+
+Note:  Virtual equation for 'regen_2' has been expanded (cost = 128):
+regen_2 <= ((not asel_2 and not asel_0 and asel_1 and wr));
+
+Note:  Virtual equation for 'regen_3' has been expanded (cost = 128):
+regen_3 <= ((not asel_2 and asel_1 and asel_0 and wr));
+
+Note:  Virtual equation for 'regen_4' has been expanded (cost = 128):
+regen_4 <= ((not asel_1 and not asel_0 and asel_2 and wr));
+
+Note:  Virtual equation for 'regen_5' has been expanded (cost = 128):
+regen_5 <= ((not asel_1 and asel_2 and asel_0 and wr));
+
+Note:  Virtual equation for 'regen_6' has been expanded (cost = 128):
+regen_6 <= ((not asel_0 and asel_2 and asel_1 and wr));
+
+Note:  Virtual equation for 'regen_7' has been expanded (cost = 128):
+regen_7 <= ((asel_2 and asel_1 and asel_0 and wr));
+
+
+Substituting virtuals - pass 2:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 8 signals.
+	Turned 0 signals into soft nodes.
+	Maximum expansion cost was set at 10.
+----------------------------------------------------------
+Created 168 PLD nodes.
+Note:  Removed unneeded node 'regen_0'.
+Note:  Removed unneeded node 'regen_1'.
+Note:  Removed unneeded node 'regen_2'.
+Note:  Removed unneeded node 'regen_3'.
+Note:  Removed unneeded node 'regen_4'.
+Note:  Removed unneeded node 'regen_5'.
+Note:  Removed unneeded node 'regen_6'.
+Note:  Removed unneeded node 'regen_7'.
+
+C:\warp\bin\topld.exe:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN HEADER INFORMATION  (22:44:35)
+
+Input File(s): dpreg.pla
+Device       : c375i
+Package      : CY7C375I-125AC
+ReportFile   : dpreg.rpt
+
+Program Controls:
+                 None.
+
+Signal Requests:
+    GROUP DT-OPT ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (22:44:35)
+
+Messages:
+  Information: Process virtual 'regoutputs_7_7D' ... expanded.
+  Information: Process virtual 'regoutputs_7_6D' ... expanded.
+  Information: Process virtual 'regoutputs_7_5D' ... expanded.
+  Information: Process virtual 'regoutputs_7_4D' ... expanded.
+  Information: Process virtual 'regoutputs_7_3D' ... expanded.
+  Information: Process virtual 'regoutputs_7_2D' ... expanded.
+  Information: Process virtual 'regoutputs_7_1D' ... expanded.
+  Information: Process virtual 'regoutputs_7_0D' ... expanded.
+  Information: Process virtual 'regoutputs_6_7D' ... expanded.
+  Information: Process virtual 'regoutputs_6_6D' ... expanded.
+  Information: Process virtual 'regoutputs_6_5D' ... expanded.
+  Information: Process virtual 'regoutputs_6_4D' ... expanded.
+  Information: Process virtual 'regoutputs_6_3D' ... expanded.
+  Information: Process virtual 'regoutputs_6_2D' ... expanded.
+  Information: Process virtual 'regoutputs_6_1D' ... expanded.
+  Information: Process virtual 'regoutputs_6_0D' ... expanded.
+  Information: Process virtual 'regoutputs_5_7D' ... expanded.
+  Information: Process virtual 'regoutputs_5_6D' ... expanded.
+  Information: Process virtual 'regoutputs_5_5D' ... expanded.
+  Information: Process virtual 'regoutputs_5_4D' ... expanded.
+  Information: Process virtual 'regoutputs_5_3D' ... expanded.
+  Information: Process virtual 'regoutputs_5_2D' ... expanded.
+  Information: Process virtual 'regoutputs_5_1D' ... expanded.
+  Information: Process virtual 'regoutputs_5_0D' ... expanded.
+  Information: Process virtual 'regoutputs_4_7D' ... expanded.
+  Information: Process virtual 'regoutputs_4_6D' ... expanded.
+  Information: Process virtual 'regoutputs_4_5D' ... expanded.
+  Information: Process virtual 'regoutputs_4_4D' ... expanded.
+  Information: Process virtual 'regoutputs_4_3D' ... expanded.
+  Information: Process virtual 'regoutputs_4_2D' ... expanded.
+  Information: Process virtual 'regoutputs_4_1D' ... expanded.
+  Information: Process virtual 'regoutputs_4_0D' ... expanded.
+  Information: Process virtual 'regoutputs_3_7D' ... expanded.
+  Information: Process virtual 'regoutputs_3_6D' ... expanded.
+  Information: Process virtual 'regoutputs_3_5D' ... expanded.
+  Information: Process virtual 'regoutputs_3_4D' ... expanded.
+  Information: Process virtual 'regoutputs_3_3D' ... expanded.
+  Information: Process virtual 'regoutputs_3_2D' ... expanded.
+  Information: Process virtual 'regoutputs_3_1D' ... expanded.
+  Information: Process virtual 'regoutputs_3_0D' ... expanded.
+  Information: Process virtual 'regoutputs_2_7D' ... expanded.
+  Information: Process virtual 'regoutputs_2_6D' ... expanded.
+  Information: Process virtual 'regoutputs_2_5D' ... expanded.
+  Information: Process virtual 'regoutputs_2_4D' ... expanded.
+  Information: Process virtual 'regoutputs_2_3D' ... expanded.
+  Information: Process virtual 'regoutputs_2_2D' ... expanded.
+  Information: Process virtual 'regoutputs_2_1D' ... expanded.
+  Information: Process virtual 'regoutputs_2_0D' ... expanded.
+  Information: Process virtual 'regoutputs_1_7D' ... expanded.
+  Information: Process virtual 'regoutputs_1_6D' ... expanded.
+  Information: Process virtual 'regoutputs_1_5D' ... expanded.
+  Information: Process virtual 'regoutputs_1_4D' ... expanded.
+  Information: Process virtual 'regoutputs_1_3D' ... expanded.
+  Information: Process virtual 'regoutputs_1_2D' ... expanded.
+  Information: Process virtual 'regoutputs_1_1D' ... expanded.
+  Information: Process virtual 'regoutputs_1_0D' ... expanded.
+  Information: Process virtual 'regoutputs_0_7D' ... expanded.
+  Information: Process virtual 'regoutputs_0_6D' ... expanded.
+  Information: Process virtual 'regoutputs_0_5D' ... expanded.
+  Information: Process virtual 'regoutputs_0_4D' ... expanded.
+  Information: Process virtual 'regoutputs_0_3D' ... expanded.
+  Information: Process virtual 'regoutputs_0_2D' ... expanded.
+  Information: Process virtual 'regoutputs_0_1D' ... expanded.
+  Information: Process virtual 'regoutputs_0_0D' ... expanded.
+  Information: Process virtual 'regoutputs_7_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_7_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_7_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_7_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_7_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_7_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_7_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_7_0' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_6_0' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_5_0' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_4_0' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_3_0' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_2_0' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_1_0' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_7' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_6' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_5' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_4' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_3' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_2' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_1' ... converted to NODE.
+  Information: Process virtual 'regoutputs_0_0' ... converted to NODE.
+  Information: Generating both D & T register equations for signal regoutputs_7_7.D
+  Information: Expanding XOR equation found on signal regoutputs_7_7.T
+  Information: Generating both D & T register equations for signal regoutputs_7_6.D
+  Information: Expanding XOR equation found on signal regoutputs_7_6.T
+  Information: Generating both D & T register equations for signal regoutputs_7_5.D
+  Information: Expanding XOR equation found on signal regoutputs_7_5.T
+  Information: Generating both D & T register equations for signal regoutputs_7_4.D
+  Information: Expanding XOR equation found on signal regoutputs_7_4.T
+  Information: Generating both D & T register equations for signal regoutputs_7_3.D
+  Information: Expanding XOR equation found on signal regoutputs_7_3.T
+  Information: Generating both D & T register equations for signal regoutputs_7_2.D
+  Information: Expanding XOR equation found on signal regoutputs_7_2.T
+  Information: Generating both D & T register equations for signal regoutputs_7_1.D
+  Information: Expanding XOR equation found on signal regoutputs_7_1.T
+  Information: Generating both D & T register equations for signal regoutputs_7_0.D
+  Information: Expanding XOR equation found on signal regoutputs_7_0.T
+  Information: Generating both D & T register equations for signal regoutputs_6_7.D
+  Information: Expanding XOR equation found on signal regoutputs_6_7.T
+  Information: Generating both D & T register equations for signal regoutputs_6_6.D
+  Information: Expanding XOR equation found on signal regoutputs_6_6.T
+  Information: Generating both D & T register equations for signal regoutputs_6_5.D
+  Information: Expanding XOR equation found on signal regoutputs_6_5.T
+  Information: Generating both D & T register equations for signal regoutputs_6_4.D
+  Information: Expanding XOR equation found on signal regoutputs_6_4.T
+  Information: Generating both D & T register equations for signal regoutputs_6_3.D
+  Information: Expanding XOR equation found on signal regoutputs_6_3.T
+  Information: Generating both D & T register equations for signal regoutputs_6_2.D
+  Information: Expanding XOR equation found on signal regoutputs_6_2.T
+  Information: Generating both D & T register equations for signal regoutputs_6_1.D
+  Information: Expanding XOR equation found on signal regoutputs_6_1.T
+  Information: Generating both D & T register equations for signal regoutputs_6_0.D
+  Information: Expanding XOR equation found on signal regoutputs_6_0.T
+  Information: Generating both D & T register equations for signal regoutputs_5_7.D
+  Information: Expanding XOR equation found on signal regoutputs_5_7.T
+  Information: Generating both D & T register equations for signal regoutputs_5_6.D
+  Information: Expanding XOR equation found on signal regoutputs_5_6.T
+  Information: Generating both D & T register equations for signal regoutputs_5_5.D
+  Information: Expanding XOR equation found on signal regoutputs_5_5.T
+  Information: Generating both D & T register equations for signal regoutputs_5_4.D
+  Information: Expanding XOR equation found on signal regoutputs_5_4.T
+  Information: Generating both D & T register equations for signal regoutputs_5_3.D
+  Information: Expanding XOR equation found on signal regoutputs_5_3.T
+  Information: Generating both D & T register equations for signal regoutputs_5_2.D
+  Information: Expanding XOR equation found on signal regoutputs_5_2.T
+  Information: Generating both D & T register equations for signal regoutputs_5_1.D
+  Information: Expanding XOR equation found on signal regoutputs_5_1.T
+  Information: Generating both D & T register equations for signal regoutputs_5_0.D
+  Information: Expanding XOR equation found on signal regoutputs_5_0.T
+  Information: Generating both D & T register equations for signal regoutputs_4_7.D
+  Information: Expanding XOR equation found on signal regoutputs_4_7.T
+  Information: Generating both D & T register equations for signal regoutputs_4_6.D
+  Information: Expanding XOR equation found on signal regoutputs_4_6.T
+  Information: Generating both D & T register equations for signal regoutputs_4_5.D
+  Information: Expanding XOR equation found on signal regoutputs_4_5.T
+  Information: Generating both D & T register equations for signal regoutputs_4_4.D
+  Information: Expanding XOR equation found on signal regoutputs_4_4.T
+  Information: Generating both D & T register equations for signal regoutputs_4_3.D
+  Information: Expanding XOR equation found on signal regoutputs_4_3.T
+  Information: Generating both D & T register equations for signal regoutputs_4_2.D
+  Information: Expanding XOR equation found on signal regoutputs_4_2.T
+  Information: Generating both D & T register equations for signal regoutputs_4_1.D
+  Information: Expanding XOR equation found on signal regoutputs_4_1.T
+  Information: Generating both D & T register equations for signal regoutputs_4_0.D
+  Information: Expanding XOR equation found on signal regoutputs_4_0.T
+  Information: Generating both D & T register equations for signal regoutputs_3_7.D
+  Information: Expanding XOR equation found on signal regoutputs_3_7.T
+  Information: Generating both D & T register equations for signal regoutputs_3_6.D
+  Information: Expanding XOR equation found on signal regoutputs_3_6.T
+  Information: Generating both D & T register equations for signal regoutputs_3_5.D
+  Information: Expanding XOR equation found on signal regoutputs_3_5.T
+  Information: Generating both D & T register equations for signal regoutputs_3_4.D
+  Information: Expanding XOR equation found on signal regoutputs_3_4.T
+  Information: Generating both D & T register equations for signal regoutputs_3_3.D
+  Information: Expanding XOR equation found on signal regoutputs_3_3.T
+  Information: Generating both D & T register equations for signal regoutputs_3_2.D
+  Information: Expanding XOR equation found on signal regoutputs_3_2.T
+  Information: Generating both D & T register equations for signal regoutputs_3_1.D
+  Information: Expanding XOR equation found on signal regoutputs_3_1.T
+  Information: Generating both D & T register equations for signal regoutputs_3_0.D
+  Information: Expanding XOR equation found on signal regoutputs_3_0.T
+  Information: Generating both D & T register equations for signal regoutputs_2_7.D
+  Information: Expanding XOR equation found on signal regoutputs_2_7.T
+  Information: Generating both D & T register equations for signal regoutputs_2_6.D
+  Information: Expanding XOR equation found on signal regoutputs_2_6.T
+  Information: Generating both D & T register equations for signal regoutputs_2_5.D
+  Information: Expanding XOR equation found on signal regoutputs_2_5.T
+  Information: Generating both D & T register equations for signal regoutputs_2_4.D
+  Information: Expanding XOR equation found on signal regoutputs_2_4.T
+  Information: Generating both D & T register equations for signal regoutputs_2_3.D
+  Information: Expanding XOR equation found on signal regoutputs_2_3.T
+  Information: Generating both D & T register equations for signal regoutputs_2_2.D
+  Information: Expanding XOR equation found on signal regoutputs_2_2.T
+  Information: Generating both D & T register equations for signal regoutputs_2_1.D
+  Information: Expanding XOR equation found on signal regoutputs_2_1.T
+  Information: Generating both D & T register equations for signal regoutputs_2_0.D
+  Information: Expanding XOR equation found on signal regoutputs_2_0.T
+  Information: Generating both D & T register equations for signal regoutputs_1_7.D
+  Information: Expanding XOR equation found on signal regoutputs_1_7.T
+  Information: Generating both D & T register equations for signal regoutputs_1_6.D
+  Information: Expanding XOR equation found on signal regoutputs_1_6.T
+  Information: Generating both D & T register equations for signal regoutputs_1_5.D
+  Information: Expanding XOR equation found on signal regoutputs_1_5.T
+  Information: Generating both D & T register equations for signal regoutputs_1_4.D
+  Information: Expanding XOR equation found on signal regoutputs_1_4.T
+  Information: Generating both D & T register equations for signal regoutputs_1_3.D
+  Information: Expanding XOR equation found on signal regoutputs_1_3.T
+  Information: Generating both D & T register equations for signal regoutputs_1_2.D
+  Information: Expanding XOR equation found on signal regoutputs_1_2.T
+  Information: Generating both D & T register equations for signal regoutputs_1_1.D
+  Information: Expanding XOR equation found on signal regoutputs_1_1.T
+  Information: Generating both D & T register equations for signal regoutputs_1_0.D
+  Information: Expanding XOR equation found on signal regoutputs_1_0.T
+  Information: Generating both D & T register equations for signal regoutputs_0_7.D
+  Information: Expanding XOR equation found on signal regoutputs_0_7.T
+  Information: Generating both D & T register equations for signal regoutputs_0_6.D
+  Information: Expanding XOR equation found on signal regoutputs_0_6.T
+  Information: Generating both D & T register equations for signal regoutputs_0_5.D
+  Information: Expanding XOR equation found on signal regoutputs_0_5.T
+  Information: Generating both D & T register equations for signal regoutputs_0_4.D
+  Information: Expanding XOR equation found on signal regoutputs_0_4.T
+  Information: Generating both D & T register equations for signal regoutputs_0_3.D
+  Information: Expanding XOR equation found on signal regoutputs_0_3.T
+  Information: Generating both D & T register equations for signal regoutputs_0_2.D
+  Information: Expanding XOR equation found on signal regoutputs_0_2.T
+  Information: Generating both D & T register equations for signal regoutputs_0_1.D
+  Information: Expanding XOR equation found on signal regoutputs_0_1.T
+  Information: Generating both D & T register equations for signal regoutputs_0_0.D
+  Information: Expanding XOR equation found on signal regoutputs_0_0.T
+  Information: Optimizing logic without changing polarity for signals:
+         regoutputs_7_7.T regoutputs_7_6.T regoutputs_7_5.T regoutputs_7_4.T
+         regoutputs_7_3.T regoutputs_7_2.T regoutputs_7_1.T regoutputs_7_0.T
+         regoutputs_6_7.T regoutputs_6_6.T regoutputs_6_5.T regoutputs_6_4.T
+         regoutputs_6_3.T regoutputs_6_2.T regoutputs_6_1.T regoutputs_6_0.T
+         regoutputs_5_7.T regoutputs_5_6.T regoutputs_5_5.T regoutputs_5_4.T
+         regoutputs_5_3.T regoutputs_5_2.T regoutputs_5_1.T regoutputs_5_0.T
+         regoutputs_4_7.T regoutputs_4_6.T regoutputs_4_5.T regoutputs_4_4.T
+         regoutputs_4_3.T regoutputs_4_2.T regoutputs_4_1.T regoutputs_4_0.T
+         regoutputs_3_7.T regoutputs_3_6.T regoutputs_3_5.T regoutputs_3_4.T
+         regoutputs_3_3.T regoutputs_3_2.T regoutputs_3_1.T regoutputs_3_0.T
+         regoutputs_2_7.T regoutputs_2_6.T regoutputs_2_5.T regoutputs_2_4.T
+         regoutputs_2_3.T regoutputs_2_2.T regoutputs_2_1.T regoutputs_2_0.T
+         regoutputs_1_7.T regoutputs_1_6.T regoutputs_1_5.T regoutputs_1_4.T
+         regoutputs_1_3.T regoutputs_1_2.T regoutputs_1_1.T regoutputs_1_0.T
+         regoutputs_0_7.T regoutputs_0_6.T regoutputs_0_5.T regoutputs_0_4.T
+         regoutputs_0_3.T regoutputs_0_2.T regoutputs_0_1.T regoutputs_0_0.T
+
+  Information: Optimizing logic using best output polarity for signals:
+         regoutputs_7_7.D regoutputs_7_6.D regoutputs_7_5.D regoutputs_7_4.D
+         regoutputs_7_3.D regoutputs_7_2.D regoutputs_7_1.D regoutputs_7_0.D
+         regoutputs_6_7.D regoutputs_6_6.D regoutputs_6_5.D regoutputs_6_4.D
+         regoutputs_6_3.D regoutputs_6_2.D regoutputs_6_1.D regoutputs_6_0.D
+         regoutputs_5_7.D regoutputs_5_6.D regoutputs_5_5.D regoutputs_5_4.D
+         regoutputs_5_3.D regoutputs_5_2.D regoutputs_5_1.D regoutputs_5_0.D
+         regoutputs_4_7.D regoutputs_4_6.D regoutputs_4_5.D regoutputs_4_4.D
+         regoutputs_4_3.D regoutputs_4_2.D regoutputs_4_1.D regoutputs_4_0.D
+         regoutputs_3_7.D regoutputs_3_6.D regoutputs_3_5.D regoutputs_3_4.D
+         regoutputs_3_3.D regoutputs_3_2.D regoutputs_3_1.D regoutputs_3_0.D
+         regoutputs_2_7.D regoutputs_2_6.D regoutputs_2_5.D regoutputs_2_4.D
+         regoutputs_2_3.D regoutputs_2_2.D regoutputs_2_1.D regoutputs_2_0.D
+         regoutputs_1_7.D regoutputs_1_6.D regoutputs_1_5.D regoutputs_1_4.D
+         regoutputs_1_3.D regoutputs_1_2.D regoutputs_1_1.D regoutputs_1_0.D
+         regoutputs_0_7.D regoutputs_0_6.D regoutputs_0_5.D regoutputs_0_4.D
+         regoutputs_0_3.D regoutputs_0_2.D regoutputs_0_1.D regoutputs_0_0.D
+         bout_0 bout_1 bout_2 bout_3 bout_4 bout_5 bout_6 bout_7 aout_0 aout_1
+         aout_2 aout_3 aout_4 aout_5 aout_6 aout_7
+
+  Information: Selected logic optimization OFF for signals:
+         regoutputs_7_7.C regoutputs_7_6.C regoutputs_7_5.C regoutputs_7_4.C
+         regoutputs_7_3.C regoutputs_7_2.C regoutputs_7_1.C regoutputs_7_0.C
+         regoutputs_6_7.C regoutputs_6_6.C regoutputs_6_5.C regoutputs_6_4.C
+         regoutputs_6_3.C regoutputs_6_2.C regoutputs_6_1.C regoutputs_6_0.C
+         regoutputs_5_7.C regoutputs_5_6.C regoutputs_5_5.C regoutputs_5_4.C
+         regoutputs_5_3.C regoutputs_5_2.C regoutputs_5_1.C regoutputs_5_0.C
+         regoutputs_4_7.C regoutputs_4_6.C regoutputs_4_5.C regoutputs_4_4.C
+         regoutputs_4_3.C regoutputs_4_2.C regoutputs_4_1.C regoutputs_4_0.C
+         regoutputs_3_7.C regoutputs_3_6.C regoutputs_3_5.C regoutputs_3_4.C
+         regoutputs_3_3.C regoutputs_3_2.C regoutputs_3_1.C regoutputs_3_0.C
+         regoutputs_2_7.C regoutputs_2_6.C regoutputs_2_5.C regoutputs_2_4.C
+         regoutputs_2_3.C regoutputs_2_2.C regoutputs_2_1.C regoutputs_2_0.C
+         regoutputs_1_7.C regoutputs_1_6.C regoutputs_1_5.C regoutputs_1_4.C
+         regoutputs_1_3.C regoutputs_1_2.C regoutputs_1_1.C regoutputs_1_0.C
+         regoutputs_0_7.C regoutputs_0_6.C regoutputs_0_5.C regoutputs_0_4.C
+         regoutputs_0_3.C regoutputs_0_2.C regoutputs_0_1.C regoutputs_0_0.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (22:44:35)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+  Information: Selecting T register equation as minimal for signal regoutputs_0_0
+  Information: Selecting T register equation as minimal for signal regoutputs_0_1
+  Information: Selecting T register equation as minimal for signal regoutputs_0_2
+  Information: Selecting T register equation as minimal for signal regoutputs_0_3
+  Information: Selecting T register equation as minimal for signal regoutputs_0_4
+  Information: Selecting T register equation as minimal for signal regoutputs_0_5
+  Information: Selecting T register equation as minimal for signal regoutputs_0_6
+  Information: Selecting T register equation as minimal for signal regoutputs_0_7
+  Information: Selecting T register equation as minimal for signal regoutputs_1_0
+  Information: Selecting T register equation as minimal for signal regoutputs_1_1
+  Information: Selecting T register equation as minimal for signal regoutputs_1_2
+  Information: Selecting T register equation as minimal for signal regoutputs_1_3
+  Information: Selecting T register equation as minimal for signal regoutputs_1_4
+  Information: Selecting T register equation as minimal for signal regoutputs_1_5
+  Information: Selecting T register equation as minimal for signal regoutputs_1_6
+  Information: Selecting T register equation as minimal for signal regoutputs_1_7
+  Information: Selecting T register equation as minimal for signal regoutputs_2_0
+  Information: Selecting T register equation as minimal for signal regoutputs_2_1
+  Information: Selecting T register equation as minimal for signal regoutputs_2_2
+  Information: Selecting T register equation as minimal for signal regoutputs_2_3
+  Information: Selecting T register equation as minimal for signal regoutputs_2_4
+  Information: Selecting T register equation as minimal for signal regoutputs_2_5
+  Information: Selecting T register equation as minimal for signal regoutputs_2_6
+  Information: Selecting T register equation as minimal for signal regoutputs_2_7
+  Information: Selecting T register equation as minimal for signal regoutputs_3_0
+  Information: Selecting T register equation as minimal for signal regoutputs_3_1
+  Information: Selecting T register equation as minimal for signal regoutputs_3_2
+  Information: Selecting T register equation as minimal for signal regoutputs_3_3
+  Information: Selecting T register equation as minimal for signal regoutputs_3_4
+  Information: Selecting T register equation as minimal for signal regoutputs_3_5
+  Information: Selecting T register equation as minimal for signal regoutputs_3_6
+  Information: Selecting T register equation as minimal for signal regoutputs_3_7
+  Information: Selecting T register equation as minimal for signal regoutputs_4_0
+  Information: Selecting T register equation as minimal for signal regoutputs_4_1
+  Information: Selecting T register equation as minimal for signal regoutputs_4_2
+  Information: Selecting T register equation as minimal for signal regoutputs_4_3
+  Information: Selecting T register equation as minimal for signal regoutputs_4_4
+  Information: Selecting T register equation as minimal for signal regoutputs_4_5
+  Information: Selecting T register equation as minimal for signal regoutputs_4_6
+  Information: Selecting T register equation as minimal for signal regoutputs_4_7
+  Information: Selecting T register equation as minimal for signal regoutputs_5_0
+  Information: Selecting T register equation as minimal for signal regoutputs_5_1
+  Information: Selecting T register equation as minimal for signal regoutputs_5_2
+  Information: Selecting T register equation as minimal for signal regoutputs_5_3
+  Information: Selecting T register equation as minimal for signal regoutputs_5_4
+  Information: Selecting T register equation as minimal for signal regoutputs_5_5
+  Information: Selecting T register equation as minimal for signal regoutputs_5_6
+  Information: Selecting T register equation as minimal for signal regoutputs_5_7
+  Information: Selecting T register equation as minimal for signal regoutputs_6_0
+  Information: Selecting T register equation as minimal for signal regoutputs_6_1
+  Information: Selecting T register equation as minimal for signal regoutputs_6_2
+  Information: Selecting T register equation as minimal for signal regoutputs_6_3
+  Information: Selecting T register equation as minimal for signal regoutputs_6_4
+  Information: Selecting T register equation as minimal for signal regoutputs_6_5
+  Information: Selecting T register equation as minimal for signal regoutputs_6_6
+  Information: Selecting T register equation as minimal for signal regoutputs_6_7
+  Information: Selecting T register equation as minimal for signal regoutputs_7_0
+  Information: Selecting T register equation as minimal for signal regoutputs_7_1
+  Information: Selecting T register equation as minimal for signal regoutputs_7_2
+  Information: Selecting T register equation as minimal for signal regoutputs_7_3
+  Information: Selecting T register equation as minimal for signal regoutputs_7_4
+  Information: Selecting T register equation as minimal for signal regoutputs_7_5
+  Information: Selecting T register equation as minimal for signal regoutputs_7_6
+  Information: Selecting T register equation as minimal for signal regoutputs_7_7
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN EQUATIONS           (22:44:36)
+
+
+    aout_7 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_7.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_7.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_7.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_7.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_7.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_7.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_7.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_7.Q 
+
+    aout_6 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_6.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_6.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_6.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_6.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_6.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_6.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_6.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_6.Q 
+
+    aout_5 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_5.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_5.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_5.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_5.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_5.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_5.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_5.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_5.Q 
+
+    aout_4 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_4.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_4.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_4.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_4.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_4.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_4.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_4.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_4.Q 
+
+    aout_3 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_3.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_3.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_3.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_3.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_3.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_3.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_3.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_3.Q 
+
+    aout_2 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_2.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_2.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_2.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_2.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_2.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_2.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_2.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_2.Q 
+
+    aout_1 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_1.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_1.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_1.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_1.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_1.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_1.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_1.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_1.Q 
+
+    aout_0 =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_0.Q 
+        + asel_2 * asel_1 * /asel_0 * regoutputs_6_0.Q 
+        + asel_2 * /asel_1 * asel_0 * regoutputs_5_0.Q 
+        + asel_2 * /asel_1 * /asel_0 * regoutputs_4_0.Q 
+        + /asel_2 * asel_1 * asel_0 * regoutputs_3_0.Q 
+        + /asel_2 * asel_1 * /asel_0 * regoutputs_2_0.Q 
+        + /asel_2 * /asel_1 * asel_0 * regoutputs_1_0.Q 
+        + /asel_2 * /asel_1 * /asel_0 * regoutputs_0_0.Q 
+
+    bout_7 =
+          regoutputs_0_7.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_7.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_7.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_7.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_7.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_7.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_7.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_7.Q * bsel_2 * bsel_1 * bsel_0 
+
+    bout_6 =
+          regoutputs_0_6.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_6.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_6.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_6.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_6.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_6.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_6.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_6.Q * bsel_2 * bsel_1 * bsel_0 
+
+    bout_5 =
+          regoutputs_0_5.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_5.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_5.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_5.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_5.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_5.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_5.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_5.Q * bsel_2 * bsel_1 * bsel_0 
+
+    bout_4 =
+          regoutputs_0_4.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_4.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_4.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_4.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_4.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_4.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_4.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_4.Q * bsel_2 * bsel_1 * bsel_0 
+
+    bout_3 =
+          regoutputs_0_3.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_3.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_3.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_3.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_3.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_3.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_3.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_3.Q * bsel_2 * bsel_1 * bsel_0 
+
+    bout_2 =
+          regoutputs_0_2.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_2.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_2.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_2.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_2.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_2.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_2.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_2.Q * bsel_2 * bsel_1 * bsel_0 
+
+    bout_1 =
+          regoutputs_0_1.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_1.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_1.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_1.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_1.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_1.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_1.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_1.Q * bsel_2 * bsel_1 * bsel_0 
+
+    bout_0 =
+          regoutputs_0_0.Q * /bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_4_0.Q * bsel_2 * /bsel_1 * /bsel_0 
+        + regoutputs_2_0.Q * /bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_6_0.Q * bsel_2 * bsel_1 * /bsel_0 
+        + regoutputs_1_0.Q * /bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_5_0.Q * bsel_2 * /bsel_1 * bsel_0 
+        + regoutputs_3_0.Q * /bsel_2 * bsel_1 * bsel_0 
+        + regoutputs_7_0.Q * bsel_2 * bsel_1 * bsel_0 
+
+    regoutputs_0_0.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_0 * regoutputs_0_0.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_0 * /regoutputs_0_0.Q 
+
+    regoutputs_0_0.AP =
+          GND
+
+    regoutputs_0_0.AR =
+          GND
+
+    regoutputs_0_0.C =
+          clk 
+
+    regoutputs_0_1.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_1 * regoutputs_0_1.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_1 * /regoutputs_0_1.Q 
+
+    regoutputs_0_1.AP =
+          GND
+
+    regoutputs_0_1.AR =
+          GND
+
+    regoutputs_0_1.C =
+          clk 
+
+    regoutputs_0_2.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_2 * regoutputs_0_2.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_2 * /regoutputs_0_2.Q 
+
+    regoutputs_0_2.AP =
+          GND
+
+    regoutputs_0_2.AR =
+          GND
+
+    regoutputs_0_2.C =
+          clk 
+
+    regoutputs_0_3.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_3 * regoutputs_0_3.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_3 * /regoutputs_0_3.Q 
+
+    regoutputs_0_3.AP =
+          GND
+
+    regoutputs_0_3.AR =
+          GND
+
+    regoutputs_0_3.C =
+          clk 
+
+    regoutputs_0_4.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_4 * regoutputs_0_4.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_4 * /regoutputs_0_4.Q 
+
+    regoutputs_0_4.AP =
+          GND
+
+    regoutputs_0_4.AR =
+          GND
+
+    regoutputs_0_4.C =
+          clk 
+
+    regoutputs_0_5.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_5 * regoutputs_0_5.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_5 * /regoutputs_0_5.Q 
+
+    regoutputs_0_5.AP =
+          GND
+
+    regoutputs_0_5.AR =
+          GND
+
+    regoutputs_0_5.C =
+          clk 
+
+    regoutputs_0_6.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_6 * regoutputs_0_6.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_6 * /regoutputs_0_6.Q 
+
+    regoutputs_0_6.AP =
+          GND
+
+    regoutputs_0_6.AR =
+          GND
+
+    regoutputs_0_6.C =
+          clk 
+
+    regoutputs_0_7.T =
+          /asel_2 * /asel_1 * /asel_0 * wr * /ain_7 * regoutputs_0_7.Q 
+        + /asel_2 * /asel_1 * /asel_0 * wr * ain_7 * /regoutputs_0_7.Q 
+
+    regoutputs_0_7.AP =
+          GND
+
+    regoutputs_0_7.AR =
+          GND
+
+    regoutputs_0_7.C =
+          clk 
+
+    regoutputs_1_0.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_0 * regoutputs_1_0.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_0 * /regoutputs_1_0.Q 
+
+    regoutputs_1_0.AP =
+          GND
+
+    regoutputs_1_0.AR =
+          GND
+
+    regoutputs_1_0.C =
+          clk 
+
+    regoutputs_1_1.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_1 * regoutputs_1_1.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_1 * /regoutputs_1_1.Q 
+
+    regoutputs_1_1.AP =
+          GND
+
+    regoutputs_1_1.AR =
+          GND
+
+    regoutputs_1_1.C =
+          clk 
+
+    regoutputs_1_2.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_2 * regoutputs_1_2.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_2 * /regoutputs_1_2.Q 
+
+    regoutputs_1_2.AP =
+          GND
+
+    regoutputs_1_2.AR =
+          GND
+
+    regoutputs_1_2.C =
+          clk 
+
+    regoutputs_1_3.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_3 * regoutputs_1_3.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_3 * /regoutputs_1_3.Q 
+
+    regoutputs_1_3.AP =
+          GND
+
+    regoutputs_1_3.AR =
+          GND
+
+    regoutputs_1_3.C =
+          clk 
+
+    regoutputs_1_4.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_4 * regoutputs_1_4.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_4 * /regoutputs_1_4.Q 
+
+    regoutputs_1_4.AP =
+          GND
+
+    regoutputs_1_4.AR =
+          GND
+
+    regoutputs_1_4.C =
+          clk 
+
+    regoutputs_1_5.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_5 * regoutputs_1_5.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_5 * /regoutputs_1_5.Q 
+
+    regoutputs_1_5.AP =
+          GND
+
+    regoutputs_1_5.AR =
+          GND
+
+    regoutputs_1_5.C =
+          clk 
+
+    regoutputs_1_6.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_6 * regoutputs_1_6.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_6 * /regoutputs_1_6.Q 
+
+    regoutputs_1_6.AP =
+          GND
+
+    regoutputs_1_6.AR =
+          GND
+
+    regoutputs_1_6.C =
+          clk 
+
+    regoutputs_1_7.T =
+          /asel_2 * /asel_1 * asel_0 * wr * /ain_7 * regoutputs_1_7.Q 
+        + /asel_2 * /asel_1 * asel_0 * wr * ain_7 * /regoutputs_1_7.Q 
+
+    regoutputs_1_7.AP =
+          GND
+
+    regoutputs_1_7.AR =
+          GND
+
+    regoutputs_1_7.C =
+          clk 
+
+    regoutputs_2_0.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_0 * regoutputs_2_0.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_0 * /regoutputs_2_0.Q 
+
+    regoutputs_2_0.AP =
+          GND
+
+    regoutputs_2_0.AR =
+          GND
+
+    regoutputs_2_0.C =
+          clk 
+
+    regoutputs_2_1.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_1 * regoutputs_2_1.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_1 * /regoutputs_2_1.Q 
+
+    regoutputs_2_1.AP =
+          GND
+
+    regoutputs_2_1.AR =
+          GND
+
+    regoutputs_2_1.C =
+          clk 
+
+    regoutputs_2_2.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_2 * regoutputs_2_2.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_2 * /regoutputs_2_2.Q 
+
+    regoutputs_2_2.AP =
+          GND
+
+    regoutputs_2_2.AR =
+          GND
+
+    regoutputs_2_2.C =
+          clk 
+
+    regoutputs_2_3.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_3 * regoutputs_2_3.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_3 * /regoutputs_2_3.Q 
+
+    regoutputs_2_3.AP =
+          GND
+
+    regoutputs_2_3.AR =
+          GND
+
+    regoutputs_2_3.C =
+          clk 
+
+    regoutputs_2_4.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_4 * regoutputs_2_4.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_4 * /regoutputs_2_4.Q 
+
+    regoutputs_2_4.AP =
+          GND
+
+    regoutputs_2_4.AR =
+          GND
+
+    regoutputs_2_4.C =
+          clk 
+
+    regoutputs_2_5.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_5 * regoutputs_2_5.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_5 * /regoutputs_2_5.Q 
+
+    regoutputs_2_5.AP =
+          GND
+
+    regoutputs_2_5.AR =
+          GND
+
+    regoutputs_2_5.C =
+          clk 
+
+    regoutputs_2_6.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_6 * regoutputs_2_6.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_6 * /regoutputs_2_6.Q 
+
+    regoutputs_2_6.AP =
+          GND
+
+    regoutputs_2_6.AR =
+          GND
+
+    regoutputs_2_6.C =
+          clk 
+
+    regoutputs_2_7.T =
+          /asel_2 * asel_1 * /asel_0 * wr * /ain_7 * regoutputs_2_7.Q 
+        + /asel_2 * asel_1 * /asel_0 * wr * ain_7 * /regoutputs_2_7.Q 
+
+    regoutputs_2_7.AP =
+          GND
+
+    regoutputs_2_7.AR =
+          GND
+
+    regoutputs_2_7.C =
+          clk 
+
+    regoutputs_3_0.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_0 * regoutputs_3_0.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_0 * /regoutputs_3_0.Q 
+
+    regoutputs_3_0.AP =
+          GND
+
+    regoutputs_3_0.AR =
+          GND
+
+    regoutputs_3_0.C =
+          clk 
+
+    regoutputs_3_1.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_1 * regoutputs_3_1.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_1 * /regoutputs_3_1.Q 
+
+    regoutputs_3_1.AP =
+          GND
+
+    regoutputs_3_1.AR =
+          GND
+
+    regoutputs_3_1.C =
+          clk 
+
+    regoutputs_3_2.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_2 * regoutputs_3_2.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_2 * /regoutputs_3_2.Q 
+
+    regoutputs_3_2.AP =
+          GND
+
+    regoutputs_3_2.AR =
+          GND
+
+    regoutputs_3_2.C =
+          clk 
+
+    regoutputs_3_3.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_3 * regoutputs_3_3.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_3 * /regoutputs_3_3.Q 
+
+    regoutputs_3_3.AP =
+          GND
+
+    regoutputs_3_3.AR =
+          GND
+
+    regoutputs_3_3.C =
+          clk 
+
+    regoutputs_3_4.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_4 * regoutputs_3_4.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_4 * /regoutputs_3_4.Q 
+
+    regoutputs_3_4.AP =
+          GND
+
+    regoutputs_3_4.AR =
+          GND
+
+    regoutputs_3_4.C =
+          clk 
+
+    regoutputs_3_5.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_5 * regoutputs_3_5.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_5 * /regoutputs_3_5.Q 
+
+    regoutputs_3_5.AP =
+          GND
+
+    regoutputs_3_5.AR =
+          GND
+
+    regoutputs_3_5.C =
+          clk 
+
+    regoutputs_3_6.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_6 * regoutputs_3_6.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_6 * /regoutputs_3_6.Q 
+
+    regoutputs_3_6.AP =
+          GND
+
+    regoutputs_3_6.AR =
+          GND
+
+    regoutputs_3_6.C =
+          clk 
+
+    regoutputs_3_7.T =
+          /asel_2 * asel_1 * asel_0 * wr * /ain_7 * regoutputs_3_7.Q 
+        + /asel_2 * asel_1 * asel_0 * wr * ain_7 * /regoutputs_3_7.Q 
+
+    regoutputs_3_7.AP =
+          GND
+
+    regoutputs_3_7.AR =
+          GND
+
+    regoutputs_3_7.C =
+          clk 
+
+    regoutputs_4_0.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_0 * regoutputs_4_0.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_0 * /regoutputs_4_0.Q 
+
+    regoutputs_4_0.AP =
+          GND
+
+    regoutputs_4_0.AR =
+          GND
+
+    regoutputs_4_0.C =
+          clk 
+
+    regoutputs_4_1.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_1 * regoutputs_4_1.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_1 * /regoutputs_4_1.Q 
+
+    regoutputs_4_1.AP =
+          GND
+
+    regoutputs_4_1.AR =
+          GND
+
+    regoutputs_4_1.C =
+          clk 
+
+    regoutputs_4_2.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_2 * regoutputs_4_2.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_2 * /regoutputs_4_2.Q 
+
+    regoutputs_4_2.AP =
+          GND
+
+    regoutputs_4_2.AR =
+          GND
+
+    regoutputs_4_2.C =
+          clk 
+
+    regoutputs_4_3.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_3 * regoutputs_4_3.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_3 * /regoutputs_4_3.Q 
+
+    regoutputs_4_3.AP =
+          GND
+
+    regoutputs_4_3.AR =
+          GND
+
+    regoutputs_4_3.C =
+          clk 
+
+    regoutputs_4_4.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_4 * regoutputs_4_4.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_4 * /regoutputs_4_4.Q 
+
+    regoutputs_4_4.AP =
+          GND
+
+    regoutputs_4_4.AR =
+          GND
+
+    regoutputs_4_4.C =
+          clk 
+
+    regoutputs_4_5.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_5 * regoutputs_4_5.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_5 * /regoutputs_4_5.Q 
+
+    regoutputs_4_5.AP =
+          GND
+
+    regoutputs_4_5.AR =
+          GND
+
+    regoutputs_4_5.C =
+          clk 
+
+    regoutputs_4_6.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_6 * regoutputs_4_6.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_6 * /regoutputs_4_6.Q 
+
+    regoutputs_4_6.AP =
+          GND
+
+    regoutputs_4_6.AR =
+          GND
+
+    regoutputs_4_6.C =
+          clk 
+
+    regoutputs_4_7.T =
+          asel_2 * /asel_1 * /asel_0 * wr * /ain_7 * regoutputs_4_7.Q 
+        + asel_2 * /asel_1 * /asel_0 * wr * ain_7 * /regoutputs_4_7.Q 
+
+    regoutputs_4_7.AP =
+          GND
+
+    regoutputs_4_7.AR =
+          GND
+
+    regoutputs_4_7.C =
+          clk 
+
+    regoutputs_5_0.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_0 * regoutputs_5_0.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_0 * /regoutputs_5_0.Q 
+
+    regoutputs_5_0.AP =
+          GND
+
+    regoutputs_5_0.AR =
+          GND
+
+    regoutputs_5_0.C =
+          clk 
+
+    regoutputs_5_1.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_1 * regoutputs_5_1.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_1 * /regoutputs_5_1.Q 
+
+    regoutputs_5_1.AP =
+          GND
+
+    regoutputs_5_1.AR =
+          GND
+
+    regoutputs_5_1.C =
+          clk 
+
+    regoutputs_5_2.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_2 * regoutputs_5_2.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_2 * /regoutputs_5_2.Q 
+
+    regoutputs_5_2.AP =
+          GND
+
+    regoutputs_5_2.AR =
+          GND
+
+    regoutputs_5_2.C =
+          clk 
+
+    regoutputs_5_3.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_3 * regoutputs_5_3.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_3 * /regoutputs_5_3.Q 
+
+    regoutputs_5_3.AP =
+          GND
+
+    regoutputs_5_3.AR =
+          GND
+
+    regoutputs_5_3.C =
+          clk 
+
+    regoutputs_5_4.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_4 * regoutputs_5_4.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_4 * /regoutputs_5_4.Q 
+
+    regoutputs_5_4.AP =
+          GND
+
+    regoutputs_5_4.AR =
+          GND
+
+    regoutputs_5_4.C =
+          clk 
+
+    regoutputs_5_5.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_5 * regoutputs_5_5.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_5 * /regoutputs_5_5.Q 
+
+    regoutputs_5_5.AP =
+          GND
+
+    regoutputs_5_5.AR =
+          GND
+
+    regoutputs_5_5.C =
+          clk 
+
+    regoutputs_5_6.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_6 * regoutputs_5_6.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_6 * /regoutputs_5_6.Q 
+
+    regoutputs_5_6.AP =
+          GND
+
+    regoutputs_5_6.AR =
+          GND
+
+    regoutputs_5_6.C =
+          clk 
+
+    regoutputs_5_7.T =
+          asel_2 * /asel_1 * asel_0 * wr * /ain_7 * regoutputs_5_7.Q 
+        + asel_2 * /asel_1 * asel_0 * wr * ain_7 * /regoutputs_5_7.Q 
+
+    regoutputs_5_7.AP =
+          GND
+
+    regoutputs_5_7.AR =
+          GND
+
+    regoutputs_5_7.C =
+          clk 
+
+    regoutputs_6_0.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_0 * regoutputs_6_0.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_0 * /regoutputs_6_0.Q 
+
+    regoutputs_6_0.AP =
+          GND
+
+    regoutputs_6_0.AR =
+          GND
+
+    regoutputs_6_0.C =
+          clk 
+
+    regoutputs_6_1.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_1 * regoutputs_6_1.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_1 * /regoutputs_6_1.Q 
+
+    regoutputs_6_1.AP =
+          GND
+
+    regoutputs_6_1.AR =
+          GND
+
+    regoutputs_6_1.C =
+          clk 
+
+    regoutputs_6_2.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_2 * regoutputs_6_2.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_2 * /regoutputs_6_2.Q 
+
+    regoutputs_6_2.AP =
+          GND
+
+    regoutputs_6_2.AR =
+          GND
+
+    regoutputs_6_2.C =
+          clk 
+
+    regoutputs_6_3.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_3 * regoutputs_6_3.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_3 * /regoutputs_6_3.Q 
+
+    regoutputs_6_3.AP =
+          GND
+
+    regoutputs_6_3.AR =
+          GND
+
+    regoutputs_6_3.C =
+          clk 
+
+    regoutputs_6_4.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_4 * regoutputs_6_4.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_4 * /regoutputs_6_4.Q 
+
+    regoutputs_6_4.AP =
+          GND
+
+    regoutputs_6_4.AR =
+          GND
+
+    regoutputs_6_4.C =
+          clk 
+
+    regoutputs_6_5.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_5 * regoutputs_6_5.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_5 * /regoutputs_6_5.Q 
+
+    regoutputs_6_5.AP =
+          GND
+
+    regoutputs_6_5.AR =
+          GND
+
+    regoutputs_6_5.C =
+          clk 
+
+    regoutputs_6_6.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_6 * regoutputs_6_6.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_6 * /regoutputs_6_6.Q 
+
+    regoutputs_6_6.AP =
+          GND
+
+    regoutputs_6_6.AR =
+          GND
+
+    regoutputs_6_6.C =
+          clk 
+
+    regoutputs_6_7.T =
+          asel_2 * asel_1 * /asel_0 * wr * /ain_7 * regoutputs_6_7.Q 
+        + asel_2 * asel_1 * /asel_0 * wr * ain_7 * /regoutputs_6_7.Q 
+
+    regoutputs_6_7.AP =
+          GND
+
+    regoutputs_6_7.AR =
+          GND
+
+    regoutputs_6_7.C =
+          clk 
+
+    regoutputs_7_0.T =
+          asel_2 * asel_1 * asel_0 * wr * regoutputs_7_0.Q * /ain_0 
+        + asel_2 * asel_1 * asel_0 * wr * /regoutputs_7_0.Q * ain_0 
+
+    regoutputs_7_0.AP =
+          GND
+
+    regoutputs_7_0.AR =
+          GND
+
+    regoutputs_7_0.C =
+          clk 
+
+    regoutputs_7_1.T =
+          asel_2 * asel_1 * asel_0 * wr * regoutputs_7_1.Q * /ain_1 
+        + asel_2 * asel_1 * asel_0 * wr * /regoutputs_7_1.Q * ain_1 
+
+    regoutputs_7_1.AP =
+          GND
+
+    regoutputs_7_1.AR =
+          GND
+
+    regoutputs_7_1.C =
+          clk 
+
+    regoutputs_7_2.T =
+          asel_2 * asel_1 * asel_0 * wr * regoutputs_7_2.Q * /ain_2 
+        + asel_2 * asel_1 * asel_0 * wr * /regoutputs_7_2.Q * ain_2 
+
+    regoutputs_7_2.AP =
+          GND
+
+    regoutputs_7_2.AR =
+          GND
+
+    regoutputs_7_2.C =
+          clk 
+
+    regoutputs_7_3.T =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_3.Q * wr * /ain_3 
+        + asel_2 * asel_1 * asel_0 * /regoutputs_7_3.Q * wr * ain_3 
+
+    regoutputs_7_3.AP =
+          GND
+
+    regoutputs_7_3.AR =
+          GND
+
+    regoutputs_7_3.C =
+          clk 
+
+    regoutputs_7_4.T =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_4.Q * wr * /ain_4 
+        + asel_2 * asel_1 * asel_0 * /regoutputs_7_4.Q * wr * ain_4 
+
+    regoutputs_7_4.AP =
+          GND
+
+    regoutputs_7_4.AR =
+          GND
+
+    regoutputs_7_4.C =
+          clk 
+
+    regoutputs_7_5.T =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_5.Q * wr * /ain_5 
+        + asel_2 * asel_1 * asel_0 * /regoutputs_7_5.Q * wr * ain_5 
+
+    regoutputs_7_5.AP =
+          GND
+
+    regoutputs_7_5.AR =
+          GND
+
+    regoutputs_7_5.C =
+          clk 
+
+    regoutputs_7_6.T =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_6.Q * wr * /ain_6 
+        + asel_2 * asel_1 * asel_0 * /regoutputs_7_6.Q * wr * ain_6 
+
+    regoutputs_7_6.AP =
+          GND
+
+    regoutputs_7_6.AR =
+          GND
+
+    regoutputs_7_6.C =
+          clk 
+
+    regoutputs_7_7.T =
+          asel_2 * asel_1 * asel_0 * regoutputs_7_7.Q * wr * /ain_7 
+        + asel_2 * asel_1 * asel_0 * /regoutputs_7_7.Q * wr * ain_7 
+
+    regoutputs_7_7.AP =
+          GND
+
+    regoutputs_7_7.AR =
+          GND
+
+    regoutputs_7_7.C =
+          clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN RULE CHECK          (22:44:36)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PARTITION LOGIC            (22:44:36)
+
+Messages:
+  Information: Checking design is strictly SYNCHRONOUS.
+  Information: Initializing Logic Block structures.
+  Information: Forming input seeds.
+  Information: Checking for duplicate NODE logic.
+  Information: Forming input seeds.
+  Information: Assigning fixed logic to Logic Blocks.
+  Information: Separating output logic set to GND/VCC.
+  Information: Processing banked global preset, reset and output enable.
+  Information: Validating Logic Block's with pre-placed signals.
+  Information: Assigning initializing equations to empty Logic Blocks.
+  Information: Separating output combinatorial logic.
+  Information: Separating disjoint output logic.
+  Information: Assigning floating outputs to Logic Blocks.
+  Information: Compacting Logic Block interconnect.
+  .......................................................................
+  .....
+  Information: Separating disjoint output logic.
+  Information: Assigning floating outputs to Logic Blocks.
+  Information: Assigning floating inputs to Logic Blocks.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (22:44:37)
+
+Messages:
+  Information: Fitting signals to Logic Block A.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block B.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block C.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block D.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block E.
+  Information: Fitting signals to Logic Block F.
+  Information: Fitting signals to Logic Block G.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Combining 'regoutputs_7_2' definition with input pin 'bsel_0'.
+  Information: Fitting signals to Logic Block H.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Combining 'regoutputs_7_0' definition with input pin 'ain_4'.
+  Information: Combining 'regoutputs_6_0' definition with input pin 'bsel_1'.
+  Information: Routing signals to Logic Blocks.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK A PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |bout_7
+XXXXXXXX++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |(regoutputs_6_7)
+..................XX++++++++++++++..............................................
+| 5 |(regoutputs_4_7)
+......................XX++++++++++++++..........................................
+| 6 |(regoutputs_2_7)
+..........................XX++++++++++++++......................................
+| 7 |(regoutputs_0_7)
+..............................XX++++++++++++++..................................
+| 8 |(regoutputs_7_7)
+..................................XX++++++++++++++..............................
+| 9 |(regoutputs_1_7)
+......................................XX++++++++++++++..........................
+|10 |(regoutputs_3_7)
+..........................................XX++++++++++++++......................
+|11 |(regoutputs_5_7)
+..............................................XX++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |aout_7
+................................................................XXXXXXXX++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  10 
+Total count of unique Product Terms  =  32 
+Total Product Terms to be assigned   =  32 
+Max Product Terms used / available   =  32 /  80   = 40.1  %
+
+
+Control Signals for Logic Block A
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block A
+                 ____________________________________________
+                 |   |* not used:161                    |   |                 
+                 |   |= >ain_7                          |   |                 
+                 |   |= >asel_2                         |   |                 
+                 |   |* not used:164                    |   |                 
+                 |   |= >regoutputs_..                  |143|= bout_7         
+                 |   |* not used:166                    |   |                 
+                 |   |= >regoutputs_..                  |144|* not used       
+                 |   |= >bsel_0                         |   |                 
+                 |   |= >regoutputs_..                  |145|* not used       
+                 |   |= >bsel_1                         |   |                 
+                 |   |= >regoutputs_..                  |146|* not used       
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >asel_1                         |147|= (regoutputs_6_7) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |* not used:175                    |148|= (regoutputs_4_7) 
+                 |   |* not used:176                    |   |                 
+                 |   |* not used:177                    |149|= (regoutputs_2_7) 
+                 |   |= >bsel_2                         |   |                 
+                 |   |* not used:179                    |150|= (regoutputs_0_7) 
+                 |   |* not used:180                    |   |                 
+                 |   |* not used:181                    |152|= (regoutputs_7_7) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |* not used:183                    |153|= (regoutputs_1_7) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |* not used:185                    |154|= (regoutputs_3_7) 
+                 |   |* not used:186                    |   |                 
+                 |   |* not used:187                    |155|= (regoutputs_5_7) 
+                 |   |* not used:188                    |   |                 
+                 |   |* not used:189                    |156|* not used       
+                 |   |* not used:190                    |   |                 
+                 |   |= >asel_0                         |157|* not used       
+                 |   |* not used:192                    |   |                 
+                 |   |* not used:193                    |158|= bsel_2         
+                 |   |* not used:194                    |   |                 
+                 |   |* not used:195                    |159|= aout_7         
+                 |   |= >wr                             |   |                 
+                 |   |* not used:197                    |   |                 
+                 |   |* not used:198                    |   |                 
+                 |   |* not used:199                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   11  |   16  |
+                 | PIM Input Connects |   16  |   36  |
+                 ______________________________________
+                                          27  /   52   = 51  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK B PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |bout_6
+XXXXXXXX++++++++................................................................
+| 1 |bout_2
+......++XXXX++++XX++XX..........................................................
+| 2 |(regoutputs_6_6)
+..........++XX++++++++++++......................................................
+| 3 |(regoutputs_6_3)
+..............XX++++++++++++++..................................................
+| 4 |(regoutputs_4_6)
+..................XX++++++++++++++..............................................
+| 5 |(regoutputs_2_6)
+......................XX++++++++++++++..........................................
+| 6 |(regoutputs_0_6)
+..........................XX++++++++++++++......................................
+| 7 |aout_6
+..............................XXXX++XX++XX++++..................................
+| 8 |aout_3
+..................................XX++XX++XXXX++++..............................
+| 9 |bout_3
+......................................++++++++XXXXXXXX..........................
+|10 |(regoutputs_1_6)
+..........................................++++++++++++++XX......................
+|11 |(regoutputs_3_6)
+..............................................++++++++++++++XX..................
+|12 |(regoutputs_5_6)
+..................................................++++XX++++++++++..............
+|13 |(regoutputs_7_3)
+......................................................++++XX++++++++++..........
+|14 |(regoutputs_7_6)
+..........................................................++++XX++++++++++......
+|15 |aout_2
+................................................................XXXXXXXX++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  16 
+Total count of unique Product Terms  =  68 
+Total Product Terms to be assigned   =  68 
+Max Product Terms used / available   =  68 /  80   = 85.1  %
+
+
+Control Signals for Logic Block B
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block B
+                 ____________________________________________
+                 |   |= >asel_0                         |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |  2|= bout_6         
+                 |   |= >ain_6                          |   |                 
+                 |   |= >regoutputs_..                  |  3|= bout_2         
+                 |   |= >bsel_0                         |   |                 
+                 |   |= >regoutputs_..                  |  4|= (regoutputs_6_6) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |  5|= (regoutputs_6_3) 
+                 |   |= >bsel_1                         |   |                 
+                 |   |= >regoutputs_..                  |  6|= (regoutputs_4_6) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |  7|= (regoutputs_2_6) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |* not used:216                    |  8|= (regoutputs_0_6) 
+                 |   |= >bsel_2                         |   |                 
+                 |   |* not used:218                    |  9|= aout_6         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 11|= aout_3         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 12|= bout_3         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 13|= (regoutputs_1_6) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 14|= (regoutputs_3_6) 
+                 |   |= >asel_1                         |   |                 
+                 |   |= >regoutputs_..                  | 15|= (regoutputs_5_6) 
+                 |   |* not used:229                    |   |                 
+                 |   |* not used:230                    | 16|= (regoutputs_7_3) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 17|= (regoutputs_7_6) 
+                 |   |= >asel_2                         |   |                 
+                 |   |* not used:234                    | 18|= aout_2         
+                 |   |* not used:235                    |   |                 
+                 |   |= >wr                             |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >ain_3                          |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   16  |   16  |
+                 | PIM Input Connects |   33  |   36  |
+                 ______________________________________
+                                          49  /   52   = 94  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK C PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |bout_0
+XXXXXXXX++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |(regoutputs_7_5)
+..............XX++++++++++++++..................................................
+| 4 |(regoutputs_5_5)
+..................XX++++++++++++++..............................................
+| 5 |(regoutputs_3_5)
+......................XX++++++++++++++..........................................
+| 6 |(regoutputs_1_5)
+..........................XX++++++++++++++......................................
+| 7 |aout_5
+..............................XXXX++XX++XX++++..................................
+| 8 |bout_5
+..................................XX++XX++XX++XX++..............................
+| 9 |(regoutputs_0_5)
+......................................++++++++++++XX++..........................
+|10 |(regoutputs_2_5)
+..........................................++XX++++++++++++......................
+|11 |(regoutputs_4_5)
+..............................................++XX++++++++++++..................
+|12 |(regoutputs_6_5)
+..................................................++XX++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |bout_1
+................................................................XXXXXXXX++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  12 
+Total count of unique Product Terms  =  48 
+Total Product Terms to be assigned   =  48 
+Max Product Terms used / available   =  48 /  80   = 60.1  %
+
+
+Control Signals for Logic Block C
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block C
+                 ____________________________________________
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >asel_0                         |   |                 
+                 |   |* not used:241                    |   |                 
+                 |   |= >ain_5                          |   |                 
+                 |   |= >regoutputs_..                  | 23|= bout_0         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 24|* not used       
+                 |   |= >bsel_0                         |   |                 
+                 |   |= >regoutputs_..                  | 25|* not used       
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 26|= (regoutputs_7_5) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 27|= (regoutputs_5_5) 
+                 |   |= >bsel_1                         |   |                 
+                 |   |= >regoutputs_..                  | 28|= (regoutputs_3_5) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |* not used:255                    | 29|= (regoutputs_1_5) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 30|= aout_5         
+                 |   |* not used:258                    |   |                 
+                 |   |= >asel_1                         | 32|= bout_5         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 33|= (regoutputs_0_5) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 34|= (regoutputs_2_5) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |* not used:265                    | 35|= (regoutputs_4_5) 
+                 |   |* not used:266                    |   |                 
+                 |   |= >regoutputs_..                  | 36|= (regoutputs_6_5) 
+                 |   |* not used:268                    |   |                 
+                 |   |= >bsel_2                         | 37|* not used       
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 38|* not used       
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  | 39|= bout_1         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >asel_2                         |   |                 
+                 |   |= >wr                             |   |                 
+                 |   |* not used:277                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   12  |   16  |
+                 | PIM Input Connects |   32  |   36  |
+                 ______________________________________
+                                          44  /   52   = 84  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK D PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |bout_4
+XXXXXXXX++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |(regoutputs_6_4)
+..................XX++++++++++++++..............................................
+| 5 |(regoutputs_4_4)
+......................XX++++++++++++++..........................................
+| 6 |(regoutputs_2_4)
+..........................XX++++++++++++++......................................
+| 7 |(regoutputs_0_4)
+..............................XX++++++++++++++..................................
+| 8 |(regoutputs_7_4)
+..................................XX++++++++++++++..............................
+| 9 |(regoutputs_1_4)
+......................................XX++++++++++++++..........................
+|10 |(regoutputs_3_4)
+..........................................XX++++++++++++++......................
+|11 |(regoutputs_5_4)
+..............................................XX++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |aout_4
+................................................................XXXXXXXX++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  10 
+Total count of unique Product Terms  =  32 
+Total Product Terms to be assigned   =  32 
+Max Product Terms used / available   =  32 /  80   = 40.1  %
+
+
+Control Signals for Logic Block D
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block D
+                 ____________________________________________
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >bsel_1                         |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |* not used:281                    |   |                 
+                 |   |= >regoutputs_..                  | 42|= bout_4         
+                 |   |* not used:283                    |   |                 
+                 |   |= >regoutputs_..                  | 43|* not used       
+                 |   |= >bsel_0                         |   |                 
+                 |   |= >regoutputs_..                  | 44|* not used       
+                 |   |* not used:287                    |   |                 
+                 |   |= >regoutputs_..                  | 45|* not used       
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |> not used:290                    | 46|= (regoutputs_6_4) 
+                 |   |> not used:291                    |   |                 
+                 |   |> not used:292                    | 47|= (regoutputs_4_4) 
+                 |   |> not used:293                    |   |                 
+                 |   |= >asel_1                         | 48|= (regoutputs_2_4) 
+                 |   |= >bsel_2                         |   |                 
+                 |   |> not used:296                    | 49|= (regoutputs_0_4) 
+                 |   |> not used:297                    |   |                 
+                 |   |> not used:298                    | 51|= (regoutputs_7_4) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |> not used:300                    | 52|= (regoutputs_1_4) 
+                 |   |= >ain_4                          |   |                 
+                 |   |= >asel_0                         | 53|= (regoutputs_3_4) 
+                 |   |= >asel_2                         |   |                 
+                 |   |> not used:304                    | 54|= (regoutputs_5_4) 
+                 |   |> not used:305                    |   |                 
+                 |   |> not used:306                    | 55|* not used       
+                 |   |> not used:307                    |   |                 
+                 |   |> not used:308                    | 56|* not used       
+                 |   |> not used:309                    |   |                 
+                 |   |> not used:310                    | 57|= asel_0         
+                 |   |> not used:311                    |   |                 
+                 |   |> not used:312                    | 58|= aout_4         
+                 |   |> not used:313                    |   |                 
+                 |   |> not used:314                    |   |                 
+                 |   |> not used:315                    |   |                 
+                 |   |= >wr                             |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   11  |   16  |
+                 | PIM Input Connects |   16  |   36  |
+                 ______________________________________
+                                          27  /   52   = 51  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK E PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |UNUSED
+++++++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |[i/p]
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |[i/p]
+................................................................++++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  0 
+Total count of unique Product Terms  =  0 
+Total Product Terms to be assigned   =  0 
+Max Product Terms used / available   =   0 /  80   = 0.0  %
+
+
+Control Signals for Logic Block E
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block E
+                 ____________________________________________
+                 |   |> not used:317                    |   |                 
+                 |   |> not used:318                    |   |                 
+                 |   |> not used:319                    |   |                 
+                 |   |> not used:320                    |   |                 
+                 |   |> not used:321                    | 63|* not used       
+                 |   |> not used:322                    |   |                 
+                 |   |> not used:323                    | 64|* not used       
+                 |   |> not used:324                    |   |                 
+                 |   |> not used:325                    | 65|* not used       
+                 |   |> not used:326                    |   |                 
+                 |   |> not used:327                    | 66|* not used       
+                 |   |> not used:328                    |   |                 
+                 |   |> not used:329                    | 67|* not used       
+                 |   |> not used:330                    |   |                 
+                 |   |> not used:331                    | 68|* not used       
+                 |   |> not used:332                    |   |                 
+                 |   |> not used:333                    | 69|* not used       
+                 |   |> not used:334                    |   |                 
+                 |   |> not used:335                    | 70|* not used       
+                 |   |> not used:336                    |   |                 
+                 |   |> not used:337                    | 72|* not used       
+                 |   |> not used:338                    |   |                 
+                 |   |> not used:339                    | 73|* not used       
+                 |   |> not used:340                    |   |                 
+                 |   |> not used:341                    | 74|* not used       
+                 |   |> not used:342                    |   |                 
+                 |   |> not used:343                    | 75|* not used       
+                 |   |> not used:344                    |   |                 
+                 |   |> not used:345                    | 76|* not used       
+                 |   |> not used:346                    |   |                 
+                 |   |> not used:347                    | 77|= asel_1         
+                 |   |> not used:348                    |   |                 
+                 |   |> not used:349                    | 78|= ain_3          
+                 |   |> not used:350                    |   |                 
+                 |   |> not used:351                    | 79|= ain_0          
+                 |   |> not used:352                    |   |                 
+                 |   |> not used:353                    |   |                 
+                 |   |> not used:354                    |   |                 
+                 |   |> not used:355                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    3  |   16  |
+                 | PIM Input Connects |    0  |   36  |
+                 ______________________________________
+                                           3  /   52   = 5   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK F PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |UNUSED
+++++++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |[i/p]
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |[i/p]
+................................................................++++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  0 
+Total count of unique Product Terms  =  0 
+Total Product Terms to be assigned   =  0 
+Max Product Terms used / available   =   0 /  80   = 0.0  %
+
+
+Control Signals for Logic Block F
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block F
+                 ____________________________________________
+                 |   |> not used:356                    |   |                 
+                 |   |> not used:357                    |   |                 
+                 |   |> not used:358                    |   |                 
+                 |   |> not used:359                    |   |                 
+                 |   |> not used:360                    | 82|* not used       
+                 |   |> not used:361                    |   |                 
+                 |   |> not used:362                    | 83|* not used       
+                 |   |> not used:363                    |   |                 
+                 |   |> not used:364                    | 84|* not used       
+                 |   |> not used:365                    |   |                 
+                 |   |> not used:366                    | 85|* not used       
+                 |   |> not used:367                    |   |                 
+                 |   |> not used:368                    | 86|* not used       
+                 |   |> not used:369                    |   |                 
+                 |   |> not used:370                    | 87|* not used       
+                 |   |> not used:371                    |   |                 
+                 |   |> not used:372                    | 88|* not used       
+                 |   |> not used:373                    |   |                 
+                 |   |> not used:374                    | 89|* not used       
+                 |   |> not used:375                    |   |                 
+                 |   |> not used:376                    | 91|* not used       
+                 |   |> not used:377                    |   |                 
+                 |   |> not used:378                    | 92|* not used       
+                 |   |> not used:379                    |   |                 
+                 |   |> not used:380                    | 93|* not used       
+                 |   |> not used:381                    |   |                 
+                 |   |> not used:382                    | 94|* not used       
+                 |   |> not used:383                    |   |                 
+                 |   |> not used:384                    | 95|* not used       
+                 |   |> not used:385                    |   |                 
+                 |   |> not used:386                    | 96|= asel_2         
+                 |   |> not used:387                    |   |                 
+                 |   |> not used:388                    | 97|= wr             
+                 |   |> not used:389                    |   |                 
+                 |   |> not used:390                    | 98|= ain_1          
+                 |   |> not used:391                    |   |                 
+                 |   |> not used:392                    |   |                 
+                 |   |> not used:393                    |   |                 
+                 |   |> not used:394                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    3  |   16  |
+                 | PIM Input Connects |    0  |   36  |
+                 ______________________________________
+                                           3  /   52   = 5   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK G PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |aout_1
+XXXXXXXX++++++++................................................................
+| 1 |(regoutputs_5_3)
+......++XX++++++++++++..........................................................
+| 2 |(regoutputs_5_2)
+..........XX++++++++++++++......................................................
+| 3 |(regoutputs_4_2)
+..............XX++++++++++++++..................................................
+| 4 |(regoutputs_3_2)
+..................XX++++++++++++++..............................................
+| 5 |(regoutputs_2_2)
+......................XX++++++++++++++..........................................
+| 6 |(regoutputs_1_2)
+..........................XX++++++++++++++......................................
+| 7 |(regoutputs_0_2)
+..............................XX++++++++++++++..................................
+| 8 |(regoutputs_7_1)
+..................................XX++++++++++++++..............................
+| 9 |(regoutputs_0_3)
+......................................XX++++++++++++++..........................
+|10 |(regoutputs_1_3)
+..........................................XX++++++++++++++......................
+|11 |(regoutputs_2_3)
+..............................................XX++++++++++++++..................
+|12 |(regoutputs_3_3)
+..................................................XX++++++++++++++..............
+|13 |(regoutputs_4_3)
+......................................................XX++++++++++++++..........
+|14 |(regoutputs_6_2)
+..........................................................XX++++++++++++++......
+|15 |(regoutputs_7_2)bsel_0
+................................................................XX++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  16 
+Total count of unique Product Terms  =  38 
+Total Product Terms to be assigned   =  38 
+Max Product Terms used / available   =  38 /  80   = 47.51 %
+
+
+Control Signals for Logic Block G
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block G
+                 ____________________________________________
+                 |   |= >ain_2                          |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |> not used:398                    |   |                 
+                 |   |= >regoutputs_..                  |103|= aout_1         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |104|= (regoutputs_5_3) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |105|= (regoutputs_5_2) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |106|= (regoutputs_4_2) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |107|= (regoutputs_3_2) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >wr                             |108|= (regoutputs_2_2) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |109|= (regoutputs_1_2) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |110|= (regoutputs_0_2) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |112|= (regoutputs_7_1) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >asel_0                         |113|= (regoutputs_0_3) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >asel_1                         |114|= (regoutputs_1_3) 
+                 |   |> not used:420                    |   |                 
+                 |   |= >regoutputs_..                  |115|= (regoutputs_2_3) 
+                 |   |> not used:422                    |   |                 
+                 |   |= >regoutputs_..                  |116|= (regoutputs_3_3) 
+                 |   |> not used:424                    |   |                 
+                 |   |> not used:425                    |117|= (regoutputs_4_3) 
+                 |   |> not used:426                    |   |                 
+                 |   |> not used:427                    |118|= (regoutputs_6_2) 
+                 |   |= >asel_2                         |   |                 
+                 |   |> not used:429                    |119|= (regoutputs_7_2)bsel_0 
+                 |   |= >ain_1                          |   |                 
+                 |   |> not used:431                    |   |                 
+                 |   |> not used:432                    |   |                 
+                 |   |= >ain_3                          |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   16  |   16  |
+                 | PIM Input Connects |   29  |   36  |
+                 ______________________________________
+                                          45  /   52   = 86  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK H PLACEMENT   (22:44:37)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |aout_0
+XXXXXXXX++++++++................................................................
+| 1 |(regoutputs_5_1)
+......++XX++++++++++++..........................................................
+| 2 |(regoutputs_5_0)
+..........XX++++++++++++++......................................................
+| 3 |(regoutputs_4_0)
+..............XX++++++++++++++..................................................
+| 4 |(regoutputs_3_0)
+..................XX++++++++++++++..............................................
+| 5 |(regoutputs_2_0)
+......................XX++++++++++++++..........................................
+| 6 |(regoutputs_1_0)
+..........................XX++++++++++++++......................................
+| 7 |(regoutputs_0_0)
+..............................XX++++++++++++++..................................
+| 8 |(regoutputs_6_1)
+..................................XX++++++++++++++..............................
+| 9 |(regoutputs_0_1)
+......................................XX++++++++++++++..........................
+|10 |(regoutputs_1_1)
+..........................................XX++++++++++++++......................
+|11 |(regoutputs_2_1)
+..............................................XX++++++++++++++..................
+|12 |(regoutputs_3_1)
+..................................................XX++++++++++++++..............
+|13 |(regoutputs_4_1)
+......................................................XX++++++++++++++..........
+|14 |(regoutputs_6_0)bsel_1
+..........................................................XX++++++++++++++......
+|15 |(regoutputs_7_0)ain_4
+................................................................XX++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  16 
+Total count of unique Product Terms  =  38 
+Total Product Terms to be assigned   =  38 
+Max Product Terms used / available   =  38 /  80   = 47.51 %
+
+
+Control Signals for Logic Block H
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block H
+                 ____________________________________________
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |122|= aout_0         
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |123|= (regoutputs_5_1) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |124|= (regoutputs_5_0) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |125|= (regoutputs_4_0) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |= >regoutputs_..                  |126|= (regoutputs_3_0) 
+                 |   |= >wr                             |   |                 
+                 |   |> not used:448                    |127|= (regoutputs_2_0) 
+                 |   |= >asel_1                         |   |                 
+                 |   |= >asel_2                         |128|= (regoutputs_1_0) 
+                 |   |> not used:451                    |   |                 
+                 |   |= >ain_1                          |129|= (regoutputs_0_0) 
+                 |   |> not used:453                    |   |                 
+                 |   |> not used:454                    |131|= (regoutputs_6_1) 
+                 |   |= >asel_0                         |   |                 
+                 |   |> not used:456                    |132|= (regoutputs_0_1) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |> not used:458                    |133|= (regoutputs_1_1) 
+                 |   |= >regoutputs_..                  |   |                 
+                 |   |> not used:460                    |134|= (regoutputs_2_1) 
+                 |   |> not used:461                    |   |                 
+                 |   |> not used:462                    |135|= (regoutputs_3_1) 
+                 |   |> not used:463                    |   |                 
+                 |   |> not used:464                    |136|= (regoutputs_4_1) 
+                 |   |= >ain_0                          |   |                 
+                 |   |> not used:466                    |137|= (regoutputs_6_0)bsel_1 
+                 |   |> not used:467                    |   |                 
+                 |   |> not used:468                    |138|= (regoutputs_7_0)ain_4 
+                 |   |> not used:469                    |   |                 
+                 |   |> not used:470                    |   |                 
+                 |   |> not used:471                    |   |                 
+                 |   |> not used:472                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   16  |   16  |
+                 | PIM Input Connects |   21  |   36  |
+                 ______________________________________
+                                          37  /   52   = 71  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (22:44:37)
+
+
+Device:  c375i
+Package: CY7C375I-125AC
+
+                  1  :  GND
+                  2  :  bout_6
+                  3  :  bout_2
+                  4  :  (regoutputs_6_6)
+                  5  :  (regoutputs_6_3)
+                  6  :  (regoutputs_4_6)
+                  7  :  (regoutputs_2_6)
+                  8  :  (regoutputs_0_6)
+                  9  :  aout_6
+                 10  :  GND
+                 11  :  aout_3
+                 12  :  bout_3
+                 13  :  (regoutputs_1_6)
+                 14  :  (regoutputs_3_6)
+                 15  :  (regoutputs_5_6)
+                 16  :  (regoutputs_7_3)
+                 17  :  (regoutputs_7_6)
+                 18  :  aout_2
+                 19  :  clk
+                 20  :  VCC
+                 21  :  GND
+                 22  :  ain_7
+                 23  :  bout_0
+                 24  :  Not Used
+                 25  :  Not Used
+                 26  :  (regoutputs_7_5)
+                 27  :  (regoutputs_5_5)
+                 28  :  (regoutputs_3_5)
+                 29  :  (regoutputs_1_5)
+                 30  :  aout_5
+                 31  :  GND
+                 32  :  bout_5
+                 33  :  (regoutputs_0_5)
+                 34  :  (regoutputs_2_5)
+                 35  :  (regoutputs_4_5)
+                 36  :  (regoutputs_6_5)
+                 37  :  Not Used
+                 38  :  Not Used
+                 39  :  bout_1
+                 40  :  VCC
+                 41  :  GND
+                 42  :  bout_4
+                 43  :  Not Used
+                 44  :  Not Used
+                 45  :  Not Used
+                 46  :  (regoutputs_6_4)
+                 47  :  (regoutputs_4_4)
+                 48  :  (regoutputs_2_4)
+                 49  :  (regoutputs_0_4)
+                 50  :  GND
+                 51  :  (regoutputs_7_4)
+                 52  :  (regoutputs_1_4)
+                 53  :  (regoutputs_3_4)
+                 54  :  (regoutputs_5_4)
+                 55  :  Not Used
+                 56  :  Not Used
+                 57  :  asel_0
+                 58  :  aout_4
+                 59  :  ain_6
+                 60  :  VCC
+                 61  :  GND
+                 62  :  VCC
+                 63  :  Not Used
+                 64  :  Not Used
+                 65  :  Not Used
+                 66  :  Not Used
+                 67  :  Not Used
+                 68  :  Not Used
+                 69  :  Not Used
+                 70  :  Not Used
+                 71  :  GND
+                 72  :  Not Used
+                 73  :  Not Used
+                 74  :  Not Used
+                 75  :  Not Used
+                 76  :  Not Used
+                 77  :  asel_1
+                 78  :  ain_3
+                 79  :  ain_0
+                 80  :  VCC
+                 81  :  GND
+                 82  :  Not Used
+                 83  :  Not Used
+                 84  :  Not Used
+                 85  :  Not Used
+                 86  :  Not Used
+                 87  :  Not Used
+                 88  :  Not Used
+                 89  :  Not Used
+                 90  :  GND
+                 91  :  Not Used
+                 92  :  Not Used
+                 93  :  Not Used
+                 94  :  Not Used
+                 95  :  Not Used
+                 96  :  asel_2
+                 97  :  wr
+                 98  :  ain_1
+                 99  :  ain_5
+                100  :  VCC
+                101  :  GND
+                102  :  ain_2
+                103  :  aout_1
+                104  :  (regoutputs_5_3)
+                105  :  (regoutputs_5_2)
+                106  :  (regoutputs_4_2)
+                107  :  (regoutputs_3_2)
+                108  :  (regoutputs_2_2)
+                109  :  (regoutputs_1_2)
+                110  :  (regoutputs_0_2)
+                111  :  GND
+                112  :  (regoutputs_7_1)
+                113  :  (regoutputs_0_3)
+                114  :  (regoutputs_1_3)
+                115  :  (regoutputs_2_3)
+                116  :  (regoutputs_3_3)
+                117  :  (regoutputs_4_3)
+                118  :  (regoutputs_6_2)
+                119  :  (regoutputs_7_2)bsel_0
+                120  :  VCC
+                121  :  GND
+                122  :  aout_0
+                123  :  (regoutputs_5_1)
+                124  :  (regoutputs_5_0)
+                125  :  (regoutputs_4_0)
+                126  :  (regoutputs_3_0)
+                127  :  (regoutputs_2_0)
+                128  :  (regoutputs_1_0)
+                129  :  (regoutputs_0_0)
+                130  :  GND
+                131  :  (regoutputs_6_1)
+                132  :  (regoutputs_0_1)
+                133  :  (regoutputs_1_1)
+                134  :  (regoutputs_2_1)
+                135  :  (regoutputs_3_1)
+                136  :  (regoutputs_4_1)
+                137  :  (regoutputs_6_0)bsel_1
+                138  :  (regoutputs_7_0)ain_4
+                139  :  VPP
+                140  :  VCC
+                141  :  GND
+                142  :  VCC
+                143  :  bout_7
+                144  :  Not Used
+                145  :  Not Used
+                146  :  Not Used
+                147  :  (regoutputs_6_7)
+                148  :  (regoutputs_4_7)
+                149  :  (regoutputs_2_7)
+                150  :  (regoutputs_0_7)
+                151  :  GND
+                152  :  (regoutputs_7_7)
+                153  :  (regoutputs_1_7)
+                154  :  (regoutputs_3_7)
+                155  :  (regoutputs_5_7)
+                156  :  Not Used
+                157  :  Not Used
+                158  :  bsel_2
+                159  :  aout_7
+                160  :  VCC
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    1  |    1  |
+                 | Clock/Inputs       |    4  |    4  |
+                 | I/O Macrocells     |   88  |  128  |
+                 ______________________________________
+                                          93  /  133   = 69  %
+
+
+
+                                      Required     Max (Available)
+          CLOCK/LATCH ENABLE signals     1            4
+          Input REG/LATCH signals        0            4
+          Input PIN signals              4            4
+          Input PINs using I/O cells     8            8
+          Output PIN signals            80          120
+
+
+          Total PIN signals             93          133
+          Macrocells Used               80          128
+          Unique Product Terms         256          640
+
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PRESET/RESET AND OUTPUT ENABLE COMBINATIONS
+
+PRESET: GND
+RESET : GND
+Used by Logic Blocks: ABCDGH
+Total unique inputs =  76 
+count of registered equations =  64 
+==>OE: GND or VCC
+   count of OE equations =  64 
+
+
+PRESET: NONE-COMBINATORIAL
+RESET : NONE-COMBINATORIAL
+Total unique inputs =  70 
+count of combinatorial equations =  16 
+==>OE: GND or VCC
+   count of OE equations =  16 
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+TIMING PATH ANALYSIS       (22:44:37) using Package: CY7C375I-125AC
+
+Messages:
+
+----------------------------------------------------------------------------
+Signal Name | Delay Type  |   tmax   | Path Description
+----------------------------------------------------------------------------
+cmb::bout_6[2]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_6.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::bout_2[3]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_2.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_6)[4]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_3)[5]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_6)[6]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_6)[7]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_6)[8]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_6[9]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_6.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_3[11]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_3.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::bout_3[12]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_3.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_6)[13]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_6)[14]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_6)[15]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_3)[16]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_6)[17]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_6.Q
+              tSCS            8.0 ns     1 pass
+out::aout_6
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_2[18]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_2.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::bout_0[23]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_0.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_5)[26]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_5)[27]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_5)[28]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_5)[29]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_5[30]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_5.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::bout_5[32]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_5.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_5)[33]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_5)[34]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_5)[35]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_5)[36]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_5.Q
+              tSCS            8.0 ns     1 pass
+out::aout_5
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::bout_1[39]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_1.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::bout_4[42]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_4.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_4)[46]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_4)[47]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_4)[48]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_4)[49]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_4)[51]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_4)[52]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_4)[53]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_4)[54]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_4.Q
+              tSCS            8.0 ns     1 pass
+out::aout_4
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_4[58]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_4.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_1[103]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_1.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_3)[104]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_2)[105]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_2)[106]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_2)[107]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_2)[108]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_2)[109]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_2)[110]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_1)[112]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_3)[113]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_3)[114]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_3)[115]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_3)[116]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_3)[117]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_3.Q
+              tSCS            8.0 ns     1 pass
+out::aout_3
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_2)[118]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_2)bsel_0[119]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_2.Q
+              tSCS            8.0 ns     1 pass
+out::aout_2
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_0[122]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_0.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_1)[123]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_0)[124]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_0)[125]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_0)[126]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_0)[127]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_0)[128]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_0)[129]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_1)[131]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_1)[132]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_1)[133]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_1)[134]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_1)[135]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_1)[136]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_1.Q
+              tSCS            8.0 ns     1 pass
+out::aout_1
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_0)bsel_1[137]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_0)ain_4[138]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_0.Q
+              tSCS            8.0 ns     1 pass
+out::aout_0
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::bout_7[143]
+inp::bsel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_0_7.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_6_7)[147]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_6_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_4_7)[148]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_4_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_2_7)[149]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_2_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_0_7)[150]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_0_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_7_7)[152]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_7_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_1_7)[153]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_1_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_3_7)[154]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_3_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+reg::(regoutputs_5_7)[155]
+inp::asel_2
+              tS              4.5 ns     1 pass
+inp::regoutputs_5_7.Q
+              tSCS            8.0 ns     1 pass
+out::aout_7
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+cmb::aout_7[159]
+inp::asel_2
+              tPD             8.5 ns     1 pass
+inp::regoutputs_7_7.Q
+              tCO             12.0 ns    1 pass
+----------------------------------------------------------------------------
+
+Worst Case Path Summary
+-----------------------
+
+                    tPD = 8.5 ns for bout_6
+                     tS = 4.5 ns for regoutputs_6_6.T
+                   tSCS = 8.0 ns for regoutputs_6_6.T
+                    tCO = 12.0 ns for bout_6
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+JEDEC ASSEMBLE             (22:44:37)
+
+Messages:
+  Information: Processing JEDEC for Logic Block 1.
+  Information: Processing JEDEC for Logic Block 2.
+  Information: Processing JEDEC for Logic Block 3.
+  Information: Processing JEDEC for Logic Block 4.
+  Information: Processing JEDEC for Logic Block 5.
+  Information: Processing JEDEC for Logic Block 6.
+  Information: Processing JEDEC for Logic Block 7.
+  Information: Processing JEDEC for Logic Block 8.
+  Information: JEDEC output file 'dpreg.jed' created.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 22:44:38

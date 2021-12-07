@@ -1,0 +1,1 @@
+-m -q -yv2 -e10 -w100 -o2 -ygs -fO -fP -v10 -dc344 -pCY7C344-20HC/HI -a and2.vhd -a dflop.vhd -b regb.vhd 

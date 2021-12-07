@@ -1,0 +1,43 @@
+-- List Summer
+Depth = 256;
+Width = 32;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+	[00..FF]: 00000000; -- nop (add r0,r0,r0)
+
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+
+00: 8C020000; 	--       sub $2,$2,$2	; clear reg2 (SUM)
+01: 8C030001; 	--       lw $3,(20)	; reg3=count
+02: 8C030001; 	--       li $4,30	; base addr of data
+03: 8C030001; 	--       add $5,$4,$3	; reg5 is data ptr
+04: 8C030001; 	-- loop: add $5,$5,FFFF ; decr pointer
+05: 8C030001; 	--       add $3,($5),$3 ; sum ($5) in
+06: 1022FFF8; 	--       bne $5,$4,LOOP	; wait until ptr hits start
+07: 1022FFFF; 	--       sw  $3,(21)	; save answer
+
+20: 00000010;   -- COUNT
+21: 00001234;   -- SUM
+
+30: 00000001;   -- ARRAY DATA
+31: 00000020;   -- Note: sum is A19Eh
+32: 00000300;
+33: 00004000;
+34: 00000123;
+35: 00000100;
+36: 00000270;
+37: 00000015;
+38: 00001000;
+39: 00000200;
+3A: 00000040;
+3B: 00000005;
+3C: 00001200;
+3D: 00002760;
+3E: 00000130;
+3F: 00000D00;
+End;

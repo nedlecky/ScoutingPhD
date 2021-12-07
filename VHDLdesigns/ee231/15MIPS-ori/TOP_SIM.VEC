@@ -1,0 +1,15 @@
+% Simulation Test Vectors for MIPS - File: Top_spim.vec %
+START 0ns;
+STOP 3500ns;
+% Generate Clock %
+INTERVAL 100ns;
+INPUTS ClocK;
+PATTERN 
+0 1;
+% Reset State Machine %
+INPUTS Reset;
+PATTERN
+0>1
+150>0;
+OUTPUTS PC instruction_out Branch_out Zero_out read_data_1_out read_data_2_out ALU_result_out write_data_out Regwrite_out Memwrite_out; 
+BURIED |idecode:ID|register_array;

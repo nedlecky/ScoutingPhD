@@ -1,0 +1,1 @@
+-m -q -o2 -ygs -fO -fP -v10 -dc344 -pCY7C344-20HC/HI -b and10.vhd 

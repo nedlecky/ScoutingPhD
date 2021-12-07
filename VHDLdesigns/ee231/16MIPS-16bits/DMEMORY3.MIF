@@ -1,0 +1,29 @@
+--  MIPS Data Memory Initialization File
+depth=256;
+width=16;
+Content
+Begin
+-- default value for memory
+[00..FF] : 0000;
+20: 0010;   -- COUNT
+21: 1234;   -- SUM
+22: 0001;   -- Constant 1
+
+30: 0001;   -- ARRAY DATA
+31: 0020;   -- Note: sum is A19Eh
+32: 0300;
+33: 4000;
+34: 0123;
+35: 0100;
+36: 0270;
+37: 0015;
+38: 1000;
+39: 0200;
+3A: 0040;
+3B: 0005;
+3C: 1200;
+3D: 2760;
+3E: 0130;
+3F: 0D00;
+End;
+

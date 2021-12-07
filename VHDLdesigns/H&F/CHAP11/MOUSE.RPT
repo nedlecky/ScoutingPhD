@@ -1,0 +1,2728 @@
+Project Information                               c:\booksoft\chap11\mouse.rpt
+
+MAX+plus II Compiler Report File
+Version 9.23 3/19/99
+Compiled: 06/03/1999 09:23:50
+
+Copyright (C) 1988-1999 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+MOUSE
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+mouse     EPF10K10LC84-3   2      22     2    0         0  %    267      46 %
+
+User Pins:                 2      22     2  
+
+
+
+Project Information                               c:\booksoft\chap11\mouse.rpt
+
+** STATE MACHINE ASSIGNMENTS **
+
+
+mouse_state: MACHINE
+        OF BITS (
+           mouse_state~6,
+           mouse_state~5,
+           mouse_state~4,
+           mouse_state~3,
+           mouse_state~2
+        )
+        WITH STATES (
+                   INHIBIT_TRANS = B"00000", 
+                    LOAD_COMMAND = B"11000", 
+                   LOAD_COMMAND2 = B"10100", 
+               WAIT_OUTPUT_READY = B"10010", 
+                    WAIT_CMD_ACK = B"10001", 
+                   INPUT_PACKETS = B"10000"
+);
+
+
+
+Project Information                               c:\booksoft\chap11\mouse.rpt
+
+** FILE HIERARCHY **
+
+
+
+|lpm_add_sub:283|
+|lpm_add_sub:283|addcore:adder|
+|lpm_add_sub:283|altshift:result_ext_latency_ffs|
+|lpm_add_sub:283|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:283|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:1716|
+|lpm_add_sub:1716|addcore:adder|
+|lpm_add_sub:1716|altshift:result_ext_latency_ffs|
+|lpm_add_sub:1716|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:1716|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:2572|
+|lpm_add_sub:2572|addcore:adder|
+|lpm_add_sub:2572|altshift:result_ext_latency_ffs|
+|lpm_add_sub:2572|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:2572|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:2729|
+|lpm_add_sub:2729|addcore:adder|
+|lpm_add_sub:2729|altshift:result_ext_latency_ffs|
+|lpm_add_sub:2729|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:2729|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:5080|
+|lpm_add_sub:5080|addcore:adder|
+|lpm_add_sub:5080|altshift:result_ext_latency_ffs|
+|lpm_add_sub:5080|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:5080|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:5139|
+|lpm_add_sub:5139|addcore:adder|
+|lpm_add_sub:5139|altshift:result_ext_latency_ffs|
+|lpm_add_sub:5139|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:5139|altshift:oflow_ext_latency_ffs|
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+***** Logic for device 'mouse' compiled without errors.
+
+
+
+
+Device: EPF10K10LC84-3
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+
+                                                                                         
+                                                                                         
+                                                                                         
+                                                              m                          
+                                                              o                          
+                                                              u                          
+                                                              s                          
+                                                              e                          
+                             r                                _                          
+                             i  l                             c                          
+                             g  e                             u                    ^     
+                             h  f                             r                    C     
+                          R  t  t  R  R  R  R     R           s     R  R  R  R     O     
+                          E  _  _  E  E  E  E     E           o     E  E  E  E     N     
+                          S  b  b  S  S  S  S  V  S  G  G  G  r  G  S  S  S  S     F     
+                          E  u  u  E  E  E  E  C  E  N  N  N  _  N  E  E  E  E     _  ^  
+                          R  t  t  R  R  R  R  C  R  D  D  D  r  D  R  R  R  R  #  D  n  
+                          V  t  t  V  V  V  V  I  V  I  I  I  o  I  V  V  V  V  T  O  C  
+                          E  o  o  E  E  E  E  N  E  N  N  N  w  N  E  E  E  E  C  N  E  
+                          D  n  n  D  D  D  D  T  D  T  T  T  8  T  D  D  D  D  K  E  O  
+                        -----------------------------------------------------------------_ 
+                      /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
+              ^DATA0 | 12                                                              74 | #TDO 
+               ^DCLK | 13                                                              73 | RESERVED 
+                ^nCE | 14                                                              72 | mouse_clk 
+                #TDI | 15                                                              71 | RESERVED 
+            RESERVED | 16                                                              70 | RESERVED 
+          mouse_data | 17                                                              69 | RESERVED 
+            RESERVED | 18                                                              68 | GNDINT 
+            RESERVED | 19                                                              67 | mouse_cursor_row2 
+              VCCINT | 20                                                              66 | mouse_cursor_column4 
+   mouse_cursor_row3 | 21                                                              65 | mouse_cursor_column3 
+mouse_cursor_column5 | 22                        EPF10K10LC84-3                        64 | mouse_cursor_column2 
+   mouse_cursor_row0 | 23                                                              63 | VCCINT 
+mouse_cursor_column1 | 24                                                              62 | RESERVED 
+mouse_cursor_column0 | 25                                                              61 | mouse_cursor_row7 
+              GNDINT | 26                                                              60 | mouse_cursor_column7 
+   mouse_cursor_row6 | 27                                                              59 | mouse_cursor_column9 
+   mouse_cursor_row4 | 28                                                              58 | mouse_cursor_column8 
+mouse_cursor_column6 | 29                                                              57 | #TMS 
+   mouse_cursor_row5 | 30                                                              56 | #TRST 
+              ^MSEL0 | 31                                                              55 | ^nSTATUS 
+              ^MSEL1 | 32                                                              54 | RESERVED 
+                     |_  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  _| 
+                       ------------------------------------------------------------------ 
+                          V  ^  R  R  R  R  R  V  G  r  c  G  V  G  R  R  m  R  R  m  R  
+                          C  n  E  E  E  E  E  C  N  e  l  N  C  N  E  E  o  E  E  o  E  
+                          C  C  S  S  S  S  S  C  D  s  o  D  C  D  S  S  u  S  S  u  S  
+                          I  O  E  E  E  E  E  I  I  e  c  I  I  I  E  E  s  E  E  s  E  
+                          N  N  R  R  R  R  R  N  N  t  k  N  N  N  R  R  e  R  R  e  R  
+                          T  F  V  V  V  V  V  T  T     _  T  T  T  V  V  _  V  V  _  V  
+                             I  E  E  E  E  E           2           E  E  c  E  E  c  E  
+                             G  D  D  D  D  D           5           D  D  u  D  D  u  D  
+                                                        M                 r        r     
+                                                        h                 s        s     
+                                                        z                 o        o     
+                                                                          r        r     
+                                                                          _        _     
+                                                                          r        r     
+                                                                          o        o     
+                                                                          w        w     
+                                                                          1        9     
+                                                                                         
+                                                                                         
+                                                                                         
+
+
+N.C. = No Connect, This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+A1       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       2/22(  9%)   
+A2       3/ 8( 37%)   0/ 8(  0%)   1/ 8( 12%)    1/2    1/2       1/22(  4%)   
+A3       6/ 8( 75%)   0/ 8(  0%)   2/ 8( 25%)    1/2    1/2       1/22(  4%)   
+A4       8/ 8(100%)   0/ 8(  0%)   2/ 8( 25%)    2/2    1/2       8/22( 36%)   
+A5       2/ 8( 25%)   0/ 8(  0%)   2/ 8( 25%)    1/2    1/2       6/22( 27%)   
+A6       8/ 8(100%)   0/ 8(  0%)   1/ 8( 12%)    1/2    1/2       6/22( 27%)   
+A7       2/ 8( 25%)   0/ 8(  0%)   2/ 8( 25%)    1/2    1/2       4/22( 18%)   
+A8       2/ 8( 25%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2       4/22( 18%)   
+A9       6/ 8( 75%)   1/ 8( 12%)   2/ 8( 25%)    2/2    2/2       7/22( 31%)   
+A10      8/ 8(100%)   0/ 8(  0%)   1/ 8( 12%)    1/2    1/2       9/22( 40%)   
+A11      3/ 8( 37%)   0/ 8(  0%)   3/ 8( 37%)    1/2    0/2       2/22(  9%)   
+A12      2/ 8( 25%)   0/ 8(  0%)   2/ 8( 25%)    1/2    1/2       3/22( 13%)   
+A13      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+A14      5/ 8( 62%)   0/ 8(  0%)   1/ 8( 12%)    1/2    1/2       2/22(  9%)   
+A15      3/ 8( 37%)   0/ 8(  0%)   2/ 8( 25%)    1/2    1/2       6/22( 27%)   
+A16      6/ 8( 75%)   3/ 8( 37%)   0/ 8(  0%)    1/2    1/2       9/22( 40%)   
+A17      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       2/22(  9%)   
+A18      5/ 8( 62%)   0/ 8(  0%)   1/ 8( 12%)    1/2    1/2       2/22(  9%)   
+A19      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       1/22(  4%)   
+A20      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    1/2    1/2       4/22( 18%)   
+A21      1/ 8( 12%)   1/ 8( 12%)   0/ 8(  0%)    1/2    0/2       1/22(  4%)   
+A22      8/ 8(100%)   1/ 8( 12%)   2/ 8( 25%)    1/2    1/2       5/22( 22%)   
+A23      5/ 8( 62%)   2/ 8( 25%)   2/ 8( 25%)    1/2    0/2       7/22( 31%)   
+A24      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       2/22(  9%)   
+B2       8/ 8(100%)   2/ 8( 25%)   2/ 8( 25%)    1/2    1/2      10/22( 45%)   
+B3       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+B4       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+B5       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+B6       2/ 8( 25%)   2/ 8( 25%)   1/ 8( 12%)    1/2    0/2       6/22( 27%)   
+B7       7/ 8( 87%)   0/ 8(  0%)   3/ 8( 37%)    1/2    0/2      10/22( 45%)   
+B8       6/ 8( 75%)   1/ 8( 12%)   3/ 8( 37%)    1/2    0/2       9/22( 40%)   
+B9       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+B10      7/ 8( 87%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2      11/22( 50%)   
+B11      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+B12      7/ 8( 87%)   0/ 8(  0%)   3/ 8( 37%)    1/2    0/2      10/22( 45%)   
+B14      7/ 8( 87%)   1/ 8( 12%)   3/ 8( 37%)    1/2    0/2      10/22( 45%)   
+B15      6/ 8( 75%)   1/ 8( 12%)   3/ 8( 37%)    1/2    0/2       9/22( 40%)   
+B17      6/ 8( 75%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2      14/22( 63%)   
+B18      8/ 8(100%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2      13/22( 59%)   
+B19      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+B20      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+B21      3/ 8( 37%)   1/ 8( 12%)   3/ 8( 37%)    1/2    0/2       6/22( 27%)   
+B22      6/ 8( 75%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2       3/22( 13%)   
+B23      6/ 8( 75%)   0/ 8(  0%)   3/ 8( 37%)    1/2    0/2       2/22(  9%)   
+B24      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+C1       8/ 8(100%)   0/ 8(  0%)   3/ 8( 37%)    1/2    0/2      11/22( 50%)   
+C3       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+C4       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+C5       6/ 8( 75%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2      11/22( 50%)   
+C6       8/ 8(100%)   0/ 8(  0%)   3/ 8( 37%)    1/2    0/2      14/22( 63%)   
+C7       6/ 8( 75%)   1/ 8( 12%)   4/ 8( 50%)    1/2    0/2       8/22( 36%)   
+C8       1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+C9       1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+C10      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+C11      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    1/2    1/2       4/22( 18%)   
+C12      5/ 8( 62%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2      10/22( 45%)   
+C13      8/ 8(100%)   2/ 8( 25%)   4/ 8( 50%)    1/2    0/2      13/22( 59%)   
+C16      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+C18      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+C19      6/ 8( 75%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2      10/22( 45%)   
+C20      8/ 8(100%)   2/ 8( 25%)   2/ 8( 25%)    0/2    0/2      14/22( 63%)   
+C21      7/ 8( 87%)   1/ 8( 12%)   3/ 8( 37%)    0/2    0/2      11/22( 50%)   
+C22      6/ 8( 75%)   1/ 8( 12%)   2/ 8( 25%)    0/2    0/2       7/22( 31%)   
+C23      7/ 8( 87%)   0/ 8(  0%)   3/ 8( 37%)    1/2    0/2      12/22( 54%)   
+C24      8/ 8(100%)   1/ 8( 12%)   3/ 8( 37%)    1/2    0/2      16/22( 72%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 2/6      ( 33%)
+Total I/O pins used:                            24/53     ( 45%)
+Total logic cells used:                        267/576    ( 46%)
+Total embedded cells used:                       0/24     (  0%)
+Total EABs used:                                 0/3      (  0%)
+Average fan-in:                                 3.50/4    ( 87%)
+Total fan-in:                                 937/2304    ( 40%)
+
+Total input pins required:                       2
+Total input I/O cell registers required:         0
+Total output pins required:                     22
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               2
+Total reserved pins required                     0
+Total logic cells required:                    267
+Total flipflops required:                      128
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                        80/ 576   ( 13%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  EA  13  14  15  16  17  18  19  20  21  22  23  24  Total(LC/EC)
+ A:      1   3   6   8   2   8   2   2   6   8   3   2   0   1   5   3   6   1   5   1   1   1   8   5   1     89/0  
+ B:      0   8   1   1   1   2   7   6   1   7   1   7   0   0   7   6   0   6   8   1   1   3   6   6   1     87/0  
+ C:      8   0   1   1   6   8   6   1   1   1   1   5   0   8   0   0   1   0   1   6   8   7   6   7   8     91/0  
+
+Total:   9  11   8  10   9  18  15   9   8  16   5  14   0   9  12   9   7   7  14   8  10  11  20  18  10    267/0  
+
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  43      -     -    -    --      INPUT  G             0    0    0    0  clock_25Mhz
+  72      -     -    A    --      BIDIR                0    1    0    1  mouse_clk
+  17      -     -    A    --      BIDIR                0    1    0    3  mouse_data
+  42      -     -    -    --      INPUT  G             0    0    0    1  reset
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   9      -     -    -    02     OUTPUT                0    1    0    0  left_button
+  72      -     -    A    --        TRI                0    1    0    1  mouse_clk
+  25      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_column0
+  24      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_column1
+  64      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_column2
+  65      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_column3
+  66      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_column4
+  22      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_column5
+  29      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_column6
+  60      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_column7
+  58      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_column8
+  59      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_column9
+  23      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_row0
+  49      -     -    -    16     OUTPUT                0    1    0    0  mouse_cursor_row1
+  67      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_row2
+  21      -     -    B    --     OUTPUT                0    1    0    0  mouse_cursor_row3
+  28      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_row4
+  30      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_row5
+  27      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_row6
+  61      -     -    C    --     OUTPUT                0    1    0    0  mouse_cursor_row7
+  83      -     -    -    13     OUTPUT                0    1    0    0  mouse_cursor_row8
+  52      -     -    -    19     OUTPUT                0    1    0    0  mouse_cursor_row9
+  17      -     -    A    --        TRI                0    1    0    3  mouse_data
+  10      -     -    -    01     OUTPUT                0    1    0    0  right_button
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      1     -    A    02       AND2                0    2    0    4  |LPM_ADD_SUB:283|addcore:adder|:83
+   -      5     -    A    14       AND2                0    2    0    1  |LPM_ADD_SUB:283|addcore:adder|:87
+   -      1     -    A    14       AND2                0    4    0    4  |LPM_ADD_SUB:283|addcore:adder|:95
+   -      5     -    A    18       AND2                0    2    0    1  |LPM_ADD_SUB:283|addcore:adder|:99
+   -      1     -    A    18       AND2                0    4    0    3  |LPM_ADD_SUB:283|addcore:adder|:107
+   -      6     -    A    03       AND2                0    2    0    1  |LPM_ADD_SUB:283|addcore:adder|:111
+   -      8     -    A    06       AND2                0    2    0    1  |LPM_ADD_SUB:1716|addcore:adder|:55
+   -      2     -    A    22        OR2                0    4    0    1  |LPM_ADD_SUB:2572|addcore:adder|:69
+   -      6     -    B    12        OR2                0    2    0    1  |LPM_ADD_SUB:5080|addcore:adder|pcarry0
+   -      7     -    B    12        OR2                0    4    0    2  |LPM_ADD_SUB:5080|addcore:adder|pcarry1
+   -      3     -    B    12        OR2                0    3    0    2  |LPM_ADD_SUB:5080|addcore:adder|pcarry2
+   -      1     -    B    08        OR2                0    3    0    2  |LPM_ADD_SUB:5080|addcore:adder|pcarry3
+   -      5     -    C    06        OR2                0    3    0    2  |LPM_ADD_SUB:5080|addcore:adder|pcarry4
+   -      7     -    C    06        OR2                0    3    0    2  |LPM_ADD_SUB:5080|addcore:adder|pcarry5
+   -      1     -    C    06        OR2                0    3    0    2  |LPM_ADD_SUB:5080|addcore:adder|pcarry6
+   -      6     -    C    21        OR2                0    3    0    2  |LPM_ADD_SUB:5080|addcore:adder|pcarry7
+   -      4     -    C    12        OR2                0    3    0    1  |LPM_ADD_SUB:5080|addcore:adder|:127
+   -      6     -    C    06        OR2                0    3    0    1  |LPM_ADD_SUB:5080|addcore:adder|:128
+   -      8     -    C    06        OR2                0    3    0    1  |LPM_ADD_SUB:5080|addcore:adder|:129
+   -      8     -    C    24        OR2                0    3    0    1  |LPM_ADD_SUB:5080|addcore:adder|:130
+   -      4     -    C    21        OR2                0    3    0    1  |LPM_ADD_SUB:5080|addcore:adder|:131
+   -      3     -    C    21        OR2                0    4    0    1  |LPM_ADD_SUB:5080|addcore:adder|:132
+   -      7     -    B    07        OR2                0    4    0    2  |LPM_ADD_SUB:5139|addcore:adder|pcarry1
+   -      1     -    B    07        OR2                0    3    0    2  |LPM_ADD_SUB:5139|addcore:adder|pcarry2
+   -      6     -    B    10        OR2                0    3    0    2  |LPM_ADD_SUB:5139|addcore:adder|pcarry3
+   -      7     -    B    10        OR2                0    3    0    2  |LPM_ADD_SUB:5139|addcore:adder|pcarry4
+   -      4     -    B    10        OR2                0    3    0    2  |LPM_ADD_SUB:5139|addcore:adder|pcarry5
+   -      3     -    C    07        OR2                0    3    0    2  |LPM_ADD_SUB:5139|addcore:adder|pcarry6
+   -      8     -    C    20        OR2                0    3    0    2  |LPM_ADD_SUB:5139|addcore:adder|pcarry7
+   -      6     -    B    07       AND2                0    2    0    1  |LPM_ADD_SUB:5139|addcore:adder|:72
+   -      4     -    C    07        OR2                0    3    0    1  |LPM_ADD_SUB:5139|addcore:adder|:129
+   -      7     -    C    20        OR2                0    3    0    1  |LPM_ADD_SUB:5139|addcore:adder|:131
+   -      2     -    C    20        OR2                0    4    0    1  |LPM_ADD_SUB:5139|addcore:adder|:132
+   -      6     -    A    09       DFFE   +            0    3    0    1  mouse_state~2
+   -      5     -    A    09       DFFE   +            0    2    0    3  mouse_state~3
+   -      1     -    A    12       DFFE   +            0    1    0    4  mouse_state~4
+   -      1     -    A    03       DFFE   +            0    3    0    4  mouse_state~5
+   -      3     -    A    03       DFFE   +            0    2    1   24  mouse_state~6
+   -      1     -    A    19       SOFT    s   !       1    0    0   76  reset~1
+   -      1     -    B    02       DFFE                0    3    1    0  :5
+   -      2     -    B    02       DFFE                0    3    1    0  :7
+   -      4     -    A    03       DFFE   +            0    3    0    2  inhibit_wait_count10 (:29)
+   -      2     -    A    03       DFFE   +            0    3    0    3  inhibit_wait_count9 (:30)
+   -      5     -    A    03       DFFE   +            0    2    0    2  inhibit_wait_count8 (:31)
+   -      2     -    A    18       DFFE   +            0    3    0    1  inhibit_wait_count7 (:32)
+   -      4     -    A    18       DFFE   +            0    3    0    2  inhibit_wait_count6 (:33)
+   -      3     -    A    18       DFFE   +            0    2    0    3  inhibit_wait_count5 (:34)
+   -      4     -    A    14       DFFE   +            0    3    0    1  inhibit_wait_count4 (:35)
+   -      3     -    A    14       DFFE   +            0    3    0    2  inhibit_wait_count3 (:36)
+   -      2     -    A    14       DFFE   +            0    2    0    3  inhibit_wait_count2 (:37)
+   -      3     -    A    02       DFFE   +            0    2    0    1  inhibit_wait_count1 (:38)
+   -      2     -    A    02       DFFE   +            0    1    0    2  inhibit_wait_count0 (:39)
+   -      2     -    A    09       DFFE   +            0    4    0   18  send_data (:40)
+   -      1     -    A    01       DFFE   +            0    2    0    2  CHAROUT7 (:41)
+   -      2     -    A    11       DFFE   +            0    2    0    2  CHAROUT6 (:42)
+   -      3     -    A    11       DFFE   +            0    2    0    2  CHAROUT5 (:43)
+   -      4     -    A    11       DFFE   +            0    2    0    2  CHAROUT4 (:44)
+   -      4     -    A    04       DFFE   +            0    2    0    2  CHAROUT3 (:45)
+   -      1     -    A    04       DFFE   +            0    2    0    2  CHAROUT2 (:46)
+   -      4     -    A    08       DFFE   +            0    2    0    2  CHAROUT1 (:47)
+   -      4     -    A    12       DFFE   +            0    2    0    2  CHAROUT0 (:48)
+   -      4     -    A    09       DFFE                0    5    0    2  output_ready (:49)
+   -      5     -    A    23       DFFE                0    4    0    1  iready_set (:50)
+   -      5     -    B    23       DFFE   +            0    1    0    2  filter7 (:51)
+   -      8     -    B    22       DFFE   +            0    1    0    2  filter6 (:52)
+   -      3     -    B    22       DFFE   +            0    1    0    3  filter5 (:53)
+   -      2     -    B    22       DFFE   +            0    1    0    3  filter4 (:54)
+   -      1     -    B    23       DFFE   +            0    1    0    3  filter3 (:55)
+   -      3     -    B    23       DFFE   +            0    1    0    3  filter2 (:56)
+   -      6     -    B    23       DFFE   +            0    1    0    3  filter1 (:57)
+   -      4     -    A    21       DFFE   +            0    1    0    3  filter0 (:58)
+   -      1     -    B    22       DFFE   +            0    3    0   94  MOUSE_CLK_FILTER (:59)
+   -      4     -    A    06       DFFE                0    5    0    2  OUTCNT3 (:60)
+   -      3     -    A    06       DFFE                0    5    0    3  OUTCNT2 (:61)
+   -      2     -    A    06       DFFE                0    5    0    4  OUTCNT1 (:62)
+   -      5     -    A    05       DFFE                0    5    0    3  OUTCNT0 (:63)
+   -      2     -    A    07       DFFE        !       0    4    0    7  send_char (:64)
+   -      6     -    A    10       DFFE        !       0    3    0    1  SHIFTOUT10 (:65)
+   -      5     -    A    10       DFFE                0    5    0    1  SHIFTOUT9 (:66)
+   -      4     -    A    10       DFFE                0    5    0    1  SHIFTOUT8 (:67)
+   -      3     -    A    10       DFFE                0    5    0    1  SHIFTOUT7 (:68)
+   -      2     -    A    10       DFFE                0    5    0    1  SHIFTOUT6 (:69)
+   -      1     -    A    10       DFFE                0    5    0    1  SHIFTOUT5 (:70)
+   -      5     -    A    04       DFFE                0    5    0    1  SHIFTOUT4 (:71)
+   -      6     -    A    04       DFFE                0    5    0    1  SHIFTOUT3 (:72)
+   -      8     -    A    04       DFFE                0    5    0    1  SHIFTOUT2 (:73)
+   -      7     -    A    04       DFFE                0    5    0    1  SHIFTOUT1 (:74)
+   -      2     -    A    04       DFFE                0    4    1    0  MOUSE_DATA_BUF (:76)
+   -      4     -    A    15       DFFE                0    4    0    3  INCNT3 (:78)
+   -      8     -    A    22       DFFE                0    4    0    2  INCNT2 (:79)
+   -      7     -    A    22       DFFE                0    4    0    4  INCNT1 (:80)
+   -      6     -    A    22       DFFE                0    3    0    6  INCNT0 (:81)
+   -      2     -    A    20       DFFE                0    4    0   12  READ_CHAR (:82)
+   -      1     -    C    11       DFFE                0    4    0   27  PACKET_COUNT1 (:83)
+   -      1     -    A    16       DFFE                0    4    0   25  PACKET_COUNT0 (:84)
+   -      4     -    A    23       DFFE                0    4    0    1  SHIFTIN8 (:93)
+   -      3     -    A    23       DFFE                0    4    0    3  SHIFTIN7 (:94)
+   -      6     -    C    07       DFFE                0    4    0    3  SHIFTIN6 (:95)
+   -      2     -    C    07       DFFE                0    4    0    3  SHIFTIN5 (:96)
+   -      2     -    B    11       DFFE                0    4    0    3  SHIFTIN4 (:97)
+   -      5     -    B    08       DFFE                0    4    0    3  SHIFTIN3 (:98)
+   -      3     -    B    08       DFFE                0    4    0    3  SHIFTIN2 (:99)
+   -      3     -    B    05       DFFE                0    4    0    4  SHIFTIN1 (:100)
+   -      6     -    B    02       DFFE                0    4    0    3  SHIFTIN0 (:101)
+   -      5     -    C    13       DFFE                0    4    1    2  cursor_column9 (:102)
+   -      7     -    C    23       DFFE                0    4    1    3  cursor_column8 (:103)
+   -      4     -    C    13       DFFE                0    4    1    3  cursor_column7 (:104)
+   -      5     -    C    01       DFFE                0    4    1    2  cursor_column6 (:105)
+   -      1     -    B    14       DFFE                0    4    1    2  cursor_column5 (:106)
+   -      3     -    B    14       DFFE                0    4    1    2  cursor_column4 (:107)
+   -      5     -    B    18       DFFE                0    4    1    2  cursor_column3 (:108)
+   -      7     -    B    17       DFFE                0    4    1    2  cursor_column2 (:109)
+   -      6     -    B    18       DFFE                0    4    1    2  cursor_column1 (:110)
+   -      7     -    B    14       DFFE                0    4    1    3  cursor_column0 (:111)
+   -      6     -    C    19       DFFE                0    4    1    2  cursor_row9 (:112)
+   -      3     -    C    13       DFFE                0    4    1    3  cursor_row8 (:113)
+   -      3     -    C    01       DFFE                0    4    1    3  cursor_row7 (:114)
+   -      1     -    C    05       DFFE                0    4    1    2  cursor_row6 (:115)
+   -      7     -    C    01       DFFE                0    4    1    2  cursor_row5 (:116)
+   -      3     -    C    05       DFFE                0    4    1    2  cursor_row4 (:117)
+   -      1     -    B    15       DFFE                0    4    1    2  cursor_row3 (:118)
+   -      1     -    B    17       DFFE                0    4    1    2  cursor_row2 (:119)
+   -      5     -    B    15       DFFE                0    4    1    2  cursor_row1 (:120)
+   -      4     -    B    15       DFFE                0    4    1    3  cursor_row0 (:121)
+   -      3     -    A    16       DFFE                0    4    0    7  new_cursor_column9 (:122)
+   -      5     -    C    23       DFFE                0    4    0    6  new_cursor_column8 (:123)
+   -      2     -    C    24       DFFE                0    4    0    3  new_cursor_column7 (:124)
+   -      5     -    C    24       DFFE                0    5    0    3  new_cursor_column6 (:125)
+   -      2     -    B    21       DFFE                0    4    0    2  new_cursor_column5 (:126)
+   -      1     -    B    24       DFFE                0    4    0    2  new_cursor_column4 (:127)
+   -      8     -    B    18       DFFE                0    4    0    2  new_cursor_column3 (:128)
+   -      3     -    B    21       DFFE                0    4    0    2  new_cursor_column2 (:129)
+   -      7     -    B    18       DFFE                0    4    0    2  new_cursor_column1 (:130)
+   -      6     -    B    14       DFFE                0    4    0    3  new_cursor_column0 (:131)
+   -      4     -    C    23       DFFE                0    4    0    9  new_cursor_row9 (:132)
+   -      3     -    C    19       DFFE                0    4    0    6  new_cursor_row8 (:133)
+   -      4     -    C    24       DFFE                0    5    0    5  new_cursor_row7 (:134)
+   -      2     -    C    06       DFFE                0    5    0    5  new_cursor_row6 (:135)
+   -      1     -    C    12       DFFE                0    5    0    5  new_cursor_row5 (:136)
+   -      5     -    C    12       DFFE                0    5    0    3  new_cursor_row4 (:137)
+   -      5     -    B    20       DFFE                0    4    0    2  new_cursor_row3 (:138)
+   -      5     -    B    17       DFFE                0    4    0    2  new_cursor_row2 (:139)
+   -      2     -    B    19       DFFE                0    4    0    2  new_cursor_row1 (:140)
+   -      1     -    B    21       DFFE                0    4    0    3  new_cursor_row0 (:141)
+   -      5     -    B    02       DFFE                0    4    0    1  PACKET_CHAR11 (:148)
+   -      4     -    B    02       DFFE                0    4    0    1  PACKET_CHAR10 (:149)
+   -      1     -    C    03       DFFE                0    4    0    4  PACKET_CHAR27 (:150)
+   -      5     -    C    07       DFFE                0    4    0    2  PACKET_CHAR26 (:151)
+   -      3     -    B    10       DFFE                0    4    0    2  PACKET_CHAR25 (:152)
+   -      1     -    B    10       DFFE                0    4    0    2  PACKET_CHAR24 (:153)
+   -      7     -    B    08       DFFE                0    4    0    2  PACKET_CHAR23 (:154)
+   -      3     -    B    07       DFFE                0    4    0    2  PACKET_CHAR22 (:155)
+   -      5     -    B    07       DFFE                0    4    0    2  PACKET_CHAR21 (:156)
+   -      8     -    B    02       DFFE                0    4    0    3  PACKET_CHAR20 (:157)
+   -      2     -    C    04       DFFE                0    4    0    4  PACKET_CHAR37 (:158)
+   -      1     -    C    07       DFFE                0    4    0    2  PACKET_CHAR36 (:159)
+   -      4     -    C    06       DFFE                0    4    0    2  PACKET_CHAR35 (:160)
+   -      3     -    B    06       DFFE                0    4    0    2  PACKET_CHAR34 (:161)
+   -      4     -    B    08       DFFE                0    4    0    2  PACKET_CHAR33 (:162)
+   -      2     -    B    12       DFFE                0    4    0    2  PACKET_CHAR32 (:163)
+   -      1     -    B    12       DFFE                0    4    0    2  PACKET_CHAR31 (:164)
+   -      7     -    B    02       DFFE                0    4    0    3  PACKET_CHAR30 (:165)
+   -      3     -    A    09        OR2    s           0    4    0    1  ~404~1
+   -      4     -    B    23       AND2    s           0    4    0    1  ~1019~1
+   -      4     -    B    22       AND2    s           0    4    0    1  ~1019~2
+   -      2     -    B    23        OR2    s           0    4    0    1  ~1036~1
+   -      5     -    B    22        OR2    s           0    4    0    1  ~1036~2
+   -      3     -    A    04        OR2    s           0    3    0    1  ~1507~1
+   -      7     -    A    10        OR2    s           0    3    0    1  ~1507~2
+   -      8     -    A    10        OR2        !       0    4    0    1  :1507
+   -      1     -    A    05        OR2    s   !       0    3    0   11  ~1611~1
+   -      1     -    A    06        OR2                0    3    0    4  :1611
+   -      5     -    A    06        OR2                0    4    0    1  :1999
+   -      6     -    A    06        OR2                0    4    0    1  :2005
+   -      7     -    A    06        OR2                0    3    0    1  :2011
+   -      3     -    A    07       AND2    s           0    2    0    4  ~2017~1
+   -      2     -    A    23        OR2        !       0    2    0    8  :2472
+   -      1     -    A    22        OR2                0    4    0   15  :2489
+   -      5     -    C    22       AND2    s           0    3    0    1  ~3043~1
+   -      6     -    C    22       AND2        !       0    3    0    1  :3043
+   -      3     -    B    17       AND2    s   !       0    4    0    3  ~3092~1
+   -      1     -    C    22        OR2    s           0    4    0    1  ~3092~2
+   -      2     -    C    22        OR2        !       0    4    0    1  :3137
+   -      1     -    C    21        OR2    s           0    3    0    1  ~3138~1
+   -      3     -    B    18       AND2    s           0    4    0    1  ~3501~1
+   -      2     -    B    18       AND2    s   !       0    3    0    2  ~3501~2
+   -      5     -    C    20        OR2    s           0    4    0    1  ~3546~1
+   -      6     -    C    20        OR2    s           0    4    0    1  ~3547~1
+   -      1     -    C    13        OR2        !       0    4    0    8  :3560
+   -      8     -    C    13       AND2        !       0    2    0    1  :3573
+   -      1     -    C    20        OR2    s           0    4    0   10  ~4327~1
+   -      8     -    C    21        OR2    s           0    4    0    9  ~4462~1
+   -      3     -    C    22        OR2    s           0    4    0    1  ~4582~1
+   -      4     -    C    22        OR2    s           0    4    0    5  ~4582~2
+   -      2     -    C    21        OR2                0    4    0    1  :5215
+   -      5     -    C    19        OR2                0    4    0    1  :5221
+   -      5     -    A    16        OR2                0    4    0    1  :5275
+   -      4     -    C    20        OR2                0    4    0    1  :5281
+   -      2     -    C    19       AND2    s           0    2    0    1  ~5707~1
+   -      4     -    A    16        OR2                0    4    0    1  :6408
+   -      3     -    C    20        OR2                0    4    0    1  :6414
+   -      5     -    C    21        OR2                0    4    0    1  :6468
+   -      4     -    C    19        OR2                0    4    0    1  :6474
+   -      2     -    A    15        OR2                0    4    0    1  :6540
+   -      6     -    A    16        OR2                0    4    0    1  :7045
+   -      3     -    C    23        OR2                0    3    0    1  :7051
+   -      1     -    C    23        OR2                0    3    0    1  :7105
+   -      1     -    C    19        OR2                0    3    0    1  :7111
+   -      1     -    B    06        OR2    s           0    3    0    8  ~7436~1
+   -      1     -    C    10        OR2    s           0    3    0    8  ~7478~1
+   -      3     -    B    02        OR2    s           0    3    0    2  ~7556~1
+   -      2     -    C    23        OR2    s           0    4    0    1  ~7574~1
+   -      2     -    A    16        OR2    s           0    4    0   13  ~7580~1
+   -      2     -    C    13        OR2    s           0    4    0    1  ~7580~2
+   -      6     -    C    09       AND2    s   !       0    3    0    8  ~7586~1
+   -      1     -    C    01        OR2    s           0    4    0    1  ~7586~2
+   -      1     -    C    16        OR2    s           0    3    0   13  ~7622~1
+   -      7     -    C    13        OR2    s           0    4    0    1  ~7634~1
+   -      8     -    C    01        OR2    s           0    3    0    1  ~7640~1
+   -      6     -    C    01        OR2    s           0    4    0    1  ~7640~2
+   -      6     -    C    05        OR2    s           0    3    0    1  ~7646~1
+   -      5     -    C    05        OR2    s           0    4    0    1  ~7646~2
+   -      4     -    C    01        OR2    s           0    3    0    1  ~7652~1
+   -      2     -    C    01        OR2    s           0    4    0    1  ~7652~2
+   -      4     -    C    05        OR2    s           0    4    0    1  ~7658~1
+   -      1     -    C    18        OR2    s           0    3    0   11  ~7700~1
+   -      1     -    C    08        OR2    s           0    3    0   19  ~7706~1
+   -      6     -    C    24        OR2    s           0    4    0    1  ~7706~2
+   -      1     -    C    24        OR2    s           0    4    0    1  ~7760~1
+   -      3     -    C    06        OR2    s           0    4    0    1  ~7766~1
+   -      3     -    C    12        OR2    s           0    4    0    1  ~7772~1
+   -      2     -    C    12        OR2    s           0    4    0    1  ~7778~1
+   -      5     -    A    22        OR2    s           0    4    0    1  ~7832~1
+   -      1     -    A    15       AND2    s   !       0    3    0    7  ~7838~1
+   -      2     -    A    24       AND2    s   !       0    2    0    9  ~7844~1
+   -      1     -    A    23        OR2    s           0    3    0    1  ~7904~1
+   -      1     -    A    17        OR2    s   !       0    2    0   19  ~8133~1
+   -      1     -    A    13       AND2    s           0    4    0    3  ~8133~2
+   -      4     -    A    22       AND2    s           0    3    0    1  ~8133~3
+   -      3     -    A    22        OR2    s           0    4    0    1  ~8133~4
+   -      7     -    C    24        OR2    s           0    4    0    1  ~8133~5
+   -      1     -    B    09        OR2    s           0    3    0    1  ~8133~6
+   -      4     -    B    07        OR2    s           0    4    0    1  ~8133~7
+   -      2     -    B    07        OR2    s           0    4    0    1  ~8133~8
+   -      7     -    B    03        OR2    s           0    4    0    1  ~8133~9
+   -      5     -    B    10        OR2    s           0    4    0    1  ~8133~10
+   -      2     -    B    10        OR2    s           0    4    0    1  ~8133~11
+   -      2     -    B    04        OR2    s           0    3    0    1  ~8133~12
+   -      5     -    B    12        OR2    s           0    4    0    1  ~8133~13
+   -      4     -    B    12        OR2    s           0    4    0    1  ~8133~14
+   -      2     -    B    08        OR2    s           0    4    0    1  ~8133~15
+   -      2     -    B    14       AND2    s           0    4    0    1  ~8133~16
+   -      1     -    B    18       AND2    s           0    4    0    1  ~8133~17
+   -      4     -    B    17       AND2    s           0    4    0    1  ~8133~18
+   -      4     -    B    18       AND2    s           0    4    0    1  ~8133~19
+   -      4     -    B    14       AND2    s           0    4    0    1  ~8133~20
+   -      5     -    B    14       AND2    s           0    4    0    1  ~8133~21
+   -      3     -    C    24       AND2    s           0    3    0    1  ~8133~22
+   -      6     -    C    23       AND2    s           0    3    0    1  ~8133~23
+   -      6     -    C    13       AND2    s           0    3    0    1  ~8133~24
+   -      6     -    B    15       AND2    s           0    4    0    1  ~8133~25
+   -      2     -    B    15       AND2    s           0    4    0    1  ~8133~26
+   -      2     -    B    17       AND2    s           0    4    0    1  ~8133~27
+   -      3     -    B    15       AND2    s           0    4    0    1  ~8133~28
+   -      2     -    C    05       AND2    s           0    3    0    1  ~8133~29
+   -      1     -    A    09        OR2        !       0    4    0   16  :8133
+   -      1     -    A    08        OR2                0    3    0    0  :8154
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:      11/ 96( 11%)    17/ 48( 35%)    11/ 48( 22%)    0/16(  0%)      0/16(  0%)     2/16( 12%)
+B:      25/ 96( 26%)    14/ 48( 29%)    19/ 48( 39%)    0/16(  0%)      9/16( 56%)     0/16(  0%)
+C:      23/ 96( 23%)    13/ 48( 27%)    25/ 48( 52%)    0/16(  0%)      8/16( 50%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      1/24(  4%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+02:      1/24(  4%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+03:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      3/24( 12%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      3/24( 12%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      3/24( 12%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+14:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      3/24( 12%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      2/24(  8%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+17:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      3/24( 12%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+20:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      4/24( 16%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      3/24( 12%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** CLOCK SIGNALS **
+
+Type     Fan-out       Name
+DFF         95         MOUSE_CLK_FILTER
+INPUT       34         clock_25Mhz
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** CLEAR SIGNALS **
+
+Type     Fan-out       Name
+INPUT       27         reset
+DFF         18         send_data
+
+
+Device-Specific Information:                      c:\booksoft\chap11\mouse.rpt
+mouse
+
+** EQUATIONS **
+
+clock_25Mhz : INPUT;
+reset    : INPUT;
+
+-- Node name is ':48' = 'CHAROUT0' 
+-- Equation name is 'CHAROUT0', location is LC4_A12, type is buried.
+CHAROUT0 = DFFE( _EQ001, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ001 =  CHAROUT0 &  mouse_state~6;
+
+-- Node name is ':47' = 'CHAROUT1' 
+-- Equation name is 'CHAROUT1', location is LC4_A8, type is buried.
+CHAROUT1 = DFFE( _EQ002, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ002 =  CHAROUT1 &  mouse_state~6;
+
+-- Node name is ':46' = 'CHAROUT2' 
+-- Equation name is 'CHAROUT2', location is LC1_A4, type is buried.
+CHAROUT2 = DFFE( _EQ003, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ003 = !mouse_state~6
+         #  CHAROUT2;
+
+-- Node name is ':45' = 'CHAROUT3' 
+-- Equation name is 'CHAROUT3', location is LC4_A4, type is buried.
+CHAROUT3 = DFFE( _EQ004, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ004 =  CHAROUT3 &  mouse_state~6;
+
+-- Node name is ':44' = 'CHAROUT4' 
+-- Equation name is 'CHAROUT4', location is LC4_A11, type is buried.
+CHAROUT4 = DFFE( _EQ005, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ005 = !mouse_state~6
+         #  CHAROUT4;
+
+-- Node name is ':43' = 'CHAROUT5' 
+-- Equation name is 'CHAROUT5', location is LC3_A11, type is buried.
+CHAROUT5 = DFFE( _EQ006, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ006 = !mouse_state~6
+         #  CHAROUT5;
+
+-- Node name is ':42' = 'CHAROUT6' 
+-- Equation name is 'CHAROUT6', location is LC2_A11, type is buried.
+CHAROUT6 = DFFE( _EQ007, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ007 = !mouse_state~6
+         #  CHAROUT6;
+
+-- Node name is ':41' = 'CHAROUT7' 
+-- Equation name is 'CHAROUT7', location is LC1_A1, type is buried.
+CHAROUT7 = DFFE( _EQ008, GLOBAL( clock_25Mhz),  VCC,  VCC, !_LC1_A19);
+  _EQ008 = !mouse_state~6
+         #  CHAROUT7;
+
+-- Node name is ':111' = 'cursor_column0' 
+-- Equation name is 'cursor_column0', location is LC7_B14, type is buried.
+cursor_column0 = DFFE( _EQ009,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ009 =  _LC2_B14
+         #  cursor_column0 &  _LC1_C16;
+
+-- Node name is ':110' = 'cursor_column1' 
+-- Equation name is 'cursor_column1', location is LC6_B18, type is buried.
+cursor_column1 = DFFE( _EQ010,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ010 =  _LC1_B18
+         #  cursor_column1 &  _LC1_C16;
+
+-- Node name is ':109' = 'cursor_column2' 
+-- Equation name is 'cursor_column2', location is LC7_B17, type is buried.
+cursor_column2 = DFFE( _EQ011,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ011 =  _LC4_B17
+         #  cursor_column2 &  _LC1_C16;
+
+-- Node name is ':108' = 'cursor_column3' 
+-- Equation name is 'cursor_column3', location is LC5_B18, type is buried.
+cursor_column3 = DFFE( _EQ012,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ012 =  _LC4_B18
+         #  cursor_column3 &  _LC1_C16;
+
+-- Node name is ':107' = 'cursor_column4' 
+-- Equation name is 'cursor_column4', location is LC3_B14, type is buried.
+cursor_column4 = DFFE( _EQ013,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ013 =  _LC4_B14
+         #  cursor_column4 &  _LC1_C16;
+
+-- Node name is ':106' = 'cursor_column5' 
+-- Equation name is 'cursor_column5', location is LC1_B14, type is buried.
+cursor_column5 = DFFE( _EQ014,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ014 =  _LC5_B14
+         #  cursor_column5 &  _LC1_C16;
+
+-- Node name is ':105' = 'cursor_column6' 
+-- Equation name is 'cursor_column6', location is LC5_C1, type is buried.
+cursor_column6 = DFFE( _EQ015,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ015 =  _LC1_C1
+         #  cursor_column6 &  _LC6_C9;
+
+-- Node name is ':104' = 'cursor_column7' 
+-- Equation name is 'cursor_column7', location is LC4_C13, type is buried.
+cursor_column7 = DFFE( _EQ016,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ016 =  _LC2_C13
+         #  cursor_column7 &  _LC1_C16;
+
+-- Node name is ':103' = 'cursor_column8' 
+-- Equation name is 'cursor_column8', location is LC7_C23, type is buried.
+cursor_column8 = DFFE( _EQ017,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ017 =  _LC2_C23
+         #  cursor_column8 &  _LC6_C9;
+
+-- Node name is ':102' = 'cursor_column9' 
+-- Equation name is 'cursor_column9', location is LC5_C13, type is buried.
+cursor_column9 = DFFE( _EQ018,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ018 =  _LC6_C13
+         #  cursor_column9 &  _LC1_C16;
+
+-- Node name is ':121' = 'cursor_row0' 
+-- Equation name is 'cursor_row0', location is LC4_B15, type is buried.
+cursor_row0 = DFFE( _EQ019,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ019 =  _LC6_B15
+         #  cursor_row0 &  _LC1_C16;
+
+-- Node name is ':120' = 'cursor_row1' 
+-- Equation name is 'cursor_row1', location is LC5_B15, type is buried.
+cursor_row1 = DFFE( _EQ020,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ020 =  _LC2_B15
+         #  cursor_row1 &  _LC1_C16;
+
+-- Node name is ':119' = 'cursor_row2' 
+-- Equation name is 'cursor_row2', location is LC1_B17, type is buried.
+cursor_row2 = DFFE( _EQ021,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ021 =  _LC2_B17
+         #  cursor_row2 &  _LC1_C16;
+
+-- Node name is ':118' = 'cursor_row3' 
+-- Equation name is 'cursor_row3', location is LC1_B15, type is buried.
+cursor_row3 = DFFE( _EQ022,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ022 =  _LC3_B15
+         #  cursor_row3 &  _LC1_C16;
+
+-- Node name is ':117' = 'cursor_row4' 
+-- Equation name is 'cursor_row4', location is LC3_C5, type is buried.
+cursor_row4 = DFFE( _EQ023,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ023 =  _LC4_C5
+         #  cursor_row4 &  _LC6_C9;
+
+-- Node name is ':116' = 'cursor_row5' 
+-- Equation name is 'cursor_row5', location is LC7_C1, type is buried.
+cursor_row5 = DFFE( _EQ024,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ024 =  _LC2_C1
+         #  cursor_row5 &  _LC6_C9;
+
+-- Node name is ':115' = 'cursor_row6' 
+-- Equation name is 'cursor_row6', location is LC1_C5, type is buried.
+cursor_row6 = DFFE( _EQ025,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ025 =  _LC5_C5
+         #  cursor_row6 &  _LC6_C9;
+
+-- Node name is ':114' = 'cursor_row7' 
+-- Equation name is 'cursor_row7', location is LC3_C1, type is buried.
+cursor_row7 = DFFE( _EQ026,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ026 =  _LC6_C1
+         #  cursor_row7 &  _LC6_C9;
+
+-- Node name is ':113' = 'cursor_row8' 
+-- Equation name is 'cursor_row8', location is LC3_C13, type is buried.
+cursor_row8 = DFFE( _EQ027,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ027 =  _LC7_C13
+         #  cursor_row8 &  _LC1_C16;
+
+-- Node name is ':112' = 'cursor_row9' 
+-- Equation name is 'cursor_row9', location is LC6_C19, type is buried.
+cursor_row9 = DFFE( _EQ028,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ028 =  cursor_row9 &  _LC2_C19
+         #  cursor_row9 & !_LC1_A17;
+
+-- Node name is ':58' = 'filter0' 
+-- Equation name is 'filter0', location is LC4_A21, type is buried.
+filter0  = DFFE( mouse_clk, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':57' = 'filter1' 
+-- Equation name is 'filter1', location is LC6_B23, type is buried.
+filter1  = DFFE( filter0, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':56' = 'filter2' 
+-- Equation name is 'filter2', location is LC3_B23, type is buried.
+filter2  = DFFE( filter1, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':55' = 'filter3' 
+-- Equation name is 'filter3', location is LC1_B23, type is buried.
+filter3  = DFFE( filter2, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':54' = 'filter4' 
+-- Equation name is 'filter4', location is LC2_B22, type is buried.
+filter4  = DFFE( filter3, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':53' = 'filter5' 
+-- Equation name is 'filter5', location is LC3_B22, type is buried.
+filter5  = DFFE( filter4, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':52' = 'filter6' 
+-- Equation name is 'filter6', location is LC8_B22, type is buried.
+filter6  = DFFE( filter5, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':51' = 'filter7' 
+-- Equation name is 'filter7', location is LC5_B23, type is buried.
+filter7  = DFFE( filter6, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is ':81' = 'INCNT0' 
+-- Equation name is 'INCNT0', location is LC6_A22, type is buried.
+INCNT0   = DFFE( _EQ029,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ029 = !INCNT0 &  _LC1_A13
+         #  INCNT0 &  _LC1_A15;
+
+-- Node name is ':80' = 'INCNT1' 
+-- Equation name is 'INCNT1', location is LC7_A22, type is buried.
+INCNT1   = DFFE( _EQ030,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ030 =  INCNT1 &  _LC5_A22
+         #  INCNT0 & !INCNT1 &  _LC1_A13;
+
+-- Node name is ':79' = 'INCNT2' 
+-- Equation name is 'INCNT2', location is LC8_A22, type is buried.
+INCNT2   = DFFE( _EQ031,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ031 = !INCNT2 &  _LC4_A22
+         #  INCNT2 &  _LC3_A22
+         #  INCNT2 &  _LC1_A15;
+
+-- Node name is ':78' = 'INCNT3' 
+-- Equation name is 'INCNT3', location is LC4_A15, type is buried.
+INCNT3   = DFFE( _EQ032,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ032 = !_LC1_A9 &  _LC2_A15 & !_LC2_A23
+         #  INCNT3 &  _LC2_A23
+         #  INCNT3 &  _LC1_A9;
+
+-- Node name is ':39' = 'inhibit_wait_count0' 
+-- Equation name is 'inhibit_wait_count0', location is LC2_A2, type is buried.
+inhibit_wait_count0 = DFFE( _EQ033, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ033 =  inhibit_wait_count0 &  mouse_state~6
+         # !inhibit_wait_count0 & !mouse_state~6;
+
+-- Node name is ':38' = 'inhibit_wait_count1' 
+-- Equation name is 'inhibit_wait_count1', location is LC3_A2, type is buried.
+inhibit_wait_count1 = DFFE( _EQ034, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ034 =  inhibit_wait_count1 &  mouse_state~6
+         # !inhibit_wait_count0 &  inhibit_wait_count1
+         #  inhibit_wait_count0 & !inhibit_wait_count1 & !mouse_state~6;
+
+-- Node name is ':37' = 'inhibit_wait_count2' 
+-- Equation name is 'inhibit_wait_count2', location is LC2_A14, type is buried.
+inhibit_wait_count2 = DFFE( _EQ035, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ035 =  inhibit_wait_count2 &  mouse_state~6
+         #  inhibit_wait_count2 & !_LC1_A2
+         # !inhibit_wait_count2 &  _LC1_A2 & !mouse_state~6;
+
+-- Node name is ':36' = 'inhibit_wait_count3' 
+-- Equation name is 'inhibit_wait_count3', location is LC3_A14, type is buried.
+inhibit_wait_count3 = DFFE( _EQ036, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ036 =  inhibit_wait_count3 &  mouse_state~6
+         # !inhibit_wait_count2 &  inhibit_wait_count3
+         #  inhibit_wait_count3 & !_LC1_A2
+         #  inhibit_wait_count2 & !inhibit_wait_count3 &  _LC1_A2 & 
+             !mouse_state~6;
+
+-- Node name is ':35' = 'inhibit_wait_count4' 
+-- Equation name is 'inhibit_wait_count4', location is LC4_A14, type is buried.
+inhibit_wait_count4 = DFFE( _EQ037, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ037 =  inhibit_wait_count4 &  mouse_state~6
+         #  inhibit_wait_count4 & !_LC5_A14
+         # !inhibit_wait_count3 &  inhibit_wait_count4
+         #  inhibit_wait_count3 & !inhibit_wait_count4 &  _LC5_A14 & 
+             !mouse_state~6;
+
+-- Node name is ':34' = 'inhibit_wait_count5' 
+-- Equation name is 'inhibit_wait_count5', location is LC3_A18, type is buried.
+inhibit_wait_count5 = DFFE( _EQ038, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ038 =  inhibit_wait_count5 &  mouse_state~6
+         #  inhibit_wait_count5 & !_LC1_A14
+         # !inhibit_wait_count5 &  _LC1_A14 & !mouse_state~6;
+
+-- Node name is ':33' = 'inhibit_wait_count6' 
+-- Equation name is 'inhibit_wait_count6', location is LC4_A18, type is buried.
+inhibit_wait_count6 = DFFE( _EQ039, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ039 =  inhibit_wait_count6 &  mouse_state~6
+         # !inhibit_wait_count5 &  inhibit_wait_count6
+         #  inhibit_wait_count6 & !_LC1_A14
+         #  inhibit_wait_count5 & !inhibit_wait_count6 &  _LC1_A14 & 
+             !mouse_state~6;
+
+-- Node name is ':32' = 'inhibit_wait_count7' 
+-- Equation name is 'inhibit_wait_count7', location is LC2_A18, type is buried.
+inhibit_wait_count7 = DFFE( _EQ040, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ040 =  inhibit_wait_count7 &  mouse_state~6
+         #  inhibit_wait_count7 & !_LC5_A18
+         # !inhibit_wait_count6 &  inhibit_wait_count7
+         #  inhibit_wait_count6 & !inhibit_wait_count7 &  _LC5_A18 & 
+             !mouse_state~6;
+
+-- Node name is ':31' = 'inhibit_wait_count8' 
+-- Equation name is 'inhibit_wait_count8', location is LC5_A3, type is buried.
+inhibit_wait_count8 = DFFE( _EQ041, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ041 =  inhibit_wait_count8 &  mouse_state~6
+         #  inhibit_wait_count8 & !_LC1_A18
+         # !inhibit_wait_count8 &  _LC1_A18 & !mouse_state~6;
+
+-- Node name is ':30' = 'inhibit_wait_count9' 
+-- Equation name is 'inhibit_wait_count9', location is LC2_A3, type is buried.
+inhibit_wait_count9 = DFFE( _EQ042, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ042 =  inhibit_wait_count9 &  mouse_state~6
+         # !inhibit_wait_count8 &  inhibit_wait_count9
+         #  inhibit_wait_count9 & !_LC1_A18
+         #  inhibit_wait_count8 & !inhibit_wait_count9 &  _LC1_A18 & 
+             !mouse_state~6;
+
+-- Node name is ':29' = 'inhibit_wait_count10' 
+-- Equation name is 'inhibit_wait_count10', location is LC4_A3, type is buried.
+inhibit_wait_count10 = DFFE( _EQ043, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ043 =  inhibit_wait_count10 & !_LC6_A3
+         #  inhibit_wait_count10 &  mouse_state~6
+         # !inhibit_wait_count9 &  inhibit_wait_count10
+         #  inhibit_wait_count9 & !inhibit_wait_count10 &  _LC6_A3 & 
+             !mouse_state~6;
+
+-- Node name is ':50' = 'iready_set' 
+-- Equation name is 'iready_set', location is LC5_A23, type is buried.
+iready_set = DFFE( _EQ044,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ044 =  iready_set &  _LC1_A23
+         #  _LC1_A17;
+
+-- Node name is 'left_button' 
+-- Equation name is 'left_button', type is output 
+left_button =  _LC1_B2;
+
+-- Node name is 'mouse_clk' 
+-- Equation name is 'mouse_clk', type is bidir 
+mouse_clk = TRI(mouse_state~6,  _LC1_A8);
+
+-- Node name is ':59' = 'MOUSE_CLK_FILTER' 
+-- Equation name is 'MOUSE_CLK_FILTER', location is LC1_B22, type is buried.
+MOUSE_CLK_FILTER = DFFE( _EQ045, GLOBAL( clock_25Mhz),  VCC,  VCC,  VCC);
+  _EQ045 =  _LC5_B22 &  MOUSE_CLK_FILTER
+         #  filter6 &  MOUSE_CLK_FILTER
+         #  filter6 &  _LC4_B22;
+
+-- Node name is 'mouse_cursor_column0' 
+-- Equation name is 'mouse_cursor_column0', type is output 
+mouse_cursor_column0 =  cursor_column0;
+
+-- Node name is 'mouse_cursor_column1' 
+-- Equation name is 'mouse_cursor_column1', type is output 
+mouse_cursor_column1 =  cursor_column1;
+
+-- Node name is 'mouse_cursor_column2' 
+-- Equation name is 'mouse_cursor_column2', type is output 
+mouse_cursor_column2 =  cursor_column2;
+
+-- Node name is 'mouse_cursor_column3' 
+-- Equation name is 'mouse_cursor_column3', type is output 
+mouse_cursor_column3 =  cursor_column3;
+
+-- Node name is 'mouse_cursor_column4' 
+-- Equation name is 'mouse_cursor_column4', type is output 
+mouse_cursor_column4 =  cursor_column4;
+
+-- Node name is 'mouse_cursor_column5' 
+-- Equation name is 'mouse_cursor_column5', type is output 
+mouse_cursor_column5 =  cursor_column5;
+
+-- Node name is 'mouse_cursor_column6' 
+-- Equation name is 'mouse_cursor_column6', type is output 
+mouse_cursor_column6 =  cursor_column6;
+
+-- Node name is 'mouse_cursor_column7' 
+-- Equation name is 'mouse_cursor_column7', type is output 
+mouse_cursor_column7 =  cursor_column7;
+
+-- Node name is 'mouse_cursor_column8' 
+-- Equation name is 'mouse_cursor_column8', type is output 
+mouse_cursor_column8 =  cursor_column8;
+
+-- Node name is 'mouse_cursor_column9' 
+-- Equation name is 'mouse_cursor_column9', type is output 
+mouse_cursor_column9 =  cursor_column9;
+
+-- Node name is 'mouse_cursor_row0' 
+-- Equation name is 'mouse_cursor_row0', type is output 
+mouse_cursor_row0 =  cursor_row0;
+
+-- Node name is 'mouse_cursor_row1' 
+-- Equation name is 'mouse_cursor_row1', type is output 
+mouse_cursor_row1 =  cursor_row1;
+
+-- Node name is 'mouse_cursor_row2' 
+-- Equation name is 'mouse_cursor_row2', type is output 
+mouse_cursor_row2 =  cursor_row2;
+
+-- Node name is 'mouse_cursor_row3' 
+-- Equation name is 'mouse_cursor_row3', type is output 
+mouse_cursor_row3 =  cursor_row3;
+
+-- Node name is 'mouse_cursor_row4' 
+-- Equation name is 'mouse_cursor_row4', type is output 
+mouse_cursor_row4 =  cursor_row4;
+
+-- Node name is 'mouse_cursor_row5' 
+-- Equation name is 'mouse_cursor_row5', type is output 
+mouse_cursor_row5 =  cursor_row5;
+
+-- Node name is 'mouse_cursor_row6' 
+-- Equation name is 'mouse_cursor_row6', type is output 
+mouse_cursor_row6 =  cursor_row6;
+
+-- Node name is 'mouse_cursor_row7' 
+-- Equation name is 'mouse_cursor_row7', type is output 
+mouse_cursor_row7 =  cursor_row7;
+
+-- Node name is 'mouse_cursor_row8' 
+-- Equation name is 'mouse_cursor_row8', type is output 
+mouse_cursor_row8 =  cursor_row8;
+
+-- Node name is 'mouse_cursor_row9' 
+-- Equation name is 'mouse_cursor_row9', type is output 
+mouse_cursor_row9 =  cursor_row9;
+
+-- Node name is 'mouse_data' 
+-- Equation name is 'mouse_data', type is bidir 
+mouse_data = TRI(MOUSE_DATA_BUF,  _LC1_A9);
+
+-- Node name is ':76' = 'MOUSE_DATA_BUF' 
+-- Equation name is 'MOUSE_DATA_BUF', location is LC2_A4, type is buried.
+MOUSE_DATA_BUF = DFFE( _EQ046, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ046 =  _LC1_A5 &  SHIFTOUT1
+         # !_LC1_A5 &  MOUSE_DATA_BUF;
+
+-- Node name is 'mouse_state~2' 
+-- Equation name is 'mouse_state~2', location is LC6_A9, type is buried.
+mouse_state~2 = DFFE( _EQ047, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ047 =  mouse_state~3 &  output_ready
+         # !iready_set &  mouse_state~2;
+
+-- Node name is 'mouse_state~3' 
+-- Equation name is 'mouse_state~3', location is LC5_A9, type is buried.
+mouse_state~3 = DFFE( _EQ048, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ048 =  mouse_state~3 & !output_ready
+         #  mouse_state~4;
+
+-- Node name is 'mouse_state~4' 
+-- Equation name is 'mouse_state~4', location is LC1_A12, type is buried.
+mouse_state~4 = DFFE( mouse_state~5, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+
+-- Node name is 'mouse_state~5' 
+-- Equation name is 'mouse_state~5', location is LC1_A3, type is buried.
+mouse_state~5 = DFFE( _EQ049, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ049 =  inhibit_wait_count9 &  inhibit_wait_count10 & !mouse_state~6;
+
+-- Node name is 'mouse_state~6' 
+-- Equation name is 'mouse_state~6', location is LC3_A3, type is buried.
+mouse_state~6 = DFFE( _EQ050, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ050 =  mouse_state~6
+         #  inhibit_wait_count9 &  inhibit_wait_count10;
+
+-- Node name is ':131' = 'new_cursor_column0' 
+-- Equation name is 'new_cursor_column0', location is LC6_B14, type is buried.
+new_cursor_column0 = DFFE( _EQ051,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ051 =  _LC1_B9
+         #  _LC1_C18 &  new_cursor_column0;
+
+-- Node name is ':130' = 'new_cursor_column1' 
+-- Equation name is 'new_cursor_column1', location is LC7_B18, type is buried.
+new_cursor_column1 = DFFE( _EQ052,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ052 =  _LC4_B7
+         #  _LC1_C18 &  new_cursor_column1;
+
+-- Node name is ':129' = 'new_cursor_column2' 
+-- Equation name is 'new_cursor_column2', location is LC3_B21, type is buried.
+new_cursor_column2 = DFFE( _EQ053,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ053 =  _LC2_B7
+         #  _LC1_C18 &  new_cursor_column2;
+
+-- Node name is ':128' = 'new_cursor_column3' 
+-- Equation name is 'new_cursor_column3', location is LC8_B18, type is buried.
+new_cursor_column3 = DFFE( _EQ054,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ054 =  _LC7_B3
+         #  _LC1_C18 &  new_cursor_column3;
+
+-- Node name is ':127' = 'new_cursor_column4' 
+-- Equation name is 'new_cursor_column4', location is LC1_B24, type is buried.
+new_cursor_column4 = DFFE( _EQ055,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ055 =  _LC5_B10
+         #  _LC1_C18 &  new_cursor_column4;
+
+-- Node name is ':126' = 'new_cursor_column5' 
+-- Equation name is 'new_cursor_column5', location is LC2_B21, type is buried.
+new_cursor_column5 = DFFE( _EQ056,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ056 =  _LC2_B10
+         #  _LC1_C18 &  new_cursor_column5;
+
+-- Node name is ':125' = 'new_cursor_column6' 
+-- Equation name is 'new_cursor_column6', location is LC5_C24, type is buried.
+new_cursor_column6 = DFFE( _EQ057,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ057 = !_LC1_C8 &  _LC4_C7
+         #  _LC1_C8 &  _LC6_C24;
+
+-- Node name is ':124' = 'new_cursor_column7' 
+-- Equation name is 'new_cursor_column7', location is LC2_C24, type is buried.
+new_cursor_column7 = DFFE( _EQ058,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ058 =  _LC7_C24
+         #  _LC1_C18 &  new_cursor_column7;
+
+-- Node name is ':123' = 'new_cursor_column8' 
+-- Equation name is 'new_cursor_column8', location is LC5_C23, type is buried.
+new_cursor_column8 = DFFE( _EQ059,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ059 = !_LC1_A9 &  _LC3_C23
+         #  _LC1_A9 &  new_cursor_column8;
+
+-- Node name is ':122' = 'new_cursor_column9' 
+-- Equation name is 'new_cursor_column9', location is LC3_A16, type is buried.
+new_cursor_column9 = DFFE( _EQ060,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ060 = !_LC1_A9 &  _LC6_A16
+         #  _LC1_A9 &  new_cursor_column9;
+
+-- Node name is ':141' = 'new_cursor_row0' 
+-- Equation name is 'new_cursor_row0', location is LC1_B21, type is buried.
+new_cursor_row0 = DFFE( _EQ061,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ061 =  _LC2_B4
+         #  _LC1_C18 &  new_cursor_row0;
+
+-- Node name is ':140' = 'new_cursor_row1' 
+-- Equation name is 'new_cursor_row1', location is LC2_B19, type is buried.
+new_cursor_row1 = DFFE( _EQ062,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ062 =  _LC5_B12
+         #  _LC1_C18 &  new_cursor_row1;
+
+-- Node name is ':139' = 'new_cursor_row2' 
+-- Equation name is 'new_cursor_row2', location is LC5_B17, type is buried.
+new_cursor_row2 = DFFE( _EQ063,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ063 =  _LC4_B12
+         #  _LC1_C18 &  new_cursor_row2;
+
+-- Node name is ':138' = 'new_cursor_row3' 
+-- Equation name is 'new_cursor_row3', location is LC5_B20, type is buried.
+new_cursor_row3 = DFFE( _EQ064,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ064 =  _LC2_B8
+         #  _LC1_C18 &  new_cursor_row3;
+
+-- Node name is ':137' = 'new_cursor_row4' 
+-- Equation name is 'new_cursor_row4', location is LC5_C12, type is buried.
+new_cursor_row4 = DFFE( _EQ065,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ065 = !_LC1_C8 &  _LC4_C12
+         #  _LC1_C8 &  _LC2_C12;
+
+-- Node name is ':136' = 'new_cursor_row5' 
+-- Equation name is 'new_cursor_row5', location is LC1_C12, type is buried.
+new_cursor_row5 = DFFE( _EQ066,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ066 = !_LC1_C8 &  _LC6_C6
+         #  _LC1_C8 &  _LC3_C12;
+
+-- Node name is ':135' = 'new_cursor_row6' 
+-- Equation name is 'new_cursor_row6', location is LC2_C6, type is buried.
+new_cursor_row6 = DFFE( _EQ067,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ067 = !_LC1_C8 &  _LC8_C6
+         #  _LC1_C8 &  _LC3_C6;
+
+-- Node name is ':134' = 'new_cursor_row7' 
+-- Equation name is 'new_cursor_row7', location is LC4_C24, type is buried.
+new_cursor_row7 = DFFE( _EQ068,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ068 = !_LC1_C8 &  _LC8_C24
+         #  _LC1_C8 &  _LC1_C24;
+
+-- Node name is ':133' = 'new_cursor_row8' 
+-- Equation name is 'new_cursor_row8', location is LC3_C19, type is buried.
+new_cursor_row8 = DFFE( _EQ069,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ069 = !_LC1_A9 &  _LC1_C19
+         #  _LC1_A9 &  new_cursor_row8;
+
+-- Node name is ':132' = 'new_cursor_row9' 
+-- Equation name is 'new_cursor_row9', location is LC4_C23, type is buried.
+new_cursor_row9 = DFFE( _EQ070,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ070 = !_LC1_A9 &  _LC1_C23
+         #  _LC1_A9 &  new_cursor_row9;
+
+-- Node name is ':63' = 'OUTCNT0' 
+-- Equation name is 'OUTCNT0', location is LC5_A5, type is buried.
+OUTCNT0  = DFFE( _EQ071, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ071 =  _LC1_A9 &  _LC3_A7 & !OUTCNT0
+         #  OUTCNT0 & !send_char
+         # !_LC1_A9 &  OUTCNT0;
+
+-- Node name is ':62' = 'OUTCNT1' 
+-- Equation name is 'OUTCNT1', location is LC2_A6, type is buried.
+OUTCNT1  = DFFE( _EQ072, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ072 =  _LC1_A9 &  _LC7_A6
+         #  OUTCNT1 & !send_char
+         # !_LC1_A9 &  OUTCNT1;
+
+-- Node name is ':61' = 'OUTCNT2' 
+-- Equation name is 'OUTCNT2', location is LC3_A6, type is buried.
+OUTCNT2  = DFFE( _EQ073, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ073 =  _LC1_A9 &  _LC6_A6
+         #  OUTCNT2 & !send_char
+         # !_LC1_A9 &  OUTCNT2;
+
+-- Node name is ':60' = 'OUTCNT3' 
+-- Equation name is 'OUTCNT3', location is LC4_A6, type is buried.
+OUTCNT3  = DFFE( _EQ074, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ074 =  _LC1_A9 &  _LC5_A6
+         #  OUTCNT3 & !send_char
+         # !_LC1_A9 &  OUTCNT3;
+
+-- Node name is ':49' = 'output_ready' 
+-- Equation name is 'output_ready', location is LC4_A9, type is buried.
+output_ready = DFFE( _EQ075, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ075 =  _LC1_A6 &  _LC1_A9 &  send_char
+         #  output_ready & !send_char
+         # !_LC1_A9 &  output_ready;
+
+-- Node name is ':149' = 'PACKET_CHAR10' 
+-- Equation name is 'PACKET_CHAR10', location is LC4_B2, type is buried.
+PACKET_CHAR10 = DFFE( _EQ076,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ076 = !_LC3_B2 &  SHIFTIN0
+         #  _LC3_B2 &  PACKET_CHAR10;
+
+-- Node name is ':148' = 'PACKET_CHAR11' 
+-- Equation name is 'PACKET_CHAR11', location is LC5_B2, type is buried.
+PACKET_CHAR11 = DFFE( _EQ077,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ077 = !_LC3_B2 &  SHIFTIN1
+         #  _LC3_B2 &  PACKET_CHAR11;
+
+-- Node name is ':157' = 'PACKET_CHAR20' 
+-- Equation name is 'PACKET_CHAR20', location is LC8_B2, type is buried.
+PACKET_CHAR20 = DFFE( _EQ078,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ078 = !_LC1_C10 &  SHIFTIN0
+         #  _LC1_C10 &  PACKET_CHAR20;
+
+-- Node name is ':156' = 'PACKET_CHAR21' 
+-- Equation name is 'PACKET_CHAR21', location is LC5_B7, type is buried.
+PACKET_CHAR21 = DFFE( _EQ079,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ079 = !_LC1_C10 &  SHIFTIN1
+         #  _LC1_C10 &  PACKET_CHAR21;
+
+-- Node name is ':155' = 'PACKET_CHAR22' 
+-- Equation name is 'PACKET_CHAR22', location is LC3_B7, type is buried.
+PACKET_CHAR22 = DFFE( _EQ080,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ080 = !_LC1_C10 &  SHIFTIN2
+         #  _LC1_C10 &  PACKET_CHAR22;
+
+-- Node name is ':154' = 'PACKET_CHAR23' 
+-- Equation name is 'PACKET_CHAR23', location is LC7_B8, type is buried.
+PACKET_CHAR23 = DFFE( _EQ081,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ081 = !_LC1_C10 &  SHIFTIN3
+         #  _LC1_C10 &  PACKET_CHAR23;
+
+-- Node name is ':153' = 'PACKET_CHAR24' 
+-- Equation name is 'PACKET_CHAR24', location is LC1_B10, type is buried.
+PACKET_CHAR24 = DFFE( _EQ082,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ082 = !_LC1_C10 &  SHIFTIN4
+         #  _LC1_C10 &  PACKET_CHAR24;
+
+-- Node name is ':152' = 'PACKET_CHAR25' 
+-- Equation name is 'PACKET_CHAR25', location is LC3_B10, type is buried.
+PACKET_CHAR25 = DFFE( _EQ083,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ083 = !_LC1_C10 &  SHIFTIN5
+         #  _LC1_C10 &  PACKET_CHAR25;
+
+-- Node name is ':151' = 'PACKET_CHAR26' 
+-- Equation name is 'PACKET_CHAR26', location is LC5_C7, type is buried.
+PACKET_CHAR26 = DFFE( _EQ084,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ084 = !_LC1_C10 &  SHIFTIN6
+         #  _LC1_C10 &  PACKET_CHAR26;
+
+-- Node name is ':150' = 'PACKET_CHAR27' 
+-- Equation name is 'PACKET_CHAR27', location is LC1_C3, type is buried.
+PACKET_CHAR27 = DFFE( _EQ085,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ085 = !_LC1_C10 &  SHIFTIN7
+         #  _LC1_C10 &  PACKET_CHAR27;
+
+-- Node name is ':165' = 'PACKET_CHAR30' 
+-- Equation name is 'PACKET_CHAR30', location is LC7_B2, type is buried.
+PACKET_CHAR30 = DFFE( _EQ086,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ086 = !_LC1_B6 &  SHIFTIN0
+         #  _LC1_B6 &  PACKET_CHAR30;
+
+-- Node name is ':164' = 'PACKET_CHAR31' 
+-- Equation name is 'PACKET_CHAR31', location is LC1_B12, type is buried.
+PACKET_CHAR31 = DFFE( _EQ087,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ087 = !_LC1_B6 &  SHIFTIN1
+         #  _LC1_B6 &  PACKET_CHAR31;
+
+-- Node name is ':163' = 'PACKET_CHAR32' 
+-- Equation name is 'PACKET_CHAR32', location is LC2_B12, type is buried.
+PACKET_CHAR32 = DFFE( _EQ088,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ088 = !_LC1_B6 &  SHIFTIN2
+         #  _LC1_B6 &  PACKET_CHAR32;
+
+-- Node name is ':162' = 'PACKET_CHAR33' 
+-- Equation name is 'PACKET_CHAR33', location is LC4_B8, type is buried.
+PACKET_CHAR33 = DFFE( _EQ089,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ089 = !_LC1_B6 &  SHIFTIN3
+         #  _LC1_B6 &  PACKET_CHAR33;
+
+-- Node name is ':161' = 'PACKET_CHAR34' 
+-- Equation name is 'PACKET_CHAR34', location is LC3_B6, type is buried.
+PACKET_CHAR34 = DFFE( _EQ090,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ090 = !_LC1_B6 &  SHIFTIN4
+         #  _LC1_B6 &  PACKET_CHAR34;
+
+-- Node name is ':160' = 'PACKET_CHAR35' 
+-- Equation name is 'PACKET_CHAR35', location is LC4_C6, type is buried.
+PACKET_CHAR35 = DFFE( _EQ091,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ091 = !_LC1_B6 &  SHIFTIN5
+         #  _LC1_B6 &  PACKET_CHAR35;
+
+-- Node name is ':159' = 'PACKET_CHAR36' 
+-- Equation name is 'PACKET_CHAR36', location is LC1_C7, type is buried.
+PACKET_CHAR36 = DFFE( _EQ092,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ092 = !_LC1_B6 &  SHIFTIN6
+         #  _LC1_B6 &  PACKET_CHAR36;
+
+-- Node name is ':158' = 'PACKET_CHAR37' 
+-- Equation name is 'PACKET_CHAR37', location is LC2_C4, type is buried.
+PACKET_CHAR37 = DFFE( _EQ093,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ093 = !_LC1_B6 &  SHIFTIN7
+         #  _LC1_B6 &  PACKET_CHAR37;
+
+-- Node name is ':84' = 'PACKET_COUNT0' 
+-- Equation name is 'PACKET_COUNT0', location is LC1_A16, type is buried.
+PACKET_COUNT0 = DFFE( _EQ094,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ094 =  _LC1_A22 &  PACKET_COUNT0
+         #  _LC1_A15 &  PACKET_COUNT0
+         # !_LC1_A15 & !_LC1_A22 & !PACKET_COUNT0
+         # !_LC1_A15 & !_LC1_A22 &  PACKET_COUNT1;
+
+-- Node name is ':83' = 'PACKET_COUNT1' 
+-- Equation name is 'PACKET_COUNT1', location is LC1_C11, type is buried.
+PACKET_COUNT1 = DFFE( _EQ095,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ095 = !PACKET_COUNT0 &  PACKET_COUNT1
+         # !_LC1_A17 &  PACKET_COUNT1
+         # !_LC6_C9 & !PACKET_COUNT0
+         # !_LC6_C9 & !PACKET_COUNT1;
+
+-- Node name is ':82' = 'READ_CHAR' 
+-- Equation name is 'READ_CHAR', location is LC2_A20, type is buried.
+READ_CHAR = DFFE( _EQ096,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ096 =  _LC1_A22 &  READ_CHAR
+         # !_LC1_A9 &  _LC2_A23
+         #  _LC1_A9 &  READ_CHAR;
+
+-- Node name is 'reset~1' 
+-- Equation name is 'reset~1', location is LC1_A19, type is buried.
+-- synthesized logic cell 
+!_LC1_A19 = _LC1_A19~NOT;
+_LC1_A19~NOT = LCELL(!reset);
+
+-- Node name is 'right_button' 
+-- Equation name is 'right_button', type is output 
+right_button =  _LC2_B2;
+
+-- Node name is ':64' = 'send_char' 
+-- Equation name is 'send_char', location is LC2_A7, type is buried.
+!send_char = send_char~NOT;
+send_char~NOT = DFFE( _EQ097, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ097 = !send_char
+         #  _LC1_A6 &  _LC1_A9;
+
+-- Node name is ':40' = 'send_data' 
+-- Equation name is 'send_data', location is LC2_A9, type is buried.
+send_data = DFFE( _EQ098, GLOBAL( clock_25Mhz), GLOBAL(!reset),  VCC,  VCC);
+  _EQ098 =  _LC3_A9
+         #  mouse_state~5 &  mouse_state~6
+         #  mouse_state~4 &  mouse_state~6;
+
+-- Node name is ':101' = 'SHIFTIN0' 
+-- Equation name is 'SHIFTIN0', location is LC6_B2, type is buried.
+SHIFTIN0 = DFFE( _EQ099,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ099 =  _LC2_A24 &  SHIFTIN0
+         # !_LC2_A24 &  SHIFTIN1;
+
+-- Node name is ':100' = 'SHIFTIN1' 
+-- Equation name is 'SHIFTIN1', location is LC3_B5, type is buried.
+SHIFTIN1 = DFFE( _EQ100,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ100 =  _LC2_A24 &  SHIFTIN1
+         # !_LC2_A24 &  SHIFTIN2;
+
+-- Node name is ':99' = 'SHIFTIN2' 
+-- Equation name is 'SHIFTIN2', location is LC3_B8, type is buried.
+SHIFTIN2 = DFFE( _EQ101,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ101 =  _LC2_A24 &  SHIFTIN2
+         # !_LC2_A24 &  SHIFTIN3;
+
+-- Node name is ':98' = 'SHIFTIN3' 
+-- Equation name is 'SHIFTIN3', location is LC5_B8, type is buried.
+SHIFTIN3 = DFFE( _EQ102,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ102 =  _LC2_A24 &  SHIFTIN3
+         # !_LC2_A24 &  SHIFTIN4;
+
+-- Node name is ':97' = 'SHIFTIN4' 
+-- Equation name is 'SHIFTIN4', location is LC2_B11, type is buried.
+SHIFTIN4 = DFFE( _EQ103,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ103 =  _LC2_A24 &  SHIFTIN4
+         # !_LC2_A24 &  SHIFTIN5;
+
+-- Node name is ':96' = 'SHIFTIN5' 
+-- Equation name is 'SHIFTIN5', location is LC2_C7, type is buried.
+SHIFTIN5 = DFFE( _EQ104,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ104 =  _LC2_A24 &  SHIFTIN5
+         # !_LC2_A24 &  SHIFTIN6;
+
+-- Node name is ':95' = 'SHIFTIN6' 
+-- Equation name is 'SHIFTIN6', location is LC6_C7, type is buried.
+SHIFTIN6 = DFFE( _EQ105,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ105 =  _LC2_A24 &  SHIFTIN6
+         # !_LC2_A24 &  SHIFTIN7;
+
+-- Node name is ':94' = 'SHIFTIN7' 
+-- Equation name is 'SHIFTIN7', location is LC3_A23, type is buried.
+SHIFTIN7 = DFFE( _EQ106,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ106 =  _LC2_A24 &  SHIFTIN7
+         # !_LC2_A24 &  SHIFTIN8;
+
+-- Node name is ':93' = 'SHIFTIN8' 
+-- Equation name is 'SHIFTIN8', location is LC4_A23, type is buried.
+SHIFTIN8 = DFFE( _EQ107,  MOUSE_CLK_FILTER,  VCC,  VCC, !_LC1_A19);
+  _EQ107 =  _LC2_A24 &  SHIFTIN8
+         # !_LC2_A24 &  mouse_data;
+
+-- Node name is ':74' = 'SHIFTOUT1' 
+-- Equation name is 'SHIFTOUT1', location is LC7_A4, type is buried.
+SHIFTOUT1 = DFFE( _EQ108, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT0), !( send_data &  CHAROUT0),  VCC);
+  _EQ108 =  _LC1_A5 &  SHIFTOUT2
+         # !_LC1_A5 &  SHIFTOUT1;
+
+-- Node name is ':73' = 'SHIFTOUT2' 
+-- Equation name is 'SHIFTOUT2', location is LC8_A4, type is buried.
+SHIFTOUT2 = DFFE( _EQ109, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT1), !( send_data &  CHAROUT1),  VCC);
+  _EQ109 =  _LC1_A5 &  SHIFTOUT3
+         # !_LC1_A5 &  SHIFTOUT2;
+
+-- Node name is ':72' = 'SHIFTOUT3' 
+-- Equation name is 'SHIFTOUT3', location is LC6_A4, type is buried.
+SHIFTOUT3 = DFFE( _EQ110, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT2), !( send_data &  CHAROUT2),  VCC);
+  _EQ110 =  _LC1_A5 &  SHIFTOUT4
+         # !_LC1_A5 &  SHIFTOUT3;
+
+-- Node name is ':71' = 'SHIFTOUT4' 
+-- Equation name is 'SHIFTOUT4', location is LC5_A4, type is buried.
+SHIFTOUT4 = DFFE( _EQ111, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT3), !( send_data &  CHAROUT3),  VCC);
+  _EQ111 =  _LC1_A5 &  SHIFTOUT5
+         # !_LC1_A5 &  SHIFTOUT4;
+
+-- Node name is ':70' = 'SHIFTOUT5' 
+-- Equation name is 'SHIFTOUT5', location is LC1_A10, type is buried.
+SHIFTOUT5 = DFFE( _EQ112, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT4), !( send_data &  CHAROUT4),  VCC);
+  _EQ112 =  _LC1_A5 &  SHIFTOUT6
+         # !_LC1_A5 &  SHIFTOUT5;
+
+-- Node name is ':69' = 'SHIFTOUT6' 
+-- Equation name is 'SHIFTOUT6', location is LC2_A10, type is buried.
+SHIFTOUT6 = DFFE( _EQ113, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT5), !( send_data &  CHAROUT5),  VCC);
+  _EQ113 =  _LC1_A5 &  SHIFTOUT7
+         # !_LC1_A5 &  SHIFTOUT6;
+
+-- Node name is ':68' = 'SHIFTOUT7' 
+-- Equation name is 'SHIFTOUT7', location is LC3_A10, type is buried.
+SHIFTOUT7 = DFFE( _EQ114, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT6), !( send_data &  CHAROUT6),  VCC);
+  _EQ114 =  _LC1_A5 &  SHIFTOUT8
+         # !_LC1_A5 &  SHIFTOUT7;
+
+-- Node name is ':67' = 'SHIFTOUT8' 
+-- Equation name is 'SHIFTOUT8', location is LC4_A10, type is buried.
+SHIFTOUT8 = DFFE( _EQ115, !MOUSE_CLK_FILTER, !( send_data & !CHAROUT7), !( send_data &  CHAROUT7),  VCC);
+  _EQ115 =  _LC1_A5 &  SHIFTOUT9
+         # !_LC1_A5 &  SHIFTOUT8;
+
+-- Node name is ':66' = 'SHIFTOUT9' 
+-- Equation name is 'SHIFTOUT9', location is LC5_A10, type is buried.
+SHIFTOUT9 = DFFE( _EQ116, !MOUSE_CLK_FILTER, !( send_data &  _LC8_A10), !( send_data & !_LC8_A10),  VCC);
+  _EQ116 =  _LC1_A5 &  SHIFTOUT10
+         # !_LC1_A5 &  SHIFTOUT9;
+
+-- Node name is ':65' = 'SHIFTOUT10' 
+-- Equation name is 'SHIFTOUT10', location is LC6_A10, type is buried.
+!SHIFTOUT10 = SHIFTOUT10~NOT;
+SHIFTOUT10~NOT = DFFE( _EQ117, !MOUSE_CLK_FILTER, !send_data,  VCC,  VCC);
+  _EQ117 = !_LC1_A5 & !SHIFTOUT10;
+
+-- Node name is '|LPM_ADD_SUB:283|addcore:adder|:83' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC1_A2', type is buried 
+_LC1_A2  = LCELL( _EQ118);
+  _EQ118 =  inhibit_wait_count0 &  inhibit_wait_count1;
+
+-- Node name is '|LPM_ADD_SUB:283|addcore:adder|:87' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC5_A14', type is buried 
+_LC5_A14 = LCELL( _EQ119);
+  _EQ119 =  inhibit_wait_count2 &  _LC1_A2;
+
+-- Node name is '|LPM_ADD_SUB:283|addcore:adder|:95' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC1_A14', type is buried 
+_LC1_A14 = LCELL( _EQ120);
+  _EQ120 =  inhibit_wait_count2 &  inhibit_wait_count3 &  inhibit_wait_count4 & 
+              _LC1_A2;
+
+-- Node name is '|LPM_ADD_SUB:283|addcore:adder|:99' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC5_A18', type is buried 
+_LC5_A18 = LCELL( _EQ121);
+  _EQ121 =  inhibit_wait_count5 &  _LC1_A14;
+
+-- Node name is '|LPM_ADD_SUB:283|addcore:adder|:107' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC1_A18', type is buried 
+_LC1_A18 = LCELL( _EQ122);
+  _EQ122 =  inhibit_wait_count5 &  inhibit_wait_count6 &  inhibit_wait_count7 & 
+              _LC1_A14;
+
+-- Node name is '|LPM_ADD_SUB:283|addcore:adder|:111' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC6_A3', type is buried 
+_LC6_A3  = LCELL( _EQ123);
+  _EQ123 =  inhibit_wait_count8 &  _LC1_A18;
+
+-- Node name is '|LPM_ADD_SUB:1716|addcore:adder|:55' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC8_A6', type is buried 
+_LC8_A6  = LCELL( _EQ124);
+  _EQ124 =  OUTCNT0 &  OUTCNT1;
+
+-- Node name is '|LPM_ADD_SUB:2572|addcore:adder|:69' from file "addcore.tdf" line 316, column 45
+-- Equation name is '_LC2_A22', type is buried 
+_LC2_A22 = LCELL( _EQ125);
+  _EQ125 = !INCNT0 &  INCNT3
+         # !INCNT1 &  INCNT3
+         # !INCNT2 &  INCNT3
+         #  INCNT0 &  INCNT1 &  INCNT2 & !INCNT3;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry0' from file "addcore.tdf" line 308, column 64
+-- Equation name is '_LC6_B12', type is buried 
+_LC6_B12 = LCELL( _EQ126);
+  _EQ126 =  cursor_row0
+         # !PACKET_CHAR30;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry1' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC7_B12', type is buried 
+_LC7_B12 = LCELL( _EQ127);
+  _EQ127 =  cursor_row1 & !PACKET_CHAR31
+         #  cursor_row0 &  cursor_row1
+         #  cursor_row1 & !PACKET_CHAR30
+         #  cursor_row0 & !PACKET_CHAR31
+         # !PACKET_CHAR30 & !PACKET_CHAR31;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry2' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC3_B12', type is buried 
+_LC3_B12 = LCELL( _EQ128);
+  _EQ128 =  cursor_row2 &  _LC7_B12
+         #  _LC7_B12 & !PACKET_CHAR32
+         #  cursor_row2 & !PACKET_CHAR32;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry3' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC1_B8', type is buried 
+_LC1_B8  = LCELL( _EQ129);
+  _EQ129 =  cursor_row3 &  _LC3_B12
+         #  _LC3_B12 & !PACKET_CHAR33
+         #  cursor_row3 & !PACKET_CHAR33;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry4' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC5_C6', type is buried 
+_LC5_C6  = LCELL( _EQ130);
+  _EQ130 =  cursor_row4 &  _LC1_B8
+         #  _LC1_B8 & !PACKET_CHAR34
+         #  cursor_row4 & !PACKET_CHAR34;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry5' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC7_C6', type is buried 
+_LC7_C6  = LCELL( _EQ131);
+  _EQ131 =  cursor_row5 &  _LC5_C6
+         #  _LC5_C6 & !PACKET_CHAR35
+         #  cursor_row5 & !PACKET_CHAR35;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry6' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC1_C6', type is buried 
+_LC1_C6  = LCELL( _EQ132);
+  _EQ132 =  cursor_row6 &  _LC7_C6
+         #  _LC7_C6 & !PACKET_CHAR36
+         #  cursor_row6 & !PACKET_CHAR36;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|pcarry7' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC6_C21', type is buried 
+_LC6_C21 = LCELL( _EQ133);
+  _EQ133 =  cursor_row7 &  _LC1_C6
+         #  _LC1_C6 & !PACKET_CHAR37
+         #  cursor_row7 & !PACKET_CHAR37;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|:127' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC4_C12', type is buried 
+_LC4_C12 = LCELL( _EQ134);
+  _EQ134 =  cursor_row4 & !_LC1_B8 &  PACKET_CHAR34
+         # !cursor_row4 & !_LC1_B8 & !PACKET_CHAR34
+         #  cursor_row4 &  _LC1_B8 & !PACKET_CHAR34
+         # !cursor_row4 &  _LC1_B8 &  PACKET_CHAR34;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|:128' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC6_C6', type is buried 
+_LC6_C6  = LCELL( _EQ135);
+  _EQ135 =  cursor_row5 &  _LC5_C6 & !PACKET_CHAR35
+         # !cursor_row5 &  _LC5_C6 &  PACKET_CHAR35
+         #  cursor_row5 & !_LC5_C6 &  PACKET_CHAR35
+         # !cursor_row5 & !_LC5_C6 & !PACKET_CHAR35;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|:129' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC8_C6', type is buried 
+_LC8_C6  = LCELL( _EQ136);
+  _EQ136 =  cursor_row6 &  _LC7_C6 & !PACKET_CHAR36
+         # !cursor_row6 &  _LC7_C6 &  PACKET_CHAR36
+         #  cursor_row6 & !_LC7_C6 &  PACKET_CHAR36
+         # !cursor_row6 & !_LC7_C6 & !PACKET_CHAR36;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|:130' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC8_C24', type is buried 
+_LC8_C24 = LCELL( _EQ137);
+  _EQ137 =  cursor_row7 &  _LC1_C6 & !PACKET_CHAR37
+         # !cursor_row7 &  _LC1_C6 &  PACKET_CHAR37
+         #  cursor_row7 & !_LC1_C6 &  PACKET_CHAR37
+         # !cursor_row7 & !_LC1_C6 & !PACKET_CHAR37;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|:131' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC4_C21', type is buried 
+_LC4_C21 = LCELL( _EQ138);
+  _EQ138 =  cursor_row8 &  _LC6_C21 & !PACKET_CHAR37
+         #  cursor_row8 & !_LC6_C21 &  PACKET_CHAR37
+         # !cursor_row8 &  _LC6_C21 &  PACKET_CHAR37
+         # !cursor_row8 & !_LC6_C21 & !PACKET_CHAR37;
+
+-- Node name is '|LPM_ADD_SUB:5080|addcore:adder|:132' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC3_C21', type is buried 
+_LC3_C21 = LCELL( _EQ139);
+  _EQ139 =  cursor_row9 &  _LC6_C21 & !PACKET_CHAR37
+         #  cursor_row8 &  cursor_row9 & !PACKET_CHAR37
+         #  cursor_row8 & !cursor_row9 &  _LC6_C21 &  PACKET_CHAR37
+         # !cursor_row8 &  cursor_row9 &  PACKET_CHAR37
+         #  cursor_row9 & !_LC6_C21 &  PACKET_CHAR37
+         # !cursor_row8 & !cursor_row9 & !_LC6_C21 & !PACKET_CHAR37;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|pcarry1' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC7_B7', type is buried 
+_LC7_B7  = LCELL( _EQ140);
+  _EQ140 =  cursor_column1 &  PACKET_CHAR21
+         #  cursor_column0 &  cursor_column1 &  PACKET_CHAR20
+         #  cursor_column0 &  PACKET_CHAR20 &  PACKET_CHAR21;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|pcarry2' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC1_B7', type is buried 
+_LC1_B7  = LCELL( _EQ141);
+  _EQ141 =  cursor_column2 &  _LC7_B7
+         #  _LC7_B7 &  PACKET_CHAR22
+         #  cursor_column2 &  PACKET_CHAR22;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|pcarry3' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC6_B10', type is buried 
+_LC6_B10 = LCELL( _EQ142);
+  _EQ142 =  cursor_column3 &  _LC1_B7
+         #  _LC1_B7 &  PACKET_CHAR23
+         #  cursor_column3 &  PACKET_CHAR23;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|pcarry4' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC7_B10', type is buried 
+_LC7_B10 = LCELL( _EQ143);
+  _EQ143 =  cursor_column4 &  _LC6_B10
+         #  _LC6_B10 &  PACKET_CHAR24
+         #  cursor_column4 &  PACKET_CHAR24;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|pcarry5' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC4_B10', type is buried 
+_LC4_B10 = LCELL( _EQ144);
+  _EQ144 =  cursor_column5 &  _LC7_B10
+         #  _LC7_B10 &  PACKET_CHAR25
+         #  cursor_column5 &  PACKET_CHAR25;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|pcarry6' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC3_C7', type is buried 
+_LC3_C7  = LCELL( _EQ145);
+  _EQ145 =  cursor_column6 &  _LC4_B10
+         #  _LC4_B10 &  PACKET_CHAR26
+         #  cursor_column6 &  PACKET_CHAR26;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|pcarry7' from file "addcore.tdf" line 312, column 40
+-- Equation name is '_LC8_C20', type is buried 
+_LC8_C20 = LCELL( _EQ146);
+  _EQ146 =  cursor_column7 &  _LC3_C7
+         #  _LC3_C7 &  PACKET_CHAR27
+         #  cursor_column7 &  PACKET_CHAR27;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|:72' from file "addcore.tdf" line 308, column 28
+-- Equation name is '_LC6_B7', type is buried 
+_LC6_B7  = LCELL( _EQ147);
+  _EQ147 =  cursor_column0 &  PACKET_CHAR20;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|:129' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC4_C7', type is buried 
+_LC4_C7  = LCELL( _EQ148);
+  _EQ148 =  cursor_column6 & !_LC4_B10 & !PACKET_CHAR26
+         # !cursor_column6 & !_LC4_B10 &  PACKET_CHAR26
+         #  cursor_column6 &  _LC4_B10 &  PACKET_CHAR26
+         # !cursor_column6 &  _LC4_B10 & !PACKET_CHAR26;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|:131' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC7_C20', type is buried 
+_LC7_C20 = LCELL( _EQ149);
+  _EQ149 =  cursor_column8 &  _LC8_C20 &  PACKET_CHAR27
+         #  cursor_column8 & !_LC8_C20 & !PACKET_CHAR27
+         # !cursor_column8 &  _LC8_C20 & !PACKET_CHAR27
+         # !cursor_column8 & !_LC8_C20 &  PACKET_CHAR27;
+
+-- Node name is '|LPM_ADD_SUB:5139|addcore:adder|:132' from file "addcore.tdf" line 316, column 67
+-- Equation name is '_LC2_C20', type is buried 
+_LC2_C20 = LCELL( _EQ150);
+  _EQ150 =  cursor_column9 &  _LC8_C20 &  PACKET_CHAR27
+         #  cursor_column8 &  cursor_column9 &  PACKET_CHAR27
+         #  cursor_column8 & !cursor_column9 &  _LC8_C20 & !PACKET_CHAR27
+         # !cursor_column8 &  cursor_column9 & !PACKET_CHAR27
+         #  cursor_column9 & !_LC8_C20 & !PACKET_CHAR27
+         # !cursor_column8 & !cursor_column9 & !_LC8_C20 &  PACKET_CHAR27;
+
+-- Node name is ':5' 
+-- Equation name is '_LC1_B2', type is buried 
+_LC1_B2  = DFFE( _EQ151,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ151 = !_LC1_C8 &  PACKET_CHAR10
+         #  _LC1_B2 &  _LC1_C8;
+
+-- Node name is ':7' 
+-- Equation name is '_LC2_B2', type is buried 
+_LC2_B2  = DFFE( _EQ152,  MOUSE_CLK_FILTER, GLOBAL(!reset),  VCC,  VCC);
+  _EQ152 = !_LC1_C8 &  PACKET_CHAR11
+         #  _LC1_C8 &  _LC2_B2;
+
+-- Node name is '~404~1' 
+-- Equation name is '~404~1', location is LC3_A9, type is buried.
+-- synthesized logic cell 
+_LC3_A9  = LCELL( _EQ153);
+  _EQ153 = !mouse_state~6 &  send_data
+         # !mouse_state~2 & !mouse_state~3 &  send_data;
+
+-- Node name is '~1019~1' 
+-- Equation name is '~1019~1', location is LC4_B23, type is buried.
+-- synthesized logic cell 
+_LC4_B23 = LCELL( _EQ154);
+  _EQ154 =  filter0 &  filter1 &  filter2 &  filter7;
+
+-- Node name is '~1019~2' 
+-- Equation name is '~1019~2', location is LC4_B22, type is buried.
+-- synthesized logic cell 
+_LC4_B22 = LCELL( _EQ155);
+  _EQ155 =  filter3 &  filter4 &  filter5 &  _LC4_B23;
+
+-- Node name is '~1036~1' 
+-- Equation name is '~1036~1', location is LC2_B23, type is buried.
+-- synthesized logic cell 
+_LC2_B23 = LCELL( _EQ156);
+  _EQ156 =  filter7
+         #  filter0
+         #  filter1
+         #  filter2;
+
+-- Node name is '~1036~2' 
+-- Equation name is '~1036~2', location is LC5_B22, type is buried.
+-- synthesized logic cell 
+_LC5_B22 = LCELL( _EQ157);
+  _EQ157 =  _LC2_B23
+         #  filter4
+         #  filter3
+         #  filter5;
+
+-- Node name is '~1507~1' 
+-- Equation name is '~1507~1', location is LC3_A4, type is buried.
+-- synthesized logic cell 
+_LC3_A4  = LCELL( _EQ158);
+  _EQ158 =  CHAROUT1 &  CHAROUT2 &  CHAROUT3
+         #  CHAROUT1 & !CHAROUT2 & !CHAROUT3
+         # !CHAROUT1 &  CHAROUT2 & !CHAROUT3
+         # !CHAROUT1 & !CHAROUT2 &  CHAROUT3;
+
+-- Node name is '~1507~2' 
+-- Equation name is '~1507~2', location is LC7_A10, type is buried.
+-- synthesized logic cell 
+_LC7_A10 = LCELL( _EQ159);
+  _EQ159 =  CHAROUT5 &  CHAROUT6 &  CHAROUT7
+         #  CHAROUT5 & !CHAROUT6 & !CHAROUT7
+         # !CHAROUT5 &  CHAROUT6 & !CHAROUT7
+         # !CHAROUT5 & !CHAROUT6 &  CHAROUT7;
+
+-- Node name is ':1507' 
+-- Equation name is '_LC8_A10', type is buried 
+!_LC8_A10 = _LC8_A10~NOT;
+_LC8_A10~NOT = LCELL( _EQ160);
+  _EQ160 =  CHAROUT0 &  CHAROUT4 & !_LC3_A4 & !_LC7_A10
+         #  CHAROUT0 & !CHAROUT4 & !_LC3_A4 &  _LC7_A10
+         # !CHAROUT0 &  CHAROUT4 &  _LC3_A4 & !_LC7_A10
+         # !CHAROUT0 & !CHAROUT4 &  _LC3_A4 &  _LC7_A10
+         #  CHAROUT0 &  CHAROUT4 &  _LC3_A4 &  _LC7_A10
+         #  CHAROUT0 & !CHAROUT4 &  _LC3_A4 & !_LC7_A10
+         # !CHAROUT0 &  CHAROUT4 & !_LC3_A4 &  _LC7_A10
+         # !CHAROUT0 & !CHAROUT4 & !_LC3_A4 & !_LC7_A10;
+
+-- Node name is '~1611~1' 
+-- Equation name is '~1611~1', location is LC1_A5, type is buried.
+-- synthesized logic cell 
+!_LC1_A5 = _LC1_A5~NOT;
+_LC1_A5~NOT = LCELL( _EQ161);
+  _EQ161 =  _LC1_A6
+         # !send_char
+         # !_LC1_A9;
+
+-- Node name is ':1611' 
+-- Equation name is '_LC1_A6', type is buried 
+_LC1_A6  = LCELL( _EQ162);
+  _EQ162 =  OUTCNT1 &  OUTCNT3
+         #  OUTCNT2 &  OUTCNT3;
+
+-- Node name is ':1999' 
+-- Equation name is '_LC5_A6', type is buried 
+_LC5_A6  = LCELL( _EQ163);
+  _EQ163 =  _LC3_A7 & !_LC8_A6 &  OUTCNT3
+         #  _LC3_A7 & !OUTCNT2 &  OUTCNT3
+         #  _LC3_A7 &  _LC8_A6 &  OUTCNT2 & !OUTCNT3;
+
+-- Node name is ':2005' 
+-- Equation name is '_LC6_A6', type is buried 
+_LC6_A6  = LCELL( _EQ164);
+  _EQ164 =  _LC3_A7 & !OUTCNT1 &  OUTCNT2
+         #  _LC3_A7 & !OUTCNT0 &  OUTCNT2
+         #  _LC3_A7 &  OUTCNT0 &  OUTCNT1 & !OUTCNT2;
+
+-- Node name is ':2011' 
+-- Equation name is '_LC7_A6', type is buried 
+_LC7_A6  = LCELL( _EQ165);
+  _EQ165 =  _LC3_A7 & !OUTCNT0 &  OUTCNT1
+         #  _LC3_A7 &  OUTCNT0 & !OUTCNT1;
+
+-- Node name is '~2017~1' 
+-- Equation name is '~2017~1', location is LC3_A7, type is buried.
+-- synthesized logic cell 
+_LC3_A7  = LCELL( _EQ166);
+  _EQ166 = !_LC1_A6 &  send_char;
+
+-- Node name is ':2472' 
+-- Equation name is '_LC2_A23', type is buried 
+!_LC2_A23 = _LC2_A23~NOT;
+_LC2_A23~NOT = LCELL( _EQ167);
+  _EQ167 =  READ_CHAR
+         #  mouse_data;
+
+-- Node name is ':2489' 
+-- Equation name is '_LC1_A22', type is buried 
+_LC1_A22 = LCELL( _EQ168);
+  _EQ168 = !INCNT3
+         # !INCNT0 & !INCNT1 & !INCNT2;
+
+-- Node name is '~3043~1' 
+-- Equation name is '~3043~1', location is LC5_C22, type is buried.
+-- synthesized logic cell 
+_LC5_C22 = LCELL( _EQ169);
+  _EQ169 = !new_cursor_row5 & !new_cursor_row6 & !new_cursor_row7;
+
+-- Node name is ':3043' 
+-- Equation name is '_LC6_C22', type is buried 
+!_LC6_C22 = _LC6_C22~NOT;
+_LC6_C22~NOT = LCELL( _EQ170);
+  _EQ170 = !_LC3_B17 &  _LC5_C22 & !new_cursor_row0;
+
+-- Node name is '~3092~1' 
+-- Equation name is '~3092~1', location is LC3_B17, type is buried.
+-- synthesized logic cell 
+!_LC3_B17 = _LC3_B17~NOT;
+_LC3_B17~NOT = LCELL( _EQ171);
+  _EQ171 = !new_cursor_row1 & !new_cursor_row2 & !new_cursor_row3 & 
+             !new_cursor_row4;
+
+-- Node name is '~3092~2' 
+-- Equation name is '~3092~2', location is LC1_C22, type is buried.
+-- synthesized logic cell 
+_LC1_C22 = LCELL( _EQ172);
+  _EQ172 =  new_cursor_row6
+         #  new_cursor_row5
+         #  new_cursor_row7
+         #  _LC3_B17;
+
+-- Node name is ':3137' 
+-- Equation name is '_LC2_C22', type is buried 
+!_LC2_C22 = _LC2_C22~NOT;
+_LC2_C22~NOT = LCELL( _EQ173);
+  _EQ173 =  _LC1_C22 & !_LC6_C22 & !new_cursor_row9
+         #  _LC1_C22 & !new_cursor_row8 & !new_cursor_row9
+         # !_LC6_C22 &  new_cursor_row8 & !new_cursor_row9;
+
+-- Node name is '~3138~1' 
+-- Equation name is '~3138~1', location is LC1_C21, type is buried.
+-- synthesized logic cell 
+_LC1_C21 = LCELL( _EQ174);
+  _EQ174 =  cursor_row8
+         #  cursor_row9
+         #  cursor_row7;
+
+-- Node name is '~3501~1' 
+-- Equation name is '~3501~1', location is LC3_B18, type is buried.
+-- synthesized logic cell 
+_LC3_B18 = LCELL( _EQ175);
+  _EQ175 = !new_cursor_column1 & !new_cursor_column2 & !new_cursor_column3 & 
+             !new_cursor_column6;
+
+-- Node name is '~3501~2' 
+-- Equation name is '~3501~2', location is LC2_B18, type is buried.
+-- synthesized logic cell 
+!_LC2_B18 = _LC2_B18~NOT;
+_LC2_B18~NOT = LCELL( _EQ176);
+  _EQ176 =  _LC3_B18 & !new_cursor_column4 & !new_cursor_column5;
+
+-- Node name is '~3546~1' 
+-- Equation name is '~3546~1', location is LC5_C20, type is buried.
+-- synthesized logic cell 
+_LC5_C20 = LCELL( _EQ177);
+  _EQ177 =  _LC2_B18 & !new_cursor_column8
+         # !_LC2_B18 & !new_cursor_column0 & !new_cursor_column7 & 
+              new_cursor_column8
+         #  new_cursor_column7 & !new_cursor_column8;
+
+-- Node name is '~3547~1' 
+-- Equation name is '~3547~1', location is LC6_C20, type is buried.
+-- synthesized logic cell 
+_LC6_C20 = LCELL( _EQ178);
+  _EQ178 =  _LC5_C20 & !new_cursor_column9
+         #  cursor_column9
+         #  cursor_column7;
+
+-- Node name is ':3560' 
+-- Equation name is '_LC1_C13', type is buried 
+!_LC1_C13 = _LC1_C13~NOT;
+_LC1_C13~NOT = LCELL( _EQ179);
+  _EQ179 = !_LC8_C13 & !new_cursor_column8
+         # !new_cursor_column7 & !new_cursor_column8
+         # !new_cursor_column9;
+
+-- Node name is ':3573' 
+-- Equation name is '_LC8_C13', type is buried 
+!_LC8_C13 = _LC8_C13~NOT;
+_LC8_C13~NOT = LCELL( _EQ180);
+  _EQ180 = !_LC2_B18 & !new_cursor_column0;
+
+-- Node name is '~4327~1' 
+-- Equation name is '~4327~1', location is LC1_C20, type is buried.
+-- synthesized logic cell 
+_LC1_C20 = LCELL( _EQ181);
+  _EQ181 =  cursor_column8 &  PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC6_C20 &  PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~4462~1' 
+-- Equation name is '~4462~1', location is LC8_C21, type is buried.
+-- synthesized logic cell 
+_LC8_C21 = LCELL( _EQ182);
+  _EQ182 = !_LC2_C22 &  PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC1_C21 &  PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~4582~1' 
+-- Equation name is '~4582~1', location is LC3_C22, type is buried.
+-- synthesized logic cell 
+_LC3_C22 = LCELL( _EQ183);
+  _EQ183 = !new_cursor_row6
+         # !new_cursor_row5
+         # !new_cursor_row7
+         # !new_cursor_row8;
+
+-- Node name is '~4582~2' 
+-- Equation name is '~4582~2', location is LC4_C22, type is buried.
+-- synthesized logic cell 
+_LC4_C22 = LCELL( _EQ184);
+  _EQ184 = !_LC3_B17 & !new_cursor_row0 & !new_cursor_row9
+         #  _LC3_C22 & !new_cursor_row9;
+
+-- Node name is ':5215' 
+-- Equation name is '_LC2_C21', type is buried 
+_LC2_C21 = LCELL( _EQ185);
+  _EQ185 =  _LC3_C21 &  PACKET_COUNT0 &  PACKET_COUNT1
+         #  new_cursor_row9 & !PACKET_COUNT0 &  PACKET_COUNT1
+         #  new_cursor_row9 &  PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is ':5221' 
+-- Equation name is '_LC5_C19', type is buried 
+_LC5_C19 = LCELL( _EQ186);
+  _EQ186 =  _LC4_C21 &  PACKET_COUNT0 &  PACKET_COUNT1
+         #  new_cursor_row8 & !PACKET_COUNT0 &  PACKET_COUNT1
+         #  new_cursor_row8 &  PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is ':5275' 
+-- Equation name is '_LC5_A16', type is buried 
+_LC5_A16 = LCELL( _EQ187);
+  _EQ187 =  _LC2_C20 &  PACKET_COUNT0 &  PACKET_COUNT1
+         #  new_cursor_column9 & !PACKET_COUNT0 &  PACKET_COUNT1
+         #  new_cursor_column9 &  PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is ':5281' 
+-- Equation name is '_LC4_C20', type is buried 
+_LC4_C20 = LCELL( _EQ188);
+  _EQ188 =  _LC7_C20 &  PACKET_COUNT0 &  PACKET_COUNT1
+         # !PACKET_COUNT0 & !PACKET_COUNT1
+         #  new_cursor_column8 & !PACKET_COUNT0
+         #  new_cursor_column8 & !PACKET_COUNT1;
+
+-- Node name is '~5707~1' 
+-- Equation name is '~5707~1', location is LC2_C19, type is buried.
+-- synthesized logic cell 
+_LC2_C19 = LCELL( _EQ189);
+  _EQ189 = !_LC1_A22 &  PACKET_COUNT1;
+
+-- Node name is ':6408' 
+-- Equation name is '_LC4_A16', type is buried 
+_LC4_A16 = LCELL( _EQ190);
+  _EQ190 = !_LC1_A22 &  _LC5_A16 &  READ_CHAR
+         #  _LC1_A22 &  new_cursor_column9
+         #  new_cursor_column9 & !READ_CHAR;
+
+-- Node name is ':6414' 
+-- Equation name is '_LC3_C20', type is buried 
+_LC3_C20 = LCELL( _EQ191);
+  _EQ191 = !_LC1_A22 &  _LC4_C20 &  READ_CHAR
+         #  _LC1_A22 &  new_cursor_column8
+         #  new_cursor_column8 & !READ_CHAR;
+
+-- Node name is ':6468' 
+-- Equation name is '_LC5_C21', type is buried 
+_LC5_C21 = LCELL( _EQ192);
+  _EQ192 = !_LC1_A22 &  _LC2_C21 &  READ_CHAR
+         #  _LC1_A22 &  new_cursor_row9
+         #  new_cursor_row9 & !READ_CHAR;
+
+-- Node name is ':6474' 
+-- Equation name is '_LC4_C19', type is buried 
+_LC4_C19 = LCELL( _EQ193);
+  _EQ193 = !_LC1_A22 &  _LC5_C19 &  READ_CHAR
+         #  _LC1_A22 &  new_cursor_row8
+         #  new_cursor_row8 & !READ_CHAR;
+
+-- Node name is ':6540' 
+-- Equation name is '_LC2_A15', type is buried 
+_LC2_A15 = LCELL( _EQ194);
+  _EQ194 =  _LC1_A22 &  _LC2_A22 &  READ_CHAR
+         #  INCNT3 & !READ_CHAR;
+
+-- Node name is ':7045' 
+-- Equation name is '_LC6_A16', type is buried 
+_LC6_A16 = LCELL( _EQ195);
+  _EQ195 =  _LC4_A16 &  READ_CHAR
+         #  _LC4_A16 &  mouse_data
+         # !mouse_data &  new_cursor_column9 & !READ_CHAR;
+
+-- Node name is ':7051' 
+-- Equation name is '_LC3_C23', type is buried 
+_LC3_C23 = LCELL( _EQ196);
+  _EQ196 = !_LC2_A23 &  _LC3_C20
+         #  _LC2_A23 &  new_cursor_column8;
+
+-- Node name is ':7105' 
+-- Equation name is '_LC1_C23', type is buried 
+_LC1_C23 = LCELL( _EQ197);
+  _EQ197 = !_LC2_A23 &  _LC5_C21
+         #  _LC2_A23 &  new_cursor_row9;
+
+-- Node name is ':7111' 
+-- Equation name is '_LC1_C19', type is buried 
+_LC1_C19 = LCELL( _EQ198);
+  _EQ198 = !_LC2_A23 &  _LC4_C19
+         #  _LC2_A23 &  new_cursor_row8;
+
+-- Node name is '~7436~1' 
+-- Equation name is '~7436~1', location is LC1_B6, type is buried.
+-- synthesized logic cell 
+_LC1_B6  = LCELL( _EQ199);
+  _EQ199 =  _LC1_C8
+         # !PACKET_COUNT1
+         # !PACKET_COUNT0;
+
+-- Node name is '~7478~1' 
+-- Equation name is '~7478~1', location is LC1_C10, type is buried.
+-- synthesized logic cell 
+_LC1_C10 = LCELL( _EQ200);
+  _EQ200 =  PACKET_COUNT0
+         # !PACKET_COUNT1
+         # !_LC1_A17;
+
+-- Node name is '~7556~1' 
+-- Equation name is '~7556~1', location is LC3_B2, type is buried.
+-- synthesized logic cell 
+_LC3_B2  = LCELL( _EQ201);
+  _EQ201 = !PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC6_C9;
+
+-- Node name is '~7574~1' 
+-- Equation name is '~7574~1', location is LC2_C23, type is buried.
+-- synthesized logic cell 
+_LC2_C23 = LCELL( _EQ202);
+  _EQ202 =  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC1_A17 &  _LC6_C23;
+
+-- Node name is '~7580~1' 
+-- Equation name is '~7580~1', location is LC2_A16, type is buried.
+-- synthesized logic cell 
+_LC2_A16 = LCELL( _EQ203);
+  _EQ203 = !_LC1_A15 & !_LC1_A22 &  PACKET_COUNT0
+         # !_LC1_A15 & !_LC1_A22 &  PACKET_COUNT1;
+
+-- Node name is '~7580~2' 
+-- Equation name is '~7580~2', location is LC2_C13, type is buried.
+-- synthesized logic cell 
+_LC2_C13 = LCELL( _EQ204);
+  _EQ204 =  _LC1_C13 &  _LC1_C20 &  _LC2_A16
+         #  _LC1_C20 &  _LC2_A16 &  new_cursor_column7;
+
+-- Node name is '~7586~1' 
+-- Equation name is '~7586~1', location is LC6_C9, type is buried.
+-- synthesized logic cell 
+!_LC6_C9 = _LC6_C9~NOT;
+_LC6_C9~NOT = LCELL( _EQ205);
+  _EQ205 =  _LC1_A17 &  PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~7586~2' 
+-- Equation name is '~7586~2', location is LC1_C1, type is buried.
+-- synthesized logic cell 
+_LC1_C1  = LCELL( _EQ206);
+  _EQ206 =  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC1_A17 &  _LC3_C24;
+
+-- Node name is '~7622~1' 
+-- Equation name is '~7622~1', location is LC1_C16, type is buried.
+-- synthesized logic cell 
+_LC1_C16 = LCELL( _EQ207);
+  _EQ207 = !_LC1_A22 &  PACKET_COUNT1
+         # !_LC1_A17;
+
+-- Node name is '~7634~1' 
+-- Equation name is '~7634~1', location is LC7_C13, type is buried.
+-- synthesized logic cell 
+_LC7_C13 = LCELL( _EQ208);
+  _EQ208 =  _LC2_A16 &  _LC8_C21 &  new_cursor_row9
+         #  _LC2_A16 &  _LC8_C21 &  new_cursor_row8;
+
+-- Node name is '~7640~1' 
+-- Equation name is '~7640~1', location is LC8_C1, type is buried.
+-- synthesized logic cell 
+_LC8_C1  = LCELL( _EQ209);
+  _EQ209 =  _LC8_C21 &  new_cursor_row9
+         #  _LC8_C21 &  new_cursor_row7;
+
+-- Node name is '~7640~2' 
+-- Equation name is '~7640~2', location is LC6_C1, type is buried.
+-- synthesized logic cell 
+_LC6_C1  = LCELL( _EQ210);
+  _EQ210 =  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC1_A17 &  _LC8_C1;
+
+-- Node name is '~7646~1' 
+-- Equation name is '~7646~1', location is LC6_C5, type is buried.
+-- synthesized logic cell 
+_LC6_C5  = LCELL( _EQ211);
+  _EQ211 =  _LC8_C21 &  new_cursor_row9
+         #  _LC8_C21 &  new_cursor_row6;
+
+-- Node name is '~7646~2' 
+-- Equation name is '~7646~2', location is LC5_C5, type is buried.
+-- synthesized logic cell 
+_LC5_C5  = LCELL( _EQ212);
+  _EQ212 =  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC1_A17 &  _LC6_C5;
+
+-- Node name is '~7652~1' 
+-- Equation name is '~7652~1', location is LC4_C1, type is buried.
+-- synthesized logic cell 
+_LC4_C1  = LCELL( _EQ213);
+  _EQ213 =  _LC8_C21 &  new_cursor_row9
+         #  _LC8_C21 &  new_cursor_row5;
+
+-- Node name is '~7652~2' 
+-- Equation name is '~7652~2', location is LC2_C1, type is buried.
+-- synthesized logic cell 
+_LC2_C1  = LCELL( _EQ214);
+  _EQ214 =  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC1_A17 &  _LC4_C1;
+
+-- Node name is '~7658~1' 
+-- Equation name is '~7658~1', location is LC4_C5, type is buried.
+-- synthesized logic cell 
+_LC4_C5  = LCELL( _EQ215);
+  _EQ215 =  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1
+         #  _LC1_A17 &  _LC2_C5;
+
+-- Node name is '~7700~1' 
+-- Equation name is '~7700~1', location is LC1_C18, type is buried.
+-- synthesized logic cell 
+_LC1_C18 = LCELL( _EQ216);
+  _EQ216 = !PACKET_COUNT0 &  PACKET_COUNT1
+         #  PACKET_COUNT0 & !PACKET_COUNT1
+         # !_LC1_A17;
+
+-- Node name is '~7706~1' 
+-- Equation name is '~7706~1', location is LC1_C8, type is buried.
+-- synthesized logic cell 
+_LC1_C8  = LCELL( _EQ217);
+  _EQ217 = !_LC1_A17
+         # !PACKET_COUNT0
+         # !PACKET_COUNT1;
+
+-- Node name is '~7706~2' 
+-- Equation name is '~7706~2', location is LC6_C24, type is buried.
+-- synthesized logic cell 
+_LC6_C24 = LCELL( _EQ218);
+  _EQ218 =  new_cursor_column6
+         #  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~7760~1' 
+-- Equation name is '~7760~1', location is LC1_C24, type is buried.
+-- synthesized logic cell 
+_LC1_C24 = LCELL( _EQ219);
+  _EQ219 =  new_cursor_row7
+         #  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~7766~1' 
+-- Equation name is '~7766~1', location is LC3_C6, type is buried.
+-- synthesized logic cell 
+_LC3_C6  = LCELL( _EQ220);
+  _EQ220 =  new_cursor_row6
+         #  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~7772~1' 
+-- Equation name is '~7772~1', location is LC3_C12, type is buried.
+-- synthesized logic cell 
+_LC3_C12 = LCELL( _EQ221);
+  _EQ221 =  new_cursor_row5
+         #  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~7778~1' 
+-- Equation name is '~7778~1', location is LC2_C12, type is buried.
+-- synthesized logic cell 
+_LC2_C12 = LCELL( _EQ222);
+  _EQ222 =  new_cursor_row4
+         #  _LC1_A17 & !PACKET_COUNT0 & !PACKET_COUNT1;
+
+-- Node name is '~7832~1' 
+-- Equation name is '~7832~1', location is LC5_A22, type is buried.
+-- synthesized logic cell 
+_LC5_A22 = LCELL( _EQ223);
+  _EQ223 = !INCNT0 &  _LC1_A22 &  READ_CHAR
+         #  _LC1_A15;
+
+-- Node name is '~7838~1' 
+-- Equation name is '~7838~1', location is LC1_A15, type is buried.
+-- synthesized logic cell 
+!_LC1_A15 = _LC1_A15~NOT;
+_LC1_A15~NOT = LCELL( _EQ224);
+  _EQ224 = !_LC1_A9 & !_LC2_A23 &  READ_CHAR;
+
+-- Node name is '~7844~1' 
+-- Equation name is '~7844~1', location is LC2_A24, type is buried.
+-- synthesized logic cell 
+!_LC2_A24 = _LC2_A24~NOT;
+_LC2_A24~NOT = LCELL( _EQ225);
+  _EQ225 = !_LC1_A15 &  _LC1_A22;
+
+-- Node name is '~7904~1' 
+-- Equation name is '~7904~1', location is LC1_A23, type is buried.
+-- synthesized logic cell 
+_LC1_A23 = LCELL( _EQ226);
+  _EQ226 = !_LC2_A23 & !READ_CHAR
+         #  _LC1_A9;
+
+-- Node name is '~8133~1' 
+-- Equation name is '~8133~1', location is LC1_A17, type is buried.
+-- synthesized logic cell 
+!_LC1_A17 = _LC1_A17~NOT;
+_LC1_A17~NOT = LCELL( _EQ227);
+  _EQ227 =  _LC1_A22
+         #  _LC1_A15;
+
+-- Node name is '~8133~2' 
+-- Equation name is '~8133~2', location is LC1_A13, type is buried.
+-- synthesized logic cell 
+_LC1_A13 = LCELL( _EQ228);
+  _EQ228 = !_LC1_A9 &  _LC1_A22 & !_LC2_A23 &  READ_CHAR;
+
+-- Node name is '~8133~3' 
+-- Equation name is '~8133~3', location is LC4_A22, type is buried.
+-- synthesized logic cell 
+_LC4_A22 = LCELL( _EQ229);
+  _EQ229 =  INCNT0 &  INCNT1 &  _LC1_A13;
+
+-- Node name is '~8133~4' 
+-- Equation name is '~8133~4', location is LC3_A22, type is buried.
+-- synthesized logic cell 
+_LC3_A22 = LCELL( _EQ230);
+  _EQ230 = !INCNT0 &  _LC1_A22 &  READ_CHAR
+         # !INCNT1 &  _LC1_A22 &  READ_CHAR;
+
+-- Node name is '~8133~5' 
+-- Equation name is '~8133~5', location is LC7_C24, type is buried.
+-- synthesized logic cell 
+_LC7_C24 = LCELL( _EQ231);
+  _EQ231 =  cursor_column7 & !_LC1_C8 & !_LC3_C7 & !PACKET_CHAR27
+         # !cursor_column7 & !_LC1_C8 & !_LC3_C7 &  PACKET_CHAR27
+         #  cursor_column7 & !_LC1_C8 &  _LC3_C7 &  PACKET_CHAR27
+         # !cursor_column7 & !_LC1_C8 &  _LC3_C7 & !PACKET_CHAR27;
+
+-- Node name is '~8133~6' 
+-- Equation name is '~8133~6', location is LC1_B9, type is buried.
+-- synthesized logic cell 
+_LC1_B9  = LCELL( _EQ232);
+  _EQ232 =  cursor_column0 & !_LC1_C8 & !PACKET_CHAR20
+         # !cursor_column0 & !_LC1_C8 &  PACKET_CHAR20;
+
+-- Node name is '~8133~7' 
+-- Equation name is '~8133~7', location is LC4_B7, type is buried.
+-- synthesized logic cell 
+_LC4_B7  = LCELL( _EQ233);
+  _EQ233 =  cursor_column1 & !_LC1_C8 &  _LC6_B7 &  PACKET_CHAR21
+         #  cursor_column1 & !_LC1_C8 & !_LC6_B7 & !PACKET_CHAR21
+         # !cursor_column1 & !_LC1_C8 &  _LC6_B7 & !PACKET_CHAR21
+         # !cursor_column1 & !_LC1_C8 & !_LC6_B7 &  PACKET_CHAR21;
+
+-- Node name is '~8133~8' 
+-- Equation name is '~8133~8', location is LC2_B7, type is buried.
+-- synthesized logic cell 
+_LC2_B7  = LCELL( _EQ234);
+  _EQ234 =  cursor_column2 & !_LC1_C8 & !_LC7_B7 & !PACKET_CHAR22
+         # !cursor_column2 & !_LC1_C8 & !_LC7_B7 &  PACKET_CHAR22
+         #  cursor_column2 & !_LC1_C8 &  _LC7_B7 &  PACKET_CHAR22
+         # !cursor_column2 & !_LC1_C8 &  _LC7_B7 & !PACKET_CHAR22;
+
+-- Node name is '~8133~9' 
+-- Equation name is '~8133~9', location is LC7_B3, type is buried.
+-- synthesized logic cell 
+_LC7_B3  = LCELL( _EQ235);
+  _EQ235 =  cursor_column3 & !_LC1_B7 & !_LC1_C8 & !PACKET_CHAR23
+         # !cursor_column3 & !_LC1_B7 & !_LC1_C8 &  PACKET_CHAR23
+         #  cursor_column3 &  _LC1_B7 & !_LC1_C8 &  PACKET_CHAR23
+         # !cursor_column3 &  _LC1_B7 & !_LC1_C8 & !PACKET_CHAR23;
+
+-- Node name is '~8133~10' 
+-- Equation name is '~8133~10', location is LC5_B10, type is buried.
+-- synthesized logic cell 
+_LC5_B10 = LCELL( _EQ236);
+  _EQ236 =  cursor_column4 & !_LC1_C8 & !_LC6_B10 & !PACKET_CHAR24
+         # !cursor_column4 & !_LC1_C8 & !_LC6_B10 &  PACKET_CHAR24
+         #  cursor_column4 & !_LC1_C8 &  _LC6_B10 &  PACKET_CHAR24
+         # !cursor_column4 & !_LC1_C8 &  _LC6_B10 & !PACKET_CHAR24;
+
+-- Node name is '~8133~11' 
+-- Equation name is '~8133~11', location is LC2_B10, type is buried.
+-- synthesized logic cell 
+_LC2_B10 = LCELL( _EQ237);
+  _EQ237 =  cursor_column5 & !_LC1_C8 & !_LC7_B10 & !PACKET_CHAR25
+         # !cursor_column5 & !_LC1_C8 & !_LC7_B10 &  PACKET_CHAR25
+         #  cursor_column5 & !_LC1_C8 &  _LC7_B10 &  PACKET_CHAR25
+         # !cursor_column5 & !_LC1_C8 &  _LC7_B10 & !PACKET_CHAR25;
+
+-- Node name is '~8133~12' 
+-- Equation name is '~8133~12', location is LC2_B4, type is buried.
+-- synthesized logic cell 
+_LC2_B4  = LCELL( _EQ238);
+  _EQ238 =  cursor_row0 & !_LC1_C8 & !PACKET_CHAR30
+         # !cursor_row0 & !_LC1_C8 &  PACKET_CHAR30;
+
+-- Node name is '~8133~13' 
+-- Equation name is '~8133~13', location is LC5_B12, type is buried.
+-- synthesized logic cell 
+_LC5_B12 = LCELL( _EQ239);
+  _EQ239 =  cursor_row1 & !_LC1_C8 &  _LC6_B12 & !PACKET_CHAR31
+         #  cursor_row1 & !_LC1_C8 & !_LC6_B12 &  PACKET_CHAR31
+         # !cursor_row1 & !_LC1_C8 &  _LC6_B12 &  PACKET_CHAR31
+         # !cursor_row1 & !_LC1_C8 & !_LC6_B12 & !PACKET_CHAR31;
+
+-- Node name is '~8133~14' 
+-- Equation name is '~8133~14', location is LC4_B12, type is buried.
+-- synthesized logic cell 
+_LC4_B12 = LCELL( _EQ240);
+  _EQ240 =  cursor_row2 & !_LC1_C8 & !_LC7_B12 &  PACKET_CHAR32
+         # !cursor_row2 & !_LC1_C8 & !_LC7_B12 & !PACKET_CHAR32
+         #  cursor_row2 & !_LC1_C8 &  _LC7_B12 & !PACKET_CHAR32
+         # !cursor_row2 & !_LC1_C8 &  _LC7_B12 &  PACKET_CHAR32;
+
+-- Node name is '~8133~15' 
+-- Equation name is '~8133~15', location is LC2_B8, type is buried.
+-- synthesized logic cell 
+_LC2_B8  = LCELL( _EQ241);
+  _EQ241 =  cursor_row3 & !_LC1_C8 & !_LC3_B12 &  PACKET_CHAR33
+         # !cursor_row3 & !_LC1_C8 & !_LC3_B12 & !PACKET_CHAR33
+         #  cursor_row3 & !_LC1_C8 &  _LC3_B12 & !PACKET_CHAR33
+         # !cursor_row3 & !_LC1_C8 &  _LC3_B12 &  PACKET_CHAR33;
+
+-- Node name is '~8133~16' 
+-- Equation name is '~8133~16', location is LC2_B14, type is buried.
+-- synthesized logic cell 
+_LC2_B14 = LCELL( _EQ242);
+  _EQ242 = !_LC1_C13 &  _LC1_C20 &  _LC2_A16 &  new_cursor_column0;
+
+-- Node name is '~8133~17' 
+-- Equation name is '~8133~17', location is LC1_B18, type is buried.
+-- synthesized logic cell 
+_LC1_B18 = LCELL( _EQ243);
+  _EQ243 = !_LC1_C13 &  _LC1_C20 &  _LC2_A16 &  new_cursor_column1;
+
+-- Node name is '~8133~18' 
+-- Equation name is '~8133~18', location is LC4_B17, type is buried.
+-- synthesized logic cell 
+_LC4_B17 = LCELL( _EQ244);
+  _EQ244 = !_LC1_C13 &  _LC1_C20 &  _LC2_A16 &  new_cursor_column2;
+
+-- Node name is '~8133~19' 
+-- Equation name is '~8133~19', location is LC4_B18, type is buried.
+-- synthesized logic cell 
+_LC4_B18 = LCELL( _EQ245);
+  _EQ245 = !_LC1_C13 &  _LC1_C20 &  _LC2_A16 &  new_cursor_column3;
+
+-- Node name is '~8133~20' 
+-- Equation name is '~8133~20', location is LC4_B14, type is buried.
+-- synthesized logic cell 
+_LC4_B14 = LCELL( _EQ246);
+  _EQ246 = !_LC1_C13 &  _LC1_C20 &  _LC2_A16 &  new_cursor_column4;
+
+-- Node name is '~8133~21' 
+-- Equation name is '~8133~21', location is LC5_B14, type is buried.
+-- synthesized logic cell 
+_LC5_B14 = LCELL( _EQ247);
+  _EQ247 = !_LC1_C13 &  _LC1_C20 &  _LC2_A16 &  new_cursor_column5;
+
+-- Node name is '~8133~22' 
+-- Equation name is '~8133~22', location is LC3_C24, type is buried.
+-- synthesized logic cell 
+_LC3_C24 = LCELL( _EQ248);
+  _EQ248 = !_LC1_C13 &  _LC1_C20 &  new_cursor_column6;
+
+-- Node name is '~8133~23' 
+-- Equation name is '~8133~23', location is LC6_C23, type is buried.
+-- synthesized logic cell 
+_LC6_C23 = LCELL( _EQ249);
+  _EQ249 =  _LC1_C20 &  new_cursor_column8 & !new_cursor_column9;
+
+-- Node name is '~8133~24' 
+-- Equation name is '~8133~24', location is LC6_C13, type is buried.
+-- synthesized logic cell 
+_LC6_C13 = LCELL( _EQ250);
+  _EQ250 =  _LC1_C20 &  _LC2_A16 &  new_cursor_column9;
+
+-- Node name is '~8133~25' 
+-- Equation name is '~8133~25', location is LC6_B15, type is buried.
+-- synthesized logic cell 
+_LC6_B15 = LCELL( _EQ251);
+  _EQ251 =  _LC2_A16 &  _LC4_C22 &  _LC8_C21 &  new_cursor_row0;
+
+-- Node name is '~8133~26' 
+-- Equation name is '~8133~26', location is LC2_B15, type is buried.
+-- synthesized logic cell 
+_LC2_B15 = LCELL( _EQ252);
+  _EQ252 =  _LC2_A16 &  _LC4_C22 &  _LC8_C21 &  new_cursor_row1;
+
+-- Node name is '~8133~27' 
+-- Equation name is '~8133~27', location is LC2_B17, type is buried.
+-- synthesized logic cell 
+_LC2_B17 = LCELL( _EQ253);
+  _EQ253 =  _LC2_A16 &  _LC4_C22 &  _LC8_C21 &  new_cursor_row2;
+
+-- Node name is '~8133~28' 
+-- Equation name is '~8133~28', location is LC3_B15, type is buried.
+-- synthesized logic cell 
+_LC3_B15 = LCELL( _EQ254);
+  _EQ254 =  _LC2_A16 &  _LC4_C22 &  _LC8_C21 &  new_cursor_row3;
+
+-- Node name is '~8133~29' 
+-- Equation name is '~8133~29', location is LC2_C5, type is buried.
+-- synthesized logic cell 
+_LC2_C5  = LCELL( _EQ255);
+  _EQ255 =  _LC4_C22 &  _LC8_C21 &  new_cursor_row4;
+
+-- Node name is ':8133' 
+-- Equation name is '_LC1_A9', type is buried 
+!_LC1_A9 = _LC1_A9~NOT;
+_LC1_A9~NOT = LCELL( _EQ256);
+  _EQ256 = !mouse_state~3
+         # !mouse_state~6
+         #  mouse_state~5
+         #  mouse_state~4;
+
+-- Node name is ':8154' 
+-- Equation name is '_LC1_A8', type is buried 
+_LC1_A8  = LCELL( _EQ257);
+  _EQ257 =  mouse_state~5
+         #  mouse_state~4
+         # !mouse_state~6;
+
+
+
+Project Information                               c:\booksoft\chap11\mouse.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:01
+   Logic Synthesizer                      00:00:02
+   Partitioner                            00:00:01
+   Fitter                                 00:00:02
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:01
+   --------------------------             --------
+   Total Time                             00:00:07
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 11,481K

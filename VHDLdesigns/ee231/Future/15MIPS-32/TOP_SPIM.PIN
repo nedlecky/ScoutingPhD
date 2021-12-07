@@ -1,0 +1,272 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "top_spim" ASSIGNED TO AN EPF10K70RC240-4
+TCK                              : 1
+CONF_DONE                        : 2
+nCEO                             : 3
+TDO                              : 4
+VCCINT                           : 5
+write_data_out24                 : 6
+write_data_out22                 : 7
+write_data_out11                 : 8
+ALU_result_out26                 : 9
+GNDINT                           : 10
+ALU_result_out24                 : 11
+Zero_out                         : 12
+read_data_1_out31                : 13
+ALU_result_out31                 : 14
+ALU_result_out27                 : 15
+VCCINT                           : 16
+read_data_1_out29                : 17
+read_data_2_out30                : 18
+write_data_out21                 : 19
+ALU_result_out21                 : 20
+ALU_result_out19                 : 21
+GNDINT                           : 22
+ALU_result_out28                 : 23
+write_data_out19                 : 24
+Instruction_out29                : 25
+Instruction_out6                 : 26
+VCCINT                           : 27
+write_data_out15                 : 28
+Instruction_out0                 : 29
+read_data_1_out2                 : 30
+Instruction_out30                : 31
+GNDINT                           : 32
+read_data_2_out23                : 33
+ALU_result_out4                  : 34
+PC0                              : 35
+write_data_out23                 : 36
+VCCINT                           : 37
+Instruction_out28                : 38
+write_data_out16                 : 39
+Instruction_out12                : 40
+ALU_result_out23                 : 41
+GNDINT                           : 42
+Instruction_out14                : 43
+read_data_2_out7                 : 44
+Instruction_out4                 : 45
+read_data_2_out19                : 46
+VCCINT                           : 47
+ALU_result_out25                 : 48
+write_data_out10                 : 49
+PC1                              : 50
+ALU_result_out18                 : 51
+GNDINT                           : 52
+write_data_out13                 : 53
+write_data_out18                 : 54
+write_data_out12                 : 55
+Instruction_out22                : 56
+VCCINT                           : 57
+TMS                              : 58
+TRST                             : 59
+nSTATUS                          : 60
+read_data_2_out17                : 61
+read_data_1_out17                : 62
+RESERVED                         : 63
+RESERVED                         : 64
+Instruction_out15                : 65
+read_data_1_out24                : 66
+RESERVED                         : 67
+ALU_result_out22                 : 68
+GNDINT                           : 69
+read_data_1_out23                : 70
+RESERVED                         : 71
+write_data_out26                 : 72
+read_data_1_out26                : 73
+read_data_1_out21                : 74
+Instruction_out26                : 75
+read_data_1_out28                : 76
+VCCINT                           : 77
+Instruction_out27                : 78
+ALU_result_out16                 : 79
+read_data_2_out10                : 80
+read_data_2_out26                : 81
+read_data_2_out18                : 82
+write_data_out17                 : 83
+read_data_1_out16                : 84
+GNDINT                           : 85
+read_data_2_out22                : 86
+Memwrite_out                     : 87
+read_data_1_out13                : 88
+VCCINT                           : 89
+reset                            : 90
+clock                            : 91
+GNDINT                           : 92
+GNDINT                           : 93
+read_data_1_out1                 : 94
+read_data_2_out1                 : 95
+VCCINT                           : 96
+write_data_out30                 : 97
+read_data_2_out9                 : 98
+read_data_2_out0                 : 99
+ALU_result_out7                  : 100
+ALU_result_out5                  : 101
+ALU_result_out13                 : 102
+read_data_1_out3                 : 103
+GNDINT                           : 104
+read_data_2_out20                : 105
+PC3                              : 106
+PC2                              : 107
+read_data_2_out6                 : 108
+ALU_result_out14                 : 109
+read_data_1_out11                : 110
+ALU_result_out12                 : 111
+VCCINT                           : 112
+ALU_result_out1                  : 113
+ALU_result_out0                  : 114
+read_data_2_out12                : 115
+RESERVED                         : 116
+RESERVED                         : 117
+read_data_1_out9                 : 118
+read_data_2_out11                : 119
+read_data_1_out7                 : 120
+nCONFIG                          : 121
+VCCINT                           : 122
+MSEL1                            : 123
+MSEL0                            : 124
+GNDINT                           : 125
+write_data_out6                  : 126
+write_data_out20                 : 127
+write_data_out4                  : 128
+ALU_result_out20                 : 129
+VCCINT                           : 130
+ALU_result_out10                 : 131
+write_data_out25                 : 132
+write_data_out9                  : 133
+ALU_result_out6                  : 134
+GNDINT                           : 135
+ALU_result_out9                  : 136
+write_data_out7                  : 137
+Instruction_out3                 : 138
+Instruction_out11                : 139
+VCCINT                           : 140
+Instruction_out9                 : 141
+Instruction_out2                 : 142
+ALU_result_out17                 : 143
+write_data_out5                  : 144
+GNDINT                           : 145
+Regwrite_out                     : 146
+Instruction_out20                : 147
+Instruction_out19                : 148
+write_data_out14                 : 149
+VCCINT                           : 150
+Instruction_out13                : 151
+Instruction_out16                : 152
+read_data_2_out3                 : 153
+ALU_result_out29                 : 154
+GNDINT                           : 155
+Instruction_out5                 : 156
+Instruction_out21                : 157
+Instruction_out18                : 158
+write_data_out2                  : 159
+VCCINT                           : 160
+Instruction_out23                : 161
+Instruction_out25                : 162
+Instruction_out1                 : 163
+write_data_out28                 : 164
+GNDINT                           : 165
+write_data_out29                 : 166
+Instruction_out17                : 167
+read_data_2_out29                : 168
+read_data_2_out25                : 169
+VCCINT                           : 170
+write_data_out1                  : 171
+write_data_out8                  : 172
+Instruction_out31                : 173
+Instruction_out24                : 174
+ALU_result_out8                  : 175
+GNDINT                           : 176
+TDI                              : 177
+nCE                              : 178
+DCLK                             : 179
+DATA0                            : 180
+read_data_1_out5                 : 181
+PC7                              : 182
+read_data_1_out0                 : 183
+Instruction_out7                 : 184
+ALU_result_out2                  : 185
+ALU_result_out3                  : 186
+read_data_1_out4                 : 187
+read_data_2_out4                 : 188
+VCCINT                           : 189
+read_data_1_out8                 : 190
+write_data_out0                  : 191
+RESERVED                         : 192
+PC4                              : 193
+PC6                              : 194
+RESERVED                         : 195
+PC5                              : 196
+GNDINT                           : 197
+ALU_result_out11                 : 198
+read_data_2_out8                 : 199
+read_data_1_out6                 : 200
+Instruction_out8                 : 201
+RESERVED                         : 202
+read_data_1_out20                : 203
+write_data_out3                  : 204
+VCCINT                           : 205
+read_data_2_out5                 : 206
+ALU_result_out30                 : 207
+read_data_1_out12                : 208
+Instruction_out10                : 209
+GNDINT                           : 210
+GNDINT                           : 211
+GNDINT                           : 212
+Branch_out                       : 213
+read_data_2_out13                : 214
+write_data_out31                 : 215
+GNDINT                           : 216
+read_data_1_out18                : 217
+read_data_2_out24                : 218
+read_data_1_out27                : 219
+read_data_1_out10                : 220
+read_data_2_out14                : 221
+read_data_1_out14                : 222
+read_data_2_out21                : 223
+VCCINT                           : 224
+read_data_2_out15                : 225
+read_data_1_out25                : 226
+RESERVED                         : 227
+read_data_2_out16                : 228
+write_data_out27                 : 229
+read_data_1_out19                : 230
+read_data_1_out15                : 231
+GNDINT                           : 232
+read_data_1_out22                : 233
+RESERVED                         : 234
+read_data_2_out2                 : 235
+read_data_2_out28                : 236
+ALU_result_out15                 : 237
+read_data_2_out27                : 238
+read_data_2_out31                : 239
+read_data_1_out30                : 240

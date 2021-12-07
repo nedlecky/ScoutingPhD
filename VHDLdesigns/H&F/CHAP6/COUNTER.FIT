@@ -1,0 +1,111 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 9.23 3/19/99               
+-- Compiled: 05/19/1999 15:32:10      
+
+-- Copyright (C) 1988-1999 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "counter"
+BEGIN
+
+    DEVICE = "EPF10K10LC84-3";
+
+    "Clock"                        : INPUT_PIN  = 43     ;
+    "Max_count0"                   : INPUT_PIN  = 84     ;
+    "Max_count1"                   : INPUT_PIN  = 2      ;
+    "Max_count2"                   : INPUT_PIN  = 44     ;
+    "Max_count3"                   : INPUT_PIN  = 1      ;
+    "Max_count4"                   : INPUT_PIN  = 73     ;
+    "Max_count5"                   : INPUT_PIN  = 72     ;
+    "Max_count6"                   : INPUT_PIN  = 71     ;
+    "Max_count7"                   : INPUT_PIN  = 70     ;
+    "Reset"                        : INPUT_PIN  = 42     ;
+    "Count0"                       : OUTPUT_PIN = 17     ;
+    "Count1"                       : OUTPUT_PIN = 18     ;
+    "Count2"                       : OUTPUT_PIN = 9      ;
+    "Count3"                       : OUTPUT_PIN = 10     ;
+    "Count4"                       : OUTPUT_PIN = 19     ;
+    "Count5"                       : OUTPUT_PIN = 11     ;
+    "Count6"                       : OUTPUT_PIN = 69     ;
+    "Count7"                       : OUTPUT_PIN = 16     ;
+    "|LPM_ADD_SUB:140|addcore:adder|:121" : LOCATION   = LC7_A2 ;
+    "|LPM_ADD_SUB:140|addcore:adder|:129" : LOCATION   = LC5_A2 ;
+    "|LPM_ADD_SUB:140|addcore:adder|:137" : LOCATION   = LC4_A1 ;
+    ":19"                          : LOCATION   = LC1_A1 ;  -- internal_count7
+    ":20"                          : LOCATION   = LC8_A1 ;  -- internal_count6
+    ":21"                          : LOCATION   = LC2_A1 ;  -- internal_count5
+    ":22"                          : LOCATION   = LC7_A4 ;  -- internal_count4
+    ":23"                          : LOCATION   = LC2_A2 ;  -- internal_count3
+    ":24"                          : LOCATION   = LC1_A2 ;  -- internal_count2
+    ":25"                          : LOCATION   = LC5_A3 ;  -- internal_count1
+    ":26"                          : LOCATION   = LC3_A3 ;  -- internal_count0
+    ":79"                          : LOCATION   = LC3_A1 ;
+    ":84"                          : LOCATION   = LC6_A1 ;
+    ":89"                          : LOCATION   = LC5_A1 ;
+    ":94"                          : LOCATION   = LC6_A2 ;
+    ":99"                          : LOCATION   = LC3_A2 ;
+    ":104"                         : LOCATION   = LC4_A2 ;
+    ":109"                         : LOCATION   = LC8_A2 ;
+
+END;
+
+INTERNAL_INFO "counter"
+BEGIN
+	DEVICE = EPF10K10LC84-3;
+    OD5P43  : LORAX = "1:FB5->LC1_A1,->LC8_A1,->LC2_A1,->LC7_A4,->LC2_A2,->LC1_A2,->LC5_A3,->LC3_A3|";
+    LC5_A2  : LORAX = "1:MSW5R0C0,HHL34R0|2:PA17R0C3->LC7_A4|,2:PA17R0C0->LC4_A1,->LC2_A1||";
+    OD0P84  : LORAX = "1:FB0|2:FH0R0,PA0R0C1->LC8_A2||";
+    OD1P2   : LORAX = "1:FB1|2:FH1R0,PA20R0C1->LC8_A2||";
+    OD2P44  : LORAX = "1:FB2|2:FH2R0,PA6R0C1->LC4_A2||";
+    OD4P1   : LORAX = "1:FB4|2:CH0R0,PA19R0C1->LC3_A2||";
+    OH0R0P73 : LORAX = "1:G10R0,PA11R0C1->LC6_A2|";
+    OH2R0P72 : LORAX = "1:G46R0,PA4R0C0->LC5_A1|";
+    OH3R0P71 : LORAX = "1:G37R0,PA1R0C0->LC6_A1|";
+    OH4R0P70 : LORAX = "1:G47R0,PA3R0C0->LC3_A1|";
+    OD3P42  : LORAX = "1:FB3->LC1_A1,->LC8_A1,->LC2_A1,->LC7_A4,->LC2_A2,->LC1_A2,->LC5_A3,->LC3_A3|";
+    LC1_A1  : LORAX = "1:MSW0R0C0,HHL22R0->OH8R0P16|";
+    LC8_A1  : LORAX = "1:MSW7R0C0,G95R0->OH7R0P69|";
+    LC2_A1  : LORAX = "1:MSW1R0C0,V3C0->OV1C0P11|";
+    LC7_A4  : LORAX = "1:MSW6R0C3,HHL26R0->OH14R0P19,2:PA21R0C1->LC6_A2|,2:PA21R0C0->LC4_A1,->LC2_A1||";
+    LC2_A2  : LORAX = "1:MSW2R0C0,V6C0->OV0C0P10|";
+    LC1_A2  : LORAX = "1:MSW0R0C1,V0C1->OV1C1P9|";
+    LC5_A3  : LORAX = "1:MSW4R0C2,HHL43R0->OH12R0P18,2:PA18R0C1->LC7_A2,->LC5_A2,->LC1_A2,->LC8_A2||";
+    LC3_A3  : LORAX = "1:MSW2R0C2,HHL1R0->OH10R0P17,2:PA2R0C1->LC7_A2,->LC5_A2,->LC1_A2,->LC8_A2||";
+    LC3_A1  : LORAX = "1:MSW2R0C1,HHL4R0|2:PA5R0C2->LC5_A3,->LC3_A3|,2:PA5R0C1->LC2_A2,->LC1_A2|,2:PA5R0C3->LC7_A4||";
+    LC6_A2  : LORAX = "1:MSW5R0C1,HHL28R0,PA7R0C0->LC5_A1|";
+	LC7_A2  : LORAX2 = "X, X, LC3_A3, LC5_A3";
+	LC5_A2  : LORAX2 = "LC2_A2, LC1_A2, LC5_A3, LC3_A3";
+	LC4_A1  : LORAX2 = "X, LC5_A2, LC2_A1, LC7_A4";
+	LC1_A1  : LORAX2 = "LC1_A1, LC8_A1, LC4_A1, LC3_A1";
+	LC8_A1  : LORAX2 = "X, LC8_A1, LC4_A1, LC3_A1";
+	LC2_A1  : LORAX2 = "LC5_A2, LC2_A1, LC7_A4, LC3_A1";
+	LC7_A4  : LORAX2 = "X, LC5_A2, LC7_A4, LC3_A1";
+	LC2_A2  : LORAX2 = "LC7_A2, LC2_A2, LC1_A2, LC3_A1";
+	LC1_A2  : LORAX2 = "LC1_A2, LC3_A1, LC5_A3, LC3_A3";
+	LC5_A3  : LORAX2 = "X, LC3_A1, LC3_A3, LC5_A3";
+	LC3_A3  : LORAX2 = "X, X, LC3_A1, LC3_A3";
+	LC3_A1  : LORAX2 = "X, OH4R0P70, LC1_A1, LC6_A1";
+	LC6_A1  : LORAX2 = "X, OH3R0P71, LC8_A1, LC5_A1";
+	LC5_A1  : LORAX2 = "X, OH2R0P72, LC2_A1, LC6_A2";
+	LC6_A2  : LORAX2 = "X, OH0R0P73, LC7_A4, LC3_A2";
+	LC3_A2  : LORAX2 = "X, OD4P1, LC2_A2, LC4_A2";
+	LC4_A2  : LORAX2 = "X, OD2P44, LC1_A2, LC8_A2";
+	LC8_A2  : LORAX2 = "OD0P84, OD1P2, LC3_A3, LC5_A3";
+END;

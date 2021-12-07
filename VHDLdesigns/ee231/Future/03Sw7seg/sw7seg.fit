@@ -1,0 +1,101 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 01/18/2002 19:08:24      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "sw7seg"
+BEGIN
+
+    DEVICE = "EPF10K70RC240-4";
+
+    "disp10"                       : INPUT_PIN  = 41     ;
+    "disp11"                       : INPUT_PIN  = 40     ;
+    "disp12"                       : INPUT_PIN  = 39     ;
+    "disp13"                       : INPUT_PIN  = 38     ;
+    "a"                            : OUTPUT_PIN = 17     ;
+    "b"                            : OUTPUT_PIN = 18     ;
+    "c"                            : OUTPUT_PIN = 19     ;
+    "d"                            : OUTPUT_PIN = 20     ;
+    "dp"                           : OUTPUT_PIN = 25     ;
+    "e"                            : OUTPUT_PIN = 21     ;
+    "f"                            : OUTPUT_PIN = 23     ;
+    "g"                            : OUTPUT_PIN = 24     ;
+    "|DEC_7SEG:1|:432"             : LOCATION   = LC1_C31;
+    "|DEC_7SEG:1|:444"             : LOCATION   = LC6_C34;
+    "|DEC_7SEG:1|:456"             : LOCATION   = LC3_C34;
+    "|DEC_7SEG:1|:492"             : LOCATION   = LC2_C34;
+    "|DEC_7SEG:1|:528"             : LOCATION   = LC6_C42;
+    "|DEC_7SEG:1|:540"             : LOCATION   = LC4_C42;
+    "|DEC_7SEG:1|:543"             : LOCATION   = LC7_B27;
+    "|DEC_7SEG:1|~581~1"           : LOCATION   = LC4_C34;
+    "|DEC_7SEG:1|:591"             : LOCATION   = LC8_C34;
+    "|DEC_7SEG:1|:638"             : LOCATION   = LC3_C42;
+    "|DEC_7SEG:1|:639"             : LOCATION   = LC1_C42;
+    "|DEC_7SEG:1|:687"             : LOCATION   = LC2_C42;
+    "|DEC_7SEG:1|~687~1"           : LOCATION   = LC5_C34;
+    "|DEC_7SEG:1|~687~2"           : LOCATION   = LC7_C34;
+    "|DEC_7SEG:1|~687~3"           : LOCATION   = LC1_C34;
+    "|DEC_7SEG:1|:729"             : LOCATION   = LC8_C42;
+    "|DEC_7SEG:1|:735"             : LOCATION   = LC5_C42;
+    "|DEC_7SEG:1|:783"             : LOCATION   = LC6_C31;
+    "|DEC_7SEG:1|~785~1"           : LOCATION   = LC7_C42;
+    "|DEC_7SEG:1|:833"             : LOCATION   = LC7_C31;
+
+END;
+
+INTERNAL_INFO "sw7seg"
+BEGIN
+	DEVICE = EPF10K70RC240-4;
+    LC1_C31 : LORAX = "1:MSW0R2C30,HHR50R2,PA6R2C33->LC7_C34|";
+    LC7_B27 : LORAX = "1:MSW6R1C27,G162R1->OH6R1P17|";
+    LC8_C34 : LORAX = "1:MSW7R2C33,V22C33,HHR71R1->OH7R1P18|";
+    LC1_C42 : LORAX = "1:MSW0R2C41,HHR42R2->OH0R2P19|";
+    LC1_C34 : LORAX = "1:MSW0R2C33,HHR45R2,PA14R2C41->LC2_C42|";
+    LC2_C42 : LORAX = "1:MSW2R2C40,HHR31R2->OH2R2P20|";
+    LC5_C42 : LORAX = "1:MSW4R2C41,HHR72R2->OH4R2P21|";
+    LC6_C31 : LORAX = "1:MSW5R2C31,G177R2->OH5R2P23|";
+    LC7_C31 : LORAX = "1:MSW6R2C30,HHR75R2->OH6R2P24|";
+    OH7R5P41 : LORAX = "1:G83R5,V4C46|2:HHR18R1,PA13R1C26->LC7_B27|,2:HHR18R2|3:PA13R2C30->LC1_C31,->LC6_C31,->LC7_C31|,3:PA13R2C33->LC6_C34,->LC3_C34,->LC2_C34,->LC4_C34,->LC8_C34,->LC5_C34|,3:PA13R2C41->LC6_C42,->LC4_C42,->LC3_C42,->LC8_C42|||";
+    OH6R5P40 : LORAX = "1:G88R5,V10C47|2:HHR12R1,PA5R1C26->LC7_B27|,2:HHR12R2|3:PA5R2C30->LC1_C31,->LC6_C31,->LC7_C31|,3:PA5R2C33->LC6_C34,->LC3_C34,->LC2_C34,->LC4_C34,->LC8_C34,->LC5_C34|,3:PA5R2C41->LC6_C42,->LC4_C42,->LC3_C42,->LC8_C42,->LC7_C42|||";
+    OH4R5P39 : LORAX = "1:G82R5,V4C48|2:HHR34R1,PA11R1C26->LC7_B27|,2:HHR34R2|3:PA11R2C30->LC1_C31,->LC6_C31,->LC7_C31|,3:PA11R2C33->LC6_C34,->LC3_C34,->LC2_C34,->LC4_C34,->LC8_C34,->LC5_C34|,3:PA11R2C41->LC6_C42,->LC4_C42,->LC3_C42,->LC8_C42,->LC7_C42|||";
+    OH3R5P38 : LORAX = "1:G89R5,V4C49|2:HHR22R1,PA9R1C26->LC7_B27|,2:HHR22R2|3:PA9R2C30->LC1_C31,->LC6_C31,->LC7_C31|,3:PA9R2C33->LC6_C34,->LC3_C34,->LC2_C34,->LC4_C34,->LC8_C34,->LC5_C34|,3:PA9R2C41->LC6_C42,->LC4_C42,->LC3_C42,->LC8_C42,->LC7_C42|||";
+	LC1_C31 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC6_C34 : LORAX2 = "OH6R5P40, OH7R5P41, OH4R5P39, OH3R5P38";
+	LC3_C34 : LORAX2 = "OH6R5P40, OH7R5P41, OH4R5P39, OH3R5P38";
+	LC2_C34 : LORAX2 = "OH6R5P40, OH7R5P41, OH4R5P39, OH3R5P38";
+	LC6_C42 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC4_C42 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC7_B27 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC4_C34 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC8_C34 : LORAX2 = "OH6R5P40, OH7R5P41, OH4R5P39, OH3R5P38";
+	LC3_C42 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC1_C42 : LORAX2 = "X, LC3_C42, LC4_C42, LC6_C42";
+	LC5_C34 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC7_C34 : LORAX2 = "X, LC5_C34, LC6_C34, LC1_C31";
+	LC1_C34 : LORAX2 = "LC2_C34, LC3_C34, LC4_C34, LC7_C34";
+	LC2_C42 : LORAX2 = "LC7_C42, LC4_C42, LC6_C42, LC1_C34";
+	LC8_C42 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC5_C42 : LORAX2 = "X, LC8_C42, LC4_C42, LC6_C42";
+	LC6_C31 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC7_C42 : LORAX2 = "X, OH6R5P40, OH4R5P39, OH3R5P38";
+	LC7_C31 : LORAX2 = "OH7R5P41, OH6R5P40, OH4R5P39, OH3R5P38";
+END;

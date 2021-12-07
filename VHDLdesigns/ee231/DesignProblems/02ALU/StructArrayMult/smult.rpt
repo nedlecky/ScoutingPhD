@@ -1,0 +1,1005 @@
+Project Information                e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 02/12/2002 18:14:50
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+SMULT
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+smult     EPF10K70RC240-4  10     10     0    0         0  %    52       1  %
+
+User Pins:                 10     10     0  
+
+
+
+Project Information                e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+
+** FILE HIERARCHY **
+
+
+
+|absolute:a1~25|
+|absolute:a1~25|complementer:c|
+|absolute:a2~30|
+|absolute:a2~30|complementer:c|
+|nxnmult:m1|
+|nxnmult:m1|fulladder:add00|
+|nxnmult:m1|fulladder:add0j|
+|nxnmult:m1|fulladder:add0j~177|
+|nxnmult:m1|fulladder:add0wm1|
+|nxnmult:m1|fulladder:addi0|
+|nxnmult:m1|fulladder:addij|
+|nxnmult:m1|fulladder:addij~270|
+|nxnmult:m1|fulladder:addiwm1|
+|nxnmult:m1|fulladder:addi0~316|
+|nxnmult:m1|fulladder:addij~336|
+|nxnmult:m1|fulladder:addij~359|
+|nxnmult:m1|fulladder:addiwm1~382|
+|complementer:c1|
+
+
+Device-Specific Information:       e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+smult
+
+***** Logic for device 'smult' compiled without errors.
+
+
+
+
+Device: EPF10K70RC240-4
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+
+                                                                                                                                         
+                                                                                                                                         
+                R R R R R R R R   R R R R R R R   R R R R R R R   R R R         R R R   R R R R R R R   R R R R R R R   R R   R R R R R  
+                E E E E E E E E   E E E E E E E   E E E E E E E   E E E         E E E   E E E E E E E   E E E E E E E   E E   E E E E E  
+                S S S S S S S S G S S S S S S S V S S S S S S S G S S S         S S S V S S S S S S S G S S S S S S S V S S   S S S S S  
+                E E E E E E E E N E E E E E E E C E E E E E E E N E E E       p E E E C E E E E E E E N E E E E E E E C E E   E E E E E  
+                R R R R R R R R D R R R R R R R C R R R R R R R D R R R       r R R R C R R R R R R R D R R R R R R R C R R   R R R R R  
+                V V V V V V V V I V V V V V V V I V V V V V V V I V V V       o V V V I V V V V V V V I V V V V V V V I V V   V V V V V  
+                E E E E E E E E N E E E E E E E N E E E E E E E N E E E b a b d E E E N E E E E E E E N E E E E E E E N E E b E E E E E  
+                D D D D D D D D T D D D D D D D T D D D D D D D T D D D 4 1 1 7 D D D T D D D D D D D T D D D D D D D T D D 3 D D D D D  
+              --------------------------------------------------------------------------------------------------------------------------_ 
+             / 240 238 236 234 232 230 228 226 224 222 220 218 216 214 212 210 208 206 204 202 200 198 196 194 192 190 188 186 184 182   |_ 
+            /    239 237 235 233 231 229 227 225 223 221 219 217 215 213 211 209 207 205 203 201 199 197 195 193 191 189 187 185 183 181    | 
+      #TCK |  1                                                                                                                         180 | ^DATA0 
+^CONF_DONE |  2                                                                                                                         179 | ^DCLK 
+     ^nCEO |  3                                                                                                                         178 | ^nCE 
+      #TDO |  4                                                                                                                         177 | #TDI 
+    VCCINT |  5                                                                                                                         176 | GNDINT 
+  RESERVED |  6                                                                                                                         175 | RESERVED 
+  RESERVED |  7                                                                                                                         174 | RESERVED 
+  RESERVED |  8                                                                                                                         173 | RESERVED 
+  RESERVED |  9                                                                                                                         172 | RESERVED 
+    GNDINT | 10                                                                                                                         171 | RESERVED 
+  RESERVED | 11                                                                                                                         170 | VCCINT 
+     prod5 | 12                                                                                                                         169 | prod3 
+        a2 | 13                                                                                                                         168 | prod0 
+     prod1 | 14                                                                                                                         167 | prod8 
+     prod2 | 15                                                                                                                         166 | prod4 
+    VCCINT | 16                                                                                                                         165 | GNDINT 
+        a4 | 17                                                                                                                         164 | RESERVED 
+        a3 | 18                                                                                                                         163 | RESERVED 
+  RESERVED | 19                                                                                                                         162 | RESERVED 
+  RESERVED | 20                                                                                                                         161 | RESERVED 
+  RESERVED | 21                                                                                                                         160 | VCCINT 
+    GNDINT | 22                                                                                                                         159 | RESERVED 
+  RESERVED | 23                                                                                                                         158 | RESERVED 
+  RESERVED | 24                                                                                                                         157 | RESERVED 
+  RESERVED | 25                                                                                                                         156 | RESERVED 
+  RESERVED | 26                                                                                                                         155 | GNDINT 
+    VCCINT | 27                                                                                                                         154 | RESERVED 
+  RESERVED | 28                                                                                                                         153 | RESERVED 
+  RESERVED | 29                                                                                                                         152 | RESERVED 
+  RESERVED | 30                                                                                                                         151 | RESERVED 
+  RESERVED | 31                                                     EPF10K70RC240-4                                                     150 | VCCINT 
+    GNDINT | 32                                                                                                                         149 | RESERVED 
+  RESERVED | 33                                                                                                                         148 | RESERVED 
+  RESERVED | 34                                                                                                                         147 | RESERVED 
+  RESERVED | 35                                                                                                                         146 | RESERVED 
+  RESERVED | 36                                                                                                                         145 | GNDINT 
+    VCCINT | 37                                                                                                                         144 | RESERVED 
+  RESERVED | 38                                                                                                                         143 | RESERVED 
+  RESERVED | 39                                                                                                                         142 | RESERVED 
+  RESERVED | 40                                                                                                                         141 | RESERVED 
+  RESERVED | 41                                                                                                                         140 | VCCINT 
+    GNDINT | 42                                                                                                                         139 | RESERVED 
+  RESERVED | 43                                                                                                                         138 | RESERVED 
+  RESERVED | 44                                                                                                                         137 | RESERVED 
+  RESERVED | 45                                                                                                                         136 | RESERVED 
+  RESERVED | 46                                                                                                                         135 | GNDINT 
+    VCCINT | 47                                                                                                                         134 | RESERVED 
+  RESERVED | 48                                                                                                                         133 | RESERVED 
+  RESERVED | 49                                                                                                                         132 | RESERVED 
+  RESERVED | 50                                                                                                                         131 | RESERVED 
+  RESERVED | 51                                                                                                                         130 | VCCINT 
+    GNDINT | 52                                                                                                                         129 | RESERVED 
+  RESERVED | 53                                                                                                                         128 | RESERVED 
+  RESERVED | 54                                                                                                                         127 | RESERVED 
+  RESERVED | 55                                                                                                                         126 | RESERVED 
+  RESERVED | 56                                                                                                                         125 | GNDINT 
+    VCCINT | 57                                                                                                                         124 | ^MSEL0 
+      #TMS | 58                                                                                                                         123 | ^MSEL1 
+     #TRST | 59                                                                                                                         122 | VCCINT 
+  ^nSTATUS | 60                                                                                                                         121 | ^nCONFIG 
+           |      62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104 106 108 110 112 114 116 118 120  _| 
+            \   61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109 111 113 115 117 119   | 
+             \--------------------------------------------------------------------------------------------------------------------------- 
+                R R R R R R R R G R R R R R R R V R R R R R R R G R R R V a b b G p p V R R R R R R R G R R R R R R R V R R R R R R R R  
+                E E E E E E E E N E E E E E E E C E E E E E E E N E E E C 0 2 0 N r r C E E E E E E E N E E E E E E E C E E E E E E E E  
+                S S S S S S S S D S S S S S S S C S S S S S S S D S S S C       D o o C S S S S S S S D S S S S S S S C S S S S S S S S  
+                E E E E E E E E I E E E E E E E I E E E E E E E I E E E I       I d d I E E E E E E E I E E E E E E E I E E E E E E E E  
+                R R R R R R R R N R R R R R R R N R R R R R R R N R R R N       N 6 9 N R R R R R R R N R R R R R R R N R R R R R R R R  
+                V V V V V V V V T V V V V V V V T V V V V V V V T V V V T       T     T V V V V V V V T V V V V V V V T V V V V V V V V  
+                E E E E E E E E   E E E E E E E   E E E E E E E   E E E                 E E E E E E E   E E E E E E E   E E E E E E E E  
+                D D D D D D D D   D D D D D D D   D D D D D D D   D D D                 D D D D D D D   D D D D D D D   D D D D D D D D  
+                                                                                                                                         
+                                                                                                                                         
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:       e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+smult
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+B1       8/ 8(100%)   0/ 8(  0%)   7/ 8( 87%)    0/2    0/2      13/26( 50%)   
+B10      8/ 8(100%)   0/ 8(  0%)   5/ 8( 62%)    0/2    0/2      10/26( 38%)   
+B16      8/ 8(100%)   0/ 8(  0%)   4/ 8( 50%)    0/2    0/2      10/26( 38%)   
+B17      8/ 8(100%)   0/ 8(  0%)   7/ 8( 87%)    0/2    0/2       9/26( 34%)   
+B19      4/ 8( 50%)   0/ 8(  0%)   3/ 8( 37%)    0/2    0/2       6/26( 23%)   
+B22      8/ 8(100%)   0/ 8(  0%)   3/ 8( 37%)    0/2    0/2      11/26( 42%)   
+B25      8/ 8(100%)   3/ 8( 37%)   3/ 8( 37%)    0/2    0/2       7/26( 26%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 6/6      (100%)
+Total I/O pins used:                            14/183    (  7%)
+Total logic cells used:                         52/3744   (  1%)
+Total embedded cells used:                       0/72     (  0%)
+Total EABs used:                                 0/9      (  0%)
+Average fan-in:                                 3.53/4    ( 88%)
+Total fan-in:                                 184/14976   (  1%)
+
+Total input pins required:                      10
+Total input I/O cell registers required:         0
+Total output pins required:                     10
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                     52
+Total flipflops required:                        0
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         4/3744   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  EA  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  Total(LC/EC)
+ A:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ B:      8   0   0   0   0   0   0   0   0   8   0   0   0   0   0   8   8   0   4   0   0   8   0   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     52/0  
+ C:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ D:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ E:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ F:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ G:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ H:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ I:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+
+Total:   8   0   0   0   0   0   0   0   0   8   0   0   0   0   0   8   8   0   4   0   0   8   0   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     52/0  
+
+
+
+Device-Specific Information:       e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+smult
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  90      -     -    -    --      INPUT                0    0    0    9  a0
+ 211      -     -    -    --      INPUT                0    0    0    2  a1
+  13      -     -    B    --      INPUT                0    0    0    2  a2
+  18      -     -    B    --      INPUT                0    0    0    1  a3
+  17      -     -    B    --      INPUT                0    0    0    4  a4
+  92      -     -    -    --      INPUT                0    0    0   14  b0
+ 210      -     -    -    --      INPUT                0    0    0    7  b1
+  91      -     -    -    --      INPUT                0    0    0    3  b2
+ 186      -     -    -    08      INPUT                0    0    0    1  b3
+ 212      -     -    -    --      INPUT                0    0    0    8  b4
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:       e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+smult
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+ 168      -     -    B    --     OUTPUT                0    1    0    0  prod0
+  14      -     -    B    --     OUTPUT                0    1    0    0  prod1
+  15      -     -    B    --     OUTPUT                0    1    0    0  prod2
+ 169      -     -    B    --     OUTPUT                0    1    0    0  prod3
+ 166      -     -    B    --     OUTPUT                0    1    0    0  prod4
+  12      -     -    B    --     OUTPUT                0    1    0    0  prod5
+  94      -     -    -    26     OUTPUT                0    1    0    0  prod6
+ 209      -     -    -    26     OUTPUT                0    1    0    0  prod7
+ 167      -     -    B    --     OUTPUT                0    1    0    0  prod8
+  95      -     -    -    25     OUTPUT                0    1    0    0  prod9
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:       e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+smult
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      8     -    B    01        OR2                2    0    0    2  |absolute:a1~25|complementer:c|:97
+   -      7     -    B    01        OR2                3    1    0    6  |absolute:a1~25|:97
+   -      1     -    B    01        OR2                2    1    0    8  |absolute:a1~25|:103
+   -      3     -    B    01        OR2                3    0    0    8  |absolute:a1~25|:109
+   -      4     -    B    19        OR2                2    0    0    1  |absolute:a2~30|complementer:c|:97
+   -      3     -    B    19        OR2                3    1    0    8  |absolute:a2~30|:97
+   -      1     -    B    17        OR2                4    0    0    9  |absolute:a2~30|:103
+   -      2     -    B    10        OR2                2    2    0    4  |complementer:c1|:318
+   -      3     -    B    25        OR2                0    2    0    1  |complementer:c1|:354
+   -      5     -    B    25        OR2                0    4    0    4  |complementer:c1|:426
+   -      6     -    B    16        OR2                0    4    0    2  |nxnMult:m1|fulladder:addij|:10
+   -      3     -    B    16        OR2                0    4    0    3  |nxnMult:m1|fulladder:addij|:20
+   -      8     -    B    16        OR2                0    4    0    2  |nxnMult:m1|fulladder:addij~270|:10
+   -      5     -    B    01       AND2                0    3    0    1  |nxnMult:m1|fulladder:addij~270|:17
+   -      4     -    B    22        OR2                0    4    0    2  |nxnMult:m1|fulladder:addij~270|:20
+   -      1     -    B    16        OR2                0    4    0    3  |nxnMult:m1|fulladder:addij~336|:10
+   -      4     -    B    16        OR2                0    4    0    2  |nxnMult:m1|fulladder:addij~336|:20
+   -      2     -    B    22        OR2                0    4    0    2  |nxnMult:m1|fulladder:addij~359|:10
+   -      8     -    B    22        OR2                0    4    0    2  |nxnMult:m1|fulladder:addij~359|:20
+   -      5     -    B    22        OR2                0    4    0    2  |nxnMult:m1|fulladder:addiwm1|:10
+   -      1     -    B    19        OR2    s   !       3    0    0    1  |nxnMult:m1|fulladder:addiwm1|~20~1
+   -      6     -    B    22        OR2    s           1    3    0    1  |nxnMult:m1|fulladder:addiwm1|~20~2
+   -      7     -    B    22        OR2                0    4    0    2  |nxnMult:m1|fulladder:addiwm1|:20
+   -      1     -    B    22        OR2                0    4    0    4  |nxnMult:m1|fulladder:addiwm1~382|:10
+   -      3     -    B    22        OR2                0    4    0    3  |nxnMult:m1|fulladder:addiwm1~382|:20
+   -      8     -    B    10        OR2                1    3    0    2  |nxnMult:m1|fulladder:addi0|:9
+   -      3     -    B    10        OR2                1    3    0    2  |nxnMult:m1|fulladder:addi0|:16
+   -      2     -    B    16        OR2                1    2    0    4  |nxnMult:m1|fulladder:addi0~316|:9
+   -      7     -    B    16       AND2                1    2    0    2  |nxnMult:m1|fulladder:addi0~316|:16
+   -      4     -    B    10        OR2                1    2    0    3  |nxnMult:m1|fulladder:add00|:9
+   -      8     -    B    17       AND2                1    2    0    1  |nxnMult:m1|fulladder:add00|:16
+   -      7     -    B    10        OR2    s           1    3    0    2  |nxnMult:m1|fulladder:add0j|~10~1
+   -      2     -    B    17        OR2                1    3    0    3  |nxnMult:m1|fulladder:add0j|:20
+   -      5     -    B    16        OR2                0    3    0    2  |nxnMult:m1|fulladder:add0j~177|:10
+   -      2     -    B    01        OR2                0    4    0    2  |nxnMult:m1|fulladder:add0wm1|:10
+   -      7     -    B    17        OR2                0    4    0    2  |nxnMult:m1|fulladder:add0wm1|:17
+   -      2     -    B    19       AND2                2    0    1    2  |nxnMult:m1|:685
+   -      3     -    B    17       AND2                1    1    0    3  |nxnMult:m1|:895
+   -      4     -    B    17        OR2                4    0    0    3  |nxnMult:m1|:965
+   -      5     -    B    17        OR2                3    1    0    3  |nxnMult:m1|:1035
+   -      6     -    B    17        OR2                3    1    0    3  |nxnMult:m1|:1105
+   -      6     -    B    01        OR2                3    1    0    2  |nxnMult:m1|:1175
+   -      4     -    B    01        OR2                2    0    0    9  :133
+   -      2     -    B    25        OR2    s           0    4    1    0  ~224~1
+   -      4     -    B    25        OR2                0    4    1    0  :224
+   -      8     -    B    25        OR2                0    4    1    0  :235
+   -      7     -    B    25        OR2                0    3    1    0  :241
+   -      1     -    B    25        OR2                0    4    1    0  :247
+   -      6     -    B    25        OR2                0    4    1    0  :253
+   -      1     -    B    10        OR2                0    3    1    0  :259
+   -      6     -    B    10        OR2                0    4    1    0  :265
+   -      5     -    B    10        OR2                0    3    1    0  :271
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:       e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+smult
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+B:       6/208(  2%)    30/104( 28%)     0/104(  0%)    3/16( 18%)      7/16( 43%)     0/16(  0%)
+C:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+D:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+E:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+F:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+G:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+H:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+I:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+02:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+03:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+09:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+20:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+25:      1/24(  4%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+26:      2/24(  8%)     0/4(  0%)      2/4( 50%)       0/4(  0%)
+27:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+28:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+29:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+30:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+31:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+32:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+33:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+34:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+35:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+36:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+37:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+38:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+39:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+40:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+41:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+42:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+43:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+44:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+45:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+46:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+47:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+48:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+49:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+50:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+51:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+52:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:       e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+smult
+
+** EQUATIONS **
+
+a0       : INPUT;
+a1       : INPUT;
+a2       : INPUT;
+a3       : INPUT;
+a4       : INPUT;
+b0       : INPUT;
+b1       : INPUT;
+b2       : INPUT;
+b3       : INPUT;
+b4       : INPUT;
+
+-- Node name is 'prod0' 
+-- Equation name is 'prod0', type is output 
+prod0    =  _LC2_B19;
+
+-- Node name is 'prod1' 
+-- Equation name is 'prod1', type is output 
+prod1    =  _LC5_B10;
+
+-- Node name is 'prod2' 
+-- Equation name is 'prod2', type is output 
+prod2    =  _LC6_B10;
+
+-- Node name is 'prod3' 
+-- Equation name is 'prod3', type is output 
+prod3    =  _LC1_B10;
+
+-- Node name is 'prod4' 
+-- Equation name is 'prod4', type is output 
+prod4    =  _LC6_B25;
+
+-- Node name is 'prod5' 
+-- Equation name is 'prod5', type is output 
+prod5    =  _LC1_B25;
+
+-- Node name is 'prod6' 
+-- Equation name is 'prod6', type is output 
+prod6    =  _LC7_B25;
+
+-- Node name is 'prod7' 
+-- Equation name is 'prod7', type is output 
+prod7    =  _LC8_B25;
+
+-- Node name is 'prod8' 
+-- Equation name is 'prod8', type is output 
+prod8    =  _LC4_B25;
+
+-- Node name is 'prod9' 
+-- Equation name is 'prod9', type is output 
+prod9    =  _LC2_B25;
+
+-- Node name is '|absolute:a1~25|complementer:c|:97' 
+-- Equation name is '_LC8_B1', type is buried 
+_LC8_B1  = LCELL( _EQ001);
+  _EQ001 =  a1
+         #  a0;
+
+-- Node name is '|absolute:a1~25|:97' 
+-- Equation name is '_LC7_B1', type is buried 
+_LC7_B1  = LCELL( _EQ002);
+  _EQ002 = !a3 &  a4 &  _LC8_B1
+         #  a2 & !a3 &  a4
+         # !a2 &  a3 & !_LC8_B1
+         #  a3 & !a4;
+
+-- Node name is '|absolute:a1~25|:103' 
+-- Equation name is '_LC1_B1', type is buried 
+_LC1_B1  = LCELL( _EQ003);
+  _EQ003 = !a2 &  a4 &  _LC8_B1
+         #  a2 & !_LC8_B1
+         #  a2 & !a4;
+
+-- Node name is '|absolute:a1~25|:109' 
+-- Equation name is '_LC3_B1', type is buried 
+_LC3_B1  = LCELL( _EQ004);
+  _EQ004 = !a0 &  a1
+         #  a0 & !a1 &  a4
+         #  a1 & !a4;
+
+-- Node name is '|absolute:a2~30|complementer:c|:97' 
+-- Equation name is '_LC4_B19', type is buried 
+_LC4_B19 = LCELL( _EQ005);
+  _EQ005 =  b1
+         #  b0;
+
+-- Node name is '|absolute:a2~30|:97' 
+-- Equation name is '_LC3_B19', type is buried 
+_LC3_B19 = LCELL( _EQ006);
+  _EQ006 = !b3 &  b4 &  _LC4_B19
+         #  b2 & !b3 &  b4
+         # !b2 &  b3 & !_LC4_B19
+         #  b3 & !b4;
+
+-- Node name is '|absolute:a2~30|:103' 
+-- Equation name is '_LC1_B17', type is buried 
+_LC1_B17 = LCELL( _EQ007);
+  _EQ007 =  b1 & !b2 &  b4
+         #  b0 & !b2 &  b4
+         # !b0 & !b1 &  b2
+         #  b2 & !b4;
+
+-- Node name is '|complementer:c1|:318' 
+-- Equation name is '_LC2_B10', type is buried 
+_LC2_B10 = LCELL( _EQ008);
+  _EQ008 =  a0 &  b0
+         #  _LC4_B10
+         #  _LC8_B10;
+
+-- Node name is '|complementer:c1|:354' 
+-- Equation name is '_LC3_B25', type is buried 
+_LC3_B25 = LCELL( _EQ009);
+  _EQ009 =  _LC2_B10
+         #  _LC2_B16;
+
+-- Node name is '|complementer:c1|:426' 
+-- Equation name is '_LC5_B25', type is buried 
+_LC5_B25 = LCELL( _EQ010);
+  _EQ010 =  _LC2_B10
+         #  _LC2_B16
+         #  _LC1_B16
+         #  _LC2_B22;
+
+-- Node name is '|nxnMult:m1|fulladder:addij|:10' 
+-- Equation name is '_LC6_B16', type is buried 
+_LC6_B16 = LCELL( _EQ011);
+  _EQ011 =  _LC1_B17 &  _LC3_B1 &  _LC3_B10 &  _LC5_B16
+         # !_LC1_B17 & !_LC3_B10 &  _LC5_B16
+         # !_LC3_B1 & !_LC3_B10 &  _LC5_B16
+         # !_LC1_B17 &  _LC3_B10 & !_LC5_B16
+         # !_LC3_B1 &  _LC3_B10 & !_LC5_B16
+         #  _LC1_B17 &  _LC3_B1 & !_LC3_B10 & !_LC5_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:addij|:20' 
+-- Equation name is '_LC3_B16', type is buried 
+_LC3_B16 = LCELL( _EQ012);
+  _EQ012 =  _LC1_B17 &  _LC3_B1 &  _LC5_B16
+         #  _LC3_B10 &  _LC5_B16
+         #  _LC3_B1 &  _LC3_B10;
+
+-- Node name is '|nxnMult:m1|fulladder:addij~270|:10' 
+-- Equation name is '_LC8_B16', type is buried 
+_LC8_B16 = LCELL( _EQ013);
+  _EQ013 =  _LC1_B1 &  _LC1_B17 &  _LC2_B1 &  _LC3_B16
+         # !_LC1_B1 & !_LC2_B1 &  _LC3_B16
+         # !_LC1_B17 & !_LC2_B1 &  _LC3_B16
+         # !_LC1_B1 &  _LC2_B1 & !_LC3_B16
+         # !_LC1_B17 &  _LC2_B1 & !_LC3_B16
+         #  _LC1_B1 &  _LC1_B17 & !_LC2_B1 & !_LC3_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:addij~270|:17' 
+-- Equation name is '_LC5_B1', type is buried 
+_LC5_B1  = LCELL( _EQ014);
+  _EQ014 =  _LC1_B1 &  _LC1_B17 &  _LC3_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:addij~270|:20' 
+-- Equation name is '_LC4_B22', type is buried 
+_LC4_B22 = LCELL( _EQ015);
+  _EQ015 =  _LC1_B1 &  _LC1_B17 &  _LC3_B16
+         #  _LC1_B1 &  _LC1_B17 &  _LC2_B1
+         #  _LC2_B1 &  _LC3_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:addij~336|:10' 
+-- Equation name is '_LC1_B16', type is buried 
+_LC1_B16 = LCELL( _EQ016);
+  _EQ016 =  _LC3_B1 &  _LC3_B19 &  _LC7_B16 &  _LC8_B16
+         # !_LC3_B19 & !_LC7_B16 &  _LC8_B16
+         # !_LC3_B1 & !_LC7_B16 &  _LC8_B16
+         # !_LC3_B19 &  _LC7_B16 & !_LC8_B16
+         # !_LC3_B1 &  _LC7_B16 & !_LC8_B16
+         #  _LC3_B1 &  _LC3_B19 & !_LC7_B16 & !_LC8_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:addij~336|:20' 
+-- Equation name is '_LC4_B16', type is buried 
+_LC4_B16 = LCELL( _EQ017);
+  _EQ017 =  _LC3_B1 &  _LC7_B16
+         #  _LC3_B1 &  _LC3_B19 &  _LC8_B16
+         #  _LC7_B16 &  _LC8_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:addij~359|:10' 
+-- Equation name is '_LC2_B22', type is buried 
+_LC2_B22 = LCELL( _EQ018);
+  _EQ018 =  _LC1_B1 &  _LC3_B19 &  _LC4_B16 &  _LC5_B22
+         # !_LC3_B19 &  _LC4_B16 & !_LC5_B22
+         # !_LC1_B1 &  _LC4_B16 & !_LC5_B22
+         # !_LC3_B19 & !_LC4_B16 &  _LC5_B22
+         # !_LC1_B1 & !_LC4_B16 &  _LC5_B22
+         #  _LC1_B1 &  _LC3_B19 & !_LC4_B16 & !_LC5_B22;
+
+-- Node name is '|nxnMult:m1|fulladder:addij~359|:20' 
+-- Equation name is '_LC8_B22', type is buried 
+_LC8_B22 = LCELL( _EQ019);
+  _EQ019 =  _LC1_B1 &  _LC3_B19 &  _LC4_B16
+         #  _LC1_B1 &  _LC3_B19 &  _LC5_B22
+         #  _LC4_B16 &  _LC5_B22;
+
+-- Node name is '|nxnMult:m1|fulladder:addiwm1|:10' 
+-- Equation name is '_LC5_B22', type is buried 
+_LC5_B22 = LCELL( _EQ020);
+  _EQ020 =  _LC1_B17 &  _LC4_B22 &  _LC7_B1 &  _LC7_B17
+         #  _LC4_B22 & !_LC7_B1 & !_LC7_B17
+         # !_LC1_B17 &  _LC4_B22 & !_LC7_B17
+         # !_LC4_B22 & !_LC7_B1 &  _LC7_B17
+         # !_LC1_B17 & !_LC4_B22 &  _LC7_B17
+         #  _LC1_B17 & !_LC4_B22 &  _LC7_B1 & !_LC7_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:addiwm1|~20~1' 
+-- Equation name is '_LC1_B19', type is buried 
+-- synthesized logic cell 
+!_LC1_B19 = _LC1_B19~NOT;
+_LC1_B19~NOT = LCELL( _EQ021);
+  _EQ021 =  b1 &  b4
+         #  b0 &  b4;
+
+-- Node name is '|nxnMult:m1|fulladder:addiwm1|~20~2' 
+-- Equation name is '_LC6_B22', type is buried 
+-- synthesized logic cell 
+_LC6_B22 = LCELL( _EQ022);
+  _EQ022 =  _LC5_B1 &  _LC7_B17
+         #  b2 &  _LC1_B19 &  _LC7_B17
+         # !b2 & !_LC1_B19 &  _LC7_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:addiwm1|:20' 
+-- Equation name is '_LC7_B22', type is buried 
+_LC7_B22 = LCELL( _EQ023);
+  _EQ023 =  _LC1_B17 &  _LC4_B22 &  _LC7_B1
+         #  _LC6_B22;
+
+-- Node name is '|nxnMult:m1|fulladder:addiwm1~382|:10' 
+-- Equation name is '_LC1_B22', type is buried 
+_LC1_B22 = LCELL( _EQ024);
+  _EQ024 =  _LC3_B19 &  _LC7_B1 &  _LC7_B22 &  _LC8_B22
+         # !_LC7_B1 & !_LC7_B22 &  _LC8_B22
+         # !_LC3_B19 & !_LC7_B22 &  _LC8_B22
+         # !_LC7_B1 &  _LC7_B22 & !_LC8_B22
+         # !_LC3_B19 &  _LC7_B22 & !_LC8_B22
+         #  _LC3_B19 &  _LC7_B1 & !_LC7_B22 & !_LC8_B22;
+
+-- Node name is '|nxnMult:m1|fulladder:addiwm1~382|:20' 
+-- Equation name is '_LC3_B22', type is buried 
+_LC3_B22 = LCELL( _EQ025);
+  _EQ025 =  _LC3_B19 &  _LC7_B1 &  _LC8_B22
+         #  _LC3_B19 &  _LC7_B1 &  _LC7_B22
+         #  _LC7_B22 &  _LC8_B22;
+
+-- Node name is '|nxnMult:m1|fulladder:addi0|:9' 
+-- Equation name is '_LC8_B10', type is buried 
+_LC8_B10 = LCELL( _EQ026);
+  _EQ026 = !_LC1_B17 &  _LC5_B17 & !_LC7_B10
+         # !_LC1_B17 & !_LC5_B17 &  _LC7_B10
+         # !a0 &  _LC5_B17 & !_LC7_B10
+         # !a0 & !_LC5_B17 &  _LC7_B10
+         #  a0 &  _LC1_B17 &  _LC5_B17 &  _LC7_B10
+         #  a0 &  _LC1_B17 & !_LC5_B17 & !_LC7_B10;
+
+-- Node name is '|nxnMult:m1|fulladder:addi0|:16' 
+-- Equation name is '_LC3_B10', type is buried 
+_LC3_B10 = LCELL( _EQ027);
+  _EQ027 =  a0 &  _LC1_B17 &  _LC5_B17 & !_LC7_B10
+         #  a0 &  _LC1_B17 & !_LC5_B17 &  _LC7_B10;
+
+-- Node name is '|nxnMult:m1|fulladder:addi0~316|:9' 
+-- Equation name is '_LC2_B16', type is buried 
+_LC2_B16 = LCELL( _EQ028);
+  _EQ028 = !_LC3_B19 &  _LC6_B16
+         # !a0 &  _LC6_B16
+         #  a0 &  _LC3_B19 & !_LC6_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:addi0~316|:16' 
+-- Equation name is '_LC7_B16', type is buried 
+_LC7_B16 = LCELL( _EQ029);
+  _EQ029 =  a0 &  _LC3_B19 &  _LC6_B16;
+
+-- Node name is '|nxnMult:m1|fulladder:add00|:9' 
+-- Equation name is '_LC4_B10', type is buried 
+_LC4_B10 = LCELL( _EQ030);
+  _EQ030 = !_LC3_B1 &  _LC4_B17
+         # !b0 &  _LC4_B17
+         #  b0 &  _LC3_B1 & !_LC4_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:add00|:16' 
+-- Equation name is '_LC8_B17', type is buried 
+_LC8_B17 = LCELL( _EQ031);
+  _EQ031 =  b0 &  _LC3_B1 &  _LC4_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:add0j|~10~1' 
+-- Equation name is '_LC7_B10', type is buried 
+-- synthesized logic cell 
+_LC7_B10 = LCELL( _EQ032);
+  _EQ032 =  b0 &  _LC1_B1 & !_LC3_B1
+         #  b0 &  _LC1_B1 & !_LC4_B17
+         #  b0 & !_LC1_B1 &  _LC3_B1 &  _LC4_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:add0j|:20' 
+-- Equation name is '_LC2_B17', type is buried 
+_LC2_B17 = LCELL( _EQ033);
+  _EQ033 =  _LC8_B17
+         #  b0 &  _LC1_B1 &  _LC5_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:add0j~177|:10' 
+-- Equation name is '_LC5_B16', type is buried 
+_LC5_B16 = LCELL( _EQ034);
+  _EQ034 =  _LC2_B17 &  _LC3_B17 &  _LC6_B17
+         #  _LC2_B17 & !_LC3_B17 & !_LC6_B17
+         # !_LC2_B17 & !_LC3_B17 &  _LC6_B17
+         # !_LC2_B17 &  _LC3_B17 & !_LC6_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:add0wm1|:10' 
+-- Equation name is '_LC2_B1', type is buried 
+_LC2_B1  = LCELL( _EQ035);
+  _EQ035 =  _LC2_B17 & !_LC6_B1 &  _LC6_B17
+         #  _LC2_B17 &  _LC3_B17 & !_LC6_B1
+         #  _LC3_B17 & !_LC6_B1 &  _LC6_B17
+         # !_LC2_B17 &  _LC6_B1 & !_LC6_B17
+         # !_LC2_B17 & !_LC3_B17 &  _LC6_B1
+         # !_LC3_B17 &  _LC6_B1 & !_LC6_B17;
+
+-- Node name is '|nxnMult:m1|fulladder:add0wm1|:17' 
+-- Equation name is '_LC7_B17', type is buried 
+_LC7_B17 = LCELL( _EQ036);
+  _EQ036 =  _LC2_B17 &  _LC6_B1 &  _LC6_B17
+         #  _LC2_B17 &  _LC3_B17 &  _LC6_B1
+         #  _LC3_B17 &  _LC6_B1 &  _LC6_B17;
+
+-- Node name is '|nxnMult:m1|:685' 
+-- Equation name is '_LC2_B19', type is buried 
+_LC2_B19 = LCELL( _EQ037);
+  _EQ037 =  a0 &  b0;
+
+-- Node name is '|nxnMult:m1|:895' 
+-- Equation name is '_LC3_B17', type is buried 
+_LC3_B17 = LCELL( _EQ038);
+  _EQ038 =  b0 &  _LC7_B1;
+
+-- Node name is '|nxnMult:m1|:965' 
+-- Equation name is '_LC4_B17', type is buried 
+_LC4_B17 = LCELL( _EQ039);
+  _EQ039 =  a0 & !b0 &  b1
+         #  a0 &  b0 & !b1 &  b4
+         #  a0 &  b1 & !b4;
+
+-- Node name is '|nxnMult:m1|:1035' 
+-- Equation name is '_LC5_B17', type is buried 
+_LC5_B17 = LCELL( _EQ040);
+  _EQ040 = !b0 &  b1 &  _LC3_B1
+         #  b0 & !b1 &  b4 &  _LC3_B1
+         #  b1 & !b4 &  _LC3_B1;
+
+-- Node name is '|nxnMult:m1|:1105' 
+-- Equation name is '_LC6_B17', type is buried 
+_LC6_B17 = LCELL( _EQ041);
+  _EQ041 = !b0 &  b1 &  _LC1_B1
+         #  b0 & !b1 &  b4 &  _LC1_B1
+         #  b1 & !b4 &  _LC1_B1;
+
+-- Node name is '|nxnMult:m1|:1175' 
+-- Equation name is '_LC6_B1', type is buried 
+_LC6_B1  = LCELL( _EQ042);
+  _EQ042 = !b0 &  b1 &  _LC7_B1
+         #  b0 & !b1 &  b4 &  _LC7_B1
+         #  b1 & !b4 &  _LC7_B1;
+
+-- Node name is ':133' 
+-- Equation name is '_LC4_B1', type is buried 
+_LC4_B1  = LCELL( _EQ043);
+  _EQ043 = !a4 &  b4
+         #  a4 & !b4;
+
+-- Node name is '~224~1' 
+-- Equation name is '~224~1', location is LC2_B25, type is buried.
+-- synthesized logic cell 
+_LC2_B25 = LCELL( _EQ044);
+  _EQ044 =  _LC4_B1 &  _LC5_B25
+         #  _LC1_B22 &  _LC4_B1
+         #  _LC3_B22 &  _LC4_B1;
+
+-- Node name is ':224' 
+-- Equation name is '_LC4_B25', type is buried 
+_LC4_B25 = LCELL( _EQ045);
+  _EQ045 =  _LC4_B1 &  _LC5_B25
+         #  _LC1_B22 &  _LC4_B1
+         #  _LC3_B22 &  _LC4_B1;
+
+-- Node name is ':235' 
+-- Equation name is '_LC8_B25', type is buried 
+_LC8_B25 = LCELL( _EQ046);
+  _EQ046 = !_LC3_B22 &  _LC4_B1 &  _LC5_B25
+         #  _LC1_B22 & !_LC3_B22 &  _LC4_B1
+         # !_LC1_B22 &  _LC3_B22 & !_LC5_B25
+         #  _LC3_B22 & !_LC4_B1;
+
+-- Node name is ':241' 
+-- Equation name is '_LC7_B25', type is buried 
+_LC7_B25 = LCELL( _EQ047);
+  _EQ047 =  _LC1_B22 & !_LC4_B1
+         # !_LC1_B22 &  _LC4_B1 &  _LC5_B25
+         #  _LC1_B22 & !_LC5_B25;
+
+-- Node name is ':247' 
+-- Equation name is '_LC1_B25', type is buried 
+_LC1_B25 = LCELL( _EQ048);
+  _EQ048 =  _LC2_B22 & !_LC4_B1
+         # !_LC1_B16 &  _LC2_B22 & !_LC3_B25
+         # !_LC2_B22 &  _LC3_B25 &  _LC4_B1
+         #  _LC1_B16 & !_LC2_B22 &  _LC4_B1;
+
+-- Node name is ':253' 
+-- Equation name is '_LC6_B25', type is buried 
+_LC6_B25 = LCELL( _EQ049);
+  _EQ049 =  _LC1_B16 & !_LC4_B1
+         #  _LC1_B16 & !_LC2_B10 & !_LC2_B16
+         # !_LC1_B16 &  _LC2_B10 &  _LC4_B1
+         # !_LC1_B16 &  _LC2_B16 &  _LC4_B1;
+
+-- Node name is ':259' 
+-- Equation name is '_LC1_B10', type is buried 
+_LC1_B10 = LCELL( _EQ050);
+  _EQ050 =  _LC2_B10 & !_LC2_B16 &  _LC4_B1
+         # !_LC2_B10 &  _LC2_B16
+         #  _LC2_B16 & !_LC4_B1;
+
+-- Node name is ':265' 
+-- Equation name is '_LC6_B10', type is buried 
+_LC6_B10 = LCELL( _EQ051);
+  _EQ051 =  _LC4_B1 &  _LC4_B10 & !_LC8_B10
+         #  _LC2_B19 &  _LC4_B1 & !_LC8_B10
+         # !_LC2_B19 & !_LC4_B10 &  _LC8_B10
+         # !_LC4_B1 &  _LC8_B10;
+
+-- Node name is ':271' 
+-- Equation name is '_LC5_B10', type is buried 
+_LC5_B10 = LCELL( _EQ052);
+  _EQ052 = !_LC4_B1 &  _LC4_B10
+         # !_LC2_B19 &  _LC4_B10
+         #  _LC2_B19 &  _LC4_B1 & !_LC4_B10;
+
+
+
+Project Information                e:\vhdldesigns\ee231\oldlabs\mult\smult.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Use Quartus Fitter                        = on
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:01
+   Partitioner                            00:00:00
+   Fitter                                 00:00:10
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:03
+   --------------------------             --------
+   Total Time                             00:00:14
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 34,000K

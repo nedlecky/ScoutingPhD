@@ -1,0 +1,23 @@
+-- EXAMPLE MIPS COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+-- Altera Instruction Memory Initialization File
+Depth = 256;
+Width = 32;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+    [00..FF]: 00000000; -- nop
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+    00: 00000820;   -- +start:	add	r1,r0,r0		; clear r1 (sum)
+    01: 8C020022;   -- +		lw	r2,const1%:,r0	; since no immediate yet, use memory=1
+    02: 8C030020;   -- +		lw	r3,count%:,r0	; r3=count
+    03: 00621822;   -- +loop:		subt	r3,r3,r2	; decr count (note r2=1)
+    04: 8C640030;   -- +		lw	r4,array%:,r3	; get array element into r4
+    05: 00810820;   -- +		add	r1,r4,r1	; sum it into r1
+    06: 1460FFFC;   -- +		bne	r3,r0,loop%:	; wait until count=0
+    07: AC010021;   -- +		sw	r1,sum%:,r0	; save answer
+    08: 1000FFFF;   -- +done:		beq	r0,r0,done%:	; all done
+End;

@@ -1,0 +1,2248 @@
+Project Information                       e:\vhdldesigns\ee231\20asm\smult.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 04/16/2002 11:04:12
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+SMULT
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+smult     EPM7128SQC100-6  35       33       0      125     64          97 %
+
+User Pins:                 35       33       0  
+
+
+
+Project Information                       e:\vhdldesigns\ee231\20asm\smult.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clock' chosen for auto global Clock
+
+
+Project Information                       e:\vhdldesigns\ee231\20asm\smult.rpt
+
+** STATE MACHINE ASSIGNMENTS **
+
+
+state: MACHINE
+        OF BITS (
+           state~2,
+           state~1
+        )
+        WITH STATES (
+                              S1 = B"00", 
+                              S2 = B"10", 
+                              S3 = B"01"
+);
+
+
+
+Project Information                       e:\vhdldesigns\ee231\20asm\smult.rpt
+
+** FILE HIERARCHY **
+
+
+
+|lpm_add_sub:1558|
+|lpm_add_sub:1558|addcore:adder|
+|lpm_add_sub:1558|addcore:adder|addcore:adder3|
+|lpm_add_sub:1558|addcore:adder|addcore:adder2|
+|lpm_add_sub:1558|addcore:adder|addcore:adder1|
+|lpm_add_sub:1558|addcore:adder|addcore:adder0|
+|lpm_add_sub:1558|altshift:result_ext_latency_ffs|
+|lpm_add_sub:1558|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:1558|altshift:oflow_ext_latency_ffs|
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+***** Logic for device 'smult' compiled without errors.
+
+
+
+
+Device: EPM7128SQC100-6
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+    MultiVolt I/O                              = OFF
+
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** ERROR SUMMARY **
+
+Info: Chip 'smult' in device 'EPM7128SQC100-6' has less than 10% of logic cells available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+Info: Chip 'smult' in device 'EPM7128SQC100-6' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                                        R           R  
+              P P P   P P               E P P   P P E  
+              _ _ _   _ _   V           S _ _   _ _ S  
+              o o o   o o   C       c   E o o V o o E  
+              u u u   u u i C       l   R u u C u u R  
+              t t t G t t n I G G G o G V t t C t t V  
+              2 2 3 N 3 2 1 N N N N c N E 1 1 I 1 1 E  
+              5 8 1 D 0 9 1 T D D D k D D 2 3 O 1 0 D  
+            ------------------------------------------_ 
+           / 100  98  96  94  92  90  88  86  84  82   |_ 
+          /     99  97  95  93  91  89  87  85  83  81    | 
+ P_out24 |  1                                          80 | RESERVED 
+ P_out17 |  2                                          79 | RESERVED 
+ P_out16 |  3                                          78 | P_out9 
+ P_out15 |  4                                          77 | P_out8 
+   VCCIO |  5                                          76 | GND 
+    #TDI |  6                                          75 | #TDO 
+     in2 |  7                                          74 | P_out20 
+     in3 |  8                                          73 | P_out21 
+   B_in0 |  9                                          72 | P_out18 
+    in15 | 10                                          71 | P_out23 
+    in14 | 11                                          70 | RESERVED 
+    in13 | 12                                          69 | P_out22 
+     GND | 13                                          68 | VCCIO 
+   B_in9 | 14                                          67 | RESERVED 
+    in12 | 15                                          66 | P_out19 
+   B_in8 | 16             EPM7128SQC100-6              65 | P_out14 
+    #TMS | 17                                          64 | #TCK 
+   B_in2 | 18                                          63 | P_out27 
+   B_in1 | 19                                          62 | RESERVED 
+   VCCIO | 20                                          61 | GND 
+     in0 | 21                                          60 | B_in15 
+   B_in4 | 22                                          59 | reset 
+  P_out0 | 23                                          58 | B_in14 
+  P_out1 | 24                                          57 | s 
+  P_out2 | 25                                          56 | RESERVED 
+  P_out3 | 26                                          55 | RESERVED 
+ P_out26 | 27                                          54 | B_in11 
+     GND | 28                                          53 | VCCIO 
+   B_in7 | 29                                          52 | B_in5 
+     in7 | 30                                          51 | B_in10 
+         |      32  34  36  38  40  42  44  46  48  50  _| 
+          \   31  33  35  37  39  41  43  45  47  49   | 
+           \------------------------------------------- 
+              i B B d P V P P P G V i i i G i i i B B  
+              n _ _ o _ C _ _ _ N C n n n N n n n _ _  
+              8 i i n o C o o o D C 6 1 5 D 4 9 1 i i  
+                n n e u I u u u   I             0 n n  
+                1 1   t O t t t   N               3 6  
+                2 3   7   6 5 4   T                    
+                                                       
+                                                       
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16    15/16( 93%)  10/10(100%)   7/16( 43%)  32/36( 88%) 
+B:    LC17 - LC32    16/16(100%)  10/10(100%)  10/16( 62%)  30/36( 83%) 
+C:    LC33 - LC48    16/16(100%)  10/10(100%)  10/16( 62%)  27/36( 75%) 
+D:    LC49 - LC64    16/16(100%)  10/10(100%)  15/16( 93%)  27/36( 75%) 
+E:    LC65 - LC80    14/16( 87%)  10/10(100%)  12/16( 75%)  32/36( 88%) 
+F:    LC81 - LC96    16/16(100%)   7/10( 70%)  16/16(100%)  26/36( 72%) 
+G:   LC97 - LC112    16/16(100%)   8/10( 80%)  16/16(100%)  31/36( 86%) 
+H:  LC113 - LC128    16/16(100%)   6/10( 60%)  16/16(100%)  29/36( 80%) 
+
+
+Total dedicated input pins used:                 1/4      ( 25%)
+Total I/O pins used:                            71/80     ( 88%)
+Total logic cells used:                        125/128    ( 97%)
+Total shareable expanders used:                 64/128    ( 50%)
+Total Turbo logic cells used:                  125/128    ( 97%)
+Total shareable expanders not available (n/a):  38/128    ( 29%)
+Average fan-in:                                  8.23
+Total fan-in:                                  1029
+
+Total input pins required:                      35
+Total fast input logic cells required:           0
+Total output pins required:                     33
+Total bidirectional pins required:               0
+Total reserved pins required                     4
+Total logic cells required:                    125
+Total flipflops required:                       82
+Total product terms required:                  579
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          58
+
+Synthesized logic cells:                         0/ 128   (  0%)
+
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   9   (27)  (B)      INPUT               0      0   0    0    0    0    1  B_in0
+  19   (45)  (C)      INPUT               0      0   0    0    0    0    1  B_in1
+  18   (46)  (C)      INPUT               0      0   0    0    0    0    1  B_in2
+  49   (75)  (E)      INPUT               0      0   0    0    0    0    1  B_in3
+  22   (41)  (C)      INPUT               0      0   0    0    0    0    1  B_in4
+  52   (80)  (E)      INPUT               0      0   0    0    0    0    1  B_in5
+  50   (77)  (E)      INPUT               0      0   0    0    0    0    1  B_in6
+  29   (64)  (D)      INPUT               0      0   0    0    0    0    1  B_in7
+  16   (17)  (B)      INPUT               0      0   0    0    0    0    1  B_in8
+  14   (21)  (B)      INPUT               0      0   0    0    0    0    1  B_in9
+  51   (78)  (E)      INPUT               0      0   0    0    0    0    1  B_in10
+  54   (81)  (F)      INPUT               0      0   0    0    0    0    1  B_in11
+  32   (59)  (D)      INPUT               0      0   0    0    0    0    1  B_in12
+  33   (57)  (D)      INPUT               0      0   0    0    0    0    1  B_in13
+  58   (88)  (F)      INPUT               0      0   0    0    0    0    1  B_in14
+  60   (91)  (F)      INPUT               0      0   0    0    0    0    1  B_in15
+  89      -   -       INPUT  G            0      0   0    0    0    0    0  clock
+  21   (43)  (C)      INPUT               0      0   0    0    0    0    1  in0
+  43   (67)  (E)      INPUT               0      0   0    0    0    0    1  in1
+   7   (30)  (B)      INPUT               0      0   0    0    0    0    1  in2
+   8   (29)  (B)      INPUT               0      0   0    0    0    0    1  in3
+  46   (70)  (E)      INPUT               0      0   0    0    0    0    1  in4
+  44   (69)  (E)      INPUT               0      0   0    0    0    0    1  in5
+  42   (65)  (E)      INPUT               0      0   0    0    0    0    1  in6
+  30   (62)  (D)      INPUT               0      0   0    0    0    0    1  in7
+  31   (61)  (D)      INPUT               0      0   0    0    0    0    1  in8
+  47   (72)  (E)      INPUT               0      0   0    0    0    0    1  in9
+  48   (73)  (E)      INPUT               0      0   0    0    0    0    1  in10
+  94   (16)  (A)      INPUT               0      0   0    0    0    0    1  in11
+  15   (19)  (B)      INPUT               0      0   0    0    0    0    1  in12
+  12   (22)  (B)      INPUT               0      0   0    0    0    0    1  in13
+  11   (24)  (B)      INPUT               0      0   0    0    0    0    1  in14
+  10   (25)  (B)      INPUT               0      0   0    0    0    0    1  in15
+  59   (89)  (F)      INPUT               0      0   0    0    0   32   50  reset
+  57   (86)  (F)      INPUT               0      0   0    0    0    0   50  s
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  34     56    D     OUTPUT      t        0      0   0    0    2    0    0  done
+  23     40    C         FF   +  t        0      0   0    1    5    1    4  P_out0 (:100)
+  24     38    C         FF   +  t        0      0   0    1    5    1    4  P_out1 (:99)
+  25     37    C         FF   +  t        0      0   0    1    5    1    3  P_out2 (:98)
+  26     35    C         FF   +  t        0      0   0    1    5    1    2  P_out3 (:97)
+  39     49    D         FF   +  t        0      0   0    1    5    1    5  P_out4 (:96)
+  38     51    D         FF   +  t        0      0   0    1    5    1    4  P_out5 (:95)
+  37     53    D         FF   +  t        0      0   0    1    5    1    3  P_out6 (:94)
+  35     54    D         FF   +  t        0      0   0    1    5    1    2  P_out7 (:93)
+  77    113    H         FF   +  t        0      0   0    1    5    1   10  P_out8 (:92)
+  78    115    H         FF   +  t        0      0   0    1    5    1    9  P_out9 (:91)
+  82    121    H         FF   +  t        0      0   0    1    5    1    8  P_out10 (:90)
+  83    123    H         FF   +  t        0      0   0    1    5    1    7  P_out11 (:89)
+  86    126    H         FF   +  t        0      0   0    1    5    1    6  P_out12 (:88)
+  85    125    H         FF   +  t        0      0   0    1    5    1    5  P_out13 (:87)
+  65     97    G         FF   +  t        0      0   0    1    5    1    4  P_out14 (:86)
+   4      1    A         FF   +  t        0      0   0    1    5    1    2  P_out15 (:85)
+   3      3    A         FF   +  t        0      0   0    1    5    1   10  P_out16 (:84)
+   2      5    A         FF   +  t        0      0   0    1    5    1    9  P_out17 (:83)
+  72    107    G         FF   +  t        0      0   0    1    5    1    8  P_out18 (:82)
+  66     99    G         FF   +  t        0      0   0    1    5    1    7  P_out19 (:81)
+  74    110    G         FF   +  t        0      0   0    1    5    1    6  P_out20 (:80)
+  73    109    G         FF   +  t        0      0   0    1    5    1    5  P_out21 (:79)
+  69    102    G         FF   +  t        0      0   0    1    5    1    4  P_out22 (:78)
+  71    105    G         FF   +  t        0      0   0    1    5    1    2  P_out23 (:77)
+   1      6    A         FF   +  t        0      0   0    1    5    1    9  P_out24 (:76)
+ 100      8    A         FF   +  t        0      0   0    1    5    1    8  P_out25 (:75)
+  27     33    C         FF   +  t        0      0   0    1    5    1    7  P_out26 (:74)
+  63     94    F         FF   +  t        0      0   0    1    5    1    6  P_out27 (:73)
+  99      9    A         FF   +  t        0      0   0    1    5    1    5  P_out28 (:72)
+  95     14    A         FF   +  t        0      0   0    1    5    1    4  P_out29 (:71)
+  96     13    A         FF   +  t        0      0   0    1    5    1    3  P_out30 (:70)
+  98     11    A         FF   +  t        0      0   0    1    5    1    1  P_out31 (:69)
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -     60    D       SOFT      t        6      5   1    0    9    0    9  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|cout_node
+ (17)    48    C       SOFT      t        2      2   0    0    6    0    1  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|gcp2
+   -     44    C       SOFT      t        4      4   0    0    8    0    5  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|g4
+ (19)    45    C       SOFT      t        0      0   0    0    4    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node1
+   -     47    C       SOFT      t        3      2   0    0    6    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node2
+ (21)    43    C       SOFT      t        2      2   0    0    3    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node3
+   -     55    D       SOFT      t        2      1   0    0    3    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node4
+ (33)    57    D       SOFT      t        3      2   0    0    5    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node5
+ (31)    61    D       SOFT      t        4      3   0    0    7    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node6
+ (29)    64    D       SOFT      t        6      5   1    0    9    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node7
+   -    114    H       SOFT      t        9      9   0    0   19    0    9  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|cout_node
+ (80)   118    H       SOFT      t        2      2   0    0    6    0    2  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g2cp2
+   -    119    H       SOFT      t        4      4   0    0    8    0    5  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g4
+   -    124    H       SOFT      t        0      0   0    0    3    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node0
+   -     18    B       SOFT      t        3      2   0    0    5    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node1
+ (87)   128    H       SOFT      t        4      3   0    0    7    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node2
+ (81)   120    H       SOFT      t        6      5   1    0    9    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node3
+ (79)   117    H       SOFT      t        6      5   0    0   12    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node4
+   -    122    H       SOFT      t        7      6   0    0   14    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node5
+   -    127    H       SOFT      t        9      7   1    0   16    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node6
+   -    116    H       SOFT      t        9      9   0    0   19    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node7
+   -    100    G       SOFT      t        9      9   0    0   19    0    8  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|cout_node
+   -    111    G       SOFT      t        2      2   0    0    6    0    2  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g2cp2
+   -    106    G       SOFT      t        4      4   0    0    8    0    5  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g4
+   -      4    A       SOFT      t        0      0   0    0    3    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node0
+   -      2    A       SOFT      t        3      2   0    0    5    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node1
+   -     98    G       SOFT      t        4      3   0    0    7    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node2
+ (67)   101    G       SOFT      t        6      5   1    0    9    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node3
+   -    103    G       SOFT      t        6      5   0    0   12    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node4
+ (75)   112    G       SOFT      t        7      6   0    0   14    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node5
+   -    108    G       SOFT      t        9      7   1    0   16    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node6
+ (70)   104    G       SOFT      t        9      9   0    0   19    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node7
+ (56)    85    F       SOFT      t        2      2   0    0    6    0    1  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g2cp2
+ (57)    86    F       SOFT      t        4      4   0    0    8    0    4  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g4
+ (94)    16    A       SOFT      t        0      0   0    0    3    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node0
+   -     15    A       SOFT      t        3      2   0    0    5    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node1
+   -     90    F       SOFT      t        4      3   0    0    7    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node2
+   -     87    F       SOFT      t        6      5   1    0    9    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node3
+ (55)    83    F       SOFT      t        6      5   0    0   12    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node4
+ (54)    81    F       SOFT      t        7      6   0    0   14    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node5
+ (64)    96    F       SOFT      t        9      7   1    0   16    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node6
+ (62)    93    F       SOFT      t        9      7   0    0   19    1    0  |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node7
+ (42)    65    E       DFFE   +  t        0      0   0    2   18   33   50  state~1
+ (48)    73    E       TFFE   +  t        0      0   0    2   18   33   50  state~2
+   -     84    F       DFFE   +  t        0      0   0    2    4    0    2  A31 (:101)
+ (58)    88    F       DFFE   +  t        0      0   0    2    4    0    5  A30 (:102)
+ (60)    91    F       DFFE   +  t        0      0   0    2    4    0    6  A29 (:103)
+   -     92    F       DFFE   +  t        0      0   0    2    4    0    7  A28 (:104)
+   -     82    F       DFFE   +  t        0      0   0    2    4    0    8  A27 (:105)
+   -     95    F       DFFE   +  t        0      0   0    2    4    0    9  A26 (:106)
+   -     12    A       DFFE   +  t        0      0   0    2    4    0   10  A25 (:107)
+ (59)    89    F       DFFE   +  t        0      0   0    2    4    0   11  A24 (:108)
+ (10)    25    B       DFFE   +  t        0      0   0    2    4    0    4  A23 (:109)
+ (12)    22    B       DFFE   +  t        0      0   0    2    4    0    6  A22 (:110)
+  (7)    30    B       DFFE   +  t        0      0   0    2    4    0    7  A21 (:111)
+   -     31    B       DFFE   +  t        0      0   0    2    4    0    8  A20 (:112)
+  (6)    32    B       DFFE   +  t        0      0   0    2    4    0    9  A19 (:113)
+   -     23    B       DFFE   +  t        0      0   0    2    4    0   10  A18 (:114)
+   -     20    B       DFFE   +  t        0      0   0    2    4    0   11  A17 (:115)
+ (16)    17    B       DFFE   +  t        0      0   0    2    4    0   12  A16 (:116)
+ (14)    21    B       DFFE   +  t        1      0   1    3    4    0    4  A15 (:117)
+ (11)    24    B       DFFE   +  t        1      0   1    3    4    0    6  A14 (:118)
+ (15)    19    B       DFFE   +  t        1      0   1    3    4    0    7  A13 (:119)
+  (9)    27    B       DFFE   +  t        1      0   1    3    4    0    8  A12 (:120)
+   -     28    B       DFFE   +  t        1      0   1    3    4    0    9  A11 (:121)
+  (8)    29    B       DFFE   +  t        1      0   1    3    4    0   10  A10 (:122)
+   -     26    B       DFFE   +  t        1      0   1    3    4    0   11  A9 (:123)
+ (32)    59    D       DFFE   +  t        1      0   1    3    4    0   12  A8 (:124)
+   -     52    D       DFFE   +  t        1      0   1    3    4    0    4  A7 (:125)
+   -     63    D       DFFE   +  t        1      0   1    3    4    0    5  A6 (:126)
+   -     50    D       DFFE   +  t        1      0   1    3    4    0    6  A5 (:127)
+ (30)    62    D       DFFE   +  t        1      0   1    3    4    0    7  A4 (:128)
+   -     42    C       DFFE   +  t        1      0   1    3    4    0    4  A3 (:129)
+   -     36    C       DFFE   +  t        1      0   1    3    4    0    5  A2 (:130)
+   -     39    C       DFFE   +  t        1      0   1    3    4    0    6  A1 (:131)
+ (18)    46    C       DFFE   +  t        0      0   0    3    3    1    6  A0 (:132)
+   -     58    D       DFFE   +  t        0      0   0    3    3    0    4  B15 (:133)
+ (52)    80    E       DFFE   +  t        1      0   1    3    4    0    4  B14 (:134)
+   -     79    E       DFFE   +  t        1      0   1    3    4    0    4  B13 (:135)
+ (51)    78    E       DFFE   +  t        1      0   1    3    4    0    4  B12 (:136)
+   -     74    E       DFFE   +  t        1      0   1    3    4    0    4  B11 (:137)
+ (49)    75    E       DFFE   +  t        1      0   1    3    4    0    4  B10 (:138)
+   -     76    E       DFFE   +  t        1      0   1    3    4    0    4  B9 (:139)
+   -     66    E       DFFE   +  t        1      0   1    3    4    0    4  B8 (:140)
+ (43)    67    E       DFFE   +  t        1      0   1    3    4    0    4  B7 (:141)
+ (44)    69    E       DFFE   +  t        1      0   1    3    4    0    4  B6 (:142)
+ (46)    70    E       DFFE   +  t        1      0   1    3    4    0    4  B5 (:143)
+ (50)    77    E       DFFE   +  t        1      0   1    3    4    0    4  B4 (:144)
+   -     68    E       DFFE   +  t        1      0   1    3    4    0    4  B3 (:145)
+   -     10    A       DFFE   +  t        1      0   1    3    4    0    4  B2 (:146)
+   -     34    C       DFFE   +  t        1      0   1    3    4    0    4  B1 (:147)
+ (22)    41    C       DFFE   +  t        1      0   1    3    4   32    3  B0 (:148)
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                                       Logic cells placed in LAB 'A'
+        +----------------------------- LC4 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node0
+        | +--------------------------- LC2 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node1
+        | | +------------------------- LC16 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node0
+        | | | +----------------------- LC15 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node1
+        | | | | +--------------------- LC1 P_out15
+        | | | | | +------------------- LC3 P_out16
+        | | | | | | +----------------- LC5 P_out17
+        | | | | | | | +--------------- LC6 P_out24
+        | | | | | | | | +------------- LC8 P_out25
+        | | | | | | | | | +----------- LC9 P_out28
+        | | | | | | | | | | +--------- LC14 P_out29
+        | | | | | | | | | | | +------- LC13 P_out30
+        | | | | | | | | | | | | +----- LC11 P_out31
+        | | | | | | | | | | | | | +--- LC12 A25
+        | | | | | | | | | | | | | | +- LC10 B2
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'A'
+LC      | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'A':
+LC4  -> - - - - - * - - - - - - - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node0
+LC2  -> - - - - - - * - - - - - - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node1
+LC16 -> - - - - - - - * - - - - - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node0
+LC15 -> - - - - - - - - * - - - - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node1
+LC1  -> - - - - * - - - - - - - - - - | * - - - - - - * | <-- P_out15
+LC3  -> * * - - - * - - - - - - - - - | * - - - - - * - | <-- P_out16
+LC5  -> - * - - - - * - - - - - - - - | * - - - - - * - | <-- P_out17
+LC6  -> - - * * - - - * - - - - - - - | * - - - - * - - | <-- P_out24
+LC8  -> - - - * - - - - * - - - - - - | * - - - - * - - | <-- P_out25
+LC9  -> - - - - - - - - - * - - - - - | * - - - - * - - | <-- P_out28
+LC14 -> - - - - - - - - - - * - - - - | * - - - - * - - | <-- P_out29
+LC13 -> - - - - - - - - - - - * - - - | * - - - - * - - | <-- P_out30
+LC11 -> - - - - - - - - - - - - * - - | * - - - - * - - | <-- P_out31
+LC12 -> - - - * - - - - - - - - - * - | * - - - - * - - | <-- A25
+LC10 -> - - - - - - - - - - - - - - * | * - * - * - - - | <-- B2
+
+Pin
+18   -> - - - - - - - - - - - - - - * | * - - - - - - - | <-- B_in2
+89   -> - - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+59   -> - - - - * * * * * * * * * * * | * * * * * * * * | <-- reset
+57   -> - - - - - - - - - - - - - * * | * * * * * * - - | <-- s
+LC114-> * * - - - - - - - - - - - - - | * - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|cout_node
+LC116-> - - - - * - - - - - - - - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node7
+LC100-> - - * * - - - - - - - - - - - | * - - - - * - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|cout_node
+LC83 -> - - - - - - - - - * - - - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node4
+LC81 -> - - - - - - - - - - * - - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node5
+LC96 -> - - - - - - - - - - - * - - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node6
+LC93 -> - - - - - - - - - - - - * - - | * - - - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node7
+LC65 -> - - - - * * * * * * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> - - - - * * * * * * * * * * * | * * * * * * * * | <-- state~2
+LC89 -> - - * * - - - - - - - - - * - | * - - - - * - - | <-- A24
+LC20 -> - * - - - - - - - - - - - - - | * * - - - - * - | <-- A17
+LC17 -> * * - - - - - - - - - - - - - | * * - - - - * - | <-- A16
+LC68 -> - - - - - - - - - - - - - - * | * - - - * - - - | <-- B3
+LC41 -> - - - - * * * * * * * * * - - | * - * * * * * * | <-- B0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC18 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node1
+        | +----------------------------- LC25 A23
+        | | +--------------------------- LC22 A22
+        | | | +------------------------- LC30 A21
+        | | | | +----------------------- LC31 A20
+        | | | | | +--------------------- LC32 A19
+        | | | | | | +------------------- LC23 A18
+        | | | | | | | +----------------- LC20 A17
+        | | | | | | | | +--------------- LC17 A16
+        | | | | | | | | | +------------- LC21 A15
+        | | | | | | | | | | +----------- LC24 A14
+        | | | | | | | | | | | +--------- LC19 A13
+        | | | | | | | | | | | | +------- LC27 A12
+        | | | | | | | | | | | | | +----- LC28 A11
+        | | | | | | | | | | | | | | +--- LC29 A10
+        | | | | | | | | | | | | | | | +- LC26 A9
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'B':
+LC25 -> - * - - - - - - - - - - - - - - | - * - - - * * - | <-- A23
+LC22 -> - * * - - - - - - - - - - - - - | - * - - - - * - | <-- A22
+LC30 -> - - * * - - - - - - - - - - - - | - * - - - - * - | <-- A21
+LC31 -> - - - * * - - - - - - - - - - - | - * - - - - * - | <-- A20
+LC32 -> - - - - * * - - - - - - - - - - | - * - - - - * - | <-- A19
+LC23 -> - - - - - * * - - - - - - - - - | - * - - - - * - | <-- A18
+LC20 -> - - - - - - * * - - - - - - - - | * * - - - - * - | <-- A17
+LC17 -> - - - - - - - * * - - - - - - - | * * - - - - * - | <-- A16
+LC21 -> - - - - - - - - * * - - - - - - | - * - - - - - * | <-- A15
+LC24 -> - - - - - - - - - * * - - - - - | - * - - - - - * | <-- A14
+LC19 -> - - - - - - - - - - * * - - - - | - * - - - - - * | <-- A13
+LC27 -> - - - - - - - - - - - * * - - - | - * - - - - - * | <-- A12
+LC28 -> - - - - - - - - - - - - * * - - | - * - - - - - * | <-- A11
+LC29 -> - - - - - - - - - - - - - * * - | - * - - - - - * | <-- A10
+LC26 -> * - - - - - - - - - - - - - * * | - * - - - - - * | <-- A9
+
+Pin
+89   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+47   -> - - - - - - - - - - - - - - - * | - * - - - - - - | <-- in9
+48   -> - - - - - - - - - - - - - - * - | - * - - - - - - | <-- in10
+94   -> - - - - - - - - - - - - - * - - | - * - - - - - - | <-- in11
+15   -> - - - - - - - - - - - - * - - - | - * - - - - - - | <-- in12
+12   -> - - - - - - - - - - - * - - - - | - * - - - - - - | <-- in13
+11   -> - - - - - - - - - - * - - - - - | - * - - - - - - | <-- in14
+10   -> - - - - - - - - - * - - - - - - | - * - - - - - - | <-- in15
+59   -> - * * * * * * * * * * * * * * * | * * * * * * * * | <-- reset
+57   -> - * * * * * * * * * * * * * * * | * * * * * * - - | <-- s
+LC60 -> * - - - - - - - - - - - - - - - | - * - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|cout_node
+LC113-> * - - - - - - - - - - - - - - - | - * - - - - - * | <-- P_out8
+LC115-> * - - - - - - - - - - - - - - - | - * - - - - - * | <-- P_out9
+LC65 -> - * * * * * * * * * * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> - * * * * * * * * * * * * * * * | * * * * * * * * | <-- state~2
+LC59 -> * - - - - - - - - - - - - - - * | - * - * - - - * | <-- A8
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                         Logic cells placed in LAB 'C'
+        +------------------------------- LC48 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|gcp2
+        | +----------------------------- LC44 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|g4
+        | | +--------------------------- LC45 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node1
+        | | | +------------------------- LC47 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node2
+        | | | | +----------------------- LC43 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node3
+        | | | | | +--------------------- LC40 P_out0
+        | | | | | | +------------------- LC38 P_out1
+        | | | | | | | +----------------- LC37 P_out2
+        | | | | | | | | +--------------- LC35 P_out3
+        | | | | | | | | | +------------- LC33 P_out26
+        | | | | | | | | | | +----------- LC42 A3
+        | | | | | | | | | | | +--------- LC36 A2
+        | | | | | | | | | | | | +------- LC39 A1
+        | | | | | | | | | | | | | +----- LC46 A0
+        | | | | | | | | | | | | | | +--- LC34 B1
+        | | | | | | | | | | | | | | | +- LC41 B0
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'C':
+LC48 -> - - - - * - - - - - - - - - - - | - - * - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|gcp2
+LC45 -> - - - - - - * - - - - - - - - - | - - * - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node1
+LC47 -> - - - - - - - * - - - - - - - - | - - * - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node2
+LC43 -> - - - - - - - - * - - - - - - - | - - * - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node3
+LC40 -> * * * * - * - - - - - - - - - - | - - * - - - - - | <-- P_out0
+LC38 -> * * * * - - * - - - - - - - - - | - - * - - - - - | <-- P_out1
+LC37 -> * * - * - - - * - - - - - - - - | - - * - - - - - | <-- P_out2
+LC35 -> - * - - * - - - * - - - - - - - | - - * - - - - - | <-- P_out3
+LC33 -> - - - - - - - - - * - - - - - - | - - * - - * - - | <-- P_out26
+LC42 -> - * - - * - - - - - * - - - - - | - - * * - - - - | <-- A3
+LC36 -> * * - * - - - - - - * * - - - - | - - * - - - - - | <-- A2
+LC39 -> * * * * - - - - - - - * * - - - | - - * - - - - - | <-- A1
+LC46 -> * * * * - * - - - - - - * * - - | - - * - - - - - | <-- A0
+LC34 -> - - - - - - - - - - - - - - * * | - - * - * - - - | <-- B1
+LC41 -> - - - - - * * * * * - - - - - * | * - * * * * * * | <-- B0
+
+Pin
+9    -> - - - - - - - - - - - - - - - * | - - * - - - - - | <-- B_in0
+19   -> - - - - - - - - - - - - - - * - | - - * - - - - - | <-- B_in1
+89   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+21   -> - - - - - - - - - - - - - * - - | - - * - - - - - | <-- in0
+43   -> - - - - - - - - - - - - * - - - | - - * - - - - - | <-- in1
+7    -> - - - - - - - - - - - * - - - - | - - * - - - - - | <-- in2
+8    -> - - - - - - - - - - * - - - - - | - - * - - - - - | <-- in3
+59   -> - - - - - * * * * * * * * * * * | * * * * * * * * | <-- reset
+57   -> - - - - - - - - - - * * * * * * | * * * * * * - - | <-- s
+LC90 -> - - - - - - - - - * - - - - - - | - - * - - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node2
+LC65 -> - - - - - * * * * * * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> - - - - - * * * * * * * * * * * | * * * * * * * * | <-- state~2
+LC10 -> - - - - - - - - - - - - - - * - | * - * - * - - - | <-- B2
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                         Logic cells placed in LAB 'D'
+        +------------------------------- LC56 done
+        | +----------------------------- LC60 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|cout_node
+        | | +--------------------------- LC55 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node4
+        | | | +------------------------- LC57 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node5
+        | | | | +----------------------- LC61 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node6
+        | | | | | +--------------------- LC64 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node7
+        | | | | | | +------------------- LC49 P_out4
+        | | | | | | | +----------------- LC51 P_out5
+        | | | | | | | | +--------------- LC53 P_out6
+        | | | | | | | | | +------------- LC54 P_out7
+        | | | | | | | | | | +----------- LC59 A8
+        | | | | | | | | | | | +--------- LC52 A7
+        | | | | | | | | | | | | +------- LC63 A6
+        | | | | | | | | | | | | | +----- LC50 A5
+        | | | | | | | | | | | | | | +--- LC62 A4
+        | | | | | | | | | | | | | | | +- LC58 B15
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'D':
+LC55 -> - - - - - - * - - - - - - - - - | - - - * - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node4
+LC57 -> - - - - - - - * - - - - - - - - | - - - * - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node5
+LC61 -> - - - - - - - - * - - - - - - - | - - - * - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node6
+LC64 -> - - - - - - - - - * - - - - - - | - - - * - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node7
+LC49 -> - * * * * * * - - - - - - - - - | - - - * - - - - | <-- P_out4
+LC51 -> - * - * * * - * - - - - - - - - | - - - * - - - - | <-- P_out5
+LC53 -> - * - - * * - - * - - - - - - - | - - - * - - - - | <-- P_out6
+LC54 -> - * - - - * - - - * - - - - - - | - - - * - - - - | <-- P_out7
+LC59 -> - - - - - - - - - - * - - - - - | - * - * - - - * | <-- A8
+LC52 -> - * - - - * - - - - * * - - - - | - - - * - - - - | <-- A7
+LC63 -> - * - - * * - - - - - * * - - - | - - - * - - - - | <-- A6
+LC50 -> - * - * * * - - - - - - * * - - | - - - * - - - - | <-- A5
+LC62 -> - * * * * * - - - - - - - * * - | - - - * - - - - | <-- A4
+LC58 -> - - - - - - - - - - - - - - - * | - - - * * - - - | <-- B15
+
+Pin
+60   -> - - - - - - - - - - - - - - - * | - - - * - - - - | <-- B_in15
+89   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+46   -> - - - - - - - - - - - - - - * - | - - - * - - - - | <-- in4
+44   -> - - - - - - - - - - - - - * - - | - - - * - - - - | <-- in5
+42   -> - - - - - - - - - - - - * - - - | - - - * - - - - | <-- in6
+30   -> - - - - - - - - - - - * - - - - | - - - * - - - - | <-- in7
+31   -> - - - - - - - - - - * - - - - - | - - - * - - - - | <-- in8
+59   -> - - - - - - * * * * * * * * * * | * * * * * * * * | <-- reset
+57   -> - - - - - - - - - - * * * * * * | * * * * * * - - | <-- s
+LC44 -> - * * * * * - - - - - - - - - - | - - - * - - - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|g4
+LC65 -> * - - - - - * * * * * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> * - - - - - * * * * * * * * * * | * * * * * * * * | <-- state~2
+LC42 -> - - - - - - - - - - - - - - * - | - - * * - - - - | <-- A3
+LC41 -> - - - - - - * * * * - - - - - - | * - * * * * * * | <-- B0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+                                     Logic cells placed in LAB 'E'
+        +--------------------------- LC65 state~1
+        | +------------------------- LC73 state~2
+        | | +----------------------- LC80 B14
+        | | | +--------------------- LC79 B13
+        | | | | +------------------- LC78 B12
+        | | | | | +----------------- LC74 B11
+        | | | | | | +--------------- LC75 B10
+        | | | | | | | +------------- LC76 B9
+        | | | | | | | | +----------- LC66 B8
+        | | | | | | | | | +--------- LC67 B7
+        | | | | | | | | | | +------- LC69 B6
+        | | | | | | | | | | | +----- LC70 B5
+        | | | | | | | | | | | | +--- LC77 B4
+        | | | | | | | | | | | | | +- LC68 B3
+        | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'E':
+LC65 -> * * * * * * * * * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> * * * * * * * * * * * * * * | * * * * * * * * | <-- state~2
+LC80 -> * * * * - - - - - - - - - - | - - - - * - - - | <-- B14
+LC79 -> * * - * * - - - - - - - - - | - - - - * - - - | <-- B13
+LC78 -> * * - - * * - - - - - - - - | - - - - * - - - | <-- B12
+LC74 -> * * - - - * * - - - - - - - | - - - - * - - - | <-- B11
+LC75 -> * * - - - - * * - - - - - - | - - - - * - - - | <-- B10
+LC76 -> * * - - - - - * * - - - - - | - - - - * - - - | <-- B9
+LC66 -> * * - - - - - - * * - - - - | - - - - * - - - | <-- B8
+LC67 -> * * - - - - - - - * * - - - | - - - - * - - - | <-- B7
+LC69 -> * * - - - - - - - - * * - - | - - - - * - - - | <-- B6
+LC70 -> * * - - - - - - - - - * * - | - - - - * - - - | <-- B5
+LC77 -> * * - - - - - - - - - - * * | - - - - * - - - | <-- B4
+LC68 -> * * - - - - - - - - - - - * | * - - - * - - - | <-- B3
+
+Pin
+49   -> - - - - - - - - - - - - - * | - - - - * - - - | <-- B_in3
+22   -> - - - - - - - - - - - - * - | - - - - * - - - | <-- B_in4
+52   -> - - - - - - - - - - - * - - | - - - - * - - - | <-- B_in5
+50   -> - - - - - - - - - - * - - - | - - - - * - - - | <-- B_in6
+29   -> - - - - - - - - - * - - - - | - - - - * - - - | <-- B_in7
+16   -> - - - - - - - - * - - - - - | - - - - * - - - | <-- B_in8
+14   -> - - - - - - - * - - - - - - | - - - - * - - - | <-- B_in9
+51   -> - - - - - - * - - - - - - - | - - - - * - - - | <-- B_in10
+54   -> - - - - - * - - - - - - - - | - - - - * - - - | <-- B_in11
+32   -> - - - - * - - - - - - - - - | - - - - * - - - | <-- B_in12
+33   -> - - - * - - - - - - - - - - | - - - - * - - - | <-- B_in13
+58   -> - - * - - - - - - - - - - - | - - - - * - - - | <-- B_in14
+89   -> - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+59   -> * * * * * * * * * * * * * * | * * * * * * * * | <-- reset
+57   -> * * * * * * * * * * * * * * | * * * * * * - - | <-- s
+LC58 -> * * * - - - - - - - - - - - | - - - * * - - - | <-- B15
+LC10 -> * * - - - - - - - - - - - - | * - * - * - - - | <-- B2
+LC34 -> * * - - - - - - - - - - - - | - - * - * - - - | <-- B1
+LC41 -> * * - - - - - - - - - - - - | * - * * * * * * | <-- B0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'F':
+
+                                         Logic cells placed in LAB 'F'
+        +------------------------------- LC85 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g2cp2
+        | +----------------------------- LC86 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g4
+        | | +--------------------------- LC90 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node2
+        | | | +------------------------- LC87 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node3
+        | | | | +----------------------- LC83 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node4
+        | | | | | +--------------------- LC81 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node5
+        | | | | | | +------------------- LC96 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node6
+        | | | | | | | +----------------- LC93 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node7
+        | | | | | | | | +--------------- LC94 P_out27
+        | | | | | | | | | +------------- LC84 A31
+        | | | | | | | | | | +----------- LC88 A30
+        | | | | | | | | | | | +--------- LC91 A29
+        | | | | | | | | | | | | +------- LC92 A28
+        | | | | | | | | | | | | | +----- LC82 A27
+        | | | | | | | | | | | | | | +--- LC95 A26
+        | | | | | | | | | | | | | | | +- LC89 A24
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'F':
+LC85 -> - - - - - - - * - - - - - - - - | - - - - - * - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g2cp2
+LC86 -> - - - - * * * * - - - - - - - - | - - - - - * - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g4
+LC87 -> - - - - - - - - * - - - - - - - | - - - - - * - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node3
+LC94 -> - * - * * * * * * - - - - - - - | - - - - - * - - | <-- P_out27
+LC84 -> - - - - - - - * - * - - - - - - | - - - - - * - - | <-- A31
+LC88 -> * - - - - - * * - * * - - - - - | - - - - - * - - | <-- A30
+LC91 -> * - - - - * * * - - * * - - - - | - - - - - * - - | <-- A29
+LC92 -> * - - - * * * * - - - * * - - - | - - - - - * - - | <-- A28
+LC82 -> - * - * * * * * - - - - * * - - | - - - - - * - - | <-- A27
+LC95 -> - * * * * * * * - - - - - * * - | - - - - - * - - | <-- A26
+LC89 -> - * * * * * * * - - - - - - - * | * - - - - * - - | <-- A24
+
+Pin
+89   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+59   -> - - - - - - - - * * * * * * * * | * * * * * * * * | <-- reset
+57   -> - - - - - - - - - * * * * * * * | * * * * * * - - | <-- s
+LC100-> - - * * * * * * - - - - - - - - | * - - - - * - - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|cout_node
+LC6  -> - * * * * * * * - - - - - - - - | * - - - - * - - | <-- P_out24
+LC8  -> - * * * * * * * - - - - - - - - | * - - - - * - - | <-- P_out25
+LC33 -> - * * * * * * * - - - - - - - - | - - * - - * - - | <-- P_out26
+LC9  -> * - - - * * * * - - - - - - - - | * - - - - * - - | <-- P_out28
+LC14 -> * - - - - * * * - - - - - - - - | * - - - - * - - | <-- P_out29
+LC13 -> * - - - - - * * - - - - - - - - | * - - - - * - - | <-- P_out30
+LC11 -> - - - - - - - * - - - - - - - - | * - - - - * - - | <-- P_out31
+LC65 -> - - - - - - - - * * * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> - - - - - - - - * * * * * * * * | * * * * * * * * | <-- state~2
+LC12 -> - * * * * * * * - - - - - - * - | * - - - - * - - | <-- A25
+LC25 -> - - - - - - - - - - - - - - - * | - * - - - * * - | <-- A23
+LC41 -> - - - - - - - - * - - - - - - - | * - * * * * * * | <-- B0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'G':
+
+                                         Logic cells placed in LAB 'G'
+        +------------------------------- LC100 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|cout_node
+        | +----------------------------- LC111 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g2cp2
+        | | +--------------------------- LC106 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g4
+        | | | +------------------------- LC98 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node2
+        | | | | +----------------------- LC101 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node3
+        | | | | | +--------------------- LC103 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node4
+        | | | | | | +------------------- LC112 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node5
+        | | | | | | | +----------------- LC108 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node6
+        | | | | | | | | +--------------- LC104 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node7
+        | | | | | | | | | +------------- LC97 P_out14
+        | | | | | | | | | | +----------- LC107 P_out18
+        | | | | | | | | | | | +--------- LC99 P_out19
+        | | | | | | | | | | | | +------- LC110 P_out20
+        | | | | | | | | | | | | | +----- LC109 P_out21
+        | | | | | | | | | | | | | | +--- LC102 P_out22
+        | | | | | | | | | | | | | | | +- LC105 P_out23
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'G'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'G':
+LC111-> * - - - - - - - * - - - - - - - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g2cp2
+LC106-> * - - - - * * * * - - - - - - - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g4
+LC98 -> - - - - - - - - - - * - - - - - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node2
+LC101-> - - - - - - - - - - - * - - - - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node3
+LC103-> - - - - - - - - - - - - * - - - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node4
+LC112-> - - - - - - - - - - - - - * - - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node5
+LC108-> - - - - - - - - - - - - - - * - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node6
+LC104-> - - - - - - - - - - - - - - - * | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node7
+LC97 -> - - - - - - - - - * - - - - - - | - - - - - - * * | <-- P_out14
+LC107-> * - * * * * * * * - * - - - - - | - - - - - - * - | <-- P_out18
+LC99 -> * - * - * * * * * - - * - - - - | - - - - - - * - | <-- P_out19
+LC110-> * * - - - * * * * - - - * - - - | - - - - - - * - | <-- P_out20
+LC109-> * * - - - - * * * - - - - * - - | - - - - - - * - | <-- P_out21
+LC102-> * * - - - - - * * - - - - - * - | - - - - - - * - | <-- P_out22
+LC105-> * - - - - - - - * - - - - - - * | - - - - - - * - | <-- P_out23
+
+Pin
+89   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+59   -> - - - - - - - - - * * * * * * * | * * * * * * * * | <-- reset
+LC114-> * - - * * * * * * - - - - - - - | * - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|cout_node
+LC127-> - - - - - - - - - * - - - - - - | - - - - - - * - | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node6
+LC3  -> * - * * * * * * * - - - - - - - | * - - - - - * - | <-- P_out16
+LC5  -> * - * * * * * * * - - - - - - - | * - - - - - * - | <-- P_out17
+LC65 -> - - - - - - - - - * * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> - - - - - - - - - * * * * * * * | * * * * * * * * | <-- state~2
+LC25 -> * - - - - - - - * - - - - - - - | - * - - - * * - | <-- A23
+LC22 -> * * - - - - - * * - - - - - - - | - * - - - - * - | <-- A22
+LC30 -> * * - - - - * * * - - - - - - - | - * - - - - * - | <-- A21
+LC31 -> * * - - - * * * * - - - - - - - | - * - - - - * - | <-- A20
+LC32 -> * - * - * * * * * - - - - - - - | - * - - - - * - | <-- A19
+LC23 -> * - * * * * * * * - - - - - - - | - * - - - - * - | <-- A18
+LC20 -> * - * * * * * * * - - - - - - - | * * - - - - * - | <-- A17
+LC17 -> * - * * * * * * * - - - - - - - | * * - - - - * - | <-- A16
+LC41 -> - - - - - - - - - * * * * * * * | * - * * * * * * | <-- B0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'H':
+
+                                         Logic cells placed in LAB 'H'
+        +------------------------------- LC114 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|cout_node
+        | +----------------------------- LC118 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g2cp2
+        | | +--------------------------- LC119 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g4
+        | | | +------------------------- LC124 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node0
+        | | | | +----------------------- LC128 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node2
+        | | | | | +--------------------- LC120 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node3
+        | | | | | | +------------------- LC117 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node4
+        | | | | | | | +----------------- LC122 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node5
+        | | | | | | | | +--------------- LC127 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node6
+        | | | | | | | | | +------------- LC116 |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node7
+        | | | | | | | | | | +----------- LC113 P_out8
+        | | | | | | | | | | | +--------- LC115 P_out9
+        | | | | | | | | | | | | +------- LC121 P_out10
+        | | | | | | | | | | | | | +----- LC123 P_out11
+        | | | | | | | | | | | | | | +--- LC126 P_out12
+        | | | | | | | | | | | | | | | +- LC125 P_out13
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'H'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'H':
+LC118-> * - - - - - - - - * - - - - - - | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g2cp2
+LC119-> * - - - - - * * * * - - - - - - | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g4
+LC124-> - - - - - - - - - - * - - - - - | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node0
+LC128-> - - - - - - - - - - - - * - - - | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node2
+LC120-> - - - - - - - - - - - - - * - - | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node3
+LC117-> - - - - - - - - - - - - - - * - | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node4
+LC122-> - - - - - - - - - - - - - - - * | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node5
+LC113-> * - * * * * * * * * * - - - - - | - * - - - - - * | <-- P_out8
+LC115-> * - * - * * * * * * - * - - - - | - * - - - - - * | <-- P_out9
+LC121-> * - * - * * * * * * - - * - - - | - - - - - - - * | <-- P_out10
+LC123-> * - * - - * * * * * - - - * - - | - - - - - - - * | <-- P_out11
+LC126-> * * - - - - * * * * - - - - * - | - - - - - - - * | <-- P_out12
+LC125-> * * - - - - - * * * - - - - - * | - - - - - - - * | <-- P_out13
+
+Pin
+89   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clock
+59   -> - - - - - - - - - - * * * * * * | * * * * * * * * | <-- reset
+LC60 -> * - - * * * * * * * - - - - - - | - * - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|cout_node
+LC18 -> - - - - - - - - - - - * - - - - | - - - - - - - * | <-- |LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node1
+LC97 -> * * - - - - - - * * - - - - - - | - - - - - - * * | <-- P_out14
+LC1  -> * - - - - - - - - * - - - - - - | * - - - - - - * | <-- P_out15
+LC65 -> - - - - - - - - - - * * * * * * | * * * * * * * * | <-- state~1
+LC73 -> - - - - - - - - - - * * * * * * | * * * * * * * * | <-- state~2
+LC21 -> * - - - - - - - - * - - - - - - | - * - - - - - * | <-- A15
+LC24 -> * * - - - - - - * * - - - - - - | - * - - - - - * | <-- A14
+LC19 -> * * - - - - - * * * - - - - - - | - * - - - - - * | <-- A13
+LC27 -> * * - - - - * * * * - - - - - - | - * - - - - - * | <-- A12
+LC28 -> * - * - - * * * * * - - - - - - | - * - - - - - * | <-- A11
+LC29 -> * - * - * * * * * * - - - - - - | - * - - - - - * | <-- A10
+LC26 -> * - * - * * * * * * - - - - - - | - * - - - - - * | <-- A9
+LC59 -> * - * * * * * * * * - - - - - - | - * - * - - - * | <-- A8
+LC41 -> - - - - - - - - - - * * * * * * | * - * * * * * * | <-- B0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              e:\vhdldesigns\ee231\20asm\smult.rpt
+smult
+
+** EQUATIONS **
+
+B_in0    : INPUT;
+B_in1    : INPUT;
+B_in2    : INPUT;
+B_in3    : INPUT;
+B_in4    : INPUT;
+B_in5    : INPUT;
+B_in6    : INPUT;
+B_in7    : INPUT;
+B_in8    : INPUT;
+B_in9    : INPUT;
+B_in10   : INPUT;
+B_in11   : INPUT;
+B_in12   : INPUT;
+B_in13   : INPUT;
+B_in14   : INPUT;
+B_in15   : INPUT;
+clock    : INPUT;
+in0      : INPUT;
+in1      : INPUT;
+in2      : INPUT;
+in3      : INPUT;
+in4      : INPUT;
+in5      : INPUT;
+in6      : INPUT;
+in7      : INPUT;
+in8      : INPUT;
+in9      : INPUT;
+in10     : INPUT;
+in11     : INPUT;
+in12     : INPUT;
+in13     : INPUT;
+in14     : INPUT;
+in15     : INPUT;
+reset    : INPUT;
+s        : INPUT;
+
+-- Node name is ':132' = 'A0' 
+-- Equation name is 'A0', location is LC046, type is buried.
+A0       = DFFE( _EQ001 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ001 =  A0 &  s & !state~1 & !state~2
+         #  in0 & !s & !state~1 & !state~2
+         #  A0 &  state~1;
+
+-- Node name is ':131' = 'A1' 
+-- Equation name is 'A1', location is LC039, type is buried.
+A1       = DFFE( _EQ002 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ002 =  A1 &  s & !state~1 & !state~2
+         #  in1 & !s & !state~1 & !state~2
+         #  A0 & !state~1 &  state~2
+         #  A1 &  state~1;
+
+-- Node name is ':130' = 'A2' 
+-- Equation name is 'A2', location is LC036, type is buried.
+A2       = DFFE( _EQ003 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ003 =  A2 &  s & !state~1 & !state~2
+         #  in2 & !s & !state~1 & !state~2
+         #  A1 & !state~1 &  state~2
+         #  A2 &  state~1;
+
+-- Node name is ':129' = 'A3' 
+-- Equation name is 'A3', location is LC042, type is buried.
+A3       = DFFE( _EQ004 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ004 =  A3 &  s & !state~1 & !state~2
+         #  in3 & !s & !state~1 & !state~2
+         #  A2 & !state~1 &  state~2
+         #  A3 &  state~1;
+
+-- Node name is ':128' = 'A4' 
+-- Equation name is 'A4', location is LC062, type is buried.
+A4       = DFFE( _EQ005 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ005 =  A4 &  s & !state~1 & !state~2
+         #  in4 & !s & !state~1 & !state~2
+         #  A3 & !state~1 &  state~2
+         #  A4 &  state~1;
+
+-- Node name is ':127' = 'A5' 
+-- Equation name is 'A5', location is LC050, type is buried.
+A5       = DFFE( _EQ006 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ006 =  A5 &  s & !state~1 & !state~2
+         #  in5 & !s & !state~1 & !state~2
+         #  A4 & !state~1 &  state~2
+         #  A5 &  state~1;
+
+-- Node name is ':126' = 'A6' 
+-- Equation name is 'A6', location is LC063, type is buried.
+A6       = DFFE( _EQ007 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ007 =  A6 &  s & !state~1 & !state~2
+         #  in6 & !s & !state~1 & !state~2
+         #  A5 & !state~1 &  state~2
+         #  A6 &  state~1;
+
+-- Node name is ':125' = 'A7' 
+-- Equation name is 'A7', location is LC052, type is buried.
+A7       = DFFE( _EQ008 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ008 =  A7 &  s & !state~1 & !state~2
+         #  in7 & !s & !state~1 & !state~2
+         #  A6 & !state~1 &  state~2
+         #  A7 &  state~1;
+
+-- Node name is ':124' = 'A8' 
+-- Equation name is 'A8', location is LC059, type is buried.
+A8       = DFFE( _EQ009 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ009 =  A8 &  s & !state~1 & !state~2
+         #  in8 & !s & !state~1 & !state~2
+         #  A7 & !state~1 &  state~2
+         #  A8 &  state~1;
+
+-- Node name is ':123' = 'A9' 
+-- Equation name is 'A9', location is LC026, type is buried.
+A9       = DFFE( _EQ010 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ010 =  A9 &  s & !state~1 & !state~2
+         #  in9 & !s & !state~1 & !state~2
+         #  A8 & !state~1 &  state~2
+         #  A9 &  state~1;
+
+-- Node name is ':122' = 'A10' 
+-- Equation name is 'A10', location is LC029, type is buried.
+A10      = DFFE( _EQ011 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ011 =  A10 &  s & !state~1 & !state~2
+         #  in10 & !s & !state~1 & !state~2
+         #  A9 & !state~1 &  state~2
+         #  A10 &  state~1;
+
+-- Node name is ':121' = 'A11' 
+-- Equation name is 'A11', location is LC028, type is buried.
+A11      = DFFE( _EQ012 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ012 =  A11 &  s & !state~1 & !state~2
+         #  in11 & !s & !state~1 & !state~2
+         #  A10 & !state~1 &  state~2
+         #  A11 &  state~1;
+
+-- Node name is ':120' = 'A12' 
+-- Equation name is 'A12', location is LC027, type is buried.
+A12      = DFFE( _EQ013 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ013 =  A12 &  s & !state~1 & !state~2
+         #  in12 & !s & !state~1 & !state~2
+         #  A11 & !state~1 &  state~2
+         #  A12 &  state~1;
+
+-- Node name is ':119' = 'A13' 
+-- Equation name is 'A13', location is LC019, type is buried.
+A13      = DFFE( _EQ014 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ014 =  A13 &  s & !state~1 & !state~2
+         #  in13 & !s & !state~1 & !state~2
+         #  A12 & !state~1 &  state~2
+         #  A13 &  state~1;
+
+-- Node name is ':118' = 'A14' 
+-- Equation name is 'A14', location is LC024, type is buried.
+A14      = DFFE( _EQ015 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ015 =  A14 &  s & !state~1 & !state~2
+         #  in14 & !s & !state~1 & !state~2
+         #  A13 & !state~1 &  state~2
+         #  A14 &  state~1;
+
+-- Node name is ':117' = 'A15' 
+-- Equation name is 'A15', location is LC021, type is buried.
+A15      = DFFE( _EQ016 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ016 =  A15 &  s & !state~1 & !state~2
+         #  in15 & !s & !state~1 & !state~2
+         #  A14 & !state~1 &  state~2
+         #  A15 &  state~1;
+
+-- Node name is ':116' = 'A16' 
+-- Equation name is 'A16', location is LC017, type is buried.
+A16      = DFFE( _EQ017 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ017 =  A16 &  s & !state~1 & !state~2
+         #  A15 & !state~1 &  state~2
+         #  A16 &  state~1;
+
+-- Node name is ':115' = 'A17' 
+-- Equation name is 'A17', location is LC020, type is buried.
+A17      = DFFE( _EQ018 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ018 =  A17 &  s & !state~1 & !state~2
+         #  A16 & !state~1 &  state~2
+         #  A17 &  state~1;
+
+-- Node name is ':114' = 'A18' 
+-- Equation name is 'A18', location is LC023, type is buried.
+A18      = DFFE( _EQ019 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ019 =  A18 &  s & !state~1 & !state~2
+         #  A17 & !state~1 &  state~2
+         #  A18 &  state~1;
+
+-- Node name is ':113' = 'A19' 
+-- Equation name is 'A19', location is LC032, type is buried.
+A19      = DFFE( _EQ020 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ020 =  A19 &  s & !state~1 & !state~2
+         #  A18 & !state~1 &  state~2
+         #  A19 &  state~1;
+
+-- Node name is ':112' = 'A20' 
+-- Equation name is 'A20', location is LC031, type is buried.
+A20      = DFFE( _EQ021 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ021 =  A20 &  s & !state~1 & !state~2
+         #  A19 & !state~1 &  state~2
+         #  A20 &  state~1;
+
+-- Node name is ':111' = 'A21' 
+-- Equation name is 'A21', location is LC030, type is buried.
+A21      = DFFE( _EQ022 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ022 =  A21 &  s & !state~1 & !state~2
+         #  A20 & !state~1 &  state~2
+         #  A21 &  state~1;
+
+-- Node name is ':110' = 'A22' 
+-- Equation name is 'A22', location is LC022, type is buried.
+A22      = DFFE( _EQ023 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ023 =  A22 &  s & !state~1 & !state~2
+         #  A21 & !state~1 &  state~2
+         #  A22 &  state~1;
+
+-- Node name is ':109' = 'A23' 
+-- Equation name is 'A23', location is LC025, type is buried.
+A23      = DFFE( _EQ024 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ024 =  A23 &  s & !state~1 & !state~2
+         #  A22 & !state~1 &  state~2
+         #  A23 &  state~1;
+
+-- Node name is ':108' = 'A24' 
+-- Equation name is 'A24', location is LC089, type is buried.
+A24      = DFFE( _EQ025 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ025 =  A24 &  s & !state~1 & !state~2
+         #  A23 & !state~1 &  state~2
+         #  A24 &  state~1;
+
+-- Node name is ':107' = 'A25' 
+-- Equation name is 'A25', location is LC012, type is buried.
+A25      = DFFE( _EQ026 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ026 =  A25 &  s & !state~1 & !state~2
+         #  A24 & !state~1 &  state~2
+         #  A25 &  state~1;
+
+-- Node name is ':106' = 'A26' 
+-- Equation name is 'A26', location is LC095, type is buried.
+A26      = DFFE( _EQ027 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ027 =  A26 &  s & !state~1 & !state~2
+         #  A25 & !state~1 &  state~2
+         #  A26 &  state~1;
+
+-- Node name is ':105' = 'A27' 
+-- Equation name is 'A27', location is LC082, type is buried.
+A27      = DFFE( _EQ028 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ028 =  A27 &  s & !state~1 & !state~2
+         #  A26 & !state~1 &  state~2
+         #  A27 &  state~1;
+
+-- Node name is ':104' = 'A28' 
+-- Equation name is 'A28', location is LC092, type is buried.
+A28      = DFFE( _EQ029 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ029 =  A28 &  s & !state~1 & !state~2
+         #  A27 & !state~1 &  state~2
+         #  A28 &  state~1;
+
+-- Node name is ':103' = 'A29' 
+-- Equation name is 'A29', location is LC091, type is buried.
+A29      = DFFE( _EQ030 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ030 =  A29 &  s & !state~1 & !state~2
+         #  A28 & !state~1 &  state~2
+         #  A29 &  state~1;
+
+-- Node name is ':102' = 'A30' 
+-- Equation name is 'A30', location is LC088, type is buried.
+A30      = DFFE( _EQ031 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ031 =  A30 &  s & !state~1 & !state~2
+         #  A29 & !state~1 &  state~2
+         #  A30 &  state~1;
+
+-- Node name is ':101' = 'A31' 
+-- Equation name is 'A31', location is LC084, type is buried.
+A31      = DFFE( _EQ032 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ032 =  A31 &  s & !state~1 & !state~2
+         #  A30 & !state~1 &  state~2
+         #  A31 &  state~1;
+
+-- Node name is ':148' = 'B0' 
+-- Equation name is 'B0', location is LC041, type is buried.
+B0       = DFFE( _EQ033 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ033 =  B0 &  s & !state~1 & !state~2
+         #  B_in0 & !s & !state~1 & !state~2
+         #  B1 & !state~1 &  state~2
+         #  B0 &  state~1;
+
+-- Node name is ':147' = 'B1' 
+-- Equation name is 'B1', location is LC034, type is buried.
+B1       = DFFE( _EQ034 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ034 =  B1 &  s & !state~1 & !state~2
+         #  B_in1 & !s & !state~1 & !state~2
+         #  B2 & !state~1 &  state~2
+         #  B1 &  state~1;
+
+-- Node name is ':146' = 'B2' 
+-- Equation name is 'B2', location is LC010, type is buried.
+B2       = DFFE( _EQ035 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ035 =  B2 &  s & !state~1 & !state~2
+         #  B_in2 & !s & !state~1 & !state~2
+         #  B3 & !state~1 &  state~2
+         #  B2 &  state~1;
+
+-- Node name is ':145' = 'B3' 
+-- Equation name is 'B3', location is LC068, type is buried.
+B3       = DFFE( _EQ036 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ036 =  B3 &  s & !state~1 & !state~2
+         #  B_in3 & !s & !state~1 & !state~2
+         #  B4 & !state~1 &  state~2
+         #  B3 &  state~1;
+
+-- Node name is ':144' = 'B4' 
+-- Equation name is 'B4', location is LC077, type is buried.
+B4       = DFFE( _EQ037 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ037 =  B4 &  s & !state~1 & !state~2
+         #  B_in4 & !s & !state~1 & !state~2
+         #  B5 & !state~1 &  state~2
+         #  B4 &  state~1;
+
+-- Node name is ':143' = 'B5' 
+-- Equation name is 'B5', location is LC070, type is buried.
+B5       = DFFE( _EQ038 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ038 =  B5 &  s & !state~1 & !state~2
+         #  B_in5 & !s & !state~1 & !state~2
+         #  B6 & !state~1 &  state~2
+         #  B5 &  state~1;
+
+-- Node name is ':142' = 'B6' 
+-- Equation name is 'B6', location is LC069, type is buried.
+B6       = DFFE( _EQ039 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ039 =  B6 &  s & !state~1 & !state~2
+         #  B_in6 & !s & !state~1 & !state~2
+         #  B7 & !state~1 &  state~2
+         #  B6 &  state~1;
+
+-- Node name is ':141' = 'B7' 
+-- Equation name is 'B7', location is LC067, type is buried.
+B7       = DFFE( _EQ040 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ040 =  B7 &  s & !state~1 & !state~2
+         #  B_in7 & !s & !state~1 & !state~2
+         #  B8 & !state~1 &  state~2
+         #  B7 &  state~1;
+
+-- Node name is ':140' = 'B8' 
+-- Equation name is 'B8', location is LC066, type is buried.
+B8       = DFFE( _EQ041 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ041 =  B8 &  s & !state~1 & !state~2
+         #  B_in8 & !s & !state~1 & !state~2
+         #  B9 & !state~1 &  state~2
+         #  B8 &  state~1;
+
+-- Node name is ':139' = 'B9' 
+-- Equation name is 'B9', location is LC076, type is buried.
+B9       = DFFE( _EQ042 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ042 =  B9 &  s & !state~1 & !state~2
+         #  B_in9 & !s & !state~1 & !state~2
+         #  B10 & !state~1 &  state~2
+         #  B9 &  state~1;
+
+-- Node name is ':138' = 'B10' 
+-- Equation name is 'B10', location is LC075, type is buried.
+B10      = DFFE( _EQ043 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ043 =  B10 &  s & !state~1 & !state~2
+         #  B_in10 & !s & !state~1 & !state~2
+         #  B11 & !state~1 &  state~2
+         #  B10 &  state~1;
+
+-- Node name is ':137' = 'B11' 
+-- Equation name is 'B11', location is LC074, type is buried.
+B11      = DFFE( _EQ044 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ044 =  B11 &  s & !state~1 & !state~2
+         #  B_in11 & !s & !state~1 & !state~2
+         #  B12 & !state~1 &  state~2
+         #  B11 &  state~1;
+
+-- Node name is ':136' = 'B12' 
+-- Equation name is 'B12', location is LC078, type is buried.
+B12      = DFFE( _EQ045 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ045 =  B12 &  s & !state~1 & !state~2
+         #  B_in12 & !s & !state~1 & !state~2
+         #  B13 & !state~1 &  state~2
+         #  B12 &  state~1;
+
+-- Node name is ':135' = 'B13' 
+-- Equation name is 'B13', location is LC079, type is buried.
+B13      = DFFE( _EQ046 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ046 =  B13 &  s & !state~1 & !state~2
+         #  B_in13 & !s & !state~1 & !state~2
+         #  B14 & !state~1 &  state~2
+         #  B13 &  state~1;
+
+-- Node name is ':134' = 'B14' 
+-- Equation name is 'B14', location is LC080, type is buried.
+B14      = DFFE( _EQ047 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ047 =  B14 &  s & !state~1 & !state~2
+         #  B_in14 & !s & !state~1 & !state~2
+         #  B15 & !state~1 &  state~2
+         #  B14 &  state~1;
+
+-- Node name is ':133' = 'B15' 
+-- Equation name is 'B15', location is LC058, type is buried.
+B15      = DFFE( _EQ048 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ048 =  B15 &  s & !state~1 & !state~2
+         #  B_in15 & !s & !state~1 & !state~2
+         #  B15 &  state~1;
+
+-- Node name is 'done' 
+-- Equation name is 'done', location is LC056, type is output.
+ done    = LCELL( _EQ049 $  GND);
+  _EQ049 =  state~1 & !state~2;
+
+-- Node name is 'P_out0' = 'P0' 
+-- Equation name is 'P_out0', location is LC040, type is output.
+ P_out0  = TFFE( _EQ050, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ050 =  A0 &  B0 & !P_out0 & !state~1 &  state~2
+         #  A0 &  B0 &  P_out0 & !state~1
+         #  P_out0 & !state~1 & !state~2;
+
+-- Node name is 'P_out1' = 'P1' 
+-- Equation name is 'P_out1', location is LC038, type is output.
+ P_out1  = DFFE( _EQ051 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ051 =  B0 &  _LC045 & !state~1 &  state~2
+         # !B0 &  P_out1 & !state~1 &  state~2
+         #  P_out1 &  state~1;
+
+-- Node name is 'P_out2' = 'P2' 
+-- Equation name is 'P_out2', location is LC037, type is output.
+ P_out2  = DFFE( _EQ052 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ052 =  B0 &  _LC047 & !state~1 &  state~2
+         # !B0 &  P_out2 & !state~1 &  state~2
+         #  P_out2 &  state~1;
+
+-- Node name is 'P_out3' = 'P3' 
+-- Equation name is 'P_out3', location is LC035, type is output.
+ P_out3  = DFFE( _EQ053 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ053 =  B0 &  _LC043 & !state~1 &  state~2
+         # !B0 &  P_out3 & !state~1 &  state~2
+         #  P_out3 &  state~1;
+
+-- Node name is 'P_out4' = 'P4' 
+-- Equation name is 'P_out4', location is LC049, type is output.
+ P_out4  = DFFE( _EQ054 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ054 =  B0 &  _LC055 & !state~1 &  state~2
+         # !B0 &  P_out4 & !state~1 &  state~2
+         #  P_out4 &  state~1;
+
+-- Node name is 'P_out5' = 'P5' 
+-- Equation name is 'P_out5', location is LC051, type is output.
+ P_out5  = DFFE( _EQ055 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ055 =  B0 &  _LC057 & !state~1 &  state~2
+         # !B0 &  P_out5 & !state~1 &  state~2
+         #  P_out5 &  state~1;
+
+-- Node name is 'P_out6' = 'P6' 
+-- Equation name is 'P_out6', location is LC053, type is output.
+ P_out6  = DFFE( _EQ056 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ056 =  B0 &  _LC061 & !state~1 &  state~2
+         # !B0 &  P_out6 & !state~1 &  state~2
+         #  P_out6 &  state~1;
+
+-- Node name is 'P_out7' = 'P7' 
+-- Equation name is 'P_out7', location is LC054, type is output.
+ P_out7  = DFFE( _EQ057 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ057 =  B0 &  _LC064 & !state~1 &  state~2
+         # !B0 &  P_out7 & !state~1 &  state~2
+         #  P_out7 &  state~1;
+
+-- Node name is 'P_out8' = 'P8' 
+-- Equation name is 'P_out8', location is LC113, type is output.
+ P_out8  = DFFE( _EQ058 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ058 =  B0 &  _LC124 & !state~1 &  state~2
+         # !B0 &  P_out8 & !state~1 &  state~2
+         #  P_out8 &  state~1;
+
+-- Node name is 'P_out9' = 'P9' 
+-- Equation name is 'P_out9', location is LC115, type is output.
+ P_out9  = DFFE( _EQ059 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ059 =  B0 &  _LC018 & !state~1 &  state~2
+         # !B0 &  P_out9 & !state~1 &  state~2
+         #  P_out9 &  state~1;
+
+-- Node name is 'P_out10' = 'P10' 
+-- Equation name is 'P_out10', location is LC121, type is output.
+ P_out10 = DFFE( _EQ060 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ060 =  B0 &  _LC128 & !state~1 &  state~2
+         # !B0 &  P_out10 & !state~1 &  state~2
+         #  P_out10 &  state~1;
+
+-- Node name is 'P_out11' = 'P11' 
+-- Equation name is 'P_out11', location is LC123, type is output.
+ P_out11 = DFFE( _EQ061 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ061 =  B0 &  _LC120 & !state~1 &  state~2
+         # !B0 &  P_out11 & !state~1 &  state~2
+         #  P_out11 &  state~1;
+
+-- Node name is 'P_out12' = 'P12' 
+-- Equation name is 'P_out12', location is LC126, type is output.
+ P_out12 = DFFE( _EQ062 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ062 =  B0 &  _LC117 & !state~1 &  state~2
+         # !B0 &  P_out12 & !state~1 &  state~2
+         #  P_out12 &  state~1;
+
+-- Node name is 'P_out13' = 'P13' 
+-- Equation name is 'P_out13', location is LC125, type is output.
+ P_out13 = DFFE( _EQ063 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ063 =  B0 &  _LC122 & !state~1 &  state~2
+         # !B0 &  P_out13 & !state~1 &  state~2
+         #  P_out13 &  state~1;
+
+-- Node name is 'P_out14' = 'P14' 
+-- Equation name is 'P_out14', location is LC097, type is output.
+ P_out14 = DFFE( _EQ064 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ064 =  B0 &  _LC127 & !state~1 &  state~2
+         # !B0 &  P_out14 & !state~1 &  state~2
+         #  P_out14 &  state~1;
+
+-- Node name is 'P_out15' = 'P15' 
+-- Equation name is 'P_out15', location is LC001, type is output.
+ P_out15 = DFFE( _EQ065 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ065 =  B0 &  _LC116 & !state~1 &  state~2
+         # !B0 &  P_out15 & !state~1 &  state~2
+         #  P_out15 &  state~1;
+
+-- Node name is 'P_out16' = 'P16' 
+-- Equation name is 'P_out16', location is LC003, type is output.
+ P_out16 = DFFE( _EQ066 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ066 =  B0 &  _LC004 & !state~1 &  state~2
+         # !B0 &  P_out16 & !state~1 &  state~2
+         #  P_out16 &  state~1;
+
+-- Node name is 'P_out17' = 'P17' 
+-- Equation name is 'P_out17', location is LC005, type is output.
+ P_out17 = DFFE( _EQ067 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ067 =  B0 &  _LC002 & !state~1 &  state~2
+         # !B0 &  P_out17 & !state~1 &  state~2
+         #  P_out17 &  state~1;
+
+-- Node name is 'P_out18' = 'P18' 
+-- Equation name is 'P_out18', location is LC107, type is output.
+ P_out18 = DFFE( _EQ068 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ068 =  B0 &  _LC098 & !state~1 &  state~2
+         # !B0 &  P_out18 & !state~1 &  state~2
+         #  P_out18 &  state~1;
+
+-- Node name is 'P_out19' = 'P19' 
+-- Equation name is 'P_out19', location is LC099, type is output.
+ P_out19 = DFFE( _EQ069 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ069 =  B0 &  _LC101 & !state~1 &  state~2
+         # !B0 &  P_out19 & !state~1 &  state~2
+         #  P_out19 &  state~1;
+
+-- Node name is 'P_out20' = 'P20' 
+-- Equation name is 'P_out20', location is LC110, type is output.
+ P_out20 = DFFE( _EQ070 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ070 =  B0 &  _LC103 & !state~1 &  state~2
+         # !B0 &  P_out20 & !state~1 &  state~2
+         #  P_out20 &  state~1;
+
+-- Node name is 'P_out21' = 'P21' 
+-- Equation name is 'P_out21', location is LC109, type is output.
+ P_out21 = DFFE( _EQ071 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ071 =  B0 &  _LC112 & !state~1 &  state~2
+         # !B0 &  P_out21 & !state~1 &  state~2
+         #  P_out21 &  state~1;
+
+-- Node name is 'P_out22' = 'P22' 
+-- Equation name is 'P_out22', location is LC102, type is output.
+ P_out22 = DFFE( _EQ072 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ072 =  B0 &  _LC108 & !state~1 &  state~2
+         # !B0 &  P_out22 & !state~1 &  state~2
+         #  P_out22 &  state~1;
+
+-- Node name is 'P_out23' = 'P23' 
+-- Equation name is 'P_out23', location is LC105, type is output.
+ P_out23 = DFFE( _EQ073 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ073 =  B0 &  _LC104 & !state~1 &  state~2
+         # !B0 &  P_out23 & !state~1 &  state~2
+         #  P_out23 &  state~1;
+
+-- Node name is 'P_out24' = 'P24' 
+-- Equation name is 'P_out24', location is LC006, type is output.
+ P_out24 = DFFE( _EQ074 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ074 =  B0 &  _LC016 & !state~1 &  state~2
+         # !B0 &  P_out24 & !state~1 &  state~2
+         #  P_out24 &  state~1;
+
+-- Node name is 'P_out25' = 'P25' 
+-- Equation name is 'P_out25', location is LC008, type is output.
+ P_out25 = DFFE( _EQ075 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ075 =  B0 &  _LC015 & !state~1 &  state~2
+         # !B0 &  P_out25 & !state~1 &  state~2
+         #  P_out25 &  state~1;
+
+-- Node name is 'P_out26' = 'P26' 
+-- Equation name is 'P_out26', location is LC033, type is output.
+ P_out26 = DFFE( _EQ076 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ076 =  B0 &  _LC090 & !state~1 &  state~2
+         # !B0 &  P_out26 & !state~1 &  state~2
+         #  P_out26 &  state~1;
+
+-- Node name is 'P_out27' = 'P27' 
+-- Equation name is 'P_out27', location is LC094, type is output.
+ P_out27 = DFFE( _EQ077 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ077 =  B0 &  _LC087 & !state~1 &  state~2
+         # !B0 &  P_out27 & !state~1 &  state~2
+         #  P_out27 &  state~1;
+
+-- Node name is 'P_out28' = 'P28' 
+-- Equation name is 'P_out28', location is LC009, type is output.
+ P_out28 = DFFE( _EQ078 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ078 =  B0 &  _LC083 & !state~1 &  state~2
+         # !B0 &  P_out28 & !state~1 &  state~2
+         #  P_out28 &  state~1;
+
+-- Node name is 'P_out29' = 'P29' 
+-- Equation name is 'P_out29', location is LC014, type is output.
+ P_out29 = DFFE( _EQ079 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ079 =  B0 &  _LC081 & !state~1 &  state~2
+         # !B0 &  P_out29 & !state~1 &  state~2
+         #  P_out29 &  state~1;
+
+-- Node name is 'P_out30' = 'P30' 
+-- Equation name is 'P_out30', location is LC013, type is output.
+ P_out30 = DFFE( _EQ080 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ080 =  B0 &  _LC096 & !state~1 &  state~2
+         # !B0 &  P_out30 & !state~1 &  state~2
+         #  P_out30 &  state~1;
+
+-- Node name is 'P_out31' = 'P31' 
+-- Equation name is 'P_out31', location is LC011, type is output.
+ P_out31 = DFFE( _EQ081 $  GND, GLOBAL( clock),  VCC,  VCC, !reset);
+  _EQ081 =  B0 &  _LC093 & !state~1 &  state~2
+         # !B0 &  P_out31 & !state~1 &  state~2
+         #  P_out31 &  state~1;
+
+-- Node name is 'state~1' 
+-- Equation name is 'state~1', location is LC065, type is buried.
+state~1  = DFFE( _EQ082 $  GND, GLOBAL( clock), !reset,  VCC,  VCC);
+  _EQ082 = !B0 & !B1 & !B2 & !B3 & !B4 & !B5 & !B6 & !B7 & !B8 & !B9 & !B10 & 
+             !B11 & !B12 & !B13 & !B14 & !B15 & !reset & !state~1 &  state~2
+         # !reset &  s &  state~1 & !state~2;
+
+-- Node name is 'state~2' 
+-- Equation name is 'state~2', location is LC073, type is buried.
+state~2  = TFFE( _EQ083, GLOBAL( clock), !reset,  VCC,  VCC);
+  _EQ083 = !B0 & !B1 & !B2 & !B3 & !B4 & !B5 & !B6 & !B7 & !B8 & !B9 & !B10 & 
+             !B11 & !B12 & !B13 & !B14 & !B15 & !state~1 &  state~2
+         # !reset &  s & !state~1 & !state~2
+         #  reset & !state~1 &  state~2;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|cout_node' from file "addcore.tdf" line 165, column 5
+-- Equation name is '_LC060', type is buried 
+_LC060   = LCELL( _EQ084 $  _EQ085);
+  _EQ084 =  A4 &  P_out4 &  _X001 &  _X002 &  _X003 &  _X004
+         #  _LC044 &  _X001 &  _X002 &  _X003 &  _X004 &  _X005
+         #  A5 &  P_out5 &  _X001 &  _X002 &  _X003
+         #  A6 &  P_out6 &  _X001 &  _X002;
+  _X001  = EXP(!A7 & !P_out7);
+  _X002  = EXP( A7 &  P_out7);
+  _X003  = EXP(!A6 & !P_out6);
+  _X004  = EXP(!A5 & !P_out5);
+  _X005  = EXP(!A4 & !P_out4);
+  _EQ085 =  A7 &  P_out7;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|gcp2' from file "addcore.tdf" line 160, column 8
+-- Equation name is '_LC048', type is buried 
+_LC048   = LCELL( _EQ086 $  GND);
+  _EQ086 =  A0 &  P_out0 &  _X006 &  _X007
+         #  A1 &  P_out1 &  _X007
+         #  A2 &  P_out2;
+  _X006  = EXP(!A1 & !P_out1);
+  _X007  = EXP(!A2 & !P_out2);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|g4' from file "addcore.tdf" line 158, column 5
+-- Equation name is '_LC044', type is buried 
+_LC044   = LCELL( _EQ087 $  _EQ088);
+  _EQ087 =  A0 &  P_out0 &  _X006 &  _X007 &  _X008 &  _X009
+         #  A1 &  P_out1 &  _X007 &  _X008 &  _X009
+         #  A2 &  P_out2 &  _X008 &  _X009;
+  _X006  = EXP(!A1 & !P_out1);
+  _X007  = EXP(!A2 & !P_out2);
+  _X008  = EXP(!A3 & !P_out3);
+  _X009  = EXP( A3 &  P_out3);
+  _EQ088 =  A3 &  P_out3;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node1' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC045', type is buried 
+_LC045   = LCELL( _EQ089 $  P_out1);
+  _EQ089 =  A0 & !A1 &  P_out0
+         #  A1 & !P_out0
+         # !A0 &  A1;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node2' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC047', type is buried 
+_LC047   = LCELL( _EQ090 $  _EQ091);
+  _EQ090 =  A0 &  P_out0 &  _X006
+         #  A1 &  P_out1;
+  _X006  = EXP(!A1 & !P_out1);
+  _EQ091 =  _X007 &  _X010;
+  _X007  = EXP(!A2 & !P_out2);
+  _X010  = EXP( A2 &  P_out2);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node3' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC043', type is buried 
+_LC043   = LCELL( _EQ092 $  _LC048);
+  _EQ092 =  _X008 &  _X009;
+  _X008  = EXP(!A3 & !P_out3);
+  _X009  = EXP( A3 &  P_out3);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node4' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC055', type is buried 
+_LC055   = LCELL( _EQ093 $  _LC044);
+  _EQ093 =  _X005 &  _X011;
+  _X005  = EXP(!A4 & !P_out4);
+  _X011  = EXP( A4 &  P_out4);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node5' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC057', type is buried 
+_LC057   = LCELL( _EQ094 $  _EQ095);
+  _EQ094 =  A4 &  P_out4
+         #  _LC044 &  _X005;
+  _X005  = EXP(!A4 & !P_out4);
+  _EQ095 =  _X004 &  _X012;
+  _X004  = EXP(!A5 & !P_out5);
+  _X012  = EXP( A5 &  P_out5);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node6' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC061', type is buried 
+_LC061   = LCELL( _EQ096 $  _EQ097);
+  _EQ096 =  A4 &  P_out4 &  _X004
+         #  _LC044 &  _X004 &  _X005
+         #  A5 &  P_out5;
+  _X004  = EXP(!A5 & !P_out5);
+  _X005  = EXP(!A4 & !P_out4);
+  _EQ097 =  _X003 &  _X013;
+  _X003  = EXP(!A6 & !P_out6);
+  _X013  = EXP( A6 &  P_out6);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder0|result_node7' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC064', type is buried 
+_LC064   = LCELL( _EQ098 $  _EQ099);
+  _EQ098 =  A4 &  P_out4 &  _X003 &  _X004
+         #  _LC044 &  _X003 &  _X004 &  _X005
+         #  A5 &  P_out5 &  _X003
+         #  A6 &  P_out6;
+  _X003  = EXP(!A6 & !P_out6);
+  _X004  = EXP(!A5 & !P_out5);
+  _X005  = EXP(!A4 & !P_out4);
+  _EQ099 =  _X001 &  _X002;
+  _X001  = EXP(!A7 & !P_out7);
+  _X002  = EXP( A7 &  P_out7);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|cout_node' from file "addcore.tdf" line 165, column 5
+-- Equation name is '_LC114', type is buried 
+_LC114   = LCELL( _EQ100 $  _EQ101);
+  _EQ100 =  _LC060 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018 &  _X019 & 
+              _X020 &  _X021 &  _X022
+         #  _LC119 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  _LC118 &  _X014 &  _X015;
+  _X014  = EXP(!A15 & !P_out15);
+  _X015  = EXP( A15 &  P_out15);
+  _X016  = EXP(!A14 & !P_out14);
+  _X017  = EXP(!A13 & !P_out13);
+  _X018  = EXP(!A12 & !P_out12);
+  _X019  = EXP(!A11 & !P_out11);
+  _X020  = EXP(!A10 & !P_out10);
+  _X021  = EXP(!A9 & !P_out9);
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ101 =  A15 &  P_out15;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g2cp2' from file "addcore.tdf" line 159, column 9
+-- Equation name is '_LC118', type is buried 
+_LC118   = LCELL( _EQ102 $  GND);
+  _EQ102 =  A12 &  P_out12 &  _X016 &  _X017
+         #  A13 &  P_out13 &  _X016
+         #  A14 &  P_out14;
+  _X016  = EXP(!A14 & !P_out14);
+  _X017  = EXP(!A13 & !P_out13);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|g4' from file "addcore.tdf" line 158, column 5
+-- Equation name is '_LC119', type is buried 
+_LC119   = LCELL( _EQ103 $  _EQ104);
+  _EQ103 =  A8 &  P_out8 &  _X019 &  _X020 &  _X021 &  _X023
+         #  A9 &  P_out9 &  _X019 &  _X020 &  _X023
+         #  A10 &  P_out10 &  _X019 &  _X023;
+  _X019  = EXP(!A11 & !P_out11);
+  _X020  = EXP(!A10 & !P_out10);
+  _X021  = EXP(!A9 & !P_out9);
+  _X023  = EXP( A11 &  P_out11);
+  _EQ104 =  A11 &  P_out11;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node0' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC124', type is buried 
+_LC124   = LCELL( _EQ105 $  _LC060);
+  _EQ105 =  A8 & !P_out8
+         # !A8 &  P_out8;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node1' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC018', type is buried 
+_LC018   = LCELL( _EQ106 $  _EQ107);
+  _EQ106 =  A8 &  P_out8
+         #  _LC060 &  _X022;
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ107 =  _X021 &  _X024;
+  _X021  = EXP(!A9 & !P_out9);
+  _X024  = EXP( A9 &  P_out9);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node2' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC128', type is buried 
+_LC128   = LCELL( _EQ108 $  _EQ109);
+  _EQ108 =  A8 &  P_out8 &  _X021
+         #  _LC060 &  _X021 &  _X022
+         #  A9 &  P_out9;
+  _X021  = EXP(!A9 & !P_out9);
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ109 =  _X020 &  _X025;
+  _X020  = EXP(!A10 & !P_out10);
+  _X025  = EXP( A10 &  P_out10);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node3' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC120', type is buried 
+_LC120   = LCELL( _EQ110 $  _EQ111);
+  _EQ110 =  A8 &  P_out8 &  _X020 &  _X021
+         #  _LC060 &  _X020 &  _X021 &  _X022
+         #  A9 &  P_out9 &  _X020
+         #  A10 &  P_out10;
+  _X020  = EXP(!A10 & !P_out10);
+  _X021  = EXP(!A9 & !P_out9);
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ111 =  _X019 &  _X023;
+  _X019  = EXP(!A11 & !P_out11);
+  _X023  = EXP( A11 &  P_out11);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node4' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC117', type is buried 
+_LC117   = LCELL( _EQ112 $  _EQ113);
+  _EQ112 =  _LC060 &  _X019 &  _X020 &  _X021 &  _X022
+         #  _LC119;
+  _X019  = EXP(!A11 & !P_out11);
+  _X020  = EXP(!A10 & !P_out10);
+  _X021  = EXP(!A9 & !P_out9);
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ113 =  _X018 &  _X026;
+  _X018  = EXP(!A12 & !P_out12);
+  _X026  = EXP( A12 &  P_out12);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node5' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC122', type is buried 
+_LC122   = LCELL( _EQ114 $  _EQ115);
+  _EQ114 =  _LC060 &  _X018 &  _X019 &  _X020 &  _X021 &  _X022
+         #  A12 &  P_out12
+         #  _LC119 &  _X018;
+  _X018  = EXP(!A12 & !P_out12);
+  _X019  = EXP(!A11 & !P_out11);
+  _X020  = EXP(!A10 & !P_out10);
+  _X021  = EXP(!A9 & !P_out9);
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ115 =  _X017 &  _X027;
+  _X017  = EXP(!A13 & !P_out13);
+  _X027  = EXP( A13 &  P_out13);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node6' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC127', type is buried 
+_LC127   = LCELL( _EQ116 $  _EQ117);
+  _EQ116 =  _LC060 &  _X017 &  _X018 &  _X019 &  _X020 &  _X021 &  _X022
+         #  A12 &  P_out12 &  _X017
+         #  _LC119 &  _X017 &  _X018
+         #  A13 &  P_out13;
+  _X017  = EXP(!A13 & !P_out13);
+  _X018  = EXP(!A12 & !P_out12);
+  _X019  = EXP(!A11 & !P_out11);
+  _X020  = EXP(!A10 & !P_out10);
+  _X021  = EXP(!A9 & !P_out9);
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ117 =  _X016 &  _X028;
+  _X016  = EXP(!A14 & !P_out14);
+  _X028  = EXP( A14 &  P_out14);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder1|result_node7' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC116', type is buried 
+_LC116   = LCELL( _EQ118 $  _EQ119);
+  _EQ118 =  _LC060 &  _X016 &  _X017 &  _X018 &  _X019 &  _X020 &  _X021 & 
+              _X022
+         #  _LC119 &  _X016 &  _X017 &  _X018
+         #  _LC118;
+  _X016  = EXP(!A14 & !P_out14);
+  _X017  = EXP(!A13 & !P_out13);
+  _X018  = EXP(!A12 & !P_out12);
+  _X019  = EXP(!A11 & !P_out11);
+  _X020  = EXP(!A10 & !P_out10);
+  _X021  = EXP(!A9 & !P_out9);
+  _X022  = EXP(!A8 & !P_out8);
+  _EQ119 =  _X014 &  _X015;
+  _X014  = EXP(!A15 & !P_out15);
+  _X015  = EXP( A15 &  P_out15);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|cout_node' from file "addcore.tdf" line 165, column 5
+-- Equation name is '_LC100', type is buried 
+_LC100   = LCELL( _EQ120 $  _EQ121);
+  _EQ120 =  _LC114 &  _X029 &  _X030 &  _X031 &  _X032 &  _X033 &  _X034 & 
+              _X035 &  _X036 &  _X037
+         #  _LC106 &  _X030 &  _X034 &  _X035 &  _X036 &  _X037
+         #  _LC111 &  _X030 &  _X037;
+  _X029  = EXP(!A17 & !P_out17);
+  _X030  = EXP( A23 &  P_out23);
+  _X031  = EXP(!A16 & !P_out16);
+  _X032  = EXP(!A18 & !P_out18);
+  _X033  = EXP(!A19 & !P_out19);
+  _X034  = EXP(!A20 & !P_out20);
+  _X035  = EXP(!A21 & !P_out21);
+  _X036  = EXP(!A22 & !P_out22);
+  _X037  = EXP(!A23 & !P_out23);
+  _EQ121 =  A23 &  P_out23;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g2cp2' from file "addcore.tdf" line 159, column 9
+-- Equation name is '_LC111', type is buried 
+_LC111   = LCELL( _EQ122 $  GND);
+  _EQ122 =  A20 &  P_out20 &  _X035 &  _X036
+         #  A21 &  P_out21 &  _X036
+         #  A22 &  P_out22;
+  _X035  = EXP(!A21 & !P_out21);
+  _X036  = EXP(!A22 & !P_out22);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|g4' from file "addcore.tdf" line 158, column 5
+-- Equation name is '_LC106', type is buried 
+_LC106   = LCELL( _EQ123 $  _EQ124);
+  _EQ123 =  A16 &  P_out16 &  _X029 &  _X032 &  _X033 &  _X038
+         #  A17 &  P_out17 &  _X032 &  _X033 &  _X038
+         #  A18 &  P_out18 &  _X033 &  _X038;
+  _X029  = EXP(!A17 & !P_out17);
+  _X032  = EXP(!A18 & !P_out18);
+  _X033  = EXP(!A19 & !P_out19);
+  _X038  = EXP( A19 &  P_out19);
+  _EQ124 =  A19 &  P_out19;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node0' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC004', type is buried 
+_LC004   = LCELL( _EQ125 $  _LC114);
+  _EQ125 =  A16 & !P_out16
+         # !A16 &  P_out16;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node1' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC002', type is buried 
+_LC002   = LCELL( _EQ126 $  _EQ127);
+  _EQ126 =  A16 &  P_out16
+         #  _LC114 &  _X031;
+  _X031  = EXP(!A16 & !P_out16);
+  _EQ127 =  _X029 &  _X039;
+  _X029  = EXP(!A17 & !P_out17);
+  _X039  = EXP( A17 &  P_out17);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node2' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC098', type is buried 
+_LC098   = LCELL( _EQ128 $  _EQ129);
+  _EQ128 =  A16 &  P_out16 &  _X029
+         #  _LC114 &  _X029 &  _X031
+         #  A17 &  P_out17;
+  _X029  = EXP(!A17 & !P_out17);
+  _X031  = EXP(!A16 & !P_out16);
+  _EQ129 =  _X032 &  _X040;
+  _X032  = EXP(!A18 & !P_out18);
+  _X040  = EXP( A18 &  P_out18);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node3' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC101', type is buried 
+_LC101   = LCELL( _EQ130 $  _EQ131);
+  _EQ130 =  A16 &  P_out16 &  _X029 &  _X032
+         #  _LC114 &  _X029 &  _X031 &  _X032
+         #  A17 &  P_out17 &  _X032
+         #  A18 &  P_out18;
+  _X029  = EXP(!A17 & !P_out17);
+  _X032  = EXP(!A18 & !P_out18);
+  _X031  = EXP(!A16 & !P_out16);
+  _EQ131 =  _X033 &  _X038;
+  _X033  = EXP(!A19 & !P_out19);
+  _X038  = EXP( A19 &  P_out19);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node4' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC103', type is buried 
+_LC103   = LCELL( _EQ132 $  _EQ133);
+  _EQ132 =  _LC114 &  _X029 &  _X031 &  _X032 &  _X033
+         #  _LC106;
+  _X029  = EXP(!A17 & !P_out17);
+  _X031  = EXP(!A16 & !P_out16);
+  _X032  = EXP(!A18 & !P_out18);
+  _X033  = EXP(!A19 & !P_out19);
+  _EQ133 =  _X034 &  _X041;
+  _X034  = EXP(!A20 & !P_out20);
+  _X041  = EXP( A20 &  P_out20);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node5' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC112', type is buried 
+_LC112   = LCELL( _EQ134 $  _EQ135);
+  _EQ134 =  _LC114 &  _X029 &  _X031 &  _X032 &  _X033 &  _X034
+         #  A20 &  P_out20
+         #  _LC106 &  _X034;
+  _X029  = EXP(!A17 & !P_out17);
+  _X031  = EXP(!A16 & !P_out16);
+  _X032  = EXP(!A18 & !P_out18);
+  _X033  = EXP(!A19 & !P_out19);
+  _X034  = EXP(!A20 & !P_out20);
+  _EQ135 =  _X035 &  _X042;
+  _X035  = EXP(!A21 & !P_out21);
+  _X042  = EXP( A21 &  P_out21);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node6' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC108', type is buried 
+_LC108   = LCELL( _EQ136 $  _EQ137);
+  _EQ136 =  _LC114 &  _X029 &  _X031 &  _X032 &  _X033 &  _X034 &  _X035
+         #  A20 &  P_out20 &  _X035
+         #  _LC106 &  _X034 &  _X035
+         #  A21 &  P_out21;
+  _X029  = EXP(!A17 & !P_out17);
+  _X031  = EXP(!A16 & !P_out16);
+  _X032  = EXP(!A18 & !P_out18);
+  _X033  = EXP(!A19 & !P_out19);
+  _X034  = EXP(!A20 & !P_out20);
+  _X035  = EXP(!A21 & !P_out21);
+  _EQ137 =  _X036 &  _X043;
+  _X036  = EXP(!A22 & !P_out22);
+  _X043  = EXP( A22 &  P_out22);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder2|result_node7' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC104', type is buried 
+_LC104   = LCELL( _EQ138 $  _EQ139);
+  _EQ138 =  _LC114 &  _X029 &  _X031 &  _X032 &  _X033 &  _X034 &  _X035 & 
+              _X036
+         #  _LC106 &  _X034 &  _X035 &  _X036
+         #  _LC111;
+  _X029  = EXP(!A17 & !P_out17);
+  _X031  = EXP(!A16 & !P_out16);
+  _X032  = EXP(!A18 & !P_out18);
+  _X033  = EXP(!A19 & !P_out19);
+  _X034  = EXP(!A20 & !P_out20);
+  _X035  = EXP(!A21 & !P_out21);
+  _X036  = EXP(!A22 & !P_out22);
+  _EQ139 =  _X030 &  _X037;
+  _X030  = EXP( A23 &  P_out23);
+  _X037  = EXP(!A23 & !P_out23);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g2cp2' from file "addcore.tdf" line 159, column 9
+-- Equation name is '_LC085', type is buried 
+_LC085   = LCELL( _EQ140 $  GND);
+  _EQ140 =  A28 &  P_out28 &  _X044 &  _X045
+         #  A29 &  P_out29 &  _X045
+         #  A30 &  P_out30;
+  _X044  = EXP(!A29 & !P_out29);
+  _X045  = EXP(!A30 & !P_out30);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|g4' from file "addcore.tdf" line 158, column 5
+-- Equation name is '_LC086', type is buried 
+_LC086   = LCELL( _EQ141 $  _EQ142);
+  _EQ141 =  A24 &  P_out24 &  _X046 &  _X047 &  _X048 &  _X049
+         #  A25 &  P_out25 &  _X046 &  _X047 &  _X048
+         #  A26 &  P_out26 &  _X046 &  _X047;
+  _X046  = EXP( A27 &  P_out27);
+  _X047  = EXP(!A27 & !P_out27);
+  _X048  = EXP(!A26 & !P_out26);
+  _X049  = EXP(!A25 & !P_out25);
+  _EQ142 =  A27 &  P_out27;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node0' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC016', type is buried 
+_LC016   = LCELL( _EQ143 $  _LC100);
+  _EQ143 =  A24 & !P_out24
+         # !A24 &  P_out24;
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node1' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC015', type is buried 
+_LC015   = LCELL( _EQ144 $  _EQ145);
+  _EQ144 =  A24 &  P_out24
+         #  _LC100 &  _X050;
+  _X050  = EXP(!A24 & !P_out24);
+  _EQ145 =  _X049 &  _X051;
+  _X049  = EXP(!A25 & !P_out25);
+  _X051  = EXP( A25 &  P_out25);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node2' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC090', type is buried 
+_LC090   = LCELL( _EQ146 $  _EQ147);
+  _EQ146 =  A24 &  P_out24 &  _X049
+         #  _LC100 &  _X049 &  _X050
+         #  A25 &  P_out25;
+  _X049  = EXP(!A25 & !P_out25);
+  _X050  = EXP(!A24 & !P_out24);
+  _EQ147 =  _X048 &  _X052;
+  _X048  = EXP(!A26 & !P_out26);
+  _X052  = EXP( A26 &  P_out26);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node3' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC087', type is buried 
+_LC087   = LCELL( _EQ148 $  _EQ149);
+  _EQ148 =  A24 &  P_out24 &  _X048 &  _X049
+         #  _LC100 &  _X048 &  _X049 &  _X050
+         #  A25 &  P_out25 &  _X048
+         #  A26 &  P_out26;
+  _X048  = EXP(!A26 & !P_out26);
+  _X049  = EXP(!A25 & !P_out25);
+  _X050  = EXP(!A24 & !P_out24);
+  _EQ149 =  _X046 &  _X047;
+  _X046  = EXP( A27 &  P_out27);
+  _X047  = EXP(!A27 & !P_out27);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node4' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC083', type is buried 
+_LC083   = LCELL( _EQ150 $  _EQ151);
+  _EQ150 =  _LC100 &  _X047 &  _X048 &  _X049 &  _X050
+         #  _LC086;
+  _X047  = EXP(!A27 & !P_out27);
+  _X048  = EXP(!A26 & !P_out26);
+  _X049  = EXP(!A25 & !P_out25);
+  _X050  = EXP(!A24 & !P_out24);
+  _EQ151 =  _X053 &  _X054;
+  _X053  = EXP(!A28 & !P_out28);
+  _X054  = EXP( A28 &  P_out28);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node5' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC081', type is buried 
+_LC081   = LCELL( _EQ152 $  _EQ153);
+  _EQ152 =  _LC100 &  _X047 &  _X048 &  _X049 &  _X050 &  _X053
+         #  A28 &  P_out28
+         #  _LC086 &  _X053;
+  _X047  = EXP(!A27 & !P_out27);
+  _X048  = EXP(!A26 & !P_out26);
+  _X049  = EXP(!A25 & !P_out25);
+  _X050  = EXP(!A24 & !P_out24);
+  _X053  = EXP(!A28 & !P_out28);
+  _EQ153 =  _X044 &  _X055;
+  _X044  = EXP(!A29 & !P_out29);
+  _X055  = EXP( A29 &  P_out29);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node6' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC096', type is buried 
+_LC096   = LCELL( _EQ154 $  _EQ155);
+  _EQ154 =  _LC100 &  _X044 &  _X047 &  _X048 &  _X049 &  _X050 &  _X053
+         #  A28 &  P_out28 &  _X044
+         #  _LC086 &  _X044 &  _X053
+         #  A29 &  P_out29;
+  _X044  = EXP(!A29 & !P_out29);
+  _X047  = EXP(!A27 & !P_out27);
+  _X048  = EXP(!A26 & !P_out26);
+  _X049  = EXP(!A25 & !P_out25);
+  _X050  = EXP(!A24 & !P_out24);
+  _X053  = EXP(!A28 & !P_out28);
+  _EQ155 =  _X045 &  _X056;
+  _X045  = EXP(!A30 & !P_out30);
+  _X056  = EXP( A30 &  P_out30);
+
+-- Node name is '|LPM_ADD_SUB:1558|addcore:adder|addcore:adder3|result_node7' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC093', type is buried 
+_LC093   = LCELL( _EQ156 $  _EQ157);
+  _EQ156 =  _LC100 &  _X044 &  _X045 &  _X047 &  _X048 &  _X049 &  _X050 & 
+              _X053
+         #  _LC086 &  _X044 &  _X045 &  _X053
+         #  _LC085;
+  _X044  = EXP(!A29 & !P_out29);
+  _X045  = EXP(!A30 & !P_out30);
+  _X047  = EXP(!A27 & !P_out27);
+  _X048  = EXP(!A26 & !P_out26);
+  _X049  = EXP(!A25 & !P_out25);
+  _X050  = EXP(!A24 & !P_out24);
+  _X053  = EXP(!A28 & !P_out28);
+  _EQ157 =  _X057 &  _X058;
+  _X057  = EXP(!A31 & !P_out31);
+  _X058  = EXP( A31 &  P_out31);
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--    _X021 occurs in LABs B, H
+--    _X022 occurs in LABs B, H
+--    _X029 occurs in LABs A, G
+--    _X031 occurs in LABs A, G
+--    _X049 occurs in LABs A, F
+--    _X050 occurs in LABs A, F
+
+
+
+
+Project Information                       e:\vhdldesigns\ee231\20asm\smult.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:01
+   Logic Synthesizer                      00:00:04
+   Partitioner                            00:00:00
+   Fitter                                 00:00:01
+   Timing SNF Extractor                   00:00:01
+   Assembler                              00:00:04
+   --------------------------             --------
+   Total Time                             00:00:11
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 5,504K

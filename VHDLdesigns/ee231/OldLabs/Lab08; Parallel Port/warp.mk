@@ -1,0 +1,1 @@
+-m -q -o2 -ygs -fO -fP -v10 -dc375i -pCY7C375I-125AC -b parallel.vhd 

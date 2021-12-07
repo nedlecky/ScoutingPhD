@@ -1,0 +1,239 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "vhdladd32" ASSIGNED TO AN EPM9320ARC208-10
+s24                              : 1
+RESERVED                         : 2
+RESERVED                         : 3
+y18                              : 4
+VCCIO                            : 5
+N.C.                             : 6
+N.C.                             : 7
+N.C.                             : 8
+N.C.                             : 9
+VCCINT                           : 10
+N.C.                             : 11
+N.C.                             : 12
+N.C.                             : 13
+GND                              : 14
+N.C.                             : 15
+N.C.                             : 16
+N.C.                             : 17
+N.C.                             : 18
+VCCINT                           : 19
+GND                              : 20
+x11                              : 21
+x8                               : 22
+y9                               : 23
+GND                              : 24
+VCCIO                            : 25
+x14                              : 26
+y16                              : 27
+x17                              : 28
+s20                              : 29
+VCCINT                           : 30
+GND                              : 31
+x6                               : 32
+x1                               : 33
+x0                               : 34
+GND                              : 35
+VCCIO                            : 36
+y25                              : 37
+x24                              : 38
+y26                              : 39
+x23                              : 40
+GND                              : 41
+GND                              : 42
+GND                              : 43
+GND                              : 44
+VCCINT                           : 45
+GND                              : 46
+GND                              : 47
+VPP                              : 48
+TMS                              : 49
+s23                              : 50
+RESERVED                         : 51
+s13                              : 52
+RESERVED                         : 53
+RESERVED                         : 54
+VCCIO                            : 55
+s28                              : 56
+RESERVED                         : 57
+RESERVED                         : 58
+RESERVED                         : 59
+RESERVED                         : 60
+RESERVED                         : 61
+s29                              : 62
+s30                              : 63
+RESERVED                         : 64
+RESERVED                         : 65
+GND                              : 66
+RESERVED                         : 67
+RESERVED                         : 68
+RESERVED                         : 69
+RESERVED                         : 70
+s31                              : 71
+VCCIO                            : 72
+s27                              : 73
+RESERVED                         : 74
+RESERVED                         : 75
+RESERVED                         : 76
+s4                               : 77
+TCK                              : 78
+TDI                              : 79
+RESERVED                         : 80
+RESERVED                         : 81
+x16                              : 82
+y13                              : 83
+y6                               : 84
+GND                              : 85
+s12                              : 86
+x29                              : 87
+y31                              : 88
+y27                              : 89
+x18                              : 90
+VCCIO                            : 91
+x22                              : 92
+y22                              : 93
+x5                               : 94
+cout                             : 95
+x27                              : 96
+y2                               : 97
+x2                               : 98
+x10                              : 99
+x21                              : 100
+x28                              : 101
+GND                              : 102
+y30                              : 103
+x30                              : 104
+s19                              : 105
+s2                               : 106
+s7                               : 107
+TDO                              : 108
+N.C.                             : 109
+GND                              : 110
+VCCIO                            : 111
+VCCINT                           : 112
+GND                              : 113
+GND                              : 114
+GND                              : 115
+GND                              : 116
+y24                              : 117
+GND                              : 118
+y23                              : 119
+x25                              : 120
+GND                              : 121
+GND                              : 122
+y0                               : 123
+cin                              : 124
+y1                               : 125
+x3                               : 126
+VCCIO                            : 127
+VCCINT                           : 128
+x15                              : 129
+y15                              : 130
+y17                              : 131
+GND                              : 132
+GND                              : 133
+s6                               : 134
+y8                               : 135
+x9                               : 136
+x7                               : 137
+VCCIO                            : 138
+VCCINT                           : 139
+N.C.                             : 140
+N.C.                             : 141
+N.C.                             : 142
+GND                              : 143
+N.C.                             : 144
+N.C.                             : 145
+N.C.                             : 146
+N.C.                             : 147
+VCCINT                           : 148
+N.C.                             : 149
+N.C.                             : 150
+N.C.                             : 151
+GND                              : 152
+x12                              : 153
+s3                               : 154
+s21                              : 155
+x19                              : 156
+y20                              : 157
+y28                              : 158
+VCCIO                            : 159
+x20                              : 160
+y21                              : 161
+x31                              : 162
+y11                              : 163
+y3                               : 164
+s10                              : 165
+x26                              : 166
+x4                               : 167
+y14                              : 168
+x13                              : 169
+GND                              : 170
+y7                               : 171
+y5                               : 172
+s0                               : 173
+y4                               : 174
+s11                              : 175
+VCCIO                            : 176
+y10                              : 177
+y29                              : 178
+RESERVED                         : 179
+RESERVED                         : 180
+s5                               : 181
+y12                              : 182
+y19                              : 183
+s15                              : 184
+RESERVED                         : 185
+s14                              : 186
+RESERVED                         : 187
+RESERVED                         : 188
+GND                              : 189
+RESERVED                         : 190
+s17                              : 191
+RESERVED                         : 192
+s26                              : 193
+s25                              : 194
+VCCIO                            : 195
+s16                              : 196
+RESERVED                         : 197
+s22                              : 198
+s18                              : 199
+RESERVED                         : 200
+s9                               : 201
+RESERVED                         : 202
+RESERVED                         : 203
+s1                               : 204
+s8                               : 205
+GND                              : 206
+RESERVED                         : 207
+RESERVED                         : 208

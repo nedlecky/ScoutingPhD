@@ -1,0 +1,1 @@
+-m -q -o2 -ygs -fO -fP -v10 -dc346 -pCY7C346B-15HC -a gc.vhd -a ns.vhd -a dflop.vhd -a sreg.vhd -a areg.vhd -a lfsr.vhd -a pa.vhd -b scout.vhd 

@@ -1,0 +1,1 @@
+-m -q -e10 -w100 -o2 -yga -fO -fP -v10 -dc375i -pCY7C375I-125AC -b cpu.vhd 

@@ -1,0 +1,23 @@
+--  EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+-- Altera Instruction Memory Initialization File
+-- NOTE: manually hacked since WinTim doesn't reORG the data section in the MIF!
+Depth = 256;
+Width = 16;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+    [00..FF]: 00000000; -- nop
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+    00: 0210;   -- START:	LOAD	MEM10%:
+    01: 0011;   -- 		ADD	MEM11%:
+    02: 0112;   -- 		STORE	MEM12%:
+    03: 0212;   -- 		LOAD	MEM12%:	; just to see if it worked
+    04: 0304;   -- LOOP:		JUMP	LOOP%: 
+    10: AAAA;   -- MEM10:	DW H#AAAA
+    11: 5555;   -- MEM11:	DW H#5555
+    12: 0000;   -- MEM12:	DW H#0000
+End;

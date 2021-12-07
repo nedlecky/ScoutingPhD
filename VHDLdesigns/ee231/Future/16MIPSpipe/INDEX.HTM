@@ -1,0 +1,432 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./index_files/filelist.xml">
+<link rel=Edit-Time-Data href="./index_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>LC-2 VHDL Synthesis and Simulation Model</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>G.P.Burdell</o:Author>
+  <o:LastAuthor>G.P.Burdell</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>24</o:TotalTime>
+  <o:Created>2001-07-05T17:04:00Z</o:Created>
+  <o:LastSaved>2001-07-06T18:20:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>221</o:Words>
+  <o:Characters>1260</o:Characters>
+  <o:Company>Ga Tech</o:Company>
+  <o:Lines>10</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1547</o:CharactersWithSpaces>
+  <o:Version>9.4119</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>75</w:Zoom>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Tms Rmn";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;}
+p.MsoListNumber3, li.MsoListNumber3, div.MsoListNumber3
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.bs1, li.bs1, div.bs1
+	{mso-style-name:bs1;
+	mso-style-parent:"Heading 1";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo3;
+	tab-stops:list .5in;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-variant:small-caps;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.bs2, li.bs2, div.bs2
+	{mso-style-name:bs2;
+	mso-style-parent:"Heading 1";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.4in;
+	margin-bottom:.0001pt;
+	text-indent:-.2in;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo3;
+	tab-stops:list .45in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-variant:small-caps;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.bs3, li.bs3, div.bs3
+	{mso-style-name:bs3;
+	mso-style-parent:"Plain Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.6in;
+	margin-bottom:.0001pt;
+	text-indent:-.2in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo3;
+	tab-stops:list .65in;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-variant:small-caps;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.ListNum4, li.ListNum4, div.ListNum4
+	{mso-style-name:"List Num4";
+	mso-style-parent:"List Number 3";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.8in;
+	margin-bottom:.0001pt;
+	text-indent:-.3in;
+	mso-pagination:widow-orphan;
+	mso-list:l2 level1 lfo5;
+	tab-stops:list .8in;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Tms Rmn";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.ListNum3, li.ListNum3, div.ListNum3
+	{mso-style-name:"List Num3";
+	mso-style-parent:"List Number 3";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.6in;
+	margin-bottom:.0001pt;
+	text-indent:-.3in;
+	mso-pagination:widow-orphan;
+	mso-list:l1 level1 lfo7;
+	tab-stops:list .6in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:159662046;
+	mso-list-template-ids:405054280;}
+@list l0:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-style-link:bs1;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-upper;
+	mso-level-style-link:bs2;
+	mso-level-tab-stop:.45in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.2in;}
+@list l0:level3
+	{mso-level-style-link:bs3;
+	mso-level-tab-stop:.65in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.2in;}
+@list l0:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.45in;
+	mso-level-number-position:left;
+	margin-left:1.4in;
+	text-indent:-.2in;}
+@list l0:level5
+	{mso-level-text:"\(%5\)";
+	mso-level-tab-stop:3.65in;
+	mso-level-number-position:left;
+	margin-left:3.4in;
+	text-indent:0in;}
+@list l0:level6
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:4.15in;
+	mso-level-number-position:left;
+	margin-left:3.9in;
+	text-indent:0in;}
+@list l0:level7
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%7\)";
+	mso-level-tab-stop:4.65in;
+	mso-level-number-position:left;
+	margin-left:4.4in;
+	text-indent:0in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%8\)";
+	mso-level-tab-stop:5.15in;
+	mso-level-number-position:left;
+	margin-left:4.9in;
+	text-indent:0in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%9\)";
+	mso-level-tab-stop:5.65in;
+	mso-level-number-position:left;
+	margin-left:5.4in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:1204177644;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-74028056 859860914 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-style-link:"List Num3";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.3in;}
+@list l2
+	{mso-list-id:1760246325;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1990365014 -571575536 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-style-link:"List Num4";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.3in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1031"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2><b>LC-2 VHDL Synthesis and Simulation Model<o:p></o:p></b></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The LC-2 computer is described in <i><a
+href="http://www.mhhe.com/engcs/compsci/patt/">Introduction to Computing
+Systems from bits &amp; gates to C &amp; Beyond</a> </i>by Yale Patt and Sanjay
+Patel, McGraw Hill, 2001. This web page contains links to a VHDL model of the
+LC-2 computer designed to work with the Altera student edition. The LC-2 also
+can be implemented in hardware on the 70,000 gate student Altera UP 1X board.
+The control unit uses a VHDL state machine based on the state diagram found in
+Appendix C. An additional state was added to reset the processor.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><a href="lc2.zip">Click
+here to download the required LC-2 design source files</a></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The screen image below shows a typical simulation run of a
+short LC-2 program.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:431.4pt;
+ height:204.6pt'>
+ <v:imagedata src="./index_files/image001.jpg" o:title="image002"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=575 height=273
+src="./index_files/image001.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The LC-2 requires approximately 35,000 gates and it can be
+run on an Altera UP 1X board. The two pushbuttons are used for clock and reset.
+The seven segment displays contain the value of the PC. Additional logic has
+been added to provide a video display of the registers on an Altera UP 1X board
+as shown below. A monitor must be plugged into the UP 1X’s VGA connector to see
+the display.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:6in;height:295.2pt'>
+ <v:imagedata src="./index_files/image002.jpg" o:title="lc2"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=394
+src="./index_files/image003.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Programs are contained in the file shown below, program.mif.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:6in;height:300.6pt'>
+ <v:imagedata src="./index_files/image004.jpg" o:title="image004"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=400
+src="./index_files/image004.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Compile and simulate LC2.vhd for simulations only. To run on
+the UP 1X board and generate the video output display, compile and download
+TOP_LC2.vhd. If the compiler design doctor option is turned off, large designs
+like the LC-2 will compile faster. <br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 02/22/2002 12:05:25      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "romcounter"
+BEGIN
+
+    DEVICE = "EPF10K10LC84-3";
+
+    "clock"                        : INPUT_PIN  = 1      ;
+    "q0"                           : OUTPUT_PIN = 61     ;
+    "q1"                           : OUTPUT_PIN = 60     ;
+    "q2"                           : OUTPUT_PIN = 28     ;
+    "q3"                           : OUTPUT_PIN = 58     ;
+    ":6"                           : LOCATION   = LC4_C6 ;  -- addr3
+    ":7"                           : LOCATION   = LC1_C6 ;  -- addr2
+    ":8"                           : LOCATION   = LC3_C6 ;  -- addr1
+    ":9"                           : LOCATION   = LC2_C6 ;  -- addr0
+    "|lpm_rom:rom|altrom:srom|segment0_0" : LOCATION   = EC1_C  ;
+    "|lpm_rom:rom|altrom:srom|segment0_1" : LOCATION   = EC2_C  ;
+    "|lpm_rom:rom|altrom:srom|segment0_2" : LOCATION   = EC5_C  ;
+    "|lpm_rom:rom|altrom:srom|segment0_3" : LOCATION   = EC7_C  ;
+
+END;
+
+INTERNAL_INFO "romcounter"
+BEGIN
+	DEVICE = EPF10K10LC84-3;
+    OD4P1   : LORAX = "1:FB4->LC4_C6,->LC1_C6,->LC3_C6,->LC2_C6|";
+    EC1_C   : LORAX = "1:RB0R2,G3R2->OH2R2P61|";
+    EC2_C   : LORAX = "1:RB1R2,G21R2->OH3R2P60|";
+    EC5_C   : LORAX = "1:RB4R2,G6R2->OH10R2P28|";
+    EC7_C   : LORAX = "1:RB6R2,G92R2->OH6R2P58|";
+    LC4_C6  : LORAX = "1:MSW3R2C5,HHL10R2,RP12R2->EC1_C,->EC2_C,->EC5_C,->EC7_C,->LC4_C6|";
+    LC1_C6  : LORAX = "1:MSW0R2C5,HHL20R2,RP16R2->EC1_C,->EC2_C,->EC5_C,->EC7_C,->LC4_C6,->LC1_C6|";
+    LC3_C6  : LORAX = "1:MSW2R2C5,HHL15R2,RP0R2->EC1_C,->EC2_C,->EC5_C,->EC7_C,->LC4_C6,->LC1_C6,->LC3_C6|";
+    LC2_C6  : LORAX = "1:MSW1R2C5,HHL16R2,RP20R2->EC1_C,->EC2_C,->EC5_C,->EC7_C,->LC4_C6,->LC1_C6,->LC3_C6,->LC2_C6|";
+	LC4_C6  : LORAX2 = "LC4_C6, LC1_C6, LC3_C6, LC2_C6";
+	LC1_C6  : LORAX2 = "X, LC1_C6, LC3_C6, LC2_C6";
+	LC3_C6  : LORAX2 = "X, X, LC3_C6, LC2_C6";
+	LC2_C6  : LORAX2 = "X, X, X, LC2_C6";
+END;

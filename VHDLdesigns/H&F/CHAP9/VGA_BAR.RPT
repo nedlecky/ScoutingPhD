@@ -1,0 +1,991 @@
+Project Information                              c:\booksoft\chap9\vga_bar.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 06/30/2001 12:18:18
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+vga_bar   EPF10K20RC240-4  1      5      0    0         0  %    62       5  %
+
+User Pins:                 1      5      0  
+
+
+
+Project Information                              c:\booksoft\chap9\vga_bar.rpt
+
+** PROJECT COMPILATION MESSAGES **
+
+Warning: Node 'PB1' has assignments but doesn't exist or is a primitive array -- edit the project's ACF to fix the problem
+
+
+Project Information                              c:\booksoft\chap9\vga_bar.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+vga_bar@238                       Blue
+vga_bar@91                        Clock
+vga_bar@237                       Green
+vga_bar@240                       Horiz_Sync
+vga_bar@28       ---------        PB1
+vga_bar@236                       Red
+vga_bar@239                       Vert_sync
+
+
+Project Information                              c:\booksoft\chap9\vga_bar.rpt
+
+** FILE HIERARCHY **
+
+
+
+|vga_sync:1|
+|vga_sync:1|lpm_add_sub:323|
+|vga_sync:1|lpm_add_sub:323|addcore:adder|
+|vga_sync:1|lpm_add_sub:323|altshift:result_ext_latency_ffs|
+|vga_sync:1|lpm_add_sub:323|altshift:carry_ext_latency_ffs|
+|vga_sync:1|lpm_add_sub:323|altshift:oflow_ext_latency_ffs|
+|vga_sync:1|lpm_add_sub:731|
+|vga_sync:1|lpm_add_sub:731|addcore:adder|
+|vga_sync:1|lpm_add_sub:731|altshift:result_ext_latency_ffs|
+|vga_sync:1|lpm_add_sub:731|altshift:carry_ext_latency_ffs|
+|vga_sync:1|lpm_add_sub:731|altshift:oflow_ext_latency_ffs|
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+***** Logic for device 'vga_bar' compiled without errors.
+
+
+
+
+Device: EPF10K20RC240-4
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+
+                H                                                                                                                        
+                o V                                                                                                                      
+                r e       R R R   R R R R R R R   R R R R R R R   R R R       R R R R   R R R R R R R   R R R R R R R   R R R R R R R R  
+                i r       E E E   E E E E E E E   E E E E E E E   E E E       E E E E   E E E E E E E   E E E E E E E   E E E E E E E E  
+                z t       S S S G S S S S S S S V S S S S S S S G S S S G G G S S S S V S S S S S S S G S S S S S S S V S S S S S S S S  
+                _ _   G   E E E N E E E E E E E C E E E E E E E N E E E N N N E E E E C E E E E E E E N E E E E E E E C E E E E E E E E  
+                S s B r   R R R D R R R R R R R C R R R R R R R D R R R D D D R R R R C R R R R R R R D R R R R R R R C R R R R R R R R  
+                y y l e R V V V I V V V V V V V I V V V V V V V I V V V I I I V V V V I V V V V V V V I V V V V V V V I V V V V V V V V  
+                n n u e e E E E N E E E E E E E N E E E E E E E N E E E N N N E E E E N E E E E E E E N E E E E E E E N E E E E E E E E  
+                c c e n d D D D T D D D D D D D T D D D D D D D T D D D T T T D D D D T D D D D D D D T D D D D D D D T D D D D D D D D  
+              --------------------------------------------------------------------------------------------------------------------------_ 
+             / 240 238 236 234 232 230 228 226 224 222 220 218 216 214 212 210 208 206 204 202 200 198 196 194 192 190 188 186 184 182   |_ 
+            /    239 237 235 233 231 229 227 225 223 221 219 217 215 213 211 209 207 205 203 201 199 197 195 193 191 189 187 185 183 181    | 
+      #TCK |  1                                                                                                                         180 | ^DATA0 
+^CONF_DONE |  2                                                                                                                         179 | ^DCLK 
+     ^nCEO |  3                                                                                                                         178 | ^nCE 
+      #TDO |  4                                                                                                                         177 | #TDI 
+    VCCINT |  5                                                                                                                         176 | GNDINT 
+  RESERVED |  6                                                                                                                         175 | RESERVED 
+  RESERVED |  7                                                                                                                         174 | RESERVED 
+  RESERVED |  8                                                                                                                         173 | RESERVED 
+  RESERVED |  9                                                                                                                         172 | RESERVED 
+    GNDINT | 10                                                                                                                         171 | RESERVED 
+  RESERVED | 11                                                                                                                         170 | VCCINT 
+  RESERVED | 12                                                                                                                         169 | RESERVED 
+  RESERVED | 13                                                                                                                         168 | RESERVED 
+  RESERVED | 14                                                                                                                         167 | RESERVED 
+  RESERVED | 15                                                                                                                         166 | RESERVED 
+    VCCINT | 16                                                                                                                         165 | GNDINT 
+  RESERVED | 17                                                                                                                         164 | RESERVED 
+  RESERVED | 18                                                                                                                         163 | RESERVED 
+  RESERVED | 19                                                                                                                         162 | RESERVED 
+  RESERVED | 20                                                                                                                         161 | RESERVED 
+  RESERVED | 21                                                                                                                         160 | VCCINT 
+    GNDINT | 22                                                                                                                         159 | RESERVED 
+  RESERVED | 23                                                                                                                         158 | RESERVED 
+  RESERVED | 24                                                                                                                         157 | RESERVED 
+  RESERVED | 25                                                                                                                         156 | RESERVED 
+  RESERVED | 26                                                                                                                         155 | GNDINT 
+    VCCINT | 27                                                                                                                         154 | RESERVED 
+  RESERVED | 28                                                                                                                         153 | RESERVED 
+  RESERVED | 29                                                                                                                         152 | RESERVED 
+  RESERVED | 30                                                                                                                         151 | RESERVED 
+  RESERVED | 31                                                     EPF10K20RC240-4                                                     150 | VCCINT 
+    GNDINT | 32                                                                                                                         149 | RESERVED 
+  RESERVED | 33                                                                                                                         148 | RESERVED 
+  RESERVED | 34                                                                                                                         147 | RESERVED 
+  RESERVED | 35                                                                                                                         146 | RESERVED 
+  RESERVED | 36                                                                                                                         145 | GNDINT 
+    VCCINT | 37                                                                                                                         144 | RESERVED 
+  RESERVED | 38                                                                                                                         143 | RESERVED 
+  RESERVED | 39                                                                                                                         142 | RESERVED 
+  RESERVED | 40                                                                                                                         141 | RESERVED 
+  RESERVED | 41                                                                                                                         140 | VCCINT 
+    GNDINT | 42                                                                                                                         139 | RESERVED 
+  RESERVED | 43                                                                                                                         138 | RESERVED 
+  RESERVED | 44                                                                                                                         137 | RESERVED 
+  RESERVED | 45                                                                                                                         136 | RESERVED 
+  RESERVED | 46                                                                                                                         135 | GNDINT 
+    VCCINT | 47                                                                                                                         134 | RESERVED 
+  RESERVED | 48                                                                                                                         133 | RESERVED 
+  RESERVED | 49                                                                                                                         132 | RESERVED 
+  RESERVED | 50                                                                                                                         131 | RESERVED 
+  RESERVED | 51                                                                                                                         130 | VCCINT 
+    GNDINT | 52                                                                                                                         129 | RESERVED 
+  RESERVED | 53                                                                                                                         128 | RESERVED 
+  RESERVED | 54                                                                                                                         127 | RESERVED 
+  RESERVED | 55                                                                                                                         126 | RESERVED 
+  RESERVED | 56                                                                                                                         125 | GNDINT 
+    VCCINT | 57                                                                                                                         124 | ^MSEL0 
+      #TMS | 58                                                                                                                         123 | ^MSEL1 
+     #TRST | 59                                                                                                                         122 | VCCINT 
+  ^nSTATUS | 60                                                                                                                         121 | ^nCONFIG 
+           |      62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104 106 108 110 112 114 116 118 120  _| 
+            \   61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109 111 113 115 117 119   | 
+             \--------------------------------------------------------------------------------------------------------------------------- 
+                R R R R R R R R G R R R R R R R V R R R R R R R G R R R V G C G G R R V R R R R R R R G R R R R R R R V R R R R R R R R  
+                E E E E E E E E N E E E E E E E C E E E E E E E N E E E C N l N N E E C E E E E E E E N E E E E E E E C E E E E E E E E  
+                S S S S S S S S D S S S S S S S C S S S S S S S D S S S C D o D D S S C S S S S S S S D S S S S S S S C S S S S S S S S  
+                E E E E E E E E I E E E E E E E I E E E E E E E I E E E I I c I I E E I E E E E E E E I E E E E E E E I E E E E E E E E  
+                R R R R R R R R N R R R R R R R N R R R R R R R N R R R N N k N N R R N R R R R R R R N R R R R R R R N R R R R R R R R  
+                V V V V V V V V T V V V V V V V T V V V V V V V T V V V T T   T T V V T V V V V V V V T V V V V V V V T V V V V V V V V  
+                E E E E E E E E   E E E E E E E   E E E E E E E   E E E           E E   E E E E E E E   E E E E E E E   E E E E E E E E  
+                D D D D D D D D   D D D D D D D   D D D D D D D   D D D           D D   D D D D D D D   D D D D D D D   D D D D D D D D  
+                                                                                                                                         
+                                                                                                                                         
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+A3       3/ 8( 37%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2       6/22( 27%)   
+A4       8/ 8(100%)   1/ 8( 12%)   5/ 8( 62%)    1/2    0/2       2/22(  9%)   
+A5       8/ 8(100%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2       9/22( 40%)   
+A10      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       0/22(  0%)   
+A11      8/ 8(100%)   1/ 8( 12%)   5/ 8( 62%)    1/2    0/2       4/22( 18%)   
+A23      8/ 8(100%)   3/ 8( 37%)   0/ 8(  0%)    1/2    0/2       6/22( 27%)   
+D3       8/ 8(100%)   1/ 8( 12%)   5/ 8( 62%)    1/2    0/2       8/22( 36%)   
+D4       2/ 8( 25%)   1/ 8( 12%)   0/ 8(  0%)    1/2    0/2       4/22( 18%)   
+D5       8/ 8(100%)   0/ 8(  0%)   4/ 8( 50%)    1/2    0/2       6/22( 27%)   
+D6       8/ 8(100%)   0/ 8(  0%)   4/ 8( 50%)    1/2    0/2       4/22( 18%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 1/6      ( 16%)
+Total I/O pins used:                             5/183    (  2%)
+Total logic cells used:                         62/1152   (  5%)
+Total embedded cells used:                       0/48     (  0%)
+Total EABs used:                                 0/6      (  0%)
+Average fan-in:                                 3.30/4    ( 82%)
+Total fan-in:                                 205/4608    (  4%)
+
+Total input pins required:                       1
+Total input I/O cell registers required:         0
+Total output pins required:                      5
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                     62
+Total flipflops required:                       32
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         8/1152   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  EA  13  14  15  16  17  18  19  20  21  22  23  24  Total(LC/EC)
+ A:      0   0   3   8   8   0   0   0   0   1   8   0   0   0   0   0   0   0   0   0   0   0   0   8   0     36/0  
+ B:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ C:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ D:      0   0   8   2   8   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     26/0  
+ E:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ F:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+
+Total:   0   0  11  10  16   8   0   0   0   1   8   0   0   0   0   0   0   0   0   0   0   0   0   8   0     62/0  
+
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  91      -     -    -    --      INPUT  G             0    0    0    0  Clock
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+ 238      -     -    -    24     OUTPUT                0    1    0    0  Blue
+ 237      -     -    -    24     OUTPUT                0    1    0    0  Green
+ 240      -     -    A    --     OUTPUT                0    1    0    0  Horiz_Sync
+ 236      -     -    -    23     OUTPUT                0    1    0    0  Red
+ 239      -     -    A    --     OUTPUT                0    1    0    0  Vert_sync
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      4     -    A    11        OR2        !       0    3    0    3  |VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:83
+   -      7     -    A    11        OR2        !       0    3    0    5  |VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:91
+   -      6     -    A    04       AND2                0    3    0    1  |VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:99
+   -      7     -    A    04       AND2                0    4    0    2  |VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:103
+   -      7     -    D    06       AND2                0    2    0    1  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:79
+   -      8     -    D    06       AND2                0    3    0    1  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:83
+   -      2     -    D    06       AND2                0    4    0    2  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:87
+   -      6     -    D    03       AND2                0    2    0    2  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:91
+   -      1     -    D    03       AND2                0    2    0    4  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:95
+   -      7     -    D    05       AND2                0    2    0    1  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:99
+   -      2     -    D    05       AND2                0    3    0    1  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:103
+   -      1     -    D    05       AND2                0    4    0    1  |VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:107
+   -      2     -    A    23       DFFE   +            0    3    1    0  |VGA_SYNC:1|:5
+   -      3     -    A    23       DFFE   +            0    3    1    0  |VGA_SYNC:1|:7
+   -      1     -    A    23       DFFE   +            0    3    1    0  |VGA_SYNC:1|:9
+   -      2     -    A    05       DFFE   +            0    1    1    0  |VGA_SYNC:1|:11
+   -      1     -    D    04       DFFE   +            0    1    1    0  |VGA_SYNC:1|:13
+   -      7     -    A    23       DFFE   +            0    3    0    1  |VGA_SYNC:1|:39
+   -      5     -    A    23       DFFE   +            0    2    0    1  |VGA_SYNC:1|:41
+   -      6     -    A    23       DFFE   +            0    2    0    1  |VGA_SYNC:1|:43
+   -      4     -    A    04       DFFE   +            0    3    0    6  |VGA_SYNC:1|h_count9 (|VGA_SYNC:1|:55)
+   -      1     -    A    04       DFFE   +            0    2    0    8  |VGA_SYNC:1|h_count8 (|VGA_SYNC:1|:56)
+   -      3     -    A    04       DFFE   +            0    3    0    7  |VGA_SYNC:1|h_count7 (|VGA_SYNC:1|:57)
+   -      5     -    A    04       DFFE   +            0    3    0    8  |VGA_SYNC:1|h_count6 (|VGA_SYNC:1|:58)
+   -      1     -    A    03       DFFE   +            0    2    0    9  |VGA_SYNC:1|h_count5 (|VGA_SYNC:1|:59)
+   -      8     -    A    11       DFFE   +            0    3    0    5  |VGA_SYNC:1|h_count4 (|VGA_SYNC:1|:60)
+   -      6     -    A    11       DFFE   +            0    2    0    6  |VGA_SYNC:1|h_count3 (|VGA_SYNC:1|:61)
+   -      3     -    A    11       DFFE   +            0    3    0    4  |VGA_SYNC:1|h_count2 (|VGA_SYNC:1|:62)
+   -      5     -    A    11       DFFE   +            0    2    0    4  |VGA_SYNC:1|h_count1 (|VGA_SYNC:1|:63)
+   -      1     -    A    10       DFFE   +            0    0    0    5  |VGA_SYNC:1|h_count0 (|VGA_SYNC:1|:64)
+   -      8     -    A    05       DFFE   +            0    4    0    1  |VGA_SYNC:1|horiz_sync (|VGA_SYNC:1|:65)
+   -      8     -    D    03       DFFE   +            0    3    0    3  |VGA_SYNC:1|v_count9 (|VGA_SYNC:1|:66)
+   -      3     -    D    05       DFFE   +            0    3    0    3  |VGA_SYNC:1|v_count8 (|VGA_SYNC:1|:67)
+   -      8     -    D    05       DFFE   +            0    3    0    4  |VGA_SYNC:1|v_count7 (|VGA_SYNC:1|:68)
+   -      5     -    D    05       DFFE   +            0    3    0    5  |VGA_SYNC:1|v_count6 (|VGA_SYNC:1|:69)
+   -      2     -    D    03       DFFE   +            0    3    0    3  |VGA_SYNC:1|v_count5 (|VGA_SYNC:1|:70)
+   -      3     -    D    03       DFFE   +            0    3    0    3  |VGA_SYNC:1|v_count4 (|VGA_SYNC:1|:71)
+   -      3     -    D    06       DFFE   +            0    3    0    3  |VGA_SYNC:1|v_count3 (|VGA_SYNC:1|:72)
+   -      1     -    D    06       DFFE   +            0    3    0    4  |VGA_SYNC:1|v_count2 (|VGA_SYNC:1|:73)
+   -      4     -    D    06       DFFE   +            0    3    0    4  |VGA_SYNC:1|v_count1 (|VGA_SYNC:1|:74)
+   -      6     -    D    06       DFFE   +            0    2    0    5  |VGA_SYNC:1|v_count0 (|VGA_SYNC:1|:75)
+   -      2     -    D    04       DFFE   +            0    4    0    1  |VGA_SYNC:1|vert_sync (|VGA_SYNC:1|:76)
+   -      8     -    A    23       DFFE   +            0    3    0    3  |VGA_SYNC:1|video_on_h (|VGA_SYNC:1|:77)
+   -      4     -    D    03       DFFE   +            0    2    0    3  |VGA_SYNC:1|video_on_v (|VGA_SYNC:1|:78)
+   -      2     -    A    04        OR2    s           0    4    0    2  |VGA_SYNC:1|~262~1
+   -      5     -    A    05       AND2    s   !       0    2    0    1  |VGA_SYNC:1|~262~2
+   -      8     -    A    04        OR2        !       0    3    0    8  |VGA_SYNC:1|:262
+   -      7     -    A    05        OR2    s           0    4    0    1  |VGA_SYNC:1|~427~1
+   -      6     -    A    05        OR2                0    4    0    1  |VGA_SYNC:1|:490
+   -      4     -    D    05        OR2    s           0    4    0    1  |VGA_SYNC:1|~555~1
+   -      5     -    D    03       AND2                0    4    0    1  |VGA_SYNC:1|:555
+   -      4     -    A    05        OR2                0    4    0    1  |VGA_SYNC:1|:613
+   -      3     -    A    03        OR2    s           0    3    0    1  |VGA_SYNC:1|~631~1
+   -      3     -    A    05        OR2                0    4    0    1  |VGA_SYNC:1|:631
+   -      1     -    A    11        OR2                0    3    0    2  |VGA_SYNC:1|:643
+   -      7     -    D    03        OR2        !       0    4    0   10  |VGA_SYNC:1|:659
+   -      2     -    A    03        OR2    s   !       0    3    0    1  |VGA_SYNC:1|~670~1
+   -      1     -    A    05        OR2    s   !       0    3    0    2  |VGA_SYNC:1|~670~2
+   -      2     -    A    11        OR2        !       0    4    0   10  |VGA_SYNC:1|:670
+   -      5     -    D    06        OR2    s           0    4    0    1  |VGA_SYNC:1|~967~1
+   -      4     -    A    23        OR2        !       0    3    0    2  |VGA_SYNC:1|:996
+   -      6     -    D    05        OR2        !       0    4    0    2  |VGA_SYNC:1|:1170
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       8/ 96(  8%)    14/ 48( 29%)     0/ 48(  0%)    0/16(  0%)      2/16( 12%)     0/16(  0%)
+B:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+C:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+D:       1/ 96(  1%)    16/ 48( 33%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+E:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+F:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+02:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+03:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+20:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      1/24(  4%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+24:      2/24(  8%)     0/4(  0%)      2/4( 50%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+** CLOCK SIGNALS **
+
+Type     Fan-out       Name
+INPUT       32         Clock
+
+
+Device-Specific Information:                     c:\booksoft\chap9\vga_bar.rpt
+vga_bar
+
+** EQUATIONS **
+
+Clock    : INPUT;
+
+-- Node name is 'Blue' 
+-- Equation name is 'Blue', type is output 
+Blue     =  _LC1_A23;
+
+-- Node name is 'Green' 
+-- Equation name is 'Green', type is output 
+Green    =  _LC3_A23;
+
+-- Node name is 'Horiz_Sync' 
+-- Equation name is 'Horiz_Sync', type is output 
+Horiz_Sync =  _LC2_A5;
+
+-- Node name is 'Red' 
+-- Equation name is 'Red', type is output 
+Red      =  _LC2_A23;
+
+-- Node name is 'Vert_sync' 
+-- Equation name is 'Vert_sync', type is output 
+Vert_sync =  _LC1_D4;
+
+-- Node name is '|VGA_SYNC:1|:64' = '|VGA_SYNC:1|h_count0' 
+-- Equation name is '_LC1_A10', type is buried 
+_LC1_A10 = DFFE(!_LC1_A10, GLOBAL( Clock),  VCC,  VCC,  VCC);
+
+-- Node name is '|VGA_SYNC:1|:63' = '|VGA_SYNC:1|h_count1' 
+-- Equation name is '_LC5_A11', type is buried 
+_LC5_A11 = DFFE( _EQ001, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ001 =  _LC1_A10 & !_LC5_A11 & !_LC8_A4
+         # !_LC1_A10 &  _LC5_A11 & !_LC8_A4;
+
+-- Node name is '|VGA_SYNC:1|:62' = '|VGA_SYNC:1|h_count2' 
+-- Equation name is '_LC3_A11', type is buried 
+_LC3_A11 = DFFE( _EQ002, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ002 = !_LC1_A10 &  _LC3_A11 & !_LC8_A4
+         #  _LC3_A11 & !_LC5_A11 & !_LC8_A4
+         #  _LC1_A10 & !_LC3_A11 &  _LC5_A11 & !_LC8_A4;
+
+-- Node name is '|VGA_SYNC:1|:61' = '|VGA_SYNC:1|h_count3' 
+-- Equation name is '_LC6_A11', type is buried 
+_LC6_A11 = DFFE( _EQ003, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ003 = !_LC4_A11 &  _LC6_A11 & !_LC8_A4
+         #  _LC4_A11 & !_LC6_A11 & !_LC8_A4;
+
+-- Node name is '|VGA_SYNC:1|:60' = '|VGA_SYNC:1|h_count4' 
+-- Equation name is '_LC8_A11', type is buried 
+_LC8_A11 = DFFE( _EQ004, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ004 = !_LC6_A11 & !_LC8_A4 &  _LC8_A11
+         # !_LC4_A11 & !_LC8_A4 &  _LC8_A11
+         #  _LC4_A11 &  _LC6_A11 & !_LC8_A4 & !_LC8_A11;
+
+-- Node name is '|VGA_SYNC:1|:59' = '|VGA_SYNC:1|h_count5' 
+-- Equation name is '_LC1_A3', type is buried 
+_LC1_A3  = DFFE( _EQ005, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ005 =  _LC1_A3 & !_LC7_A11 & !_LC8_A4
+         # !_LC1_A3 &  _LC7_A11 & !_LC8_A4;
+
+-- Node name is '|VGA_SYNC:1|:58' = '|VGA_SYNC:1|h_count6' 
+-- Equation name is '_LC5_A4', type is buried 
+_LC5_A4  = DFFE( _EQ006, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ006 = !_LC1_A3 &  _LC5_A4 & !_LC8_A4
+         #  _LC5_A4 & !_LC7_A11 & !_LC8_A4
+         #  _LC1_A3 & !_LC5_A4 &  _LC7_A11 & !_LC8_A4;
+
+-- Node name is '|VGA_SYNC:1|:57' = '|VGA_SYNC:1|h_count7' 
+-- Equation name is '_LC3_A4', type is buried 
+_LC3_A4  = DFFE( _EQ007, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ007 =  _LC3_A4 & !_LC6_A4
+         # !_LC1_A4 & !_LC3_A4 &  _LC6_A4
+         #  _LC2_A4 & !_LC3_A4 &  _LC6_A4;
+
+-- Node name is '|VGA_SYNC:1|:56' = '|VGA_SYNC:1|h_count8' 
+-- Equation name is '_LC1_A4', type is buried 
+_LC1_A4  = DFFE( _EQ008, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ008 =  _LC1_A4 & !_LC7_A4 & !_LC8_A4
+         # !_LC1_A4 &  _LC7_A4 & !_LC8_A4;
+
+-- Node name is '|VGA_SYNC:1|:55' = '|VGA_SYNC:1|h_count9' 
+-- Equation name is '_LC4_A4', type is buried 
+_LC4_A4  = DFFE( _EQ009, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ009 = !_LC1_A4 &  _LC4_A4 & !_LC8_A4
+         #  _LC4_A4 & !_LC7_A4 & !_LC8_A4
+         #  _LC1_A4 & !_LC4_A4 &  _LC7_A4 & !_LC8_A4;
+
+-- Node name is '|VGA_SYNC:1|:65' = '|VGA_SYNC:1|horiz_sync' 
+-- Equation name is '_LC8_A5', type is buried 
+_LC8_A5  = DFFE( _EQ010, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ010 =  _LC6_A5
+         #  _LC5_A4 &  _LC7_A5
+         # !_LC1_A5;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:83' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC4_A11', type is buried 
+!_LC4_A11 = _LC4_A11~NOT;
+_LC4_A11~NOT = LCELL( _EQ011);
+  _EQ011 = !_LC3_A11
+         # !_LC1_A10
+         # !_LC5_A11;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:91' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC7_A11', type is buried 
+!_LC7_A11 = _LC7_A11~NOT;
+_LC7_A11~NOT = LCELL( _EQ012);
+  _EQ012 = !_LC8_A11
+         # !_LC6_A11
+         # !_LC4_A11;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:99' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC6_A4', type is buried 
+_LC6_A4  = LCELL( _EQ013);
+  _EQ013 =  _LC1_A3 &  _LC5_A4 &  _LC7_A11;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:323|addcore:adder|:103' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC7_A4', type is buried 
+_LC7_A4  = LCELL( _EQ014);
+  _EQ014 =  _LC1_A3 &  _LC3_A4 &  _LC5_A4 &  _LC7_A11;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:79' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC7_D6', type is buried 
+_LC7_D6  = LCELL( _EQ015);
+  _EQ015 =  _LC4_D6 &  _LC6_D6;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:83' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC8_D6', type is buried 
+_LC8_D6  = LCELL( _EQ016);
+  _EQ016 =  _LC1_D6 &  _LC4_D6 &  _LC6_D6;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:87' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC2_D6', type is buried 
+_LC2_D6  = LCELL( _EQ017);
+  _EQ017 =  _LC1_D6 &  _LC3_D6 &  _LC4_D6 &  _LC6_D6;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:91' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC6_D3', type is buried 
+_LC6_D3  = LCELL( _EQ018);
+  _EQ018 =  _LC2_D6 &  _LC3_D3;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:95' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC1_D3', type is buried 
+_LC1_D3  = LCELL( _EQ019);
+  _EQ019 =  _LC2_D3 &  _LC6_D3;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:99' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC7_D5', type is buried 
+_LC7_D5  = LCELL( _EQ020);
+  _EQ020 =  _LC1_D3 &  _LC5_D5;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:103' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC2_D5', type is buried 
+_LC2_D5  = LCELL( _EQ021);
+  _EQ021 =  _LC1_D3 &  _LC5_D5 &  _LC8_D5;
+
+-- Node name is '|VGA_SYNC:1|LPM_ADD_SUB:731|addcore:adder|:107' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC1_D5', type is buried 
+_LC1_D5  = LCELL( _EQ022);
+  _EQ022 =  _LC1_D3 &  _LC3_D5 &  _LC5_D5 &  _LC8_D5;
+
+-- Node name is '|VGA_SYNC:1|:75' = '|VGA_SYNC:1|v_count0' 
+-- Equation name is '_LC6_D6', type is buried 
+_LC6_D6  = DFFE( _EQ023, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ023 = !_LC2_A11 &  _LC6_D6 & !_LC7_D3
+         #  _LC2_A11 & !_LC6_D6 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:74' = '|VGA_SYNC:1|v_count1' 
+-- Equation name is '_LC4_D6', type is buried 
+_LC4_D6  = DFFE( _EQ024, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ024 =  _LC2_A11 & !_LC4_D6 &  _LC6_D6 & !_LC7_D3
+         #  _LC4_D6 & !_LC6_D6 & !_LC7_D3
+         # !_LC2_A11 &  _LC4_D6 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:73' = '|VGA_SYNC:1|v_count2' 
+-- Equation name is '_LC1_D6', type is buried 
+_LC1_D6  = DFFE( _EQ025, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ025 =  _LC1_D6 & !_LC7_D3 & !_LC7_D6
+         # !_LC1_D6 &  _LC2_A11 & !_LC7_D3 &  _LC7_D6
+         #  _LC1_D6 & !_LC2_A11 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:72' = '|VGA_SYNC:1|v_count3' 
+-- Equation name is '_LC3_D6', type is buried 
+_LC3_D6  = DFFE( _EQ026, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ026 =  _LC3_D6 & !_LC7_D3 & !_LC8_D6
+         #  _LC2_A11 & !_LC3_D6 & !_LC7_D3 &  _LC8_D6
+         # !_LC2_A11 &  _LC3_D6 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:71' = '|VGA_SYNC:1|v_count4' 
+-- Equation name is '_LC3_D3', type is buried 
+_LC3_D3  = DFFE( _EQ027, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ027 = !_LC2_D6 &  _LC3_D3 & !_LC7_D3
+         #  _LC2_A11 &  _LC2_D6 & !_LC3_D3 & !_LC7_D3
+         # !_LC2_A11 &  _LC3_D3 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:70' = '|VGA_SYNC:1|v_count5' 
+-- Equation name is '_LC2_D3', type is buried 
+_LC2_D3  = DFFE( _EQ028, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ028 =  _LC2_D3 & !_LC6_D3 & !_LC7_D3
+         #  _LC2_A11 & !_LC2_D3 &  _LC6_D3 & !_LC7_D3
+         # !_LC2_A11 &  _LC2_D3 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:69' = '|VGA_SYNC:1|v_count6' 
+-- Equation name is '_LC5_D5', type is buried 
+_LC5_D5  = DFFE( _EQ029, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ029 = !_LC1_D3 &  _LC5_D5 & !_LC7_D3
+         #  _LC1_D3 &  _LC2_A11 & !_LC5_D5 & !_LC7_D3
+         # !_LC2_A11 &  _LC5_D5 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:68' = '|VGA_SYNC:1|v_count7' 
+-- Equation name is '_LC8_D5', type is buried 
+_LC8_D5  = DFFE( _EQ030, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ030 = !_LC7_D3 & !_LC7_D5 &  _LC8_D5
+         #  _LC2_A11 & !_LC7_D3 &  _LC7_D5 & !_LC8_D5
+         # !_LC2_A11 & !_LC7_D3 &  _LC8_D5;
+
+-- Node name is '|VGA_SYNC:1|:67' = '|VGA_SYNC:1|v_count8' 
+-- Equation name is '_LC3_D5', type is buried 
+_LC3_D5  = DFFE( _EQ031, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ031 = !_LC2_D5 &  _LC3_D5 & !_LC7_D3
+         #  _LC2_A11 &  _LC2_D5 & !_LC3_D5 & !_LC7_D3
+         # !_LC2_A11 &  _LC3_D5 & !_LC7_D3;
+
+-- Node name is '|VGA_SYNC:1|:66' = '|VGA_SYNC:1|v_count9' 
+-- Equation name is '_LC8_D3', type is buried 
+_LC8_D3  = DFFE( _EQ032, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ032 = !_LC1_D5 & !_LC7_D3 &  _LC8_D3
+         #  _LC1_D5 &  _LC2_A11 & !_LC7_D3 & !_LC8_D3
+         # !_LC2_A11 & !_LC7_D3 &  _LC8_D3;
+
+-- Node name is '|VGA_SYNC:1|:76' = '|VGA_SYNC:1|vert_sync' 
+-- Equation name is '_LC2_D4', type is buried 
+_LC2_D4  = DFFE( _EQ033, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ033 = !_LC1_D6
+         # !_LC3_D6
+         #  _LC5_D6
+         # !_LC6_D5;
+
+-- Node name is '|VGA_SYNC:1|:77' = '|VGA_SYNC:1|video_on_h' 
+-- Equation name is '_LC8_A23', type is buried 
+_LC8_A23 = DFFE( _EQ034, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ034 = !_LC1_A4 & !_LC3_A4
+         # !_LC4_A4;
+
+-- Node name is '|VGA_SYNC:1|:78' = '|VGA_SYNC:1|video_on_v' 
+-- Equation name is '_LC4_D3', type is buried 
+_LC4_D3  = DFFE( _EQ035, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ035 = !_LC6_D5 & !_LC8_D3;
+
+-- Node name is '|VGA_SYNC:1|:5' 
+-- Equation name is '_LC2_A23', type is buried 
+_LC2_A23 = DFFE( _EQ036, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ036 =  _LC4_D3 &  _LC7_A23 &  _LC8_A23;
+
+-- Node name is '|VGA_SYNC:1|:7' 
+-- Equation name is '_LC3_A23', type is buried 
+_LC3_A23 = DFFE( _EQ037, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ037 =  _LC4_D3 &  _LC5_A23 &  _LC8_A23;
+
+-- Node name is '|VGA_SYNC:1|:9' 
+-- Equation name is '_LC1_A23', type is buried 
+_LC1_A23 = DFFE( _EQ038, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ038 =  _LC4_D3 &  _LC6_A23 &  _LC8_A23;
+
+-- Node name is '|VGA_SYNC:1|:11' 
+-- Equation name is '_LC2_A5', type is buried 
+_LC2_A5  = DFFE( _LC8_A5, GLOBAL( Clock),  VCC,  VCC,  VCC);
+
+-- Node name is '|VGA_SYNC:1|:13' 
+-- Equation name is '_LC1_D4', type is buried 
+_LC1_D4  = DFFE( _LC2_D4, GLOBAL( Clock),  VCC,  VCC,  VCC);
+
+-- Node name is '|VGA_SYNC:1|:39' 
+-- Equation name is '_LC7_A23', type is buried 
+_LC7_A23 = DFFE( _EQ039, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ039 =  _LC3_A4 & !_LC4_A4
+         #  _LC3_A4 &  _LC7_A23
+         #  _LC1_A4 &  _LC4_A4 &  _LC7_A23;
+
+-- Node name is '|VGA_SYNC:1|:41' 
+-- Equation name is '_LC5_A23', type is buried 
+_LC5_A23 = DFFE( _EQ040, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ040 =  _LC4_A23 &  _LC5_A23
+         # !_LC4_A23 &  _LC5_A4;
+
+-- Node name is '|VGA_SYNC:1|:43' 
+-- Equation name is '_LC6_A23', type is buried 
+_LC6_A23 = DFFE( _EQ041, GLOBAL( Clock),  VCC,  VCC,  VCC);
+  _EQ041 =  _LC4_A23 &  _LC6_A23
+         #  _LC1_A3 & !_LC4_A23;
+
+-- Node name is '|VGA_SYNC:1|~262~1' 
+-- Equation name is '_LC2_A4', type is buried 
+-- synthesized logic cell 
+_LC2_A4  = LCELL( _EQ042);
+  _EQ042 = !_LC7_A11
+         # !_LC4_A4
+         #  _LC1_A3
+         #  _LC5_A4;
+
+-- Node name is '|VGA_SYNC:1|~262~2' 
+-- Equation name is '_LC5_A5', type is buried 
+-- synthesized logic cell 
+!_LC5_A5 = _LC5_A5~NOT;
+_LC5_A5~NOT = LCELL( _EQ043);
+  _EQ043 = !_LC1_A3 & !_LC5_A4;
+
+-- Node name is '|VGA_SYNC:1|:262' 
+-- Equation name is '_LC8_A4', type is buried 
+!_LC8_A4 = _LC8_A4~NOT;
+_LC8_A4~NOT = LCELL( _EQ044);
+  _EQ044 =  _LC3_A4
+         # !_LC1_A4
+         #  _LC2_A4;
+
+-- Node name is '|VGA_SYNC:1|~427~1' 
+-- Equation name is '_LC7_A5', type is buried 
+-- synthesized logic cell 
+_LC7_A5  = LCELL( _EQ045);
+  _EQ045 =  _LC1_A3 &  _LC6_A11 &  _LC8_A11
+         #  _LC1_A3 &  _LC3_A11 &  _LC8_A11;
+
+-- Node name is '|VGA_SYNC:1|:490' 
+-- Equation name is '_LC6_A5', type is buried 
+_LC6_A5  = LCELL( _EQ046);
+  _EQ046 =  _LC1_A11 & !_LC5_A5 & !_LC6_A11
+         # !_LC5_A5 & !_LC8_A11;
+
+-- Node name is '|VGA_SYNC:1|~555~1' 
+-- Equation name is '_LC4_D5', type is buried 
+-- synthesized logic cell 
+_LC4_D5  = LCELL( _EQ047);
+  _EQ047 = !_LC1_D6 & !_LC3_D5 & !_LC8_D5
+         # !_LC3_D5 & !_LC3_D6 & !_LC8_D5;
+
+-- Node name is '|VGA_SYNC:1|:555' 
+-- Equation name is '_LC5_D3', type is buried 
+_LC5_D3  = LCELL( _EQ048);
+  _EQ048 = !_LC2_D3 & !_LC3_D3 &  _LC4_D5 & !_LC5_D5;
+
+-- Node name is '|VGA_SYNC:1|:613' 
+-- Equation name is '_LC4_A5', type is buried 
+_LC4_A5  = LCELL( _EQ049);
+  _EQ049 = !_LC1_A4 & !_LC3_A4
+         # !_LC1_A4 &  _LC3_A5 & !_LC5_A4;
+
+-- Node name is '|VGA_SYNC:1|~631~1' 
+-- Equation name is '_LC3_A3', type is buried 
+-- synthesized logic cell 
+_LC3_A3  = LCELL( _EQ050);
+  _EQ050 = !_LC6_A11
+         # !_LC1_A3
+         # !_LC8_A11;
+
+-- Node name is '|VGA_SYNC:1|:631' 
+-- Equation name is '_LC3_A5', type is buried 
+_LC3_A5  = LCELL( _EQ051);
+  _EQ051 = !_LC6_A11
+         # !_LC1_A3
+         # !_LC8_A11
+         #  _LC1_A11;
+
+-- Node name is '|VGA_SYNC:1|:643' 
+-- Equation name is '_LC1_A11', type is buried 
+_LC1_A11 = LCELL( _EQ052);
+  _EQ052 = !_LC1_A10 & !_LC3_A11
+         # !_LC3_A11 & !_LC5_A11;
+
+-- Node name is '|VGA_SYNC:1|:659' 
+-- Equation name is '_LC7_D3', type is buried 
+!_LC7_D3 = _LC7_D3~NOT;
+_LC7_D3~NOT = LCELL( _EQ053);
+  _EQ053 =  _LC4_A5
+         #  _LC5_D3
+         # !_LC4_A4
+         # !_LC8_D3;
+
+-- Node name is '|VGA_SYNC:1|~670~1' 
+-- Equation name is '_LC2_A3', type is buried 
+-- synthesized logic cell 
+!_LC2_A3 = _LC2_A3~NOT;
+_LC2_A3~NOT = LCELL( _EQ054);
+  _EQ054 =  _LC3_A3
+         #  _LC5_A4
+         #  _LC3_A11;
+
+-- Node name is '|VGA_SYNC:1|~670~2' 
+-- Equation name is '_LC1_A5', type is buried 
+-- synthesized logic cell 
+!_LC1_A5 = _LC1_A5~NOT;
+_LC1_A5~NOT = LCELL( _EQ055);
+  _EQ055 = !_LC3_A4
+         # !_LC4_A4
+         #  _LC1_A4;
+
+-- Node name is '|VGA_SYNC:1|:670' 
+-- Equation name is '_LC2_A11', type is buried 
+!_LC2_A11 = _LC2_A11~NOT;
+_LC2_A11~NOT = LCELL( _EQ056);
+  _EQ056 = !_LC2_A3
+         # !_LC1_A10
+         # !_LC5_A11
+         # !_LC1_A5;
+
+-- Node name is '|VGA_SYNC:1|~967~1' 
+-- Equation name is '_LC5_D6', type is buried 
+-- synthesized logic cell 
+_LC5_D6  = LCELL( _EQ057);
+  _EQ057 =  _LC4_D6 &  _LC6_D6
+         # !_LC4_D6 & !_LC6_D6
+         #  _LC8_D3
+         #  _LC3_D3;
+
+-- Node name is '|VGA_SYNC:1|:996' 
+-- Equation name is '_LC4_A23', type is buried 
+!_LC4_A23 = _LC4_A23~NOT;
+_LC4_A23~NOT = LCELL( _EQ058);
+  _EQ058 = !_LC1_A4 & !_LC3_A4
+         # !_LC4_A4;
+
+-- Node name is '|VGA_SYNC:1|:1170' 
+-- Equation name is '_LC6_D5', type is buried 
+!_LC6_D5 = _LC6_D5~NOT;
+_LC6_D5~NOT = LCELL( _EQ059);
+  _EQ059 = !_LC3_D5
+         # !_LC8_D5
+         # !_LC2_D3
+         # !_LC5_D5;
+
+
+
+Project Information                              c:\booksoft\chap9\vga_bar.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Use Quartus Fitter                        = on
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:02
+   Database Builder                       00:00:01
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:02
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:01
+   --------------------------             --------
+   Total Time                             00:00:06
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 14,475K

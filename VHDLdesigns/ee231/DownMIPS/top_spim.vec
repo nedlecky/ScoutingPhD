@@ -1,0 +1,16 @@
+% Simulation Test Vectors for Train Control State Machine - File: Tcontrol.vec %
+START 0us;
+STOP 1500ns;
+% Generate Clock %
+INTERVAL 100ns;
+INPUTS ClocK;
+PATTERN 
+0 1;
+% Reset State Machine %
+INPUTS Reset;
+PATTERN
+0>1
+150>0;
+OUTPUTS PC Out_inst rr2d_bus rr1d_bus ALUresult wrd_bus;
+ 
+	

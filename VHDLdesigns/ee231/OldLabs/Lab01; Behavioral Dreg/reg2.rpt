@@ -1,0 +1,44 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  reg2.vhd
+Options:    -q -yv2 -e10 -w100 -o2 -ygs -fO -fP -v10 -dc344 -pCY7C344-20HC/HI -a reg2.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Wed Jan 21 13:09:32 1998
+
+Library 'work' => directory 'lc344'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab1\lc344\and2.vif'.
+Linking 'C:\EE Courses\Ee231\Lab1\lc344\dflop.vif'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Wed Jan 21 13:09:32 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab1\lc344\and2.vif'.
+Linking 'C:\EE Courses\Ee231\Lab1\lc344\dflop.vif'.
+Note:  Removing wires from arch. 'archreg2' of entity 'reg2'.
+Added entity 'reg2' to library 'work'
+Added architecture 'archreg2' to library 'work'
+
+C:\warp\bin\tovif.exe:  No errors.
+

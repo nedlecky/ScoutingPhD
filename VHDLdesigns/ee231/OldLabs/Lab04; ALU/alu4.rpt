@@ -1,0 +1,233 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  alu4.vhd
+Options:    -m -q -yv2 -e10 -w100 -o2 -ygs -fO -fP -v10 -dc375i -pCY7C375I-125AC -a alu4.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Mon Feb 02 20:50:45 1998
+
+Library 'work' => directory 'lc375i'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+Linking 'C:\EE Courses\Ee231\Lab4; ALU\lc375i\alu.vif'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Mon Feb 02 20:50:45 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+Linking 'C:\EE Courses\Ee231\Lab4; ALU\lc375i\alu.vif'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'csub_generic3'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'sub_ss_generic2'.
+Removing left side of wire:  a(5) <= aa(5).
+Removing left side of wire:  a(4) <= aa(4).
+Removing left side of wire:  a(3) <= aa(3).
+Removing left side of wire:  a(2) <= aa(2).
+Removing left side of wire:  a(1) <= aa(1).
+Removing left side of wire:  a(0) <= aa(0).
+Removing left side of wire:  b(5) <= bb(5).
+Removing left side of wire:  b(4) <= bb(4).
+Removing left side of wire:  b(3) <= bb(3).
+Removing left side of wire:  b(2) <= bb(2).
+Removing left side of wire:  b(1) <= bb(1).
+Removing left side of wire:  b(0) <= bb(0).
+Note:  Removing wires from arch. 'generic_instance' of entity 'sub_vi_ss_generic1'.
+Removing left side of wire:  b(5) <= '0'.
+Removing left side of wire:  b(4) <= '0'.
+Removing left side of wire:  b(3) <= '0'.
+Removing left side of wire:  b(2) <= '0'.
+Removing left side of wire:  b(1) <= '1'.
+Removing left side of wire:  b(0) <= '0'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'cadd_generic6'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'add_ss_generic5'.
+Removing left side of wire:  a(5) <= aa(5).
+Removing left side of wire:  a(4) <= aa(4).
+Removing left side of wire:  a(3) <= aa(3).
+Removing left side of wire:  a(2) <= aa(2).
+Removing left side of wire:  a(1) <= aa(1).
+Removing left side of wire:  a(0) <= aa(0).
+Removing left side of wire:  b(5) <= bb(5).
+Removing left side of wire:  b(4) <= bb(4).
+Removing left side of wire:  b(3) <= bb(3).
+Removing left side of wire:  b(2) <= bb(2).
+Removing left side of wire:  b(1) <= bb(1).
+Removing left side of wire:  b(0) <= bb(0).
+Note:  Removing wires from arch. 'generic_instance' of entity 'add_vi_ss_generic4'.
+Removing left side of wire:  b(5) <= '0'.
+Removing left side of wire:  b(4) <= '0'.
+Removing left side of wire:  b(3) <= '0'.
+Removing left side of wire:  b(2) <= '0'.
+Removing left side of wire:  b(1) <= '1'.
+Removing left side of wire:  b(0) <= '0'.
+Linking 'C:\warp\lib\common\stdlogic\madd_sub.vif'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'madd_sub_generic9'.
+Removing right side of wire:  ci(2) <= c(2).
+Note:  Removing wires from arch. 'generic_instance' of entity 'sub_ss_generic8'.
+Removing left side of wire:  a(5) <= aa(5).
+Removing left side of wire:  a(4) <= aa(4).
+Removing left side of wire:  a(3) <= aa(3).
+Removing left side of wire:  a(2) <= aa(2).
+Removing left side of wire:  a(1) <= aa(1).
+Removing left side of wire:  a(0) <= aa(0).
+Removing left side of wire:  b(5) <= bb(5).
+Removing left side of wire:  b(4) <= bb(4).
+Removing left side of wire:  b(3) <= bb(3).
+Removing left side of wire:  b(2) <= bb(2).
+Removing left side of wire:  b(1) <= bb(1).
+Removing left side of wire:  b(0) <= bb(0).
+Note:  Removing wires from arch. 'generic_instance' of entity 'sub_vv_ss_generic7'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'madd_sub_generic12'.
+Removing right side of wire:  ci(2) <= c(2).
+Note:  Removing wires from arch. 'generic_instance' of entity 'add_ss_generic11'.
+Removing left side of wire:  a(5) <= aa(5).
+Removing left side of wire:  a(4) <= aa(4).
+Removing left side of wire:  a(3) <= aa(3).
+Removing left side of wire:  a(2) <= aa(2).
+Removing left side of wire:  a(1) <= aa(1).
+Removing left side of wire:  a(0) <= aa(0).
+Removing left side of wire:  b(5) <= bb(5).
+Removing left side of wire:  b(4) <= bb(4).
+Removing left side of wire:  b(3) <= bb(3).
+Removing left side of wire:  b(2) <= bb(2).
+Removing left side of wire:  b(1) <= bb(1).
+Removing left side of wire:  b(0) <= bb(0).
+Note:  Removing wires from arch. 'generic_instance' of entity 'add_vv_ss_generic10'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'cmp_ss_generic14'.
+Removing left side of wire:  dataa(3) <= a(3).
+Removing left side of wire:  dataa(2) <= a(2).
+Removing left side of wire:  dataa(1) <= a(1).
+Removing left side of wire:  dataa(0) <= a(0).
+Removing left side of wire:  datab(3) <= b(3).
+Removing left side of wire:  datab(2) <= b(2).
+Removing left side of wire:  datab(1) <= b(1).
+Removing left side of wire:  datab(0) <= b(0).
+Note:  Removing wires from arch. 'generic_instance' of entity 'cmp_vi_ss_generic13'.
+Removing left side of wire:  aa(3) <= a(4).
+Removing left side of wire:  aa(2) <= a(3).
+Removing left side of wire:  aa(1) <= a(2).
+Removing left side of wire:  aa(0) <= a(1).
+Removing left side of wire:  bb(3) <= '0'.
+Removing left side of wire:  bb(2) <= '0'.
+Removing left side of wire:  bb(1) <= '0'.
+Removing left side of wire:  bb(0) <= '0'.
+Linking 'C:\warp\lib\common\stdlogic\mcompare.vif'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'mcompare_generic17'.
+Removing left side of wire:  a(3) <= dataa(3).
+Removing left side of wire:  a(2) <= dataa(2).
+Removing left side of wire:  a(1) <= dataa(1).
+Removing left side of wire:  a(0) <= dataa(0).
+Removing left side of wire:  b(3) <= datab(3).
+Removing left side of wire:  b(2) <= datab(2).
+Removing left side of wire:  b(1) <= datab(1).
+Removing left side of wire:  b(0) <= datab(0).
+Removing left side of wire:  aeqb(0) <= '1'.
+Removing right side of wire:  eq(0) <= xnor_array(0).
+Removing right side of wire:  eqi(0) <= eq(3).
+Removing left side of wire:  albi(2) <= '0'.
+Removing left side of wire:  agbi(2) <= '0'.
+Removing right side of wire:  lti(1) <= lt(3).
+Removing right side of wire:  gti(1) <= gt(3).
+Note:  Removing wires from arch. 'generic_instance' of entity 'cmp_ss_generic16'.
+Removing left side of wire:  dataa(3) <= a(3).
+Removing left side of wire:  dataa(2) <= a(2).
+Removing left side of wire:  dataa(1) <= a(1).
+Removing left side of wire:  dataa(0) <= a(0).
+Removing left side of wire:  datab(3) <= b(3).
+Removing left side of wire:  datab(2) <= b(2).
+Removing left side of wire:  datab(1) <= b(1).
+Removing left side of wire:  datab(0) <= b(0).
+Note:  Removing wires from arch. 'generic_instance' of entity 'cmp_vv_ss_generic15'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nalu_generic0'.
+Removing right side of wire:  MODIN1(5) <= awide(5).
+Removing right side of wire:  MODIN1(4) <= awide(4).
+Removing right side of wire:  MODIN1(3) <= awide(3).
+Removing right side of wire:  MODIN1(2) <= awide(2).
+Removing right side of wire:  MODIN1(1) <= awide(1).
+Removing right side of wire:  MODIN1(0) <= awide(0).
+Removing right side of wire:  MODIN4(5) <= bwide(5).
+Removing right side of wire:  MODIN4(4) <= bwide(4).
+Removing right side of wire:  MODIN4(3) <= bwide(3).
+Removing right side of wire:  MODIN4(2) <= bwide(2).
+Removing right side of wire:  MODIN4(1) <= bwide(1).
+Removing right side of wire:  MODIN4(0) <= bwide(0).
+Removing right side of wire:  MODIN7(4) <= cwide(4).
+Removing right side of wire:  MODIN7(3) <= cwide(3).
+Removing right side of wire:  MODIN7(2) <= cwide(2).
+Removing right side of wire:  MODIN7(1) <= cwide(1).
+Removing left side of wire:  MODIN8(3) <= a(3).
+Removing left side of wire:  MODIN8(2) <= a(2).
+Removing left side of wire:  MODIN8(1) <= a(1).
+Removing left side of wire:  MODIN8(0) <= a(0).
+Removing left side of wire:  MODIN9(3) <= b(3).
+Removing left side of wire:  MODIN9(2) <= b(2).
+Removing left side of wire:  MODIN9(1) <= b(1).
+Removing left side of wire:  MODIN9(0) <= b(0).
+Note:  Removing wires from arch. 'alu4_arch' of entity 'alu4'.
+Added entity 'alu4' to library 'work'
+Added architecture 'alu4_arch' to library 'work'
+Added entity 'nalu_generic0' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'sub_vi_ss_generic1' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'sub_ss_generic2' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'csub_generic3' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'add_vi_ss_generic4' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'add_ss_generic5' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'cadd_generic6' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'sub_vv_ss_generic7' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'sub_ss_generic8' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'madd_sub_generic9' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'add_vv_ss_generic10' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'add_ss_generic11' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'madd_sub_generic12' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'cmp_vi_ss_generic13' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'cmp_ss_generic14' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'cmp_vv_ss_generic15' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'cmp_ss_generic16' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+Added entity 'mcompare_generic17' to library 'work'
+Added architecture 'generic_instance' to library 'work'
+
+C:\warp\bin\tovif.exe:  No errors.
+

@@ -1,0 +1,26 @@
+-- Hardlogic test case identical to uP2
+Depth = 256;
+Width = 16;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+    [00..FF]: 0000;	-- NOP
+    00: 0010;   -- COUNT
+    01: 0001;   -- Data 0
+    02: 0020;   -- Data 1
+    03: 0300;   -- ...
+    04: 4000;   -- Note: sum is A19Eh
+    05: 0123;
+    06: 0100;
+    07: 0270;
+    08: 0015;
+    09: 1000;
+    0A: 0200;
+    0B: 0040;
+    0C: 0005;
+    0D: 1200;
+    0E: 2760;
+    0F: 0130;
+    10: 0D00;
+End;

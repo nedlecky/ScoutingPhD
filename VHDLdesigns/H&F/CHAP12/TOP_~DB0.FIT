@@ -1,0 +1,279 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 7.21 Student Edition       
+-- Compiled: 11/12/98 09:34:27        
+
+-- Copyright (C) 1991-1997 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "top_motor"
+BEGIN
+
+    DEVICE = "EPF10K20RC240-4";
+
+    "CLOCK_25Mhz"                  : INPUT_PIN  = 91     ;
+    "SOUT"                         : INPUT_PIN  = 153    ;
+    "LEFT_LED"                     : OUTPUT_PIN = 158    ;
+    "LEFT"                         : OUTPUT_PIN = 25     ;
+    "LMOTOR"                       : OUTPUT_PIN = 163    ;
+    "RIGHT_LED"                    : OUTPUT_PIN = 156    ;
+    "RIGHT"                        : OUTPUT_PIN = 14     ;
+    "RMOTOR"                       : OUTPUT_PIN = 110    ;
+    "|CLK_DIV:11|LPM_ADD_SUB:98|addcore:adder|:59" : LOCATION   = LC7_E8 ;
+    "|CLK_DIV:11|:4"               : LOCATION   = LC1_E4 ;
+    "|CLK_DIV:11|:6"               : LOCATION   = LC1_E9 ;
+    "|CLK_DIV:11|:10"              : LOCATION   = LC2_C9 ;
+    "|CLK_DIV:11|~10~1"            : LOCATION   = LC3_C6 ;
+    "|CLK_DIV:11|:14"              : LOCATION   = LC1_A16;
+    "|CLK_DIV:11|:16"              : LOCATION   = LC2_E8 ;  -- |CLK_DIV:11|count_1Mhz4
+    "|CLK_DIV:11|:17"              : LOCATION   = LC3_E8 ;  -- |CLK_DIV:11|count_1Mhz3
+    "|CLK_DIV:11|:18"              : LOCATION   = LC4_E8 ;  -- |CLK_DIV:11|count_1Mhz2
+    "|CLK_DIV:11|:19"              : LOCATION   = LC5_E8 ;  -- |CLK_DIV:11|count_1Mhz1
+    "|CLK_DIV:11|:20"              : LOCATION   = LC6_E8 ;  -- |CLK_DIV:11|count_1Mhz0
+    "|CLK_DIV:11|:21"              : LOCATION   = LC1_E8 ;  -- |CLK_DIV:11|clock_1Mhz_int
+    "|CLK_DIV:11|:22"              : LOCATION   = LC1_E11;  -- |CLK_DIV:11|clock_100Khz_int
+    "|CLK_DIV:11|:23"              : LOCATION   = LC1_E6 ;  -- |CLK_DIV:11|clock_10Khz_int
+    "|CLK_DIV:11|:24"              : LOCATION   = LC7_E10;  -- |CLK_DIV:11|clock_1Khz_int
+    "|CLK_DIV:11|:25"              : LOCATION   = LC1_E10;  -- |CLK_DIV:11|clock_100hz_int
+    "|CLK_DIV:11|:26"              : LOCATION   = LC2_E3 ;  -- |CLK_DIV:11|clock_10Hz_int
+    "|CLK_DIV:11|:27"              : LOCATION   = LC1_A11;  -- |CLK_DIV:11|clock_1Hz_int
+    "|CLK_DIV:11|:28"              : LOCATION   = LC2_E11;  -- |CLK_DIV:11|count_100Khz2
+    "|CLK_DIV:11|:29"              : LOCATION   = LC3_E11;  -- |CLK_DIV:11|count_100Khz1
+    "|CLK_DIV:11|:30"              : LOCATION   = LC4_E11;  -- |CLK_DIV:11|count_100Khz0
+    "|CLK_DIV:11|:31"              : LOCATION   = LC2_E6 ;  -- |CLK_DIV:11|count_10Khz2
+    "|CLK_DIV:11|:32"              : LOCATION   = LC3_E6 ;  -- |CLK_DIV:11|count_10Khz1
+    "|CLK_DIV:11|:33"              : LOCATION   = LC4_E6 ;  -- |CLK_DIV:11|count_10Khz0
+    "|CLK_DIV:11|:34"              : LOCATION   = LC8_E10;  -- |CLK_DIV:11|count_1Khz2
+    "|CLK_DIV:11|:35"              : LOCATION   = LC6_E10;  -- |CLK_DIV:11|count_1Khz1
+    "|CLK_DIV:11|:36"              : LOCATION   = LC5_E10;  -- |CLK_DIV:11|count_1Khz0
+    "|CLK_DIV:11|:37"              : LOCATION   = LC4_E10;  -- |CLK_DIV:11|count_100hz2
+    "|CLK_DIV:11|:38"              : LOCATION   = LC2_E10;  -- |CLK_DIV:11|count_100hz1
+    "|CLK_DIV:11|:39"              : LOCATION   = LC3_E10;  -- |CLK_DIV:11|count_100hz0
+    "|CLK_DIV:11|:40"              : LOCATION   = LC1_E3 ;  -- |CLK_DIV:11|count_10hz2
+    "|CLK_DIV:11|:41"              : LOCATION   = LC3_E3 ;  -- |CLK_DIV:11|count_10hz1
+    "|CLK_DIV:11|:42"              : LOCATION   = LC4_E3 ;  -- |CLK_DIV:11|count_10hz0
+    "|CLK_DIV:11|:43"              : LOCATION   = LC2_A11;  -- |CLK_DIV:11|count_1hz2
+    "|CLK_DIV:11|:44"              : LOCATION   = LC3_A11;  -- |CLK_DIV:11|count_1hz1
+    "|CLK_DIV:11|:45"              : LOCATION   = LC4_A11;  -- |CLK_DIV:11|count_1hz0
+    "|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:52" : LOCATION   = LC1_C4 ;
+    "|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:59" : LOCATION   = LC3_C3 ;
+    "|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:63" : LOCATION   = LC2_C5 ;
+    "|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:67" : LOCATION   = LC2_C10;
+    "|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:52" : LOCATION   = LC3_C11;
+    "|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:59" : LOCATION   = LC1_C11;
+    "|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:63" : LOCATION   = LC2_C1 ;
+    "|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:67" : LOCATION   = LC3_C8 ;
+    "|IR_SENSOR:29|LPM_COMPARE:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|:39" : LOCATION   = LC3_C10;
+    "|IR_SENSOR:29|LPM_COMPARE:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~39~1" : LOCATION   = LC4_C10;
+    "|IR_SENSOR:29|LPM_COMPARE:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46" : LOCATION   = LC5_C10;
+    "|IR_SENSOR:29|LPM_COMPARE:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|:39" : LOCATION   = LC1_C8 ;
+    "|IR_SENSOR:29|LPM_COMPARE:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~39~1" : LOCATION   = LC4_C8 ;
+    "|IR_SENSOR:29|LPM_COMPARE:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46" : LOCATION   = LC5_C8 ;
+    "|IR_SENSOR:29|:7"             : LOCATION   = LC4_C14;
+    "|IR_SENSOR:29|:9"             : LOCATION   = LC2_B13;
+    "|IR_SENSOR:29|:11"            : LOCATION   = LC6_C10;  -- |IR_SENSOR:29|left_rscount4
+    "|IR_SENSOR:29|:12"            : LOCATION   = LC7_C10;  -- |IR_SENSOR:29|left_rscount3
+    "|IR_SENSOR:29|:13"            : LOCATION   = LC4_C4 ;  -- |IR_SENSOR:29|left_rscount2
+    "|IR_SENSOR:29|:14"            : LOCATION   = LC3_C4 ;  -- |IR_SENSOR:29|left_rscount1
+    "|IR_SENSOR:29|:15"            : LOCATION   = LC1_C2 ;  -- |IR_SENSOR:29|left_rscount0
+    "|IR_SENSOR:29|:16"            : LOCATION   = LC1_C10;  -- |IR_SENSOR:29|set_left
+    "|IR_SENSOR:29|:17"            : LOCATION   = LC6_C8 ;  -- |IR_SENSOR:29|right_rscount4
+    "|IR_SENSOR:29|:18"            : LOCATION   = LC7_C8 ;  -- |IR_SENSOR:29|right_rscount3
+    "|IR_SENSOR:29|:19"            : LOCATION   = LC1_C12;  -- |IR_SENSOR:29|right_rscount2
+    "|IR_SENSOR:29|:20"            : LOCATION   = LC2_C11;  -- |IR_SENSOR:29|right_rscount1
+    "|IR_SENSOR:29|:21"            : LOCATION   = LC1_C7 ;  -- |IR_SENSOR:29|right_rscount0
+    "|IR_SENSOR:29|:22"            : LOCATION   = LC2_C8 ;  -- |IR_SENSOR:29|set_right
+    "|IR_SENSOR:29|~251~1"         : LOCATION   = LC8_C10;
+    "|IR_SENSOR:29|~480~1"         : LOCATION   = LC8_C8 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:91" : LOCATION   = LC1_F9 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:99" : LOCATION   = LC4_F11;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:103" : LOCATION   = LC6_F2 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:111" : LOCATION   = LC7_F2 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:59" : LOCATION   = LC7_B7 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:63" : LOCATION   = LC7_B3 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:67" : LOCATION   = LC8_B3 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry1" : LOCATION   = LC8_B7 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry2" : LOCATION   = LC7_B9 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry3" : LOCATION   = LC6_B9 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:1016|addcore:adder|:59" : LOCATION   = LC6_D11;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:1016|addcore:adder|:63" : LOCATION   = LC8_D7 ;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:1181|addcore:adder|pcarry1" : LOCATION   = LC5_D11;
+    "|SERVO_CONTROL:15|LPM_ADD_SUB:1181|addcore:adder|pcarry2" : LOCATION   = LC2_D4 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|:43" : LOCATION   = LC3_F1 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~43~1" : LOCATION   = LC5_F1 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~38~1" : LOCATION   = LC6_F1 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39" : LOCATION   = LC7_F1 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|:38" : LOCATION   = LC2_F10;
+    "|SERVO_CONTROL:15|LPM_COMPARE:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:38" : LOCATION   = LC3_F12;
+    "|SERVO_CONTROL:15|LPM_COMPARE:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39" : LOCATION   = LC3_A5 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46" : LOCATION   = LC2_F6 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39" : LOCATION   = LC1_F6 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|~39~1" : LOCATION   = LC5_F6 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~39~1" : LOCATION   = LC6_B3 ;
+    "|SERVO_CONTROL:15|LPM_COMPARE:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39" : LOCATION   = LC2_F11;
+    "|SERVO_CONTROL:15|LPM_COMPARE:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|~39~1" : LOCATION   = LC3_F11;
+    "|SERVO_CONTROL:15|LPM_COMPARE:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~39~1" : LOCATION   = LC7_D7 ;
+    "|SERVO_CONTROL:15|:11"        : LOCATION   = LC5_B8 ;
+    "|SERVO_CONTROL:15|:13"        : LOCATION   = LC1_A5 ;
+    "|SERVO_CONTROL:15|:15"        : LOCATION   = LC3_F2 ;  -- |SERVO_CONTROL:15|count_motor10
+    "|SERVO_CONTROL:15|:16"        : LOCATION   = LC5_F2 ;  -- |SERVO_CONTROL:15|count_motor9
+    "|SERVO_CONTROL:15|:17"        : LOCATION   = LC4_F2 ;  -- |SERVO_CONTROL:15|count_motor8
+    "|SERVO_CONTROL:15|:18"        : LOCATION   = LC2_F2 ;  -- |SERVO_CONTROL:15|count_motor7
+    "|SERVO_CONTROL:15|:19"        : LOCATION   = LC1_F11;  -- |SERVO_CONTROL:15|count_motor6
+    "|SERVO_CONTROL:15|:20"        : LOCATION   = LC2_F3 ;  -- |SERVO_CONTROL:15|count_motor5
+    "|SERVO_CONTROL:15|:21"        : LOCATION   = LC1_F7 ;  -- |SERVO_CONTROL:15|count_motor4
+    "|SERVO_CONTROL:15|:22"        : LOCATION   = LC2_F4 ;  -- |SERVO_CONTROL:15|count_motor3
+    "|SERVO_CONTROL:15|:23"        : LOCATION   = LC1_F8 ;  -- |SERVO_CONTROL:15|count_motor2
+    "|SERVO_CONTROL:15|:24"        : LOCATION   = LC4_F6 ;  -- |SERVO_CONTROL:15|count_motor1
+    "|SERVO_CONTROL:15|:25"        : LOCATION   = LC3_F6 ;  -- |SERVO_CONTROL:15|count_motor0
+    "|SERVO_CONTROL:15|:26"        : LOCATION   = LC3_B9 ;  -- |SERVO_CONTROL:15|lmotor_speed_count4
+    "|SERVO_CONTROL:15|:27"        : LOCATION   = LC8_B9 ;  -- |SERVO_CONTROL:15|lmotor_speed_count3
+    "|SERVO_CONTROL:15|:28"        : LOCATION   = LC3_B7 ;  -- |SERVO_CONTROL:15|lmotor_speed_count2
+    "|SERVO_CONTROL:15|:29"        : LOCATION   = LC2_B8 ;  -- |SERVO_CONTROL:15|lmotor_speed_count1
+    "|SERVO_CONTROL:15|:30"        : LOCATION   = LC2_A5 ;  -- |SERVO_CONTROL:15|lmotor_speed_count0
+    "|SERVO_CONTROL:15|:31"        : LOCATION   = LC1_D10;  -- |SERVO_CONTROL:15|rmotor_speed_count4
+    "|SERVO_CONTROL:15|:32"        : LOCATION   = LC2_D10;  -- |SERVO_CONTROL:15|rmotor_speed_count3
+    "|SERVO_CONTROL:15|:33"        : LOCATION   = LC2_D11;  -- |SERVO_CONTROL:15|rmotor_speed_count2
+    "|SERVO_CONTROL:15|:34"        : LOCATION   = LC1_D6 ;  -- |SERVO_CONTROL:15|rmotor_speed_count1
+    "|SERVO_CONTROL:15|:35"        : LOCATION   = LC2_D8 ;  -- |SERVO_CONTROL:15|rmotor_speed_count0
+    "|SERVO_CONTROL:15|:354"       : LOCATION   = LC2_F1 ;
+    "|SERVO_CONTROL:15|:380"       : LOCATION   = LC1_F1 ;
+    "|SERVO_CONTROL:15|~380~1"     : LOCATION   = LC4_F1 ;
+    "|SERVO_CONTROL:15|~380~2"     : LOCATION   = LC1_F18;
+    "|SERVO_CONTROL:15|~380~3"     : LOCATION   = LC3_D10;
+    "|SERVO_CONTROL:15|~380~4"     : LOCATION   = LC4_D10;
+    "|SERVO_CONTROL:15|~380~5"     : LOCATION   = LC5_D10;
+    "|SERVO_CONTROL:15|~574~1"     : LOCATION   = LC1_F2 ;
+    "|SERVO_CONTROL:15|~574~2"     : LOCATION   = LC3_B3 ;
+    "|SERVO_CONTROL:15|:622"       : LOCATION   = LC1_B3 ;
+    "|SERVO_CONTROL:15|:631"       : LOCATION   = LC4_B3 ;
+    "|SERVO_CONTROL:15|:640"       : LOCATION   = LC2_B7 ;
+    "|SERVO_CONTROL:15|:649"       : LOCATION   = LC4_B8 ;
+    "|SERVO_CONTROL:15|:739"       : LOCATION   = LC2_B3 ;
+    "|SERVO_CONTROL:15|:787"       : LOCATION   = LC4_B9 ;
+    "|SERVO_CONTROL:15|:796"       : LOCATION   = LC1_B9 ;
+    "|SERVO_CONTROL:15|:805"       : LOCATION   = LC5_B7 ;
+    "|SERVO_CONTROL:15|:814"       : LOCATION   = LC1_B8 ;
+    "|SERVO_CONTROL:15|:832"       : LOCATION   = LC5_B3 ;
+    "|SERVO_CONTROL:15|:847"       : LOCATION   = LC2_B9 ;
+    "|SERVO_CONTROL:15|:853"       : LOCATION   = LC5_B9 ;
+    "|SERVO_CONTROL:15|:859"       : LOCATION   = LC4_B7 ;
+    "|SERVO_CONTROL:15|:865"       : LOCATION   = LC6_B8 ;
+    "|SERVO_CONTROL:15|:877"       : LOCATION   = LC3_B8 ;
+    "|SERVO_CONTROL:15|~997~1"     : LOCATION   = LC1_D7 ;
+    "|SERVO_CONTROL:15|:1054"      : LOCATION   = LC5_D7 ;
+    "|SERVO_CONTROL:15|:1063"      : LOCATION   = LC1_D11;
+    "|SERVO_CONTROL:15|:1072"      : LOCATION   = LC4_D7 ;
+    "|SERVO_CONTROL:15|:1090"      : LOCATION   = LC1_D17;
+    "|SERVO_CONTROL:15|:1162"      : LOCATION   = LC2_D7 ;
+    "|SERVO_CONTROL:15|:1219"      : LOCATION   = LC6_D10;
+    "|SERVO_CONTROL:15|:1228"      : LOCATION   = LC3_D11;
+    "|SERVO_CONTROL:15|:1237"      : LOCATION   = LC6_D7 ;
+    "|SERVO_CONTROL:15|:1276"      : LOCATION   = LC7_D10;
+    "|SERVO_CONTROL:15|:1282"      : LOCATION   = LC4_D11;
+    "|SERVO_CONTROL:15|:1288"      : LOCATION   = LC3_D7 ;
+    "|SERVO_CONTROL:15|:1300"      : LOCATION   = LC1_D12;
+    "|SERVO_CONTROL:15|~1438~1"    : LOCATION   = LC6_B7 ;
+    "|SERVO_CONTROL:15|~1438~2"    : LOCATION   = LC1_B7 ;
+    "|SERVO_CONTROL:15|~1438~3"    : LOCATION   = LC4_A5 ;
+    "|SERVO_CONTROL:15|~1438~4"    : LOCATION   = LC5_A5 ;
+    "|SERVO_CONTROL:15|~1445~1"    : LOCATION   = LC8_D10;
+    "|SERVO_CONTROL:15|~1483~1"    : LOCATION   = LC5_D8 ;
+    "|SERVO_CONTROL:15|~1483~2"    : LOCATION   = LC4_D8 ;
+    "|SERVO_CONTROL:15|~1483~3"    : LOCATION   = LC3_D8 ;
+    "|SERVO_CONTROL:15|~1483~4"    : LOCATION   = LC1_D8 ;
+
+END;
+
+INTERNAL_INFO "top_motor"
+BEGIN
+	DEVICE = EPF10K20RC240-4;
+	LC2_F10 : LORAX = "HHL1R5";
+	LC1_F2  : LORAX = "V1C1,HHL23R1,HHL23R3,HHL23R5";
+	LC2_F6  : LORAX = "HHL0R5";
+	LC1_F9  : LORAX = "HHL21R5";
+	LC3_F1  : LORAX = "HHL3R5";
+	LC2_F11 : LORAX = "V4C10,G16R3";
+	LC1_D7  : LORAX = "G45R3";
+	LC1_F1  : LORAX = "V1C0,HHL22R0,HHL22R1,HHL22R3";
+	LC1_F6  : LORAX = "V1C5,HHL20R0,HHL20R1,HHL20R3";
+	LC1_F18 : LORAX = "G43R5";
+	LC2_F1  : LORAX = "V4C0,HHL8R0,HHL8R1,HHL8R3";
+	LC2_D7  : LORAX = "HHL11R3";
+	LC2_D8  : LORAX = "HHL3R3";
+	LC3_D7  : LORAX = "HHL4R3";
+	LC1_D6  : LORAX = "HHL5R3";
+	LC2_D11 : LORAX = "HHL16R3";
+	LC2_D4  : LORAX = "HHL12R3";
+	LC5_D7  : LORAX = "HHL41R3";
+	LC2_D10 : LORAX = "HHL1R3";
+	LC3_B3  : LORAX = "HHL1R1";
+	LC3_F12 : LORAX = "V7C11,HHL15R0";
+	LC3_A5  : LORAX = "V6C4,HHL0R1";
+	LC2_B3  : LORAX = "HHL2R1";
+	LC1_B7  : LORAX = "V0C7,HHL23R0";
+	LC2_A5  : LORAX = "V3C4,HHL5R1";
+	LC2_B8  : LORAX = "HHL11R1";
+	LC3_B7  : LORAX = "HHL4R1";
+	LC1_D10 : LORAX = "HHL2R3";
+	LC1_C8  : LORAX = "HHL23R2";
+	OH13R2  : LORAX = "G14R2";
+	LC1_C7  : LORAX = "HHL22R2";
+	LC2_C11 : LORAX = "HHL5R2";
+	LC3_C10 : LORAX = "HHL14R2";
+	LC1_C2  : LORAX = "HHL8R2";
+	LC3_C4  : LORAX = "HHL6R2";
+	LC1_B3  : LORAX = "HHL21R1";
+	LC3_B9  : LORAX = "HHL14R1";
+	LC4_B3  : LORAX = "HHL6R1";
+	LC8_B9  : LORAX = "HHL27R1";
+	LC1_F7  : LORAX = "HHL22R5";
+	LC1_F8  : LORAX = "HHL8R5";
+	LC2_F4  : LORAX = "HHL12R5";
+	LC2_F3  : LORAX = "HHL2R5";
+	LC1_C11 : LORAX = "HHL18R2";
+	LC2_C1  : LORAX = "HHL11R2";
+	LC1_C12 : LORAX = "HHL20R2";
+	LC3_C3  : LORAX = "HHL1R2";
+	LC2_C5  : LORAX = "HHL16R2";
+	LC4_C4  : LORAX = "HHL17R2";
+	LC1_F11 : LORAX = "G46R5";
+	LC2_F2  : LORAX = "G29R5,V4C1,HHL11R0";
+	LC1_E6  : LORAX = "HHL20R4";
+	LC2_E3  : LORAX = "V3C2,HHL2R0";
+	LC1_E8  : LORAX = "HHL23R4";
+	LC1_E9  : LORAX = "V0C8,HHL21R2";
+	LC1_A11 : LORAX = "G46R0";
+	LC1_E11 : LORAX = "HHL18R4";
+	LC2_C8  : LORAX = "V4C7,G8R1";
+	OD5     : LORAX = "OF5";
+	LC1_E10 : LORAX = "V0C9,HHL19R2,HHL19R4";
+	LC1_C10 : LORAX = "G37R2";
+	LC1_E4  : LORAX = "V0C3,HHL19R0,HHL19R1,HHL19R3,HHL19R5";
+	LC1_A16 : LORAX = "V0C15,HHR19R1,HHR19R2";
+	LC2_B13 : LORAX = "V3C12,G19R0,G19R1";
+	LC2_C9  : LORAX = "HHL2R2";
+	LC4_C14 : LORAX = "V10C13,G9R3,HHR13R2";
+	LC1_D17 : LORAX = "G43R3";
+	LC1_D12 : LORAX = "V3C10,HHL5R0";
+	LC1_A5  : LORAX = "V0C4";
+	LC3_C6  : LORAX = "HHL7R2";
+	LC5_B3  : LORAX = "HHL43R1";
+	LC5_B8  : LORAX = "HHL36R1";
+END;

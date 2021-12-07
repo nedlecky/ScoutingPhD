@@ -1,0 +1,99 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 03/08/2002 12:57:56      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "dmemory"
+BEGIN
+
+    DEVICE = "EPF10K70RC240-4";
+
+    "address0"                     : INPUT_PIN  = 115    ;
+    "address1"                     : INPUT_PIN  = 12     ;
+    "address2"                     : INPUT_PIN  = 103    ;
+    "address3"                     : INPUT_PIN  = 211    ;
+    "address4"                     : INPUT_PIN  = 212    ;
+    "address5"                     : INPUT_PIN  = 210    ;
+    "address6"                     : INPUT_PIN  = 92     ;
+    "address7"                     : INPUT_PIN  = 90     ;
+    "clock"                        : INPUT_PIN  = 91     ;
+    "memwrite"                     : INPUT_PIN  = 192    ;
+    "write_data0"                  : INPUT_PIN  = 15     ;
+    "write_data1"                  : INPUT_PIN  = 99     ;
+    "write_data2"                  : INPUT_PIN  = 187    ;
+    "write_data3"                  : INPUT_PIN  = 169    ;
+    "write_data4"                  : INPUT_PIN  = 101    ;
+    "write_data5"                  : INPUT_PIN  = 17     ;
+    "write_data6"                  : INPUT_PIN  = 14     ;
+    "write_data7"                  : INPUT_PIN  = 181    ;
+    "read_data0"                   : OUTPUT_PIN = 13     ;
+    "read_data1"                   : OUTPUT_PIN = 128    ;
+    "read_data2"                   : OUTPUT_PIN = 168    ;
+    "read_data3"                   : OUTPUT_PIN = 127    ;
+    "read_data4"                   : OUTPUT_PIN = 167    ;
+    "read_data5"                   : OUTPUT_PIN = 23     ;
+    "read_data6"                   : OUTPUT_PIN = 166    ;
+    "read_data7"                   : OUTPUT_PIN = 18     ;
+    ":31"                          : LOCATION   = LC1_B13;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_0" : LOCATION   = EC4_B  ;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_1" : LOCATION   = EC3_B  ;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_2" : LOCATION   = EC1_B  ;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_3" : LOCATION   = EC7_B  ;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_4" : LOCATION   = EC8_B  ;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_5" : LOCATION   = EC5_B  ;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_6" : LOCATION   = EC6_B  ;
+    "|LPM_RAM_DQ:data_memory|altram:sram|segment0_7" : LOCATION   = EC2_B  ;
+
+END;
+
+INTERNAL_INFO "dmemory"
+BEGIN
+	DEVICE = EPF10K70RC240-4;
+    OV3C5P115 : LORAX = "1:V18C5,HHL63R1,RP11R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B|";
+    OH0R1P12 : LORAX = "1:G90R1,RP19R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B|";
+    OV2C15P103 : LORAX = "1:V14C15,HHL72R1,RP15R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B|";
+    OD4P211 : LORAX = "1:FB4|2:CH0R1,RP12R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B||";
+    OD0P212 : LORAX = "1:FB0|2:FH0R1,RP25R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B||";
+    OD1P210 : LORAX = "1:FB1|2:FH1R1,RP16R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B||";
+    OD3P92  : LORAX = "1:FB3|2:FH3R1,RP18R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B||";
+    OD2P90  : LORAX = "1:FB2|2:FH2R1,RP14R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B||";
+    OD5P91  : LORAX = "1:FB5->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B|2:CH1R1,PA11R1C12->LC1_B13||";
+    EC4_B   : LORAX = "1:RB3R1,G19R1->OH2R1P13|";
+    EC3_B   : LORAX = "1:RB2R1,G21R1,V11C46,G72R8->OH11R8P128|";
+    EC1_B   : LORAX = "1:RB0R1,G73R1->OH9R1P168|";
+    EC7_B   : LORAX = "1:RB6R1,G166R1,V17C48,G193R8->OH13R8P127|";
+    EC8_B   : LORAX = "1:RB7R1,G50R1->OH11R1P167|";
+    EC5_B   : LORAX = "1:RB4R1,G116R1,V17C42,HHR99R2->OH5R2P23|";
+    EC6_B   : LORAX = "1:RB5R1,G193R1->OH13R1P166|";
+    EC2_B   : LORAX = "1:RB1R1,G156R1->OH7R1P18|";
+    OV0C11P192 : LORAX = "1:V1C11,HHL43R1,PA16R1C12->LC1_B13|";
+    OH5R1P15 : LORAX = "1:G94R1,RP4R1->EC4_B|";
+    OV3C18P99 : LORAX = "1:V18C18,HHL75R1,RP7R1->EC3_B|";
+    OV0C8P187 : LORAX = "1:V1C8,HHL49R1,RP10R1->EC1_B|";
+    OH8R1P169 : LORAX = "1:G79R1,RP5R1->EC7_B|";
+    OV2C16P101 : LORAX = "1:V14C16,HHL74R1,RP13R1->EC8_B|";
+    OH6R1P17 : LORAX = "1:G88R1,RP21R1->EC5_B|";
+    OH4R1P14 : LORAX = "1:G82R1,RP2R1->EC6_B|";
+    OV0C1P181 : LORAX = "1:V1C1,HHL42R1,RP17R1->EC2_B|";
+    LC1_B13 : LORAX = "1:MSW0R1C12,HHL41R1,RP22R1->EC4_B,->EC3_B,->EC1_B,->EC7_B,->EC8_B,->EC5_B,->EC6_B,->EC2_B|";
+	LC1_B13 : LORAX2 = "X, X, OV0C11P192, OD5P91";
+END;

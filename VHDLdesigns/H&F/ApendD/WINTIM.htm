@@ -1,0 +1,1629 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./WINTIM_files/filelist.xml">
+<link rel=Edit-Time-Data href="./WINTIM_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Introduction to WinTIM</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>G.P.Burdell</o:Author>
+  <o:LastAuthor>G.P.Burdell</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>144</o:TotalTime>
+  <o:LastPrinted>2000-03-30T19:04:00Z</o:LastPrinted>
+  <o:Created>2001-07-08T13:35:00Z</o:Created>
+  <o:LastSaved>2001-07-08T13:35:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>2772</o:Words>
+  <o:Characters>15802</o:Characters>
+  <o:Company>Ga Tech</o:Company>
+  <o:Lines>131</o:Lines>
+  <o:Paragraphs>31</o:Paragraphs>
+  <o:CharactersWithSpaces>19405</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:16792199 0 0 0 65791 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.5in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:27.35pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	letter-spacing:.25pt;
+	mso-font-kerning:12.0pt;
+	mso-bidi-language:HE;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.TableTitle, li.TableTitle, div.TableTitle
+	{mso-style-name:TableTitle;
+	mso-style-update:auto;
+	mso-style-parent:"";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	letter-spacing:.25pt;
+	mso-font-kerning:10.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoTitle><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Introduction
+to WinTIM<o:p></o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText>An assembler translates human readable symbolic assembly
+language programs into binary machine language that can then be loaded into the
+computers memory. A conventional assembler is developed for a particular
+machine whose register names, instruction mnemonics and machine instruction
+formats are completely defined. A meta assembler allows the user to define the
+instruction formats for any machine. Once instruction formats and opcode
+mnemonics are defined by the user, the meta assembler then serves as an
+assembler. A meta assembler is useful for people that are designing a new
+computer, since they can use it to assemble programs for the new computer
+without writing a new assembler from scratch. WinTIM is a meta assembler used
+to convert the symbolic strings of a source program to machine language code
+and to assign memory addresses to each machine instruction word and data
+storage location. </p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b>Definition Phase:</b> The
+first step is to define all of the instruction formats and mnemonic names. A
+source file is written that contains these definitions in a *.def file. The
+definition file is processed by WinTIM and definition tables are produced for
+the assembly process. Only one definition file is needed assemble all of the
+assembly language programs for a given machine.</p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b>Assembly Phase:</b> The second
+step is to assemble the assembly language program for the new instruction
+formats using the instruction definition tables produced in the definition
+phase. In this step, the meta assembler functions as a conventional assembler
+as it converts symbolic assembly language in a *.src file into binary machine
+language. A conventional style assembly listing is also produced. Just as in a
+conventional assembler, there can be assembly errors.</p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1>An Example Using WinTIM for a simple computer</h1>
+
+<h1><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></h1>
+
+<h1><span style='font-weight:normal'>The first step is to develop the
+definition text file, *.def, for the new computer design</span>. <span
+style='font-weight:normal'>Here is an example of the definition file for a
+simple computer. An instruction for this computer has 16-bits words that
+consist of an 8-bit opcode and address field.<o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-align:justify'><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>TITLE<span
+style='mso-tab-count:1'> </span> ASSEMBLY LANGUAGE DEFINITION FILE FOR UP1
+COMPUTER DESIGN<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>WORD<span
+style='mso-tab-count:1'>  </span> 16<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>WIDTH<span
+style='mso-tab-count:1'> </span> 72<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LINES<span
+style='mso-tab-count:1'> </span> 50<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;**********************************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;<span style='mso-tab-count:
+2'>           </span>UP1 Instruction Format<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;<span
+style="mso-spacerun: yes">             </span>________________________<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;<span
+style="mso-spacerun: yes">             </span>| Opcode<span
+style="mso-spacerun: yes">    </span>|<span style="mso-spacerun: yes"> 
+</span>Address |<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;<span
+style="mso-spacerun: yes">             </span>| 8-bits<span
+style="mso-spacerun: yes">    </span>|<span style="mso-spacerun: yes"> 
+</span>8-bits<span style="mso-spacerun: yes">  </span>|<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;<span
+style="mso-spacerun: yes">             </span>|___________|__________|<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;**********************************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>; INSTRUCTION OPCODE
+LABELS - MUST BE 8-BITS, 2 Hex DIGITS<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;**********************************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LADD:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LSTORE:<span
+style='mso-tab-count:1'>     </span>EQU<span style="mso-spacerun: yes">    
+</span>H#01<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LLOAD:<span
+style='mso-tab-count:1'>      </span>EQU<span style="mso-spacerun: yes">    
+</span>H#02<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LJUMP:<span
+style='mso-tab-count:1'>      </span>EQU<span style="mso-spacerun: yes">    
+</span>H#03<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LJNEG:<span
+style='mso-tab-count:1'>      </span>EQU<span style="mso-spacerun: yes">    
+</span>H#04<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LSUB:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#05<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LXOR:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#06<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LOR:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#07<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LAND:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#08<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LJPOS:<span
+style='mso-tab-count:1'>      </span>EQU<span style="mso-spacerun: yes">    
+</span>H#09<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LZERO:<span
+style='mso-tab-count:1'>      </span>EQU<span style="mso-spacerun: yes">    
+</span>H#0A<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LADDI:<span
+style='mso-tab-count:1'>      </span>EQU<span style="mso-spacerun: yes">    
+</span>H#0B<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LSHL:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#0C<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LSHR:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#0D<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LIN:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">     
+</span>EQU<span style="mso-spacerun: yes">     </span>H#0E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LOUT:<span
+style="mso-spacerun: yes">       </span>EQU<span style="mso-spacerun: yes">    
+</span>H#0F<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LWAIT:<span
+style="mso-spacerun: yes">      </span>EQU<span style="mso-spacerun: yes">    
+</span>H#10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;**********************************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>; DATA PSEUDO OPS<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;**********************************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;DB:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">    </span>DEF<span
+style='mso-tab-count:1'>     </span> 8VH#00<span style="mso-spacerun: yes">    
+</span>;8-BIT DATA DIRECTIVE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>DW:<span style='mso-tab-count:
+1'>   </span><span style="mso-spacerun: yes">    </span>DEF<span
+style="mso-spacerun: yes">     </span>16VH#0000<span style="mso-spacerun:
+yes">  </span>;16-BIT DATA DIRECTIVE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;**********************************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;ASSEMBLY LANGUAGE
+INSTRUCTIONS<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>;**********************************************************************<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>ADD:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LADD,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>STORE:<span
+style="mso-spacerun: yes">    </span>DEF<span style="mso-spacerun: yes">    
+</span>LSTORE,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LOAD:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LLOAD,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>JUMP:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LJUMP,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>JNEG:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LJNEG,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>SUBT:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LSUB,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>XOR:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LXOR,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>OR:<span style='mso-tab-count:
+1'>   </span><span style="mso-spacerun: yes">    </span>DEF<span
+style="mso-spacerun: yes">     </span>LOR,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>AND:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LAND,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>JPOS:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LJPOS,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>ZERO:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LZERO,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>ADDI:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LADDI,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>SHL:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LSHL,H#0,4VH#0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>SHR:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LSHR,H#0,4VH#0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>IN:<span style='mso-tab-count:
+1'>   </span><span style="mso-spacerun: yes">    </span>DEF<span
+style="mso-spacerun: yes">     </span>LIN,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>OUT:<span
+style='mso-tab-count:1'>  </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LOUT,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>WAIT:<span
+style='mso-tab-count:1'> </span><span style="mso-spacerun: yes">   
+</span>DEF<span style="mso-spacerun: yes">     </span>LWAIT,8VH#00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>END<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><span style='font-weight:normal'>Starting with the first few lines of the
+definition file above. All characters are normally uppercase. TITLE is a title
+string for each page of the listing file. WORD 16 defines the memory word size
+for the computer as 16-bits. WIDTH 72 sets the number of characters per line in
+the listing file to 72. LINES 50 sets the number of lines per page in the
+listing. All text after a “;” in a line is a comment.<o:p></o:p></span></h1>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The next few lines define the opcode values. LADD is a
+string that is defined to be EQUivalent to 8-bits of zeros.<span
+style="mso-spacerun: yes">  </span>Since the meta assembler must supply values
+to fill up fields containing a fixed number of bits, each bit value also has a
+bit length. H#00 means a two-digit hexadecimal value of all zeros and it would
+have a bit length of eight since each hex digit requires 4-bits. . In addition
+to H#, the assembler supports B# for binary, D# for decimal, and Q# for octal bit
+values. The next few lines starting with L<i>xxx </i>define the remaining
+opcode values. </p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>To declare and initialize words of memory for data storage
+the DW directive is created. DEF means define an instruction or in this case a
+word of data memory. The “:” is used to distinguish labels from directives like
+DEF and it is not part of the DW string. Labels typically start in column 1. In
+the DEF argument 16VH#0000, 16V instructs the assembler to place a 16-bit
+variable value in memory when the DW string is seen in the assembly source
+file. The value H#0000 specifies the 16-bit default value of zero. The default
+value is used if the argument for DW is not provided. Note that the proper
+number of bits should always be specified to avoid bit length errors during assembly</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>For each instruction, the mnemonic name and format must be
+defined using the DEF directive. The line ADD: DEF LADD,8VH#00, instructs the
+assembler to emit a machine language instruction whenever the ADD string is
+seen in the source file. The 16-bit machine code has the high 8-bits set to the
+value of LADD, the add opcode (i.e. H#00) and the low 8-bits are set to the
+argument of the ADD instruction. The remaining instructions are now defined
+using additional DEF commands. Since this computer only has a single
+instruction format, the only difference in these lines is the instruction
+mnemonic name and the opcode value.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>This definition file is then read by the meta assembler
+and is used to setup tables for the assembly process. It is possible to have
+syntax errors in the definition file. Any syntax errors must be corrected
+before the assembly step.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>Now the assembly process can begin. Here is an assembly
+language program source file, *.src, for the computer. This short program is
+intended only to demonstrate assembler features and it does not compute
+anything useful.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>TITLE<span style='mso-tab-count:1'> </span> EXAMPLE
+UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>LIST F,W<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>LINES 50<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;*********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>; MACROS<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;*********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>ECHO:<span style="mso-spacerun: yes">   </span><span
+style='mso-tab-count:1'>    </span>MACRO<span style="mso-spacerun: yes">  
+</span>PORT<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span><span style="mso-spacerun:
+yes"> </span>IN<span style="mso-spacerun: yes">  </span><span
+style="mso-spacerun: yes">    </span>PORT<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span><span style="mso-spacerun:
+yes"> </span>OUT<span style="mso-spacerun: yes">     </span>PORT<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span>ENDM<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;*********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>; CONSTANTS<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;*********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>CON1:<span style="mso-spacerun: yes">    </span><span
+style='mso-tab-count:1'>   </span>EQU<span style='mso-tab-count:2'>         </span>2<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>DISPLAY: <span style='mso-tab-count:1'>   </span>EQU<span
+style="mso-spacerun: yes">    </span>H#00<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>SWITCH:<span style='mso-tab-count:1'>     </span>EQU<span
+style="mso-spacerun: yes">    </span>H#01<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;*********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>; PROGRAM AREA<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;*********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New"'>ORG
+H#00<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>START:<span style='mso-tab-count:1'>      </span>LOAD
+LABEL1%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span>ADDI 1%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>SHL<span
+style="mso-spacerun: yes">  </span>1<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>SHR<span
+style="mso-spacerun: yes">  </span>CON1%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">     </span><span
+style='mso-tab-count:2'>       </span>AND<span style="mso-spacerun: yes"> 
+</span>H#0F<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">     </span><span
+style='mso-tab-count:2'>       </span>OR<span style="mso-spacerun: yes">  
+</span>H#80<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>SUBT
+LABEL2%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>JPOS
+ENDP%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>XOR<span
+style="mso-spacerun: yes">  </span>LABEL3%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>ADD<span
+style="mso-spacerun: yes">  </span>(TABLE1 + 3)%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>JNEG
+ENDP%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>IN<span
+style="mso-spacerun: yes">   </span>SWITCH<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>OUT<span
+style="mso-spacerun: yes">  </span>DISPLAY<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>; MACRO TEST<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span>ECHO H#10<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span>WAIT B#11000011<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>ENDP:<span style='mso-tab-count:2'>       </span>STORE
+LABEL1%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>LOOP:<span style="mso-spacerun: yes">   </span><span
+style='mso-tab-count:1'>    </span>JUMP LOOP%: <o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span>JUMP START&lt;%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>    </span>JUMP $%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>; DATA FOR TEST PROGRAM<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>;********************************<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><span style="mso-spacerun:
+yes">      </span>ORG H#80<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>LABEL1:<span style='mso-tab-count:1'>     </span>DW
+H#0ACE<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>LABEL2: <span style='mso-tab-count:1'>    </span>DW
+H#0000<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>LABEL3: <span style='mso-tab-count:1'>    </span>DW
+H#FFFF<span style="mso-spacerun: yes">    </span>;UNSIGNED LARGEST NUMBER<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>LABEL4: <span style='mso-tab-count:1'>    </span>DW
+H#7FFF<span style="mso-spacerun: yes">    </span>;TWO'S COMPLEMENT LARGEST
+NUMBER<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>TABLE1: <span style='mso-tab-count:1'>    </span>DW
+H#0000<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>DW
+H#0011<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>DW
+H#0022<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>DW
+H#0033<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>DW
+H#0044<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>DW
+H#0055<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style="mso-spacerun: yes">    </span><span
+style='mso-tab-count:2'>        </span>DW H#0066<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>DW
+H#0077<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-tab-count:2'>            </span>DW
+H#0088<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>END</span></p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The first three lines setup the listing file titles and
+options. The next section defines a macro. Macros are like a text editors
+substitute string command or C’s #define feature. The macro example will be
+examined later. The next section sets up strings that can be used in place of
+constants in the assembly language program. The command ORG H#00 sets the
+origin to zero. This tells the assembler to start placing instructions at
+memory location zero.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The next several lines contain instructions. The line
+START: LOAD LABEL1%:, sets up a label, START, that has the value of address of
+the LOAD instruction. Labels are strings used to mark locations in an assembly
+language program. Not every instruction needs a label. If you need to branch to
+an instruction or refer to a data value, a label is typically used. Using the
+actual address value is a bad practice since any modifications to the program
+could easily change all of the addresses. The string LOAD is recognized as an
+instruction from the definition file, so the assembly process emits a LOAD
+machine instruction with the proper values. LABEL1 is a label that specifies
+the load address for the instruction. LABEL1 is defined at the start of the
+next section of code. The”%:” after label instructs the assembler to right
+justify (“%”) and truncate (“:”) the extra bits of the label value so that it
+will fit into the 8-bit field in the instruction. A few lines down, note that
+simple expressions involving labels such as (TABLE1 + 3)%: are also allowed.
+The line JUMP START&lt;%: generates a PC relative address value. “&lt;” is a
+special character to indicate PC relative. This means that the address stored
+in the instruction has the address of the instruction subtracted from the label
+value. Many computers have PC relative branch instructions since they save
+address bits. “$” is a special symbol in many assemblers that means the current
+address.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The final section sets up the variable for the program. An
+ORG statement is used to keep the data area away from the instruction area.
+Labels are used to identify variables and the DW directive is used to reserve a
+word in memory and define an initial value for memory. END is commonly used in
+assemblers to indicate the end of the source file.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The Macro ECHO is defined in the macro section at the
+beginning of the program. Macros are used like a substitute string command in a
+text editor. Macros must be defined before they are called. The macro is
+expanded into the text string defined between the MACRO and ENDM directive.
+Don’t forget ENDM or the entire program will become a macro.<span
+style="mso-spacerun: yes">  </span>In the case of this macro, whenever the
+string ECHO <i>number</i> is encountered in the source file it will be replaced
+with IN <i>number </i>and OUT <i>number. Number </i>is an argument to the
+macro. No arguments or multiple arguments separated by commas are also
+supported. All macros are expanded at the start of the assembly process prior
+to any other operation. Examine the listing file to see the Macro expansion.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The *.def files and the *.src files can be created using
+any text editor. A sample assembly listing file is shown below. <span
+style='mso-fareast-font-family:"MS Mincho"'><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>Addr<span style="mso-spacerun: yes">      
+</span>Line EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRA<span
+style="mso-spacerun: yes">     </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>1 TITLE<span style='mso-tab-count:1'>     </span>
+EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>2 LIST F,W<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>3 LINES 50<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>4 ;*********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>5 ; MACROS<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>6 ;*********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>7 ECHO:<span style="mso-spacerun: yes">  
+</span>MACRO<span style="mso-spacerun: yes">   </span>PORT<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>8<span style="mso-spacerun: yes">        
+</span>IN<span style="mso-spacerun: yes">      </span>PORT<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">               </span>9<span style="mso-spacerun: yes">        
+</span>OUT<span style="mso-spacerun: yes">     </span>PORT<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>10<span style="mso-spacerun: yes">        
+</span>ENDM<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun: yes">       
+</span><span style="mso-spacerun: yes">      </span>11
+;*********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>12 ; CONSTANTS<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>13 ;*********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>14 CON1:<span style='mso-tab-count:1'>     </span>
+EQU<span style='mso-tab-count:1'>   </span>2<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>15 DISPLAY: <span style='mso-tab-count:1'> </span><span
+style="mso-spacerun: yes"> </span>EQU<span style="mso-spacerun: yes">   
+</span>H#00<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>16 SWITCH:<span style='mso-tab-count:1'>   </span>
+EQU<span style="mso-spacerun: yes">    </span>H#01<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>17 ;*********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>18 ; PROGRAM AREA<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>19 ;*********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00000<span style="mso-spacerun:
+yes">         </span>20 <span style='mso-tab-count:2'>          </span>ORG H#00<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00000 0280<span style="mso-spacerun:
+yes">    </span>21 START:<span style='mso-tab-count:1'>    </span>LOAD LABEL1%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00001 0B01<span style="mso-spacerun:
+yes">    </span>22<span style="mso-spacerun: yes">         </span><span
+style='mso-tab-count:1'>  </span>ADDI 1%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00002 0C01<span style="mso-spacerun:
+yes">    </span>23 <span style='mso-tab-count:2'>          </span>SHL<span
+style="mso-spacerun: yes">  </span>1<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00003 0D02<span style="mso-spacerun:
+yes">    </span>24 <span style='mso-tab-count:2'>          </span>SHR<span
+style="mso-spacerun: yes">  </span>CON1%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00004 080F<span style="mso-spacerun:
+yes">    </span>25<span style="mso-spacerun: yes">         </span><span
+style='mso-tab-count:1'>  </span>AND<span style="mso-spacerun: yes"> 
+</span>H#0F<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00005 0780<span style="mso-spacerun:
+yes">    </span>26<span style="mso-spacerun: yes">         </span><span
+style='mso-tab-count:1'>  </span>OR<span style="mso-spacerun: yes">  
+</span>H#80<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00006 0581<span style="mso-spacerun:
+yes">    </span>27 <span style='mso-tab-count:2'>          </span>SUBT LABEL2%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00007 0910<span style="mso-spacerun:
+yes">    </span>28 <span style='mso-tab-count:2'>          </span>JPOS ENDP%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00008 0682<span style="mso-spacerun:
+yes">    </span>29 <span style='mso-tab-count:2'>          </span>XOR<span
+style="mso-spacerun: yes">  </span>LABEL3%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00009 0087<span style="mso-spacerun:
+yes">    </span>30 <span style='mso-tab-count:2'>          </span>ADD<span
+style="mso-spacerun: yes">  </span>(TABLE1 + 3)%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0000A 0410<span style="mso-spacerun:
+yes">    </span>31 <span style='mso-tab-count:2'>          </span>JNEG ENDP%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0000B 0E01<span style="mso-spacerun:
+yes">    </span>32 <span style='mso-tab-count:2'>          </span>IN<span
+style="mso-spacerun: yes">   </span>SWITCH<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0000C 0F00<span style="mso-spacerun:
+yes">    </span>33 <span style='mso-tab-count:2'>          </span>OUT<span
+style="mso-spacerun: yes">  </span>DISPLAY<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>34 ; MACRO TEST<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>35<span style="mso-spacerun: yes">         </span><span
+style='mso-tab-count:1'>  </span>ECHO H#10<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0000D 0E10<span style="mso-spacerun:
+yes">    </span>35 +<span style="mso-spacerun: yes">         </span>IN<span
+style="mso-spacerun: yes">      </span>H#10<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0000E 0F10<span style="mso-spacerun:
+yes">    </span>35 +<span style="mso-spacerun: yes">         </span>OUT<span
+style="mso-spacerun: yes">     </span>H#10<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>35 +<span style="mso-spacerun: yes">        
+</span>ENDM<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0000F 10C3<span style="mso-spacerun:
+yes">    </span>36 <span style="mso-spacerun: yes">        </span><span
+style='mso-tab-count:1'>  </span>WAIT B#11000011<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00010 0180<span style="mso-spacerun:
+yes">    </span>37 ENDP:<span style='mso-tab-count:1'>     </span>STORE
+LABEL1%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00011 0311<span style="mso-spacerun:
+yes">    </span>38 LOOP:<span style="mso-spacerun: yes">   </span><span
+style='mso-tab-count:1'>  </span>JUMP LOOP%: <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00012 0300<span style="mso-spacerun:
+yes">    </span>39<span style="mso-spacerun: yes">         </span><span
+style='mso-tab-count:1'>  </span>JUMP START%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00013 0313<span style="mso-spacerun:
+yes">    </span>40<span style="mso-spacerun: yes">         </span><span
+style='mso-tab-count:1'>  </span>JUMP $%:<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>41 ;********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>42 ; DATA FOR TEST PROGRAM<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>43 ;********************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00080<span style="mso-spacerun:
+yes">         </span>44<span style="mso-spacerun: yes">         </span><span
+style='mso-tab-count:1'>  </span>ORG H#80<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00080 0ACE<span style="mso-spacerun:
+yes">    </span>45 LABEL1:<span style='mso-tab-count:1'>   </span>DW H#0ACE<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00081 0000<span style="mso-spacerun:
+yes">    </span>46 LABEL2: <span style='mso-tab-count:1'>  </span>DW H#0000<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00082 FFFF<span style="mso-spacerun:
+yes">    </span>47 LABEL3: <span style='mso-tab-count:1'>  </span>DW
+H#FFFF<span style="mso-spacerun: yes">    </span>;UNSIGNED LARGEST NUMBER<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00083 7FFF<span style="mso-spacerun:
+yes">    </span>48 LABEL4: <span style='mso-tab-count:1'>  </span>DW
+H#7FFF<span style="mso-spacerun: yes">    </span>;TWO'S COMPLEMENT LARGEST
+NUMBER<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00084 0000<span style="mso-spacerun:
+yes">    </span>49 TABLE1: <span style='mso-tab-count:1'>  </span>DW H#0000<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00085 0011<span style="mso-spacerun:
+yes">    </span>50 <span style='mso-tab-count:2'>          </span>DW H#0011<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00086 0022<span style="mso-spacerun:
+yes">    </span>51 <span style='mso-tab-count:2'>          </span>DW H#0022<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00087 0033<span style="mso-spacerun:
+yes">    </span>52 <span style='mso-tab-count:2'>          </span>DW H#0033<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00088 0044<span style="mso-spacerun:
+yes">    </span>53 <span style='mso-tab-count:2'>          </span>DW H#0044<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>00089 0055<span style="mso-spacerun:
+yes">    </span>54 <span style='mso-tab-count:2'>          </span>DW H#0055<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0008A 0066<span style="mso-spacerun:
+yes">    </span>55<span style="mso-spacerun: yes">     </span><span
+style='mso-tab-count:1'>      </span>DW H#0066<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0008B 0077<span style="mso-spacerun:
+yes">    </span>56 <span style='mso-tab-count:2'>          </span>DW H#0077<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'>0008C 0088<span style="mso-spacerun:
+yes">    </span>57 <span style='mso-tab-count:2'>          </span>DW H#0088<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+mso-fareast-font-family:"MS Mincho"'><span style="mso-spacerun:
+yes">              </span>58 END<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style="mso-spacerun: yes"> </span></p>
+
+<p class=MsoBodyText>When developing a new definition file the machine codes in
+the listing should always be verified. On lines that emit memory data, the
+first column of hex numbers in the listing file is the memory address and the
+second column is the machine instruction or memory data. Any errors in machine
+instructions will cause serious time consuming problems later on.</p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1>WinTim Assembly Example </h1>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Here is an example using WinTim
+to assemble the program for the simple computer design. <a
+href="http://users.ece.gatech.edu/~hamblen/book/wintim/up1def.src">Up1def.</a>src
+is the definition file and <a
+href="http://users.ece.gatech.edu/~hamblen/book/wintim/up1asm.src">Up1asm</a>.src
+is the assembly language source file. Install and start WinTIM. Open the two
+source files. Under Assemble, Meta assemble Up1def.src first to process the
+definition file and then assemble Up1asm.src. Then View the listing or MIF file
+format to see the assembled code. If you are using the code in the Altera
+tools, save the MIF file format.</p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:6in;
+ height:318pt'>
+ <v:imagedata src="./WINTIM_files/image001.jpg" o:title="image002"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=424
+src="./WINTIM_files/image001.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>A more complex example using the MIPS computer</h2>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoBodyText>For a more complex instruction set consider the MIPS RISC
+processor. The MIPS has thirty-two registers and 32-bit instructions. In the
+definition file, it will be necessary to use equates to set up all of the
+register names and binary values. As an example for R4, the line R4: EQU
+B#00100 equates the string for register 4 to the five-bit binary value for
+four. Similar EQU lines will be needed for all of the remaining registers.</p>
+
+<p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>Next in the definition file, each of the instructions
+would be defined using a DEF command. The MIPS has only three instruction
+formats and all instructions are 32-bits. Only I-format LOAD and STORE instructions
+reference memory operands. R-format instructions such as ADD, AND, and OR
+perform operations only on data in the registers. They require two register
+operands, Rs and Rt. The result of the operation is stored in a third register,
+Rd. R-format shift and function fields are used as an extended opcode field.
+J-format instructions include the jump instructions.<b><o:p></o:p></b></p>
+
+<p class=TableTitle>Table 1<span style="mso-spacerun: yes">  </span>MIPS 32-bit
+Instruction Formats.<!--[if supportFields]><span style='mso-element:field-begin'></span>
+XE &quot;MIPS:instruction formats&quot; <![endif]--><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]--></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=686 style='width:411.3pt;
+ margin-left:.3in;border-collapse:collapse;border:none;mso-border-alt:solid windowtext 1.0pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=108 valign=bottom style='width:.9in;border-top:solid 1.0pt;
+  border-left:solid 1.0pt;border-bottom:double 2.25pt;border-right:double 2.25pt;
+  border-color:windowtext;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial'>Field Size<o:p></o:p></span></b></p>
+  </td>
+  <td width=83 valign=bottom style='width:49.5pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 2.25pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:double windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial'>6-bits<o:p></o:p></span></b></p>
+  </td>
+  <td width=75 valign=bottom style='width:45.0pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 2.25pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial'>5-bits<o:p></o:p></span></b></p>
+  </td>
+  <td width=83 valign=bottom style='width:49.5pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 2.25pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial'>5-bits<o:p></o:p></span></b></p>
+  </td>
+  <td width=128 valign=bottom style='width:76.5pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 2.25pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial'>5-bits<o:p></o:p></span></b></p>
+  </td>
+  <td width=120 valign=bottom style='width:1.0in;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 2.25pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial'>5-bits<o:p></o:p></span></b></p>
+  </td>
+  <td width=90 valign=bottom style='width:.75in;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 2.25pt;border-right:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial'>6-bits<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=108 valign=top style='width:.9in;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext .5pt;border-right:double windowtext 2.25pt;
+  mso-border-top-alt:double windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText style='margin-left:0in;tab-stops:center 5.4pt left 9.9pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  Arial'><span style='mso-tab-count:1'> </span>R<span style='mso-tab-count:
+  1'> </span>- Format<o:p></o:p></span></b></p>
+  </td>
+  <td width=83 valign=bottom style='width:49.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:double windowtext 2.25pt;mso-border-left-alt:double windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Opcode<o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=bottom style='width:45.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:double windowtext 2.25pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Rs<o:p></o:p></span></p>
+  </td>
+  <td width=83 valign=bottom style='width:49.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:double windowtext 2.25pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Rt<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=bottom style='width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:double windowtext 2.25pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Rd<o:p></o:p></span></p>
+  </td>
+  <td width=120 valign=bottom style='width:1.0in;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:double windowtext 2.25pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Shift<o:p></o:p></span></p>
+  </td>
+  <td width=90 valign=bottom style='width:.75in;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:double windowtext 2.25pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Function<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=108 valign=top style='width:.9in;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext .5pt;border-right:double windowtext 2.25pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText style='margin-left:0in;tab-stops:center 5.4pt left 9.9pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  Arial'><span style='mso-tab-count:1'> </span>I<span style='mso-tab-count:
+  1'> </span>- Format<o:p></o:p></span></b></p>
+  </td>
+  <td width=83 valign=bottom style='width:49.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:double windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Opcode<o:p></o:p></span></p>
+  </td>
+  <td width=75 valign=bottom style='width:45.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Rs<o:p></o:p></span></p>
+  </td>
+  <td width=83 valign=bottom style='width:49.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Rt<o:p></o:p></span></p>
+  </td>
+  <td width=338 colspan=3 valign=bottom style='width:202.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBlockText align=left style='text-align:left'><span
+  style='font-size:10.0pt;font-family:Arial'>Address/immediate value<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=108 valign=top style='width:.9in;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 2.25pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:15.25pt'>
+  <p class=MsoBlockText style='margin-left:0in;tab-stops:center 5.4pt left 9.9pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  Arial'><span style='mso-tab-count:1'> </span>J<span style='mso-tab-count:
+  1'> </span>- Format<o:p></o:p></span></b></p>
+  </td>
+  <td width=83 valign=bottom style='width:49.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:double windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoBlockText align=center style='margin-left:0in;text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Opcode<o:p></o:p></span></p>
+  </td>
+  <td width=495 colspan=5 valign=bottom style='width:297.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoBlockText align=left style='text-align:left'><span
+  style='font-size:10.0pt;font-family:Arial'>Branch target address<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBlockText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>R-Format instructions such as ADD could be defined as
+follows:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>ADD: DEF<span
+style="mso-spacerun: yes"> 
+</span>Q#00,5VB#00000,5VB#00000,5VB#00000,B#00000,B#100000<o:p></o:p></span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The Add instruction has an opcode of 0, three register
+arguments that default to R0, a shift field of 0, and a function code of 32. In
+assembly language, an example add instuction would appear as</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>ADD R1, R2, R3<o:p></o:p></span></p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The order of the register arguments normally used in the
+MIPS assembly language Rd,Rs,Rt is not the same as the Rs,Rt,Rd bit order in
+machine language. If desired, a macro can be used to swap the order of the
+arguments. Macros must have different names than instructions.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>I-format Instructions such as LW could be defined as
+follows:</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LW: DEF Q#43, 5VB#00000,
+5VB#00000,16VH#0000<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText>In the native MIPS assembler a typical LW example
+instruction would be represented as LW R1,Data_Label(R2). The optional
+parenthesis is used to specify the index register. In a meta assembler it is
+hard to create special character meanings. A third argument is probably the
+best solution. In the meta assembler’s assembly language an example LW would be</p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LW R1,R2,Data_Label%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText>In the native MIPS assembler the instruction LW R1,Label
+specifies R0, which is always the value 0, as the index register. Note that if
+the argument is not specified in the meta assembler the default value R0 will
+be used as in </p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LW R1,,Label%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText>Once again the argument order could be swapped using a
+macro. Here is an example:</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LW: MACRO ARG1, ARG2, ARG3<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>      </span>ILW ARG1, ARG3, ARG2<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><span style="mso-spacerun:
+yes">    </span>ENDM<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText>Since the macro is now named LW, the instruction
+definition would need to be renamed as follows:</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>ILW: DEF Q#43, 5VB#00000,
+5VB#00000,16VH#0000<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText>The previous LW instruction example would now become</p>
+
+<p class=MsoBodyText style='text-indent:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText style='text-indent:.5in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Courier New"'>LW R1,Label%:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText><b>Conditional Assembly Directives<o:p></o:p></b></p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>Advanced assembly language programmers often use
+conditional assembly directives. Conditional assembly directives can be used to
+automatically generate different versions of a program. Complex macros often
+use conditional assembly directives to generate different code based on their
+arguments. </p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>In WinTIM, the conditional assembly directive, IF <i>expression</i>
+ENDIF, is supported. If the <i>expression</i> is true, the following source
+lines until ENDIF are assembled, otherwise they are skipped. Note that <i>expression</i>
+must be evaluated at assembly time and not at run time. This means that <i>expression</i>
+cannot be a function of registers or other program variables that are defined
+only when the program runs on the computer. Here is an example using both
+macros and conditional assembly:</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'>FIB:<span style="mso-spacerun: yes">    </span>MACRO<span
+style="mso-spacerun: yes">   </span>N<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'>IF<span style="mso-spacerun: yes">      </span>N _NE_ 0<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'>ANS:<span style="mso-spacerun: yes">    </span>SET<span
+style="mso-spacerun: yes">    </span>ANS + N<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'><span style="mso-spacerun: yes">        </span>FIB<span
+style="mso-spacerun: yes">    </span>N-1<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'>ENDIF<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'>ENDM<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-align:justify'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"MS Mincho"'>The macro calls itself recursively with an argument of N-1 until N
+reaches zero. The conditional assembly directive skips the recursive call when
+N=0. SET is like EQU, but a symbol can be SET to different values during
+assembly. The next two lines initialize the ANS value and call the macro.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"MS Mincho"'><span
+style="mso-spacerun: yes"> </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'>ANS:<span style="mso-spacerun: yes">    </span>SET<span
+style="mso-spacerun: yes">     </span>0<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='margin-left:1.0in'><span style='mso-fareast-font-family:
+"MS Mincho"'><span style="mso-spacerun: yes">        </span>FIB<span
+style="mso-spacerun: yes">     </span>5<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-align:justify'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"MS Mincho"'>After 4 recursive macro calls, ANS is 0+5+4+3+2+1=15 and the macro
+exits. A macro could also use the value of a constant argument to select a
+different sequence of instructions.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-align:justify'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"MS Mincho"'>This document has provided a brief overview of the features of
+WinTIM. For further information or a more detailed explanation of any
+directive, refer to the extensive on-line help files provided with WinTIM.
+WinTIM was developed as a class project at Georgia Tech in CmpE 4510 by Eric
+Van Heest and Mitch Kispet.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:1.0in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

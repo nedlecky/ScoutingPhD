@@ -1,0 +1,1716 @@
+Project Information               c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 04/23/2002 06:25:35
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+CLA32B8
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+cla32b8   EPM9320ARC208-10 65       33       0      112     55          35 %
+
+User Pins:                 65       33       0  
+
+
+
+Project Information               c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+
+** FILE HIERARCHY **
+
+
+
+|cla8:clagen|
+|cla8:clagen~64|
+|cla8:clagen~94|
+|cla8:clagen~117|
+
+
+Device-Specific Information:      c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+cla32b8
+
+***** Logic for device 'cla32b8' compiled without errors.
+
+
+
+
+Device: EPM9320ARC208-10
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    User Code                                  = ffff
+    MultiVolt I/O                              = OFF
+
+              R R     R R R R R     R R       R R R         R                                                          
+              E E     E E E E E     E E       E E E         E                                                          
+              S S     S S S S S     S S       S S S         S                                                          
+              E E     E E E E E     E E V     E E E         E                 V                                 V      
+              R R     R R R R R     R R C     R R R         R                 C                                 C      
+              V V G s V V V V V   s V V C s   V V V G   s s V y     y     x x C x x x y x G y y x   s x   x     C      
+              E E N 1 E E E E E s 2 E E I 2 s E E E N s 1 1 E 3 y x 1 s x 3 3 I 2 2 2 1 2 N 2 2 1 x 2 1 x 1 y y I y x  
+              D D D 7 D D D D D 5 1 D D O 0 4 D D D D 8 1 4 D 1 0 1 3 7 4 1 0 O 8 6 4 8 0 D 0 7 1 9 3 3 7 2 9 4 O 2 6  
+            ----------------------------------------------------------------------------------------------------------_ 
+           / 208 206 204 202 200 198 196 194 192 190 188 186 184 182 180 178 176 174 172 170 168 166 164 162 160 158   |_ 
+          /    207 205 203 201 199 197 195 193 191 189 187 185 183 181 179 177 175 173 171 169 167 165 163 161 159 157    | 
+     s18 |  1                                                                                                         156 | x2 
+     s10 |  2                                                                                                         155 | x5 
+RESERVED |  3                                                                                                         154 | y8 
+      y1 |  4                                                                                                         153 | x0 
+   VCCIO |  5                                                                                                         152 | GND 
+    N.C. |  6                                                                                                         151 | N.C. 
+    N.C. |  7                                                                                                         150 | N.C. 
+    N.C. |  8                                                                                                         149 | N.C. 
+    N.C. |  9                                                                                                         148 | VCCINT 
+  VCCINT | 10                                                                                                         147 | N.C. 
+    N.C. | 11                                                                                                         146 | N.C. 
+    N.C. | 12                                                                                                         145 | N.C. 
+    N.C. | 13                                                                                                         144 | N.C. 
+     GND | 14                                                                                                         143 | GND 
+    N.C. | 15                                                                                                         142 | N.C. 
+    N.C. | 16                                                                                                         141 | N.C. 
+    N.C. | 17                                                                                                         140 | N.C. 
+    N.C. | 18                                                                                                         139 | VCCINT 
+  VCCINT | 19                                                                                                         138 | VCCIO 
+     GND | 20                                                                                                         137 | y19 
+     x18 | 21                                                                                                         136 | y15 
+     x17 | 22                                                                                                         135 | x19 
+     x16 | 23                                                                                                         134 | x15 
+     GND | 24                                                                                                         133 | GND 
+   VCCIO | 25                                                                                                         132 | GND 
+     s31 | 26                                                                                                         131 | s25 
+      s3 | 27                                            EPM9320ARC208-10                                             130 | s0 
+     s30 | 28                                                                                                         129 | s2 
+      s1 | 29                                                                                                         128 | VCCINT 
+  VCCINT | 30                                                                                                         127 | VCCIO 
+     GND | 31                                                                                                         126 | y25 
+     y26 | 32                                                                                                         125 | y23 
+     y24 | 33                                                                                                         124 | x23 
+     y22 | 34                                                                                                         123 | x22 
+     GND | 35                                                                                                         122 | GND 
+   VCCIO | 36                                                                                                         121 | GND 
+     s29 | 37                                                                                                         120 | s27 
+     y10 | 38                                                                                                         119 | x10 
+    cout | 39                                                                                                         118 | GND 
+     s28 | 40                                                                                                         117 | s22 
+     GND | 41                                                                                                         116 | GND 
+     GND | 42                                                                                                         115 | GND 
+     GND | 43                                                                                                         114 | GND 
+     GND | 44                                                                                                         113 | GND 
+  VCCINT | 45                                                                                                         112 | VCCINT 
+     GND | 46                                                                                                         111 | VCCIO 
+     GND | 47                                                                                                         110 | GND 
+    ^VPP | 48                                                                                                         109 | N.C. 
+    #TMS | 49                                                                                                         108 | #TDO 
+RESERVED | 50                                                                                                         107 | s26 
+     s19 | 51                                                                                                         106 | x8 
+     s13 | 52                                                                                                         105 | y5 
+         |      54  56  58  60  62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104  _| 
+          \   53  55  57  59  61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103   | 
+           \----------------------------------------------------------------------------------------------------------- 
+              R R V R R R R s R R R R R G R R s R R V R R s R R # # s s c y x G x x y y y V y y x y s x y y y x G y y  
+              E E C E E E E 1 E E E E E N E E 1 E E C E E 1 E E T T 9 6 i 1 2 N 2 2 1 3 2 C 2 1 2 2 2 1 1 1 7 3 N 3 6  
+              S S C S S S S 6 S S S S S D S S 2 S S C S S 5 S S C D     n 6 9 D 7 5 7 0 9 C 8 4 1 1 4 4 1 2     D      
+              E E I E E E E   E E E E E   E E   E E I E E   E E K I                       I                            
+              R R O R R R R   R R R R R   R R   R R O R R   R R                           O                            
+              V V   V V V V   V V V V V   V V   V V   V V   V V                                                        
+              E E   E E E E   E E E E E   E E   E E   E E   E E                                                        
+              D D   D D D D   D D D D D   D D   D D   D D   D D                                                        
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:      c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+cla32b8
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External    Shareable
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect  Expanders
+A1       2/16( 12%)   2/16( 12%)   0/16(  0%)    0/2    0/2      14/33( 42%)    2/16( 12%)  
+A2       2/16( 12%)   2/16( 12%)   0/16(  0%)    0/2    0/2      12/33( 36%)    2/16( 12%)  
+A3      13/16( 81%)   3/16( 18%)   0/16(  0%)    0/2    0/2      31/33( 93%)    8/16( 50%)  
+A4       1/16(  6%)   1/16(  6%)   0/16(  0%)    0/2    0/2      10/33( 30%)    1/16(  6%)  
+A5      12/16( 75%)   3/16( 18%)   0/16(  0%)    0/2    0/2      30/33( 90%)    6/16( 37%)  
+B1      14/16( 87%)   5/16( 31%)   0/16(  0%)    0/2    0/2      21/33( 63%)    5/16( 31%)  
+B2      15/16( 93%)   6/16( 37%)   0/16(  0%)    0/2    0/2      27/33( 81%)    9/16( 56%)  
+B3       1/16(  6%)   0/16(  0%)   1/16(  6%)    0/2    0/2       2/33(  6%)    0/16(  0%)  
+C1       3/16( 18%)   2/16( 12%)   1/16(  6%)    0/2    0/2      13/33( 39%)    2/16( 12%)  
+C2       2/16( 12%)   1/16(  6%)   1/16(  6%)    0/2    0/2      10/33( 30%)    1/16(  6%)  
+C3      14/16( 87%)   4/16( 25%)   1/16(  6%)    0/2    0/2      20/33( 60%)    5/16( 31%)  
+C4       7/16( 43%)   2/16( 12%)   1/16(  6%)    0/2    0/2      14/33( 42%)    2/16( 12%)  
+C5       3/16( 18%)   2/16( 12%)   1/16(  6%)    0/2    0/2      15/33( 45%)    3/16( 18%)  
+D2       1/16(  6%)   1/16(  6%)   0/16(  0%)    0/2    0/2      10/33( 30%)    1/16(  6%)  
+D3       1/16(  6%)   1/16(  6%)   0/16(  0%)    0/2    0/2       3/33(  9%)    0/16(  0%)  
+D4       6/16( 37%)   5/16( 31%)   0/16(  0%)    0/2    0/2      18/33( 54%)    2/16( 12%)  
+D5      15/16( 93%)   4/16( 25%)   0/16(  0%)    0/2    0/2      33/33(100%)    6/16( 37%)  
+
+
+Total dedicated input pins used:                 4/4      (100%)
+Total I/O pins used:                            94/128    ( 73%)
+Total logic cells used:                        112/320    ( 35%)
+Total shareable expanders used:                  2/320    (  1%)
+Total Turbo logic cells used:                  112/320    ( 35%)
+Total shareable expanders not available (n/a):  53/320    ( 16%)
+Average fan-in:                                  6.48
+Total fan-in:                                   726
+
+Total input pins required:                      65
+Total input I/O cell registers required:         0
+Total output pins required:                     33
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total logic cells required:                    112
+Total flipflops required:                        0
+Total product terms required:                  399
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           2
+Total packed registers required:                 0
+
+Synthesized logic cells:                        57/ 320   ( 17%)
+
+Logic Cell Counts
+
+Column:  01  02  03  04  05  Total
+ A:      2   2  13   1  12     30
+ B:     14  15   1   0   0     30
+ C:      3   2  14   7   3     29
+ D:      0   1   1   6  15     23
+
+Total:  19  20  29  14  30    112
+
+
+
+Device-Specific Information:      c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+cla32b8
+
+** INPUTS **
+
+                                               Shareable
+                                               Expanders     Fan-In    Fan-Out
+ Pin     LC   Row  Col  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  82      -    -    03      INPUT               0      0   0    0    0    0   21  cin
+ 153      -    -    --      INPUT               0      0   0    0    0    0   21  x0
+ 182      -    -    --      INPUT               0      0   0    0    0    0   20  x1
+ 156      -    -    01      INPUT               0      0   0    0    0    0   19  x2
+ 101      -    -    01      INPUT               0      0   0    0    0    0   18  x3
+ 179      -    -    03      INPUT               0      0   0    0    0    0   13  x4
+ 155      -    -    01      INPUT               0      0   0    0    0    0   13  x5
+ 157      -    -    01      INPUT               0      0   0    0    0    0   13  x6
+ 163      -    -    01      INPUT               0      0   0    0    0    0   13  x7
+ 106      -    -    01      INPUT               0      0   0    0    0    0   13  x8
+ 166      -    -    02      INPUT               0      0   0    0    0    0   12  x9
+ 119      -    A    --      INPUT               0      0   0    0    0    0   11  x10
+ 167      -    -    02      INPUT               0      0   0    0    0    0   10  x11
+ 162      -    -    01      INPUT               0      0   0    0    0    0    9  x12
+ 164      -    -    01      INPUT               0      0   0    0    0    0    8  x13
+  97      -    -    01      INPUT               0      0   0    0    0    0    7  x14
+ 134      -    D    --      INPUT               0      0   0    0    0    0    6  x15
+  23      -    D    --      INPUT               0      0   0    0    0    0    5  x16
+  22      -    D    --      INPUT               0      0   0    0    0    0    4  x17
+  21      -    D    --      INPUT               0      0   0    0    0    0    3  x18
+ 135      -    D    --      INPUT               0      0   0    0    0    0    2  x19
+ 171      -    -    02      INPUT               0      0   0    0    0    0    4  x20
+  94      -    -    02      INPUT               0      0   0    0    0    0   11  x21
+ 123      -    B    --      INPUT               0      0   0    0    0    0   11  x22
+ 124      -    B    --      INPUT               0      0   0    0    0    0   10  x23
+ 173      -    -    02      INPUT               0      0   0    0    0    0    9  x24
+  87      -    -    02      INPUT               0      0   0    0    0    0    4  x25
+ 174      -    -    02      INPUT               0      0   0    0    0    0    4  x26
+  86      -    -    02      INPUT               0      0   0    0    0    0    4  x27
+ 175      -    -    02      INPUT               0      0   0    0    0    0    4  x28
+  84      -    -    03      INPUT               0      0   0    0    0    0    4  x29
+ 177      -    -    03      INPUT               0      0   0    0    0    0    3  x30
+ 178      -    -    03      INPUT               0      0   0    0    0    0    2  x31
+ 183      -    -    --      INPUT               0      0   0    0    0    0   21  y0
+   4      -    -    --      INPUT               0      0   0    0    0    0   20  y1
+ 158      -    -    01      INPUT               0      0   0    0    0    0   19  y2
+ 103      -    -    01      INPUT               0      0   0    0    0    0   18  y3
+ 160      -    -    01      INPUT               0      0   0    0    0    0   13  y4
+ 105      -    -    01      INPUT               0      0   0    0    0    0   13  y5
+ 104      -    -    01      INPUT               0      0   0    0    0    0   13  y6
+ 100      -    -    01      INPUT               0      0   0    0    0    0   13  y7
+ 154      -    -    01      INPUT               0      0   0    0    0    0   13  y8
+ 161      -    -    01      INPUT               0      0   0    0    0    0   12  y9
+  38      -    A    --      INPUT               0      0   0    0    0    0   11  y10
+  98      -    -    01      INPUT               0      0   0    0    0    0   10  y11
+  99      -    -    01      INPUT               0      0   0    0    0    0    9  y12
+ 181      -    -    03      INPUT               0      0   0    0    0    0    8  y13
+  93      -    -    02      INPUT               0      0   0    0    0    0    7  y14
+ 136      -    D    --      INPUT               0      0   0    0    0    0    6  y15
+  83      -    -    03      INPUT               0      0   0    0    0    0    5  y16
+  88      -    -    02      INPUT               0      0   0    0    0    0    4  y17
+ 172      -    -    02      INPUT               0      0   0    0    0    0    3  y18
+ 137      -    D    --      INPUT               0      0   0    0    0    0    2  y19
+ 169      -    -    02      INPUT               0      0   0    0    0    0    4  y20
+  95      -    -    02      INPUT               0      0   0    0    0    0   11  y21
+  34      -    B    --      INPUT               0      0   0    0    0    0   11  y22
+ 125      -    B    --      INPUT               0      0   0    0    0    0   10  y23
+  33      -    B    --      INPUT               0      0   0    0    0    0    9  y24
+ 126      -    B    --      INPUT               0      0   0    0    0    0    4  y25
+  32      -    B    --      INPUT               0      0   0    0    0    0    4  y26
+ 168      -    -    02      INPUT               0      0   0    0    0    0    4  y27
+  92      -    -    02      INPUT               0      0   0    0    0    0    4  y28
+  90      -    -    02      INPUT               0      0   0    0    0    0    4  y29
+  89      -    -    02      INPUT               0      0   0    0    0    0    3  y30
+ 184      -    -    03      INPUT               0      0   0    0    0    0    2  y31
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:      c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+cla32b8
+
+** OUTPUTS **
+
+                                               Shareable
+                                               Expanders     Fan-In    Fan-Out
+ Pin     LC   Row  Col  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  39      -    A    --     OUTPUT               0      0   0    0    1    0    0  cout
+ 130      -    C    --     OUTPUT               0      0   0    0    1    0    0  s0
+  29      -    C    --     OUTPUT               0      0   0    0    1    0    0  s1
+ 129      -    C    --     OUTPUT               0      0   0    0    1    0    0  s2
+  27      -    C    --     OUTPUT               0      0   0    0    1    0    0  s3
+ 193      -    -    04     OUTPUT               0      0   0    0    1    0    0  s4
+ 199      -    -    04     OUTPUT               0      0   0    0    1    0    0  s5
+  81      -    -    03     OUTPUT               0      0   0    0    1    0    0  s6
+ 180      -    -    03     OUTPUT               0      0   0    0    1    0    0  s7
+ 188      -    -    03     OUTPUT               0      0   0    0    1    0    0  s8
+  80      -    -    03     OUTPUT               0      0   0    0    1    0    0  s9
+   2      -    -    05     OUTPUT               0      0   0    0    1    0    0  s10
+ 187      -    -    03     OUTPUT               0      0   0    0    1    0    0  s11
+  69      -    -    04     OUTPUT               0      0   0    0    1    0    0  s12
+  52      -    -    05     OUTPUT               0      0   0    0    1    0    0  s13
+ 186      -    -    03     OUTPUT               0      0   0    0    1    0    0  s14
+  75      -    -    03     OUTPUT               0      0   0    0    1    0    0  s15
+  60      -    -    05     OUTPUT               0      0   0    0    1    0    0  s16
+ 205      -    -    05     OUTPUT               0      0   0    0    1    0    0  s17
+   1      -    -    05     OUTPUT               0      0   0    0    1    0    0  s18
+  51      -    -    05     OUTPUT               0      0   0    0    1    0    0  s19
+ 194      -    -    04     OUTPUT               0      0   0    0    1    0    0  s20
+ 198      -    -    04     OUTPUT               0      0   0    0    1    0    0  s21
+ 117      -    A    --     OUTPUT               0      0   0    0    1    0    0  s22
+ 165      -    -    02     OUTPUT               0      0   0    0    1    0    0  s23
+  96      -    -    02     OUTPUT               0      0   0    0    1    0    0  s24
+ 131      -    C    --     OUTPUT               0      0   0    0    1    0    0  s25
+ 107      -    -    01     OUTPUT               0      0   0    0    1    0    0  s26
+ 120      -    A    --     OUTPUT               0      0   0    0    1    0    0  s27
+  40      -    A    --     OUTPUT               0      0   0    0    1    0    0  s28
+  37      -    A    --     OUTPUT               0      0   0    0    1    0    0  s29
+  28      -    C    --     OUTPUT               0      0   0    0    1    0    0  s30
+  26      -    C    --     OUTPUT               0      0   0    0    1    0    0  s31
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:      c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+cla32b8
+
+** BURIED LOGIC **
+
+                                               Shareable
+                                               Expanders     Fan-In    Fan-Out
+ IOC     LC   Row  Col  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK Name
+   -      3    C    03        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:854
+   -      4    C    03        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:888
+   -      3    A    05        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:922
+   -      4    A    03        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:956
+   -      5    D    04        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:990
+   -      1    A    05        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:1024
+   -      2    A    03        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:1058
+   -      1    D    03        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~64|:1092
+   -     13    C    02       SOFT    s t        0      0   0    2    0    0    6  |CLA8:clagen~64|~1533~1
+   -      9    C    03       SOFT    s t        0      0   0    2    0    0    4  |CLA8:clagen~64|~1533~2
+   -      8    C    03       SOFT    s t        0      0   0    2    0    0    3  |CLA8:clagen~64|~1533~3
+   -      7    C    03       SOFT    s t        0      0   0    2    0    0    2  |CLA8:clagen~64|~1533~4
+   -      6    C    03       SOFT    s t        0      0   0    2    0    0    2  |CLA8:clagen~64|~1533~5
+   -     11    C    03        XOR      t !      1      0   1    9    5    0    1  |CLA8:clagen~64|:1533
+   -      6    A    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1562~1
+   -      4    A    05       SOFT    s t        0      0   0    3    1    0    1  |CLA8:clagen~64|~1562~2
+   -      5    A    05        OR2      t        1      0   1    8    1    0    1  |CLA8:clagen~64|:1562
+   -      1    A    03        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1599~1
+   -      5    A    03        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1599~2
+   -      6    A    03        OR2      t        0      0   0    3    2    0    1  |CLA8:clagen~64|:1599
+   -     16    A    02        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1646~1
+   -      4    C    01        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1646~2
+   -      6    D    04        OR2      t        1      0   1    5    2    0    1  |CLA8:clagen~64|:1646
+   -      7    A    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1705~1
+   -      8    A    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1705~2
+   -     10    A    05       SOFT    s t        0      0   0    1    2    0    1  |CLA8:clagen~64|~1705~3
+   -      9    A    05        OR2      t        0      0   0    6    1    0    1  |CLA8:clagen~64|:1705
+   -      7    A    03        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1778~1
+   -      8    A    03        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1778~2
+   -      9    A    03       SOFT    s t        0      0   0    1    2    0    1  |CLA8:clagen~64|~1778~3
+   -     10    A    03        OR2      t        1      0   1    8    1    0    1  |CLA8:clagen~64|:1778
+   -     11    A    03        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1867~1
+   -     12    A    03        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1867~2
+   -     13    A    03       SOFT    s t        0      0   0    3    2    0    1  |CLA8:clagen~64|~1867~3
+   -      3    A    03        OR2      t        1      0   1    8    1    0    1  |CLA8:clagen~64|:1867
+   -     10    D    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1974~1
+   -      7    A    02        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1974~2
+   -      3    C    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~64|~1974~3
+   -      5    D    05        OR2      t        1      0   1    3    3    0    1  |CLA8:clagen~64|:1974
+   -      1    D    05        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~94|:854
+   -      2    D    05        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~94|:888
+   -      3    D    05        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~94|:922
+   -      4    D    05        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~94|:956
+   -      2    D    04        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~94|:990
+   -      4    D    04        XOR      t        0      0   0    2    2    1    0  |CLA8:clagen~94|:1024
+   -      9    B    02        XOR      t        0      0   0    2    3    1    0  |CLA8:clagen~94|:1058
+   -      2    B    02        XOR      t        2      0   1    8    2    1    0  |CLA8:clagen~94|:1092
+   -      9    D    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1533~1
+   -      6    A    01        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1533~2
+   -      3    C    02        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1533~3
+   -      8    D    05       SOFT    s t        0      0   0    1    3    0    1  |CLA8:clagen~94|~1533~4
+   -      7    D    05        OR2      t        0      0   0    4    1    0    1  |CLA8:clagen~94|:1533
+   -      6    D    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1562~1
+   -     16    A    04        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1562~2
+   -      2    C    01        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1562~3
+   -     14    D    05       SOFT    s t        0      0   0    1    3    0    1  |CLA8:clagen~94|~1562~4
+   -     15    D    05        OR2      t        0      0   0    6    1    0    1  |CLA8:clagen~94|:1562
+   -     11    D    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1599~1
+   -      1    A    01        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1599~2
+   -      5    C    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1599~3
+   -     13    D    05       SOFT    s t        0      0   0    1    3    0    1  |CLA8:clagen~94|~1599~4
+   -     12    D    05        OR2      t        1      0   1    8    1    0    1  |CLA8:clagen~94|:1599
+   -      4    D    02        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1646~1
+   -     11    A    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1646~2
+   -     12    A    05        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~94|~1646~3
+   -      2    A    05       SOFT    s t        0      0   0    3    3    0    1  |CLA8:clagen~94|~1646~4
+   -      3    D    04        OR2      t        1      0   1    8    1    0   13  |CLA8:clagen~94|:1646
+   -     14    B    02       SOFT    s t        0      0   0    2    0    0    2  |CLA8:clagen~117|~854~1
+   -     13    B    02       SOFT    s t        0      0   0    2    0    0    2  |CLA8:clagen~117|~854~2
+   -      1    B    02        XOR      t        1      0   0    4    4    1    0  |CLA8:clagen~117|:854
+   -     12    B    02       SOFT    s t        0      0   0    2    2    0    1  |CLA8:clagen~117|~888~1
+   -      8    B    02       SOFT    s t        0      0   0    2    0    0    1  |CLA8:clagen~117|~888~2
+   -     15    B    02        XOR      t        1      0   1    6    3    1    0  |CLA8:clagen~117|:888
+   -      3    B    01        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~117|:922
+   -     16    B    01        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~117|:956
+   -     13    B    01        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~117|:990
+   -     12    B    01        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~117|:1024
+   -      9    B    01        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~117|:1058
+   -     11    B    02        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen~117|:1092
+   -     10    B    01        XOR      t !      1      0   1    8    3    0    1  |CLA8:clagen~117|:1562
+   -      8    B    01        XOR      t !      1      0   1    8    4    0    1  |CLA8:clagen~117|:1599
+   -      7    B    01        XOR      t !      1      0   1    8    5    0    1  |CLA8:clagen~117|:1646
+   -      6    B    01        XOR      t !      1      0   1    8    6    0    1  |CLA8:clagen~117|:1705
+   -      2    B    03       SOFT    s t        0      0   0    2    0    0    6  |CLA8:clagen~117|~1778~1
+   -      5    B    01       SOFT    s t        0      0   0    2    0    0    4  |CLA8:clagen~117|~1778~2
+   -      4    B    01       SOFT    s t        0      0   0    2    0    0    3  |CLA8:clagen~117|~1778~3
+   -      2    B    01       SOFT    s t        0      0   0    2    0    0    2  |CLA8:clagen~117|~1778~4
+   -      1    B    01       SOFT    s t        0      0   0    2    0    0    1  |CLA8:clagen~117|~1778~5
+   -     11    B    01        XOR      t !      1      0   1    8    7    0    1  |CLA8:clagen~117|:1778
+   -      7    B    02        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~117|~1867~1
+   -      5    B    02       SOFT    s t        0      0   0    2    3    0    1  |CLA8:clagen~117|~1867~2
+   -      1    D    04       SOFT    s t        0      0   0    2    0    0   10  |CLA8:clagen~117|~1867~3
+   -      3    B    02        OR2      t        1      0   1    8    1    0    1  |CLA8:clagen~117|:1867
+   -      4    B    02        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~117|~1974~1
+   -      6    B    02        OR2    s t        1      0   1   10    0    0    1  |CLA8:clagen~117|~1974~2
+   -     10    B    02        OR2      t        1      0   1    4    3    1    0  |CLA8:clagen~117|:1974
+   -     10    C    01        XOR      t        0      0   0    3    0    1    0  |CLA8:clagen|:854
+   -      4    C    05        XOR      t        1      0   1    5    0    1    0  |CLA8:clagen|:888
+   -      3    C    04       SOFT    s t        0      0   0    2    0    0    1  |CLA8:clagen|~922~1
+   -      9    C    04        XOR      t        0      0   0    5    1    1    0  |CLA8:clagen|:922
+   -      5    C    03       SOFT    s t        0      0   0    2    0    0    1  |CLA8:clagen|~956~1
+   -     10    C    03        XOR      t        1      0   1    7    2    1    0  |CLA8:clagen|:956
+   -      4    C    04       SOFT    s t        0      0   0    3    0    0    1  |CLA8:clagen|~990~1
+   -      6    C    04       SOFT    s t        0      0   0    2    0    0    1  |CLA8:clagen|~990~2
+   -      1    C    04        XOR      t        1      0   1    6    3    1    0  |CLA8:clagen|:990
+   -      2    C    04        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen|:1024
+   -      1    C    03        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen|:1058
+   -      2    C    03        XOR      t        0      0   0    2    1    1    0  |CLA8:clagen|:1092
+   -      5    C    04        XOR      t !      1      0   1    9    1    0    1  |CLA8:clagen|:1705
+   -     12    C    03        XOR      t !      1      0   1    9    2    0    1  |CLA8:clagen|:1778
+   -     13    C    03        XOR      t !      1      0   1    9    3    0    1  |CLA8:clagen|:1867
+   -     14    C    03        XOR      t !      1      0   1    9    4    0    1  |CLA8:clagen|:1974
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:      c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+cla32b8
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+         FastTrack                                 
+Row     Interconnect    Input Pins     Output Pins     Bidir Pins
+A:      38/ 96( 39%)    2/16( 12%)      5/16( 31%)     0/16(  0%)
+B:      27/ 96( 28%)    7/16( 43%)      0/16(  0%)     0/16(  0%)
+C:      29/ 96( 30%)    0/16(  0%)      7/16( 43%)     0/16(  0%)
+D:      41/ 96( 42%)    7/16( 43%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:     28/48( 58%)     19/20( 95%)      1/20(  5%)       0/20(  0%)
+02:     28/48( 58%)     18/20( 90%)      2/20( 10%)       0/20(  0%)
+03:     17/48( 35%)     8/20( 40%)      7/20( 35%)       0/20(  0%)
+04:      8/48( 16%)     0/20(  0%)      5/20( 25%)       0/20(  0%)
+05:      9/48( 18%)     0/20(  0%)      6/20( 30%)       0/20(  0%)
+
+
+Device-Specific Information:      c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+cla32b8
+
+** EQUATIONS **
+
+cin      : INPUT;
+x0       : INPUT;
+x1       : INPUT;
+x2       : INPUT;
+x3       : INPUT;
+x4       : INPUT;
+x5       : INPUT;
+x6       : INPUT;
+x7       : INPUT;
+x8       : INPUT;
+x9       : INPUT;
+x10      : INPUT;
+x11      : INPUT;
+x12      : INPUT;
+x13      : INPUT;
+x14      : INPUT;
+x15      : INPUT;
+x16      : INPUT;
+x17      : INPUT;
+x18      : INPUT;
+x19      : INPUT;
+x20      : INPUT;
+x21      : INPUT;
+x22      : INPUT;
+x23      : INPUT;
+x24      : INPUT;
+x25      : INPUT;
+x26      : INPUT;
+x27      : INPUT;
+x28      : INPUT;
+x29      : INPUT;
+x30      : INPUT;
+x31      : INPUT;
+y0       : INPUT;
+y1       : INPUT;
+y2       : INPUT;
+y3       : INPUT;
+y4       : INPUT;
+y5       : INPUT;
+y6       : INPUT;
+y7       : INPUT;
+y8       : INPUT;
+y9       : INPUT;
+y10      : INPUT;
+y11      : INPUT;
+y12      : INPUT;
+y13      : INPUT;
+y14      : INPUT;
+y15      : INPUT;
+y16      : INPUT;
+y17      : INPUT;
+y18      : INPUT;
+y19      : INPUT;
+y20      : INPUT;
+y21      : INPUT;
+y22      : INPUT;
+y23      : INPUT;
+y24      : INPUT;
+y25      : INPUT;
+y26      : INPUT;
+y27      : INPUT;
+y28      : INPUT;
+y29      : INPUT;
+y30      : INPUT;
+y31      : INPUT;
+
+-- Node name is 'cout' 
+-- Equation name is 'cout', type is output 
+cout     =  _LC10_B2;
+
+-- Node name is 's0' 
+-- Equation name is 's0', type is output 
+s0       =  _LC10_C1;
+
+-- Node name is 's1' 
+-- Equation name is 's1', type is output 
+s1       =  _LC4_C5;
+
+-- Node name is 's2' 
+-- Equation name is 's2', type is output 
+s2       =  _LC9_C4;
+
+-- Node name is 's3' 
+-- Equation name is 's3', type is output 
+s3       =  _LC10_C3;
+
+-- Node name is 's4' 
+-- Equation name is 's4', type is output 
+s4       =  _LC1_C4;
+
+-- Node name is 's5' 
+-- Equation name is 's5', type is output 
+s5       =  _LC2_C4;
+
+-- Node name is 's6' 
+-- Equation name is 's6', type is output 
+s6       =  _LC1_C3;
+
+-- Node name is 's7' 
+-- Equation name is 's7', type is output 
+s7       =  _LC2_C3;
+
+-- Node name is 's8' 
+-- Equation name is 's8', type is output 
+s8       =  _LC3_C3;
+
+-- Node name is 's9' 
+-- Equation name is 's9', type is output 
+s9       =  _LC4_C3;
+
+-- Node name is 's10' 
+-- Equation name is 's10', type is output 
+s10      =  _LC3_A5;
+
+-- Node name is 's11' 
+-- Equation name is 's11', type is output 
+s11      =  _LC4_A3;
+
+-- Node name is 's12' 
+-- Equation name is 's12', type is output 
+s12      =  _LC5_D4;
+
+-- Node name is 's13' 
+-- Equation name is 's13', type is output 
+s13      =  _LC1_A5;
+
+-- Node name is 's14' 
+-- Equation name is 's14', type is output 
+s14      =  _LC2_A3;
+
+-- Node name is 's15' 
+-- Equation name is 's15', type is output 
+s15      =  _LC1_D3;
+
+-- Node name is 's16' 
+-- Equation name is 's16', type is output 
+s16      =  _LC1_D5;
+
+-- Node name is 's17' 
+-- Equation name is 's17', type is output 
+s17      =  _LC2_D5;
+
+-- Node name is 's18' 
+-- Equation name is 's18', type is output 
+s18      =  _LC3_D5;
+
+-- Node name is 's19' 
+-- Equation name is 's19', type is output 
+s19      =  _LC4_D5;
+
+-- Node name is 's20' 
+-- Equation name is 's20', type is output 
+s20      =  _LC2_D4;
+
+-- Node name is 's21' 
+-- Equation name is 's21', type is output 
+s21      =  _LC4_D4;
+
+-- Node name is 's22' 
+-- Equation name is 's22', type is output 
+s22      =  _LC9_B2;
+
+-- Node name is 's23' 
+-- Equation name is 's23', type is output 
+s23      =  _LC2_B2;
+
+-- Node name is 's24' 
+-- Equation name is 's24', type is output 
+s24      =  _LC1_B2;
+
+-- Node name is 's25' 
+-- Equation name is 's25', type is output 
+s25      =  _LC15_B2;
+
+-- Node name is 's26' 
+-- Equation name is 's26', type is output 
+s26      =  _LC3_B1;
+
+-- Node name is 's27' 
+-- Equation name is 's27', type is output 
+s27      =  _LC16_B1;
+
+-- Node name is 's28' 
+-- Equation name is 's28', type is output 
+s28      =  _LC13_B1;
+
+-- Node name is 's29' 
+-- Equation name is 's29', type is output 
+s29      =  _LC12_B1;
+
+-- Node name is 's30' 
+-- Equation name is 's30', type is output 
+s30      =  _LC9_B1;
+
+-- Node name is 's31' 
+-- Equation name is 's31', type is output 
+s31      =  _LC11_B2;
+
+-- Node name is '|CLA8:clagen~64|:854' 
+-- Equation name is '_LC3_C3', type is buried 
+_LC3_C3  = LCELL( _EQ001 $  x8);
+  _EQ001 = !_LC14_C3 &  y8
+         #  _LC14_C3 & !y8;
+
+-- Node name is '|CLA8:clagen~64|:888' 
+-- Equation name is '_LC4_C3', type is buried 
+_LC4_C3  = LCELL( _EQ002 $  _LC11_C3);
+  _EQ002 =  x9 & !y9
+         # !x9 &  y9;
+
+-- Node name is '|CLA8:clagen~64|:922' 
+-- Equation name is '_LC3_A5', type is buried 
+_LC3_A5  = LCELL( _EQ003 $  _LC5_A5);
+  _EQ003 =  x10 & !y10
+         # !x10 &  y10;
+
+-- Node name is '|CLA8:clagen~64|:956' 
+-- Equation name is '_LC4_A3', type is buried 
+_LC4_A3  = LCELL( _EQ004 $  _LC6_A3);
+  _EQ004 =  x11 & !y11
+         # !x11 &  y11;
+
+-- Node name is '|CLA8:clagen~64|:990' 
+-- Equation name is '_LC5_D4', type is buried 
+_LC5_D4  = LCELL( _EQ005 $  _LC6_D4);
+  _EQ005 =  x12 & !y12
+         # !x12 &  y12;
+
+-- Node name is '|CLA8:clagen~64|:1024' 
+-- Equation name is '_LC1_A5', type is buried 
+_LC1_A5  = LCELL( _EQ006 $  _LC9_A5);
+  _EQ006 =  x13 & !y13
+         # !x13 &  y13;
+
+-- Node name is '|CLA8:clagen~64|:1058' 
+-- Equation name is '_LC2_A3', type is buried 
+_LC2_A3  = LCELL( _EQ007 $  _LC10_A3);
+  _EQ007 =  x14 & !y14
+         # !x14 &  y14;
+
+-- Node name is '|CLA8:clagen~64|:1092' 
+-- Equation name is '_LC1_D3', type is buried 
+_LC1_D3  = LCELL( _EQ008 $  _LC3_A3);
+  _EQ008 =  x15 & !y15
+         # !x15 &  y15;
+
+-- Node name is '|CLA8:clagen~64|~1533~1' 
+-- Equation name is '_LC13_C2', type is buried 
+-- synthesized logic cell 
+_LC13_C2 = LCELL( _EQ009 $  GND);
+  _EQ009 =  x4 &  y4;
+
+-- Node name is '|CLA8:clagen~64|~1533~2' 
+-- Equation name is '_LC9_C3', type is buried 
+-- synthesized logic cell 
+_LC9_C3  = LCELL( _EQ010 $  GND);
+  _EQ010 =  x5 &  y5;
+
+-- Node name is '|CLA8:clagen~64|~1533~3' 
+-- Equation name is '_LC8_C3', type is buried 
+-- synthesized logic cell 
+_LC8_C3  = LCELL( _EQ011 $  GND);
+  _EQ011 =  x6 &  y6;
+
+-- Node name is '|CLA8:clagen~64|~1533~4' 
+-- Equation name is '_LC7_C3', type is buried 
+-- synthesized logic cell 
+_LC7_C3  = LCELL( _EQ012 $  GND);
+  _EQ012 =  x7 &  y7;
+
+-- Node name is '|CLA8:clagen~64|~1533~5' 
+-- Equation name is '_LC6_C3', type is buried 
+-- synthesized logic cell 
+_LC6_C3  = LCELL( _EQ013 $  GND);
+  _EQ013 =  x3 &  y3;
+
+-- Node name is '|CLA8:clagen~64|:1533' 
+-- Equation name is '_LC11_C3', type is buried 
+!_LC11_C3 = _LC11_C3~NOT;
+_LC11_C3~NOT = LCELL( _EQ014 $  _EQ015);
+  _EQ014 = !cin & !_LC6_C3 & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x2 & 
+              y2
+         # !cin & !_LC6_C3 & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x1 & 
+              y1
+         # !cin & !_LC6_C3 & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x0 & 
+              y0
+         # !cin & !_LC6_C3 & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x8 & 
+              y8;
+  _EQ015 = !cin & !_LC6_C3 & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2;
+
+-- Node name is '|CLA8:clagen~64|~1562~1' 
+-- Equation name is '_LC6_A5', type is buried 
+-- synthesized logic cell 
+_LC6_A5  = LCELL( _EQ016 $  GND);
+  _EQ016 =  x4 &  y4
+         #  x5 &  y5
+         #  x6 &  y6
+         #  x7 &  y7
+         #  x9 &  y9;
+
+-- Node name is '|CLA8:clagen~64|~1562~2' 
+-- Equation name is '_LC4_A5', type is buried 
+-- synthesized logic cell 
+_LC4_A5  = LCELL( _EQ017 $  GND);
+  _EQ017 = !cin & !_LC6_A5 & !x3
+         # !cin & !_LC6_A5 & !y3;
+
+-- Node name is '|CLA8:clagen~64|:1562' 
+-- Equation name is '_LC5_A5', type is buried 
+_LC5_A5  = LCELL( _EQ018 $  GND);
+  _EQ018 =  x8 &  y8
+         #  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         # !_LC4_A5;
+
+-- Node name is '|CLA8:clagen~64|~1599~1' 
+-- Equation name is '_LC1_A3', type is buried 
+-- synthesized logic cell 
+_LC1_A3  = LCELL( _EQ019 $  GND);
+  _EQ019 =  x5 &  y5
+         #  x6 &  y6
+         #  x7 &  y7
+         #  x9 &  y9
+         #  x10 &  y10;
+
+-- Node name is '|CLA8:clagen~64|~1599~2' 
+-- Equation name is '_LC5_A3', type is buried 
+-- synthesized logic cell 
+_LC5_A3  = LCELL( _EQ020 $  GND);
+  _EQ020 =  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         #  x3 &  y3
+         #  x4 &  y4;
+
+-- Node name is '|CLA8:clagen~64|:1599' 
+-- Equation name is '_LC6_A3', type is buried 
+_LC6_A3  = LCELL( _EQ021 $  GND);
+  _EQ021 =  x8 &  y8
+         #  cin
+         #  _LC1_A3
+         #  _LC5_A3;
+
+-- Node name is '|CLA8:clagen~64|~1646~1' 
+-- Equation name is '_LC16_A2', type is buried 
+-- synthesized logic cell 
+_LC16_A2 = LCELL( _EQ022 $  GND);
+  _EQ022 =  x6 &  y6
+         #  x7 &  y7
+         #  x9 &  y9
+         #  x10 &  y10
+         #  x11 &  y11;
+
+-- Node name is '|CLA8:clagen~64|~1646~2' 
+-- Equation name is '_LC4_C1', type is buried 
+-- synthesized logic cell 
+_LC4_C1  = LCELL( _EQ023 $  GND);
+  _EQ023 =  x1 &  y1
+         #  x2 &  y2
+         #  x3 &  y3
+         #  x4 &  y4
+         #  x5 &  y5;
+
+-- Node name is '|CLA8:clagen~64|:1646' 
+-- Equation name is '_LC6_D4', type is buried 
+_LC6_D4  = LCELL( _EQ024 $  GND);
+  _EQ024 =  x8 &  y8
+         #  x0 &  y0
+         #  cin
+         #  _LC16_A2
+         #  _LC4_C1;
+
+-- Node name is '|CLA8:clagen~64|~1705~1' 
+-- Equation name is '_LC7_A5', type is buried 
+-- synthesized logic cell 
+_LC7_A5  = LCELL( _EQ025 $  GND);
+  _EQ025 =  x7 &  y7
+         #  x9 &  y9
+         #  x10 &  y10
+         #  x11 &  y11
+         #  x12 &  y12;
+
+-- Node name is '|CLA8:clagen~64|~1705~2' 
+-- Equation name is '_LC8_A5', type is buried 
+-- synthesized logic cell 
+_LC8_A5  = LCELL( _EQ026 $  GND);
+  _EQ026 =  x2 &  y2
+         #  x3 &  y3
+         #  x4 &  y4
+         #  x5 &  y5
+         #  x6 &  y6;
+
+-- Node name is '|CLA8:clagen~64|~1705~3' 
+-- Equation name is '_LC10_A5', type is buried 
+-- synthesized logic cell 
+_LC10_A5 = LCELL( _EQ027 $  GND);
+  _EQ027 = !cin & !_LC7_A5 & !_LC8_A5;
+
+-- Node name is '|CLA8:clagen~64|:1705' 
+-- Equation name is '_LC9_A5', type is buried 
+_LC9_A5  = LCELL( _EQ028 $  GND);
+  _EQ028 =  x8 &  y8
+         #  x0 &  y0
+         #  x1 &  y1
+         # !_LC10_A5;
+
+-- Node name is '|CLA8:clagen~64|~1778~1' 
+-- Equation name is '_LC7_A3', type is buried 
+-- synthesized logic cell 
+_LC7_A3  = LCELL( _EQ029 $  GND);
+  _EQ029 =  x9 &  y9
+         #  x10 &  y10
+         #  x11 &  y11
+         #  x12 &  y12
+         #  x13 &  y13;
+
+-- Node name is '|CLA8:clagen~64|~1778~2' 
+-- Equation name is '_LC8_A3', type is buried 
+-- synthesized logic cell 
+_LC8_A3  = LCELL( _EQ030 $  GND);
+  _EQ030 =  x3 &  y3
+         #  x4 &  y4
+         #  x5 &  y5
+         #  x6 &  y6
+         #  x7 &  y7;
+
+-- Node name is '|CLA8:clagen~64|~1778~3' 
+-- Equation name is '_LC9_A3', type is buried 
+-- synthesized logic cell 
+_LC9_A3  = LCELL( _EQ031 $  GND);
+  _EQ031 = !cin & !_LC7_A3 & !_LC8_A3;
+
+-- Node name is '|CLA8:clagen~64|:1778' 
+-- Equation name is '_LC10_A3', type is buried 
+_LC10_A3 = LCELL( _EQ032 $  GND);
+  _EQ032 =  x8 &  y8
+         #  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         # !_LC9_A3;
+
+-- Node name is '|CLA8:clagen~64|~1867~1' 
+-- Equation name is '_LC11_A3', type is buried 
+-- synthesized logic cell 
+_LC11_A3 = LCELL( _EQ033 $  GND);
+  _EQ033 =  x10 &  y10
+         #  x11 &  y11
+         #  x12 &  y12
+         #  x13 &  y13
+         #  x14 &  y14;
+
+-- Node name is '|CLA8:clagen~64|~1867~2' 
+-- Equation name is '_LC12_A3', type is buried 
+-- synthesized logic cell 
+_LC12_A3 = LCELL( _EQ034 $  GND);
+  _EQ034 =  x4 &  y4
+         #  x5 &  y5
+         #  x6 &  y6
+         #  x7 &  y7
+         #  x9 &  y9;
+
+-- Node name is '|CLA8:clagen~64|~1867~3' 
+-- Equation name is '_LC13_A3', type is buried 
+-- synthesized logic cell 
+_LC13_A3 = LCELL( _EQ035 $  GND);
+  _EQ035 = !cin & !_LC11_A3 & !_LC12_A3 & !x3
+         # !cin & !_LC11_A3 & !_LC12_A3 & !y3;
+
+-- Node name is '|CLA8:clagen~64|:1867' 
+-- Equation name is '_LC3_A3', type is buried 
+_LC3_A3  = LCELL( _EQ036 $  GND);
+  _EQ036 =  x8 &  y8
+         #  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         # !_LC13_A3;
+
+-- Node name is '|CLA8:clagen~64|~1974~1' 
+-- Equation name is '_LC10_D5', type is buried 
+-- synthesized logic cell 
+_LC10_D5 = LCELL( _EQ037 $  GND);
+  _EQ037 =  x11 &  y11
+         #  x12 &  y12
+         #  x13 &  y13
+         #  x14 &  y14
+         #  x15 &  y15;
+
+-- Node name is '|CLA8:clagen~64|~1974~2' 
+-- Equation name is '_LC7_A2', type is buried 
+-- synthesized logic cell 
+_LC7_A2  = LCELL( _EQ038 $  GND);
+  _EQ038 =  x5 &  y5
+         #  x6 &  y6
+         #  x7 &  y7
+         #  x9 &  y9
+         #  x10 &  y10;
+
+-- Node name is '|CLA8:clagen~64|~1974~3' 
+-- Equation name is '_LC3_C5', type is buried 
+-- synthesized logic cell 
+_LC3_C5  = LCELL( _EQ039 $  GND);
+  _EQ039 =  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         #  x3 &  y3
+         #  x4 &  y4;
+
+-- Node name is '|CLA8:clagen~64|:1974' 
+-- Equation name is '_LC5_D5', type is buried 
+_LC5_D5  = LCELL( _EQ040 $  GND);
+  _EQ040 =  x8 &  y8
+         #  cin
+         #  _LC10_D5
+         #  _LC7_A2
+         #  _LC3_C5;
+
+-- Node name is '|CLA8:clagen~94|:854' 
+-- Equation name is '_LC1_D5', type is buried 
+_LC1_D5  = LCELL( _EQ041 $  x16);
+  _EQ041 = !_LC5_D5 &  y16
+         #  _LC5_D5 & !y16;
+
+-- Node name is '|CLA8:clagen~94|:888' 
+-- Equation name is '_LC2_D5', type is buried 
+_LC2_D5  = LCELL( _EQ042 $  _LC7_D5);
+  _EQ042 =  x17 & !y17
+         # !x17 &  y17;
+
+-- Node name is '|CLA8:clagen~94|:922' 
+-- Equation name is '_LC3_D5', type is buried 
+_LC3_D5  = LCELL( _EQ043 $  _LC15_D5);
+  _EQ043 =  x18 & !y18
+         # !x18 &  y18;
+
+-- Node name is '|CLA8:clagen~94|:956' 
+-- Equation name is '_LC4_D5', type is buried 
+_LC4_D5  = LCELL( _EQ044 $  _LC12_D5);
+  _EQ044 =  x19 & !y19
+         # !x19 &  y19;
+
+-- Node name is '|CLA8:clagen~94|:990' 
+-- Equation name is '_LC2_D4', type is buried 
+_LC2_D4  = LCELL( _EQ045 $  _LC3_D4);
+  _EQ045 =  x20 & !y20
+         # !x20 &  y20;
+
+-- Node name is '|CLA8:clagen~94|:1024' 
+-- Equation name is '_LC4_D4', type is buried 
+_LC4_D4  = LCELL( _EQ046 $  _EQ047);
+  _EQ046 = !x21 & !y21
+         #  x21 &  y21;
+  _EQ047 = !_LC1_D4 & !_LC3_D4;
+
+-- Node name is '|CLA8:clagen~94|:1058' 
+-- Equation name is '_LC9_B2', type is buried 
+_LC9_B2  = LCELL( _EQ048 $  _EQ049);
+  _EQ048 = !x22 & !y22
+         #  x22 &  y22;
+  _EQ049 = !_LC1_D4 & !_LC3_D4 & !_LC13_B2;
+
+-- Node name is '|CLA8:clagen~94|:1092' 
+-- Equation name is '_LC2_B2', type is buried 
+_LC2_B2  = LCELL( _EQ050 $  _EQ051);
+  _EQ050 =  x21 &  y21
+         #  x22 &  y22
+         #  _LC3_D4
+         #  x20 &  y20;
+  _EQ051 = !_LC14_B2 &  _X001;
+  _X001  = EXP(!x23 & !y23);
+
+-- Node name is '|CLA8:clagen~94|~1533~1' 
+-- Equation name is '_LC9_D5', type is buried 
+-- synthesized logic cell 
+_LC9_D5  = LCELL( _EQ052 $  GND);
+  _EQ052 =  x11 &  y11
+         #  x12 &  y12
+         #  x13 &  y13
+         #  x14 &  y14
+         #  x15 &  y15;
+
+-- Node name is '|CLA8:clagen~94|~1533~2' 
+-- Equation name is '_LC6_A1', type is buried 
+-- synthesized logic cell 
+_LC6_A1  = LCELL( _EQ053 $  GND);
+  _EQ053 =  x5 &  y5
+         #  x6 &  y6
+         #  x7 &  y7
+         #  x9 &  y9
+         #  x10 &  y10;
+
+-- Node name is '|CLA8:clagen~94|~1533~3' 
+-- Equation name is '_LC3_C2', type is buried 
+-- synthesized logic cell 
+_LC3_C2  = LCELL( _EQ054 $  GND);
+  _EQ054 =  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         #  x3 &  y3
+         #  x4 &  y4;
+
+-- Node name is '|CLA8:clagen~94|~1533~4' 
+-- Equation name is '_LC8_D5', type is buried 
+-- synthesized logic cell 
+_LC8_D5  = LCELL( _EQ055 $  GND);
+  _EQ055 = !cin & !_LC3_C2 & !_LC6_A1 & !_LC9_D5;
+
+-- Node name is '|CLA8:clagen~94|:1533' 
+-- Equation name is '_LC7_D5', type is buried 
+_LC7_D5  = LCELL( _EQ056 $  GND);
+  _EQ056 =  x16 &  y16
+         #  x8 &  y8
+         # !_LC8_D5;
+
+-- Node name is '|CLA8:clagen~94|~1562~1' 
+-- Equation name is '_LC6_D5', type is buried 
+-- synthesized logic cell 
+_LC6_D5  = LCELL( _EQ057 $  GND);
+  _EQ057 =  x12 &  y12
+         #  x13 &  y13
+         #  x14 &  y14
+         #  x15 &  y15
+         #  x17 &  y17;
+
+-- Node name is '|CLA8:clagen~94|~1562~2' 
+-- Equation name is '_LC16_A4', type is buried 
+-- synthesized logic cell 
+_LC16_A4 = LCELL( _EQ058 $  GND);
+  _EQ058 =  x6 &  y6
+         #  x7 &  y7
+         #  x9 &  y9
+         #  x10 &  y10
+         #  x11 &  y11;
+
+-- Node name is '|CLA8:clagen~94|~1562~3' 
+-- Equation name is '_LC2_C1', type is buried 
+-- synthesized logic cell 
+_LC2_C1  = LCELL( _EQ059 $  GND);
+  _EQ059 =  x1 &  y1
+         #  x2 &  y2
+         #  x3 &  y3
+         #  x4 &  y4
+         #  x5 &  y5;
+
+-- Node name is '|CLA8:clagen~94|~1562~4' 
+-- Equation name is '_LC14_D5', type is buried 
+-- synthesized logic cell 
+_LC14_D5 = LCELL( _EQ060 $  GND);
+  _EQ060 = !cin & !_LC2_C1 & !_LC6_D5 & !_LC16_A4;
+
+-- Node name is '|CLA8:clagen~94|:1562' 
+-- Equation name is '_LC15_D5', type is buried 
+_LC15_D5 = LCELL( _EQ061 $  GND);
+  _EQ061 =  x16 &  y16
+         #  x8 &  y8
+         #  x0 &  y0
+         # !_LC14_D5;
+
+-- Node name is '|CLA8:clagen~94|~1599~1' 
+-- Equation name is '_LC11_D5', type is buried 
+-- synthesized logic cell 
+_LC11_D5 = LCELL( _EQ062 $  GND);
+  _EQ062 =  x13 &  y13
+         #  x14 &  y14
+         #  x15 &  y15
+         #  x17 &  y17
+         #  x18 &  y18;
+
+-- Node name is '|CLA8:clagen~94|~1599~2' 
+-- Equation name is '_LC1_A1', type is buried 
+-- synthesized logic cell 
+_LC1_A1  = LCELL( _EQ063 $  GND);
+  _EQ063 =  x7 &  y7
+         #  x9 &  y9
+         #  x10 &  y10
+         #  x11 &  y11
+         #  x12 &  y12;
+
+-- Node name is '|CLA8:clagen~94|~1599~3' 
+-- Equation name is '_LC5_C5', type is buried 
+-- synthesized logic cell 
+_LC5_C5  = LCELL( _EQ064 $  GND);
+  _EQ064 =  x2 &  y2
+         #  x3 &  y3
+         #  x4 &  y4
+         #  x5 &  y5
+         #  x6 &  y6;
+
+-- Node name is '|CLA8:clagen~94|~1599~4' 
+-- Equation name is '_LC13_D5', type is buried 
+-- synthesized logic cell 
+_LC13_D5 = LCELL( _EQ065 $  GND);
+  _EQ065 = !cin & !_LC1_A1 & !_LC5_C5 & !_LC11_D5;
+
+-- Node name is '|CLA8:clagen~94|:1599' 
+-- Equation name is '_LC12_D5', type is buried 
+_LC12_D5 = LCELL( _EQ066 $  GND);
+  _EQ066 =  x16 &  y16
+         #  x8 &  y8
+         #  x0 &  y0
+         #  x1 &  y1
+         # !_LC13_D5;
+
+-- Node name is '|CLA8:clagen~94|~1646~1' 
+-- Equation name is '_LC4_D2', type is buried 
+-- synthesized logic cell 
+_LC4_D2  = LCELL( _EQ067 $  GND);
+  _EQ067 =  x14 &  y14
+         #  x15 &  y15
+         #  x17 &  y17
+         #  x18 &  y18
+         #  x19 &  y19;
+
+-- Node name is '|CLA8:clagen~94|~1646~2' 
+-- Equation name is '_LC11_A5', type is buried 
+-- synthesized logic cell 
+_LC11_A5 = LCELL( _EQ068 $  GND);
+  _EQ068 =  x9 &  y9
+         #  x10 &  y10
+         #  x11 &  y11
+         #  x12 &  y12
+         #  x13 &  y13;
+
+-- Node name is '|CLA8:clagen~94|~1646~3' 
+-- Equation name is '_LC12_A5', type is buried 
+-- synthesized logic cell 
+_LC12_A5 = LCELL( _EQ069 $  GND);
+  _EQ069 =  x3 &  y3
+         #  x4 &  y4
+         #  x5 &  y5
+         #  x6 &  y6
+         #  x7 &  y7;
+
+-- Node name is '|CLA8:clagen~94|~1646~4' 
+-- Equation name is '_LC2_A5', type is buried 
+-- synthesized logic cell 
+_LC2_A5  = LCELL( _EQ070 $  GND);
+  _EQ070 = !cin & !_LC4_D2 & !_LC11_A5 & !_LC12_A5 & !x2
+         # !cin & !_LC4_D2 & !_LC11_A5 & !_LC12_A5 & !y2;
+
+-- Node name is '|CLA8:clagen~94|:1646' 
+-- Equation name is '_LC3_D4', type is buried 
+_LC3_D4  = LCELL( _EQ071 $  GND);
+  _EQ071 =  x16 &  y16
+         #  x8 &  y8
+         #  x0 &  y0
+         #  x1 &  y1
+         # !_LC2_A5;
+
+-- Node name is '|CLA8:clagen~117|~854~1' 
+-- Equation name is '_LC14_B2', type is buried 
+-- synthesized logic cell 
+_LC14_B2 = LCELL( _EQ072 $  GND);
+  _EQ072 =  x23 &  y23;
+
+-- Node name is '|CLA8:clagen~117|~854~2' 
+-- Equation name is '_LC13_B2', type is buried 
+-- synthesized logic cell 
+_LC13_B2 = LCELL( _EQ073 $  GND);
+  _EQ073 =  x21 &  y21;
+
+-- Node name is '|CLA8:clagen~117|:854' 
+-- Equation name is '_LC1_B2', type is buried 
+_LC1_B2  = LCELL( _EQ074 $  _EQ075);
+  _EQ074 = !x24 & !y24
+         #  x24 &  y24;
+  _EQ075 = !_LC1_D4 & !_LC3_D4 & !_LC13_B2 & !_LC14_B2 &  _X002;
+  _X002  = EXP( x22 &  y22);
+
+-- Node name is '|CLA8:clagen~117|~888~1' 
+-- Equation name is '_LC12_B2', type is buried 
+-- synthesized logic cell 
+_LC12_B2 = LCELL( _EQ076 $  GND);
+  _EQ076 = !_LC1_D4 & !_LC3_D4 & !x23
+         # !_LC1_D4 & !_LC3_D4 & !y23;
+
+-- Node name is '|CLA8:clagen~117|~888~2' 
+-- Equation name is '_LC8_B2', type is buried 
+-- synthesized logic cell 
+_LC8_B2  = LCELL( _EQ077 $  GND);
+  _EQ077 = !x25 & !y25;
+
+-- Node name is '|CLA8:clagen~117|:888' 
+-- Equation name is '_LC15_B2', type is buried 
+_LC15_B2 = LCELL( _EQ078 $  _EQ079);
+  _EQ078 =  x24 &  y24
+         #  x21 &  y21
+         #  x22 &  y22
+         # !_LC12_B2;
+  _EQ079 = !_LC2_B3 & !_LC8_B2;
+
+-- Node name is '|CLA8:clagen~117|:922' 
+-- Equation name is '_LC3_B1', type is buried 
+_LC3_B1  = LCELL( _EQ080 $  _LC10_B1);
+  _EQ080 =  x26 & !y26
+         # !x26 &  y26;
+
+-- Node name is '|CLA8:clagen~117|:956' 
+-- Equation name is '_LC16_B1', type is buried 
+_LC16_B1 = LCELL( _EQ081 $  _LC8_B1);
+  _EQ081 =  x27 & !y27
+         # !x27 &  y27;
+
+-- Node name is '|CLA8:clagen~117|:990' 
+-- Equation name is '_LC13_B1', type is buried 
+_LC13_B1 = LCELL( _EQ082 $  _LC7_B1);
+  _EQ082 =  x28 & !y28
+         # !x28 &  y28;
+
+-- Node name is '|CLA8:clagen~117|:1024' 
+-- Equation name is '_LC12_B1', type is buried 
+_LC12_B1 = LCELL( _EQ083 $  _LC6_B1);
+  _EQ083 =  x29 & !y29
+         # !x29 &  y29;
+
+-- Node name is '|CLA8:clagen~117|:1058' 
+-- Equation name is '_LC9_B1', type is buried 
+_LC9_B1  = LCELL( _EQ084 $  _LC11_B1);
+  _EQ084 =  x30 & !y30
+         # !x30 &  y30;
+
+-- Node name is '|CLA8:clagen~117|:1092' 
+-- Equation name is '_LC11_B2', type is buried 
+_LC11_B2 = LCELL( _EQ085 $  _LC3_B2);
+  _EQ085 =  x31 & !y31
+         # !x31 &  y31;
+
+-- Node name is '|CLA8:clagen~117|:1562' 
+-- Equation name is '_LC10_B1', type is buried 
+!_LC10_B1 = _LC10_B1~NOT;
+_LC10_B1~NOT = LCELL( _EQ086 $  _EQ087);
+  _EQ086 = !_LC1_D4 & !_LC2_B3 & !_LC3_D4 &  x23 &  y23
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 &  x22 &  y22
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 &  x21 &  y21
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 &  x24 &  y24;
+  _EQ087 = !_LC1_D4 & !_LC2_B3 & !_LC3_D4;
+
+-- Node name is '|CLA8:clagen~117|:1599' 
+-- Equation name is '_LC8_B1', type is buried 
+!_LC8_B1 = _LC8_B1~NOT;
+_LC8_B1~NOT = LCELL( _EQ088 $  _EQ089);
+  _EQ088 = !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC5_B1 &  x23 &  y23
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC5_B1 &  x22 &  y22
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC5_B1 &  x21 &  y21
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC5_B1 &  x24 &  y24;
+  _EQ089 = !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC5_B1;
+
+-- Node name is '|CLA8:clagen~117|:1646' 
+-- Equation name is '_LC7_B1', type is buried 
+!_LC7_B1 = _LC7_B1~NOT;
+_LC7_B1~NOT = LCELL( _EQ090 $  _EQ091);
+  _EQ090 = !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 &  x23 &  y23
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 &  x22 &  y22
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 &  x21 &  y21
+         # !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 &  x24 &  y24;
+  _EQ091 = !_LC1_D4 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1;
+
+-- Node name is '|CLA8:clagen~117|:1705' 
+-- Equation name is '_LC6_B1', type is buried 
+!_LC6_B1 = _LC6_B1~NOT;
+_LC6_B1~NOT = LCELL( _EQ092 $  _EQ093);
+  _EQ092 = !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 & 
+              x23 &  y23
+         # !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 & 
+              x22 &  y22
+         # !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 & 
+              x21 &  y21
+         # !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1 & 
+              x24 &  y24;
+  _EQ093 = !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & !_LC5_B1;
+
+-- Node name is '|CLA8:clagen~117|~1778~1' 
+-- Equation name is '_LC2_B3', type is buried 
+-- synthesized logic cell 
+_LC2_B3  = LCELL( _EQ094 $  GND);
+  _EQ094 =  x25 &  y25;
+
+-- Node name is '|CLA8:clagen~117|~1778~2' 
+-- Equation name is '_LC5_B1', type is buried 
+-- synthesized logic cell 
+_LC5_B1  = LCELL( _EQ095 $  GND);
+  _EQ095 =  x26 &  y26;
+
+-- Node name is '|CLA8:clagen~117|~1778~3' 
+-- Equation name is '_LC4_B1', type is buried 
+-- synthesized logic cell 
+_LC4_B1  = LCELL( _EQ096 $  GND);
+  _EQ096 =  x27 &  y27;
+
+-- Node name is '|CLA8:clagen~117|~1778~4' 
+-- Equation name is '_LC2_B1', type is buried 
+-- synthesized logic cell 
+_LC2_B1  = LCELL( _EQ097 $  GND);
+  _EQ097 =  x28 &  y28;
+
+-- Node name is '|CLA8:clagen~117|~1778~5' 
+-- Equation name is '_LC1_B1', type is buried 
+-- synthesized logic cell 
+_LC1_B1  = LCELL( _EQ098 $  GND);
+  _EQ098 =  x29 &  y29;
+
+-- Node name is '|CLA8:clagen~117|:1778' 
+-- Equation name is '_LC11_B1', type is buried 
+!_LC11_B1 = _LC11_B1~NOT;
+_LC11_B1~NOT = LCELL( _EQ099 $  _EQ100);
+  _EQ099 = !_LC1_B1 & !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & 
+             !_LC5_B1 &  x23 &  y23
+         # !_LC1_B1 & !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & 
+             !_LC5_B1 &  x22 &  y22
+         # !_LC1_B1 & !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & 
+             !_LC5_B1 &  x21 &  y21
+         # !_LC1_B1 & !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & 
+             !_LC5_B1 &  x24 &  y24;
+  _EQ100 = !_LC1_B1 & !_LC1_D4 & !_LC2_B1 & !_LC2_B3 & !_LC3_D4 & !_LC4_B1 & 
+             !_LC5_B1;
+
+-- Node name is '|CLA8:clagen~117|~1867~1' 
+-- Equation name is '_LC7_B2', type is buried 
+-- synthesized logic cell 
+_LC7_B2  = LCELL( _EQ101 $  GND);
+  _EQ101 =  x26 &  y26
+         #  x27 &  y27
+         #  x28 &  y28
+         #  x29 &  y29
+         #  x30 &  y30;
+
+-- Node name is '|CLA8:clagen~117|~1867~2' 
+-- Equation name is '_LC5_B2', type is buried 
+-- synthesized logic cell 
+_LC5_B2  = LCELL( _EQ102 $  GND);
+  _EQ102 = !_LC1_D4 & !_LC3_D4 & !_LC7_B2 & !x25
+         # !_LC1_D4 & !_LC3_D4 & !_LC7_B2 & !y25;
+
+-- Node name is '|CLA8:clagen~117|~1867~3' 
+-- Equation name is '_LC1_D4', type is buried 
+-- synthesized logic cell 
+_LC1_D4  = LCELL( _EQ103 $  GND);
+  _EQ103 =  x20 &  y20;
+
+-- Node name is '|CLA8:clagen~117|:1867' 
+-- Equation name is '_LC3_B2', type is buried 
+_LC3_B2  = LCELL( _EQ104 $  GND);
+  _EQ104 =  x24 &  y24
+         #  x21 &  y21
+         #  x22 &  y22
+         #  x23 &  y23
+         # !_LC5_B2;
+
+-- Node name is '|CLA8:clagen~117|~1974~1' 
+-- Equation name is '_LC4_B2', type is buried 
+-- synthesized logic cell 
+_LC4_B2  = LCELL( _EQ105 $  GND);
+  _EQ105 =  x27 &  y27
+         #  x28 &  y28
+         #  x29 &  y29
+         #  x30 &  y30
+         #  x31 &  y31;
+
+-- Node name is '|CLA8:clagen~117|~1974~2' 
+-- Equation name is '_LC6_B2', type is buried 
+-- synthesized logic cell 
+_LC6_B2  = LCELL( _EQ106 $  GND);
+  _EQ106 =  x21 &  y21
+         #  x22 &  y22
+         #  x23 &  y23
+         #  x25 &  y25
+         #  x26 &  y26;
+
+-- Node name is '|CLA8:clagen~117|:1974' 
+-- Equation name is '_LC10_B2', type is buried 
+_LC10_B2 = LCELL( _EQ107 $  GND);
+  _EQ107 =  x24 &  y24
+         #  _LC3_D4
+         #  x20 &  y20
+         #  _LC4_B2
+         #  _LC6_B2;
+
+-- Node name is '|CLA8:clagen|:854' 
+-- Equation name is '_LC10_C1', type is buried 
+_LC10_C1 = LCELL( _EQ108 $  x0);
+  _EQ108 = !cin &  y0
+         #  cin & !y0;
+
+-- Node name is '|CLA8:clagen|:888' 
+-- Equation name is '_LC4_C5', type is buried 
+_LC4_C5  = LCELL( _EQ109 $  y1);
+  _EQ109 =  cin & !x1
+         #  x0 & !x1 &  y0
+         # !cin &  x1 & !y0
+         # !cin & !x0 &  x1;
+
+-- Node name is '|CLA8:clagen|~922~1' 
+-- Equation name is '_LC3_C4', type is buried 
+-- synthesized logic cell 
+_LC3_C4  = LCELL( _EQ110 $  GND);
+  _EQ110 = !x2 & !y2
+         #  x2 &  y2;
+
+-- Node name is '|CLA8:clagen|:922' 
+-- Equation name is '_LC9_C4', type is buried 
+_LC9_C4  = LCELL( _EQ111 $ !_LC3_C4);
+  _EQ111 =  x0 &  y0
+         #  x1 &  y1
+         #  cin;
+
+-- Node name is '|CLA8:clagen|~956~1' 
+-- Equation name is '_LC5_C3', type is buried 
+-- synthesized logic cell 
+_LC5_C3  = LCELL( _EQ112 $  GND);
+  _EQ112 = !x3 & !y3;
+
+-- Node name is '|CLA8:clagen|:956' 
+-- Equation name is '_LC10_C3', type is buried 
+_LC10_C3 = LCELL( _EQ113 $  _EQ114);
+  _EQ113 =  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         #  cin;
+  _EQ114 = !_LC5_C3 & !_LC6_C3;
+
+-- Node name is '|CLA8:clagen|~990~1' 
+-- Equation name is '_LC4_C4', type is buried 
+-- synthesized logic cell 
+_LC4_C4  = LCELL( _EQ115 $  GND);
+  _EQ115 = !cin & !x3
+         # !cin & !y3;
+
+-- Node name is '|CLA8:clagen|~990~2' 
+-- Equation name is '_LC6_C4', type is buried 
+-- synthesized logic cell 
+_LC6_C4  = LCELL( _EQ116 $  GND);
+  _EQ116 = !x4 & !y4;
+
+-- Node name is '|CLA8:clagen|:990' 
+-- Equation name is '_LC1_C4', type is buried 
+_LC1_C4  = LCELL( _EQ117 $  _EQ118);
+  _EQ117 =  x0 &  y0
+         #  x1 &  y1
+         #  x2 &  y2
+         # !_LC4_C4;
+  _EQ118 = !_LC6_C4 & !_LC13_C2;
+
+-- Node name is '|CLA8:clagen|:1024' 
+-- Equation name is '_LC2_C4', type is buried 
+_LC2_C4  = LCELL( _EQ119 $  _LC5_C4);
+  _EQ119 =  x5 & !y5
+         # !x5 &  y5;
+
+-- Node name is '|CLA8:clagen|:1058' 
+-- Equation name is '_LC1_C3', type is buried 
+_LC1_C3  = LCELL( _EQ120 $  _LC12_C3);
+  _EQ120 =  x6 & !y6
+         # !x6 &  y6;
+
+-- Node name is '|CLA8:clagen|:1092' 
+-- Equation name is '_LC2_C3', type is buried 
+_LC2_C3  = LCELL( _EQ121 $  _LC13_C3);
+  _EQ121 =  x7 & !y7
+         # !x7 &  y7;
+
+-- Node name is '|CLA8:clagen|:1705' 
+-- Equation name is '_LC5_C4', type is buried 
+!_LC5_C4 = _LC5_C4~NOT;
+_LC5_C4~NOT = LCELL( _EQ122 $  _EQ123);
+  _EQ122 = !cin & !_LC13_C2 &  x3 &  y3
+         # !cin & !_LC13_C2 &  x2 &  y2
+         # !cin & !_LC13_C2 &  x1 &  y1
+         # !cin & !_LC13_C2 &  x0 &  y0;
+  _EQ123 = !cin & !_LC13_C2;
+
+-- Node name is '|CLA8:clagen|:1778' 
+-- Equation name is '_LC12_C3', type is buried 
+!_LC12_C3 = _LC12_C3~NOT;
+_LC12_C3~NOT = LCELL( _EQ124 $  _EQ125);
+  _EQ124 = !cin & !_LC9_C3 & !_LC13_C2 &  x3 &  y3
+         # !cin & !_LC9_C3 & !_LC13_C2 &  x2 &  y2
+         # !cin & !_LC9_C3 & !_LC13_C2 &  x1 &  y1
+         # !cin & !_LC9_C3 & !_LC13_C2 &  x0 &  y0;
+  _EQ125 = !cin & !_LC9_C3 & !_LC13_C2;
+
+-- Node name is '|CLA8:clagen|:1867' 
+-- Equation name is '_LC13_C3', type is buried 
+!_LC13_C3 = _LC13_C3~NOT;
+_LC13_C3~NOT = LCELL( _EQ126 $  _EQ127);
+  _EQ126 = !cin & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x3 &  y3
+         # !cin & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x2 &  y2
+         # !cin & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x1 &  y1
+         # !cin & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x0 &  y0;
+  _EQ127 = !cin & !_LC8_C3 & !_LC9_C3 & !_LC13_C2;
+
+-- Node name is '|CLA8:clagen|:1974' 
+-- Equation name is '_LC14_C3', type is buried 
+!_LC14_C3 = _LC14_C3~NOT;
+_LC14_C3~NOT = LCELL( _EQ128 $  _EQ129);
+  _EQ128 = !cin & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x3 &  y3
+         # !cin & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x2 &  y2
+         # !cin & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x1 &  y1
+         # !cin & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2 &  x0 &  y0;
+  _EQ129 = !cin & !_LC7_C3 & !_LC8_C3 & !_LC9_C3 & !_LC13_C2;
+
+
+
+Project Information               c:\vhdldesigns\ee231\22claadders\cla32b8.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX9000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:02:06
+   Partitioner                            00:00:01
+   Fitter                                 00:00:02
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:12
+   --------------------------             --------
+   Total Time                             00:02:21
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 14,284K

@@ -1,0 +1,59 @@
+TITLE	 EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+LIST F,W
+LINES 50
+;*********************************
+; MACROS
+;*********************************
+ECHO:   MACRO   PORT
+        IN      PORT
+        OUT     PORT
+        ENDM
+;*********************************
+; CONSTANTS
+;*********************************
+CON1:	 EQU	2
+DISPLAY: EQU    H#00
+SWITCH:	 EQU    H#01
+;*********************************
+; PROGRAM AREA
+;*********************************
+	ORG H#00
+START:	LOAD LABEL1%:
+        ADDI 1%:
+	SHL  1
+	SHR  CON1%:
+        AND  H#0F
+        OR   H#80
+	SUBT LABEL2%:
+	JPOS ENDP%:
+	XOR  LABEL3%:
+	ADD  (TABLE1 + 3)%:
+	JNEG ENDP%:
+	IN   SWITCH
+	OUT  DISPLAY
+; MACRO TEST
+        ECHO H#10
+        WAIT B#11000011
+ENDP:	STORE LABEL1%:
+LOOP:   JUMP LOOP%: 
+        JUMP START<%:
+        JUMP $%:
+;********************************
+; DATA FOR TEST PROGRAM
+;********************************
+        ORG H#80
+LABEL1:	DW H#0ACE
+LABEL2: DW H#0000
+LABEL3: DW H#FFFF    ;UNSIGNED LARGEST NUMBER
+LABEL4: DW H#7FFF    ;TWO'S COMPLEMENT LARGEST NUMBER
+TABLE1: DW H#0000
+	DW H#0011
+	DW H#0022
+	DW H#0033
+	DW H#0044
+	DW H#0055
+    	DW H#0066
+	DW H#0077
+	DW H#0088
+;CHAR:       DB H#41
+END

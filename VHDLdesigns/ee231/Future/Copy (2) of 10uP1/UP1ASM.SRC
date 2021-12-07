@@ -1,0 +1,22 @@
+TITLE	 EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+LIST F,W
+LINES 50
+
+;*********************************
+; PROGRAM AREA
+;*********************************
+		ORG H#00
+START:	LOAD	MEM10%:
+		ADD	MEM11%:
+		STORE	MEM12%:
+		LOAD	MEM12%:	; just to see if it worked
+LOOP:		JUMP	LOOP%: 
+
+;********************************
+; DATA FOR TEST PROGRAM
+;********************************
+		ORG H#10
+MEM10:	DW H#AAAA
+MEM11:	DW H#5555
+MEM12:	DW H#0000
+END

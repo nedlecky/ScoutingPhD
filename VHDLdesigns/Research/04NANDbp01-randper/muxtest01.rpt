@@ -1,0 +1,483 @@
+Project Information             e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 01/27/2002 11:10:43
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+muxtest01
+      EPM7032SLC44-5       4        2        0      12      10          37 %
+
+User Pins:                 4        2        0  
+
+
+
+Project Information             e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clk' chosen for auto global Clock
+
+
+Project Information             e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+
+** FILE HIERARCHY **
+
+
+
+|syn_mux:1|
+|lfsr8:2|
+
+
+Device-Specific Information:    e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+muxtest01
+
+***** Logic for device 'muxtest01' compiled without errors.
+
+
+
+
+Device: EPM7032SLC44-5
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+
+                                         R  R  
+                 e                       E  E  
+              e  _                       S  S  
+              _  m                       E  E  
+              p  i                       R  R  
+              l  n     V  G  G  G  c  G  V  V  
+              u  u     C  N  N  N  l  N  E  E  
+              s  s  x  C  D  D  D  k  D  D  D  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+    #TDI |  7                                39 | RESERVED 
+RESERVED |  8                                38 | #TDO 
+RESERVED |  9                                37 | RESERVED 
+     GND | 10                                36 | err 
+RESERVED | 11                                35 | VCC 
+RESERVED | 12         EPM7032SLC44-5         34 | y 
+    #TMS | 13                                33 | RESERVED 
+RESERVED | 14                                32 | #TCK 
+     VCC | 15                                31 | RESERVED 
+RESERVED | 16                                30 | GND 
+RESERVED | 17                                29 | RESERVED 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              R  R  R  R  G  V  R  R  R  R  R  
+              E  E  E  E  N  C  E  E  E  E  E  
+              S  S  S  S  D  C  S  S  S  S  S  
+              E  E  E  E        E  E  E  E  E  
+              R  R  R  R        R  R  R  R  R  
+              V  V  V  V        V  V  V  V  V  
+              E  E  E  E        E  E  E  E  E  
+              D  D  D  D        D  D  D  D  D  
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:    e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+muxtest01
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)   5/16( 31%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32    12/16( 75%)   4/16( 25%)  12/16( 75%)  13/36( 36%) 
+
+
+Total dedicated input pins used:                 1/4      ( 25%)
+Total I/O pins used:                             9/32     ( 28%)
+Total logic cells used:                         12/32     ( 37%)
+Total shareable expanders used:                 10/32     ( 31%)
+Total Turbo logic cells used:                   12/32     ( 37%)
+Total shareable expanders not available (n/a):   2/32     (  6%)
+Average fan-in:                                  4.16
+Total fan-in:                                    50
+
+Total input pins required:                       4
+Total fast input logic cells required:           0
+Total output pins required:                      2
+Total bidirectional pins required:               0
+Total reserved pins required                     4
+Total logic cells required:                     12
+Total flipflops required:                       11
+Total product terms required:                   36
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          10
+
+Synthesized logic cells:                         0/  32   (  0%)
+
+
+
+Device-Specific Information:    e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+muxtest01
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
+   5    (2)  (A)      INPUT               0      0   0    0    0    1    2  e_minus
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    2  e_plus
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    2  x
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:    e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+muxtest01
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  36     22    B         FF   +  t        0      0   0    3    4    0    0  err (|SYN_MUX:1|:16)
+  34     23    B     OUTPUT      t        0      0   0    1    2    0    0  y
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:    e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+muxtest01
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (41)    17    B       DFFE   +  t        0      0   0    0    1    0    1  |LFSR8:2|s7 (|LFSR8:2|:10)
+ (40)    18    B       DFFE   +  t        0      0   0    0    1    0    2  |LFSR8:2|s6 (|LFSR8:2|:11)
+ (39)    19    B       DFFE   +  t        0      0   0    0    1    0    2  |LFSR8:2|s5 (|LFSR8:2|:12)
+ (38)    20    B       DFFE   +  t        0      0   0    0    1    0    2  |LFSR8:2|s4 (|LFSR8:2|:13)
+ (37)    21    B       DFFE   +  t        0      0   0    0    1    0    2  |LFSR8:2|s3 (|LFSR8:2|:14)
+ (33)    24    B       DFFE   +  t        0      0   0    0    1    0    2  |LFSR8:2|s2 (|LFSR8:2|:15)
+ (26)    30    B       DFFE   +  t        0      0   0    0    1    1    4  |LFSR8:2|s1 (|LFSR8:2|:16)
+ (27)    29    B       DFFE   +  t        5      0   0    0    8    1    4  |LFSR8:2|s0 (|LFSR8:2|:17)
+ (29)    27    B       TFFE   +  t        1      0   1    3    4    2    2  |SYN_MUX:1|setup1 (|SYN_MUX:1|:13)
+ (32)    25    B       DFFE   +  t        6      0   1    3    4    2    2  |SYN_MUX:1|setup0 (|SYN_MUX:1|:14)
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:    e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+muxtest01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                 Logic cells placed in LAB 'B'
+        +----------------------- LC22 err
+        | +--------------------- LC17 |LFSR8:2|s7
+        | | +------------------- LC18 |LFSR8:2|s6
+        | | | +----------------- LC19 |LFSR8:2|s5
+        | | | | +--------------- LC20 |LFSR8:2|s4
+        | | | | | +------------- LC21 |LFSR8:2|s3
+        | | | | | | +----------- LC24 |LFSR8:2|s2
+        | | | | | | | +--------- LC30 |LFSR8:2|s1
+        | | | | | | | | +------- LC29 |LFSR8:2|s0
+        | | | | | | | | | +----- LC27 |SYN_MUX:1|setup1
+        | | | | | | | | | | +--- LC25 |SYN_MUX:1|setup0
+        | | | | | | | | | | | +- LC23 y
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> - - - - - - - - * - - - | - * | <-- |LFSR8:2|s7
+LC18 -> - * - - - - - - * - - - | - * | <-- |LFSR8:2|s6
+LC19 -> - - * - - - - - * - - - | - * | <-- |LFSR8:2|s5
+LC20 -> - - - * - - - - * - - - | - * | <-- |LFSR8:2|s4
+LC21 -> - - - - * - - - * - - - | - * | <-- |LFSR8:2|s3
+LC24 -> - - - - - * - - * - - - | - * | <-- |LFSR8:2|s2
+LC30 -> * - - - - - * - * * * - | - * | <-- |LFSR8:2|s1
+LC29 -> * - - - - - - * * * * - | - * | <-- |LFSR8:2|s0
+LC27 -> * - - - - - - - - * * * | - * | <-- |SYN_MUX:1|setup1
+LC25 -> * - - - - - - - - * * * | - * | <-- |SYN_MUX:1|setup0
+
+Pin
+43   -> - - - - - - - - - - - - | - - | <-- clk
+5    -> * - - - - - - - - * * - | - * | <-- e_minus
+6    -> * - - - - - - - - * * - | - * | <-- e_plus
+4    -> * - - - - - - - - * * * | - * | <-- x
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:    e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+muxtest01
+
+** EQUATIONS **
+
+clk      : INPUT;
+e_minus  : INPUT;
+e_plus   : INPUT;
+x        : INPUT;
+
+-- Node name is 'err' = '|SYN_MUX:1|errout' 
+-- Equation name is 'err', type is output 
+ err     = DFFE( _EQ001 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ001 =  e_minus & !e_plus &  _LC025 & !_LC027 & !_LC029 &  x
+         #  e_plus &  _LC025 & !_LC027 & !_LC029 &  _LC030 & !x
+         #  e_plus &  _LC027 & !_LC029 &  _LC030 &  x
+         #  e_minus & !e_plus &  _LC027 & !_LC029 & !x;
+
+-- Node name is 'y' 
+-- Equation name is 'y', location is LC023, type is output.
+ y       = LCELL( _EQ002 $ !_LC027);
+  _EQ002 =  _LC025 & !_LC027 & !x
+         #  _LC027 & !x;
+
+-- Node name is '|LFSR8:2|:17' = '|LFSR8:2|s0' 
+-- Equation name is '_LC029', type is buried 
+_LC029   = DFFE( _EQ003 $ !_LC017, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ003 =  _X001 &  _X002 &  _X003 &  _X004 &  _X005;
+  _X001  = EXP( _LC019 &  _LC020 &  _LC021);
+  _X002  = EXP(!_LC017 & !_LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC024 & 
+             !_LC029 & !_LC030);
+  _X003  = EXP( _LC019 & !_LC020 & !_LC021);
+  _X004  = EXP(!_LC019 &  _LC020 & !_LC021);
+  _X005  = EXP(!_LC019 & !_LC020 &  _LC021);
+
+-- Node name is '|LFSR8:2|:16' = '|LFSR8:2|s1' 
+-- Equation name is '_LC030', type is buried 
+_LC030   = DFFE( _LC029 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|LFSR8:2|:15' = '|LFSR8:2|s2' 
+-- Equation name is '_LC024', type is buried 
+_LC024   = DFFE( _LC030 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|LFSR8:2|:14' = '|LFSR8:2|s3' 
+-- Equation name is '_LC021', type is buried 
+_LC021   = DFFE( _LC024 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|LFSR8:2|:13' = '|LFSR8:2|s4' 
+-- Equation name is '_LC020', type is buried 
+_LC020   = DFFE( _LC021 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|LFSR8:2|:12' = '|LFSR8:2|s5' 
+-- Equation name is '_LC019', type is buried 
+_LC019   = DFFE( _LC020 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|LFSR8:2|:11' = '|LFSR8:2|s6' 
+-- Equation name is '_LC018', type is buried 
+_LC018   = DFFE( _LC019 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|LFSR8:2|:10' = '|LFSR8:2|s7' 
+-- Equation name is '_LC017', type is buried 
+_LC017   = DFFE( _LC018 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:1|:14' = '|SYN_MUX:1|setup0' 
+-- Equation name is '_LC025', type is buried 
+_LC025   = DFFE( _EQ004 $  _EQ005, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ004 =  e_plus &  _LC027 & !_LC029 & !_LC030 &  x &  _X006 &  _X007 & 
+              _X008 &  _X009 &  _X010
+         #  e_minus & !e_plus & !_LC027 &  _LC029 &  x &  _X006 &  _X007 & 
+              _X008 &  _X009 &  _X010
+         #  e_plus & !_LC027 & !_LC030 & !x &  _X006 &  _X007 &  _X008 & 
+              _X009 &  _X010
+         # !_LC025 &  _LC030 &  x &  _X006 &  _X007 &  _X008 &  _X009 & 
+              _X010;
+  _X006  = EXP( e_plus & !_LC025 & !x);
+  _X007  = EXP(!e_plus & !_LC025 &  x);
+  _X008  = EXP(!_LC025 &  _LC027 & !_LC029);
+  _X009  = EXP(!_LC025 & !_LC027 &  x);
+  _X010  = EXP(!e_minus & !_LC025 & !x);
+  _EQ005 =  _X006 &  _X007 &  _X008 &  _X009 &  _X010;
+  _X006  = EXP( e_plus & !_LC025 & !x);
+  _X007  = EXP(!e_plus & !_LC025 &  x);
+  _X008  = EXP(!_LC025 &  _LC027 & !_LC029);
+  _X009  = EXP(!_LC025 & !_LC027 &  x);
+  _X010  = EXP(!e_minus & !_LC025 & !x);
+
+-- Node name is '|SYN_MUX:1|:13' = '|SYN_MUX:1|setup1' 
+-- Equation name is '_LC027', type is buried 
+_LC027   = TFFE( _EQ006, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ006 =  e_minus & !e_plus &  _LC025 & !_LC027 &  _LC029 &  x
+         #  e_plus &  _LC025 & !_LC027 &  _LC029 & !_LC030 & !x
+         #  e_minus & !e_plus &  _LC027 &  _LC029 & !x
+         #  e_minus & !e_plus & !_LC025 & !_LC027 &  x
+         #  e_plus &  _LC027 & !_LC030 &  x;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information             e:\vhdldesigns\research\nandbp01\muxtest01.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:01
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:02
+   --------------------------             --------
+   Total Time                             00:00:03
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 4,043K

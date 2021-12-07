@@ -1,0 +1,131 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "smult" ASSIGNED TO AN EPM7128SQC100-6
+P_out24                          : 1
+P_out17                          : 2
+P_out16                          : 3
+P_out15                          : 4
+VCCIO                            : 5
+TDI                              : 6
+in2                              : 7
+in3                              : 8
+B_in0                            : 9
+in15                             : 10
+in14                             : 11
+in13                             : 12
+GND                              : 13
+B_in9                            : 14
+in12                             : 15
+B_in8                            : 16
+TMS                              : 17
+B_in2                            : 18
+B_in1                            : 19
+VCCIO                            : 20
+in0                              : 21
+B_in4                            : 22
+P_out0                           : 23
+P_out1                           : 24
+P_out2                           : 25
+P_out3                           : 26
+P_out26                          : 27
+GND                              : 28
+B_in7                            : 29
+in7                              : 30
+in8                              : 31
+B_in12                           : 32
+B_in13                           : 33
+done                             : 34
+P_out7                           : 35
+VCCIO                            : 36
+P_out6                           : 37
+P_out5                           : 38
+P_out4                           : 39
+GND                              : 40
+VCCINT                           : 41
+in6                              : 42
+in1                              : 43
+in5                              : 44
+GND                              : 45
+in4                              : 46
+in9                              : 47
+in10                             : 48
+B_in3                            : 49
+B_in6                            : 50
+B_in10                           : 51
+B_in5                            : 52
+VCCIO                            : 53
+B_in11                           : 54
+RESERVED                         : 55
+RESERVED                         : 56
+s                                : 57
+B_in14                           : 58
+reset                            : 59
+B_in15                           : 60
+GND                              : 61
+RESERVED                         : 62
+P_out27                          : 63
+TCK                              : 64
+P_out14                          : 65
+P_out19                          : 66
+RESERVED                         : 67
+VCCIO                            : 68
+P_out22                          : 69
+RESERVED                         : 70
+P_out23                          : 71
+P_out18                          : 72
+P_out21                          : 73
+P_out20                          : 74
+TDO                              : 75
+GND                              : 76
+P_out8                           : 77
+P_out9                           : 78
+RESERVED                         : 79
+RESERVED                         : 80
+RESERVED                         : 81
+P_out10                          : 82
+P_out11                          : 83
+VCCIO                            : 84
+P_out13                          : 85
+P_out12                          : 86
+RESERVED                         : 87
+GND                              : 88
+clock                            : 89
+GND                              : 90
+GND                              : 91
+GND                              : 92
+VCCINT                           : 93
+in11                             : 94
+P_out29                          : 95
+P_out30                          : 96
+GND                              : 97
+P_out31                          : 98
+P_out28                          : 99
+P_out25                          : 100

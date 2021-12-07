@@ -1,0 +1,106 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 06/30/2001 12:40:32      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "up1pack"
+BEGIN
+
+    DEVICE = "EPF10K20RC240-4";
+
+    "clock_25Mhz"                  : INPUT_PIN  = 91     ;
+    "pb1"                          : INPUT_PIN  = 90     ;
+    "pb1_debounced"                : OUTPUT_PIN = 49     ;
+    "|clk_div:prescalar|LPM_ADD_SUB:119|addcore:adder|:59" : LOCATION   = LC1_F24;
+    "|clk_div:prescalar|:10"       : LOCATION   = LC2_F19;
+    "|clk_div:prescalar|:16"       : LOCATION   = LC1_F21;  -- |clk_div:prescalar|count_1Mhz4
+    "|clk_div:prescalar|:17"       : LOCATION   = LC2_F21;  -- |clk_div:prescalar|count_1Mhz3
+    "|clk_div:prescalar|:18"       : LOCATION   = LC3_F21;  -- |clk_div:prescalar|count_1Mhz2
+    "|clk_div:prescalar|:19"       : LOCATION   = LC2_F24;  -- |clk_div:prescalar|count_1Mhz1
+    "|clk_div:prescalar|:20"       : LOCATION   = LC3_F24;  -- |clk_div:prescalar|count_1Mhz0
+    "|clk_div:prescalar|:21"       : LOCATION   = LC7_F21;  -- |clk_div:prescalar|clock_1Mhz_int
+    "|clk_div:prescalar|:22"       : LOCATION   = LC8_F21;  -- |clk_div:prescalar|clock_100Khz_int
+    "|clk_div:prescalar|:23"       : LOCATION   = LC8_F18;  -- |clk_div:prescalar|clock_10Khz_int
+    "|clk_div:prescalar|:24"       : LOCATION   = LC1_F18;  -- |clk_div:prescalar|clock_1Khz_int
+    "|clk_div:prescalar|:25"       : LOCATION   = LC1_F16;  -- |clk_div:prescalar|clock_100hz_int
+    "|clk_div:prescalar|:28"       : LOCATION   = LC5_F21;  -- |clk_div:prescalar|count_100Khz2
+    "|clk_div:prescalar|:29"       : LOCATION   = LC4_F21;  -- |clk_div:prescalar|count_100Khz1
+    "|clk_div:prescalar|:30"       : LOCATION   = LC6_F21;  -- |clk_div:prescalar|count_100Khz0
+    "|clk_div:prescalar|:31"       : LOCATION   = LC3_F18;  -- |clk_div:prescalar|count_10Khz2
+    "|clk_div:prescalar|:32"       : LOCATION   = LC2_F18;  -- |clk_div:prescalar|count_10Khz1
+    "|clk_div:prescalar|:33"       : LOCATION   = LC4_F18;  -- |clk_div:prescalar|count_10Khz0
+    "|clk_div:prescalar|:34"       : LOCATION   = LC6_F18;  -- |clk_div:prescalar|count_1Khz2
+    "|clk_div:prescalar|:35"       : LOCATION   = LC5_F18;  -- |clk_div:prescalar|count_1Khz1
+    "|clk_div:prescalar|:36"       : LOCATION   = LC7_F18;  -- |clk_div:prescalar|count_1Khz0
+    "|clk_div:prescalar|:37"       : LOCATION   = LC3_F16;  -- |clk_div:prescalar|count_100hz2
+    "|clk_div:prescalar|:38"       : LOCATION   = LC2_F16;  -- |clk_div:prescalar|count_100hz1
+    "|clk_div:prescalar|:39"       : LOCATION   = LC4_F16;  -- |clk_div:prescalar|count_100hz0
+    "|debounce:debounce1|:3"       : LOCATION   = LC1_F19;
+    "|debounce:debounce1|:5"       : LOCATION   = LC3_F19;  -- |debounce:debounce1|SHIFT_PB3
+    "|debounce:debounce1|:6"       : LOCATION   = LC4_F19;  -- |debounce:debounce1|SHIFT_PB2
+    "|debounce:debounce1|:7"       : LOCATION   = LC5_F19;  -- |debounce:debounce1|SHIFT_PB1
+    "|debounce:debounce1|:8"       : LOCATION   = LC6_F19;  -- |debounce:debounce1|SHIFT_PB0
+
+END;
+
+INTERNAL_INFO "up1pack"
+BEGIN
+	DEVICE = EPF10K20RC240-4;
+    LC1_F24 : LORAX = "1:MSW1R5C22,HHR5R5,PA17R5C20->LC1_F21,->LC2_F21,->LC3_F21|";
+    LC1_F21 : LORAX = "1:MSW0R5C20,HHR21R5,PA15R5C23->LC2_F24,->LC3_F24|";
+    LC2_F21 : LORAX = "1:MSW1R5C20,HHR2R5,PA20R5C23->LC2_F24,->LC3_F24|";
+    LC8_F21 : LORAX = "1:MSW7R5C20,HHR37R5,PA21R5C17->LC8_F18,->LC3_F18,->LC2_F18,->LC4_F18|";
+    LC1_F18 : LORAX = "1:MSW0R5C17,HHR20R5,PA13R5C15->LC1_F16,->LC3_F16,->LC2_F16,->LC4_F16|";
+    LC1_F16 : LORAX = "1:MSW0R5C15,HHR19R5,PA12R5C18->LC2_F19|";
+    OD5P91  : LORAX = "1:FB5->LC2_F19,->LC1_F21,->LC2_F21,->LC3_F21,->LC2_F24,->LC3_F24,->LC7_F21|";
+    LC1_F19 : LORAX = "1:MSW0R5C18,HHR22R5->OH0R5P49|";
+    OD2P90  : LORAX = "1:FB2|2:FH2R5,PA6R5C18->LC3_F19||";
+	LC1_F24 : LORAX2 = "X, X, LC2_F24, LC3_F24";
+	LC2_F19 : LORAX2 = "X, X, X, LC1_F16";
+	LC1_F21 : LORAX2 = "LC2_F21, LC1_F21, LC3_F21, LC1_F24";
+	LC2_F21 : LORAX2 = "LC2_F21, LC1_F21, LC3_F21, LC1_F24";
+	LC3_F21 : LORAX2 = "LC3_F21, LC1_F21, LC2_F21, LC1_F24";
+	LC2_F24 : LORAX2 = "LC1_F21, LC2_F21, LC2_F24, LC3_F24";
+	LC3_F24 : LORAX2 = "X, LC2_F21, LC1_F21, LC3_F24";
+	LC7_F21 : LORAX2 = "X, LC1_F21, LC3_F21, LC2_F21";
+	LC8_F21 : LORAX2 = "LC5_F21, LC6_F21, LC4_F21, LC8_F21";
+	LC8_F18 : LORAX2 = "LC3_F18, LC4_F18, LC2_F18, LC8_F18";
+	LC1_F18 : LORAX2 = "LC6_F18, LC7_F18, LC5_F18, LC1_F18";
+	LC1_F16 : LORAX2 = "LC1_F16, LC3_F16, LC4_F16, LC2_F16";
+	LC5_F21 : LORAX2 = "X, LC4_F21, LC6_F21, LC5_F21";
+	LC4_F21 : LORAX2 = "X, X, LC4_F21, LC6_F21";
+	LC6_F21 : LORAX2 = "X, LC5_F21, LC4_F21, LC6_F21";
+	LC3_F18 : LORAX2 = "X, LC2_F18, LC4_F18, LC3_F18";
+	LC2_F18 : LORAX2 = "X, X, LC2_F18, LC4_F18";
+	LC4_F18 : LORAX2 = "X, LC3_F18, LC2_F18, LC4_F18";
+	LC6_F18 : LORAX2 = "X, LC5_F18, LC7_F18, LC6_F18";
+	LC5_F18 : LORAX2 = "X, X, LC5_F18, LC7_F18";
+	LC7_F18 : LORAX2 = "X, LC6_F18, LC5_F18, LC7_F18";
+	LC3_F16 : LORAX2 = "X, LC2_F16, LC4_F16, LC3_F16";
+	LC2_F16 : LORAX2 = "X, X, LC2_F16, LC4_F16";
+	LC4_F16 : LORAX2 = "X, LC3_F16, LC2_F16, LC4_F16";
+	LC1_F19 : LORAX2 = "LC5_F19, LC4_F19, LC6_F19, LC3_F19";
+	LC3_F19 : LORAX2 = "OD2P90, X, X, X";
+	LC4_F19 : LORAX2 = "X, X, X, LC3_F19";
+	LC5_F19 : LORAX2 = "X, X, X, LC4_F19";
+	LC6_F19 : LORAX2 = "X, X, X, LC5_F19";
+END;

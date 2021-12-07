@@ -1,0 +1,693 @@
+Project Information                 e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 02/05/2002 15:26:28
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+MUXDEMO
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+muxdemo   EPM7064SLC84-5   15       32       0      32      0           50 %
+
+User Pins:                 15       32       0  
+
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+***** Logic for device 'muxdemo' compiled without errors.
+
+
+
+
+Device: EPM7064SLC84-5
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+    MultiVolt I/O                              = OFF
+
+                                                         x  x  x     x  x  x  
+                                                         y  y  y     y  y  y  
+                                                         z  z  z     z  z  z  
+                                       V                 _  _  _     _  _  _  
+                                       C                 m  m  m  V  m  m  m  
+                                       C                 u  u  u  C  u  u  u  
+                           G           I  G  G  G  G  G  x  x  x  C  x  x  x  
+               x  y  y  z  N  z  z  z  N  N  N  N  N  N  2  2  3  I  4  4  3  
+               1  1  3  0  D  1  2  3  T  D  D  D  D  D  1  0  1  O  1  0  0  
+             -----------------------------------------------------------------_ 
+           /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
+       x3 | 12                                                              74 | xy_mux21 
+    VCCIO | 13                                                              73 | xyz_mux11 
+     #TDI | 14                                                              72 | GND 
+       y2 | 15                                                              71 | #TDO 
+       y0 | 16                                                              70 | xy_mux12 
+       x2 | 17                                                              69 | xy_mux11 
+       x0 | 18                                                              68 | xy_mux41 
+      GND | 19                                                              67 | xy_mux40 
+   s_xyz1 | 20                                                              66 | VCCIO 
+   s_xyz0 | 21                                                              65 | xy_mux31 
+     s_xy | 22                        EPM7064SLC84-5                        64 | xy_mux30 
+     #TMS | 23                                                              63 | xyz_mux10 
+ RESERVED | 24                                                              62 | #TCK 
+ RESERVED | 25                                                              61 | xyz_mux23 
+    VCCIO | 26                                                              60 | xyz_mux22 
+ RESERVED | 27                                                              59 | GND 
+ RESERVED | 28                                                              58 | xyz_mux13 
+ RESERVED | 29                                                              57 | xyz_mux43 
+ RESERVED | 30                                                              56 | xyz_mux42 
+ RESERVED | 31                                                              55 | xyz_mux33 
+      GND | 32                                                              54 | xyz_mux32 
+          |_  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  _| 
+            ------------------------------------------------------------------ 
+               R  R  R  R  R  V  R  x  x  G  V  x  x  x  G  x  x  x  x  x  V  
+               E  E  E  E  E  C  E  y  y  N  C  y  y  y  N  y  y  y  y  y  C  
+               S  S  S  S  S  C  S  _  _  D  C  _  _  _  D  _  _  _  z  _  C  
+               E  E  E  E  E  I  E  m  m     I  m  m  m     m  m  m  _  m  I  
+               R  R  R  R  R  O  R  u  u     N  u  u  u     u  u  u  m  u  O  
+               V  V  V  V  V     V  x  x     T  x  x  x     x  x  x  u  x     
+               E  E  E  E  E     E  1  2        2  4  3     4  3  2  x  1     
+               D  D  D  D  D     D  0  0        3  3  2     2  3  2  1  3     
+                                                                     2        
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)  16/16(100%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     2/16( 12%)   3/16( 18%)   0/16(  0%)   3/36(  8%) 
+C:    LC33 - LC48    15/16( 93%)  16/16(100%)   0/16(  0%)   9/36( 25%) 
+D:    LC49 - LC64    15/16( 93%)  16/16(100%)   0/16(  0%)  11/36( 30%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                            51/64     ( 79%)
+Total logic cells used:                         32/64     ( 50%)
+Total shareable expanders used:                  0/64     (  0%)
+Total Turbo logic cells used:                   32/64     ( 50%)
+Total shareable expanders not available (n/a):   0/64     (  0%)
+Average fan-in:                                  4.00
+Total fan-in:                                   128
+
+Total input pins required:                      15
+Total fast input logic cells required:           0
+Total output pins required:                     32
+Total bidirectional pins required:               0
+Total reserved pins required                     4
+Total logic cells required:                     32
+Total flipflops required:                        0
+Total product terms required:                   84
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           0
+
+Synthesized logic cells:                         0/  64   (  0%)
+
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  22    (1)  (A)      INPUT               0      0   0    0    0   16    0  s_xy
+  21    (2)  (A)      INPUT               0      0   0    0    0   16    0  s_xyz0
+  20    (3)  (A)      INPUT               0      0   0    0    0   16    0  s_xyz1
+  18    (4)  (A)      INPUT               0      0   0    0    0    8    0  x0
+  11   (10)  (A)      INPUT               0      0   0    0    0    8    0  x1
+  17    (5)  (A)      INPUT               0      0   0    0    0    8    0  x2
+  12    (9)  (A)      INPUT               0      0   0    0    0    8    0  x3
+  16    (6)  (A)      INPUT               0      0   0    0    0    8    0  y0
+  10   (11)  (A)      INPUT               0      0   0    0    0    8    0  y1
+  15    (7)  (A)      INPUT               0      0   0    0    0    8    0  y2
+   9   (12)  (A)      INPUT               0      0   0    0    0    8    0  y3
+   8   (13)  (A)      INPUT               0      0   0    0    0    4    0  z0
+   6   (14)  (A)      INPUT               0      0   0    0    0    4    0  z1
+   5   (15)  (A)      INPUT               0      0   0    0    0    4    0  z2
+   4   (16)  (A)      INPUT               0      0   0    0    0    4    0  z3
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  40     18    B     OUTPUT      t        0      0   0    3    0    0    0  xy_mux10
+  69     54    D     OUTPUT      t        0      0   0    3    0    0    0  xy_mux11
+  70     55    D     OUTPUT      t        0      0   0    3    0    0    0  xy_mux12
+  52     40    C     OUTPUT      t        0      0   0    3    0    0    0  xy_mux13
+  41     17    B     OUTPUT      t        0      0   0    3    0    0    0  xy_mux20
+  74     58    D     OUTPUT      t        0      0   0    3    0    0    0  xy_mux21
+  50     38    C     OUTPUT      t        0      0   0    3    0    0    0  xy_mux22
+  44     33    C     OUTPUT      t        0      0   0    3    0    0    0  xy_mux23
+  64     50    D     OUTPUT      t        0      0   0    3    0    0    0  xy_mux30
+  65     51    D     OUTPUT      t        0      0   0    3    0    0    0  xy_mux31
+  46     35    C     OUTPUT      t        0      0   0    3    0    0    0  xy_mux32
+  49     37    C     OUTPUT      t        0      0   0    3    0    0    0  xy_mux33
+  67     52    D     OUTPUT      t        0      0   0    3    0    0    0  xy_mux40
+  68     53    D     OUTPUT      t        0      0   0    3    0    0    0  xy_mux41
+  48     36    C     OUTPUT      t        0      0   0    3    0    0    0  xy_mux42
+  45     34    C     OUTPUT      t        0      0   0    3    0    0    0  xy_mux43
+  63     49    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux10
+  73     57    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux11
+  51     39    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux12
+  58     45    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux13
+  80     63    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux20
+  81     64    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux21
+  60     46    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux22
+  61     47    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux23
+  75     59    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux30
+  79     62    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux31
+  54     41    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux32
+  55     42    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux33
+  76     60    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux40
+  77     61    D     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux41
+  56     43    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux42
+  57     44    C     OUTPUT      t        0      0   0    5    0    0    0  xyz_mux43
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+             Logic cells placed in LAB 'B'
+        +--- LC18 xy_mux10
+        | +- LC17 xy_mux20
+        | | 
+        | |   Other LABs fed by signals
+        | |   that feed LAB 'B'
+LC      | | | A B C D |     Logic cells that feed LAB 'B':
+
+Pin
+22   -> * * | - * * * | <-- s_xy
+18   -> * * | - * - * | <-- x0
+16   -> * * | - * - * | <-- y0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                       Logic cells placed in LAB 'C'
+        +----------------------------- LC40 xy_mux13
+        | +--------------------------- LC38 xy_mux22
+        | | +------------------------- LC33 xy_mux23
+        | | | +----------------------- LC35 xy_mux32
+        | | | | +--------------------- LC37 xy_mux33
+        | | | | | +------------------- LC36 xy_mux42
+        | | | | | | +----------------- LC34 xy_mux43
+        | | | | | | | +--------------- LC39 xyz_mux12
+        | | | | | | | | +------------- LC45 xyz_mux13
+        | | | | | | | | | +----------- LC46 xyz_mux22
+        | | | | | | | | | | +--------- LC47 xyz_mux23
+        | | | | | | | | | | | +------- LC41 xyz_mux32
+        | | | | | | | | | | | | +----- LC42 xyz_mux33
+        | | | | | | | | | | | | | +--- LC43 xyz_mux42
+        | | | | | | | | | | | | | | +- LC44 xyz_mux43
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'C':
+
+Pin
+22   -> * * * * * * * - - - - - - - - | - * * * | <-- s_xy
+21   -> - - - - - - - * * * * * * * * | - - * * | <-- s_xyz0
+20   -> - - - - - - - * * * * * * * * | - - * * | <-- s_xyz1
+17   -> - * - * - * - * - * - * - * - | - - * * | <-- x2
+12   -> * - * - * - * - * - * - * - * | - - * - | <-- x3
+15   -> - * - * - * - * - * - * - * - | - - * * | <-- y2
+9    -> * - * - * - * - * - * - * - * | - - * - | <-- y3
+5    -> - - - - - - - * - * - * - * - | - - * - | <-- z2
+4    -> - - - - - - - - * - * - * - * | - - * - | <-- z3
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                       Logic cells placed in LAB 'D'
+        +----------------------------- LC54 xy_mux11
+        | +--------------------------- LC55 xy_mux12
+        | | +------------------------- LC58 xy_mux21
+        | | | +----------------------- LC50 xy_mux30
+        | | | | +--------------------- LC51 xy_mux31
+        | | | | | +------------------- LC52 xy_mux40
+        | | | | | | +----------------- LC53 xy_mux41
+        | | | | | | | +--------------- LC49 xyz_mux10
+        | | | | | | | | +------------- LC57 xyz_mux11
+        | | | | | | | | | +----------- LC63 xyz_mux20
+        | | | | | | | | | | +--------- LC64 xyz_mux21
+        | | | | | | | | | | | +------- LC59 xyz_mux30
+        | | | | | | | | | | | | +----- LC62 xyz_mux31
+        | | | | | | | | | | | | | +--- LC60 xyz_mux40
+        | | | | | | | | | | | | | | +- LC61 xyz_mux41
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'D':
+
+Pin
+22   -> * * * * * * * - - - - - - - - | - * * * | <-- s_xy
+21   -> - - - - - - - * * * * * * * * | - - * * | <-- s_xyz0
+20   -> - - - - - - - * * * * * * * * | - - * * | <-- s_xyz1
+18   -> - - - * - * - * - * - * - * - | - * - * | <-- x0
+11   -> * - * - * - * - * - * - * - * | - - - * | <-- x1
+17   -> - * - - - - - - - - - - - - - | - - * * | <-- x2
+16   -> - - - * - * - * - * - * - * - | - * - * | <-- y0
+10   -> * - * - * - * - * - * - * - * | - - - * | <-- y1
+15   -> - * - - - - - - - - - - - - - | - - * * | <-- y2
+8    -> - - - - - - - * - * - * - * - | - - - * | <-- z0
+6    -> - - - - - - - - * - * - * - * | - - - * | <-- z1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:        e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+muxdemo
+
+** EQUATIONS **
+
+s_xy     : INPUT;
+s_xyz0   : INPUT;
+s_xyz1   : INPUT;
+x0       : INPUT;
+x1       : INPUT;
+x2       : INPUT;
+x3       : INPUT;
+y0       : INPUT;
+y1       : INPUT;
+y2       : INPUT;
+y3       : INPUT;
+z0       : INPUT;
+z1       : INPUT;
+z2       : INPUT;
+z3       : INPUT;
+
+-- Node name is 'xy_mux10' 
+-- Equation name is 'xy_mux10', location is LC018, type is output.
+ xy_mux10 = LCELL( _EQ001 $  GND);
+  _EQ001 =  s_xy &  y0
+         # !s_xy &  x0;
+
+-- Node name is 'xy_mux11' 
+-- Equation name is 'xy_mux11', location is LC054, type is output.
+ xy_mux11 = LCELL( _EQ002 $  GND);
+  _EQ002 =  s_xy &  y1
+         # !s_xy &  x1;
+
+-- Node name is 'xy_mux12' 
+-- Equation name is 'xy_mux12', location is LC055, type is output.
+ xy_mux12 = LCELL( _EQ003 $  GND);
+  _EQ003 =  s_xy &  y2
+         # !s_xy &  x2;
+
+-- Node name is 'xy_mux13' 
+-- Equation name is 'xy_mux13', location is LC040, type is output.
+ xy_mux13 = LCELL( _EQ004 $  GND);
+  _EQ004 =  s_xy &  y3
+         # !s_xy &  x3;
+
+-- Node name is 'xy_mux20' 
+-- Equation name is 'xy_mux20', location is LC017, type is output.
+ xy_mux20 = LCELL( _EQ005 $  GND);
+  _EQ005 =  s_xy &  y0
+         # !s_xy &  x0;
+
+-- Node name is 'xy_mux21' 
+-- Equation name is 'xy_mux21', location is LC058, type is output.
+ xy_mux21 = LCELL( _EQ006 $  GND);
+  _EQ006 =  s_xy &  y1
+         # !s_xy &  x1;
+
+-- Node name is 'xy_mux22' 
+-- Equation name is 'xy_mux22', location is LC038, type is output.
+ xy_mux22 = LCELL( _EQ007 $  GND);
+  _EQ007 =  s_xy &  y2
+         # !s_xy &  x2;
+
+-- Node name is 'xy_mux23' 
+-- Equation name is 'xy_mux23', location is LC033, type is output.
+ xy_mux23 = LCELL( _EQ008 $  GND);
+  _EQ008 =  s_xy &  y3
+         # !s_xy &  x3;
+
+-- Node name is 'xy_mux30' 
+-- Equation name is 'xy_mux30', location is LC050, type is output.
+ xy_mux30 = LCELL( _EQ009 $  GND);
+  _EQ009 =  s_xy &  y0
+         # !s_xy &  x0;
+
+-- Node name is 'xy_mux31' 
+-- Equation name is 'xy_mux31', location is LC051, type is output.
+ xy_mux31 = LCELL( _EQ010 $  GND);
+  _EQ010 =  s_xy &  y1
+         # !s_xy &  x1;
+
+-- Node name is 'xy_mux32' 
+-- Equation name is 'xy_mux32', location is LC035, type is output.
+ xy_mux32 = LCELL( _EQ011 $  GND);
+  _EQ011 =  s_xy &  y2
+         # !s_xy &  x2;
+
+-- Node name is 'xy_mux33' 
+-- Equation name is 'xy_mux33', location is LC037, type is output.
+ xy_mux33 = LCELL( _EQ012 $  GND);
+  _EQ012 =  s_xy &  y3
+         # !s_xy &  x3;
+
+-- Node name is 'xy_mux40' 
+-- Equation name is 'xy_mux40', location is LC052, type is output.
+ xy_mux40 = LCELL( _EQ013 $  GND);
+  _EQ013 =  s_xy &  y0
+         # !s_xy &  x0;
+
+-- Node name is 'xy_mux41' 
+-- Equation name is 'xy_mux41', location is LC053, type is output.
+ xy_mux41 = LCELL( _EQ014 $  GND);
+  _EQ014 =  s_xy &  y1
+         # !s_xy &  x1;
+
+-- Node name is 'xy_mux42' 
+-- Equation name is 'xy_mux42', location is LC036, type is output.
+ xy_mux42 = LCELL( _EQ015 $  GND);
+  _EQ015 =  s_xy &  y2
+         # !s_xy &  x2;
+
+-- Node name is 'xy_mux43' 
+-- Equation name is 'xy_mux43', location is LC034, type is output.
+ xy_mux43 = LCELL( _EQ016 $  GND);
+  _EQ016 =  s_xy &  y3
+         # !s_xy &  x3;
+
+-- Node name is 'xyz_mux10' 
+-- Equation name is 'xyz_mux10', location is LC049, type is output.
+ xyz_mux10 = LCELL( _EQ017 $  GND);
+  _EQ017 =  s_xyz0 & !s_xyz1 &  y0
+         # !s_xyz0 & !s_xyz1 &  x0
+         #  s_xyz1 &  z0;
+
+-- Node name is 'xyz_mux11' 
+-- Equation name is 'xyz_mux11', location is LC057, type is output.
+ xyz_mux11 = LCELL( _EQ018 $  GND);
+  _EQ018 =  s_xyz0 & !s_xyz1 &  y1
+         # !s_xyz0 & !s_xyz1 &  x1
+         #  s_xyz1 &  z1;
+
+-- Node name is 'xyz_mux12' 
+-- Equation name is 'xyz_mux12', location is LC039, type is output.
+ xyz_mux12 = LCELL( _EQ019 $  GND);
+  _EQ019 =  s_xyz0 & !s_xyz1 &  y2
+         # !s_xyz0 & !s_xyz1 &  x2
+         #  s_xyz1 &  z2;
+
+-- Node name is 'xyz_mux13' 
+-- Equation name is 'xyz_mux13', location is LC045, type is output.
+ xyz_mux13 = LCELL( _EQ020 $  GND);
+  _EQ020 =  s_xyz0 & !s_xyz1 &  y3
+         # !s_xyz0 & !s_xyz1 &  x3
+         #  s_xyz1 &  z3;
+
+-- Node name is 'xyz_mux20' 
+-- Equation name is 'xyz_mux20', location is LC063, type is output.
+ xyz_mux20 = LCELL( _EQ021 $  GND);
+  _EQ021 =  s_xyz0 & !s_xyz1 &  y0
+         # !s_xyz0 & !s_xyz1 &  x0
+         #  s_xyz1 &  z0;
+
+-- Node name is 'xyz_mux21' 
+-- Equation name is 'xyz_mux21', location is LC064, type is output.
+ xyz_mux21 = LCELL( _EQ022 $  GND);
+  _EQ022 =  s_xyz0 & !s_xyz1 &  y1
+         # !s_xyz0 & !s_xyz1 &  x1
+         #  s_xyz1 &  z1;
+
+-- Node name is 'xyz_mux22' 
+-- Equation name is 'xyz_mux22', location is LC046, type is output.
+ xyz_mux22 = LCELL( _EQ023 $  GND);
+  _EQ023 =  s_xyz0 & !s_xyz1 &  y2
+         # !s_xyz0 & !s_xyz1 &  x2
+         #  s_xyz1 &  z2;
+
+-- Node name is 'xyz_mux23' 
+-- Equation name is 'xyz_mux23', location is LC047, type is output.
+ xyz_mux23 = LCELL( _EQ024 $  GND);
+  _EQ024 =  s_xyz0 & !s_xyz1 &  y3
+         # !s_xyz0 & !s_xyz1 &  x3
+         #  s_xyz1 &  z3;
+
+-- Node name is 'xyz_mux30' 
+-- Equation name is 'xyz_mux30', location is LC059, type is output.
+ xyz_mux30 = LCELL( _EQ025 $  GND);
+  _EQ025 =  s_xyz0 & !s_xyz1 &  y0
+         # !s_xyz0 & !s_xyz1 &  x0
+         #  s_xyz1 &  z0;
+
+-- Node name is 'xyz_mux31' 
+-- Equation name is 'xyz_mux31', location is LC062, type is output.
+ xyz_mux31 = LCELL( _EQ026 $  GND);
+  _EQ026 =  s_xyz0 & !s_xyz1 &  y1
+         # !s_xyz0 & !s_xyz1 &  x1
+         #  s_xyz1 &  z1;
+
+-- Node name is 'xyz_mux32' 
+-- Equation name is 'xyz_mux32', location is LC041, type is output.
+ xyz_mux32 = LCELL( _EQ027 $  GND);
+  _EQ027 =  s_xyz0 & !s_xyz1 &  y2
+         # !s_xyz0 & !s_xyz1 &  x2
+         #  s_xyz1 &  z2;
+
+-- Node name is 'xyz_mux33' 
+-- Equation name is 'xyz_mux33', location is LC042, type is output.
+ xyz_mux33 = LCELL( _EQ028 $  GND);
+  _EQ028 =  s_xyz0 & !s_xyz1 &  y3
+         # !s_xyz0 & !s_xyz1 &  x3
+         #  s_xyz1 &  z3;
+
+-- Node name is 'xyz_mux40' 
+-- Equation name is 'xyz_mux40', location is LC060, type is output.
+ xyz_mux40 = LCELL( _EQ029 $  GND);
+  _EQ029 =  s_xyz0 &  s_xyz1 &  x0
+         #  s_xyz0 & !s_xyz1 &  y0
+         # !s_xyz0 &  s_xyz1 &  z0
+         # !s_xyz0 & !s_xyz1 &  x0;
+
+-- Node name is 'xyz_mux41' 
+-- Equation name is 'xyz_mux41', location is LC061, type is output.
+ xyz_mux41 = LCELL( _EQ030 $  GND);
+  _EQ030 =  s_xyz0 &  s_xyz1 &  x1
+         #  s_xyz0 & !s_xyz1 &  y1
+         # !s_xyz0 &  s_xyz1 &  z1
+         # !s_xyz0 & !s_xyz1 &  x1;
+
+-- Node name is 'xyz_mux42' 
+-- Equation name is 'xyz_mux42', location is LC043, type is output.
+ xyz_mux42 = LCELL( _EQ031 $  GND);
+  _EQ031 =  s_xyz0 &  s_xyz1 &  x2
+         #  s_xyz0 & !s_xyz1 &  y2
+         # !s_xyz0 &  s_xyz1 &  z2
+         # !s_xyz0 & !s_xyz1 &  x2;
+
+-- Node name is 'xyz_mux43' 
+-- Equation name is 'xyz_mux43', location is LC044, type is output.
+ xyz_mux43 = LCELL( _EQ032 $  GND);
+  _EQ032 =  s_xyz0 &  s_xyz1 &  x3
+         #  s_xyz0 & !s_xyz1 &  y3
+         # !s_xyz0 &  s_xyz1 &  z3
+         # !s_xyz0 & !s_xyz1 &  x3;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                 e:\vhdldesigns\ee231\01muxdemo\muxdemo.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:01
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:03
+   --------------------------             --------
+   Total Time                             00:00:04
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,790K

@@ -1,0 +1,2382 @@
+Project Information                            e:\max2work\robot\top_motor.rpt
+
+MAX+plus II Compiler Report File
+Version 7.21 Student Edition
+Compiled: 11/12/98 09:34:26
+
+Copyright (C) 1991-1997 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+top_motor
+      EPF10K20RC240-4      2      6      0    0         0  %    163      14 %
+
+User Pins:                 2      6      0  
+
+
+
+Project Information                            e:\max2work\robot\top_motor.rpt
+
+** PROJECT COMPILATION MESSAGES **
+
+Warning: Node 'FLEXDIP0' has assignments but doesn't exist or is a primitive array -- edit the project's ACF to fix the problem
+
+
+Project Information                            e:\max2work\robot\top_motor.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+top_motor@91                      CLOCK_25Mhz
+top_motor@41     ---------        FLEXDIP0
+top_motor@25                      LEFT
+top_motor@158                     LEFT_LED
+top_motor@163                     LMOTOR
+top_motor@14                      RIGHT
+top_motor@156                     RIGHT_LED
+top_motor@110                     RMOTOR
+top_motor@153                     SOUT
+
+
+Project Information                            e:\max2work\robot\top_motor.rpt
+
+** FILE HIERARCHY **
+
+
+
+|clk_div:11|
+|clk_div:11|lpm_compare:82|
+|clk_div:11|lpm_compare:82|comptree:comparator|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|clk_div:11|lpm_compare:82|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|clk_div:11|lpm_compare:82|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:82|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_add_sub:98|
+|clk_div:11|lpm_add_sub:98|addcore:adder|
+|clk_div:11|lpm_add_sub:98|altshift:result_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:98|altshift:carry_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:98|altshift:oflow_ext_latency_ffs|
+|clk_div:11|lpm_compare:160|
+|clk_div:11|lpm_compare:160|comptree:comparator|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|clk_div:11|lpm_compare:160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|clk_div:11|lpm_compare:160|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:160|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_compare:223|
+|clk_div:11|lpm_compare:223|comptree:comparator|
+|clk_div:11|lpm_compare:223|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:223|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:223|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_add_sub:234|
+|clk_div:11|lpm_add_sub:234|addcore:adder|
+|clk_div:11|lpm_add_sub:234|altshift:result_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:234|altshift:carry_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:234|altshift:oflow_ext_latency_ffs|
+|clk_div:11|lpm_compare:303|
+|clk_div:11|lpm_compare:303|comptree:comparator|
+|clk_div:11|lpm_compare:303|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:303|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:303|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_add_sub:314|
+|clk_div:11|lpm_add_sub:314|addcore:adder|
+|clk_div:11|lpm_add_sub:314|altshift:result_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:314|altshift:carry_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:314|altshift:oflow_ext_latency_ffs|
+|clk_div:11|lpm_compare:383|
+|clk_div:11|lpm_compare:383|comptree:comparator|
+|clk_div:11|lpm_compare:383|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:383|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:383|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_add_sub:394|
+|clk_div:11|lpm_add_sub:394|addcore:adder|
+|clk_div:11|lpm_add_sub:394|altshift:result_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:394|altshift:carry_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:394|altshift:oflow_ext_latency_ffs|
+|clk_div:11|lpm_compare:463|
+|clk_div:11|lpm_compare:463|comptree:comparator|
+|clk_div:11|lpm_compare:463|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:463|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:463|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_add_sub:474|
+|clk_div:11|lpm_add_sub:474|addcore:adder|
+|clk_div:11|lpm_add_sub:474|altshift:result_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:474|altshift:carry_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:474|altshift:oflow_ext_latency_ffs|
+|clk_div:11|lpm_compare:543|
+|clk_div:11|lpm_compare:543|comptree:comparator|
+|clk_div:11|lpm_compare:543|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:543|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:543|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_add_sub:554|
+|clk_div:11|lpm_add_sub:554|addcore:adder|
+|clk_div:11|lpm_add_sub:554|altshift:result_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:554|altshift:carry_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:554|altshift:oflow_ext_latency_ffs|
+|clk_div:11|lpm_compare:623|
+|clk_div:11|lpm_compare:623|comptree:comparator|
+|clk_div:11|lpm_compare:623|comptree:comparator|cmpchain:cmp_end|
+|clk_div:11|lpm_compare:623|altshift:aeb_ext_lat_ffs|
+|clk_div:11|lpm_compare:623|altshift:agb_ext_lat_ffs|
+|clk_div:11|lpm_add_sub:634|
+|clk_div:11|lpm_add_sub:634|addcore:adder|
+|clk_div:11|lpm_add_sub:634|altshift:result_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:634|altshift:carry_ext_latency_ffs|
+|clk_div:11|lpm_add_sub:634|altshift:oflow_ext_latency_ffs|
+|servo_control:15|
+|servo_control:15|lpm_compare:177|
+|servo_control:15|lpm_compare:177|comptree:comparator|
+|servo_control:15|lpm_compare:177|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:177|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:177|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_add_sub:212|
+|servo_control:15|lpm_add_sub:212|addcore:adder|
+|servo_control:15|lpm_add_sub:212|altshift:result_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:212|altshift:carry_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:212|altshift:oflow_ext_latency_ffs|
+|servo_control:15|lpm_compare:340|
+|servo_control:15|lpm_compare:340|comptree:comparator|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:340|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:340|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:353|
+|servo_control:15|lpm_compare:353|comptree:comparator|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:353|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:353|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:366|
+|servo_control:15|lpm_compare:366|comptree:comparator|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:366|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:366|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:366|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:379|
+|servo_control:15|lpm_compare:379|comptree:comparator|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:379|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:379|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:416|
+|servo_control:15|lpm_compare:416|comptree:comparator|
+|servo_control:15|lpm_compare:416|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:416|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:416|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:435|
+|servo_control:15|lpm_compare:435|comptree:comparator|
+|servo_control:15|lpm_compare:435|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:435|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:435|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:508|
+|servo_control:15|lpm_compare:508|comptree:comparator|
+|servo_control:15|lpm_compare:508|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:508|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:508|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:554|
+|servo_control:15|lpm_compare:554|comptree:comparator|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:554|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:554|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:566|
+|servo_control:15|lpm_compare:566|comptree:comparator|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:566|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:566|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:566|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:573|
+|servo_control:15|lpm_compare:573|comptree:comparator|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:573|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:573|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:573|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_add_sub:593|
+|servo_control:15|lpm_add_sub:593|addcore:adder|
+|servo_control:15|lpm_add_sub:593|altshift:result_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:593|altshift:carry_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:593|altshift:oflow_ext_latency_ffs|
+|servo_control:15|lpm_compare:718|
+|servo_control:15|lpm_compare:718|comptree:comparator|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:718|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:718|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:730|
+|servo_control:15|lpm_compare:730|comptree:comparator|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:730|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:730|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:730|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:737|
+|servo_control:15|lpm_compare:737|comptree:comparator|
+|servo_control:15|lpm_compare:737|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:737|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:737|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_add_sub:758|
+|servo_control:15|lpm_add_sub:758|addcore:adder|
+|servo_control:15|lpm_add_sub:758|altshift:result_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:758|altshift:carry_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:758|altshift:oflow_ext_latency_ffs|
+|servo_control:15|lpm_compare:931|
+|servo_control:15|lpm_compare:931|comptree:comparator|
+|servo_control:15|lpm_compare:931|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:931|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:931|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:977|
+|servo_control:15|lpm_compare:977|comptree:comparator|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:977|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:977|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:989|
+|servo_control:15|lpm_compare:989|comptree:comparator|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:989|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:989|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:989|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:996|
+|servo_control:15|lpm_compare:996|comptree:comparator|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:996|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:996|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:996|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_add_sub:1016|
+|servo_control:15|lpm_add_sub:1016|addcore:adder|
+|servo_control:15|lpm_add_sub:1016|altshift:result_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:1016|altshift:carry_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:1016|altshift:oflow_ext_latency_ffs|
+|servo_control:15|lpm_compare:1141|
+|servo_control:15|lpm_compare:1141|comptree:comparator|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:1141|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:1141|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:1141|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:1153|
+|servo_control:15|lpm_compare:1153|comptree:comparator|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp5|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp4|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp3|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp2|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|servo_control:15|lpm_compare:1153|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|servo_control:15|lpm_compare:1153|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:1153|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_compare:1160|
+|servo_control:15|lpm_compare:1160|comptree:comparator|
+|servo_control:15|lpm_compare:1160|comptree:comparator|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|servo_control:15|lpm_compare:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|servo_control:15|lpm_compare:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|servo_control:15|lpm_compare:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|servo_control:15|lpm_compare:1160|altshift:aeb_ext_lat_ffs|
+|servo_control:15|lpm_compare:1160|altshift:agb_ext_lat_ffs|
+|servo_control:15|lpm_add_sub:1181|
+|servo_control:15|lpm_add_sub:1181|addcore:adder|
+|servo_control:15|lpm_add_sub:1181|altshift:result_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:1181|altshift:carry_ext_latency_ffs|
+|servo_control:15|lpm_add_sub:1181|altshift:oflow_ext_latency_ffs|
+|ir_sensor:29|
+|ir_sensor:29|lpm_compare:67|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|ir_sensor:29|lpm_compare:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|ir_sensor:29|lpm_compare:67|altshift:aeb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:67|altshift:agb_ext_lat_ffs|
+|ir_sensor:29|lpm_add_sub:87|
+|ir_sensor:29|lpm_add_sub:87|addcore:adder|
+|ir_sensor:29|lpm_add_sub:87|altshift:result_ext_latency_ffs|
+|ir_sensor:29|lpm_add_sub:87|altshift:carry_ext_latency_ffs|
+|ir_sensor:29|lpm_add_sub:87|altshift:oflow_ext_latency_ffs|
+|ir_sensor:29|lpm_compare:194|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|ir_sensor:29|lpm_compare:194|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|ir_sensor:29|lpm_compare:194|altshift:aeb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:194|altshift:agb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:215|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|ir_sensor:29|lpm_compare:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|ir_sensor:29|lpm_compare:215|altshift:aeb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:215|altshift:agb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:297|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|ir_sensor:29|lpm_compare:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|ir_sensor:29|lpm_compare:297|altshift:aeb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:297|altshift:agb_ext_lat_ffs|
+|ir_sensor:29|lpm_add_sub:317|
+|ir_sensor:29|lpm_add_sub:317|addcore:adder|
+|ir_sensor:29|lpm_add_sub:317|altshift:result_ext_latency_ffs|
+|ir_sensor:29|lpm_add_sub:317|altshift:carry_ext_latency_ffs|
+|ir_sensor:29|lpm_add_sub:317|altshift:oflow_ext_latency_ffs|
+|ir_sensor:29|lpm_compare:423|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|ir_sensor:29|lpm_compare:423|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|ir_sensor:29|lpm_compare:423|altshift:aeb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:423|altshift:agb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:444|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp2|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp1|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp0|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:eq_cmp_end|
+|ir_sensor:29|lpm_compare:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|
+|ir_sensor:29|lpm_compare:444|altshift:aeb_ext_lat_ffs|
+|ir_sensor:29|lpm_compare:444|altshift:agb_ext_lat_ffs|
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+***** Logic for device 'top_motor' compiled without errors.
+
+
+
+
+Device: EPF10K20RC240-4
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+                                                                                                                                          
+                                                                                                                                          
+                                                                                                                                          
+                 R R R R R R R R   R R R R R R R   R R R R R R R   R R R       R R R R   R R R R R R R   R R R R R R R   R R R R R R R R  
+                 E E E E E E E E   E E E E E E E   E E E E E E E   E E E       E E E E   E E E E E E E   E E E E E E E   E E E E E E E E  
+                 S S S S S S S S G S S S S S S S V S S S S S S S G S S S G G G S S S S V S S S S S S S G S S S S S S S V S S S S S S S S  
+                 E E E E E E E E N E E E E E E E C E E E E E E E N E E E N N N E E E E C E E E E E E E N E E E E E E E C E E E E E E E E  
+                 R R R R R R R R D R R R R R R R C R R R R R R R D R R R D D D R R R R C R R R R R R R D R R R R R R R C R R R R R R R R  
+                 V V V V V V V V I V V V V V V V I V V V V V V V I V V V I I I V V V V I V V V V V V V I V V V V V V V I V V V V V V V V  
+                 E E E E E E E E N E E E E E E E N E E E E E E E N E E E N N N E E E E N E E E E E E E N E E E E E E E N E E E E E E E E  
+                 D D D D D D D D T D D D D D D D T D D D D D D D T D D D T T T D D D D T D D D D D D D T D D D D D D D T D D D D D D D D  
+               --------------------------------------------------------------------------------------------------------------------------_ 
+              / 240 238 236 234 232 230 228 226 224 222 220 218 216 214 212 210 208 206 204 202 200 198 196 194 192 190 188 186 184 182   |_ 
+             /    239 237 235 233 231 229 227 225 223 221 219 217 215 213 211 209 207 205 203 201 199 197 195 193 191 189 187 185 183 181    | 
+       #TCK |  1                                                                                                                         180 | ^DATA0 
+ ^CONF_DONE |  2                                                                                                                         179 | ^DCLK 
+      ^nCEO |  3                                                                                                                         178 | ^nCE 
+       #TDO |  4                                                                                                                         177 | #TDI 
+     VCCINT |  5                                                                                                                         176 | GNDINT 
+   RESERVED |  6                                                                                                                         175 | RESERVED 
+   RESERVED |  7                                                                                                                         174 | RESERVED 
+   RESERVED |  8                                                                                                                         173 | RESERVED 
+   RESERVED |  9                                                                                                                         172 | RESERVED 
+     GNDINT | 10                                                                                                                         171 | RESERVED 
+   RESERVED | 11                                                                                                                         170 | VCCINT 
+   RESERVED | 12                                                                                                                         169 | RESERVED 
+   RESERVED | 13                                                                                                                         168 | RESERVED 
+      RIGHT | 14                                                                                                                         167 | RESERVED 
+   RESERVED | 15                                                                                                                         166 | RESERVED 
+     VCCINT | 16                                                                                                                         165 | GNDINT 
+   RESERVED | 17                                                                                                                         164 | RESERVED 
+   RESERVED | 18                                                                                                                         163 | LMOTOR 
+   RESERVED | 19                                                                                                                         162 | RESERVED 
+   RESERVED | 20                                                                                                                         161 | RESERVED 
+   RESERVED | 21                                                                                                                         160 | VCCINT 
+     GNDINT | 22                                                                                                                         159 | RESERVED 
+   RESERVED | 23                                                                                                                         158 | LEFT_LED 
+   RESERVED | 24                                                                                                                         157 | RESERVED 
+       LEFT | 25                                                                                                                         156 | RIGHT_LED 
+   RESERVED | 26                                                                                                                         155 | GNDINT 
+     VCCINT | 27                                                                                                                         154 | RESERVED 
+   RESERVED | 28                                                                                                                         153 | SOUT 
+   RESERVED | 29                                                                                                                         152 | RESERVED 
+   RESERVED | 30                                                                                                                         151 | RESERVED 
+   RESERVED | 31                                                     EPF10K20RC240-4                                                     150 | VCCINT 
+     GNDINT | 32                                                                                                                         149 | RESERVED 
+   RESERVED | 33                                                                                                                         148 | RESERVED 
+   RESERVED | 34                                                                                                                         147 | RESERVED 
+   RESERVED | 35                                                                                                                         146 | RESERVED 
+   RESERVED | 36                                                                                                                         145 | GNDINT 
+     VCCINT | 37                                                                                                                         144 | RESERVED 
+   RESERVED | 38                                                                                                                         143 | RESERVED 
+   RESERVED | 39                                                                                                                         142 | RESERVED 
+   RESERVED | 40                                                                                                                         141 | RESERVED 
+   RESERVED | 41                                                                                                                         140 | VCCINT 
+     GNDINT | 42                                                                                                                         139 | RESERVED 
+   RESERVED | 43                                                                                                                         138 | RESERVED 
+   RESERVED | 44                                                                                                                         137 | RESERVED 
+   RESERVED | 45                                                                                                                         136 | RESERVED 
+   RESERVED | 46                                                                                                                         135 | GNDINT 
+     VCCINT | 47                                                                                                                         134 | RESERVED 
+   RESERVED | 48                                                                                                                         133 | RESERVED 
+   RESERVED | 49                                                                                                                         132 | RESERVED 
+   RESERVED | 50                                                                                                                         131 | RESERVED 
+   RESERVED | 51                                                                                                                         130 | VCCINT 
+     GNDINT | 52                                                                                                                         129 | RESERVED 
+   RESERVED | 53                                                                                                                         128 | RESERVED 
+   RESERVED | 54                                                                                                                         127 | RESERVED 
+   RESERVED | 55                                                                                                                         126 | RESERVED 
+   RESERVED | 56                                                                                                                         125 | GNDINT 
+     VCCINT | 57                                                                                                                         124 | ^MSEL0 
+       #TMS | 58                                                                                                                         123 | ^MSEL1 
+     #nTRST | 59                                                                                                                         122 | VCCINT 
+   ^nSTATUS | 60                                                                                                                         121 | ^nCONFIG 
+            |      62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104 106 108 110 112 114 116 118 120  _| 
+             \   61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109 111 113 115 117 119   | 
+              \--------------------------------------------------------------------------------------------------------------------------- 
+                 R R R R R R R R G R R R R R R R V R R R R R R R G R R R V G C G G R R V R R R R R R R G R R R R R R R V R R R R R R R R  
+                 E E E E E E E E N E E E E E E E C E E E E E E E N E E E C N L N N E E C E E E E E E E N E E E E E M E C E E E E E E E E  
+                 S S S S S S S S D S S S S S S S C S S S S S S S D S S S C D O D D S S C S S S S S S S D S S S S S O S C S S S S S S S S  
+                 E E E E E E E E I E E E E E E E I E E E E E E E I E E E I I C I I E E I E E E E E E E I E E E E E T E I E E E E E E E E  
+                 R R R R R R R R N R R R R R R R N R R R R R R R N R R R N N K N N R R N R R R R R R R N R R R R R O R N R R R R R R R R  
+                 V V V V V V V V T V V V V V V V T V V V V V V V T V V V T T _ T T V V T V V V V V V V T V V V V V R V T V V V V V V V V  
+                 E E E E E E E E   E E E E E E E   E E E E E E E   E E E     2     E E   E E E E E E E   E E E E E   E   E E E E E E E E  
+                 D D D D D D D D   D D D D D D D   D D D D D D D   D D D     5     D D   D D D D D D D   D D D D D   D   D D D D D D D D  
+                                                                             M                                                            
+                                                                             h                                                            
+                                                                             z                                                            
+
+
+N.C. = Not Connected.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (3.3 or 5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND (5.0 volts).
+GNDIO = Dedicated ground pin or unused dedicated input, which MUST be connected to GND (3.3 or 5.0 volts).
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which will be tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary Scan Testing Pin.
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clear/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Preset   Interconnect
+A5       5/ 8( 62%)   3/ 8( 37%)   0/ 8(  0%)    1/2    0/2       9/22( 40%)   
+A11      4/ 8( 50%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       1/22(  4%)   
+A16      1/ 8( 12%)   1/ 8( 12%)   0/ 8(  0%)    1/2    0/2       1/22(  4%)   
+B3       8/ 8(100%)   0/ 8(  0%)   5/ 8( 62%)    0/2    0/2       8/22( 36%)   
+B7       8/ 8(100%)   1/ 8( 12%)   1/ 8( 12%)    1/2    0/2      10/22( 45%)   
+B8       6/ 8( 75%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2      10/22( 45%)   
+B9       8/ 8(100%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2      11/22( 50%)   
+B13      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    1/2    1/2       2/22(  9%)   
+C1       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       2/22(  9%)   
+C2       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+C3       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+C4       3/ 8( 37%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2       6/22( 27%)   
+C5       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       2/22(  9%)   
+C6       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       1/22(  4%)   
+C7       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+C8       8/ 8(100%)   1/ 8( 12%)   1/ 8( 12%)    1/2    0/2       7/22( 31%)   
+C9       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       1/22(  4%)   
+C10      8/ 8(100%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2       7/22( 31%)   
+C11      3/ 8( 37%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2       5/22( 22%)   
+C12      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+C14      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    1/2    1/2       2/22(  9%)   
+D4       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+D6       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+D7       8/ 8(100%)   0/ 8(  0%)   4/ 8( 50%)    0/2    0/2       9/22( 40%)   
+D8       5/ 8( 62%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+D10      8/ 8(100%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2       8/22( 36%)   
+D11      6/ 8( 75%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2      10/22( 45%)   
+D12      1/ 8( 12%)   1/ 8( 12%)   0/ 8(  0%)    0/2    0/2       4/22( 18%)   
+D17      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       2/22(  9%)   
+E3       4/ 8( 50%)   1/ 8( 12%)   0/ 8(  0%)    1/2    0/2       1/22(  4%)   
+E4       1/ 8( 12%)   1/ 8( 12%)   0/ 8(  0%)    1/2    0/2       1/22(  4%)   
+E6       4/ 8( 50%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       1/22(  4%)   
+E8       7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       0/22(  0%)   
+E9       1/ 8( 12%)   1/ 8( 12%)   0/ 8(  0%)    1/2    0/2       1/22(  4%)   
+E10      8/ 8(100%)   1/ 8( 12%)   1/ 8( 12%)    2/2    0/2       1/22(  4%)   
+E11      4/ 8( 50%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       1/22(  4%)   
+F1       7/ 8( 87%)   2/ 8( 25%)   1/ 8( 12%)    0/2    0/2      11/22( 50%)   
+F2       7/ 8( 87%)   2/ 8( 25%)   2/ 8( 25%)    1/2    0/2       6/22( 27%)   
+F3       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+F4       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+F6       5/ 8( 62%)   1/ 8( 12%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+F7       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       3/22( 13%)   
+F8       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       3/22( 13%)   
+F9       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+F10      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       2/22(  9%)   
+F11      4/ 8( 50%)   1/ 8( 12%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+F12      1/ 8( 12%)   1/ 8( 12%)   0/ 8(  0%)    0/2    0/2       4/22( 18%)   
+F18      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       2/22(  9%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 1/6      ( 16%)
+Total I/O pins used:                             7/183    (  3%)
+Total logic cells used:                        163/1152   ( 14%)
+Total embedded cells used:                       0/48     (  0%)
+Total EABs used:                                 0/6      (  0%)
+Average fan-in:                                 3.22/4    ( 80%)
+Total fan-in:                                 526/4608    ( 11%)
+
+Total input pins required:                       2
+Total input registers required:                  0
+Total output pins required:                      6
+Total output registers required:                 0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                    163
+Total flipflops required:                       72
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                        28/1152   (  2%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  EA  13  14  15  16  17  18  19  20  21  22  23  24  Total(LC/EC)
+ A:      0   0   0   0   5   0   0   0   0   0   4   0   0   0   0   0   1   0   0   0   0   0   0   0   0     10/0  
+ B:      0   0   8   0   0   0   8   6   8   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0     31/0  
+ C:      1   1   1   3   1   1   1   8   1   8   3   1   0   0   1   0   0   0   0   0   0   0   0   0   0     31/0  
+ D:      0   0   0   1   0   1   8   5   0   8   6   1   0   0   0   0   0   1   0   0   0   0   0   0   0     31/0  
+ E:      0   0   4   1   0   4   0   7   1   8   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0     29/0  
+ F:      7   7   1   1   0   5   1   1   1   1   4   1   0   0   0   0   0   0   1   0   0   0   0   0   0     31/0  
+
+Total:   8   8  14   6   6  11  18  27  11  25  21   3   0   1   1   0   1   1   1   0   0   0   0   0   0    163/0  
+
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code     INP  FBK  OUT  FBK  Name
+  91      -     -    -    --      INPUT               0    0    0    0  CLOCK_25Mhz
+ 153      -     -    C    --      INPUT               0    0    0    6  SOUT
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code     INP  FBK  OUT  FBK  Name
+  25      -     -    C    --     OUTPUT               0    1    0    0  LEFT
+ 158      -     -    C    --     OUTPUT               0    1    0    0  LEFT_LED
+ 163      -     -    B    --     OUTPUT               0    1    0    0  LMOTOR
+  14      -     -    B    --     OUTPUT               0    1    0    0  RIGHT
+ 156      -     -    C    --     OUTPUT               0    1    0    0  RIGHT_LED
+ 110      -     -    -    05     OUTPUT               0    1    0    0  RMOTOR
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code     INP  FBK  OUT  FBK  Name
+   -      7     -    E    08       AND2               0    2    0    3  |CLK_DIV:11|LPM_ADD_SUB:98|addcore:adder|:59
+   -      1     -    E    04       DFFE  +            0    1    0   23  |CLK_DIV:11|:4
+   -      1     -    E    09       DFFE  +            0    1    0   12  |CLK_DIV:11|:6
+   -      3     -    C    06       DFFE  +s           0    1    1    0  |CLK_DIV:11|~10~1
+   -      2     -    C    09       DFFE  +            0    1    1   14  |CLK_DIV:11|:10
+   -      1     -    A    16       DFFE  +            0    1    0    2  |CLK_DIV:11|:14
+   -      2     -    E    08       DFFE  +            0    3    0    5  |CLK_DIV:11|count_1Mhz4 (|CLK_DIV:11|:16)
+   -      3     -    E    08       DFFE  +            0    3    0    5  |CLK_DIV:11|count_1Mhz3 (|CLK_DIV:11|:17)
+   -      4     -    E    08       DFFE  +            0    3    0    3  |CLK_DIV:11|count_1Mhz2 (|CLK_DIV:11|:18)
+   -      5     -    E    08       DFFE  +            0    3    0    1  |CLK_DIV:11|count_1Mhz1 (|CLK_DIV:11|:19)
+   -      6     -    E    08       DFFE  +            0    2    0    2  |CLK_DIV:11|count_1Mhz0 (|CLK_DIV:11|:20)
+   -      1     -    E    08       DFFE  +            0    3    0    4  |CLK_DIV:11|clock_1Mhz_int (|CLK_DIV:11|:21)
+   -      1     -    E    11       DFFE               0    4    0    5  |CLK_DIV:11|clock_100Khz_int (|CLK_DIV:11|:22)
+   -      1     -    E    06       DFFE               0    4    0    5  |CLK_DIV:11|clock_10Khz_int (|CLK_DIV:11|:23)
+   -      7     -    E    10       DFFE               0    4    0    4  |CLK_DIV:11|clock_1Khz_int (|CLK_DIV:11|:24)
+   -      1     -    E    10       DFFE               0    4    0    6  |CLK_DIV:11|clock_100hz_int (|CLK_DIV:11|:25)
+   -      2     -    E    03       DFFE               0    4    0    4  |CLK_DIV:11|clock_10Hz_int (|CLK_DIV:11|:26)
+   -      1     -    A    11       DFFE               0    4    0    1  |CLK_DIV:11|clock_1Hz_int (|CLK_DIV:11|:27)
+   -      2     -    E    11       DFFE               0    3    0    2  |CLK_DIV:11|count_100Khz2 (|CLK_DIV:11|:28)
+   -      3     -    E    11       DFFE               0    2    0    3  |CLK_DIV:11|count_100Khz1 (|CLK_DIV:11|:29)
+   -      4     -    E    11       DFFE               0    3    0    3  |CLK_DIV:11|count_100Khz0 (|CLK_DIV:11|:30)
+   -      2     -    E    06       DFFE               0    3    0    2  |CLK_DIV:11|count_10Khz2 (|CLK_DIV:11|:31)
+   -      3     -    E    06       DFFE               0    2    0    3  |CLK_DIV:11|count_10Khz1 (|CLK_DIV:11|:32)
+   -      4     -    E    06       DFFE               0    3    0    3  |CLK_DIV:11|count_10Khz0 (|CLK_DIV:11|:33)
+   -      8     -    E    10       DFFE               0    3    0    2  |CLK_DIV:11|count_1Khz2 (|CLK_DIV:11|:34)
+   -      6     -    E    10       DFFE               0    2    0    3  |CLK_DIV:11|count_1Khz1 (|CLK_DIV:11|:35)
+   -      5     -    E    10       DFFE               0    3    0    3  |CLK_DIV:11|count_1Khz0 (|CLK_DIV:11|:36)
+   -      4     -    E    10       DFFE               0    3    0    2  |CLK_DIV:11|count_100hz2 (|CLK_DIV:11|:37)
+   -      2     -    E    10       DFFE               0    2    0    3  |CLK_DIV:11|count_100hz1 (|CLK_DIV:11|:38)
+   -      3     -    E    10       DFFE               0    3    0    3  |CLK_DIV:11|count_100hz0 (|CLK_DIV:11|:39)
+   -      1     -    E    03       DFFE               0    3    0    2  |CLK_DIV:11|count_10hz2 (|CLK_DIV:11|:40)
+   -      3     -    E    03       DFFE               0    2    0    3  |CLK_DIV:11|count_10hz1 (|CLK_DIV:11|:41)
+   -      4     -    E    03       DFFE               0    3    0    3  |CLK_DIV:11|count_10hz0 (|CLK_DIV:11|:42)
+   -      2     -    A    11       DFFE               0    3    0    2  |CLK_DIV:11|count_1hz2 (|CLK_DIV:11|:43)
+   -      3     -    A    11       DFFE               0    2    0    3  |CLK_DIV:11|count_1hz1 (|CLK_DIV:11|:44)
+   -      4     -    A    11       DFFE               0    3    0    3  |CLK_DIV:11|count_1hz0 (|CLK_DIV:11|:45)
+   -      1     -    C    04       AND2               1    1    0    1  |IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:52
+   -      3     -    C    03       AND2               1    2    0    3  |IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:59
+   -      2     -    C    05       AND2               0    2    0    1  |IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:63
+   -      2     -    C    10       AND2               0    3    0    1  |IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:67
+   -      3     -    C    11       AND2               1    1    0    1  |IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:52
+   -      1     -    C    11       AND2               1    2    0    3  |IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:59
+   -      2     -    C    01       AND2               0    2    0    1  |IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:63
+   -      3     -    C    08       AND2               0    3    0    1  |IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:67
+   -      4     -    C    10        OR2   s           0    4    0    1  |IR_SENSOR:29|LPM_COMPARE:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~39~1
+   -      3     -    C    10        OR2               0    4    0    6  |IR_SENSOR:29|LPM_COMPARE:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|:39
+   -      5     -    C    10       AND2       !       0    2    0    1  |IR_SENSOR:29|LPM_COMPARE:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46
+   -      4     -    C    08        OR2   s           0    4    0    1  |IR_SENSOR:29|LPM_COMPARE:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~39~1
+   -      1     -    C    08        OR2               0    4    0    6  |IR_SENSOR:29|LPM_COMPARE:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|:39
+   -      5     -    C    08       AND2       !       0    2    0    1  |IR_SENSOR:29|LPM_COMPARE:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46
+   -      4     -    C    14       DFFE       !       0    2    1    8  |IR_SENSOR:29|:7
+   -      2     -    B    13       DFFE       !       0    2    1    8  |IR_SENSOR:29|:9
+   -      6     -    C    10       DFFE               0    4    0    2  |IR_SENSOR:29|left_rscount4 (|IR_SENSOR:29|:11)
+   -      7     -    C    10       DFFE               0    4    0    3  |IR_SENSOR:29|left_rscount3 (|IR_SENSOR:29|:12)
+   -      4     -    C    04       DFFE               0    4    0    4  |IR_SENSOR:29|left_rscount2 (|IR_SENSOR:29|:13)
+   -      3     -    C    04       DFFE               0    4    0    3  |IR_SENSOR:29|left_rscount1 (|IR_SENSOR:29|:14)
+   -      1     -    C    02       DFFE               1    3    0    4  |IR_SENSOR:29|left_rscount0 (|IR_SENSOR:29|:15)
+   -      1     -    C    10       DFFE               0    4    0    1  |IR_SENSOR:29|set_left (|IR_SENSOR:29|:16)
+   -      6     -    C    08       DFFE               0    4    0    2  |IR_SENSOR:29|right_rscount4 (|IR_SENSOR:29|:17)
+   -      7     -    C    08       DFFE               0    4    0    3  |IR_SENSOR:29|right_rscount3 (|IR_SENSOR:29|:18)
+   -      1     -    C    12       DFFE               0    4    0    4  |IR_SENSOR:29|right_rscount2 (|IR_SENSOR:29|:19)
+   -      2     -    C    11       DFFE               0    4    0    3  |IR_SENSOR:29|right_rscount1 (|IR_SENSOR:29|:20)
+   -      1     -    C    07       DFFE               1    3    0    4  |IR_SENSOR:29|right_rscount0 (|IR_SENSOR:29|:21)
+   -      2     -    C    08       DFFE               0    4    0    1  |IR_SENSOR:29|set_right (|IR_SENSOR:29|:22)
+   -      8     -    C    10        OR2   s           0    3    0    1  |IR_SENSOR:29|~251~1
+   -      8     -    C    08        OR2   s           0    3    0    1  |IR_SENSOR:29|~480~1
+   -      1     -    F    09        OR2       !       0    3    0    5  |SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:91
+   -      4     -    F    11       AND2               0    3    0    1  |SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:99
+   -      6     -    F    02       AND2               0    4    0    3  |SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:103
+   -      7     -    F    02       AND2               0    3    0    2  |SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:111
+   -      7     -    B    07       AND2               0    2    0    1  |SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:59
+   -      7     -    B    03       AND2               0    3    0    2  |SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:63
+   -      8     -    B    03       AND2               0    2    0    2  |SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:67
+   -      8     -    B    07        OR2               0    2    0    1  |SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry1
+   -      7     -    B    09        OR2               0    3    0    1  |SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry2
+   -      6     -    B    09        OR2               0    4    0    1  |SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry3
+   -      6     -    D    11       AND2               0    2    0    1  |SERVO_CONTROL:15|LPM_ADD_SUB:1016|addcore:adder|:59
+   -      8     -    D    07       AND2               0    3    0    2  |SERVO_CONTROL:15|LPM_ADD_SUB:1016|addcore:adder|:63
+   -      5     -    D    11        OR2               0    2    0    1  |SERVO_CONTROL:15|LPM_ADD_SUB:1181|addcore:adder|pcarry1
+   -      2     -    D    04        OR2               0    3    0    3  |SERVO_CONTROL:15|LPM_ADD_SUB:1181|addcore:adder|pcarry2
+   -      5     -    F    01       AND2   s   !       0    2    0    2  |SERVO_CONTROL:15|LPM_COMPARE:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~43~1
+   -      3     -    F    01        OR2       !       0    4    0   10  |SERVO_CONTROL:15|LPM_COMPARE:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|:43
+   -      6     -    F    01        OR2   s   !       0    4    0    1  |SERVO_CONTROL:15|LPM_COMPARE:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~38~1
+   -      7     -    F    01        OR2               0    4    0    2  |SERVO_CONTROL:15|LPM_COMPARE:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39
+   -      2     -    F    10        OR2       !       0    2    0    4  |SERVO_CONTROL:15|LPM_COMPARE:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|:38
+   -      3     -    F    12        OR2       !       0    4    0    2  |SERVO_CONTROL:15|LPM_COMPARE:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:38
+   -      3     -    A    05       AND2       !       0    2    0    7  |SERVO_CONTROL:15|LPM_COMPARE:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39
+   -      2     -    F    06        OR2               0    2    0    6  |SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46
+   -      5     -    F    06       AND2   s   !       0    4    0    1  |SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|~39~1
+   -      1     -    F    06        OR2               0    4    0   17  |SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39
+   -      6     -    B    03       AND2   s   !       0    4    0    2  |SERVO_CONTROL:15|LPM_COMPARE:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~39~1
+   -      3     -    F    11        OR2   s   !       0    3    0    1  |SERVO_CONTROL:15|LPM_COMPARE:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|~39~1
+   -      2     -    F    11        OR2               0    4    0    5  |SERVO_CONTROL:15|LPM_COMPARE:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39
+   -      7     -    D    07       AND2   s   !       0    4    0    1  |SERVO_CONTROL:15|LPM_COMPARE:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~39~1
+   -      5     -    B    08       DFFE               0    4    1    0  |SERVO_CONTROL:15|:11
+   -      1     -    A    05       DFFE               0    4    1    0  |SERVO_CONTROL:15|:13
+   -      3     -    F    02       DFFE               0    4    0    1  |SERVO_CONTROL:15|count_motor10 (|SERVO_CONTROL:15|:15)
+   -      5     -    F    02       DFFE               0    3    0    2  |SERVO_CONTROL:15|count_motor9 (|SERVO_CONTROL:15|:16)
+   -      4     -    F    02       DFFE               0    4    0    2  |SERVO_CONTROL:15|count_motor8 (|SERVO_CONTROL:15|:17)
+   -      2     -    F    02       DFFE               0    3    0    8  |SERVO_CONTROL:15|count_motor7 (|SERVO_CONTROL:15|:18)
+   -      1     -    F    11       DFFE               0    3    0    7  |SERVO_CONTROL:15|count_motor6 (|SERVO_CONTROL:15|:19)
+   -      2     -    F    03       DFFE               0    4    0    6  |SERVO_CONTROL:15|count_motor5 (|SERVO_CONTROL:15|:20)
+   -      1     -    F    07       DFFE               0    3    0    7  |SERVO_CONTROL:15|count_motor4 (|SERVO_CONTROL:15|:21)
+   -      2     -    F    04       DFFE               0    4    0    6  |SERVO_CONTROL:15|count_motor3 (|SERVO_CONTROL:15|:22)
+   -      1     -    F    08       DFFE               0    3    0    7  |SERVO_CONTROL:15|count_motor2 (|SERVO_CONTROL:15|:23)
+   -      4     -    F    06       DFFE               0    3    0    1  |SERVO_CONTROL:15|count_motor1 (|SERVO_CONTROL:15|:24)
+   -      3     -    F    06       DFFE               0    1    0    2  |SERVO_CONTROL:15|count_motor0 (|SERVO_CONTROL:15|:25)
+   -      3     -    B    09       DFFE               0    4    0    4  |SERVO_CONTROL:15|lmotor_speed_count4 (|SERVO_CONTROL:15|:26)
+   -      8     -    B    09       DFFE               0    4    0    6  |SERVO_CONTROL:15|lmotor_speed_count3 (|SERVO_CONTROL:15|:27)
+   -      3     -    B    07       DFFE               0    4    0    6  |SERVO_CONTROL:15|lmotor_speed_count2 (|SERVO_CONTROL:15|:28)
+   -      2     -    B    08       DFFE               0    4    0    8  |SERVO_CONTROL:15|lmotor_speed_count1 (|SERVO_CONTROL:15|:29)
+   -      2     -    A    05       DFFE               0    4    0    8  |SERVO_CONTROL:15|lmotor_speed_count0 (|SERVO_CONTROL:15|:30)
+   -      1     -    D    10       DFFE               0    4    0    3  |SERVO_CONTROL:15|rmotor_speed_count4 (|SERVO_CONTROL:15|:31)
+   -      2     -    D    10       DFFE               0    4    0    6  |SERVO_CONTROL:15|rmotor_speed_count3 (|SERVO_CONTROL:15|:32)
+   -      2     -    D    11       DFFE               0    4    0    5  |SERVO_CONTROL:15|rmotor_speed_count2 (|SERVO_CONTROL:15|:33)
+   -      1     -    D    06       DFFE               0    4    0    7  |SERVO_CONTROL:15|rmotor_speed_count1 (|SERVO_CONTROL:15|:34)
+   -      2     -    D    08       DFFE               0    4    0    7  |SERVO_CONTROL:15|rmotor_speed_count0 (|SERVO_CONTROL:15|:35)
+   -      2     -    F    01        OR2       !       0    4    0   12  |SERVO_CONTROL:15|:354
+   -      4     -    F    01        OR2   s           0    4    0    1  |SERVO_CONTROL:15|~380~1
+   -      1     -    F    18       AND2   s           0    2    0    1  |SERVO_CONTROL:15|~380~2
+   -      3     -    D    10       AND2   s           0    4    0    1  |SERVO_CONTROL:15|~380~3
+   -      4     -    D    10       AND2   s           0    4    0    1  |SERVO_CONTROL:15|~380~4
+   -      5     -    D    10        OR2   s   !       0    3    0    1  |SERVO_CONTROL:15|~380~5
+   -      1     -    F    01        OR2       !       0    4    0   15  |SERVO_CONTROL:15|:380
+   -      1     -    F    02        OR2   s           0    3    0    9  |SERVO_CONTROL:15|~574~1
+   -      3     -    B    03        OR2   s   !       0    3    0    5  |SERVO_CONTROL:15|~574~2
+   -      1     -    B    03        OR2               0    4    0    1  |SERVO_CONTROL:15|:622
+   -      4     -    B    03        OR2               0    4    0    1  |SERVO_CONTROL:15|:631
+   -      2     -    B    07        OR2               0    4    0    1  |SERVO_CONTROL:15|:640
+   -      4     -    B    08        OR2               0    4    0    1  |SERVO_CONTROL:15|:649
+   -      2     -    B    03        OR2       !       0    4    0    5  |SERVO_CONTROL:15|:739
+   -      4     -    B    09        OR2               0    4    0    1  |SERVO_CONTROL:15|:787
+   -      1     -    B    09        OR2               0    4    0    1  |SERVO_CONTROL:15|:796
+   -      5     -    B    07        OR2               0    4    0    1  |SERVO_CONTROL:15|:805
+   -      1     -    B    08        OR2               0    4    0    1  |SERVO_CONTROL:15|:814
+   -      5     -    B    03        OR2               0    4    0    1  |SERVO_CONTROL:15|:832
+   -      2     -    B    09        OR2               0    3    0    1  |SERVO_CONTROL:15|:847
+   -      5     -    B    09        OR2               0    3    0    1  |SERVO_CONTROL:15|:853
+   -      4     -    B    07        OR2               0    3    0    1  |SERVO_CONTROL:15|:859
+   -      6     -    B    08        OR2               0    3    0    1  |SERVO_CONTROL:15|:865
+   -      3     -    B    08        OR2               0    4    0    1  |SERVO_CONTROL:15|:877
+   -      1     -    D    07        OR2   s   !       0    4    0    5  |SERVO_CONTROL:15|~997~1
+   -      5     -    D    07        OR2               0    4    0    1  |SERVO_CONTROL:15|:1054
+   -      1     -    D    11        OR2               0    4    0    1  |SERVO_CONTROL:15|:1063
+   -      4     -    D    07        OR2               0    4    0    1  |SERVO_CONTROL:15|:1072
+   -      1     -    D    17        OR2               0    2    0    1  |SERVO_CONTROL:15|:1090
+   -      2     -    D    07        OR2       !       0    4    0    7  |SERVO_CONTROL:15|:1162
+   -      6     -    D    10        OR2               0    4    0    1  |SERVO_CONTROL:15|:1219
+   -      3     -    D    11        OR2               0    4    0    1  |SERVO_CONTROL:15|:1228
+   -      6     -    D    07        OR2               0    4    0    1  |SERVO_CONTROL:15|:1237
+   -      7     -    D    10        OR2               0    3    0    1  |SERVO_CONTROL:15|:1276
+   -      4     -    D    11        OR2               0    3    0    1  |SERVO_CONTROL:15|:1282
+   -      3     -    D    07        OR2               0    3    0    1  |SERVO_CONTROL:15|:1288
+   -      1     -    D    12        OR2               0    4    0    1  |SERVO_CONTROL:15|:1300
+   -      6     -    B    07        OR2   s           0    4    0    1  |SERVO_CONTROL:15|~1438~1
+   -      1     -    B    07        OR2   s           0    4    0    1  |SERVO_CONTROL:15|~1438~2
+   -      4     -    A    05        OR2   s           0    4    0    1  |SERVO_CONTROL:15|~1438~3
+   -      5     -    A    05       AND2   s           0    2    0    1  |SERVO_CONTROL:15|~1438~4
+   -      8     -    D    10        OR2   s           0    4    0    1  |SERVO_CONTROL:15|~1445~1
+   -      5     -    D    08        OR2   s           0    2    0    2  |SERVO_CONTROL:15|~1483~1
+   -      4     -    D    08        OR2   s           0    4    0    1  |SERVO_CONTROL:15|~1483~2
+   -      3     -    D    08        OR2   s           0    2    0    1  |SERVO_CONTROL:15|~1483~3
+   -      1     -    D    08        OR2   s           0    4    0    1  |SERVO_CONTROL:15|~1483~4
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       2/ 96(  2%)     9/ 48( 18%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+B:       2/ 96(  2%)    17/ 48( 35%)     1/ 48(  2%)    0/16(  0%)      2/16( 12%)     0/16(  0%)
+C:       2/ 96(  2%)    16/ 48( 33%)     2/ 48(  4%)    1/16(  6%)      3/16( 18%)     0/16(  0%)
+D:       4/ 96(  4%)    14/ 48( 29%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+E:       0/ 96(  0%)     4/ 48(  8%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+F:       3/ 96(  3%)    10/ 48( 20%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+02:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+03:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      3/24( 12%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+06:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      2/24(  8%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+20:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** CLOCK SIGNALS **
+
+Type     Fan-out       Name
+DFF         23         |CLK_DIV:11|:4
+DFF         12         |CLK_DIV:11|:6
+INPUT       11         CLOCK_25Mhz
+DFF          7         |CLK_DIV:11|clock_100hz_int
+DFF          6         |CLK_DIV:11|clock_100Khz_int
+DFF          6         |CLK_DIV:11|clock_10Khz_int
+DFF          5         |CLK_DIV:11|clock_1Khz_int
+DFF          5         |CLK_DIV:11|clock_10Hz_int
+DFF          4         |CLK_DIV:11|clock_1Mhz_int
+DFF          2         |CLK_DIV:11|:14
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** CLEAR SIGNALS **
+
+Type     Fan-out       Name
+DFF          2         |IR_SENSOR:29|set_left
+DFF          2         |IR_SENSOR:29|set_right
+
+
+Device-Specific Information:                   e:\max2work\robot\top_motor.rpt
+top_motor
+
+** EQUATIONS **
+
+CLOCK_25Mhz : INPUT;
+SOUT     : INPUT;
+
+-- Node name is 'LEFT' 
+-- Equation name is 'LEFT', type is output 
+LEFT     =  _LC4_C14;
+
+-- Node name is 'LEFT_LED' 
+-- Equation name is 'LEFT_LED', type is output 
+LEFT_LED =  _LC2_C9;
+
+-- Node name is 'LMOTOR' 
+-- Equation name is 'LMOTOR', type is output 
+LMOTOR   =  _LC5_B8;
+
+-- Node name is 'RIGHT' 
+-- Equation name is 'RIGHT', type is output 
+RIGHT    =  _LC2_B13;
+
+-- Node name is 'RIGHT_LED' 
+-- Equation name is 'RIGHT_LED', type is output 
+RIGHT_LED = !_LC3_C6;
+
+-- Node name is 'RMOTOR' 
+-- Equation name is 'RMOTOR', type is output 
+RMOTOR   =  _LC1_A5;
+
+-- Node name is '|CLK_DIV:11|:27' = '|CLK_DIV:11|clock_1Hz_int' 
+-- Equation name is '_LC1_A11', type is buried 
+_LC1_A11 = DFFE( _EQ001,  _LC2_E3,  VCC,  VCC,  VCC);
+  _EQ001 = !_LC1_A11 &  _LC2_A11 & !_LC3_A11 & !_LC4_A11
+         #  _LC1_A11 &  _LC4_A11
+         #  _LC1_A11 &  _LC3_A11
+         #  _LC1_A11 & !_LC2_A11;
+
+-- Node name is '|CLK_DIV:11|:24' = '|CLK_DIV:11|clock_1Khz_int' 
+-- Equation name is '_LC7_E10', type is buried 
+_LC7_E10 = DFFE( _EQ002,  _LC1_E6,  VCC,  VCC,  VCC);
+  _EQ002 = !_LC5_E10 & !_LC6_E10 & !_LC7_E10 &  _LC8_E10
+         #  _LC5_E10 &  _LC7_E10
+         #  _LC6_E10 &  _LC7_E10
+         #  _LC7_E10 & !_LC8_E10;
+
+-- Node name is '|CLK_DIV:11|:21' = '|CLK_DIV:11|clock_1Mhz_int' 
+-- Equation name is '_LC1_E8', type is buried 
+_LC1_E8  = DFFE( _EQ003, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+  _EQ003 =  _LC3_E8 &  _LC4_E8
+         #  _LC2_E8;
+
+-- Node name is '|CLK_DIV:11|:26' = '|CLK_DIV:11|clock_10Hz_int' 
+-- Equation name is '_LC2_E3', type is buried 
+_LC2_E3  = DFFE( _EQ004,  _LC1_E10,  VCC,  VCC,  VCC);
+  _EQ004 =  _LC1_E3 & !_LC2_E3 & !_LC3_E3 & !_LC4_E3
+         #  _LC2_E3 &  _LC4_E3
+         #  _LC2_E3 &  _LC3_E3
+         # !_LC1_E3 &  _LC2_E3;
+
+-- Node name is '|CLK_DIV:11|:23' = '|CLK_DIV:11|clock_10Khz_int' 
+-- Equation name is '_LC1_E6', type is buried 
+_LC1_E6  = DFFE( _EQ005,  _LC1_E11,  VCC,  VCC,  VCC);
+  _EQ005 = !_LC1_E6 &  _LC2_E6 & !_LC3_E6 & !_LC4_E6
+         #  _LC1_E6 &  _LC4_E6
+         #  _LC1_E6 &  _LC3_E6
+         #  _LC1_E6 & !_LC2_E6;
+
+-- Node name is '|CLK_DIV:11|:25' = '|CLK_DIV:11|clock_100hz_int' 
+-- Equation name is '_LC1_E10', type is buried 
+_LC1_E10 = DFFE( _EQ006,  _LC7_E10,  VCC,  VCC,  VCC);
+  _EQ006 = !_LC1_E10 & !_LC2_E10 & !_LC3_E10 &  _LC4_E10
+         #  _LC1_E10 &  _LC3_E10
+         #  _LC1_E10 &  _LC2_E10
+         #  _LC1_E10 & !_LC4_E10;
+
+-- Node name is '|CLK_DIV:11|:22' = '|CLK_DIV:11|clock_100Khz_int' 
+-- Equation name is '_LC1_E11', type is buried 
+_LC1_E11 = DFFE( _EQ007,  _LC1_E8,  VCC,  VCC,  VCC);
+  _EQ007 = !_LC1_E11 &  _LC2_E11 & !_LC3_E11 & !_LC4_E11
+         #  _LC1_E11 &  _LC4_E11
+         #  _LC1_E11 &  _LC3_E11
+         #  _LC1_E11 & !_LC2_E11;
+
+-- Node name is '|CLK_DIV:11|:45' = '|CLK_DIV:11|count_1hz0' 
+-- Equation name is '_LC4_A11', type is buried 
+_LC4_A11 = DFFE( _EQ008,  _LC2_E3,  VCC,  VCC,  VCC);
+  _EQ008 = !_LC2_A11 & !_LC4_A11
+         #  _LC3_A11 & !_LC4_A11;
+
+-- Node name is '|CLK_DIV:11|:44' = '|CLK_DIV:11|count_1hz1' 
+-- Equation name is '_LC3_A11', type is buried 
+_LC3_A11 = DFFE( _EQ009,  _LC2_E3,  VCC,  VCC,  VCC);
+  _EQ009 = !_LC3_A11 &  _LC4_A11
+         #  _LC3_A11 & !_LC4_A11;
+
+-- Node name is '|CLK_DIV:11|:43' = '|CLK_DIV:11|count_1hz2' 
+-- Equation name is '_LC2_A11', type is buried 
+_LC2_A11 = DFFE( _EQ010,  _LC2_E3,  VCC,  VCC,  VCC);
+  _EQ010 = !_LC2_A11 &  _LC3_A11 &  _LC4_A11
+         #  _LC2_A11 &  _LC3_A11 & !_LC4_A11
+         #  _LC2_A11 & !_LC3_A11 &  _LC4_A11;
+
+-- Node name is '|CLK_DIV:11|:36' = '|CLK_DIV:11|count_1Khz0' 
+-- Equation name is '_LC5_E10', type is buried 
+_LC5_E10 = DFFE( _EQ011,  _LC1_E6,  VCC,  VCC,  VCC);
+  _EQ011 = !_LC5_E10 & !_LC8_E10
+         # !_LC5_E10 &  _LC6_E10;
+
+-- Node name is '|CLK_DIV:11|:35' = '|CLK_DIV:11|count_1Khz1' 
+-- Equation name is '_LC6_E10', type is buried 
+_LC6_E10 = DFFE( _EQ012,  _LC1_E6,  VCC,  VCC,  VCC);
+  _EQ012 =  _LC5_E10 & !_LC6_E10
+         # !_LC5_E10 &  _LC6_E10;
+
+-- Node name is '|CLK_DIV:11|:34' = '|CLK_DIV:11|count_1Khz2' 
+-- Equation name is '_LC8_E10', type is buried 
+_LC8_E10 = DFFE( _EQ013,  _LC1_E6,  VCC,  VCC,  VCC);
+  _EQ013 =  _LC5_E10 &  _LC6_E10 & !_LC8_E10
+         # !_LC5_E10 &  _LC6_E10 &  _LC8_E10
+         #  _LC5_E10 & !_LC6_E10 &  _LC8_E10;
+
+-- Node name is '|CLK_DIV:11|:20' = '|CLK_DIV:11|count_1Mhz0' 
+-- Equation name is '_LC6_E8', type is buried 
+_LC6_E8  = DFFE( _EQ014, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+  _EQ014 = !_LC2_E8 & !_LC6_E8
+         # !_LC3_E8 & !_LC6_E8;
+
+-- Node name is '|CLK_DIV:11|:19' = '|CLK_DIV:11|count_1Mhz1' 
+-- Equation name is '_LC5_E8', type is buried 
+_LC5_E8  = DFFE( _EQ015, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+  _EQ015 = !_LC2_E8 & !_LC5_E8 &  _LC6_E8
+         # !_LC3_E8 & !_LC5_E8 &  _LC6_E8
+         # !_LC2_E8 &  _LC5_E8 & !_LC6_E8
+         # !_LC3_E8 &  _LC5_E8 & !_LC6_E8;
+
+-- Node name is '|CLK_DIV:11|:18' = '|CLK_DIV:11|count_1Mhz2' 
+-- Equation name is '_LC4_E8', type is buried 
+_LC4_E8  = DFFE( _EQ016, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+  _EQ016 = !_LC2_E8 &  _LC4_E8 & !_LC7_E8
+         # !_LC3_E8 &  _LC4_E8 & !_LC7_E8
+         # !_LC2_E8 & !_LC4_E8 &  _LC7_E8
+         # !_LC3_E8 & !_LC4_E8 &  _LC7_E8;
+
+-- Node name is '|CLK_DIV:11|:17' = '|CLK_DIV:11|count_1Mhz3' 
+-- Equation name is '_LC3_E8', type is buried 
+_LC3_E8  = DFFE( _EQ017, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+  _EQ017 = !_LC3_E8 &  _LC4_E8 &  _LC7_E8
+         # !_LC2_E8 &  _LC3_E8 & !_LC4_E8
+         # !_LC2_E8 &  _LC3_E8 & !_LC7_E8;
+
+-- Node name is '|CLK_DIV:11|:16' = '|CLK_DIV:11|count_1Mhz4' 
+-- Equation name is '_LC2_E8', type is buried 
+_LC2_E8  = DFFE( _EQ018, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+  _EQ018 =  _LC2_E8 & !_LC3_E8
+         # !_LC2_E8 &  _LC3_E8 &  _LC4_E8 &  _LC7_E8;
+
+-- Node name is '|CLK_DIV:11|:42' = '|CLK_DIV:11|count_10hz0' 
+-- Equation name is '_LC4_E3', type is buried 
+_LC4_E3  = DFFE( _EQ019,  _LC1_E10,  VCC,  VCC,  VCC);
+  _EQ019 = !_LC1_E3 & !_LC4_E3
+         #  _LC3_E3 & !_LC4_E3;
+
+-- Node name is '|CLK_DIV:11|:41' = '|CLK_DIV:11|count_10hz1' 
+-- Equation name is '_LC3_E3', type is buried 
+_LC3_E3  = DFFE( _EQ020,  _LC1_E10,  VCC,  VCC,  VCC);
+  _EQ020 = !_LC3_E3 &  _LC4_E3
+         #  _LC3_E3 & !_LC4_E3;
+
+-- Node name is '|CLK_DIV:11|:40' = '|CLK_DIV:11|count_10hz2' 
+-- Equation name is '_LC1_E3', type is buried 
+_LC1_E3  = DFFE( _EQ021,  _LC1_E10,  VCC,  VCC,  VCC);
+  _EQ021 = !_LC1_E3 &  _LC3_E3 &  _LC4_E3
+         #  _LC1_E3 &  _LC3_E3 & !_LC4_E3
+         #  _LC1_E3 & !_LC3_E3 &  _LC4_E3;
+
+-- Node name is '|CLK_DIV:11|:33' = '|CLK_DIV:11|count_10Khz0' 
+-- Equation name is '_LC4_E6', type is buried 
+_LC4_E6  = DFFE( _EQ022,  _LC1_E11,  VCC,  VCC,  VCC);
+  _EQ022 = !_LC2_E6 & !_LC4_E6
+         #  _LC3_E6 & !_LC4_E6;
+
+-- Node name is '|CLK_DIV:11|:32' = '|CLK_DIV:11|count_10Khz1' 
+-- Equation name is '_LC3_E6', type is buried 
+_LC3_E6  = DFFE( _EQ023,  _LC1_E11,  VCC,  VCC,  VCC);
+  _EQ023 = !_LC3_E6 &  _LC4_E6
+         #  _LC3_E6 & !_LC4_E6;
+
+-- Node name is '|CLK_DIV:11|:31' = '|CLK_DIV:11|count_10Khz2' 
+-- Equation name is '_LC2_E6', type is buried 
+_LC2_E6  = DFFE( _EQ024,  _LC1_E11,  VCC,  VCC,  VCC);
+  _EQ024 = !_LC2_E6 &  _LC3_E6 &  _LC4_E6
+         #  _LC2_E6 &  _LC3_E6 & !_LC4_E6
+         #  _LC2_E6 & !_LC3_E6 &  _LC4_E6;
+
+-- Node name is '|CLK_DIV:11|:39' = '|CLK_DIV:11|count_100hz0' 
+-- Equation name is '_LC3_E10', type is buried 
+_LC3_E10 = DFFE( _EQ025,  _LC7_E10,  VCC,  VCC,  VCC);
+  _EQ025 = !_LC3_E10 & !_LC4_E10
+         #  _LC2_E10 & !_LC3_E10;
+
+-- Node name is '|CLK_DIV:11|:38' = '|CLK_DIV:11|count_100hz1' 
+-- Equation name is '_LC2_E10', type is buried 
+_LC2_E10 = DFFE( _EQ026,  _LC7_E10,  VCC,  VCC,  VCC);
+  _EQ026 = !_LC2_E10 &  _LC3_E10
+         #  _LC2_E10 & !_LC3_E10;
+
+-- Node name is '|CLK_DIV:11|:37' = '|CLK_DIV:11|count_100hz2' 
+-- Equation name is '_LC4_E10', type is buried 
+_LC4_E10 = DFFE( _EQ027,  _LC7_E10,  VCC,  VCC,  VCC);
+  _EQ027 =  _LC2_E10 &  _LC3_E10 & !_LC4_E10
+         #  _LC2_E10 & !_LC3_E10 &  _LC4_E10
+         # !_LC2_E10 &  _LC3_E10 &  _LC4_E10;
+
+-- Node name is '|CLK_DIV:11|:30' = '|CLK_DIV:11|count_100Khz0' 
+-- Equation name is '_LC4_E11', type is buried 
+_LC4_E11 = DFFE( _EQ028,  _LC1_E8,  VCC,  VCC,  VCC);
+  _EQ028 = !_LC2_E11 & !_LC4_E11
+         #  _LC3_E11 & !_LC4_E11;
+
+-- Node name is '|CLK_DIV:11|:29' = '|CLK_DIV:11|count_100Khz1' 
+-- Equation name is '_LC3_E11', type is buried 
+_LC3_E11 = DFFE( _EQ029,  _LC1_E8,  VCC,  VCC,  VCC);
+  _EQ029 = !_LC3_E11 &  _LC4_E11
+         #  _LC3_E11 & !_LC4_E11;
+
+-- Node name is '|CLK_DIV:11|:28' = '|CLK_DIV:11|count_100Khz2' 
+-- Equation name is '_LC2_E11', type is buried 
+_LC2_E11 = DFFE( _EQ030,  _LC1_E8,  VCC,  VCC,  VCC);
+  _EQ030 = !_LC2_E11 &  _LC3_E11 &  _LC4_E11
+         #  _LC2_E11 &  _LC3_E11 & !_LC4_E11
+         #  _LC2_E11 & !_LC3_E11 &  _LC4_E11;
+
+-- Node name is '|CLK_DIV:11|LPM_ADD_SUB:98|addcore:adder|:59' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC7_E8', type is buried 
+_LC7_E8  = LCELL( _EQ031);
+  _EQ031 =  _LC5_E8 &  _LC6_E8;
+
+-- Node name is '|CLK_DIV:11|:4' 
+-- Equation name is '_LC1_E4', type is buried 
+_LC1_E4  = DFFE( _LC1_E11, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is '|CLK_DIV:11|:6' 
+-- Equation name is '_LC1_E9', type is buried 
+_LC1_E9  = DFFE( _LC1_E6, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is '|CLK_DIV:11|~10~1' 
+-- Equation name is '_LC3_C6', type is buried 
+-- synthesized logic cell 
+_LC3_C6  = DFFE( _LC1_E10, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is '|CLK_DIV:11|:10' 
+-- Equation name is '_LC2_C9', type is buried 
+_LC2_C9  = DFFE( _LC1_E10, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is '|CLK_DIV:11|:14' 
+-- Equation name is '_LC1_A16', type is buried 
+_LC1_A16 = DFFE( _LC1_A11, GLOBAL( CLOCK_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is '|IR_SENSOR:29|:15' = '|IR_SENSOR:29|left_rscount0' 
+-- Equation name is '_LC1_C2', type is buried 
+_LC1_C2  = DFFE( _EQ032, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ032 =  _LC1_C2 &  _LC2_C9 & !_LC3_C10
+         #  _LC1_C2 &  _LC2_C9 &  SOUT
+         # !_LC1_C2 &  _LC2_C9 &  _LC3_C10 & !SOUT;
+
+-- Node name is '|IR_SENSOR:29|:14' = '|IR_SENSOR:29|left_rscount1' 
+-- Equation name is '_LC3_C4', type is buried 
+_LC3_C4  = DFFE( _EQ033, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ033 =  _LC2_C9 &  _LC3_C4 & !_LC3_C10
+         # !_LC1_C4 &  _LC2_C9 &  _LC3_C4
+         #  _LC1_C4 &  _LC2_C9 & !_LC3_C4 &  _LC3_C10;
+
+-- Node name is '|IR_SENSOR:29|:13' = '|IR_SENSOR:29|left_rscount2' 
+-- Equation name is '_LC4_C4', type is buried 
+_LC4_C4  = DFFE( _EQ034, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ034 =  _LC2_C9 & !_LC3_C10 &  _LC4_C4
+         #  _LC2_C9 & !_LC3_C3 &  _LC4_C4
+         #  _LC2_C9 &  _LC3_C3 &  _LC3_C10 & !_LC4_C4;
+
+-- Node name is '|IR_SENSOR:29|:12' = '|IR_SENSOR:29|left_rscount3' 
+-- Equation name is '_LC7_C10', type is buried 
+_LC7_C10 = DFFE( _EQ035, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ035 = !_LC2_C5 &  _LC2_C9 &  _LC7_C10
+         #  _LC2_C5 &  _LC2_C9 & !_LC7_C10
+         #  _LC2_C9 & !_LC3_C10;
+
+-- Node name is '|IR_SENSOR:29|:11' = '|IR_SENSOR:29|left_rscount4' 
+-- Equation name is '_LC6_C10', type is buried 
+_LC6_C10 = DFFE( _EQ036, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ036 =  _LC2_C9 & !_LC2_C10 &  _LC6_C10
+         #  _LC2_C9 &  _LC2_C10 & !_LC6_C10
+         #  _LC2_C9 & !_LC3_C10;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:52' from file "addcore.tdf" line 346, column 28
+-- Equation name is '_LC1_C4', type is buried 
+_LC1_C4  = LCELL( _EQ037);
+  _EQ037 =  _LC1_C2 & !SOUT;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:59' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC3_C3', type is buried 
+_LC3_C3  = LCELL( _EQ038);
+  _EQ038 =  _LC1_C2 &  _LC3_C4 & !SOUT;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:63' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC2_C5', type is buried 
+_LC2_C5  = LCELL( _EQ039);
+  _EQ039 =  _LC3_C3 &  _LC4_C4;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:87|addcore:adder|:67' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC2_C10', type is buried 
+_LC2_C10 = LCELL( _EQ040);
+  _EQ040 =  _LC3_C3 &  _LC4_C4 &  _LC7_C10;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:52' from file "addcore.tdf" line 346, column 28
+-- Equation name is '_LC3_C11', type is buried 
+_LC3_C11 = LCELL( _EQ041);
+  _EQ041 =  _LC1_C7 & !SOUT;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:59' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC1_C11', type is buried 
+_LC1_C11 = LCELL( _EQ042);
+  _EQ042 =  _LC1_C7 &  _LC2_C11 & !SOUT;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:63' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC2_C1', type is buried 
+_LC2_C1  = LCELL( _EQ043);
+  _EQ043 =  _LC1_C11 &  _LC1_C12;
+
+-- Node name is '|IR_SENSOR:29|LPM_ADD_SUB:317|addcore:adder|:67' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC3_C8', type is buried 
+_LC3_C8  = LCELL( _EQ044);
+  _EQ044 =  _LC1_C11 &  _LC1_C12 &  _LC7_C8;
+
+-- Node name is '|IR_SENSOR:29|LPM_COMPARE:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~39~1' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC4_C10', type is buried 
+-- synthesized logic cell 
+_LC4_C10 = LCELL( _EQ045);
+  _EQ045 =  _LC3_C4 &  _LC4_C4 &  _LC7_C10
+         #  _LC1_C2 &  _LC4_C4 &  _LC7_C10;
+
+-- Node name is '|IR_SENSOR:29|LPM_COMPARE:67|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|:39' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC3_C10', type is buried 
+_LC3_C10 = LCELL( _EQ046);
+  _EQ046 = !_LC6_C10
+         # !_LC7_C10
+         # !_LC4_C4 & !_LC5_C10;
+
+-- Node name is '|IR_SENSOR:29|LPM_COMPARE:215|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46' from file "cmpchain.tdf" line 469, column 33
+-- Equation name is '_LC5_C10', type is buried 
+!_LC5_C10 = _LC5_C10~NOT;
+_LC5_C10~NOT = LCELL( _EQ047);
+  _EQ047 = !_LC1_C2 & !_LC3_C4;
+
+-- Node name is '|IR_SENSOR:29|LPM_COMPARE:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~39~1' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC4_C8', type is buried 
+-- synthesized logic cell 
+_LC4_C8  = LCELL( _EQ048);
+  _EQ048 =  _LC1_C12 &  _LC2_C11 &  _LC7_C8
+         #  _LC1_C7 &  _LC1_C12 &  _LC7_C8;
+
+-- Node name is '|IR_SENSOR:29|LPM_COMPARE:297|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|:39' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC1_C8', type is buried 
+_LC1_C8  = LCELL( _EQ049);
+  _EQ049 = !_LC6_C8
+         # !_LC7_C8
+         # !_LC1_C12 & !_LC5_C8;
+
+-- Node name is '|IR_SENSOR:29|LPM_COMPARE:444|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46' from file "cmpchain.tdf" line 469, column 33
+-- Equation name is '_LC5_C8', type is buried 
+!_LC5_C8 = _LC5_C8~NOT;
+_LC5_C8~NOT = LCELL( _EQ050);
+  _EQ050 = !_LC1_C7 & !_LC2_C11;
+
+-- Node name is '|IR_SENSOR:29|:21' = '|IR_SENSOR:29|right_rscount0' 
+-- Equation name is '_LC1_C7', type is buried 
+_LC1_C7  = DFFE( _EQ051, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ051 =  _LC1_C7 & !_LC1_C8 & !_LC2_C9
+         #  _LC1_C7 & !_LC2_C9 &  SOUT
+         # !_LC1_C7 &  _LC1_C8 & !_LC2_C9 & !SOUT;
+
+-- Node name is '|IR_SENSOR:29|:20' = '|IR_SENSOR:29|right_rscount1' 
+-- Equation name is '_LC2_C11', type is buried 
+_LC2_C11 = DFFE( _EQ052, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ052 = !_LC1_C8 & !_LC2_C9 &  _LC2_C11
+         # !_LC2_C9 &  _LC2_C11 & !_LC3_C11
+         #  _LC1_C8 & !_LC2_C9 & !_LC2_C11 &  _LC3_C11;
+
+-- Node name is '|IR_SENSOR:29|:19' = '|IR_SENSOR:29|right_rscount2' 
+-- Equation name is '_LC1_C12', type is buried 
+_LC1_C12 = DFFE( _EQ053, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ053 = !_LC1_C8 &  _LC1_C12 & !_LC2_C9
+         # !_LC1_C11 &  _LC1_C12 & !_LC2_C9
+         #  _LC1_C8 &  _LC1_C11 & !_LC1_C12 & !_LC2_C9;
+
+-- Node name is '|IR_SENSOR:29|:18' = '|IR_SENSOR:29|right_rscount3' 
+-- Equation name is '_LC7_C8', type is buried 
+_LC7_C8  = DFFE( _EQ054, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ054 = !_LC2_C1 & !_LC2_C9 &  _LC7_C8
+         #  _LC2_C1 & !_LC2_C9 & !_LC7_C8
+         # !_LC1_C8 & !_LC2_C9;
+
+-- Node name is '|IR_SENSOR:29|:17' = '|IR_SENSOR:29|right_rscount4' 
+-- Equation name is '_LC6_C8', type is buried 
+_LC6_C8  = DFFE( _EQ055, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ055 = !_LC2_C9 & !_LC3_C8 &  _LC6_C8
+         # !_LC2_C9 &  _LC3_C8 & !_LC6_C8
+         # !_LC1_C8 & !_LC2_C9;
+
+-- Node name is '|IR_SENSOR:29|:16' = '|IR_SENSOR:29|set_left' 
+-- Equation name is '_LC1_C10', type is buried 
+_LC1_C10 = DFFE( _EQ056, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ056 =  _LC1_C10 &  _LC8_C10
+         # !_LC2_C9 & !_LC3_C10 &  _LC8_C10;
+
+-- Node name is '|IR_SENSOR:29|:22' = '|IR_SENSOR:29|set_right' 
+-- Equation name is '_LC2_C8', type is buried 
+_LC2_C8  = DFFE( _EQ057, !_LC1_E9,  VCC,  VCC,  VCC);
+  _EQ057 =  _LC2_C8 &  _LC8_C8
+         # !_LC1_C8 &  _LC2_C9 &  _LC8_C8;
+
+-- Node name is '|IR_SENSOR:29|:7' 
+-- Equation name is '_LC4_C14', type is buried 
+!_LC4_C14 = _LC4_C14~NOT;
+_LC4_C14~NOT = DFFE( VCC,  _LC1_A16, !_LC1_C10,  VCC,  VCC);
+
+-- Node name is '|IR_SENSOR:29|:9' 
+-- Equation name is '_LC2_B13', type is buried 
+!_LC2_B13 = _LC2_B13~NOT;
+_LC2_B13~NOT = DFFE( VCC,  _LC1_A16, !_LC2_C8,  VCC,  VCC);
+
+-- Node name is '|IR_SENSOR:29|~251~1' 
+-- Equation name is '_LC8_C10', type is buried 
+-- synthesized logic cell 
+_LC8_C10 = LCELL( _EQ058);
+  _EQ058 =  _LC4_C10
+         #  _LC2_C9
+         #  _LC6_C10;
+
+-- Node name is '|IR_SENSOR:29|~480~1' 
+-- Equation name is '_LC8_C8', type is buried 
+-- synthesized logic cell 
+_LC8_C8  = LCELL( _EQ059);
+  _EQ059 =  _LC4_C8
+         # !_LC2_C9
+         #  _LC6_C8;
+
+-- Node name is '|SERVO_CONTROL:15|:25' = '|SERVO_CONTROL:15|count_motor0' 
+-- Equation name is '_LC3_F6', type is buried 
+_LC3_F6  = DFFE(!_LC3_F6,  _LC1_E4,  VCC,  VCC,  VCC);
+
+-- Node name is '|SERVO_CONTROL:15|:24' = '|SERVO_CONTROL:15|count_motor1' 
+-- Equation name is '_LC4_F6', type is buried 
+_LC4_F6  = DFFE( _EQ060,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ060 = !_LC3_F1 &  _LC3_F6 & !_LC4_F6
+         # !_LC3_F1 & !_LC3_F6 &  _LC4_F6;
+
+-- Node name is '|SERVO_CONTROL:15|:23' = '|SERVO_CONTROL:15|count_motor2' 
+-- Equation name is '_LC1_F8', type is buried 
+_LC1_F8  = DFFE( _EQ061,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ061 =  _LC1_F8 &  _LC2_F6 & !_LC3_F1
+         # !_LC1_F8 & !_LC2_F6 & !_LC3_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:22' = '|SERVO_CONTROL:15|count_motor3' 
+-- Equation name is '_LC2_F4', type is buried 
+_LC2_F4  = DFFE( _EQ062,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ062 = !_LC1_F8 &  _LC2_F4 & !_LC3_F1
+         #  _LC2_F4 &  _LC2_F6 & !_LC3_F1
+         #  _LC1_F8 & !_LC2_F4 & !_LC2_F6 & !_LC3_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:21' = '|SERVO_CONTROL:15|count_motor4' 
+-- Equation name is '_LC1_F7', type is buried 
+_LC1_F7  = DFFE( _EQ063,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ063 =  _LC1_F7 & !_LC1_F9 & !_LC3_F1
+         # !_LC1_F7 &  _LC1_F9 & !_LC3_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:20' = '|SERVO_CONTROL:15|count_motor5' 
+-- Equation name is '_LC2_F3', type is buried 
+_LC2_F3  = DFFE( _EQ064,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ064 = !_LC1_F7 &  _LC2_F3 & !_LC3_F1
+         # !_LC1_F9 &  _LC2_F3 & !_LC3_F1
+         #  _LC1_F7 &  _LC1_F9 & !_LC2_F3 & !_LC3_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:19' = '|SERVO_CONTROL:15|count_motor6' 
+-- Equation name is '_LC1_F11', type is buried 
+_LC1_F11 = DFFE( _EQ065,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ065 =  _LC1_F11 & !_LC3_F1 & !_LC4_F11
+         # !_LC1_F11 & !_LC3_F1 &  _LC4_F11;
+
+-- Node name is '|SERVO_CONTROL:15|:18' = '|SERVO_CONTROL:15|count_motor7' 
+-- Equation name is '_LC2_F2', type is buried 
+_LC2_F2  = DFFE( _EQ066,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ066 =  _LC2_F2 & !_LC3_F1 & !_LC6_F2
+         # !_LC2_F2 & !_LC3_F1 &  _LC6_F2;
+
+-- Node name is '|SERVO_CONTROL:15|:17' = '|SERVO_CONTROL:15|count_motor8' 
+-- Equation name is '_LC4_F2', type is buried 
+_LC4_F2  = DFFE( _EQ067,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ067 = !_LC2_F2 & !_LC3_F1 &  _LC4_F2
+         # !_LC3_F1 &  _LC4_F2 & !_LC6_F2
+         #  _LC2_F2 & !_LC3_F1 & !_LC4_F2 &  _LC6_F2;
+
+-- Node name is '|SERVO_CONTROL:15|:16' = '|SERVO_CONTROL:15|count_motor9' 
+-- Equation name is '_LC5_F2', type is buried 
+_LC5_F2  = DFFE( _EQ068,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ068 = !_LC3_F1 &  _LC5_F2 & !_LC7_F2
+         # !_LC3_F1 & !_LC5_F2 &  _LC7_F2;
+
+-- Node name is '|SERVO_CONTROL:15|:15' = '|SERVO_CONTROL:15|count_motor10' 
+-- Equation name is '_LC3_F2', type is buried 
+_LC3_F2  = DFFE( _EQ069,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ069 = !_LC3_F1 &  _LC3_F2 & !_LC5_F2
+         # !_LC3_F1 &  _LC3_F2 & !_LC7_F2
+         # !_LC3_F1 & !_LC3_F2 &  _LC5_F2 &  _LC7_F2;
+
+-- Node name is '|SERVO_CONTROL:15|:30' = '|SERVO_CONTROL:15|lmotor_speed_count0' 
+-- Equation name is '_LC2_A5', type is buried 
+_LC2_A5  = DFFE( _EQ070,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ070 =  _LC1_B7 &  _LC2_A5 & !_LC2_F1
+         # !_LC2_A5 & !_LC2_F1 &  _LC5_A5;
+
+-- Node name is '|SERVO_CONTROL:15|:29' = '|SERVO_CONTROL:15|lmotor_speed_count1' 
+-- Equation name is '_LC2_B8', type is buried 
+_LC2_B8  = DFFE( _EQ071,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ071 =  _LC1_F1 & !_LC2_F1 &  _LC6_B8
+         # !_LC1_F1 &  _LC2_B8 & !_LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:28' = '|SERVO_CONTROL:15|lmotor_speed_count2' 
+-- Equation name is '_LC3_B7', type is buried 
+_LC3_B7  = DFFE( _EQ072,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ072 =  _LC1_F1 &  _LC4_B7
+         # !_LC1_F1 &  _LC3_B7
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:27' = '|SERVO_CONTROL:15|lmotor_speed_count3' 
+-- Equation name is '_LC8_B9', type is buried 
+_LC8_B9  = DFFE( _EQ073,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ073 =  _LC1_F1 &  _LC5_B9
+         # !_LC1_F1 &  _LC8_B9
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:26' = '|SERVO_CONTROL:15|lmotor_speed_count4' 
+-- Equation name is '_LC3_B9', type is buried 
+_LC3_B9  = DFFE( _EQ074,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ074 =  _LC1_F1 &  _LC2_B9
+         # !_LC1_F1 &  _LC3_B9
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:91' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC1_F9', type is buried 
+!_LC1_F9 = _LC1_F9~NOT;
+_LC1_F9~NOT = LCELL( _EQ075);
+  _EQ075 = !_LC2_F4
+         # !_LC1_F8
+         #  _LC2_F6;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:99' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC4_F11', type is buried 
+_LC4_F11 = LCELL( _EQ076);
+  _EQ076 =  _LC1_F7 &  _LC1_F9 &  _LC2_F3;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:103' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC6_F2', type is buried 
+_LC6_F2  = LCELL( _EQ077);
+  _EQ077 =  _LC1_F7 &  _LC1_F9 &  _LC1_F11 &  _LC2_F3;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:212|addcore:adder|:111' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC7_F2', type is buried 
+_LC7_F2  = LCELL( _EQ078);
+  _EQ078 =  _LC2_F2 &  _LC4_F2 &  _LC6_F2;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:59' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC7_B7', type is buried 
+_LC7_B7  = LCELL( _EQ079);
+  _EQ079 =  _LC2_A5 &  _LC2_B8;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:63' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC7_B3', type is buried 
+_LC7_B3  = LCELL( _EQ080);
+  _EQ080 =  _LC2_A5 &  _LC2_B8 &  _LC3_B7;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:593|addcore:adder|:67' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC8_B3', type is buried 
+_LC8_B3  = LCELL( _EQ081);
+  _EQ081 =  _LC7_B3 &  _LC8_B9;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry1' from file "addcore.tdf" line 350, column 40
+-- Equation name is '_LC8_B7', type is buried 
+_LC8_B7  = LCELL( _EQ082);
+  _EQ082 =  _LC2_B8
+         #  _LC2_A5;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry2' from file "addcore.tdf" line 350, column 40
+-- Equation name is '_LC7_B9', type is buried 
+_LC7_B9  = LCELL( _EQ083);
+  _EQ083 =  _LC2_B8
+         #  _LC2_A5
+         #  _LC3_B7;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:758|addcore:adder|pcarry3' from file "addcore.tdf" line 350, column 40
+-- Equation name is '_LC6_B9', type is buried 
+_LC6_B9  = LCELL( _EQ084);
+  _EQ084 =  _LC8_B9
+         #  _LC2_B8
+         #  _LC2_A5
+         #  _LC3_B7;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:1016|addcore:adder|:59' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC6_D11', type is buried 
+_LC6_D11 = LCELL( _EQ085);
+  _EQ085 =  _LC1_D6 &  _LC2_D8;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:1016|addcore:adder|:63' from file "addcore.tdf" line 350, column 64
+-- Equation name is '_LC8_D7', type is buried 
+_LC8_D7  = LCELL( _EQ086);
+  _EQ086 =  _LC1_D6 &  _LC2_D8 &  _LC2_D11;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:1181|addcore:adder|pcarry1' from file "addcore.tdf" line 350, column 40
+-- Equation name is '_LC5_D11', type is buried 
+_LC5_D11 = LCELL( _EQ087);
+  _EQ087 =  _LC1_D6
+         #  _LC2_D8;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_ADD_SUB:1181|addcore:adder|pcarry2' from file "addcore.tdf" line 350, column 40
+-- Equation name is '_LC2_D4', type is buried 
+_LC2_D4  = LCELL( _EQ088);
+  _EQ088 =  _LC1_D6
+         #  _LC2_D8
+         #  _LC2_D11;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~43~1' from file "cmpchain.tdf" line 480, column 56
+-- Equation name is '_LC5_F1', type is buried 
+-- synthesized logic cell 
+!_LC5_F1 = _LC5_F1~NOT;
+_LC5_F1~NOT = LCELL( _EQ089);
+  _EQ089 =  _LC1_F11 &  _LC2_F2;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:177|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|:43' from file "cmpchain.tdf" line 480, column 56
+-- Equation name is '_LC3_F1', type is buried 
+!_LC3_F1 = _LC3_F1~NOT;
+_LC3_F1~NOT = LCELL( _EQ090);
+  _EQ090 = !_LC2_F10
+         #  _LC1_F2
+         #  _LC5_F1
+         # !_LC1_F9;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:340|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|comptree:sub_comptree|cmpchain:gt_cmp_end|~38~1' from file "cmpchain.tdf" line 825, column 31
+-- Equation name is '_LC6_F1', type is buried 
+-- synthesized logic cell 
+!_LC6_F1 = _LC6_F1~NOT;
+_LC6_F1~NOT = LCELL( _EQ091);
+  _EQ091 = !_LC1_F8 & !_LC2_F4 &  _LC2_F10
+         # !_LC2_F4 &  _LC2_F6 &  _LC2_F10;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:353|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC7_F1', type is buried 
+_LC7_F1  = LCELL( _EQ092);
+  _EQ092 = !_LC2_F2 & !_LC2_F3
+         # !_LC2_F2 &  _LC4_F1
+         # !_LC1_F11 & !_LC2_F2;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:379|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|:38' from file "cmpchain.tdf" line 825, column 31
+-- Equation name is '_LC2_F10', type is buried 
+!_LC2_F10 = _LC2_F10~NOT;
+_LC2_F10~NOT = LCELL( _EQ093);
+  _EQ093 =  _LC2_F3
+         #  _LC1_F7;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:38' from file "cmpchain.tdf" line 825, column 31
+-- Equation name is '_LC3_F12', type is buried 
+!_LC3_F12 = _LC3_F12~NOT;
+_LC3_F12~NOT = LCELL( _EQ094);
+  _EQ094 =  _LC1_F11
+         #  _LC2_F4
+         #  _LC1_F8
+         # !_LC2_F10;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:554|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC3_A5', type is buried 
+!_LC3_A5 = _LC3_A5~NOT;
+_LC3_A5~NOT = LCELL( _EQ095);
+  _EQ095 =  _LC2_F2 & !_LC3_F12;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|cmpchain:cmp0|:46' from file "cmpchain.tdf" line 469, column 33
+-- Equation name is '_LC2_F6', type is buried 
+_LC2_F6  = LCELL( _EQ096);
+  _EQ096 = !_LC3_F6
+         # !_LC4_F6;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|~39~1' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC5_F6', type is buried 
+-- synthesized logic cell 
+!_LC5_F6 = _LC5_F6~NOT;
+_LC5_F6~NOT = LCELL( _EQ097);
+  _EQ097 = !_LC1_F7 & !_LC1_F8 & !_LC2_F4 &  _LC2_F6;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:718|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC1_F6', type is buried 
+_LC1_F6  = LCELL( _EQ098);
+  _EQ098 = !_LC2_F2
+         # !_LC1_F11 & !_LC2_F3
+         # !_LC1_F11 & !_LC5_F6;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:737|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~39~1' from file "cmpchain.tdf" line 468, column 33
+-- Equation name is '_LC6_B3', type is buried 
+-- synthesized logic cell 
+!_LC6_B3 = _LC6_B3~NOT;
+_LC6_B3~NOT = LCELL( _EQ099);
+  _EQ099 =  _LC2_A5 & !_LC2_B8 & !_LC3_B7 & !_LC3_B9;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|~39~1' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC3_F11', type is buried 
+-- synthesized logic cell 
+!_LC3_F11 = _LC3_F11~NOT;
+_LC3_F11~NOT = LCELL( _EQ100);
+  _EQ100 = !_LC1_F7
+         # !_LC1_F8 & !_LC2_F4;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:977|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|:39' from file "cmpchain.tdf" line 825, column 21
+-- Equation name is '_LC2_F11', type is buried 
+_LC2_F11 = LCELL( _EQ101);
+  _EQ101 = !_LC2_F2
+         # !_LC1_F11 & !_LC2_F3 & !_LC3_F11;
+
+-- Node name is '|SERVO_CONTROL:15|LPM_COMPARE:1160|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp_end|~39~1' from file "cmpchain.tdf" line 468, column 33
+-- Equation name is '_LC7_D7', type is buried 
+-- synthesized logic cell 
+!_LC7_D7 = _LC7_D7~NOT;
+_LC7_D7~NOT = LCELL( _EQ102);
+  _EQ102 = !_LC1_D6 &  _LC2_D8 & !_LC2_D10 & !_LC2_D11;
+
+-- Node name is '|SERVO_CONTROL:15|:35' = '|SERVO_CONTROL:15|rmotor_speed_count0' 
+-- Equation name is '_LC2_D8', type is buried 
+_LC2_D8  = DFFE( _EQ103,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ103 = !_LC2_D8 & !_LC2_F1 &  _LC4_D8
+         #  _LC1_D8 &  _LC2_D8 & !_LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:34' = '|SERVO_CONTROL:15|rmotor_speed_count1' 
+-- Equation name is '_LC1_D6', type is buried 
+_LC1_D6  = DFFE( _EQ104,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ104 =  _LC1_F1 & !_LC2_F1 &  _LC3_D7
+         #  _LC1_D6 & !_LC1_F1 & !_LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:33' = '|SERVO_CONTROL:15|rmotor_speed_count2' 
+-- Equation name is '_LC2_D11', type is buried 
+_LC2_D11 = DFFE( _EQ105,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ105 =  _LC1_F1 &  _LC4_D11
+         # !_LC1_F1 &  _LC2_D11
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:32' = '|SERVO_CONTROL:15|rmotor_speed_count3' 
+-- Equation name is '_LC2_D10', type is buried 
+_LC2_D10 = DFFE( _EQ106,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ106 =  _LC1_F1 &  _LC7_D10
+         # !_LC1_F1 &  _LC2_D10
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:31' = '|SERVO_CONTROL:15|rmotor_speed_count4' 
+-- Equation name is '_LC1_D10', type is buried 
+_LC1_D10 = DFFE( _EQ107,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ107 =  _LC4_D10
+         #  _LC1_D10 &  _LC8_D10
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:11' 
+-- Equation name is '_LC5_B8', type is buried 
+_LC5_B8  = DFFE( _EQ108,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ108 =  _LC1_F1 &  _LC3_B8
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:13' 
+-- Equation name is '_LC1_A5', type is buried 
+_LC1_A5  = DFFE( _EQ109,  _LC1_E4,  VCC,  VCC,  VCC);
+  _EQ109 =  _LC1_D12 &  _LC1_F1
+         #  _LC2_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:354' 
+-- Equation name is '_LC2_F1', type is buried 
+!_LC2_F1 = _LC2_F1~NOT;
+_LC2_F1~NOT = LCELL( _EQ110);
+  _EQ110 =  _LC1_F18 & !_LC6_F1
+         # !_LC7_F1
+         #  _LC1_F2;
+
+-- Node name is '|SERVO_CONTROL:15|~380~1' 
+-- Equation name is '_LC4_F1', type is buried 
+-- synthesized logic cell 
+_LC4_F1  = LCELL( _EQ111);
+  _EQ111 = !_LC1_F7 & !_LC2_F4
+         # !_LC1_F7 & !_LC1_F8 &  _LC2_F6;
+
+-- Node name is '|SERVO_CONTROL:15|~380~2' 
+-- Equation name is '_LC1_F18', type is buried 
+-- synthesized logic cell 
+_LC1_F18 = LCELL( _EQ112);
+  _EQ112 = !_LC1_F11 & !_LC2_F2;
+
+-- Node name is '|SERVO_CONTROL:15|~380~3' 
+-- Equation name is '_LC3_D10', type is buried 
+-- synthesized logic cell 
+_LC3_D10 = LCELL( _EQ113);
+  _EQ113 = !_LC1_D10 & !_LC2_D4 &  _LC2_D7 & !_LC2_D10;
+
+-- Node name is '|SERVO_CONTROL:15|~380~4' 
+-- Equation name is '_LC4_D10', type is buried 
+-- synthesized logic cell 
+_LC4_D10 = LCELL( _EQ114);
+  _EQ114 =  _LC1_F1 & !_LC1_F6 &  _LC3_D10 &  _LC4_C14;
+
+-- Node name is '|SERVO_CONTROL:15|~380~5' 
+-- Equation name is '_LC5_D10', type is buried 
+-- synthesized logic cell 
+!_LC5_D10 = _LC5_D10~NOT;
+_LC5_D10~NOT = LCELL( _EQ115);
+  _EQ115 = !_LC4_C14
+         #  _LC1_F6
+         # !_LC1_F1;
+
+-- Node name is '|SERVO_CONTROL:15|:380' 
+-- Equation name is '_LC1_F1', type is buried 
+!_LC1_F1 = _LC1_F1~NOT;
+_LC1_F1~NOT = LCELL( _EQ116);
+  _EQ116 =  _LC7_F1
+         # !_LC2_F10 & !_LC5_F1
+         #  _LC1_F2;
+
+-- Node name is '|SERVO_CONTROL:15|~574~1' 
+-- Equation name is '_LC1_F2', type is buried 
+-- synthesized logic cell 
+_LC1_F2  = LCELL( _EQ117);
+  _EQ117 = !_LC5_F2
+         # !_LC4_F2
+         # !_LC3_F2;
+
+-- Node name is '|SERVO_CONTROL:15|~574~2' 
+-- Equation name is '_LC3_B3', type is buried 
+-- synthesized logic cell 
+!_LC3_B3 = _LC3_B3~NOT;
+_LC3_B3~NOT = LCELL( _EQ118);
+  _EQ118 =  _LC3_B9 &  _LC8_B3
+         #  _LC1_F2;
+
+-- Node name is '|SERVO_CONTROL:15|:622' 
+-- Equation name is '_LC1_B3', type is buried 
+_LC1_B3  = LCELL( _EQ119);
+  _EQ119 = !_LC1_F2 & !_LC3_A5 &  _LC8_B3
+         #  _LC3_B9;
+
+-- Node name is '|SERVO_CONTROL:15|:631' 
+-- Equation name is '_LC4_B3', type is buried 
+_LC4_B3  = LCELL( _EQ120);
+  _EQ120 = !_LC7_B3 &  _LC8_B9
+         # !_LC3_A5 &  _LC3_B3 &  _LC7_B3 & !_LC8_B9
+         # !_LC3_B3 &  _LC8_B9
+         #  _LC3_A5 &  _LC8_B9;
+
+-- Node name is '|SERVO_CONTROL:15|:640' 
+-- Equation name is '_LC2_B7', type is buried 
+_LC2_B7  = LCELL( _EQ121);
+  _EQ121 =  _LC3_B7 & !_LC7_B7
+         # !_LC3_A5 &  _LC3_B3 & !_LC3_B7 &  _LC7_B7
+         # !_LC3_B3 &  _LC3_B7
+         #  _LC3_A5 &  _LC3_B7;
+
+-- Node name is '|SERVO_CONTROL:15|:649' 
+-- Equation name is '_LC4_B8', type is buried 
+_LC4_B8  = LCELL( _EQ122);
+  _EQ122 = !_LC2_A5 &  _LC2_B8
+         #  _LC2_A5 & !_LC2_B8 & !_LC3_A5 &  _LC3_B3
+         #  _LC2_B8 & !_LC3_B3
+         #  _LC2_B8 &  _LC3_A5;
+
+-- Node name is '|SERVO_CONTROL:15|:739' 
+-- Equation name is '_LC2_B3', type is buried 
+!_LC2_B3 = _LC2_B3~NOT;
+_LC2_B3~NOT = LCELL( _EQ123);
+  _EQ123 = !_LC6_B3 & !_LC8_B9
+         #  _LC1_F6
+         #  _LC1_F2;
+
+-- Node name is '|SERVO_CONTROL:15|:787' 
+-- Equation name is '_LC4_B9', type is buried 
+_LC4_B9  = LCELL( _EQ124);
+  _EQ124 =  _LC1_F6 &  _LC3_B9
+         #  _LC2_B3 &  _LC3_B9 &  _LC6_B9
+         # !_LC1_F6 &  _LC2_B3 & !_LC3_B9 & !_LC6_B9;
+
+-- Node name is '|SERVO_CONTROL:15|:796' 
+-- Equation name is '_LC1_B9', type is buried 
+_LC1_B9  = LCELL( _EQ125);
+  _EQ125 =  _LC1_F6 &  _LC8_B9
+         #  _LC2_B3 &  _LC7_B9 &  _LC8_B9
+         # !_LC1_F6 &  _LC2_B3 & !_LC7_B9 & !_LC8_B9;
+
+-- Node name is '|SERVO_CONTROL:15|:805' 
+-- Equation name is '_LC5_B7', type is buried 
+_LC5_B7  = LCELL( _EQ126);
+  _EQ126 =  _LC1_F6 &  _LC3_B7
+         #  _LC2_B3 &  _LC3_B7 &  _LC8_B7
+         # !_LC1_F6 &  _LC2_B3 & !_LC3_B7 & !_LC8_B7;
+
+-- Node name is '|SERVO_CONTROL:15|:814' 
+-- Equation name is '_LC1_B8', type is buried 
+_LC1_B8  = LCELL( _EQ127);
+  _EQ127 =  _LC1_F6 &  _LC2_B8
+         #  _LC2_A5 &  _LC2_B3 &  _LC2_B8
+         # !_LC1_F6 & !_LC2_A5 &  _LC2_B3 & !_LC2_B8;
+
+-- Node name is '|SERVO_CONTROL:15|:832' 
+-- Equation name is '_LC5_B3', type is buried 
+_LC5_B3  = LCELL( _EQ128);
+  _EQ128 = !_LC1_F2 &  _LC8_B9
+         # !_LC1_F2 &  _LC6_B3
+         #  _LC1_F6;
+
+-- Node name is '|SERVO_CONTROL:15|:847' 
+-- Equation name is '_LC2_B9', type is buried 
+_LC2_B9  = LCELL( _EQ129);
+  _EQ129 = !_LC2_B13 &  _LC4_B9
+         #  _LC1_B3 &  _LC2_B13;
+
+-- Node name is '|SERVO_CONTROL:15|:853' 
+-- Equation name is '_LC5_B9', type is buried 
+_LC5_B9  = LCELL( _EQ130);
+  _EQ130 =  _LC2_B13 &  _LC4_B3
+         #  _LC1_B9 & !_LC2_B13;
+
+-- Node name is '|SERVO_CONTROL:15|:859' 
+-- Equation name is '_LC4_B7', type is buried 
+_LC4_B7  = LCELL( _EQ131);
+  _EQ131 =  _LC2_B7 &  _LC2_B13
+         # !_LC2_B13 &  _LC5_B7;
+
+-- Node name is '|SERVO_CONTROL:15|:865' 
+-- Equation name is '_LC6_B8', type is buried 
+_LC6_B8  = LCELL( _EQ132);
+  _EQ132 =  _LC2_B13 &  _LC4_B8
+         #  _LC1_B8 & !_LC2_B13;
+
+-- Node name is '|SERVO_CONTROL:15|:877' 
+-- Equation name is '_LC3_B8', type is buried 
+_LC3_B8  = LCELL( _EQ133);
+  _EQ133 =  _LC2_B13 &  _LC3_B3
+         #  _LC2_B13 &  _LC3_A5
+         # !_LC2_B13 &  _LC5_B3;
+
+-- Node name is '|SERVO_CONTROL:15|~997~1' 
+-- Equation name is '_LC1_D7', type is buried 
+-- synthesized logic cell 
+!_LC1_D7 = _LC1_D7~NOT;
+_LC1_D7~NOT = LCELL( _EQ134);
+  _EQ134 =  _LC1_D10
+         #  _LC1_F2
+         #  _LC2_D10 &  _LC8_D7;
+
+-- Node name is '|SERVO_CONTROL:15|:1054' 
+-- Equation name is '_LC5_D7', type is buried 
+_LC5_D7  = LCELL( _EQ135);
+  _EQ135 =  _LC2_D10 & !_LC8_D7
+         #  _LC1_D7 & !_LC2_D10 & !_LC2_F11 &  _LC8_D7
+         # !_LC1_D7 &  _LC2_D10
+         #  _LC2_D10 &  _LC2_F11;
+
+-- Node name is '|SERVO_CONTROL:15|:1063' 
+-- Equation name is '_LC1_D11', type is buried 
+_LC1_D11 = LCELL( _EQ136);
+  _EQ136 =  _LC2_D11 & !_LC6_D11
+         #  _LC1_D7 & !_LC2_D11 & !_LC2_F11 &  _LC6_D11
+         # !_LC1_D7 &  _LC2_D11
+         #  _LC2_D11 &  _LC2_F11;
+
+-- Node name is '|SERVO_CONTROL:15|:1072' 
+-- Equation name is '_LC4_D7', type is buried 
+_LC4_D7  = LCELL( _EQ137);
+  _EQ137 =  _LC1_D6 & !_LC2_D8
+         # !_LC1_D6 &  _LC1_D7 &  _LC2_D8 & !_LC2_F11
+         #  _LC1_D6 & !_LC1_D7
+         #  _LC1_D6 &  _LC2_F11;
+
+-- Node name is '|SERVO_CONTROL:15|:1090' 
+-- Equation name is '_LC1_D17', type is buried 
+_LC1_D17 = LCELL( _EQ138);
+  _EQ138 =  _LC1_D7
+         #  _LC2_F11;
+
+-- Node name is '|SERVO_CONTROL:15|:1162' 
+-- Equation name is '_LC2_D7', type is buried 
+!_LC2_D7 = _LC2_D7~NOT;
+_LC2_D7~NOT = LCELL( _EQ139);
+  _EQ139 =  _LC1_F6
+         #  _LC1_F2
+         # !_LC1_D10 & !_LC7_D7;
+
+-- Node name is '|SERVO_CONTROL:15|:1219' 
+-- Equation name is '_LC6_D10', type is buried 
+_LC6_D10 = LCELL( _EQ140);
+  _EQ140 =  _LC1_F6 &  _LC2_D10
+         #  _LC2_D4 &  _LC2_D7 &  _LC2_D10
+         # !_LC1_F6 & !_LC2_D4 &  _LC2_D7 & !_LC2_D10;
+
+-- Node name is '|SERVO_CONTROL:15|:1228' 
+-- Equation name is '_LC3_D11', type is buried 
+_LC3_D11 = LCELL( _EQ141);
+  _EQ141 =  _LC1_F6 &  _LC2_D11
+         #  _LC2_D7 &  _LC2_D11 &  _LC5_D11
+         # !_LC1_F6 &  _LC2_D7 & !_LC2_D11 & !_LC5_D11;
+
+-- Node name is '|SERVO_CONTROL:15|:1237' 
+-- Equation name is '_LC6_D7', type is buried 
+_LC6_D7  = LCELL( _EQ142);
+  _EQ142 =  _LC1_D6 &  _LC1_F6
+         #  _LC1_D6 &  _LC2_D7 &  _LC2_D8
+         # !_LC1_D6 & !_LC1_F6 &  _LC2_D7 & !_LC2_D8;
+
+-- Node name is '|SERVO_CONTROL:15|:1276' 
+-- Equation name is '_LC7_D10', type is buried 
+_LC7_D10 = LCELL( _EQ143);
+  _EQ143 =  _LC4_C14 &  _LC6_D10
+         # !_LC4_C14 &  _LC5_D7;
+
+-- Node name is '|SERVO_CONTROL:15|:1282' 
+-- Equation name is '_LC4_D11', type is buried 
+_LC4_D11 = LCELL( _EQ144);
+  _EQ144 =  _LC3_D11 &  _LC4_C14
+         #  _LC1_D11 & !_LC4_C14;
+
+-- Node name is '|SERVO_CONTROL:15|:1288' 
+-- Equation name is '_LC3_D7', type is buried 
+_LC3_D7  = LCELL( _EQ145);
+  _EQ145 = !_LC4_C14 &  _LC4_D7
+         #  _LC4_C14 &  _LC6_D7;
+
+-- Node name is '|SERVO_CONTROL:15|:1300' 
+-- Equation name is '_LC1_D12', type is buried 
+_LC1_D12 = LCELL( _EQ146);
+  _EQ146 =  _LC2_D7 &  _LC4_C14
+         #  _LC1_F6 &  _LC4_C14
+         #  _LC1_D17 & !_LC4_C14;
+
+-- Node name is '|SERVO_CONTROL:15|~1438~1' 
+-- Equation name is '_LC6_B7', type is buried 
+-- synthesized logic cell 
+_LC6_B7  = LCELL( _EQ147);
+  _EQ147 = !_LC2_B3 & !_LC2_B13
+         #  _LC1_F6 & !_LC2_B13
+         # !_LC1_F1;
+
+-- Node name is '|SERVO_CONTROL:15|~1438~2' 
+-- Equation name is '_LC1_B7', type is buried 
+-- synthesized logic cell 
+_LC1_B7  = LCELL( _EQ148);
+  _EQ148 =  _LC2_B13 & !_LC3_B3
+         #  _LC2_B13 &  _LC3_A5
+         #  _LC6_B7;
+
+-- Node name is '|SERVO_CONTROL:15|~1438~3' 
+-- Equation name is '_LC4_A5', type is buried 
+-- synthesized logic cell 
+_LC4_A5  = LCELL( _EQ149);
+  _EQ149 =  _LC2_B13 & !_LC3_A5 & !_LC3_F12
+         # !_LC1_F6 & !_LC2_B13;
+
+-- Node name is '|SERVO_CONTROL:15|~1438~4' 
+-- Equation name is '_LC5_A5', type is buried 
+-- synthesized logic cell 
+_LC5_A5  = LCELL( _EQ150);
+  _EQ150 =  _LC1_F1 &  _LC4_A5;
+
+-- Node name is '|SERVO_CONTROL:15|~1445~1' 
+-- Equation name is '_LC8_D10', type is buried 
+-- synthesized logic cell 
+_LC8_D10 = LCELL( _EQ151);
+  _EQ151 = !_LC5_D10
+         #  _LC2_D7 &  _LC2_D10
+         #  _LC2_D4 &  _LC2_D7;
+
+-- Node name is '|SERVO_CONTROL:15|~1483~1' 
+-- Equation name is '_LC5_D8', type is buried 
+-- synthesized logic cell 
+_LC5_D8  = LCELL( _EQ152);
+  _EQ152 =  _LC2_F11
+         # !_LC1_D7;
+
+-- Node name is '|SERVO_CONTROL:15|~1483~2' 
+-- Equation name is '_LC4_D8', type is buried 
+-- synthesized logic cell 
+_LC4_D8  = LCELL( _EQ153);
+  _EQ153 =  _LC1_F1 & !_LC4_C14 & !_LC5_D8
+         #  _LC1_F1 & !_LC1_F6 &  _LC4_C14;
+
+-- Node name is '|SERVO_CONTROL:15|~1483~3' 
+-- Equation name is '_LC3_D8', type is buried 
+-- synthesized logic cell 
+_LC3_D8  = LCELL( _EQ154);
+  _EQ154 = !_LC2_D7
+         #  _LC1_F6;
+
+-- Node name is '|SERVO_CONTROL:15|~1483~4' 
+-- Equation name is '_LC1_D8', type is buried 
+-- synthesized logic cell 
+_LC1_D8  = LCELL( _EQ155);
+  _EQ155 = !_LC1_F1
+         #  _LC3_D8 &  _LC4_C14
+         # !_LC4_C14 &  _LC5_D8;
+
+
+
+Project Information                            e:\max2work\robot\top_motor.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic I/O Cell Registers        = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interface Menu Commands
+-----------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:32
+   Database Builder                       00:00:05
+   Logic Synthesizer                      00:00:02
+   Partitioner                            00:00:01
+   Fitter                                 00:00:06
+   Timing SNF Extractor                   00:00:08
+   Assembler                              00:00:02
+   --------------------------             --------
+   Total Time                             00:00:56
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 14,394K

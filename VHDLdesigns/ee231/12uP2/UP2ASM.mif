@@ -1,0 +1,45 @@
+-- EXAMPLE UP2 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+-- Simple vector sum
+Depth = 256;
+Width = 16;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+    [00..FF]: 0000;	-- NOP
+    00: 0600;   -- START:	CLEAR
+    01: 0321;   -- 		STORE SUM
+    02: 0120;   -- 		LOAD COUNT
+    03: 0322;   -- 		STORE COUNTCOPY
+    04: 0122;   -- LOOP:	LOAD COUNTCOPY
+    05: 090D;   -- 		JZ FINISHED
+    06: 0700;   -- 		DECR
+    07: 0322;   -- 		STORE COUNTCOPY
+    08: 0530;   -- 		ADDIMM ARRAY
+    09: 0200;   -- 		LOADI
+    0A: 0421;   -- 		ADD SUM
+    0B: 0321;   -- 		STORE SUM
+    0C: 0804;   -- 		JUMP LOOP
+    0D: 0121;   -- FINISHED:	LOAD SUM
+    0E: 0A00;   -- 		OUT
+    0F: 080F;   -- END:		JUMP END
+    20: 0010;   -- CNT:		DW H#0000
+    21: 1234;   -- SUM:		DW H#0000
+    22: 1234;   -- CNTCOPY:	DW H#0000
+    30: 0001;   -- ARRAY:	DW 1,20,etc.
+    31: 0020;   -- Note: sum is A19Eh
+    32: 0300;
+    33: 4000;
+    34: 0123;
+    35: 0100;
+    36: 0270;
+    37: 0015;
+    38: 1000;
+    39: 0200;
+    3A: 0040;
+    3B: 0005;
+    3C: 1200;
+    3D: 2760;
+    3E: 0130;
+    3F: 0D00;
+End;

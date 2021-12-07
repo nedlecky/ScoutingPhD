@@ -1,0 +1,99 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 01/18/2002 19:31:17      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "flasher"
+BEGIN
+
+    DEVICE = "EPF10K70RC240-4";
+
+    "clk"                          : INPUT_PIN  = 91     ;
+    "dp"                           : OUTPUT_PIN = 25     ;
+    "|clk_div:cnt|LPM_ADD_SUB:119|addcore:adder|:59" : LOCATION   = LC4_D25;
+    "|clk_div:cnt|:12"             : LOCATION   = LC2_D6 ;
+    "|clk_div:cnt|:16"             : LOCATION   = LC7_D25;  -- |clk_div:cnt|count_1Mhz4
+    "|clk_div:cnt|:17"             : LOCATION   = LC6_D25;  -- |clk_div:cnt|count_1Mhz3
+    "|clk_div:cnt|:18"             : LOCATION   = LC5_D25;  -- |clk_div:cnt|count_1Mhz2
+    "|clk_div:cnt|:19"             : LOCATION   = LC2_D25;  -- |clk_div:cnt|count_1Mhz1
+    "|clk_div:cnt|:20"             : LOCATION   = LC3_D25;  -- |clk_div:cnt|count_1Mhz0
+    "|clk_div:cnt|:21"             : LOCATION   = LC1_D25;  -- |clk_div:cnt|clock_1Mhz_int
+    "|clk_div:cnt|:22"             : LOCATION   = LC8_D4 ;  -- |clk_div:cnt|clock_100Khz_int
+    "|clk_div:cnt|:23"             : LOCATION   = LC1_D4 ;  -- |clk_div:cnt|clock_10Khz_int
+    "|clk_div:cnt|:24"             : LOCATION   = LC8_D9 ;  -- |clk_div:cnt|clock_1Khz_int
+    "|clk_div:cnt|:25"             : LOCATION   = LC1_D9 ;  -- |clk_div:cnt|clock_100hz_int
+    "|clk_div:cnt|:26"             : LOCATION   = LC5_D6 ;  -- |clk_div:cnt|clock_10Hz_int
+    "|clk_div:cnt|:28"             : LOCATION   = LC3_D4 ;  -- |clk_div:cnt|count_100Khz2
+    "|clk_div:cnt|:29"             : LOCATION   = LC2_D4 ;  -- |clk_div:cnt|count_100Khz1
+    "|clk_div:cnt|:30"             : LOCATION   = LC4_D4 ;  -- |clk_div:cnt|count_100Khz0
+    "|clk_div:cnt|:31"             : LOCATION   = LC6_D4 ;  -- |clk_div:cnt|count_10Khz2
+    "|clk_div:cnt|:32"             : LOCATION   = LC5_D4 ;  -- |clk_div:cnt|count_10Khz1
+    "|clk_div:cnt|:33"             : LOCATION   = LC7_D4 ;  -- |clk_div:cnt|count_10Khz0
+    "|clk_div:cnt|:34"             : LOCATION   = LC3_D9 ;  -- |clk_div:cnt|count_1Khz2
+    "|clk_div:cnt|:35"             : LOCATION   = LC2_D9 ;  -- |clk_div:cnt|count_1Khz1
+    "|clk_div:cnt|:36"             : LOCATION   = LC4_D9 ;  -- |clk_div:cnt|count_1Khz0
+    "|clk_div:cnt|:37"             : LOCATION   = LC6_D9 ;  -- |clk_div:cnt|count_100hz2
+    "|clk_div:cnt|:38"             : LOCATION   = LC5_D9 ;  -- |clk_div:cnt|count_100hz1
+    "|clk_div:cnt|:39"             : LOCATION   = LC7_D9 ;  -- |clk_div:cnt|count_100hz0
+    "|clk_div:cnt|:40"             : LOCATION   = LC3_D6 ;  -- |clk_div:cnt|count_10hz2
+    "|clk_div:cnt|:41"             : LOCATION   = LC1_D6 ;  -- |clk_div:cnt|count_10hz1
+    "|clk_div:cnt|:42"             : LOCATION   = LC4_D6 ;  -- |clk_div:cnt|count_10hz0
+
+END;
+
+INTERNAL_INFO "flasher"
+BEGIN
+	DEVICE = EPF10K70RC240-4;
+    OD5P91  : LORAX = "1:FB5->LC2_D6,->LC7_D25,->LC6_D25,->LC5_D25,->LC2_D25,->LC3_D25,->LC1_D25|";
+    LC2_D6  : LORAX = "1:MSW1R3C5,G27R3->OH1R3P25|";
+    LC1_D25 : LORAX = "1:MSW0R3C24,HHL46R3,PA2R3C3->LC8_D4,->LC3_D4,->LC2_D4,->LC4_D4|";
+    LC1_D4  : LORAX = "1:MSW0R3C3,HHL40R3,PA21R3C8->LC8_D9,->LC3_D9,->LC2_D9,->LC4_D9|";
+    LC1_D9  : LORAX = "1:MSW0R3C8,HHL49R3,PA5R3C5->LC5_D6,->LC3_D6,->LC1_D6,->LC4_D6|";
+	LC4_D25 : LORAX2 = "X, X, LC2_D25, LC3_D25";
+	LC2_D6  : LORAX2 = "X, X, X, LC5_D6";
+	LC7_D25 : LORAX2 = "LC6_D25, LC7_D25, LC5_D25, LC4_D25";
+	LC6_D25 : LORAX2 = "LC6_D25, LC7_D25, LC5_D25, LC4_D25";
+	LC5_D25 : LORAX2 = "LC5_D25, LC7_D25, LC6_D25, LC4_D25";
+	LC2_D25 : LORAX2 = "LC7_D25, LC6_D25, LC2_D25, LC3_D25";
+	LC3_D25 : LORAX2 = "X, LC6_D25, LC7_D25, LC3_D25";
+	LC1_D25 : LORAX2 = "X, LC7_D25, LC5_D25, LC6_D25";
+	LC8_D4  : LORAX2 = "LC3_D4, LC4_D4, LC2_D4, LC8_D4";
+	LC1_D4  : LORAX2 = "LC6_D4, LC7_D4, LC5_D4, LC1_D4";
+	LC8_D9  : LORAX2 = "LC3_D9, LC4_D9, LC2_D9, LC8_D9";
+	LC1_D9  : LORAX2 = "LC6_D9, LC7_D9, LC5_D9, LC1_D9";
+	LC5_D6  : LORAX2 = "LC5_D6, LC3_D6, LC4_D6, LC1_D6";
+	LC3_D4  : LORAX2 = "X, LC2_D4, LC4_D4, LC3_D4";
+	LC2_D4  : LORAX2 = "X, X, LC2_D4, LC4_D4";
+	LC4_D4  : LORAX2 = "X, LC3_D4, LC2_D4, LC4_D4";
+	LC6_D4  : LORAX2 = "X, LC5_D4, LC7_D4, LC6_D4";
+	LC5_D4  : LORAX2 = "X, X, LC5_D4, LC7_D4";
+	LC7_D4  : LORAX2 = "X, LC6_D4, LC5_D4, LC7_D4";
+	LC3_D9  : LORAX2 = "X, LC2_D9, LC4_D9, LC3_D9";
+	LC2_D9  : LORAX2 = "X, X, LC2_D9, LC4_D9";
+	LC4_D9  : LORAX2 = "X, LC3_D9, LC2_D9, LC4_D9";
+	LC6_D9  : LORAX2 = "X, LC5_D9, LC7_D9, LC6_D9";
+	LC5_D9  : LORAX2 = "X, X, LC5_D9, LC7_D9";
+	LC7_D9  : LORAX2 = "X, LC6_D9, LC5_D9, LC7_D9";
+	LC3_D6  : LORAX2 = "X, LC1_D6, LC4_D6, LC3_D6";
+	LC1_D6  : LORAX2 = "X, X, LC1_D6, LC4_D6";
+	LC4_D6  : LORAX2 = "X, LC3_D6, LC1_D6, LC4_D6";
+END;

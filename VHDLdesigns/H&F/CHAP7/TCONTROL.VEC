@@ -1,0 +1,66 @@
+% Simulation Test Vectors for Train Control State Machine - File: Tcontrol.vec %
+START 0us;
+STOP 1100ns;
+% Generate Clock %
+INTERVAL 20ns;
+INPUTS ClocK;
+PATTERN 
+0 1;
+% Reset State Machine %
+INPUTS Reset;
+PATTERN
+0>1
+100>0;
+% Cycle Sensor Inputs at following times to cycle through states%
+INPUTS Sensor1;
+PATTERN
+0>0
+100>0
+200>1
+300>0
+400>0
+500>0
+600>0
+700>0
+800>1;
+INPUTS Sensor2;
+PATTERN
+0>0
+100>0
+200>0
+300>1
+400>0
+500>0
+600>0
+700>1;
+INPUTS Sensor3;
+PATTERN
+0>0
+100>0
+200>0
+300>0
+400>0
+500>0
+600>1
+700>0
+800>0
+900>1
+1000>0;
+INPUTS Sensor4;
+PATTERN
+0>0
+100>0
+200>0
+300>0
+400>1
+500>0
+600>0
+700>0
+800>0
+900>0
+1000>1;
+% Display These Signals on Timing Diagram %
+BURIED state; % Buried means it is an internal signal - not an input or output %
+OUTPUTS switch1 switch2 switch3 track1 track2 track3 track4 dirA dirB;
+ 
+	

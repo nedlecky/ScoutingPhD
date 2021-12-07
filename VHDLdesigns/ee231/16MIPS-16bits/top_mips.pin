@@ -1,0 +1,272 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "top_mips" ASSIGNED TO AN EPF10K70RC240-4
+TCK                              : 1
+CONF_DONE                        : 2
+nCEO                             : 3
+TDO                              : 4
+VCCINT                           : 5
+dmem_in2                         : 6
+instruction_out28                : 7
+write_data_out15                 : 8
+dmem_out6                        : 9
+GNDINT                           : 10
+dmem_out13                       : 11
+write_data_out1                  : 12
+alu_result_out9                  : 13
+write_data_out9                  : 14
+read_data_2_out9                 : 15
+VCCINT                           : 16
+alu_result_out14                 : 17
+write_data_out14                 : 18
+dmem_in13                        : 19
+instruction_out18                : 20
+write_data_out3                  : 21
+GNDINT                           : 22
+instruction_out21                : 23
+write_data_out8                  : 24
+dmem_out12                       : 25
+instruction_out3                 : 26
+VCCINT                           : 27
+alu_result_out4                  : 28
+alu_result_out3                  : 29
+read_data_1_out15                : 30
+instruction_out6                 : 31
+GNDINT                           : 32
+alu_result_out13                 : 33
+write_data_out7                  : 34
+dmem_out8                        : 35
+dmem_addr0                       : 36
+VCCINT                           : 37
+dmem_out15                       : 38
+dmem_in14                        : 39
+instruction_out26                : 40
+instruction_out30                : 41
+GNDINT                           : 42
+instruction_out12                : 43
+write_data_out13                 : 44
+instruction_out14                : 45
+dmem_out1                        : 46
+VCCINT                           : 47
+pc0                              : 48
+read_data_2_out7                 : 49
+dmem_out5                        : 50
+read_data_1_out2                 : 51
+GNDINT                           : 52
+dmem_out0                        : 53
+dmem_addr2                       : 54
+instruction_out9                 : 55
+dmem_out7                        : 56
+VCCINT                           : 57
+TMS                              : 58
+TRST                             : 59
+nSTATUS                          : 60
+RESERVED                         : 61
+read_data_1_out14                : 62
+read_data_2_out4                 : 63
+RESERVED                         : 64
+instruction_out15                : 65
+instruction_out22                : 66
+read_data_1_out5                 : 67
+RESERVED                         : 68
+GNDINT                           : 69
+dmem_in8                         : 70
+read_data_2_out8                 : 71
+instruction_out17                : 72
+RESERVED                         : 73
+RESERVED                         : 74
+RESERVED                         : 75
+RESERVED                         : 76
+VCCINT                           : 77
+instruction_out8                 : 78
+RESERVED                         : 79
+RESERVED                         : 80
+RESERVED                         : 81
+RESERVED                         : 82
+RESERVED                         : 83
+dmem_in9                         : 84
+GNDINT                           : 85
+instruction_out20                : 86
+RESERVED                         : 87
+read_data_1_out8                 : 88
+VCCINT                           : 89
+reset                            : 90
+clock                            : 91
+GNDINT                           : 92
+GNDINT                           : 93
+RESERVED                         : 94
+RESERVED                         : 95
+VCCINT                           : 96
+RESERVED                         : 97
+read_data_2_out10                : 98
+dmem_addr6                       : 99
+read_data_1_out13                : 100
+read_data_2_out11                : 101
+RESERVED                         : 102
+pc2                              : 103
+GNDINT                           : 104
+read_data_2_out6                 : 105
+pc4                              : 106
+RESERVED                         : 107
+read_data_2_out12                : 108
+alu_result_out12                 : 109
+pc1                              : 110
+bne_out                          : 111
+VCCINT                           : 112
+zero_out                         : 113
+alu_result_out7                  : 114
+write_data_out11                 : 115
+read_data_1_out11                : 116
+alu_result_out11                 : 117
+read_data_2_out14                : 118
+write_data_out6                  : 119
+read_data_2_out13                : 120
+nCONFIG                          : 121
+VCCINT                           : 122
+MSEL1                            : 123
+MSEL0                            : 124
+GNDINT                           : 125
+read_data_2_out0                 : 126
+write_data_out0                  : 127
+instruction_out13                : 128
+instruction_out10                : 129
+VCCINT                           : 130
+dmem_out3                        : 131
+read_data_2_out1                 : 132
+dmem_out10                       : 133
+dmem_out11                       : 134
+GNDINT                           : 135
+dmem_out4                        : 136
+read_data_1_out9                 : 137
+dmem_in6                         : 138
+dmem_in0                         : 139
+VCCINT                           : 140
+instruction_out11                : 141
+instruction_out25                : 142
+pc5                              : 143
+alu_result_out10                 : 144
+GNDINT                           : 145
+write_data_out10                 : 146
+instruction_out27                : 147
+instruction_out23                : 148
+dmem_addr4                       : 149
+VCCINT                           : 150
+memwrite_out                     : 151
+instruction_out29                : 152
+read_data_2_out2                 : 153
+dmem_in3                         : 154
+GNDINT                           : 155
+alu_result_out2                  : 156
+alu_result_out6                  : 157
+instruction_out7                 : 158
+dmem_in10                        : 159
+VCCINT                           : 160
+instruction_out24                : 161
+dmem_out2                        : 162
+instruction_out4                 : 163
+read_data_1_out3                 : 164
+GNDINT                           : 165
+regwrite_out                     : 166
+instruction_out5                 : 167
+instruction_out31                : 168
+pc6                              : 169
+VCCINT                           : 170
+read_data_2_out15                : 171
+alu_result_out15                 : 172
+instruction_out2                 : 173
+dmem_out14                       : 174
+write_data_out2                  : 175
+GNDINT                           : 176
+TDI                              : 177
+nCE                              : 178
+DCLK                             : 179
+DATA0                            : 180
+read_data_1_out6                 : 181
+dmem_in15                        : 182
+dmem_in5                         : 183
+read_data_2_out5                 : 184
+alu_result_out0                  : 185
+dmem_addr7                       : 186
+RESERVED                         : 187
+beq_out                          : 188
+VCCINT                           : 189
+alu_result_out8                  : 190
+dmem_in12                        : 191
+read_data_1_out10                : 192
+dmem_in1                         : 193
+pc3                              : 194
+read_data_1_out12                : 195
+write_data_out12                 : 196
+GNDINT                           : 197
+dmem_in11                        : 198
+dmem_addr5                       : 199
+alu_result_out5                  : 200
+alu_result_out1                  : 201
+dmem_addr1                       : 202
+dmem_addr3                       : 203
+read_data_2_out3                 : 204
+VCCINT                           : 205
+pc7                              : 206
+RESERVED                         : 207
+read_data_1_out0                 : 208
+RESERVED                         : 209
+GNDINT                           : 210
+GNDINT                           : 211
+GNDINT                           : 212
+read_data_1_out1                 : 213
+instruction_out1                 : 214
+RESERVED                         : 215
+GNDINT                           : 216
+dmem_out9                        : 217
+RESERVED                         : 218
+RESERVED                         : 219
+RESERVED                         : 220
+RESERVED                         : 221
+RESERVED                         : 222
+RESERVED                         : 223
+VCCINT                           : 224
+read_data_1_out4                 : 225
+RESERVED                         : 226
+RESERVED                         : 227
+RESERVED                         : 228
+read_data_1_out7                 : 229
+write_data_out4                  : 230
+instruction_out19                : 231
+GNDINT                           : 232
+instruction_out16                : 233
+RESERVED                         : 234
+write_data_out5                  : 235
+instruction_out0                 : 236
+dmem_in7                         : 237
+dmem_in4                         : 238
+RESERVED                         : 239
+RESERVED                         : 240

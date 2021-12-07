@@ -1,0 +1,1 @@
+-m -q -yv2 -e10 -w100 -o2 -yga -fO -fP -v0 -dc373i -pCY7C373I-125JC -a fulladd.vhd -a nripple.vhd -b example.vhd 

@@ -1,0 +1,272 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "superregister" ASSIGNED TO AN EPF10K70RC240-4
+TCK                              : 1
+CONF_DONE                        : 2
+nCEO                             : 3
+TDO                              : 4
+VCCINT                           : 5
+RESERVED                         : 6
+RESERVED                         : 7
+RESERVED                         : 8
+RESERVED                         : 9
+GNDINT                           : 10
+RESERVED                         : 11
+q15                              : 12
+d15                              : 13
+q16                              : 14
+q13                              : 15
+VCCINT                           : 16
+q12                              : 17
+q8                               : 18
+RESERVED                         : 19
+RESERVED                         : 20
+RESERVED                         : 21
+GNDINT                           : 22
+RESERVED                         : 23
+RESERVED                         : 24
+q23                              : 25
+q26                              : 26
+VCCINT                           : 27
+q28                              : 28
+q22                              : 29
+RESERVED                         : 30
+RESERVED                         : 31
+GNDINT                           : 32
+RESERVED                         : 33
+RESERVED                         : 34
+RESERVED                         : 35
+d0                               : 36
+VCCINT                           : 37
+d1                               : 38
+d4                               : 39
+d3                               : 40
+d2                               : 41
+GNDINT                           : 42
+RESERVED                         : 43
+RESERVED                         : 44
+RESERVED                         : 45
+RESERVED                         : 46
+VCCINT                           : 47
+RESERVED                         : 48
+RESERVED                         : 49
+RESERVED                         : 50
+RESERVED                         : 51
+GNDINT                           : 52
+RESERVED                         : 53
+RESERVED                         : 54
+q18                              : 55
+q19                              : 56
+VCCINT                           : 57
+TMS                              : 58
+TRST                             : 59
+nSTATUS                          : 60
+d23                              : 61
+RESERVED                         : 62
+RESERVED                         : 63
+d12                              : 64
+RESERVED                         : 65
+d21                              : 66
+RESERVED                         : 67
+RESERVED                         : 68
+GNDINT                           : 69
+RESERVED                         : 70
+RESERVED                         : 71
+RESERVED                         : 72
+q20                              : 73
+q21                              : 74
+d14                              : 75
+RESERVED                         : 76
+VCCINT                           : 77
+RESERVED                         : 78
+RESERVED                         : 79
+RESERVED                         : 80
+RESERVED                         : 81
+d25                              : 82
+RESERVED                         : 83
+d16                              : 84
+GNDINT                           : 85
+RESERVED                         : 86
+RESERVED                         : 87
+RESERVED                         : 88
+VCCINT                           : 89
+dist0                            : 90
+clock                            : 91
+dist1                            : 92
+GNDINT                           : 93
+d6                               : 94
+d29                              : 95
+VCCINT                           : 96
+RESERVED                         : 97
+RESERVED                         : 98
+RESERVED                         : 99
+RESERVED                         : 100
+q5                               : 101
+RESERVED                         : 102
+RESERVED                         : 103
+GNDINT                           : 104
+RESERVED                         : 105
+RESERVED                         : 106
+d31                              : 107
+RESERVED                         : 108
+RESERVED                         : 109
+RESERVED                         : 110
+q6                               : 111
+VCCINT                           : 112
+q1                               : 113
+RESERVED                         : 114
+RESERVED                         : 115
+RESERVED                         : 116
+RESERVED                         : 117
+d28                              : 118
+RESERVED                         : 119
+RESERVED                         : 120
+nCONFIG                          : 121
+VCCINT                           : 122
+MSEL1                            : 123
+MSEL0                            : 124
+GNDINT                           : 125
+RESERVED                         : 126
+RESERVED                         : 127
+RESERVED                         : 128
+RESERVED                         : 129
+VCCINT                           : 130
+RESERVED                         : 131
+RESERVED                         : 132
+RESERVED                         : 133
+RESERVED                         : 134
+GNDINT                           : 135
+RESERVED                         : 136
+RESERVED                         : 137
+RESERVED                         : 138
+RESERVED                         : 139
+VCCINT                           : 140
+RESERVED                         : 141
+RESERVED                         : 142
+RESERVED                         : 143
+q2                               : 144
+GNDINT                           : 145
+RESERVED                         : 146
+q0                               : 147
+RESERVED                         : 148
+RESERVED                         : 149
+VCCINT                           : 150
+RESERVED                         : 151
+RESERVED                         : 152
+RESERVED                         : 153
+RESERVED                         : 154
+GNDINT                           : 155
+q24                              : 156
+q25                              : 157
+q29                              : 158
+q27                              : 159
+VCCINT                           : 160
+RESERVED                         : 161
+RESERVED                         : 162
+RESERVED                         : 163
+RESERVED                         : 164
+GNDINT                           : 165
+q7                               : 166
+q10                              : 167
+q9                               : 168
+q11                              : 169
+VCCINT                           : 170
+RESERVED                         : 171
+RESERVED                         : 172
+RESERVED                         : 173
+q3                               : 174
+RESERVED                         : 175
+GNDINT                           : 176
+TDI                              : 177
+nCE                              : 178
+DCLK                             : 179
+DATA0                            : 180
+RESERVED                         : 181
+RESERVED                         : 182
+d26                              : 183
+RESERVED                         : 184
+d8                               : 185
+q30                              : 186
+d24                              : 187
+RESERVED                         : 188
+VCCINT                           : 189
+d27                              : 190
+q31                              : 191
+RESERVED                         : 192
+d7                               : 193
+RESERVED                         : 194
+RESERVED                         : 195
+RESERVED                         : 196
+GNDINT                           : 197
+RESERVED                         : 198
+RESERVED                         : 199
+d30                              : 200
+RESERVED                         : 201
+RESERVED                         : 202
+RESERVED                         : 203
+d9                               : 204
+VCCINT                           : 205
+RESERVED                         : 206
+q4                               : 207
+RESERVED                         : 208
+d5                               : 209
+sel1                             : 210
+sel2                             : 211
+sel0                             : 212
+RESERVED                         : 213
+d22                              : 214
+d17                              : 215
+GNDINT                           : 216
+RESERVED                         : 217
+RESERVED                         : 218
+RESERVED                         : 219
+RESERVED                         : 220
+RESERVED                         : 221
+RESERVED                         : 222
+d19                              : 223
+VCCINT                           : 224
+d20                              : 225
+RESERVED                         : 226
+q17                              : 227
+d18                              : 228
+RESERVED                         : 229
+RESERVED                         : 230
+RESERVED                         : 231
+GNDINT                           : 232
+RESERVED                         : 233
+d13                              : 234
+RESERVED                         : 235
+RESERVED                         : 236
+RESERVED                         : 237
+d11                              : 238
+q14                              : 239
+d10                              : 240

@@ -1,0 +1,1 @@
+-m -q -o2 -ygs -fO -fP -v10 -dc373i -pCY7C373I-125JC -b burst.vhd 

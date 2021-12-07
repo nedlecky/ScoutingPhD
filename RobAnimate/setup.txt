@@ -1,0 +1,39 @@
+OPENGL_SETUP.TXT           
+
+This file tells how to install OPENGL components for  the 
+animation executables CLYNDBOT.EXE and 2LINKBOT.exe
+and their associated VC++ projects.
+
+********* FOR THE EXE's ***********
+
+The only OPENGL specific files that are required to run the 
+two executables are opengl dll's.  
+If you are using WIN98 or WinNT 4 or higher, chances are, 
+you already have them.  If not, or if you just can't seem to get 
+the exe's to work - make sure that that all of the following 
+files are in your system folder (usually found in C:\windows\system)
+
+glu32.dll
+glut32.dll
+opengl32.dll
+lematrix.dll	
+
+
+If any of these files are  missing, copy them from directory UTIL,
+ and place them in the system directory.
+
+******* FOR THE VC++ PROJECTS *********
+
+First make sure that all the dll's are in place.
+The included Microsoft VC++ 6.0 workspaces are set to 
+use libraries and header files in the UTIL directory.
+Everything should work as long as you maintained
+the same relative path between the UTIL directory 
+and the workspace files.
+
+******* QUESTIONS, COMMENTS ********
+
+email me   -(Jake Galbreath)
+at     	 jgalbrea@zoo.uvm.edu
+
+	

@@ -1,0 +1,130 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 7.21 Student Edition       
+-- Compiled: 11/12/98 15:35:05        
+
+-- Copyright (C) 1991-1997 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "my_ctl"
+BEGIN
+
+    DEVICE = "EPF10K20RC240-4";
+
+    "clock_10hz"                   : INPUT_PIN  = 91     ;
+    "left"                         : INPUT_PIN  = 212    ;
+    "pb0"                          : INPUT_PIN  = 92     ;
+    "pb1"                          : INPUT_PIN  = 211    ;
+    "right"                        : INPUT_PIN  = 210    ;
+    "lmotor_dir"                   : OUTPUT_PIN = 172    ;
+    "lmotor_speed0"                : OUTPUT_PIN = 164    ;
+    "lmotor_speed1"                : OUTPUT_PIN = 166    ;
+    "lmotor_speed2"                : OUTPUT_PIN = 167    ;
+    "rmotor_dir"                   : OUTPUT_PIN = 171    ;
+    "rmotor_speed0"                : OUTPUT_PIN = 168    ;
+    "rmotor_speed1"                : OUTPUT_PIN = 162    ;
+    "rmotor_speed2"                : OUTPUT_PIN = 163    ;
+    "|LPM_ADD_SUB:228|addcore:adder|:121" : LOCATION   = LC1_C5 ;
+    "|LPM_ADD_SUB:228|addcore:adder|:125" : LOCATION   = LC8_C4 ;
+    "|LPM_ADD_SUB:228|addcore:adder|:129" : LOCATION   = LC3_C4 ;
+    "|LPM_COMPARE:203|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|comptree:sub_comptree|cmpchain:cmp0|~39~1" : LOCATION   = LC1_A9 ;
+    "|LPM_COMPARE:517|comptree:comparator|cmpchain:cmp_end|comptree:comp|comptree:sub_comptree|cmpchain:cmp1|:38" : LOCATION   = LC7_A2 ;
+    "state~1"                      : LOCATION   = LC6_A2 ;
+    "state~2"                      : LOCATION   = LC5_A2 ;
+    "state~3"                      : LOCATION   = LC1_C12;
+    "state~4"                      : LOCATION   = LC1_A6 ;
+    "state~5"                      : LOCATION   = LC1_A2 ;
+    ":15"                          : LOCATION   = LC1_B10;  -- pb_hit
+    "~15~1"                        : LOCATION   = LC6_B9 ;  -- pb_hit~1
+    "~15~2"                        : LOCATION   = LC5_B1 ;  -- pb_hit~2
+    "~15~3"                        : LOCATION   = LC4_B1 ;  -- pb_hit~3
+    "~15~4"                        : LOCATION   = LC3_B1 ;  -- pb_hit~4
+    "~15~5"                        : LOCATION   = LC2_B11;  -- pb_hit~5
+    ":16"                          : LOCATION   = LC2_A9 ;  -- timer7
+    ":17"                          : LOCATION   = LC3_A9 ;  -- timer6
+    ":18"                          : LOCATION   = LC4_A9 ;  -- timer5
+    ":19"                          : LOCATION   = LC2_A4 ;  -- timer4
+    ":20"                          : LOCATION   = LC6_C4 ;  -- timer3
+    ":21"                          : LOCATION   = LC7_C4 ;  -- timer2
+    ":22"                          : LOCATION   = LC5_C5 ;  -- timer1
+    ":23"                          : LOCATION   = LC2_C6 ;  -- timer0
+    ":86"                          : LOCATION   = LC1_A5 ;
+    "~794~1"                       : LOCATION   = LC5_A9 ;
+    "~809~1"                       : LOCATION   = LC4_A4 ;
+    "~809~2"                       : LOCATION   = LC5_A4 ;
+    "~809~3"                       : LOCATION   = LC6_A4 ;
+    "~809~4"                       : LOCATION   = LC7_A4 ;
+    "~809~5"                       : LOCATION   = LC8_A4 ;
+    "~809~6"                       : LOCATION   = LC3_A4 ;
+    "~809~7"                       : LOCATION   = LC7_A3 ;
+    "~824~1"                       : LOCATION   = LC5_C4 ;
+    "~824~2"                       : LOCATION   = LC1_C4 ;
+    "~824~3"                       : LOCATION   = LC2_C4 ;
+    "~839~1"                       : LOCATION   = LC4_C4 ;
+    "~839~2"                       : LOCATION   = LC2_C5 ;
+    "~839~3"                       : LOCATION   = LC3_C5 ;
+    "~854~1"                       : LOCATION   = LC4_C5 ;
+    "~854~2"                       : LOCATION   = LC6_C5 ;
+    "~854~3"                       : LOCATION   = LC7_C5 ;
+    "~869~1"                       : LOCATION   = LC3_A3 ;
+    "~869~2"                       : LOCATION   = LC2_A2 ;
+    "~869~3"                       : LOCATION   = LC1_A4 ;
+    "~869~4"                       : LOCATION   = LC1_A3 ;
+    "~869~5"                       : LOCATION   = LC3_C6 ;
+    "~869~6"                       : LOCATION   = LC1_C6 ;
+    ":958"                         : LOCATION   = LC5_A8 ;
+    "~958~1"                       : LOCATION   = LC4_A2 ;
+    "~977~1"                       : LOCATION   = LC3_A2 ;
+    ":979"                         : LOCATION   = LC6_A7 ;
+
+END;
+
+INTERNAL_INFO "my_ctl"
+BEGIN
+	DEVICE = EPF10K20RC240-4;
+	LC1_A9  : LORAX = "HHL21R0";
+	LC3_C4  : LORAX = "V7C3,HHL14R0";
+	LC3_A3  : LORAX = "HHL1R0";
+	LC1_A5  : LORAX = "HHL18R0,V0C4,HHL18R2";
+	LC2_A2  : LORAX = "HHL11R0,V3C1,HHL11R2";
+	LC1_A4  : LORAX = "V0C3,HHL19R2";
+	LC1_A3  : LORAX = "V0C2,HHL21R2";
+	LC3_C5  : LORAX = "HHL15R2";
+	LC2_C6  : LORAX = "HHL16R2";
+	LC5_C5  : LORAX = "HHL44R2";
+	LC7_A3  : LORAX = "HHL40R0";
+	LC2_A4  : LORAX = "HHL12R0";
+	LC3_A2  : LORAX = "HHL9R0";
+	LC1_C12 : LORAX = "V4C10,HHL5R0,HHL5R2";
+	OD5     : LORAX = "OF5";
+	OD0     : LORAX = "OF0";
+	LC1_A2  : LORAX = "HHL23R0,V0C1,HHL23R2";
+	LC1_A6  : LORAX = "HHL20R0,V0C5,HHL20R2";
+	OD1     : LORAX = "OF1";
+	OD4     : LORAX = "OF4";
+	LC6_A7  : LORAX = "HHL34R0";
+	LC5_A8  : LORAX = "HHL36R0";
+	OD3     : LORAX = "OF3";
+	LC1_B10 : LORAX = "HHL19R1";
+	LC6_B9  : LORAX = "HHL45R1";
+	LC5_B1  : LORAX = "HHL41R1";
+	LC4_B1  : LORAX = "HHL9R1";
+	LC3_B1  : LORAX = "HHL3R1";
+	LC2_B11 : LORAX = "HHL5R1";
+END;

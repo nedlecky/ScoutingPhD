@@ -1,0 +1,76 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 01/18/2002 20:16:51      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "lfsr8"
+BEGIN
+
+    DEVICE = "EPF10K70RC240-4";
+
+    "clk"                          : INPUT_PIN  = 91     ;
+    "d0"                           : OUTPUT_PIN = 153    ;
+    "d1"                           : OUTPUT_PIN = 31     ;
+    "d2"                           : OUTPUT_PIN = 149    ;
+    "d3"                           : OUTPUT_PIN = 154    ;
+    "d4"                           : OUTPUT_PIN = 151    ;
+    "d5"                           : OUTPUT_PIN = 35     ;
+    "d6"                           : OUTPUT_PIN = 34     ;
+    "d7"                           : OUTPUT_PIN = 152    ;
+    ":10"                          : LOCATION   = LC4_E15;  -- s7
+    ":11"                          : LOCATION   = LC5_E15;  -- s6
+    ":12"                          : LOCATION   = LC7_E15;  -- s5
+    ":13"                          : LOCATION   = LC6_E21;  -- s4
+    ":14"                          : LOCATION   = LC1_E21;  -- s3
+    ":15"                          : LOCATION   = LC8_E21;  -- s2
+    ":16"                          : LOCATION   = LC2_E15;  -- s1
+    ":17"                          : LOCATION   = LC3_E15;  -- s0
+    "~51~1"                        : LOCATION   = LC6_E15;
+    "~51~2"                        : LOCATION   = LC8_E15;
+    "~191~1"                       : LOCATION   = LC1_E15;
+
+END;
+
+INTERNAL_INFO "lfsr8"
+BEGIN
+	DEVICE = EPF10K70RC240-4;
+    OD5P91  : LORAX = "1:FB5->LC4_E15,->LC5_E15,->LC7_E15,->LC6_E21,->LC1_E21,->LC8_E21,->LC2_E15,->LC3_E15|";
+    LC4_E15 : LORAX = "1:MSW3R4C15,G47R4->OH11R4P152|";
+    LC5_E15 : LORAX = "1:MSW4R4C15,G167R4->OH4R4P34|";
+    LC7_E15 : LORAX = "1:MSW6R4C15,G115R4->OH6R4P35|";
+    LC6_E21 : LORAX = "1:MSW5R4C21|2:HHL53R4,PA20R4C14->LC7_E15,->LC8_E15,->LC1_E15|,2:G180R4->OH13R4P151||";
+    LC1_E21 : LORAX = "1:MSW0R4C20,HHL51R4->OH8R4P154|2:PA8R4C14->LC8_E15,->LC1_E15||";
+    LC8_E21 : LORAX = "1:MSW7R4C20|2:HHL83R4,PA18R4C14->LC6_E15|,2:G146R4->OH15R4P149||";
+    LC2_E15 : LORAX = "1:MSW1R4C14,G21R4->OH1R4P31,2:PA18R4C20->LC8_E21||";
+    LC3_E15 : LORAX = "1:MSW2R4C15,HHL3R4->OH10R4P153|";
+	LC4_E15 : LORAX2 = "X, X, X, LC5_E15";
+	LC5_E15 : LORAX2 = "X, X, X, LC7_E15";
+	LC7_E15 : LORAX2 = "X, X, X, LC6_E21";
+	LC6_E21 : LORAX2 = "X, X, X, LC1_E21";
+	LC1_E21 : LORAX2 = "X, X, X, LC8_E21";
+	LC8_E21 : LORAX2 = "X, X, X, LC2_E15";
+	LC2_E15 : LORAX2 = "X, X, X, LC3_E15";
+	LC3_E15 : LORAX2 = "LC7_E15, LC6_E15, LC8_E15, LC1_E15";
+	LC6_E15 : LORAX2 = "LC3_E15, LC2_E15, LC5_E15, LC8_E21";
+	LC8_E15 : LORAX2 = "X, LC4_E15, LC1_E21, LC6_E21";
+	LC1_E15 : LORAX2 = "X, LC4_E15, LC6_E21, LC1_E21";
+END;

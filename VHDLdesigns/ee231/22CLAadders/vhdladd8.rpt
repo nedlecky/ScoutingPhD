@@ -1,0 +1,846 @@
+Project Information              c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 04/23/2002 06:27:21
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+VHDLADD8
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+vhdladd8  EPF10K70RC240-4  17     9      0    0         0  %    18       0  %
+
+User Pins:                 17     9      0  
+
+
+
+Project Information              c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+
+** FILE HIERARCHY **
+
+
+
+|lpm_add_sub:54|
+|lpm_add_sub:54|addcore:adder|
+|lpm_add_sub:54|altshift:result_ext_latency_ffs|
+|lpm_add_sub:54|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:54|altshift:oflow_ext_latency_ffs|
+|lpm_add_sub:55|
+|lpm_add_sub:55|addcore:adder|
+|lpm_add_sub:55|altshift:result_ext_latency_ffs|
+|lpm_add_sub:55|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:55|altshift:oflow_ext_latency_ffs|
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+***** Logic for device 'vhdladd8' compiled without errors.
+
+
+
+
+Device: EPF10K70RC240-4
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+
+                                                                                                                                         
+                                                                                                                                         
+                R R R R R R R R   R R R R R R R   R R R R R R R   R R R         R R R   R R R R R R R   R R R   R R R       R R R R R R  
+                E E E E E E E E   E E E E E E E   E E E E E E E   E E E         E E E   E E E E E E E   E E E   E E E       E E E E E E  
+                S S S S S S S S G S S S S S S S V S S S S S S S G S S S         S S S V S S S S S S S G S S S   S S S V     S S S S S S  
+                E E E E E E E E N E E E E E E E C E E E E E E E N E E E         E E E C E E E E E E E N E E E   E E E C     E E E E E E  
+                R R R R R R R R D R R R R R R R C R R R R R R R D R R R         R R R C R R R R R R R D R R R   R R R C     R R R R R R  
+                V V V V V V V V I V V V V V V V I V V V V V V V I V V V         V V V I V V V V V V V I V V V   V V V I     V V V V V V  
+                E E E E E E E E N E E E E E E E N E E E E E E E N E E E x x x y E E E N E E E E E E E N E E E y E E E N s s E E E E E E  
+                D D D D D D D D T D D D D D D D T D D D D D D D T D D D 4 2 5 5 D D D T D D D D D D D T D D D 2 D D D T 0 5 D D D D D D  
+              --------------------------------------------------------------------------------------------------------------------------_ 
+             / 240 238 236 234 232 230 228 226 224 222 220 218 216 214 212 210 208 206 204 202 200 198 196 194 192 190 188 186 184 182   |_ 
+            /    239 237 235 233 231 229 227 225 223 221 219 217 215 213 211 209 207 205 203 201 199 197 195 193 191 189 187 185 183 181    | 
+      #TCK |  1                                                                                                                         180 | ^DATA0 
+^CONF_DONE |  2                                                                                                                         179 | ^DCLK 
+     ^nCEO |  3                                                                                                                         178 | ^nCE 
+      #TDO |  4                                                                                                                         177 | #TDI 
+    VCCINT |  5                                                                                                                         176 | GNDINT 
+  RESERVED |  6                                                                                                                         175 | RESERVED 
+  RESERVED |  7                                                                                                                         174 | RESERVED 
+  RESERVED |  8                                                                                                                         173 | RESERVED 
+  RESERVED |  9                                                                                                                         172 | RESERVED 
+    GNDINT | 10                                                                                                                         171 | RESERVED 
+  RESERVED | 11                                                                                                                         170 | VCCINT 
+      cout | 12                                                                                                                         169 | x0 
+        y7 | 13                                                                                                                         168 | s1 
+        s4 | 14                                                                                                                         167 | s3 
+        y3 | 15                                                                                                                         166 | x1 
+    VCCINT | 16                                                                                                                         165 | GNDINT 
+        y4 | 17                                                                                                                         164 | RESERVED 
+        s7 | 18                                                                                                                         163 | RESERVED 
+  RESERVED | 19                                                                                                                         162 | RESERVED 
+  RESERVED | 20                                                                                                                         161 | RESERVED 
+  RESERVED | 21                                                                                                                         160 | VCCINT 
+    GNDINT | 22                                                                                                                         159 | RESERVED 
+  RESERVED | 23                                                                                                                         158 | RESERVED 
+  RESERVED | 24                                                                                                                         157 | RESERVED 
+  RESERVED | 25                                                                                                                         156 | RESERVED 
+  RESERVED | 26                                                                                                                         155 | GNDINT 
+    VCCINT | 27                                                                                                                         154 | RESERVED 
+  RESERVED | 28                                                                                                                         153 | s2 
+  RESERVED | 29                                                                                                                         152 | RESERVED 
+  RESERVED | 30                                                                                                                         151 | RESERVED 
+  RESERVED | 31                                                     EPF10K70RC240-4                                                     150 | VCCINT 
+    GNDINT | 32                                                                                                                         149 | RESERVED 
+  RESERVED | 33                                                                                                                         148 | RESERVED 
+  RESERVED | 34                                                                                                                         147 | RESERVED 
+  RESERVED | 35                                                                                                                         146 | RESERVED 
+  RESERVED | 36                                                                                                                         145 | GNDINT 
+    VCCINT | 37                                                                                                                         144 | RESERVED 
+  RESERVED | 38                                                                                                                         143 | RESERVED 
+  RESERVED | 39                                                                                                                         142 | RESERVED 
+  RESERVED | 40                                                                                                                         141 | RESERVED 
+  RESERVED | 41                                                                                                                         140 | VCCINT 
+    GNDINT | 42                                                                                                                         139 | RESERVED 
+  RESERVED | 43                                                                                                                         138 | RESERVED 
+  RESERVED | 44                                                                                                                         137 | RESERVED 
+  RESERVED | 45                                                                                                                         136 | RESERVED 
+  RESERVED | 46                                                                                                                         135 | GNDINT 
+    VCCINT | 47                                                                                                                         134 | RESERVED 
+  RESERVED | 48                                                                                                                         133 | RESERVED 
+  RESERVED | 49                                                                                                                         132 | RESERVED 
+  RESERVED | 50                                                                                                                         131 | RESERVED 
+  RESERVED | 51                                                                                                                         130 | VCCINT 
+    GNDINT | 52                                                                                                                         129 | RESERVED 
+  RESERVED | 53                                                                                                                         128 | RESERVED 
+  RESERVED | 54                                                                                                                         127 | RESERVED 
+  RESERVED | 55                                                                                                                         126 | RESERVED 
+  RESERVED | 56                                                                                                                         125 | GNDINT 
+    VCCINT | 57                                                                                                                         124 | ^MSEL0 
+      #TMS | 58                                                                                                                         123 | ^MSEL1 
+     #TRST | 59                                                                                                                         122 | VCCINT 
+  ^nSTATUS | 60                                                                                                                         121 | ^nCONFIG 
+           |      62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104 106 108 110 112 114 116 118 120  _| 
+            \   61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109 111 113 115 117 119   | 
+             \--------------------------------------------------------------------------------------------------------------------------- 
+                R R R R R R R R G R R R R R R R V R R R R R R R G R R R V x x x G R R V R R c R R R R G R R R R R y s V R R R R y R y R  
+                E E E E E E E E N E E E E E E E C E E E E E E E N E E E C 7 3 6 N E E C E E i E E E E N E E E E E 0 6 C E E E E 1 E 6 E  
+                S S S S S S S S D S S S S S S S C S S S S S S S D S S S C       D S S C S S n S S S S D S S S S S     C S S S S   S   S  
+                E E E E E E E E I E E E E E E E I E E E E E E E I E E E I       I E E I E E   E E E E I E E E E E     I E E E E   E   E  
+                R R R R R R R R N R R R R R R R N R R R R R R R N R R R N       N R R N R R   R R R R N R R R R R     N R R R R   R   R  
+                V V V V V V V V T V V V V V V V T V V V V V V V T V V V T       T V V T V V   V V V V T V V V V V     T V V V V   V   V  
+                E E E E E E E E   E E E E E E E   E E E E E E E   E E E           E E   E E   E E E E   E E E E E       E E E E   E   E  
+                D D D D D D D D   D D D D D D D   D D D D D D D   D D D           D D   D D   D D D D   D D D D D       D D D D   D   D  
+                                                                                                                                         
+                                                                                                                                         
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+B10      8/ 8(100%)   4/ 8( 50%)   4/ 8( 50%)    0/2    0/2       9/26( 34%)   
+B12      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       1/26(  3%)   
+B21      8/ 8(100%)   0/ 8(  0%)   8/ 8(100%)    0/2    0/2      16/26( 61%)   
+B23      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       0/26(  0%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 6/6      (100%)
+Total I/O pins used:                            20/183    ( 10%)
+Total logic cells used:                         18/3744   (  0%)
+Total embedded cells used:                       0/72     (  0%)
+Total EABs used:                                 0/9      (  0%)
+Average fan-in:                                 1.44/4    ( 36%)
+Total fan-in:                                  26/14976   (  0%)
+
+Total input pins required:                      17
+Total input I/O cell registers required:         0
+Total output pins required:                      9
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                     18
+Total flipflops required:                        0
+Total packed registers required:                 0
+Total logic cells in carry chains:              18
+Total number of carry chains:                    2
+Total number of carry chains of length  1-8 :    0
+Total number of carry chains of length  9-16:    2
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         1/3744   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  EA  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  Total(LC/EC)
+ A:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ B:      0   0   0   0   0   0   0   0   0   8   0   1   0   0   0   0   0   0   0   0   8   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     18/0  
+ C:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ D:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ E:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ F:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ G:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ H:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ I:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+
+Total:   0   0   0   0   0   0   0   0   0   8   0   1   0   0   0   0   0   0   0   0   8   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     18/0  
+
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  99      -     -    -    19      INPUT                0    0    0    1  cin
+ 169      -     -    B    --      INPUT                0    0    0    1  x0
+ 166      -     -    B    --      INPUT                0    0    0    1  x1
+ 211      -     -    -    --      INPUT                0    0    0    1  x2
+  91      -     -    -    --      INPUT                0    0    0    1  x3
+ 212      -     -    -    --      INPUT                0    0    0    1  x4
+ 210      -     -    -    --      INPUT                0    0    0    1  x5
+  92      -     -    -    --      INPUT                0    0    0    1  x6
+  90      -     -    -    --      INPUT                0    0    0    1  x7
+ 110      -     -    -    10      INPUT                0    0    0    1  y0
+ 117      -     -    -    03      INPUT                0    0    0    1  y1
+ 193      -     -    -    14      INPUT                0    0    0    1  y2
+  15      -     -    B    --      INPUT                0    0    0    1  y3
+  17      -     -    B    --      INPUT                0    0    0    1  y4
+ 209      -     -    -    26      INPUT                0    0    0    1  y5
+ 119      -     -    -    02      INPUT                0    0    0    1  y6
+  13      -     -    B    --      INPUT                0    0    0    1  y7
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  12      -     -    B    --     OUTPUT                0    1    0    0  cout
+ 188      -     -    -    10     OUTPUT                0    1    0    0  s0
+ 168      -     -    B    --     OUTPUT                0    1    0    0  s1
+ 153      -     -    E    --     OUTPUT                0    1    0    0  s2
+ 167      -     -    B    --     OUTPUT                0    1    0    0  s3
+  14      -     -    B    --     OUTPUT                0    1    0    0  s4
+ 187      -     -    -    09     OUTPUT                0    1    0    0  s5
+ 111      -     -    -    09     OUTPUT                0    1    0    0  s6
+  18      -     -    B    --     OUTPUT                0    1    0    0  s7
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      1     -    B    23       SOFT    s           0    0    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_7~1
+   -      2     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|result_node1
+   -      3     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|result_node2
+   -      4     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|result_node3
+   -      5     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|result_node4
+   -      6     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|result_node5
+   -      7     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|result_node6
+   -      8     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|result_node7
+   -      1     -    B    21        OR2                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|:76
+   -      2     -    B    10        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node1
+   -      3     -    B    10        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node2
+   -      4     -    B    10        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node3
+   -      5     -    B    10        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node4
+   -      6     -    B    10        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node5
+   -      7     -    B    10        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node6
+   -      8     -    B    10        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node7
+   -      1     -    B    12        OR2                0    1    1    0  |LPM_ADD_SUB:55|addcore:adder|result_node8
+   -      1     -    B    10        OR2                1    1    1    0  |LPM_ADD_SUB:55|addcore:adder|:76
+   -      1     -    B    21      CARRY                2    0    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_0
+   -      2     -    B    21      CARRY                2    1    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_1
+   -      3     -    B    21      CARRY                2    1    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_2
+   -      4     -    B    21      CARRY                2    1    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_3
+   -      5     -    B    21      CARRY                2    1    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_4
+   -      6     -    B    21      CARRY                2    1    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_5
+   -      7     -    B    21      CARRY                2    1    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_6
+   -      8     -    B    21      CARRY                2    1    0    1  |LPM_ADD_SUB:54|addcore:adder|pcarry0_7
+   -      1     -    B    10      CARRY                1    1    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_0
+   -      2     -    B    10      CARRY                0    2    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_1
+   -      3     -    B    10      CARRY                0    2    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_2
+   -      4     -    B    10      CARRY                0    2    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_3
+   -      5     -    B    10      CARRY                0    2    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_4
+   -      6     -    B    10      CARRY                0    2    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_5
+   -      7     -    B    10      CARRY                0    2    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_6
+   -      8     -    B    10      CARRY                0    2    0    1  |LPM_ADD_SUB:55|addcore:adder|pcarry0_7
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+B:       8/208(  3%)    17/104( 16%)     0/104(  0%)    5/16( 31%)      5/16( 31%)     0/16(  0%)
+C:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+D:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+E:       0/208(  0%)     1/104(  0%)     0/104(  0%)    0/16(  0%)      1/16(  6%)     0/16(  0%)
+F:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+G:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+H:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+I:       0/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+02:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+03:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+04:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      2/24(  8%)     0/4(  0%)      2/4( 50%)       0/4(  0%)
+10:      3/24( 12%)     1/4( 25%)      1/4( 25%)       0/4(  0%)
+11:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+20:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+25:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+26:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+27:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+28:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+29:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+30:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+31:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+32:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+33:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+34:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+35:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+36:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+37:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+38:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+39:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+40:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+41:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+42:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+43:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+44:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+45:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+46:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+47:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+48:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+49:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+50:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+51:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+52:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+** CARRY CHAINS **
+
+Type                    Member Length   Member Name: SUM, (CARRY)
+ARITHMETIC                    1         |LPM_ADD_SUB:54|addcore:adder|:76, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_0)
+ARITHMETIC                    2         |LPM_ADD_SUB:54|addcore:adder|result_node1, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_1)
+ARITHMETIC                    3         |LPM_ADD_SUB:54|addcore:adder|result_node2, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_2)
+ARITHMETIC                    4         |LPM_ADD_SUB:54|addcore:adder|result_node3, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_3)
+ARITHMETIC                    5         |LPM_ADD_SUB:54|addcore:adder|result_node4, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_4)
+ARITHMETIC                    6         |LPM_ADD_SUB:54|addcore:adder|result_node5, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_5)
+ARITHMETIC                    7         |LPM_ADD_SUB:54|addcore:adder|result_node6, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_6)
+ARITHMETIC                    8         |LPM_ADD_SUB:54|addcore:adder|result_node7, (|LPM_ADD_SUB:54|addcore:adder|pcarry0_7)
+NORMAL                        9         |LPM_ADD_SUB:54|addcore:adder|pcarry0_7~1
+
+ARITHMETIC                    1         |LPM_ADD_SUB:55|addcore:adder|:76, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_0)
+ARITHMETIC                    2         |LPM_ADD_SUB:55|addcore:adder|result_node1, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_1)
+ARITHMETIC                    3         |LPM_ADD_SUB:55|addcore:adder|result_node2, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_2)
+ARITHMETIC                    4         |LPM_ADD_SUB:55|addcore:adder|result_node3, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_3)
+ARITHMETIC                    5         |LPM_ADD_SUB:55|addcore:adder|result_node4, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_4)
+ARITHMETIC                    6         |LPM_ADD_SUB:55|addcore:adder|result_node5, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_5)
+ARITHMETIC                    7         |LPM_ADD_SUB:55|addcore:adder|result_node6, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_6)
+ARITHMETIC                    8         |LPM_ADD_SUB:55|addcore:adder|result_node7, (|LPM_ADD_SUB:55|addcore:adder|pcarry0_7)
+NORMAL                        9         |LPM_ADD_SUB:55|addcore:adder|result_node8
+
+
+
+Device-Specific Information:     c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+vhdladd8
+
+** EQUATIONS **
+
+cin      : INPUT;
+x0       : INPUT;
+x1       : INPUT;
+x2       : INPUT;
+x3       : INPUT;
+x4       : INPUT;
+x5       : INPUT;
+x6       : INPUT;
+x7       : INPUT;
+y0       : INPUT;
+y1       : INPUT;
+y2       : INPUT;
+y3       : INPUT;
+y4       : INPUT;
+y5       : INPUT;
+y6       : INPUT;
+y7       : INPUT;
+
+-- Node name is 'cout' 
+-- Equation name is 'cout', type is output 
+cout     =  _LC1_B12;
+
+-- Node name is 's0' 
+-- Equation name is 's0', type is output 
+s0       =  _LC1_B10;
+
+-- Node name is 's1' 
+-- Equation name is 's1', type is output 
+s1       =  _LC2_B10;
+
+-- Node name is 's2' 
+-- Equation name is 's2', type is output 
+s2       =  _LC3_B10;
+
+-- Node name is 's3' 
+-- Equation name is 's3', type is output 
+s3       =  _LC4_B10;
+
+-- Node name is 's4' 
+-- Equation name is 's4', type is output 
+s4       =  _LC5_B10;
+
+-- Node name is 's5' 
+-- Equation name is 's5', type is output 
+s5       =  _LC6_B10;
+
+-- Node name is 's6' 
+-- Equation name is 's6', type is output 
+s6       =  _LC7_B10;
+
+-- Node name is 's7' 
+-- Equation name is 's7', type is output 
+s7       =  _LC8_B10;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_0' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC1_B21_CARRY', type is buried 
+_LC1_B21_CARRY = CARRY( _EQ001);
+  _EQ001 =  x0 &  y0;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_1' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC2_B21_CARRY', type is buried 
+_LC2_B21_CARRY = CARRY( _EQ002);
+  _EQ002 =  _LC1_B21_CARRY &  x1
+         #  _LC1_B21_CARRY &  y1
+         #  x1 &  y1;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_2' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC3_B21_CARRY', type is buried 
+_LC3_B21_CARRY = CARRY( _EQ003);
+  _EQ003 =  _LC2_B21_CARRY &  x2
+         #  _LC2_B21_CARRY &  y2
+         #  x2 &  y2;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_3' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC4_B21_CARRY', type is buried 
+_LC4_B21_CARRY = CARRY( _EQ004);
+  _EQ004 =  _LC3_B21_CARRY &  x3
+         #  _LC3_B21_CARRY &  y3
+         #  x3 &  y3;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_4' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC5_B21_CARRY', type is buried 
+_LC5_B21_CARRY = CARRY( _EQ005);
+  _EQ005 =  _LC4_B21_CARRY &  x4
+         #  _LC4_B21_CARRY &  y4
+         #  x4 &  y4;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_5' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC6_B21_CARRY', type is buried 
+_LC6_B21_CARRY = CARRY( _EQ006);
+  _EQ006 =  _LC5_B21_CARRY &  x5
+         #  _LC5_B21_CARRY &  y5
+         #  x5 &  y5;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_6' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC7_B21_CARRY', type is buried 
+_LC7_B21_CARRY = CARRY( _EQ007);
+  _EQ007 =  _LC6_B21_CARRY &  x6
+         #  _LC6_B21_CARRY &  y6
+         #  x6 &  y6;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_7~1' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC1_B23', type is buried 
+-- synthesized logic cell 
+_LC1_B23 = LCELL( _LC8_B21_CARRY);
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|pcarry0_7' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC8_B21_CARRY', type is buried 
+_LC8_B21_CARRY = CARRY( _EQ008);
+  _EQ008 =  _LC7_B21_CARRY &  x7
+         #  _LC7_B21_CARRY &  y7
+         #  x7 &  y7;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|result_node1' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC2_B21', type is buried 
+_LC2_B21 = LCELL( _EQ009);
+  _EQ009 =  _LC1_B21_CARRY & !x1 & !y1
+         # !_LC1_B21_CARRY &  x1 & !y1
+         #  _LC1_B21_CARRY &  x1 &  y1
+         # !_LC1_B21_CARRY & !x1 &  y1;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|result_node2' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC3_B21', type is buried 
+_LC3_B21 = LCELL( _EQ010);
+  _EQ010 =  _LC2_B21_CARRY & !x2 & !y2
+         # !_LC2_B21_CARRY &  x2 & !y2
+         #  _LC2_B21_CARRY &  x2 &  y2
+         # !_LC2_B21_CARRY & !x2 &  y2;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|result_node3' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC4_B21', type is buried 
+_LC4_B21 = LCELL( _EQ011);
+  _EQ011 =  _LC3_B21_CARRY & !x3 & !y3
+         # !_LC3_B21_CARRY &  x3 & !y3
+         #  _LC3_B21_CARRY &  x3 &  y3
+         # !_LC3_B21_CARRY & !x3 &  y3;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|result_node4' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC5_B21', type is buried 
+_LC5_B21 = LCELL( _EQ012);
+  _EQ012 =  _LC4_B21_CARRY & !x4 & !y4
+         # !_LC4_B21_CARRY &  x4 & !y4
+         #  _LC4_B21_CARRY &  x4 &  y4
+         # !_LC4_B21_CARRY & !x4 &  y4;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|result_node5' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC6_B21', type is buried 
+_LC6_B21 = LCELL( _EQ013);
+  _EQ013 = !_LC5_B21_CARRY &  x5 & !y5
+         # !_LC5_B21_CARRY & !x5 &  y5
+         #  _LC5_B21_CARRY &  x5 &  y5
+         #  _LC5_B21_CARRY & !x5 & !y5;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|result_node6' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC7_B21', type is buried 
+_LC7_B21 = LCELL( _EQ014);
+  _EQ014 = !_LC6_B21_CARRY &  x6 & !y6
+         # !_LC6_B21_CARRY & !x6 &  y6
+         #  _LC6_B21_CARRY &  x6 &  y6
+         #  _LC6_B21_CARRY & !x6 & !y6;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|result_node7' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC8_B21', type is buried 
+_LC8_B21 = LCELL( _EQ015);
+  _EQ015 = !_LC7_B21_CARRY &  x7 & !y7
+         # !_LC7_B21_CARRY & !x7 &  y7
+         #  _LC7_B21_CARRY &  x7 &  y7
+         #  _LC7_B21_CARRY & !x7 & !y7;
+
+-- Node name is '|LPM_ADD_SUB:54|addcore:adder|:76' from file "addcore.tdf" line 223, column 32
+-- Equation name is '_LC1_B21', type is buried 
+_LC1_B21 = LCELL( _EQ016);
+  _EQ016 =  x0 & !y0
+         # !x0 &  y0;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_0' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC1_B10_CARRY', type is buried 
+_LC1_B10_CARRY = CARRY( _EQ017);
+  _EQ017 =  cin &  _LC1_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_1' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC2_B10_CARRY', type is buried 
+_LC2_B10_CARRY = CARRY( _EQ018);
+  _EQ018 =  _LC1_B10_CARRY &  _LC2_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_2' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC3_B10_CARRY', type is buried 
+_LC3_B10_CARRY = CARRY( _EQ019);
+  _EQ019 =  _LC2_B10_CARRY &  _LC3_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_3' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC4_B10_CARRY', type is buried 
+_LC4_B10_CARRY = CARRY( _EQ020);
+  _EQ020 =  _LC3_B10_CARRY &  _LC4_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_4' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC5_B10_CARRY', type is buried 
+_LC5_B10_CARRY = CARRY( _EQ021);
+  _EQ021 =  _LC4_B10_CARRY &  _LC5_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_5' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC6_B10_CARRY', type is buried 
+_LC6_B10_CARRY = CARRY( _EQ022);
+  _EQ022 =  _LC5_B10_CARRY &  _LC6_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_6' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC7_B10_CARRY', type is buried 
+_LC7_B10_CARRY = CARRY( _EQ023);
+  _EQ023 =  _LC6_B10_CARRY &  _LC7_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|pcarry0_7' from file "addcore.tdf" line 100, column 13
+-- Equation name is '_LC8_B10_CARRY', type is buried 
+_LC8_B10_CARRY = CARRY( _EQ024);
+  _EQ024 =  _LC7_B10_CARRY &  _LC8_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node1' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC2_B10', type is buried 
+_LC2_B10 = LCELL( _EQ025);
+  _EQ025 =  _LC1_B10_CARRY & !_LC2_B21
+         # !_LC1_B10_CARRY &  _LC2_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node2' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC3_B10', type is buried 
+_LC3_B10 = LCELL( _EQ026);
+  _EQ026 =  _LC2_B10_CARRY & !_LC3_B21
+         # !_LC2_B10_CARRY &  _LC3_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node3' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC4_B10', type is buried 
+_LC4_B10 = LCELL( _EQ027);
+  _EQ027 =  _LC3_B10_CARRY & !_LC4_B21
+         # !_LC3_B10_CARRY &  _LC4_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node4' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC5_B10', type is buried 
+_LC5_B10 = LCELL( _EQ028);
+  _EQ028 =  _LC4_B10_CARRY & !_LC5_B21
+         # !_LC4_B10_CARRY &  _LC5_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node5' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC6_B10', type is buried 
+_LC6_B10 = LCELL( _EQ029);
+  _EQ029 =  _LC5_B10_CARRY & !_LC6_B21
+         # !_LC5_B10_CARRY &  _LC6_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node6' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC7_B10', type is buried 
+_LC7_B10 = LCELL( _EQ030);
+  _EQ030 =  _LC6_B10_CARRY & !_LC7_B21
+         # !_LC6_B10_CARRY &  _LC7_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node7' from file "addcore.tdf" line 231, column 46
+-- Equation name is '_LC8_B10', type is buried 
+_LC8_B10 = LCELL( _EQ031);
+  _EQ031 =  _LC7_B10_CARRY & !_LC8_B21
+         # !_LC7_B10_CARRY &  _LC8_B21;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|result_node8' from file "addcore.tdf" line 241, column 37
+-- Equation name is '_LC1_B12', type is buried 
+_LC1_B12 = LCELL( _EQ032);
+  _EQ032 = !_LC1_B23 &  _LC8_B10_CARRY
+         #  _LC1_B23 & !_LC8_B10_CARRY;
+
+-- Node name is '|LPM_ADD_SUB:55|addcore:adder|:76' from file "addcore.tdf" line 223, column 32
+-- Equation name is '_LC1_B10', type is buried 
+_LC1_B10 = LCELL( _EQ033);
+  _EQ033 =  cin & !_LC1_B21
+         # !cin &  _LC1_B21;
+
+
+
+Project Information              c:\vhdldesigns\ee231\22claadders\vhdladd8.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = FAST
+
+      Logic option settings in 'FAST' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = auto
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = auto
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = off
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = off
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Use Quartus Fitter                        = on
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:01
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:11
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:02
+   --------------------------             --------
+   Total Time                             00:00:14
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 40,568K

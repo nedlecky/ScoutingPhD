@@ -1,0 +1,1426 @@
+Project Information           c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 04/23/2002 06:14:14
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+RIPPLEADD32
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+rippleadd32
+      EPF10K70RC240-4      65     33     0    0         0  %    37       0  %
+
+User Pins:                 65     33     0  
+
+
+
+Project Information           c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+
+** FILE HIERARCHY **
+
+
+
+|fa:fa_i|
+|fa:fa_i~148|
+|fa:fa_i~178|
+|fa:fa_i~201|
+|fa:fa_i~224|
+|fa:fa_i~247|
+|fa:fa_i~270|
+|fa:fa_i~293|
+|fa:fa_i~316|
+|fa:fa_i~339|
+|fa:fa_i~362|
+|fa:fa_i~385|
+|fa:fa_i~408|
+|fa:fa_i~431|
+|fa:fa_i~454|
+|fa:fa_i~477|
+|fa:fa_i~500|
+|fa:fa_i~523|
+|fa:fa_i~546|
+|fa:fa_i~569|
+|fa:fa_i~592|
+|fa:fa_i~615|
+|fa:fa_i~638|
+|fa:fa_i~661|
+|fa:fa_i~684|
+|fa:fa_i~707|
+|fa:fa_i~730|
+|fa:fa_i~753|
+|fa:fa_i~776|
+|fa:fa_i~799|
+|fa:fa_i~822|
+|fa:fa_i~845|
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+***** Logic for device 'rippleadd32' compiled without errors.
+
+
+
+
+Device: EPF10K70RC240-4
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+
+                                                                                                                                         
+                                                                                                                                         
+                    R R R R R R     R R   R R R   R R R R R   R     R R                                                                  
+                    E E E E E E     E E   E E E   E E E E E   E     E E                                                                  
+                    S S S S S S G   S S   S S S V S S S S S   S G   S S               V               G               V                  
+                    E E E E E E N   E E   E E E C E E E E E   E N   E E               C               N               C                  
+                    R R R R R R D   R R   R R R C R R R R R   R D   R R               C               D               C                  
+                x y V V V V V V I   V V y V V V I V V V V V x V I   V V x   c y y s s I s s x s y   x I x x   y y x x I y       y   x x  
+                2 1 E E E E E E N y E E 2 E E E N E E E E E 2 E N x E E 3 y i 2 2 2 1 N 1 1 1 1 1 s 1 N 1 1 x 2 1 2 2 N 2 y y x 1 y 2 1  
+                9 0 D D D D D D T 3 D D 4 D D D T D D D D D 1 D T 5 D D 1 1 n 2 0 8 8 T 7 3 0 4 6 5 9 T 2 1 2 5 1 7 0 T 1 7 5 7 7 8 3 8  
+              --------------------------------------------------------------------------------------------------------------------------_ 
+             / 240 238 236 234 232 230 228 226 224 222 220 218 216 214 212 210 208 206 204 202 200 198 196 194 192 190 188 186 184 182   |_ 
+            /    239 237 235 233 231 229 227 225 223 221 219 217 215 213 211 209 207 205 203 201 199 197 195 193 191 189 187 185 183 181    | 
+      #TCK |  1                                                                                                                         180 | ^DATA0 
+^CONF_DONE |  2                                                                                                                         179 | ^DCLK 
+     ^nCEO |  3                                                                                                                         178 | ^nCE 
+      #TDO |  4                                                                                                                         177 | #TDI 
+    VCCINT |  5                                                                                                                         176 | GNDINT 
+       x30 |  6                                                                                                                         175 | y31 
+      cout |  7                                                                                                                         174 | s30 
+       y30 |  8                                                                                                                         173 | s31 
+       s21 |  9                                                                                                                         172 | RESERVED 
+    GNDINT | 10                                                                                                                         171 | RESERVED 
+  RESERVED | 11                                                                                                                         170 | VCCINT 
+        y4 | 12                                                                                                                         169 | s23 
+       y27 | 13                                                                                                                         168 | y6 
+       s19 | 14                                                                                                                         167 | s2 
+        x8 | 15                                                                                                                         166 | x3 
+    VCCINT | 16                                                                                                                         165 | GNDINT 
+       y19 | 17                                                                                                                         164 | RESERVED 
+       s22 | 18                                                                                                                         163 | RESERVED 
+  RESERVED | 19                                                                                                                         162 | RESERVED 
+       s25 | 20                                                                                                                         161 | RESERVED 
+  RESERVED | 21                                                                                                                         160 | VCCINT 
+    GNDINT | 22                                                                                                                         159 | RESERVED 
+  RESERVED | 23                                                                                                                         158 | RESERVED 
+  RESERVED | 24                                                                                                                         157 | RESERVED 
+  RESERVED | 25                                                                                                                         156 | s6 
+  RESERVED | 26                                                                                                                         155 | GNDINT 
+    VCCINT | 27                                                                                                                         154 | RESERVED 
+  RESERVED | 28                                                                                                                         153 | s1 
+  RESERVED | 29                                                                                                                         152 | RESERVED 
+  RESERVED | 30                                                                                                                         151 | RESERVED 
+  RESERVED | 31                                                     EPF10K70RC240-4                                                     150 | VCCINT 
+    GNDINT | 32                                                                                                                         149 | RESERVED 
+  RESERVED | 33                                                                                                                         148 | RESERVED 
+  RESERVED | 34                                                                                                                         147 | RESERVED 
+  RESERVED | 35                                                                                                                         146 | RESERVED 
+       s15 | 36                                                                                                                         145 | GNDINT 
+    VCCINT | 37                                                                                                                         144 | s12 
+  RESERVED | 38                                                                                                                         143 | RESERVED 
+  RESERVED | 39                                                                                                                         142 | RESERVED 
+  RESERVED | 40                                                                                                                         141 | RESERVED 
+  RESERVED | 41                                                                                                                         140 | VCCINT 
+    GNDINT | 42                                                                                                                         139 | RESERVED 
+  RESERVED | 43                                                                                                                         138 | RESERVED 
+       s11 | 44                                                                                                                         137 | RESERVED 
+  RESERVED | 45                                                                                                                         136 | s24 
+  RESERVED | 46                                                                                                                         135 | GNDINT 
+    VCCINT | 47                                                                                                                         134 | s0 
+        s3 | 48                                                                                                                         133 | s26 
+  RESERVED | 49                                                                                                                         132 | s4 
+  RESERVED | 50                                                                                                                         131 | RESERVED 
+        s7 | 51                                                                                                                         130 | VCCINT 
+    GNDINT | 52                                                                                                                         129 | s8 
+        s9 | 53                                                                                                                         128 | RESERVED 
+  RESERVED | 54                                                                                                                         127 | s20 
+  RESERVED | 55                                                                                                                         126 | RESERVED 
+  RESERVED | 56                                                                                                                         125 | GNDINT 
+    VCCINT | 57                                                                                                                         124 | ^MSEL0 
+      #TMS | 58                                                                                                                         123 | ^MSEL1 
+     #TRST | 59                                                                                                                         122 | VCCINT 
+  ^nSTATUS | 60                                                                                                                         121 | ^nCONFIG 
+           |      62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104 106 108 110 112 114 116 118 120  _| 
+            \   61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109 111 113 115 117 119   | 
+             \--------------------------------------------------------------------------------------------------------------------------- 
+                R R R x R R R y G R R x R R R R V R R R R R x R G R R R V x x y G s s V s s x x x y x G y y x y y x y V y y x y y x x x  
+                E E E 9 E E E 1 N E E 1 E E E E C E E E E E 2 E N E E E C 0 1 0 N 2 2 C 1 1 2 2 1 2 2 N 1 9 1 1 1 4 2 C 2 2 1 2 1 2 6 1  
+                S S S   S S S 3 D S S 7 S S S S C S S S S S 2 S D S S S C       D 9 7 C 6 0 5 8 5 3 6 D 2   3 4 5     C 6 9 4 8 8 4   6  
+                E E E   E E E   I E E   E E E E I E E E E E   E I E E E I       I     I               I               I                  
+                R R R   R R R   N R R   R R R R N R R R R R   R N R R R N       N     N               N               N                  
+                V V V   V V V   T V V   V V V V T V V V V V   V T V V V T       T     T               T               T                  
+                E E E   E E E     E E   E E E E   E E E E E   E   E E E                                                                  
+                D D D   D D D     D D   D D D D   D D D D D   D   D D D                                                                  
+                                                                                                                                         
+                                                                                                                                         
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+A16      4/ 8( 50%)   0/ 8(  0%)   3/ 8( 37%)    0/2    0/2       5/26( 19%)   
+B19      8/ 8(100%)   5/ 8( 62%)   1/ 8( 12%)    0/2    0/2      15/26( 57%)   
+B21      8/ 8(100%)   8/ 8(100%)   0/ 8(  0%)    0/2    0/2      16/26( 61%)   
+B23      8/ 8(100%)   6/ 8( 75%)   2/ 8( 25%)    0/2    0/2      16/26( 61%)   
+B25      8/ 8(100%)   7/ 8( 87%)   1/ 8( 12%)    0/2    0/2      14/26( 53%)   
+H18      1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    0/2    0/2       3/26( 11%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 6/6      (100%)
+Total I/O pins used:                            92/183    ( 50%)
+Total logic cells used:                         37/3744   (  0%)
+Total embedded cells used:                       0/72     (  0%)
+Total EABs used:                                 0/9      (  0%)
+Average fan-in:                                 1.86/4    ( 46%)
+Total fan-in:                                  69/14976   (  0%)
+
+Total input pins required:                      65
+Total input I/O cell registers required:         0
+Total output pins required:                     33
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                     37
+Total flipflops required:                        0
+Total packed registers required:                 0
+Total logic cells in carry chains:              36
+Total number of carry chains:                    2
+Total number of carry chains of length  1-8 :    1
+Total number of carry chains of length  9-16:    0
+Total number of carry chains of length 17-24:    0
+Total number of carry chains of length 25-32:    1
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         4/3744   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  EA  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  Total(LC/EC)
+ A:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      4/0  
+ B:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   8   0   8   0   8   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     32/0  
+ C:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ D:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ E:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ F:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ G:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ H:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      1/0  
+ I:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+
+Total:   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4   0   1   8   0   8   0   8   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     37/0  
+
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+ 210      -     -    -    --      INPUT                0    0    0    2  cin
+  90      -     -    -    --      INPUT                0    0    0    2  x0
+  91      -     -    -    --      INPUT                0    0    0    1  x1
+ 194      -     -    -    15      INPUT                0    0    0    1  x2
+ 166      -     -    B    --      INPUT                0    0    0    1  x3
+ 110      -     -    -    10      INPUT                0    0    0    1  x4
+ 215      -     -    -    29      INPUT                0    0    0    1  x5
+ 119      -     -    -    02      INPUT                0    0    0    1  x6
+ 185      -     -    -    07      INPUT                0    0    0    1  x7
+  15      -     -    B    --      INPUT                0    0    0    1  x8
+  64      -     -    -    49      INPUT                0    0    0    1  x9
+ 202      -     -    -    22      INPUT                0    0    0    1  x10
+ 195      -     -    -    16      INPUT                0    0    0    1  x11
+ 196      -     -    -    16      INPUT                0    0    0    1  x12
+ 107      -     -    -    13      INPUT                0    0    0    1  x13
+ 115      -     -    -    06      INPUT                0    0    0    1  x14
+ 101      -     -    -    17      INPUT                0    0    0    1  x15
+ 120      -     -    -    01      INPUT                0    0    0    1  x16
+  72      -     -    -    42      INPUT                0    0    0    1  x17
+ 181      -     -    -    02      INPUT                0    0    0    1  x18
+ 198      -     -    -    18      INPUT                0    0    0    1  x19
+ 190      -     -    -    11      INPUT                0    0    0    1  x20
+ 218      -     -    -    32      INPUT                0    0    0    1  x21
+  83      -     -    -    31      INPUT                0    0    0    1  x22
+ 182      -     -    -    04      INPUT                0    0    0    1  x23
+ 118      -     -    -    02      INPUT                0    0    0    1  x24
+  99      -     -    -    19      INPUT                0    0    0    1  x25
+ 103      -     -    -    16      INPUT                0    0    0    1  x26
+ 191      -     -    -    12      INPUT                0    0    0    1  x27
+ 100      -     -    -    18      INPUT                0    0    0    1  x28
+ 240      -     -    -    52      INPUT                0    0    0    1  x29
+   6      -     -    A    --      INPUT                0    0    0    1  x30
+ 212      -     -    -    --      INPUT                0    0    0    1  x31
+  92      -     -    -    --      INPUT                0    0    0    2  y0
+ 211      -     -    -    --      INPUT                0    0    0    1  y1
+ 111      -     -    -    09      INPUT                0    0    0    1  y2
+ 231      -     -    -    44      INPUT                0    0    0    1  y3
+  12      -     -    B    --      INPUT                0    0    0    1  y4
+ 186      -     -    -    08      INPUT                0    0    0    1  y5
+ 168      -     -    B    --      INPUT                0    0    0    1  y6
+ 187      -     -    -    09      INPUT                0    0    0    1  y7
+ 183      -     -    -    05      INPUT                0    0    0    1  y8
+ 106      -     -    -    14      INPUT                0    0    0    1  y9
+ 239      -     -    -    51      INPUT                0    0    0    1  y10
+ 192      -     -    -    12      INPUT                0    0    0    1  y11
+ 105      -     -    -    15      INPUT                0    0    0    1  y12
+  68      -     -    -    45      INPUT                0    0    0    1  y13
+ 108      -     -    -    12      INPUT                0    0    0    1  y14
+ 109      -     -    -    11      INPUT                0    0    0    1  y15
+ 200      -     -    -    20      INPUT                0    0    0    1  y16
+ 184      -     -    -    06      INPUT                0    0    0    1  y17
+ 117      -     -    -    03      INPUT                0    0    0    1  y18
+  17      -     -    B    --      INPUT                0    0    0    1  y19
+ 208      -     -    -    25      INPUT                0    0    0    1  y20
+ 188      -     -    -    10      INPUT                0    0    0    1  y21
+ 209      -     -    -    26      INPUT                0    0    0    1  y22
+ 102      -     -    -    17      INPUT                0    0    0    1  y23
+ 228      -     -    -    40      INPUT                0    0    0    1  y24
+ 193      -     -    -    14      INPUT                0    0    0    1  y25
+ 113      -     -    -    08      INPUT                0    0    0    1  y26
+  13      -     -    B    --      INPUT                0    0    0    1  y27
+ 116      -     -    -    05      INPUT                0    0    0    1  y28
+ 114      -     -    -    07      INPUT                0    0    0    1  y29
+   8      -     -    A    --      INPUT                0    0    0    1  y30
+ 175      -     -    A    --      INPUT                0    0    0    1  y31
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   7      -     -    A    --     OUTPUT                0    1    0    0  cout
+ 134      -     -    H    --     OUTPUT                0    1    0    0  s0
+ 153      -     -    E    --     OUTPUT                0    1    0    0  s1
+ 167      -     -    B    --     OUTPUT                0    1    0    0  s2
+  48      -     -    H    --     OUTPUT                0    1    0    0  s3
+ 132      -     -    H    --     OUTPUT                0    1    0    0  s4
+ 199      -     -    -    20     OUTPUT                0    1    0    0  s5
+ 156      -     -    D    --     OUTPUT                0    1    0    0  s6
+  51      -     -    I    --     OUTPUT                0    1    0    0  s7
+ 129      -     -    I    --     OUTPUT                0    1    0    0  s8
+  53      -     -    I    --     OUTPUT                0    1    0    0  s9
+  98      -     -    -    21     OUTPUT                0    1    0    0  s10
+  44      -     -    G    --     OUTPUT                0    1    0    0  s11
+ 144      -     -    F    --     OUTPUT                0    1    0    0  s12
+ 203      -     -    -    22     OUTPUT                0    1    0    0  s13
+ 201      -     -    -    21     OUTPUT                0    1    0    0  s14
+  36      -     -    F    --     OUTPUT                0    1    0    0  s15
+  97      -     -    -    23     OUTPUT                0    1    0    0  s16
+ 204      -     -    -    24     OUTPUT                0    1    0    0  s17
+ 206      -     -    -    24     OUTPUT                0    1    0    0  s18
+  14      -     -    B    --     OUTPUT                0    1    0    0  s19
+ 127      -     -    I    --     OUTPUT                0    1    0    0  s20
+   9      -     -    A    --     OUTPUT                0    1    0    0  s21
+  18      -     -    B    --     OUTPUT                0    1    0    0  s22
+ 169      -     -    B    --     OUTPUT                0    1    0    0  s23
+ 136      -     -    H    --     OUTPUT                0    1    0    0  s24
+  20      -     -    C    --     OUTPUT                0    1    0    0  s25
+ 133      -     -    H    --     OUTPUT                0    1    0    0  s26
+  95      -     -    -    25     OUTPUT                0    1    0    0  s27
+ 207      -     -    -    25     OUTPUT                0    1    0    0  s28
+  94      -     -    -    26     OUTPUT                0    1    0    0  s29
+ 174      -     -    A    --     OUTPUT                0    1    0    0  s30
+ 173      -     -    A    --     OUTPUT                0    1    0    0  s31
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      2     -    H    18        OR2                3    0    1    0  |fa:fa_i|:8
+   -      3     -    B    19        OR2                2    0    1    0  |fa:fa_i~148|:8
+   -      4     -    B    19        OR2                2    0    1    0  |fa:fa_i~178|:8
+   -      5     -    B    19        OR2                2    0    1    0  |fa:fa_i~201|:8
+   -      6     -    B    19        OR2                2    0    1    0  |fa:fa_i~224|:8
+   -      7     -    B    19        OR2                2    0    1    0  |fa:fa_i~247|:8
+   -      8     -    B    19        OR2                2    0    1    0  |fa:fa_i~270|:8
+   -      1     -    B    21        OR2                2    0    1    0  |fa:fa_i~293|:8
+   -      2     -    B    21        OR2                2    0    1    0  |fa:fa_i~316|:8
+   -      3     -    B    21        OR2                2    0    1    0  |fa:fa_i~339|:8
+   -      4     -    B    21        OR2                2    0    1    0  |fa:fa_i~362|:8
+   -      5     -    B    21        OR2                2    0    1    0  |fa:fa_i~385|:8
+   -      6     -    B    21        OR2                2    0    1    0  |fa:fa_i~408|:8
+   -      7     -    B    21        OR2                2    0    1    0  |fa:fa_i~431|:8
+   -      8     -    B    21        OR2                2    0    1    0  |fa:fa_i~454|:8
+   -      1     -    B    23        OR2                2    0    1    0  |fa:fa_i~477|:8
+   -      2     -    B    23        OR2                2    0    1    0  |fa:fa_i~500|:8
+   -      3     -    B    23        OR2                2    0    1    0  |fa:fa_i~523|:8
+   -      4     -    B    23        OR2                2    0    1    0  |fa:fa_i~546|:8
+   -      5     -    B    23        OR2                2    0    1    0  |fa:fa_i~569|:8
+   -      6     -    B    23        OR2                2    0    1    0  |fa:fa_i~592|:8
+   -      7     -    B    23        OR2                2    0    1    0  |fa:fa_i~615|:8
+   -      8     -    B    23        OR2                2    0    1    0  |fa:fa_i~638|:8
+   -      1     -    B    25        OR2                2    0    1    0  |fa:fa_i~661|:8
+   -      2     -    B    25        OR2                2    0    1    0  |fa:fa_i~684|:8
+   -      3     -    B    25        OR2                2    0    1    0  |fa:fa_i~707|:8
+   -      4     -    B    25        OR2                2    0    1    0  |fa:fa_i~730|:8
+   -      5     -    B    25        OR2                2    0    1    0  |fa:fa_i~753|:8
+   -      6     -    B    25        OR2                2    0    1    0  |fa:fa_i~776|:8
+   -      7     -    B    25        OR2                2    0    1    0  |fa:fa_i~799|:8
+   -      8     -    B    25       AND2    s           0    0    0    1  |fa:fa_i~799|~17~1
+   -      2     -    A    16        OR2                2    0    1    0  |fa:fa_i~822|:8
+   -      4     -    A    16       AND2    s           0    0    1    0  |fa:fa_i~845|~8~1
+   -      3     -    A    16        OR2                2    0    1    0  |fa:fa_i~845|:17
+   -      1     -    B    19       AND2    s           1    0    0    1  |fa:fa_i|~17~1
+   -      2     -    B    19        OR2                2    1    0    1  |fa:fa_i|:17
+   -      3     -    B    19        OR2                2    1    0    1  |fa:fa_i~148|:17
+   -      4     -    B    19        OR2                2    1    0    1  |fa:fa_i~178|:17
+   -      5     -    B    19        OR2                2    1    0    1  |fa:fa_i~201|:17
+   -      6     -    B    19        OR2                2    1    0    1  |fa:fa_i~224|:17
+   -      7     -    B    19        OR2                2    1    0    1  |fa:fa_i~247|:17
+   -      8     -    B    19        OR2                2    1    0    1  |fa:fa_i~270|:17
+   -      1     -    B    21        OR2                2    1    0    1  |fa:fa_i~293|:17
+   -      2     -    B    21        OR2                2    1    0    1  |fa:fa_i~316|:17
+   -      3     -    B    21        OR2                2    1    0    1  |fa:fa_i~339|:17
+   -      4     -    B    21        OR2                2    1    0    1  |fa:fa_i~362|:17
+   -      5     -    B    21        OR2                2    1    0    1  |fa:fa_i~385|:17
+   -      6     -    B    21        OR2                2    1    0    1  |fa:fa_i~408|:17
+   -      7     -    B    21        OR2                2    1    0    1  |fa:fa_i~431|:17
+   -      8     -    B    21        OR2                2    1    0    1  |fa:fa_i~454|:17
+   -      1     -    B    23        OR2                2    1    0    1  |fa:fa_i~477|:17
+   -      2     -    B    23        OR2                2    1    0    1  |fa:fa_i~500|:17
+   -      3     -    B    23        OR2                2    1    0    1  |fa:fa_i~523|:17
+   -      4     -    B    23        OR2                2    1    0    1  |fa:fa_i~546|:17
+   -      5     -    B    23        OR2                2    1    0    1  |fa:fa_i~569|:17
+   -      6     -    B    23        OR2                2    1    0    1  |fa:fa_i~592|:17
+   -      7     -    B    23        OR2                2    1    0    1  |fa:fa_i~615|:17
+   -      8     -    B    23        OR2                2    1    0    1  |fa:fa_i~638|:17
+   -      1     -    B    25        OR2                2    1    0    1  |fa:fa_i~661|:17
+   -      2     -    B    25        OR2                2    1    0    1  |fa:fa_i~684|:17
+   -      3     -    B    25        OR2                2    1    0    1  |fa:fa_i~707|:17
+   -      4     -    B    25        OR2                2    1    0    1  |fa:fa_i~730|:17
+   -      5     -    B    25        OR2                2    1    0    1  |fa:fa_i~753|:17
+   -      6     -    B    25        OR2                2    1    0    1  |fa:fa_i~776|:17
+   -      7     -    B    25        OR2                2    1    0    1  |fa:fa_i~799|:17
+   -      1     -    A    16       AND2    s           0    1    0    1  |fa:fa_i~822|~17~1
+   -      2     -    A    16        OR2                2    1    0    1  |fa:fa_i~822|:17
+   -      3     -    A    16        OR2                2    1    0    1  |fa:fa_i~845|:8
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       5/208(  2%)     3/104(  2%)     0/104(  0%)    3/16( 18%)      4/16( 25%)     0/16(  0%)
+B:      28/208( 13%)    32/104( 30%)     0/104(  0%)    6/16( 37%)      4/16( 25%)     0/16(  0%)
+C:       1/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      1/16(  6%)     0/16(  0%)
+D:       0/208(  0%)     1/104(  0%)     0/104(  0%)    0/16(  0%)      1/16(  6%)     0/16(  0%)
+E:       0/208(  0%)     1/104(  0%)     0/104(  0%)    0/16(  0%)      1/16(  6%)     0/16(  0%)
+F:       1/208(  0%)     1/104(  0%)     0/104(  0%)    0/16(  0%)      2/16( 12%)     0/16(  0%)
+G:       1/208(  0%)     0/104(  0%)     0/104(  0%)    0/16(  0%)      1/16(  6%)     0/16(  0%)
+H:       1/208(  0%)     4/104(  3%)     0/104(  0%)    0/16(  0%)      5/16( 31%)     0/16(  0%)
+I:       2/208(  0%)     2/104(  1%)     0/104(  0%)    0/16(  0%)      4/16( 25%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+02:      3/24( 12%)     3/4( 75%)      0/4(  0%)       0/4(  0%)
+03:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+04:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+05:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+06:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+07:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+08:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+09:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+10:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+11:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+12:      3/24( 12%)     3/4( 75%)      0/4(  0%)       0/4(  0%)
+13:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+14:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+15:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+16:      3/24( 12%)     3/4( 75%)      0/4(  0%)       0/4(  0%)
+17:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+18:      2/24(  8%)     2/4( 50%)      0/4(  0%)       0/4(  0%)
+19:      5/24( 20%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+20:      2/24(  8%)     1/4( 25%)      1/4( 25%)       0/4(  0%)
+21:      7/24( 29%)     0/4(  0%)      2/4( 50%)       0/4(  0%)
+22:      2/24(  8%)     1/4( 25%)      1/4( 25%)       0/4(  0%)
+23:      4/24( 16%)     0/4(  0%)      1/4( 25%)       0/4(  0%)
+24:      2/24(  8%)     0/4(  0%)      2/4( 50%)       0/4(  0%)
+25:      7/24( 29%)     1/4( 25%)      2/4( 50%)       0/4(  0%)
+26:      2/24(  8%)     1/4( 25%)      1/4( 25%)       0/4(  0%)
+27:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+28:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+29:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+30:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+31:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+32:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+33:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+34:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+35:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+36:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+37:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+38:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+39:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+40:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+41:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+42:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+43:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+44:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+45:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+46:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+47:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+48:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+49:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+50:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+51:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+52:      1/24(  4%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+** CARRY CHAINS **
+
+Type                    Member Length   Member Name: SUM, (CARRY)
+ARITHMETIC                    1                     (|fa:fa_i|~17~1)
+ARITHMETIC                    2                     (|fa:fa_i|:17)
+ARITHMETIC                    3         |fa:fa_i~148|:8, (|fa:fa_i~148|:17)
+ARITHMETIC                    4         |fa:fa_i~178|:8, (|fa:fa_i~178|:17)
+ARITHMETIC                    5         |fa:fa_i~201|:8, (|fa:fa_i~201|:17)
+ARITHMETIC                    6         |fa:fa_i~224|:8, (|fa:fa_i~224|:17)
+ARITHMETIC                    7         |fa:fa_i~247|:8, (|fa:fa_i~247|:17)
+ARITHMETIC                    8         |fa:fa_i~270|:8, (|fa:fa_i~270|:17)
+ARITHMETIC                    9         |fa:fa_i~293|:8, (|fa:fa_i~293|:17)
+ARITHMETIC                   10         |fa:fa_i~316|:8, (|fa:fa_i~316|:17)
+ARITHMETIC                   11         |fa:fa_i~339|:8, (|fa:fa_i~339|:17)
+ARITHMETIC                   12         |fa:fa_i~362|:8, (|fa:fa_i~362|:17)
+ARITHMETIC                   13         |fa:fa_i~385|:8, (|fa:fa_i~385|:17)
+ARITHMETIC                   14         |fa:fa_i~408|:8, (|fa:fa_i~408|:17)
+ARITHMETIC                   15         |fa:fa_i~431|:8, (|fa:fa_i~431|:17)
+ARITHMETIC                   16         |fa:fa_i~454|:8, (|fa:fa_i~454|:17)
+ARITHMETIC                   17         |fa:fa_i~477|:8, (|fa:fa_i~477|:17)
+ARITHMETIC                   18         |fa:fa_i~500|:8, (|fa:fa_i~500|:17)
+ARITHMETIC                   19         |fa:fa_i~523|:8, (|fa:fa_i~523|:17)
+ARITHMETIC                   20         |fa:fa_i~546|:8, (|fa:fa_i~546|:17)
+ARITHMETIC                   21         |fa:fa_i~569|:8, (|fa:fa_i~569|:17)
+ARITHMETIC                   22         |fa:fa_i~592|:8, (|fa:fa_i~592|:17)
+ARITHMETIC                   23         |fa:fa_i~615|:8, (|fa:fa_i~615|:17)
+ARITHMETIC                   24         |fa:fa_i~638|:8, (|fa:fa_i~638|:17)
+ARITHMETIC                   25         |fa:fa_i~661|:8, (|fa:fa_i~661|:17)
+ARITHMETIC                   26         |fa:fa_i~684|:8, (|fa:fa_i~684|:17)
+ARITHMETIC                   27         |fa:fa_i~707|:8, (|fa:fa_i~707|:17)
+ARITHMETIC                   28         |fa:fa_i~730|:8, (|fa:fa_i~730|:17)
+ARITHMETIC                   29         |fa:fa_i~753|:8, (|fa:fa_i~753|:17)
+ARITHMETIC                   30         |fa:fa_i~776|:8, (|fa:fa_i~776|:17)
+ARITHMETIC                   31         |fa:fa_i~799|:8, (|fa:fa_i~799|:17)
+NORMAL                       32         |fa:fa_i~799|~17~1
+
+ARITHMETIC                    1                     (|fa:fa_i~822|~17~1)
+ARITHMETIC                    2         |fa:fa_i~822|:8, (|fa:fa_i~822|:17)
+ARITHMETIC                    3         |fa:fa_i~845|:17, (|fa:fa_i~845|:8)
+NORMAL                        4         |fa:fa_i~845|~8~1
+
+
+
+Device-Specific Information:  c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+rippleadd32
+
+** EQUATIONS **
+
+cin      : INPUT;
+x0       : INPUT;
+x1       : INPUT;
+x2       : INPUT;
+x3       : INPUT;
+x4       : INPUT;
+x5       : INPUT;
+x6       : INPUT;
+x7       : INPUT;
+x8       : INPUT;
+x9       : INPUT;
+x10      : INPUT;
+x11      : INPUT;
+x12      : INPUT;
+x13      : INPUT;
+x14      : INPUT;
+x15      : INPUT;
+x16      : INPUT;
+x17      : INPUT;
+x18      : INPUT;
+x19      : INPUT;
+x20      : INPUT;
+x21      : INPUT;
+x22      : INPUT;
+x23      : INPUT;
+x24      : INPUT;
+x25      : INPUT;
+x26      : INPUT;
+x27      : INPUT;
+x28      : INPUT;
+x29      : INPUT;
+x30      : INPUT;
+x31      : INPUT;
+y0       : INPUT;
+y1       : INPUT;
+y2       : INPUT;
+y3       : INPUT;
+y4       : INPUT;
+y5       : INPUT;
+y6       : INPUT;
+y7       : INPUT;
+y8       : INPUT;
+y9       : INPUT;
+y10      : INPUT;
+y11      : INPUT;
+y12      : INPUT;
+y13      : INPUT;
+y14      : INPUT;
+y15      : INPUT;
+y16      : INPUT;
+y17      : INPUT;
+y18      : INPUT;
+y19      : INPUT;
+y20      : INPUT;
+y21      : INPUT;
+y22      : INPUT;
+y23      : INPUT;
+y24      : INPUT;
+y25      : INPUT;
+y26      : INPUT;
+y27      : INPUT;
+y28      : INPUT;
+y29      : INPUT;
+y30      : INPUT;
+y31      : INPUT;
+
+-- Node name is 'cout' 
+-- Equation name is 'cout', type is output 
+cout     =  _LC3_A16;
+
+-- Node name is 's0' 
+-- Equation name is 's0', type is output 
+s0       =  _LC2_H18;
+
+-- Node name is 's1' 
+-- Equation name is 's1', type is output 
+s1       =  _LC3_B19;
+
+-- Node name is 's2' 
+-- Equation name is 's2', type is output 
+s2       =  _LC4_B19;
+
+-- Node name is 's3' 
+-- Equation name is 's3', type is output 
+s3       =  _LC5_B19;
+
+-- Node name is 's4' 
+-- Equation name is 's4', type is output 
+s4       =  _LC6_B19;
+
+-- Node name is 's5' 
+-- Equation name is 's5', type is output 
+s5       =  _LC7_B19;
+
+-- Node name is 's6' 
+-- Equation name is 's6', type is output 
+s6       =  _LC8_B19;
+
+-- Node name is 's7' 
+-- Equation name is 's7', type is output 
+s7       =  _LC1_B21;
+
+-- Node name is 's8' 
+-- Equation name is 's8', type is output 
+s8       =  _LC2_B21;
+
+-- Node name is 's9' 
+-- Equation name is 's9', type is output 
+s9       =  _LC3_B21;
+
+-- Node name is 's10' 
+-- Equation name is 's10', type is output 
+s10      =  _LC4_B21;
+
+-- Node name is 's11' 
+-- Equation name is 's11', type is output 
+s11      =  _LC5_B21;
+
+-- Node name is 's12' 
+-- Equation name is 's12', type is output 
+s12      =  _LC6_B21;
+
+-- Node name is 's13' 
+-- Equation name is 's13', type is output 
+s13      =  _LC7_B21;
+
+-- Node name is 's14' 
+-- Equation name is 's14', type is output 
+s14      =  _LC8_B21;
+
+-- Node name is 's15' 
+-- Equation name is 's15', type is output 
+s15      =  _LC1_B23;
+
+-- Node name is 's16' 
+-- Equation name is 's16', type is output 
+s16      =  _LC2_B23;
+
+-- Node name is 's17' 
+-- Equation name is 's17', type is output 
+s17      =  _LC3_B23;
+
+-- Node name is 's18' 
+-- Equation name is 's18', type is output 
+s18      =  _LC4_B23;
+
+-- Node name is 's19' 
+-- Equation name is 's19', type is output 
+s19      =  _LC5_B23;
+
+-- Node name is 's20' 
+-- Equation name is 's20', type is output 
+s20      =  _LC6_B23;
+
+-- Node name is 's21' 
+-- Equation name is 's21', type is output 
+s21      =  _LC7_B23;
+
+-- Node name is 's22' 
+-- Equation name is 's22', type is output 
+s22      =  _LC8_B23;
+
+-- Node name is 's23' 
+-- Equation name is 's23', type is output 
+s23      =  _LC1_B25;
+
+-- Node name is 's24' 
+-- Equation name is 's24', type is output 
+s24      =  _LC2_B25;
+
+-- Node name is 's25' 
+-- Equation name is 's25', type is output 
+s25      =  _LC3_B25;
+
+-- Node name is 's26' 
+-- Equation name is 's26', type is output 
+s26      =  _LC4_B25;
+
+-- Node name is 's27' 
+-- Equation name is 's27', type is output 
+s27      =  _LC5_B25;
+
+-- Node name is 's28' 
+-- Equation name is 's28', type is output 
+s28      =  _LC6_B25;
+
+-- Node name is 's29' 
+-- Equation name is 's29', type is output 
+s29      =  _LC7_B25;
+
+-- Node name is 's30' 
+-- Equation name is 's30', type is output 
+s30      =  _LC2_A16;
+
+-- Node name is 's31' 
+-- Equation name is 's31', type is output 
+s31      =  _LC4_A16;
+
+-- Node name is '|fa:fa_i|:8' 
+-- Equation name is '_LC2_H18', type is buried 
+_LC2_H18 = LCELL( _EQ001);
+  _EQ001 =  cin & !x0 & !y0
+         # !cin & !x0 &  y0
+         #  cin &  x0 &  y0
+         # !cin &  x0 & !y0;
+
+-- Node name is '|fa:fa_i|~17~1' 
+-- Equation name is '_LC1_B19_CARRY', type is buried 
+-- synthesized logic cell 
+_LC1_B19_CARRY = CARRY( cin);
+
+-- Node name is '|fa:fa_i|:17' 
+-- Equation name is '_LC2_B19_CARRY', type is buried 
+_LC2_B19_CARRY = CARRY( _EQ002);
+  _EQ002 =  x0 &  y0
+         #  _LC1_B19_CARRY &  x0
+         #  _LC1_B19_CARRY &  y0;
+
+-- Node name is '|fa:fa_i~148|:8' 
+-- Equation name is '_LC3_B19', type is buried 
+_LC3_B19 = LCELL( _EQ003);
+  _EQ003 =  _LC2_B19_CARRY & !x1 & !y1
+         # !_LC2_B19_CARRY & !x1 &  y1
+         #  _LC2_B19_CARRY &  x1 &  y1
+         # !_LC2_B19_CARRY &  x1 & !y1;
+
+-- Node name is '|fa:fa_i~148|:17' 
+-- Equation name is '_LC3_B19_CARRY', type is buried 
+_LC3_B19_CARRY = CARRY( _EQ004);
+  _EQ004 =  _LC2_B19_CARRY &  x1
+         #  _LC2_B19_CARRY &  y1
+         #  x1 &  y1;
+
+-- Node name is '|fa:fa_i~178|:8' 
+-- Equation name is '_LC4_B19', type is buried 
+_LC4_B19 = LCELL( _EQ005);
+  _EQ005 = !_LC3_B19_CARRY &  x2 & !y2
+         # !_LC3_B19_CARRY & !x2 &  y2
+         #  _LC3_B19_CARRY &  x2 &  y2
+         #  _LC3_B19_CARRY & !x2 & !y2;
+
+-- Node name is '|fa:fa_i~178|:17' 
+-- Equation name is '_LC4_B19_CARRY', type is buried 
+_LC4_B19_CARRY = CARRY( _EQ006);
+  _EQ006 =  _LC3_B19_CARRY &  x2
+         #  _LC3_B19_CARRY &  y2
+         #  x2 &  y2;
+
+-- Node name is '|fa:fa_i~201|:8' 
+-- Equation name is '_LC5_B19', type is buried 
+_LC5_B19 = LCELL( _EQ007);
+  _EQ007 = !_LC4_B19_CARRY &  x3 & !y3
+         # !_LC4_B19_CARRY & !x3 &  y3
+         #  _LC4_B19_CARRY &  x3 &  y3
+         #  _LC4_B19_CARRY & !x3 & !y3;
+
+-- Node name is '|fa:fa_i~201|:17' 
+-- Equation name is '_LC5_B19_CARRY', type is buried 
+_LC5_B19_CARRY = CARRY( _EQ008);
+  _EQ008 =  _LC4_B19_CARRY &  x3
+         #  _LC4_B19_CARRY &  y3
+         #  x3 &  y3;
+
+-- Node name is '|fa:fa_i~224|:8' 
+-- Equation name is '_LC6_B19', type is buried 
+_LC6_B19 = LCELL( _EQ009);
+  _EQ009 = !_LC5_B19_CARRY &  x4 & !y4
+         # !_LC5_B19_CARRY & !x4 &  y4
+         #  _LC5_B19_CARRY &  x4 &  y4
+         #  _LC5_B19_CARRY & !x4 & !y4;
+
+-- Node name is '|fa:fa_i~224|:17' 
+-- Equation name is '_LC6_B19_CARRY', type is buried 
+_LC6_B19_CARRY = CARRY( _EQ010);
+  _EQ010 =  _LC5_B19_CARRY &  x4
+         #  _LC5_B19_CARRY &  y4
+         #  x4 &  y4;
+
+-- Node name is '|fa:fa_i~247|:8' 
+-- Equation name is '_LC7_B19', type is buried 
+_LC7_B19 = LCELL( _EQ011);
+  _EQ011 = !_LC6_B19_CARRY &  x5 & !y5
+         # !_LC6_B19_CARRY & !x5 &  y5
+         #  _LC6_B19_CARRY &  x5 &  y5
+         #  _LC6_B19_CARRY & !x5 & !y5;
+
+-- Node name is '|fa:fa_i~247|:17' 
+-- Equation name is '_LC7_B19_CARRY', type is buried 
+_LC7_B19_CARRY = CARRY( _EQ012);
+  _EQ012 =  _LC6_B19_CARRY &  x5
+         #  _LC6_B19_CARRY &  y5
+         #  x5 &  y5;
+
+-- Node name is '|fa:fa_i~270|:8' 
+-- Equation name is '_LC8_B19', type is buried 
+_LC8_B19 = LCELL( _EQ013);
+  _EQ013 = !_LC7_B19_CARRY &  x6 & !y6
+         # !_LC7_B19_CARRY & !x6 &  y6
+         #  _LC7_B19_CARRY &  x6 &  y6
+         #  _LC7_B19_CARRY & !x6 & !y6;
+
+-- Node name is '|fa:fa_i~270|:17' 
+-- Equation name is '_LC8_B19_CARRY', type is buried 
+_LC8_B19_CARRY = CARRY( _EQ014);
+  _EQ014 =  _LC7_B19_CARRY &  x6
+         #  _LC7_B19_CARRY &  y6
+         #  x6 &  y6;
+
+-- Node name is '|fa:fa_i~293|:8' 
+-- Equation name is '_LC1_B21', type is buried 
+_LC1_B21 = LCELL( _EQ015);
+  _EQ015 = !_LC8_B19_CARRY &  x7 & !y7
+         # !_LC8_B19_CARRY & !x7 &  y7
+         #  _LC8_B19_CARRY &  x7 &  y7
+         #  _LC8_B19_CARRY & !x7 & !y7;
+
+-- Node name is '|fa:fa_i~293|:17' 
+-- Equation name is '_LC1_B21_CARRY', type is buried 
+_LC1_B21_CARRY = CARRY( _EQ016);
+  _EQ016 =  _LC8_B19_CARRY &  x7
+         #  _LC8_B19_CARRY &  y7
+         #  x7 &  y7;
+
+-- Node name is '|fa:fa_i~316|:8' 
+-- Equation name is '_LC2_B21', type is buried 
+_LC2_B21 = LCELL( _EQ017);
+  _EQ017 = !_LC1_B21_CARRY &  x8 & !y8
+         # !_LC1_B21_CARRY & !x8 &  y8
+         #  _LC1_B21_CARRY &  x8 &  y8
+         #  _LC1_B21_CARRY & !x8 & !y8;
+
+-- Node name is '|fa:fa_i~316|:17' 
+-- Equation name is '_LC2_B21_CARRY', type is buried 
+_LC2_B21_CARRY = CARRY( _EQ018);
+  _EQ018 =  _LC1_B21_CARRY &  x8
+         #  _LC1_B21_CARRY &  y8
+         #  x8 &  y8;
+
+-- Node name is '|fa:fa_i~339|:8' 
+-- Equation name is '_LC3_B21', type is buried 
+_LC3_B21 = LCELL( _EQ019);
+  _EQ019 = !_LC2_B21_CARRY &  x9 & !y9
+         # !_LC2_B21_CARRY & !x9 &  y9
+         #  _LC2_B21_CARRY &  x9 &  y9
+         #  _LC2_B21_CARRY & !x9 & !y9;
+
+-- Node name is '|fa:fa_i~339|:17' 
+-- Equation name is '_LC3_B21_CARRY', type is buried 
+_LC3_B21_CARRY = CARRY( _EQ020);
+  _EQ020 =  _LC2_B21_CARRY &  x9
+         #  _LC2_B21_CARRY &  y9
+         #  x9 &  y9;
+
+-- Node name is '|fa:fa_i~362|:8' 
+-- Equation name is '_LC4_B21', type is buried 
+_LC4_B21 = LCELL( _EQ021);
+  _EQ021 = !_LC3_B21_CARRY &  x10 & !y10
+         # !_LC3_B21_CARRY & !x10 &  y10
+         #  _LC3_B21_CARRY &  x10 &  y10
+         #  _LC3_B21_CARRY & !x10 & !y10;
+
+-- Node name is '|fa:fa_i~362|:17' 
+-- Equation name is '_LC4_B21_CARRY', type is buried 
+_LC4_B21_CARRY = CARRY( _EQ022);
+  _EQ022 =  _LC3_B21_CARRY &  x10
+         #  _LC3_B21_CARRY &  y10
+         #  x10 &  y10;
+
+-- Node name is '|fa:fa_i~385|:8' 
+-- Equation name is '_LC5_B21', type is buried 
+_LC5_B21 = LCELL( _EQ023);
+  _EQ023 = !_LC4_B21_CARRY &  x11 & !y11
+         # !_LC4_B21_CARRY & !x11 &  y11
+         #  _LC4_B21_CARRY &  x11 &  y11
+         #  _LC4_B21_CARRY & !x11 & !y11;
+
+-- Node name is '|fa:fa_i~385|:17' 
+-- Equation name is '_LC5_B21_CARRY', type is buried 
+_LC5_B21_CARRY = CARRY( _EQ024);
+  _EQ024 =  _LC4_B21_CARRY &  x11
+         #  _LC4_B21_CARRY &  y11
+         #  x11 &  y11;
+
+-- Node name is '|fa:fa_i~408|:8' 
+-- Equation name is '_LC6_B21', type is buried 
+_LC6_B21 = LCELL( _EQ025);
+  _EQ025 = !_LC5_B21_CARRY &  x12 & !y12
+         # !_LC5_B21_CARRY & !x12 &  y12
+         #  _LC5_B21_CARRY &  x12 &  y12
+         #  _LC5_B21_CARRY & !x12 & !y12;
+
+-- Node name is '|fa:fa_i~408|:17' 
+-- Equation name is '_LC6_B21_CARRY', type is buried 
+_LC6_B21_CARRY = CARRY( _EQ026);
+  _EQ026 =  _LC5_B21_CARRY &  x12
+         #  _LC5_B21_CARRY &  y12
+         #  x12 &  y12;
+
+-- Node name is '|fa:fa_i~431|:8' 
+-- Equation name is '_LC7_B21', type is buried 
+_LC7_B21 = LCELL( _EQ027);
+  _EQ027 = !_LC6_B21_CARRY &  x13 & !y13
+         # !_LC6_B21_CARRY & !x13 &  y13
+         #  _LC6_B21_CARRY &  x13 &  y13
+         #  _LC6_B21_CARRY & !x13 & !y13;
+
+-- Node name is '|fa:fa_i~431|:17' 
+-- Equation name is '_LC7_B21_CARRY', type is buried 
+_LC7_B21_CARRY = CARRY( _EQ028);
+  _EQ028 =  _LC6_B21_CARRY &  x13
+         #  _LC6_B21_CARRY &  y13
+         #  x13 &  y13;
+
+-- Node name is '|fa:fa_i~454|:8' 
+-- Equation name is '_LC8_B21', type is buried 
+_LC8_B21 = LCELL( _EQ029);
+  _EQ029 = !_LC7_B21_CARRY &  x14 & !y14
+         # !_LC7_B21_CARRY & !x14 &  y14
+         #  _LC7_B21_CARRY &  x14 &  y14
+         #  _LC7_B21_CARRY & !x14 & !y14;
+
+-- Node name is '|fa:fa_i~454|:17' 
+-- Equation name is '_LC8_B21_CARRY', type is buried 
+_LC8_B21_CARRY = CARRY( _EQ030);
+  _EQ030 =  _LC7_B21_CARRY &  x14
+         #  _LC7_B21_CARRY &  y14
+         #  x14 &  y14;
+
+-- Node name is '|fa:fa_i~477|:8' 
+-- Equation name is '_LC1_B23', type is buried 
+_LC1_B23 = LCELL( _EQ031);
+  _EQ031 = !_LC8_B21_CARRY &  x15 & !y15
+         # !_LC8_B21_CARRY & !x15 &  y15
+         #  _LC8_B21_CARRY &  x15 &  y15
+         #  _LC8_B21_CARRY & !x15 & !y15;
+
+-- Node name is '|fa:fa_i~477|:17' 
+-- Equation name is '_LC1_B23_CARRY', type is buried 
+_LC1_B23_CARRY = CARRY( _EQ032);
+  _EQ032 =  _LC8_B21_CARRY &  x15
+         #  _LC8_B21_CARRY &  y15
+         #  x15 &  y15;
+
+-- Node name is '|fa:fa_i~500|:8' 
+-- Equation name is '_LC2_B23', type is buried 
+_LC2_B23 = LCELL( _EQ033);
+  _EQ033 = !_LC1_B23_CARRY &  x16 & !y16
+         # !_LC1_B23_CARRY & !x16 &  y16
+         #  _LC1_B23_CARRY &  x16 &  y16
+         #  _LC1_B23_CARRY & !x16 & !y16;
+
+-- Node name is '|fa:fa_i~500|:17' 
+-- Equation name is '_LC2_B23_CARRY', type is buried 
+_LC2_B23_CARRY = CARRY( _EQ034);
+  _EQ034 =  _LC1_B23_CARRY &  x16
+         #  _LC1_B23_CARRY &  y16
+         #  x16 &  y16;
+
+-- Node name is '|fa:fa_i~523|:8' 
+-- Equation name is '_LC3_B23', type is buried 
+_LC3_B23 = LCELL( _EQ035);
+  _EQ035 = !_LC2_B23_CARRY &  x17 & !y17
+         # !_LC2_B23_CARRY & !x17 &  y17
+         #  _LC2_B23_CARRY &  x17 &  y17
+         #  _LC2_B23_CARRY & !x17 & !y17;
+
+-- Node name is '|fa:fa_i~523|:17' 
+-- Equation name is '_LC3_B23_CARRY', type is buried 
+_LC3_B23_CARRY = CARRY( _EQ036);
+  _EQ036 =  _LC2_B23_CARRY &  x17
+         #  _LC2_B23_CARRY &  y17
+         #  x17 &  y17;
+
+-- Node name is '|fa:fa_i~546|:8' 
+-- Equation name is '_LC4_B23', type is buried 
+_LC4_B23 = LCELL( _EQ037);
+  _EQ037 = !_LC3_B23_CARRY &  x18 & !y18
+         # !_LC3_B23_CARRY & !x18 &  y18
+         #  _LC3_B23_CARRY &  x18 &  y18
+         #  _LC3_B23_CARRY & !x18 & !y18;
+
+-- Node name is '|fa:fa_i~546|:17' 
+-- Equation name is '_LC4_B23_CARRY', type is buried 
+_LC4_B23_CARRY = CARRY( _EQ038);
+  _EQ038 =  _LC3_B23_CARRY &  x18
+         #  _LC3_B23_CARRY &  y18
+         #  x18 &  y18;
+
+-- Node name is '|fa:fa_i~569|:8' 
+-- Equation name is '_LC5_B23', type is buried 
+_LC5_B23 = LCELL( _EQ039);
+  _EQ039 = !_LC4_B23_CARRY &  x19 & !y19
+         # !_LC4_B23_CARRY & !x19 &  y19
+         #  _LC4_B23_CARRY &  x19 &  y19
+         #  _LC4_B23_CARRY & !x19 & !y19;
+
+-- Node name is '|fa:fa_i~569|:17' 
+-- Equation name is '_LC5_B23_CARRY', type is buried 
+_LC5_B23_CARRY = CARRY( _EQ040);
+  _EQ040 =  _LC4_B23_CARRY &  x19
+         #  _LC4_B23_CARRY &  y19
+         #  x19 &  y19;
+
+-- Node name is '|fa:fa_i~592|:8' 
+-- Equation name is '_LC6_B23', type is buried 
+_LC6_B23 = LCELL( _EQ041);
+  _EQ041 = !_LC5_B23_CARRY &  x20 & !y20
+         # !_LC5_B23_CARRY & !x20 &  y20
+         #  _LC5_B23_CARRY &  x20 &  y20
+         #  _LC5_B23_CARRY & !x20 & !y20;
+
+-- Node name is '|fa:fa_i~592|:17' 
+-- Equation name is '_LC6_B23_CARRY', type is buried 
+_LC6_B23_CARRY = CARRY( _EQ042);
+  _EQ042 =  _LC5_B23_CARRY &  x20
+         #  _LC5_B23_CARRY &  y20
+         #  x20 &  y20;
+
+-- Node name is '|fa:fa_i~615|:8' 
+-- Equation name is '_LC7_B23', type is buried 
+_LC7_B23 = LCELL( _EQ043);
+  _EQ043 = !_LC6_B23_CARRY &  x21 & !y21
+         # !_LC6_B23_CARRY & !x21 &  y21
+         #  _LC6_B23_CARRY &  x21 &  y21
+         #  _LC6_B23_CARRY & !x21 & !y21;
+
+-- Node name is '|fa:fa_i~615|:17' 
+-- Equation name is '_LC7_B23_CARRY', type is buried 
+_LC7_B23_CARRY = CARRY( _EQ044);
+  _EQ044 =  _LC6_B23_CARRY &  x21
+         #  _LC6_B23_CARRY &  y21
+         #  x21 &  y21;
+
+-- Node name is '|fa:fa_i~638|:8' 
+-- Equation name is '_LC8_B23', type is buried 
+_LC8_B23 = LCELL( _EQ045);
+  _EQ045 = !_LC7_B23_CARRY &  x22 & !y22
+         # !_LC7_B23_CARRY & !x22 &  y22
+         #  _LC7_B23_CARRY &  x22 &  y22
+         #  _LC7_B23_CARRY & !x22 & !y22;
+
+-- Node name is '|fa:fa_i~638|:17' 
+-- Equation name is '_LC8_B23_CARRY', type is buried 
+_LC8_B23_CARRY = CARRY( _EQ046);
+  _EQ046 =  _LC7_B23_CARRY &  x22
+         #  _LC7_B23_CARRY &  y22
+         #  x22 &  y22;
+
+-- Node name is '|fa:fa_i~661|:8' 
+-- Equation name is '_LC1_B25', type is buried 
+_LC1_B25 = LCELL( _EQ047);
+  _EQ047 = !_LC8_B23_CARRY &  x23 & !y23
+         # !_LC8_B23_CARRY & !x23 &  y23
+         #  _LC8_B23_CARRY &  x23 &  y23
+         #  _LC8_B23_CARRY & !x23 & !y23;
+
+-- Node name is '|fa:fa_i~661|:17' 
+-- Equation name is '_LC1_B25_CARRY', type is buried 
+_LC1_B25_CARRY = CARRY( _EQ048);
+  _EQ048 =  _LC8_B23_CARRY &  x23
+         #  _LC8_B23_CARRY &  y23
+         #  x23 &  y23;
+
+-- Node name is '|fa:fa_i~684|:8' 
+-- Equation name is '_LC2_B25', type is buried 
+_LC2_B25 = LCELL( _EQ049);
+  _EQ049 = !_LC1_B25_CARRY &  x24 & !y24
+         # !_LC1_B25_CARRY & !x24 &  y24
+         #  _LC1_B25_CARRY &  x24 &  y24
+         #  _LC1_B25_CARRY & !x24 & !y24;
+
+-- Node name is '|fa:fa_i~684|:17' 
+-- Equation name is '_LC2_B25_CARRY', type is buried 
+_LC2_B25_CARRY = CARRY( _EQ050);
+  _EQ050 =  _LC1_B25_CARRY &  x24
+         #  _LC1_B25_CARRY &  y24
+         #  x24 &  y24;
+
+-- Node name is '|fa:fa_i~707|:8' 
+-- Equation name is '_LC3_B25', type is buried 
+_LC3_B25 = LCELL( _EQ051);
+  _EQ051 = !_LC2_B25_CARRY &  x25 & !y25
+         # !_LC2_B25_CARRY & !x25 &  y25
+         #  _LC2_B25_CARRY &  x25 &  y25
+         #  _LC2_B25_CARRY & !x25 & !y25;
+
+-- Node name is '|fa:fa_i~707|:17' 
+-- Equation name is '_LC3_B25_CARRY', type is buried 
+_LC3_B25_CARRY = CARRY( _EQ052);
+  _EQ052 =  _LC2_B25_CARRY &  x25
+         #  _LC2_B25_CARRY &  y25
+         #  x25 &  y25;
+
+-- Node name is '|fa:fa_i~730|:8' 
+-- Equation name is '_LC4_B25', type is buried 
+_LC4_B25 = LCELL( _EQ053);
+  _EQ053 = !_LC3_B25_CARRY &  x26 & !y26
+         # !_LC3_B25_CARRY & !x26 &  y26
+         #  _LC3_B25_CARRY &  x26 &  y26
+         #  _LC3_B25_CARRY & !x26 & !y26;
+
+-- Node name is '|fa:fa_i~730|:17' 
+-- Equation name is '_LC4_B25_CARRY', type is buried 
+_LC4_B25_CARRY = CARRY( _EQ054);
+  _EQ054 =  _LC3_B25_CARRY &  x26
+         #  _LC3_B25_CARRY &  y26
+         #  x26 &  y26;
+
+-- Node name is '|fa:fa_i~753|:8' 
+-- Equation name is '_LC5_B25', type is buried 
+_LC5_B25 = LCELL( _EQ055);
+  _EQ055 = !_LC4_B25_CARRY &  x27 & !y27
+         # !_LC4_B25_CARRY & !x27 &  y27
+         #  _LC4_B25_CARRY &  x27 &  y27
+         #  _LC4_B25_CARRY & !x27 & !y27;
+
+-- Node name is '|fa:fa_i~753|:17' 
+-- Equation name is '_LC5_B25_CARRY', type is buried 
+_LC5_B25_CARRY = CARRY( _EQ056);
+  _EQ056 =  _LC4_B25_CARRY &  x27
+         #  _LC4_B25_CARRY &  y27
+         #  x27 &  y27;
+
+-- Node name is '|fa:fa_i~776|:8' 
+-- Equation name is '_LC6_B25', type is buried 
+_LC6_B25 = LCELL( _EQ057);
+  _EQ057 = !_LC5_B25_CARRY &  x28 & !y28
+         # !_LC5_B25_CARRY & !x28 &  y28
+         #  _LC5_B25_CARRY &  x28 &  y28
+         #  _LC5_B25_CARRY & !x28 & !y28;
+
+-- Node name is '|fa:fa_i~776|:17' 
+-- Equation name is '_LC6_B25_CARRY', type is buried 
+_LC6_B25_CARRY = CARRY( _EQ058);
+  _EQ058 =  _LC5_B25_CARRY &  x28
+         #  _LC5_B25_CARRY &  y28
+         #  x28 &  y28;
+
+-- Node name is '|fa:fa_i~799|:8' 
+-- Equation name is '_LC7_B25', type is buried 
+_LC7_B25 = LCELL( _EQ059);
+  _EQ059 = !_LC6_B25_CARRY &  x29 & !y29
+         # !_LC6_B25_CARRY & !x29 &  y29
+         #  _LC6_B25_CARRY &  x29 &  y29
+         #  _LC6_B25_CARRY & !x29 & !y29;
+
+-- Node name is '|fa:fa_i~799|~17~1' 
+-- Equation name is '_LC8_B25', type is buried 
+-- synthesized logic cell 
+_LC8_B25 = LCELL( _LC7_B25_CARRY);
+
+-- Node name is '|fa:fa_i~799|:17' 
+-- Equation name is '_LC7_B25_CARRY', type is buried 
+_LC7_B25_CARRY = CARRY( _EQ060);
+  _EQ060 =  _LC6_B25_CARRY &  x29
+         #  _LC6_B25_CARRY &  y29
+         #  x29 &  y29;
+
+-- Node name is '|fa:fa_i~822|:8' 
+-- Equation name is '_LC2_A16', type is buried 
+_LC2_A16 = LCELL( _EQ061);
+  _EQ061 = !_LC1_A16_CARRY &  x30 & !y30
+         # !_LC1_A16_CARRY & !x30 &  y30
+         #  _LC1_A16_CARRY &  x30 &  y30
+         #  _LC1_A16_CARRY & !x30 & !y30;
+
+-- Node name is '|fa:fa_i~822|~17~1' 
+-- Equation name is '_LC1_A16_CARRY', type is buried 
+-- synthesized logic cell 
+_LC1_A16_CARRY = CARRY( _LC8_B25);
+
+-- Node name is '|fa:fa_i~822|:17' 
+-- Equation name is '_LC2_A16_CARRY', type is buried 
+_LC2_A16_CARRY = CARRY( _EQ062);
+  _EQ062 =  _LC1_A16_CARRY &  x30
+         #  _LC1_A16_CARRY &  y30
+         #  x30 &  y30;
+
+-- Node name is '|fa:fa_i~845|~8~1' 
+-- Equation name is '_LC4_A16', type is buried 
+-- synthesized logic cell 
+_LC4_A16 = LCELL( _LC3_A16_CARRY);
+
+-- Node name is '|fa:fa_i~845|:8' 
+-- Equation name is '_LC3_A16_CARRY', type is buried 
+_LC3_A16_CARRY = CARRY( _EQ063);
+  _EQ063 = !_LC2_A16_CARRY &  x31 & !y31
+         # !_LC2_A16_CARRY & !x31 &  y31
+         #  _LC2_A16_CARRY &  x31 &  y31
+         #  _LC2_A16_CARRY & !x31 & !y31;
+
+-- Node name is '|fa:fa_i~845|:17' 
+-- Equation name is '_LC3_A16', type is buried 
+_LC3_A16 = LCELL( _EQ064);
+  _EQ064 =  _LC2_A16_CARRY &  x31
+         #  _LC2_A16_CARRY &  y31
+         #  x31 &  y31;
+
+
+
+Project Information           c:\vhdldesigns\ee231\22claadders\rippleadd32.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = FAST
+
+      Logic option settings in 'FAST' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = auto
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = auto
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = off
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = off
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Use Quartus Fitter                        = on
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:01
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:11
+   Timing SNF Extractor                   00:00:01
+   Assembler                              00:00:03
+   --------------------------             --------
+   Total Time                             00:00:16
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 38,830K

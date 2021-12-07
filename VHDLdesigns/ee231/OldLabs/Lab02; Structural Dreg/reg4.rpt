@@ -1,0 +1,322 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  reg4.vhd
+Options:    -q -o2 -ygs -fO -fP -v10 -dc344 -pCY7C344-20HC/HI reg4.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Wed Jan 21 15:24:14 1998
+
+Library 'work' => directory 'lc344'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab2\lc344\and2.vif'.
+Linking 'C:\EE Courses\Ee231\Lab2\lc344\dflop.vif'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Wed Jan 21 15:24:14 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab2\lc344\and2.vif'.
+Linking 'C:\EE Courses\Ee231\Lab2\lc344\dflop.vif'.
+
+C:\warp\bin\tovif.exe:  No errors.
+
+
+C:\warp\bin\topld.exe V4 IR x77:  Synthesis and optimization
+Wed Jan 21 15:24:14 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Lab2\lc344\and2.vif'.
+Linking 'C:\EE Courses\Ee231\Lab2\lc344\dflop.vif'.
+Linking 'C:\warp\lib\lc340\stdlogic\c340.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 4 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum expansion cost was set at 10.
+----------------------------------------------------------
+Created 15 PLD nodes.
+
+C:\warp\bin\topld.exe:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN HEADER INFORMATION  (15:24:14)
+
+Input File(s): reg4.pla
+Device       : C344A
+Package      : CY7C344-20HC/HI
+ReportFile   : reg4.rpt
+
+Program Controls:
+                 None.
+
+Signal Requests:
+    GROUP DT-OPT ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (15:24:14)
+
+Messages:
+  Information: Process virtual 'clk_en' ... expanded.
+  Information: Generating both D & T register equations for signal q_0.D
+  Information: Expanding XOR equation found on signal q_0.T
+  Information: Expanding XOR equation found on signal q_0.Tbar
+  Information: Generating both D & T register equations for signal q_1.D
+  Information: Expanding XOR equation found on signal q_1.T
+  Information: Expanding XOR equation found on signal q_1.Tbar
+  Information: Generating both D & T register equations for signal q_2.D
+  Information: Expanding XOR equation found on signal q_2.T
+  Information: Expanding XOR equation found on signal q_2.Tbar
+  Information: Generating both D & T register equations for signal q_3.D
+  Information: Expanding XOR equation found on signal q_3.T
+  Information: Expanding XOR equation found on signal q_3.Tbar
+  Information: Optimizing logic without changing polarity for signals:
+         q_0.T q_1.T q_2.T q_3.T
+
+  Information: Optimizing logic and selecting Active High output for signals:
+         q_0.Tbar q_1.Tbar q_2.Tbar q_3.Tbar
+
+  Information: Selected logic optimization OFF for signals:
+         q_0.D q_0.C q_1.D q_1.C q_2.D q_2.C q_3.D q_3.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (15:24:14)
+
+Messages:
+  Information: Selecting D register equation as minimal for signal q_3
+  Information: Selecting D register equation as minimal for signal q_2
+  Information: Selecting D register equation as minimal for signal q_1
+  Information: Selecting D register equation as minimal for signal q_0
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN EQUATIONS           (15:24:14)
+
+
+    q_3.D =
+          d_3 
+
+    q_3.C =
+          cs * clk 
+
+    q_2.D =
+          d_2 
+
+    q_2.C =
+          cs * clk 
+
+    q_1.D =
+          d_1 
+
+    q_1.C =
+          cs * clk 
+
+    q_0.D =
+          d_0 
+
+    q_0.C =
+          cs * clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN RULE CHECK          (15:24:14)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (15:24:14)
+
+Messages:
+  Information: Checking for duplicate NODE logic.
+  Information: Separating expander logic.
+
+                    Device:  C344A
+                    Package: CY7C344-20HC/HI
+
+                      u  u  u        u  u 
+                      n  n  n        n  n 
+                      u  u  u        u  u 
+                      s  s  s  V  G  s  s 
+                      e  e  e  C  N  e  e 
+                      d  d  d  C  D  d  d 
+                      |  |  |  |  |  |  | 
+                    ________________________
+                    | 4  3  2  1  28 27 26 |
+                    |                      |
+             unused_| 5                  25|_unused        
+             unused_| 6                  24|_unused        
+             unused_| 7                  23|_d_3           
+                clk_| 8                  22|_d_2           
+                 cs_| 9                  21|_d_1           
+                q_0_|10                  20|_d_0           
+                q_1_|11                  19|_unused        
+                    |                      |
+                    | 12 13 14 15 16 17 18 |
+                    ________________________
+                      |  |  |  |  |  |  | 
+                      q  q  V  G  u  u  u 
+                      _  _  C  N  n  n  n 
+                      2  3  C  D  u  u  u 
+                                  s  s  s 
+                                  e  e  e 
+                                  d  d  d 
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+RESOURCE ALLOCATION        (15:24:14)
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    5  |    7  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    4  |   16  |
+                 | Buried Macrocells  |    0  |   16  |
+                 | Expander Terms     |    0  |   64  |
+                 ______________________________________
+                                          10  /  104   = 9   %
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 |  3  |  q_0             |   1  |   3  |
+                 |  4  |  q_1             |   1  |   3  |
+                 |  5  |  q_2             |   1  |   3  |
+                 |  6  |  q_3             |   1  |   3  |
+                 |  9  |  Unused          |   0  |   3  |
+                 | 10  |  Unused          |   0  |   3  |
+                 | 11  |  Unused          |   0  |   3  |
+                 | 12  |  Unused          |   0  |   3  |
+                 | 17  |  Unused          |   0  |   3  |
+                 | 18  |  Unused          |   0  |   3  |
+                 | 19  |  Unused          |   0  |   3  |
+                 | 20  |  Unused          |   0  |   3  |
+                 | 23  |  Unused          |   0  |   3  |
+                 | 24  |  Unused          |   0  |   3  |
+                 | 25  |  Unused          |   0  |   3  |
+                 | 26  |  Unused          |   0  |   3  |
+                 | 29  |  Unused          |   0  |   3  |
+                 | 30  |  Unused          |   0  |   3  |
+                 | 31  |  Unused          |   0  |   3  |
+                 | 32  |  Unused          |   0  |   3  |
+                 | 33  |  Unused          |   0  |   3  |
+                 | 34  |  Unused          |   0  |   3  |
+                 | 35  |  Unused          |   0  |   3  |
+                 | 36  |  Unused          |   0  |   3  |
+                 | 37  |  Unused          |   0  |   3  |
+                 | 38  |  Unused          |   0  |   3  |
+                 | 39  |  Unused          |   0  |   3  |
+                 | 40  |  Unused          |   0  |   3  |
+                 | 41  |  Unused          |   0  |   3  |
+                 | 42  |  Unused          |   0  |   3  |
+                 | 43  |  Unused          |   0  |   3  |
+                 | 44  |  Unused          |   0  |   3  |
+                 ________________________________________
+                                              4  /  96   = 4   %
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+JEDEC ASSEMBLE             (15:24:14)
+
+Messages:
+  Information: Output file 'reg4.jed' created.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 15:24:14

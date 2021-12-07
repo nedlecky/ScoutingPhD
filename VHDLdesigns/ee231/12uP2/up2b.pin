@@ -1,0 +1,176 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "up2b" ASSIGNED TO AN EPF10K10TC144-3
+TCK                              : 1
+CONF_DONE                        : 2
+nCEO                             : 3
+TDO                              : 4
+VCCIO                            : 5
+VCCINT                           : 6
+addr5                            : 7
+data_out2                        : 8
+outbus7                          : 9
+outbus15                         : 10
+outbus14                         : 11
+data_out7                        : 12
+outbus12                         : 13
+outbus4                          : 14
+GNDIO                            : 15
+GNDINT                           : 16
+data_out14                       : 17
+outbus11                         : 18
+data_out11                       : 19
+data_in15                        : 20
+outbus10                         : 21
+data_out12                       : 22
+outbus9                          : 23
+VCCIO                            : 24
+VCCINT                           : 25
+RESERVED                         : 26
+data_in0                         : 27
+RESERVED                         : 28
+data_in4                         : 29
+data_in3                         : 30
+addr0                            : 31
+data_in2                         : 32
+addr1                            : 33
+TMS                              : 34
+nSTATUS                          : 35
+RESERVED                         : 36
+outbus13                         : 37
+RESERVED                         : 38
+RESERVED                         : 39
+GNDIO                            : 40
+outbus6                          : 41
+data_in1                         : 42
+RESERVED                         : 43
+RESERVED                         : 44
+VCCIO                            : 45
+RESERVED                         : 46
+RESERVED                         : 47
+RESERVED                         : 48
+RESERVED                         : 49
+GNDIO                            : 50
+wr                               : 51
+VCCINT                           : 52
+VCCINT                           : 53
+reset                            : 54
+clock                            : 55
+data_in13                        : 56
+GNDINT                           : 57
+GNDINT                           : 58
+RESERVED                         : 59
+rdy                              : 60
+VCCIO                            : 61
+RESERVED                         : 62
+RESERVED                         : 63
+RESERVED                         : 64
+RESERVED                         : 65
+GNDIO                            : 66
+RESERVED                         : 67
+RESERVED                         : 68
+RESERVED                         : 69
+RESERVED                         : 70
+VCCIO                            : 71
+RESERVED                         : 72
+data_in8                         : 73
+nCONFIG                          : 74
+VCCINT                           : 75
+MSEL1                            : 76
+MSEL0                            : 77
+outbus3                          : 78
+addr2                            : 79
+addr3                            : 80
+outbus2                          : 81
+data_out3                        : 82
+addr4                            : 83
+GNDINT                           : 84
+GNDIO                            : 85
+data_in14                        : 86
+data_in12                        : 87
+data_out1                        : 88
+outbus8                          : 89
+outbus0                          : 90
+data_out8                        : 91
+data_out0                        : 92
+VCCINT                           : 93
+VCCIO                            : 94
+data_in5                         : 95
+data_out4                        : 96
+outbus5                          : 97
+addr7                            : 98
+outbus1                          : 99
+data_in6                         : 100
+data_out6                        : 101
+addr6                            : 102
+GNDINT                           : 103
+GNDIO                            : 104
+TDI                              : 105
+nCE                              : 106
+DCLK                             : 107
+DATA0                            : 108
+RESERVED                         : 109
+RESERVED                         : 110
+RESERVED                         : 111
+RESERVED                         : 112
+RESERVED                         : 113
+RESERVED                         : 114
+VCCIO                            : 115
+data_in7                         : 116
+RESERVED                         : 117
+RESERVED                         : 118
+RESERVED                         : 119
+RESERVED                         : 120
+RESERVED                         : 121
+out_wr                           : 122
+VCCINT                           : 123
+data_in11                        : 124
+data_in10                        : 125
+data_in9                         : 126
+GNDINT                           : 127
+data_out5                        : 128
+GNDIO                            : 129
+RESERVED                         : 130
+RESERVED                         : 131
+RESERVED                         : 132
+RESERVED                         : 133
+VCCIO                            : 134
+data_out9                        : 135
+RESERVED                         : 136
+RESERVED                         : 137
+RESERVED                         : 138
+GNDIO                            : 139
+RESERVED                         : 140
+data_out10                       : 141
+data_out13                       : 142
+RESERVED                         : 143
+data_out15                       : 144

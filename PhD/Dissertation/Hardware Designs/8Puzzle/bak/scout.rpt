@@ -1,0 +1,1802 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  scout.vhd
+Options:    -m -q -o2 -ygs -fO -fP -v10 -dc346 -pCY7C346B-15HC scout.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Tue Jan 20 20:15:15 1998
+
+Library 'work' => directory 'lc346'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\dflop.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\sreg.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\areg.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\gc.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\ns.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\pa.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\lfsr.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Tue Jan 20 20:15:15 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\dflop.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\sreg.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\areg.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\gc.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\ns.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\pa.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\lfsr.vif'.
+
+C:\warp\bin\tovif.exe:  No errors.
+
+
+C:\warp\bin\topld.exe V4 IR x77:  Synthesis and optimization
+Tue Jan 20 20:15:15 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\dflop.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\sreg.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\areg.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\gc.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\ns.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\pa.vif'.
+Linking 'C:\PhD\Dissertation\Hardware Designs\8Puzzle\lc346\lfsr.vif'.
+Linking 'C:\warp\lib\lc340\stdlogic\c340.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	randbus_7
+	randbus_6
+	randbus_5
+	randbus_4
+	randbus_3
+	randbus_2
+	randbus_1
+	randbus_0
+	areg_d0_internal_d
+	abusnext_0
+	abus_0
+	areg_d1_internal_d
+	abusnext_1
+	abus_1
+	areg_d2_internal_d
+	abusnext_2
+	abus_2
+	areg_d3_internal_d
+	abusnext_3
+	abus_3
+	areg_d4_internal_d
+	abusnext_4
+	abus_4
+	areg_d5_internal_d
+	abusnext_5
+	abus_5
+	areg_d6_internal_d
+	abusnext_6
+	abus_6
+	areg_d7_internal_d
+	abusnext_7
+	abus_7
+
+
+Deleted 32 User equations/components.
+Deleted 32 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 90 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum expansion cost was set at 10.
+----------------------------------------------------------
+Created 224 PLD nodes.
+
+C:\warp\bin\topld.exe:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN HEADER INFORMATION  (20:15:15)
+
+Input File(s): scout.pla
+Device       : c346
+Package      : CY7C346B-15HC
+ReportFile   : scout.rpt
+
+Program Controls:
+                 None.
+
+Signal Requests:
+    GROUP DT-OPT ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (20:15:15)
+
+Messages:
+  Information: Process virtual 'sbus_0' ... expanded.
+  Information: Process virtual 'sbus_1' ... expanded.
+  Information: Process virtual 'sbus_2' ... expanded.
+  Information: Process virtual 'sbus_3' ... expanded.
+  Information: Process virtual 'sbus_4' ... expanded.
+  Information: Process virtual 'sbus_5' ... expanded.
+  Information: Process virtual 'sbus_6' ... expanded.
+  Information: Process virtual 'sbus_7' ... expanded.
+  Information: Process virtual 'sbus_8' ... expanded.
+  Information: Process virtual 'sbus_9' ... expanded.
+  Information: Process virtual 'sbus_10' ... expanded.
+  Information: Process virtual 'sbus_11' ... expanded.
+  Information: Process virtual 'sbus_12' ... expanded.
+  Information: Process virtual 'sbus_13' ... expanded.
+  Information: Process virtual 'sbus_14' ... expanded.
+  Information: Process virtual 'sbus_15' ... expanded.
+  Information: Process virtual 'sbus_16' ... expanded.
+  Information: Process virtual 'sbus_17' ... expanded.
+  Information: Process virtual 'sbus_18' ... expanded.
+  Information: Process virtual 'sbus_19' ... expanded.
+  Information: Process virtual 'sbus_20' ... expanded.
+  Information: Process virtual 'sbus_21' ... expanded.
+  Information: Process virtual 'sbus_22' ... expanded.
+  Information: Process virtual 'sbus_23' ... expanded.
+  Information: Process virtual 'sbus_24' ... expanded.
+  Information: Process virtual 'sbus_25' ... expanded.
+  Information: Process virtual 'sbus_26' ... expanded.
+  Information: Process virtual 'sbus_27' ... expanded.
+  Information: Process virtual 'sbus_28' ... expanded.
+  Information: Process virtual 'sbus_29' ... expanded.
+  Information: Process virtual 'sbus_30' ... expanded.
+  Information: Process virtual 'sbus_31' ... expanded.
+  Information: Process virtual 'sbus_32' ... expanded.
+  Information: Process virtual 'sbus_33' ... expanded.
+  Information: Process virtual 'sbus_34' ... expanded.
+  Information: Process virtual 'sbus_35' ... expanded.
+  Information: Process virtual 'sreg_d35_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d34_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d33_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d32_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d31_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d30_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d29_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d28_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d27_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d26_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d25_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d24_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d23_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d22_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d21_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d20_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d19_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d18_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d17_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d16_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d15_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d14_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d13_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d12_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d11_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d10_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d09_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d08_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d07_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d06_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d05_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d04_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d03_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d02_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d01_internal_d' ... converted to NODE.
+  Information: Process virtual 'sreg_d00_internal_d' ... converted to NODE.
+  Information: Generating both D & T register equations for signal sreg_d35_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d35_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d35_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d34_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d34_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d34_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d33_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d33_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d33_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d32_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d32_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d32_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d31_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d31_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d31_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d30_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d30_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d30_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d29_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d29_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d29_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d28_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d28_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d28_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d27_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d27_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d27_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d26_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d26_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d26_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d25_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d25_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d25_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d24_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d24_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d24_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d23_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d23_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d23_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d22_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d22_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d22_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d21_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d21_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d21_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d20_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d20_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d20_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d19_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d19_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d19_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d18_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d18_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d18_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d17_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d17_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d17_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d16_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d16_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d16_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d15_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d15_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d15_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d14_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d14_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d14_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d13_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d13_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d13_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d12_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d12_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d12_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d11_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d11_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d11_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d10_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d10_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d10_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d09_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d09_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d09_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d08_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d08_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d08_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d07_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d07_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d07_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d06_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d06_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d06_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d05_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d05_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d05_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d04_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d04_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d04_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d03_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d03_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d03_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d02_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d02_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d02_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d01_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d01_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d01_internal_d.Tbar
+  Information: Generating both D & T register equations for signal sreg_d00_internal_d.D
+  Information: Expanding XOR equation found on signal sreg_d00_internal_d.T
+  Information: Expanding XOR equation found on signal sreg_d00_internal_d.Tbar
+  Information: Optimizing logic without changing polarity for signals:
+         sreg_d34_internal_d.T sreg_d32_internal_d.T sreg_d30_internal_d.T
+         sreg_d28_internal_d.T sreg_d26_internal_d.T sreg_d24_internal_d.T
+         sreg_d22_internal_d.T sreg_d20_internal_d.T sreg_d18_internal_d.T
+         sreg_d16_internal_d.T sreg_d14_internal_d.T sreg_d12_internal_d.T
+         sreg_d10_internal_d.T sreg_d08_internal_d.T sreg_d06_internal_d.T
+         sreg_d04_internal_d.T sreg_d02_internal_d.T sreg_d00_internal_d.T
+
+  Information: Optimizing logic and selecting Active High output for signals:
+         sreg_d35_internal_d.Tbar sreg_d35_internal_d.C
+         sreg_d34_internal_d.Tbar sreg_d34_internal_d.C
+         sreg_d33_internal_d.Tbar sreg_d33_internal_d.C
+         sreg_d32_internal_d.Tbar sreg_d32_internal_d.C
+         sreg_d31_internal_d.Tbar sreg_d31_internal_d.C
+         sreg_d30_internal_d.Tbar sreg_d30_internal_d.C
+         sreg_d29_internal_d.Tbar sreg_d29_internal_d.C
+         sreg_d28_internal_d.Tbar sreg_d28_internal_d.C
+         sreg_d27_internal_d.Tbar sreg_d27_internal_d.C
+         sreg_d26_internal_d.Tbar sreg_d26_internal_d.C
+         sreg_d25_internal_d.Tbar sreg_d25_internal_d.C
+         sreg_d24_internal_d.Tbar sreg_d24_internal_d.C
+         sreg_d23_internal_d.Tbar sreg_d23_internal_d.C
+         sreg_d22_internal_d.Tbar sreg_d22_internal_d.C
+         sreg_d21_internal_d.Tbar sreg_d21_internal_d.C
+         sreg_d20_internal_d.Tbar sreg_d20_internal_d.C
+         sreg_d19_internal_d.Tbar sreg_d19_internal_d.C
+         sreg_d18_internal_d.Tbar sreg_d18_internal_d.C
+         sreg_d17_internal_d.Tbar sreg_d17_internal_d.C
+         sreg_d16_internal_d.Tbar sreg_d16_internal_d.C
+         sreg_d15_internal_d.Tbar sreg_d15_internal_d.C
+         sreg_d14_internal_d.Tbar sreg_d14_internal_d.C
+         sreg_d13_internal_d.Tbar sreg_d13_internal_d.C
+         sreg_d12_internal_d.Tbar sreg_d12_internal_d.C
+         sreg_d11_internal_d.Tbar sreg_d11_internal_d.C
+         sreg_d10_internal_d.Tbar sreg_d10_internal_d.C
+         sreg_d09_internal_d.Tbar sreg_d09_internal_d.C
+         sreg_d08_internal_d.Tbar sreg_d08_internal_d.C
+         sreg_d07_internal_d.Tbar sreg_d07_internal_d.C
+         sreg_d06_internal_d.Tbar sreg_d06_internal_d.C
+         sreg_d05_internal_d.Tbar sreg_d05_internal_d.C
+         sreg_d04_internal_d.Tbar sreg_d04_internal_d.C
+         sreg_d03_internal_d.Tbar sreg_d03_internal_d.C
+         sreg_d02_internal_d.Tbar sreg_d02_internal_d.C
+         sreg_d01_internal_d.Tbar sreg_d01_internal_d.C
+         sreg_d00_internal_d.Tbar sreg_d00_internal_d.C
+
+  Information: Selected logic optimization OFF for signals:
+         sreg_d35_internal_d.D sreg_d35_internal_d.T sreg_d34_internal_d.D
+         sreg_d33_internal_d.D sreg_d33_internal_d.T sreg_d32_internal_d.D
+         sreg_d31_internal_d.D sreg_d31_internal_d.T sreg_d30_internal_d.D
+         sreg_d29_internal_d.D sreg_d29_internal_d.T sreg_d28_internal_d.D
+         sreg_d27_internal_d.D sreg_d27_internal_d.T sreg_d26_internal_d.D
+         sreg_d25_internal_d.D sreg_d25_internal_d.T sreg_d24_internal_d.D
+         sreg_d23_internal_d.D sreg_d23_internal_d.T sreg_d22_internal_d.D
+         sreg_d21_internal_d.D sreg_d21_internal_d.T sreg_d20_internal_d.D
+         sreg_d19_internal_d.D sreg_d19_internal_d.T sreg_d18_internal_d.D
+         sreg_d17_internal_d.D sreg_d17_internal_d.T sreg_d16_internal_d.D
+         sreg_d15_internal_d.D sreg_d15_internal_d.T sreg_d14_internal_d.D
+         sreg_d13_internal_d.D sreg_d13_internal_d.T sreg_d12_internal_d.D
+         sreg_d11_internal_d.D sreg_d11_internal_d.T sreg_d10_internal_d.D
+         sreg_d09_internal_d.D sreg_d09_internal_d.T sreg_d08_internal_d.D
+         sreg_d07_internal_d.D sreg_d07_internal_d.T sreg_d06_internal_d.D
+         sreg_d05_internal_d.D sreg_d05_internal_d.T sreg_d04_internal_d.D
+         sreg_d03_internal_d.D sreg_d03_internal_d.T sreg_d02_internal_d.D
+         sreg_d01_internal_d.D sreg_d01_internal_d.T sreg_d00_internal_d.D
+         result
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (20:15:16)
+
+Messages:
+  Information: Selecting D register equation as minimal for signal sreg_d01_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d03_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d05_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d07_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d09_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d11_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d13_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d15_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d17_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d19_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d21_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d23_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d25_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d27_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d29_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d31_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d33_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d35_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d00_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d02_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d04_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d06_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d08_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d10_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d12_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d14_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d16_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d18_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d20_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d22_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d24_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d26_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d28_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d30_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d32_internal_d
+  Information: Selecting D register equation as minimal for signal sreg_d34_internal_d
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN EQUATIONS           (20:15:16)
+
+
+    result =
+          /sreg_d34_internal_d.Q * sreg_d32_internal_d.Q * 
+          /sreg_d30_internal_d.Q * /sreg_d28_internal_d.Q * 
+          /sreg_d26_internal_d.Q * sreg_d24_internal_d.Q * 
+          /sreg_d22_internal_d.Q * /sreg_d20_internal_d.Q * 
+          /sreg_d18_internal_d.Q * /sreg_d16_internal_d.Q * 
+          sreg_d14_internal_d.Q * /sreg_d12_internal_d.Q * 
+          sreg_d10_internal_d.Q * sreg_d08_internal_d.Q * 
+          sreg_d06_internal_d.Q * /sreg_d04_internal_d.Q * 
+          sreg_d02_internal_d.Q * sreg_d00_internal_d.Q * 
+          /sreg_d35_internal_d.Q * /sreg_d33_internal_d.Q * 
+          /sreg_d31_internal_d.Q * sreg_d29_internal_d.Q * 
+          /sreg_d27_internal_d.Q * sreg_d25_internal_d.Q * 
+          sreg_d23_internal_d.Q * /sreg_d21_internal_d.Q * 
+          /sreg_d19_internal_d.Q * /sreg_d17_internal_d.Q * 
+          /sreg_d15_internal_d.Q * /sreg_d13_internal_d.Q * 
+          /sreg_d11_internal_d.Q * sreg_d09_internal_d.Q * 
+          /sreg_d07_internal_d.Q * sreg_d05_internal_d.Q * 
+          /sreg_d03_internal_d.Q * /sreg_d01_internal_d.Q 
+
+    sreg_d01_internal_d.D =
+          sreg_d01_internal_d.Q 
+
+    sreg_d01_internal_d.C =
+          clk 
+
+    sreg_d03_internal_d.D =
+          sreg_d03_internal_d.Q 
+
+    sreg_d03_internal_d.C =
+          clk 
+
+    sreg_d05_internal_d.D =
+          sreg_d05_internal_d.Q 
+
+    sreg_d05_internal_d.C =
+          clk 
+
+    sreg_d07_internal_d.D =
+          sreg_d07_internal_d.Q 
+
+    sreg_d07_internal_d.C =
+          clk 
+
+    sreg_d09_internal_d.D =
+          sreg_d09_internal_d.Q 
+
+    sreg_d09_internal_d.C =
+          clk 
+
+    sreg_d11_internal_d.D =
+          sreg_d11_internal_d.Q 
+
+    sreg_d11_internal_d.C =
+          clk 
+
+    sreg_d13_internal_d.D =
+          sreg_d13_internal_d.Q 
+
+    sreg_d13_internal_d.C =
+          clk 
+
+    sreg_d15_internal_d.D =
+          sreg_d15_internal_d.Q 
+
+    sreg_d15_internal_d.C =
+          clk 
+
+    sreg_d17_internal_d.D =
+          sreg_d17_internal_d.Q 
+
+    sreg_d17_internal_d.C =
+          clk 
+
+    sreg_d19_internal_d.D =
+          sreg_d19_internal_d.Q 
+
+    sreg_d19_internal_d.C =
+          clk 
+
+    sreg_d21_internal_d.D =
+          sreg_d21_internal_d.Q 
+
+    sreg_d21_internal_d.C =
+          clk 
+
+    sreg_d23_internal_d.D =
+          sreg_d23_internal_d.Q 
+
+    sreg_d23_internal_d.C =
+          clk 
+
+    sreg_d25_internal_d.D =
+          sreg_d25_internal_d.Q 
+
+    sreg_d25_internal_d.C =
+          clk 
+
+    sreg_d27_internal_d.D =
+          sreg_d27_internal_d.Q 
+
+    sreg_d27_internal_d.C =
+          clk 
+
+    sreg_d29_internal_d.D =
+          sreg_d29_internal_d.Q 
+
+    sreg_d29_internal_d.C =
+          clk 
+
+    sreg_d31_internal_d.D =
+          sreg_d31_internal_d.Q 
+
+    sreg_d31_internal_d.C =
+          clk 
+
+    sreg_d33_internal_d.D =
+          sreg_d33_internal_d.Q 
+
+    sreg_d33_internal_d.C =
+          clk 
+
+    sreg_d35_internal_d.D =
+          sreg_d35_internal_d.Q 
+
+    sreg_d35_internal_d.C =
+          clk 
+
+    sreg_d00_internal_d.D =
+          /sreg_d00_internal_d.Q 
+
+    sreg_d00_internal_d.C =
+          clk 
+
+    sreg_d02_internal_d.D =
+          /sreg_d02_internal_d.Q 
+
+    sreg_d02_internal_d.C =
+          clk 
+
+    sreg_d04_internal_d.D =
+          /sreg_d04_internal_d.Q 
+
+    sreg_d04_internal_d.C =
+          clk 
+
+    sreg_d06_internal_d.D =
+          /sreg_d06_internal_d.Q 
+
+    sreg_d06_internal_d.C =
+          clk 
+
+    sreg_d08_internal_d.D =
+          /sreg_d08_internal_d.Q 
+
+    sreg_d08_internal_d.C =
+          clk 
+
+    sreg_d10_internal_d.D =
+          /sreg_d10_internal_d.Q 
+
+    sreg_d10_internal_d.C =
+          clk 
+
+    sreg_d12_internal_d.D =
+          /sreg_d12_internal_d.Q 
+
+    sreg_d12_internal_d.C =
+          clk 
+
+    sreg_d14_internal_d.D =
+          /sreg_d14_internal_d.Q 
+
+    sreg_d14_internal_d.C =
+          clk 
+
+    sreg_d16_internal_d.D =
+          /sreg_d16_internal_d.Q 
+
+    sreg_d16_internal_d.C =
+          clk 
+
+    sreg_d18_internal_d.D =
+          /sreg_d18_internal_d.Q 
+
+    sreg_d18_internal_d.C =
+          clk 
+
+    sreg_d20_internal_d.D =
+          /sreg_d20_internal_d.Q 
+
+    sreg_d20_internal_d.C =
+          clk 
+
+    sreg_d22_internal_d.D =
+          /sreg_d22_internal_d.Q 
+
+    sreg_d22_internal_d.C =
+          clk 
+
+    sreg_d24_internal_d.D =
+          /sreg_d24_internal_d.Q 
+
+    sreg_d24_internal_d.C =
+          clk 
+
+    sreg_d26_internal_d.D =
+          /sreg_d26_internal_d.Q 
+
+    sreg_d26_internal_d.C =
+          clk 
+
+    sreg_d28_internal_d.D =
+          /sreg_d28_internal_d.Q 
+
+    sreg_d28_internal_d.C =
+          clk 
+
+    sreg_d30_internal_d.D =
+          /sreg_d30_internal_d.Q 
+
+    sreg_d30_internal_d.C =
+          clk 
+
+    sreg_d32_internal_d.D =
+          /sreg_d32_internal_d.Q 
+
+    sreg_d32_internal_d.C =
+          clk 
+
+    sreg_d34_internal_d.D =
+          /sreg_d34_internal_d.Q 
+
+    sreg_d34_internal_d.C =
+          clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN RULE CHECK          (20:15:16)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PARTITION LOGIC            (20:15:16)
+
+Messages:
+  Information: Initializing Logic Array Block (LAB) structures.
+  Information: Processing Global Clock Pin.
+  Information: Assigning fixed logic to LABs.
+  Information: Checking expander usage for pre-placed signals.
+  Information: Separating expander logic.
+  Information: Forming input seeds.
+  Information: Validating LAB's with pre-placed signals.
+  Information: Separating output logic set to GND/VCC.
+  Information: Assigning initializing equations to empty LABs.
+  Information: Separating output node logic.
+  Information: Assigning floating outputs to LABs.
+  Information: Compacting LAB interconnect.
+  ....................................
+  Information: Attempting to reduce external usage in LAB 1.
+  .....+
+  Information: Attempting to reduce external usage in LAB 2.
+  +
+  Information: Attempting to reduce external usage in LAB 3.
+  +
+  Information: Attempting to reduce external usage in LAB 4.
+  +
+  Information: Attempting to reduce external usage in LAB 5.
+  +
+  Information: Attempting to reduce external usage in LAB 6.
+  +
+  Information: Minimizing interconnect between LABs.
+  .......+.......
+Start=20:15:16  End=20:15:16
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (20:15:16)
+
+Messages:
+  Information: Fitting signals to LAB 1.
+  Information: Fitting signals to LAB 2.
+  Information: Fitting signals to LAB 3.
+  Information: Fitting signals to LAB 4.
+  Information: Fitting signals to LAB 5.
+  Information: Fitting signals to LAB 6.
+  Information: Fitting signals to LAB 7.
+  Information: Fitting signals to LAB 8.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 1 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 1
+                 __________________________________________
+       not used *|59|                    not used:101 *| 8|* not used       
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                                  |  |                 
+       not used *|65|                    not used:102 *| 9|* not used       
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                                  |  |                 
+       not used *|71|> not used:173      not used:103 *|10|* not used       
+         result =|72|> not used:174                   +|  |+                
+       not used *| 9|> not used:175                   +|  |+                
+       not used *|10|> not used:176                    |  |                 
+       not used *|11|> not used:177      not used:104 *|11|* not used       
+       not used *|14|> not used:178                   +|  |+                
+       not used *|15|> not used:179                   +|  |+                
+       not used *|16|> not used:180                    |  |                 
+       not used *|17|> not used:181      not used:105 *|12|* not used       
+       not used *|20|> not used:182                   +|  |+                
+       not used *|21|> not used:183                   +|  |+                
+       not used *|22|> not used:184                    |  |                 
+                 |  |> not used:185      not used:106 *|13|* not used       
+                 |  |> not used:186                   +|  |+                
+                 |  |> not used:187                   +|  |+                
+                 |  |> not used:188                    |  |                 
+                 |  |> not used:189      not used:107 *|  |                 
+                 |  |> not used:190                   +|  |+                
+                 |  |> not used:191                   +|  |+                
+                 |  |> not used:192       not used:85 *|  |                 
+                 |  |> not used:193      not used:108 *|  |                 
+                 |  |> not used:194                   +|  |+                
+                 |  |> not used:195                   +|  |+                
+                 |  |> not used:196       not used:86 *|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           1  /   92   = 1   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 2 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 2
+                 __________________________________________
+       not used *|59|                    not used:110 *|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                     not used:87 *|  |                 
+       not used *|65|                    not used:111 *|  |                 
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                     not used:88 *|  |                 
+       not used *|71|> not used:197      not used:112 *|21|* not used       
+         result =|72|> not used:198                   +|  |+                
+       not used *| 9|> not used:199                   +|  |+                
+       not used *|10|> not used:200                    |  |                 
+       not used *|11|> not used:201      not used:113 *|18|* not used       
+       not used *|14|> not used:202                   +|  |+                
+       not used *|15|> not used:203                   +|  |+                
+       not used *|16|> not used:204                    |  |                 
+       not used *|17|> not used:205      not used:114 *|17|* not used       
+       not used *|20|> not used:206                   +|  |+                
+       not used *|21|> not used:207                   +|  |+                
+       not used *|22|> not used:208                    |  |                 
+                 |  |> not used:209      not used:115 *|16|* not used       
+                 |  |> not used:210                   +|  |+                
+                 |  |> not used:211                   +|  |+                
+                 |  |> not used:212                    |  |                 
+                 |  |> not used:213      not used:116 *|15|* not used       
+                 |  |> not used:214                   +|  |+                
+                 |  |> not used:215                   +|  |+                
+                 |  |> not used:216                    |  |                 
+                 |  |> not used:217      not used:117 *|14|* not used       
+                 |  |> not used:218                   +|  |+                
+                 |  |> not used:219                   +|  |+                
+                 |  |> not used:220                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           1  /   92   = 1   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 3 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 3
+                 __________________________________________
+       not used *|59|                    not used:119 *|22|* not used       
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                                  |  |                 
+       not used *|65|                    not used:120 *|25|* not used       
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                                  |  |                 
+       not used *|71|> not used:221      not used:121 *|26|* not used       
+         result =|72|> not used:222                   +|  |+                
+       not used *| 9|> not used:223                   +|  |+                
+       not used *|10|> not used:224                    |  |                 
+       not used *|11|> not used:225      not used:122 *|27|* not used       
+       not used *|14|> not used:226                   +|  |+                
+       not used *|15|> not used:227                   +|  |+                
+       not used *|16|> not used:228                    |  |                 
+       not used *|17|> not used:229      not used:123 *|28|* not used       
+       not used *|20|> not used:230                   +|  |+                
+       not used *|21|> not used:231                   +|  |+                
+       not used *|22|> not used:232                    |  |                 
+                 |  |> not used:233      not used:124 *|29|* not used       
+                 |  |> not used:234                   +|  |+                
+                 |  |> not used:235                   +|  |+                
+                 |  |> not used:236                    |  |                 
+                 |  |> not used:237      not used:125 *|  |                 
+                 |  |> not used:238                   +|  |+                
+                 |  |> not used:239                   +|  |+                
+                 |  |> not used:240       not used:89 *|  |                 
+                 |  |> not used:241      not used:126 *|  |                 
+                 |  |> not used:242                   +|  |+                
+                 |  |> not used:243                   +|  |+                
+                 |  |> not used:244       not used:90 *|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           1  /   92   = 1   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 4 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 4
+                 __________________________________________
+       not used *|59|                    not used:128 *|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                  (sreg_d05_in.. =|  |                 
+       not used *|65|                    not used:129 *|  |                 
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                  (sreg_d01_in.. =|  |                 
+       not used *|71|> not used:245      not used:130 *|35|* not used       
+         result =|72|> not used:246                   +|  |+                
+       not used *| 9|> not used:247                   +|  |+                
+       not used *|10|> not used:248                    |  |                 
+       not used *|11|> not used:249      not used:131 *|34|* not used       
+       not used *|14|> not used:250                   +|  |+                
+       not used *|15|> not used:251                   +|  |+                
+       not used *|16|> not used:252                    |  |                 
+       not used *|17|> not used:253      not used:132 *|33|* not used       
+       not used *|20|> not used:254                   +|  |+                
+       not used *|21|> not used:255                   +|  |+                
+       not used *|22|> not used:256                    |  |                 
+                 |  |> not used:257      not used:133 *|32|* not used       
+                 |  |> not used:258                   +|  |+                
+                 |  |> not used:259                   +|  |+                
+                 |  |> not used:260                    |  |                 
+                 |  |> not used:261      not used:134 *|31|* not used       
+                 |  |> not used:262                   +|  |+                
+                 |  |> not used:263                   +|  |+                
+                 |  |> not used:264                    |  |                 
+                 |  |> not used:265      not used:135 *|30|* not used       
+                 |  |> not used:266                   +|  |+                
+                 |  |> not used:267                   +|  |+                
+                 |  |> not used:268                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    2  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 5 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 5
+                 __________________________________________
+       not used *|59|                    not used:137 *|50|* not used       
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                                  |  |                 
+       not used *|65|                    not used:138 *|51|* not used       
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                                  |  |                 
+       not used *|71|> not used:269      not used:139 *|52|* not used       
+         result =|72|> not used:270                   +|  |+                
+       not used *| 9|> not used:271                   +|  |+                
+       not used *|10|> not used:272                    |  |                 
+       not used *|11|> not used:273      not used:140 *|53|* not used       
+       not used *|14|> not used:274                   +|  |+                
+       not used *|15|> not used:275                   +|  |+                
+       not used *|16|> not used:276                    |  |                 
+       not used *|17|> not used:277      not used:141 *|54|* not used       
+       not used *|20|> not used:278                   +|  |+                
+       not used *|21|> not used:279                   +|  |+                
+       not used *|22|> not used:278                    |  |                 
+                 |  |> not used:281      not used:142 *|55|* not used       
+                 |  |> not used:282                   +|  |+                
+                 |  |> not used:283                   +|  |+                
+                 |  |> not used:284                    |  |                 
+                 |  |> not used:285      not used:143 *|  |                 
+                 |  |> not used:286                   +|  |+                
+                 |  |> not used:287                   +|  |+                
+                 |  |> not used:288    (sreg_d34_in.. =|  |                 
+                 |  |> not used:289      not used:144 *|  |                 
+                 |  |> not used:290                   +|  |+                
+                 |  |> not used:291                   +|  |+                
+                 |  |> not used:292    (sreg_d07_in.. =|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    2  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 6 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 6
+                 __________________________________________
+       not used *|59|                    not used:146 *|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                  (sreg_d09_in.. =|  |                 
+       not used *|65|                    not used:147 *|  |                 
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                  (sreg_d03_in.. =|  |                 
+       not used *|71|> not used:293      not used:148 *|63|* not used       
+         result =|72|> not used:294                   +|  |+                
+       not used *| 9|> not used:295                   +|  |+                
+       not used *|10|> not used:296                    |  |                 
+       not used *|11|> not used:297      not used:149 *|60|* not used       
+       not used *|14|> not used:298                   +|  |+                
+       not used *|15|> not used:299                   +|  |+                
+       not used *|16|> not used:300                    |  |                 
+       not used *|17|> not used:301      not used:150 *|59|* not used       
+       not used *|20|> not used:302                   +|  |+                
+       not used *|21|> not used:303                   +|  |+                
+       not used *|22|> not used:304                    |  |                 
+                 |  |> not used:305      not used:151 *|58|* not used       
+                 |  |> not used:306                   +|  |+                
+                 |  |> not used:307                   +|  |+                
+                 |  |> not used:308                    |  |                 
+                 |  |> not used:309      not used:152 *|57|* not used       
+                 |  |> not used:310                   +|  |+                
+                 |  |> not used:311                   +|  |+                
+                 |  |> not used:312                    |  |                 
+                 |  |> not used:313      not used:153 *|56|* not used       
+                 |  |> not used:314                   +|  |+                
+                 |  |> not used:315                   +|  |+                
+                 |  |> not used:316                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    2  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 7 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 7
+                 __________________________________________
+       not used *|59|                  (sreg_d10_in.. =|64|= (sreg_d26_in.. 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                                  |  |                 
+       not used *|65|                  (sreg_d12_in.. =|67|= (sreg_d28_in.. 
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                                  |  |                 
+       not used *|71|> not used:317    (sreg_d14_in.. =|68|= (sreg_d30_in.. 
+         result =|72|> not used:318                   +|  |+                
+       not used *| 9|> not used:319                   +|  |+                
+       not used *|10|> not used:320                    |  |                 
+       not used *|11|> not used:321    (sreg_d16_in.. =|69|= (sreg_d32_in.. 
+       not used *|14|> not used:322                   +|  |+                
+       not used *|15|> not used:323                   +|  |+                
+       not used *|16|> not used:324                    |  |                 
+       not used *|17|> not used:325    (sreg_d18_in.. =|70|= (sreg_d13_in.. 
+       not used *|20|> not used:326                   +|  |+                
+       not used *|21|> not used:327                   +|  |+                
+       not used *|22|> not used:328                    |  |                 
+                 |  |> not used:329    (sreg_d20_in.. =|71|* not used       
+                 |  |> not used:330                   +|  |+                
+                 |  |> not used:331                   +|  |+                
+                 |  |> not used:332                    |  |                 
+                 |  |> not used:333    (sreg_d22_in.. =|  |                 
+                 |  |> not used:334                   +|  |+                
+                 |  |> not used:335                   +|  |+                
+                 |  |> not used:336    (sreg_d11_in.. =|  |                 
+                 |  |> not used:337    (sreg_d24_in.. =|  |                 
+                 |  |> not used:338                   +|  |+                
+                 |  |> not used:339                   +|  |+                
+                 |  |> not used:340    (sreg_d08_in.. =|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    5  |    6  |
+                 | Buried Macrocells  |   10  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                          16  /   92   = 17  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 8 SIGNAL PLACEMENT  (20:15:16)
+
+Messages:
+
+
+                                  LAB 8
+                 __________________________________________
+       not used *|59|                  (sreg_d19_in.. =|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+ (sreg_d26_in.. =|64|                  (sreg_d15_in.. =|  |                 
+       not used *|65|                  (sreg_d21_in.. =|  |                 
+       not used *|66|                                 +|  |+                
+ (sreg_d28_in.. =|67|                                 +|  |+                
+ (sreg_d13_in.. =|70|                  (sreg_d17_in.. =|  |                 
+       not used *|71|= >sreg_d34_in..  (sreg_d23_in.. =|77|= (sreg_d06_in.. 
+         result =|72|= >sreg_d32_in..                 +|  |+                
+       not used *| 9|= >sreg_d30_in..                 +|  |+                
+       not used *|10|= >sreg_d28_in..                  |  |                 
+       not used *|11|= >sreg_d26_in..  (sreg_d25_in.. =|76|= (sreg_d04_in.. 
+       not used *|14|= >sreg_d24_in..                 +|  |+                
+       not used *|15|= >sreg_d22_in..                 +|  |+                
+       not used *|16|= >sreg_d20_in..                  |  |                 
+       not used *|17|= >sreg_d18_in..  (sreg_d27_in.. =|75|= (sreg_d02_in.. 
+       not used *|20|= >sreg_d16_in..                 +|  |+                
+       not used *|21|= >sreg_d14_in..                 +|  |+                
+       not used *|22|= >sreg_d12_in..                  |  |                 
+                 |  |= >sreg_d10_in..  (sreg_d29_in.. =|74|= (sreg_d00_in.. 
+                 |  |= >sreg_d08_in..                 +|  |+                
+                 |  |= >sreg_d13_in..                 +|  |+                
+                 |  |= >sreg_d11_in..                  |  |                 
+                 |  |= >sreg_d09_in..  (sreg_d31_in.. =|73|= (sreg_d35_in.. 
+                 |  |= >sreg_d07_in..                 +|  |+                
+                 |  |= >sreg_d05_in..                 +|  |+                
+                 |  |= >sreg_d03_in..                  |  |                 
+                 |  |= >sreg_d01_in..  (sreg_d33_in.. =|72|= result         
+                 |  |> not used:362                   +|  |+                
+                 |  |> not used:363                   +|  |+                
+                 |  |> not used:364                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    6  |    6  |
+                 | Buried Macrocells  |   10  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |   21  |   24  |
+                 ______________________________________
+                                          38  /   92   = 41  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (20:15:16)
+
+Messages:
+  Information: PIN Signal Placement Table.
+                  1  :  clk
+                  2  :  Not Used
+                  3  :  Not Used
+                  4  :  Not Used
+                  5  :  Not Used
+                  6  :  Not Used
+                  7  :  Not Used
+                  8  :  Not Used
+                  9  :  Not Used
+                 10  :  Not Used
+                 11  :  Not Used
+                 12  :  Not Used
+                 13  :  Not Used
+                 14  :  Not Used
+                 15  :  Not Used
+                 16  :  Not Used
+                 17  :  Not Used
+                 18  :  Not Used
+                 19  :  Not Used
+                 20  :  Not Used
+                 21  :  Not Used
+                 22  :  Not Used
+                 23  :  Not Used
+                 24  :  Not Used
+                 25  :  Not Used
+                 26  :  Not Used
+                 27  :  Not Used
+                 28  :  Not Used
+                 29  :  Not Used
+                 30  :  Not Used
+                 31  :  Not Used
+                 32  :  Not Used
+                 33  :  Not Used
+                 34  :  Not Used
+                 35  :  Not Used
+                 36  :  Not Used
+                 37  :  Not Used
+                 38  :  Not Used
+                 39  :  Not Used
+                 40  :  Not Used
+                 41  :  Not Used
+                 42  :  Not Used
+                 43  :  Not Used
+                 44  :  Not Used
+                 45  :  Not Used
+                 46  :  Not Used
+                 47  :  Not Used
+                 48  :  Not Used
+                 49  :  Not Used
+                 50  :  Not Used
+                 51  :  Not Used
+                 52  :  Not Used
+                 53  :  Not Used
+                 54  :  Not Used
+                 55  :  Not Used
+                 56  :  Not Used
+                 57  :  Not Used
+                 58  :  Not Used
+                 59  :  Not Used
+                 60  :  Not Used
+                 61  :  Not Used
+                 62  :  Not Used
+                 63  :  Not Used
+                 64  :  (sreg_d26_internal_d)
+                 65  :  Not Used
+                 66  :  Not Used
+                 67  :  (sreg_d28_internal_d)
+                 68  :  (sreg_d30_internal_d)
+                 69  :  (sreg_d32_internal_d)
+                 70  :  (sreg_d13_internal_d)
+                 71  :  Not Used
+                 72  :  result
+                 73  :  (sreg_d35_internal_d)
+                 74  :  (sreg_d00_internal_d)
+                 75  :  (sreg_d02_internal_d)
+                 76  :  (sreg_d04_internal_d)
+                 77  :  (sreg_d06_internal_d)
+                 78  :  Not Used
+                 79  :  Not Used
+                 80  :  Not Used
+                 81  :  Not Used
+                 82  :  Not Used
+                 83  :  Not Used
+                 84  :  Not Used
+
+
+  Information: NODE Signal Placement Table.
+                 91  :  (sreg_d05_internal_d)
+                 92  :  (sreg_d01_internal_d)
+                 93  :  (sreg_d34_internal_d)
+                 94  :  (sreg_d07_internal_d)
+                 95  :  (sreg_d09_internal_d)
+                 96  :  (sreg_d03_internal_d)
+                 97  :  (sreg_d11_internal_d)
+                 98  :  (sreg_d08_internal_d)
+                 99  :  (sreg_d15_internal_d)
+                100  :  (sreg_d17_internal_d)
+                155  :  (sreg_d10_internal_d)
+                156  :  (sreg_d12_internal_d)
+                157  :  (sreg_d14_internal_d)
+                158  :  (sreg_d16_internal_d)
+                159  :  (sreg_d18_internal_d)
+                160  :  (sreg_d20_internal_d)
+                161  :  (sreg_d22_internal_d)
+                162  :  (sreg_d24_internal_d)
+                164  :  (sreg_d19_internal_d)
+                165  :  (sreg_d21_internal_d)
+                166  :  (sreg_d23_internal_d)
+                167  :  (sreg_d25_internal_d)
+                168  :  (sreg_d27_internal_d)
+                169  :  (sreg_d29_internal_d)
+                170  :  (sreg_d31_internal_d)
+                171  :  (sreg_d33_internal_d)
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 |  8  |  Unused          |   0  |   3  |
+                 |  9  |  Unused          |   0  |   3  |
+                 | 10  |  Unused          |   0  |   3  |
+                 | 11  |  Unused          |   0  |   3  |
+                 | 12  |  Unused          |   0  |   3  |
+                 | 13  |  Unused          |   0  |   3  |
+                 | 14  |  Unused          |   0  |   3  |
+                 | 15  |  Unused          |   0  |   3  |
+                 | 16  |  Unused          |   0  |   3  |
+                 | 17  |  Unused          |   0  |   3  |
+                 | 18  |  Unused          |   0  |   3  |
+                 | 21  |  Unused          |   0  |   3  |
+                 | 22  |  Unused          |   0  |   3  |
+                 | 25  |  Unused          |   0  |   3  |
+                 | 26  |  Unused          |   0  |   3  |
+                 | 27  |  Unused          |   0  |   3  |
+                 | 28  |  Unused          |   0  |   3  |
+                 | 29  |  Unused          |   0  |   3  |
+                 | 30  |  Unused          |   0  |   3  |
+                 | 31  |  Unused          |   0  |   3  |
+                 | 32  |  Unused          |   0  |   3  |
+                 | 33  |  Unused          |   0  |   3  |
+                 | 34  |  Unused          |   0  |   3  |
+                 | 35  |  Unused          |   0  |   3  |
+                 | 50  |  Unused          |   0  |   3  |
+                 | 51  |  Unused          |   0  |   3  |
+                 | 52  |  Unused          |   0  |   3  |
+                 | 53  |  Unused          |   0  |   3  |
+                 | 54  |  Unused          |   0  |   3  |
+                 | 55  |  Unused          |   0  |   3  |
+                 | 56  |  Unused          |   0  |   3  |
+                 | 57  |  Unused          |   0  |   3  |
+                 | 58  |  Unused          |   0  |   3  |
+                 | 59  |  Unused          |   0  |   3  |
+                 | 60  |  Unused          |   0  |   3  |
+                 | 63  |  Unused          |   0  |   3  |
+                 | 64  |  sreg_d26_int..  |   1  |   3  |
+                 | 67  |  sreg_d28_int..  |   1  |   3  |
+                 | 68  |  sreg_d30_int..  |   1  |   3  |
+                 | 69  |  sreg_d32_int..  |   1  |   3  |
+                 | 70  |  sreg_d13_int..  |   1  |   3  |
+                 | 71  |  Unused          |   0  |   3  |
+                 | 72  |  result          |   1  |   3  |
+                 | 73  |  sreg_d35_int..  |   1  |   3  |
+                 | 74  |  sreg_d00_int..  |   1  |   3  |
+                 | 75  |  sreg_d02_int..  |   1  |   3  |
+                 | 76  |  sreg_d04_int..  |   1  |   3  |
+                 | 77  |  sreg_d06_int..  |   1  |   3  |
+                 | 85  |  Unused          |   0  |   3  |
+                 | 86  |  Unused          |   0  |   3  |
+                 | 87  |  Unused          |   0  |   3  |
+                 | 88  |  Unused          |   0  |   3  |
+                 | 89  |  Unused          |   0  |   3  |
+                 | 90  |  Unused          |   0  |   3  |
+                 | 91  |  sreg_d05_int..  |   1  |   3  |
+                 | 92  |  sreg_d01_int..  |   1  |   3  |
+                 | 93  |  sreg_d34_int..  |   1  |   3  |
+                 | 94  |  sreg_d07_int..  |   1  |   3  |
+                 | 95  |  sreg_d09_int..  |   1  |   3  |
+                 | 96  |  sreg_d03_int..  |   1  |   3  |
+                 | 97  |  sreg_d11_int..  |   1  |   3  |
+                 | 98  |  sreg_d08_int..  |   1  |   3  |
+                 | 99  |  sreg_d15_int..  |   1  |   3  |
+                 |100  |  sreg_d17_int..  |   1  |   3  |
+                 |101  |  Unused          |   0  |   3  |
+                 |102  |  Unused          |   0  |   3  |
+                 |103  |  Unused          |   0  |   3  |
+                 |104  |  Unused          |   0  |   3  |
+                 |105  |  Unused          |   0  |   3  |
+                 |106  |  Unused          |   0  |   3  |
+                 |107  |  Unused          |   0  |   3  |
+                 |108  |  Unused          |   0  |   3  |
+                 |109  |  Unused          |   0  |   1  |
+                 |110  |  Unused          |   0  |   3  |
+                 |111  |  Unused          |   0  |   3  |
+                 |112  |  Unused          |   0  |   3  |
+                 |113  |  Unused          |   0  |   3  |
+                 |114  |  Unused          |   0  |   3  |
+                 |115  |  Unused          |   0  |   3  |
+                 |116  |  Unused          |   0  |   3  |
+                 |117  |  Unused          |   0  |   3  |
+                 |118  |  Unused          |   0  |   1  |
+                 |119  |  Unused          |   0  |   3  |
+                 |120  |  Unused          |   0  |   3  |
+                 |121  |  Unused          |   0  |   3  |
+                 |122  |  Unused          |   0  |   3  |
+                 |123  |  Unused          |   0  |   3  |
+                 |124  |  Unused          |   0  |   3  |
+                 |125  |  Unused          |   0  |   3  |
+                 |126  |  Unused          |   0  |   3  |
+                 |127  |  Unused          |   0  |   1  |
+                 |128  |  Unused          |   0  |   3  |
+                 |129  |  Unused          |   0  |   3  |
+                 |130  |  Unused          |   0  |   3  |
+                 |131  |  Unused          |   0  |   3  |
+                 |132  |  Unused          |   0  |   3  |
+                 |133  |  Unused          |   0  |   3  |
+                 |134  |  Unused          |   0  |   3  |
+                 |135  |  Unused          |   0  |   3  |
+                 |136  |  Unused          |   0  |   1  |
+                 |137  |  Unused          |   0  |   3  |
+                 |138  |  Unused          |   0  |   3  |
+                 |139  |  Unused          |   0  |   3  |
+                 |140  |  Unused          |   0  |   3  |
+                 |141  |  Unused          |   0  |   3  |
+                 |142  |  Unused          |   0  |   3  |
+                 |143  |  Unused          |   0  |   3  |
+                 |144  |  Unused          |   0  |   3  |
+                 |145  |  Unused          |   0  |   1  |
+                 |146  |  Unused          |   0  |   3  |
+                 |147  |  Unused          |   0  |   3  |
+                 |148  |  Unused          |   0  |   3  |
+                 |149  |  Unused          |   0  |   3  |
+                 |150  |  Unused          |   0  |   3  |
+                 |151  |  Unused          |   0  |   3  |
+                 |152  |  Unused          |   0  |   3  |
+                 |153  |  Unused          |   0  |   3  |
+                 |154  |  Unused          |   0  |   1  |
+                 |155  |  sreg_d10_int..  |   1  |   3  |
+                 |156  |  sreg_d12_int..  |   1  |   3  |
+                 |157  |  sreg_d14_int..  |   1  |   3  |
+                 |158  |  sreg_d16_int..  |   1  |   3  |
+                 |159  |  sreg_d18_int..  |   1  |   3  |
+                 |160  |  sreg_d20_int..  |   1  |   3  |
+                 |161  |  sreg_d22_int..  |   1  |   3  |
+                 |162  |  sreg_d24_int..  |   1  |   3  |
+                 |163  |  Unused          |   0  |   1  |
+                 |164  |  sreg_d19_int..  |   1  |   3  |
+                 |165  |  sreg_d21_int..  |   1  |   3  |
+                 |166  |  sreg_d23_int..  |   1  |   3  |
+                 |167  |  sreg_d25_int..  |   1  |   3  |
+                 |168  |  sreg_d27_int..  |   1  |   3  |
+                 |169  |  sreg_d29_int..  |   1  |   3  |
+                 |170  |  sreg_d31_int..  |   1  |   3  |
+                 |171  |  sreg_d33_int..  |   1  |   3  |
+                 |172  |  Unused          |   0  |   1  |
+                 ________________________________________
+                                             37  / 392   = 9   %
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    0  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |   11  |   48  |
+                 | Buried Macrocells  |   26  |   80  |
+                 | Expander Terms     |    0  |  256  |
+                 | PIA Input Connects |   21  |  192  |
+                 ______________________________________
+                                          59  /  596   = 9   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+TIMING PATH ANALYSIS       (20:15:16) using Package: CY7C346B-15HC
+
+Messages:
+
+----------------------------------------------------------------------------
+Signal Name | Delay Type  |   tmax   | Path Description
+----------------------------------------------------------------------------
+ff::(sreg_d26_internal_d).D[ 64 ]
+ip::sreg_d26_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d28_internal_d).D[ 67 ]
+ip::sreg_d28_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d30_internal_d).D[ 68 ]
+ip::sreg_d30_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d32_internal_d).D[ 69 ]
+ip::sreg_d32_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d13_internal_d).D[ 70 ]
+ip::sreg_d13_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+pn::result[ 72 ]
+ip::sreg_d34_internal_d.Q
+              tmaxCOMB_PIN    23.0 ns  tFD+tPIA+tLAD+tCOMB+tOD
+----------------------------------------------------------------------------
+ff::(sreg_d35_internal_d).D[ 73 ]
+ip::sreg_d35_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d00_internal_d).D[ 74 ]
+ip::sreg_d00_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d02_internal_d).D[ 75 ]
+ip::sreg_d02_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d04_internal_d).D[ 76 ]
+ip::sreg_d04_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d06_internal_d).D[ 77 ]
+ip::sreg_d06_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d05_internal_d).D[ 91 ]
+ip::sreg_d05_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d01_internal_d).D[ 92 ]
+ip::sreg_d01_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d34_internal_d).D[ 93 ]
+ip::sreg_d34_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d07_internal_d).D[ 94 ]
+ip::sreg_d07_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d09_internal_d).D[ 95 ]
+ip::sreg_d09_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d03_internal_d).D[ 96 ]
+ip::sreg_d03_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d11_internal_d).D[ 97 ]
+ip::sreg_d11_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d08_internal_d).D[ 98 ]
+ip::sreg_d08_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d15_internal_d).D[ 99 ]
+ip::sreg_d15_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d17_internal_d).D[ 100 ]
+ip::sreg_d17_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d10_internal_d).D[ 155 ]
+ip::sreg_d10_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d12_internal_d).D[ 156 ]
+ip::sreg_d12_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d14_internal_d).D[ 157 ]
+ip::sreg_d14_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d16_internal_d).D[ 158 ]
+ip::sreg_d16_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d18_internal_d).D[ 159 ]
+ip::sreg_d18_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d20_internal_d).D[ 160 ]
+ip::sreg_d20_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d22_internal_d).D[ 161 ]
+ip::sreg_d22_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d24_internal_d).D[ 162 ]
+ip::sreg_d24_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d19_internal_d).D[ 164 ]
+ip::sreg_d19_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d21_internal_d).D[ 165 ]
+ip::sreg_d21_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d23_internal_d).D[ 166 ]
+ip::sreg_d23_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d25_internal_d).D[ 167 ]
+ip::sreg_d25_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d27_internal_d).D[ 168 ]
+ip::sreg_d27_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d29_internal_d).D[ 169 ]
+ip::sreg_d29_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d31_internal_d).D[ 170 ]
+ip::sreg_d31_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(sreg_d33_internal_d).D[ 171 ]
+ip::sreg_d33_internal_d.Q
+              tmaxDFF_Q2Q     14.0 ns  tRD+tFD+tLAD+tSU
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+
+Worst Case Path Summary
+-----------------------
+
+Worst case COMB,   tmax = 20.0 ns for result
+Worst case Q->Q,   tmax = 14.0 ns for sreg_d26_internal_d.D
+Worst case CLK->Q, tmax = 3.0 ns for sreg_d26_internal_d.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+JEDEC ASSEMBLE             (20:15:16)
+
+Messages:
+  Information: Processing JEDEC for LAB 1.
+  Information: Processing JEDEC for LAB 2.
+  Information: Processing JEDEC for LAB 3.
+  Information: Processing JEDEC for LAB 4.
+  Information: Processing JEDEC for LAB 5.
+  Information: Processing JEDEC for LAB 6.
+  Information: Processing JEDEC for LAB 7.
+  Information: Processing JEDEC for LAB 8.
+  Information: Processing JEDEC for Switch Matrix PLA.
+  Information: JEDEC output file 'scout.jed' created.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 20:15:17

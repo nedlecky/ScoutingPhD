@@ -1,0 +1,15 @@
+% Simulation Test Vectors for LC2 - File: lc2.vec %
+START 0ns;
+STOP 50000ns;
+% Generate Clock %
+INTERVAL 100ns;
+INPUTS ClocK;
+PATTERN 
+0 1;
+% Reset LC2 Processor %
+INPUTS Reset;
+PATTERN
+0>1
+150>0;
+BURIED STATE PC IR CC SR1 SR2 LC2_BUS MAR MDR; 
+BURIED WRITE BEN R;

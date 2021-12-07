@@ -1,0 +1,70 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 01/18/2002 16:16:46      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "quadadd_single_tt"
+BEGIN
+
+    DEVICE = "EPM7128SLC84-7";
+
+    "a0"                           : INPUT_PIN  = 12     ; -- LC3
+    "a1"                           : INPUT_PIN  = 11     ; -- LC5
+    "a2"                           : INPUT_PIN  = 10     ; -- LC6
+    "a3"                           : INPUT_PIN  = 21     ; -- LC19
+    "b0"                           : INPUT_PIN  = 9      ; -- LC8
+    "b1"                           : INPUT_PIN  = 8      ; -- LC11
+    "b2"                           : INPUT_PIN  = 6      ; -- LC13
+    "b3"                           : INPUT_PIN  = 5      ; -- LC14
+    "cin"                          : INPUT_PIN  = 4      ; -- LC16
+    "co"                           : OUTPUT_PIN = 76     ; -- LC120
+    "s0"                           : OUTPUT_PIN = 73     ; -- LC115
+    "s1"                           : OUTPUT_PIN = 74     ; -- LC117
+    "s2"                           : OUTPUT_PIN = 75     ; -- LC118
+    "s3"                           : OUTPUT_PIN = 77     ; -- LC123
+    "|add_tt:add1|~72~1"           : LOCATION   = LC113  ;
+    "|add_tt:add2|~47~1"           : LOCATION   = LC114  ;
+    "|add_tt:add2|~70~1"           : LOCATION   = LC116  ;
+
+END;
+
+INTERNAL_INFO "quadadd_single_tt"
+BEGIN
+	DEVICE = EPM7128SLC84-7;
+	LC123   : LORAX = "G144R0";
+	LC118   : LORAX = "G111R0";
+	LC117   : LORAX = "G110R0";
+	LC115   : LORAX = "G55R0";
+	LC120   : LORAX = "G113R0";
+	OH18R0P21 : LORAX = "G208R0,PA30R0C7";
+	OH13R0P5 : LORAX = "G58R0,PA12R0C7";
+	OH7R0P9 : LORAX = "G206R0,PA32R0C7";
+	OH2R0P12 : LORAX = "G148R0,PA19R0C7";
+	OH15R0P4 : LORAX = "G59R0,PA11R0C7";
+	OH4R0P11 : LORAX = "G204R0,PA29R0C7";
+	OH10R0P8 : LORAX = "G1R0,PA3R0C7";
+	OH5R0P10 : LORAX = "G205R0,PA28R0C7";
+	OH12R0P6 : LORAX = "G57R0,PA13R0C7";
+	LC113   : LORAX = "G53R0,PA7R0C7";
+	LC114   : LORAX = "G54R0,PA6R0C7";
+	LC116   : LORAX = "G56R0,PA1R0C7";
+END;

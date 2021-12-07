@@ -1,0 +1,1381 @@
+Project Information                              c:\booksoft\chap6\bmemory.rpt
+
+MAX+plus II Compiler Report File
+Version 9.23 3/19/99
+Compiled: 05/19/1999 15:30:59
+
+Copyright (C) 1988-1999 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+BMEMORY
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+bmemory   EPF10K10LC84-3   16     8      0    0         0  %    116      20 %
+
+User Pins:                 16     8      0  
+
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+***** Logic for device 'bmemory' compiled without errors.
+
+
+
+
+Device: EPF10K10LC84-3
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+
+                                                     w                             
+                                               r     r                             
+                                               e     i                             
+                       w                       a  w  t                             
+                       r                       d  r  e                       ^     
+                       i                       _  i  _                       C     
+                    R  t  R  R  R  R  R     R  a  t  a  R     R  R  R  R     O     
+                    E  e  E  E  E  E  E     E  d  e  d  E     E  E  E  E     N     
+                    S  _  S  S  S  S  S  V  S  d  _  d  S  G  S  S  S  S     F     
+                    E  d  E  E  E  E  E  C  E  r  d  r  E  N  E  E  E  E     _  ^  
+                    R  a  R  R  R  R  R  C  R  e  a  e  R  D  R  R  R  R  #  D  n  
+                    V  t  V  V  V  V  V  I  V  s  t  s  V  I  V  V  V  V  T  O  C  
+                    E  a  E  E  E  E  E  N  E  s  a  s  E  N  E  E  E  E  C  N  E  
+                    D  4  D  D  D  D  D  T  D  0  1  0  D  T  D  D  D  D  K  E  O  
+                  -----------------------------------------------------------------_ 
+                /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
+        ^DATA0 | 12                                                              74 | #TDO 
+         ^DCLK | 13                                                              73 | write_data0 
+          ^nCE | 14                                                              72 | write_data5 
+          #TDI | 15                                                              71 | read_data5 
+      RESERVED | 16                                                              70 | RESERVED 
+      RESERVED | 17                                                              69 | RESERVED 
+    read_data0 | 18                                                              68 | GNDINT 
+      RESERVED | 19                                                              67 | write_data6 
+        VCCINT | 20                                                              66 | write_data7 
+      RESERVED | 21                                                              65 | read_data6 
+      RESERVED | 22                        EPF10K10LC84-3                        64 | RESERVED 
+    read_data7 | 23                                                              63 | VCCINT 
+    read_data1 | 24                                                              62 | write_data3 
+      RESERVED | 25                                                              61 | write_data2 
+        GNDINT | 26                                                              60 | write_address2 
+      RESERVED | 27                                                              59 | write_address1 
+    read_data3 | 28                                                              58 | Memwrite 
+    read_data2 | 29                                                              57 | #TMS 
+    read_data4 | 30                                                              56 | #TRST 
+        ^MSEL0 | 31                                                              55 | ^nSTATUS 
+        ^MSEL1 | 32                                                              54 | RESERVED 
+               |_  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  _| 
+                 ------------------------------------------------------------------ 
+                    V  ^  R  R  R  R  R  V  G  r  c  r  V  G  R  R  R  R  R  R  R  
+                    C  n  E  E  E  E  E  C  N  e  l  e  C  N  E  E  E  E  E  E  E  
+                    C  C  S  S  S  S  S  C  D  a  o  a  C  D  S  S  S  S  S  S  S  
+                    I  O  E  E  E  E  E  I  I  d  c  d  I  I  E  E  E  E  E  E  E  
+                    N  N  R  R  R  R  R  N  N  _  k  _  N  N  R  R  R  R  R  R  R  
+                    T  F  V  V  V  V  V  T  T  a     a  T  T  V  V  V  V  V  V  V  
+                       I  E  E  E  E  E        d     d        E  E  E  E  E  E  E  
+                       G  D  D  D  D  D        d     d        D  D  D  D  D  D  D  
+                                               r     r                             
+                                               e     e                             
+                                               s     s                             
+                                               s     s                             
+                                               2     1                             
+                                                                                   
+
+
+N.C. = No Connect, This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+A1       8/ 8(100%)   1/ 8( 12%)   2/ 8( 25%)    1/2    0/2       8/22( 36%)   
+A2       8/ 8(100%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       9/22( 40%)   
+A7       7/ 8( 87%)   1/ 8( 12%)   0/ 8(  0%)    1/2    0/2       6/22( 27%)   
+A9       1/ 8( 12%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       3/22( 13%)   
+A15      7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+A18      7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       6/22( 27%)   
+B3       8/ 8(100%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       9/22( 40%)   
+B4       8/ 8(100%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       9/22( 40%)   
+B8       6/ 8( 75%)   0/ 8(  0%)   2/ 8( 25%)    1/2    0/2       6/22( 27%)   
+B10      3/ 8( 37%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       4/22( 18%)   
+B16      7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+B19      7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       6/22( 27%)   
+C5       7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+C6       7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+C11      7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       6/22( 27%)   
+C13      3/ 8( 37%)   3/ 8( 37%)   3/ 8( 37%)    0/2    0/2       3/22( 13%)   
+C14      1/ 8( 12%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       3/22( 13%)   
+C17      7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       8/22( 36%)   
+C20      7/ 8( 87%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       6/22( 27%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 6/6      (100%)
+Total I/O pins used:                            18/53     ( 33%)
+Total logic cells used:                        116/576    ( 20%)
+Total embedded cells used:                       0/24     (  0%)
+Total EABs used:                                 0/3      (  0%)
+Average fan-in:                                 3.75/4    ( 93%)
+Total fan-in:                                 436/2304    ( 18%)
+
+Total input pins required:                      16
+Total input I/O cell registers required:         0
+Total output pins required:                      8
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                    116
+Total flipflops required:                       64
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         4/ 576   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  EA  13  14  15  16  17  18  19  20  21  22  23  24  Total(LC/EC)
+ A:      8   8   0   0   0   0   7   0   1   0   0   0   0   0   0   7   0   0   7   0   0   0   0   0   0     38/0  
+ B:      0   0   8   8   0   0   0   6   0   3   0   0   0   0   0   0   7   0   0   7   0   0   0   0   0     39/0  
+ C:      0   0   0   0   7   7   0   0   0   0   7   0   0   3   1   0   0   7   0   0   7   0   0   0   0     39/0  
+
+Total:   8   8   8   8   7   7   7   6   1   3   7   0   0   3   1   7   7   7   7   7   7   0   0   0   0    116/0  
+
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  43      -     -    -    --      INPUT  G             0    0    0    0  clock
+  58      -     -    C    --      INPUT                0    0    0    4  Memwrite
+   2      -     -    -    --      INPUT                0    0    0   32  read_address0
+  44      -     -    -    --      INPUT                0    0    0   24  read_address1
+  42      -     -    -    --      INPUT                0    0    0    8  read_address2
+  84      -     -    -    --      INPUT                0    0    0   64  write_address0
+  59      -     -    C    --      INPUT                0    0    0    4  write_address1
+  60      -     -    C    --      INPUT                0    0    0    4  write_address2
+  73      -     -    A    --      INPUT                0    0    0    8  write_data0
+   1      -     -    -    --      INPUT                0    0    0    8  write_data1
+  61      -     -    C    --      INPUT                0    0    0    8  write_data2
+  62      -     -    C    --      INPUT                0    0    0    8  write_data3
+  10      -     -    -    01      INPUT                0    0    0    8  write_data4
+  72      -     -    A    --      INPUT                0    0    0    8  write_data5
+  67      -     -    B    --      INPUT                0    0    0    8  write_data6
+  66      -     -    B    --      INPUT                0    0    0    8  write_data7
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  18      -     -    A    --     OUTPUT                0    1    0    0  read_data0
+  24      -     -    B    --     OUTPUT                0    1    0    0  read_data1
+  29      -     -    C    --     OUTPUT                0    1    0    0  read_data2
+  28      -     -    C    --     OUTPUT                0    1    0    0  read_data3
+  30      -     -    C    --     OUTPUT                0    1    0    0  read_data4
+  71      -     -    A    --     OUTPUT                0    1    0    0  read_data5
+  65      -     -    B    --     OUTPUT                0    1    0    0  read_data6
+  23      -     -    B    --     OUTPUT                0    1    0    0  read_data7
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      1     -    C    14       AND2    s           3    0    0   16  Memwrite~1
+   -      2     -    C    13       AND2    s           3    0    0   16  Memwrite~2
+   -      3     -    C    13       AND2    s           3    0    0   16  Memwrite~3
+   -      7     -    C    13       AND2    s           3    0    0   16  Memwrite~4
+   -      6     -    B    03       DFFE   +            2    1    0    1  memory0_7 (:25)
+   -      6     -    B    19       DFFE   +            2    1    0    1  memory0_6 (:26)
+   -      6     -    A    18       DFFE   +            2    1    0    1  memory0_5 (:27)
+   -      6     -    A    07       DFFE   +            2    1    0    1  memory0_4 (:28)
+   -      5     -    C    20       DFFE   +            2    1    0    1  memory0_3 (:29)
+   -      5     -    C    11       DFFE   +            2    1    0    1  memory0_2 (:30)
+   -      3     -    B    10       DFFE   +            2    1    0    1  memory0_1 (:31)
+   -      6     -    A    02       DFFE   +            2    1    0    1  memory0_0 (:32)
+   -      5     -    B    03       DFFE   +            2    1    0    1  memory1_7 (:33)
+   -      4     -    B    19       DFFE   +            2    1    0    1  memory1_6 (:34)
+   -      4     -    A    18       DFFE   +            2    1    0    1  memory1_5 (:35)
+   -      4     -    A    07       DFFE   +            2    1    0    1  memory1_4 (:36)
+   -      4     -    C    20       DFFE   +            2    1    0    1  memory1_3 (:37)
+   -      4     -    C    11       DFFE   +            2    1    0    1  memory1_2 (:38)
+   -      2     -    B    10       DFFE   +            2    1    0    1  memory1_1 (:39)
+   -      7     -    A    02       DFFE   +            2    1    0    1  memory1_0 (:40)
+   -      4     -    B    08       DFFE   +            2    1    0    1  memory2_7 (:41)
+   -      5     -    B    19       DFFE   +            2    1    0    1  memory2_6 (:42)
+   -      5     -    A    18       DFFE   +            2    1    0    1  memory2_5 (:43)
+   -      5     -    A    07       DFFE   +            2    1    0    1  memory2_4 (:44)
+   -      6     -    C    20       DFFE   +            2    1    0    1  memory2_3 (:45)
+   -      6     -    C    11       DFFE   +            2    1    0    1  memory2_2 (:46)
+   -      7     -    B    04       DFFE   +            2    1    0    1  memory2_1 (:47)
+   -      8     -    A    01       DFFE   +            2    1    0    1  memory2_0 (:48)
+   -      6     -    B    08       DFFE   +            2    1    0    1  memory3_7 (:49)
+   -      7     -    B    19       DFFE   +            2    1    0    1  memory3_6 (:50)
+   -      7     -    A    18       DFFE   +            2    1    0    1  memory3_5 (:51)
+   -      7     -    A    07       DFFE   +            2    1    0    1  memory3_4 (:52)
+   -      7     -    C    20       DFFE   +            2    1    0    1  memory3_3 (:53)
+   -      7     -    C    11       DFFE   +            2    1    0    1  memory3_2 (:54)
+   -      8     -    B    04       DFFE   +            2    1    0    1  memory3_1 (:55)
+   -      2     -    A    09       DFFE   +            2    1    0    1  memory3_0 (:56)
+   -      8     -    B    03       DFFE   +            2    1    0    1  memory4_7 (:57)
+   -      7     -    B    16       DFFE   +            2    1    0    1  memory4_6 (:58)
+   -      7     -    A    15       DFFE   +            2    1    0    1  memory4_5 (:59)
+   -      6     -    C    05       DFFE   +            2    1    0    1  memory4_4 (:60)
+   -      7     -    C    17       DFFE   +            2    1    0    1  memory4_3 (:61)
+   -      7     -    C    06       DFFE   +            2    1    0    1  memory4_2 (:62)
+   -      2     -    A    01       DFFE   +            2    1    0    1  memory4_1 (:63)
+   -      4     -    A    01       DFFE   +            2    1    0    1  memory4_0 (:64)
+   -      7     -    B    03       DFFE   +            2    1    0    1  memory5_7 (:65)
+   -      4     -    B    16       DFFE   +            2    1    0    1  memory5_6 (:66)
+   -      5     -    A    15       DFFE   +            2    1    0    1  memory5_5 (:67)
+   -      5     -    C    05       DFFE   +            2    1    0    1  memory5_4 (:68)
+   -      6     -    C    17       DFFE   +            2    1    0    1  memory5_3 (:69)
+   -      6     -    C    06       DFFE   +            2    1    0    1  memory5_2 (:70)
+   -      5     -    A    01       DFFE   +            2    1    0    1  memory5_1 (:71)
+   -      7     -    A    01       DFFE   +            2    1    0    1  memory5_0 (:72)
+   -      5     -    B    08       DFFE   +            2    1    0    1  memory6_7 (:73)
+   -      6     -    B    16       DFFE   +            2    1    0    1  memory6_6 (:74)
+   -      6     -    A    15       DFFE   +            2    1    0    1  memory6_5 (:75)
+   -      4     -    C    05       DFFE   +            2    1    0    1  memory6_4 (:76)
+   -      5     -    C    17       DFFE   +            2    1    0    1  memory6_3 (:77)
+   -      1     -    C    06       DFFE   +            2    1    0    1  memory6_2 (:78)
+   -      1     -    B    04       DFFE   +            2    1    0    1  memory6_1 (:79)
+   -      1     -    A    02       DFFE   +            2    1    0    1  memory6_0 (:80)
+   -      2     -    B    08       DFFE   +            2    1    0    1  memory7_7 (:81)
+   -      1     -    B    16       DFFE   +            2    1    0    1  memory7_6 (:82)
+   -      1     -    A    15       DFFE   +            2    1    0    1  memory7_5 (:83)
+   -      1     -    C    05       DFFE   +            2    1    0    1  memory7_4 (:84)
+   -      1     -    C    17       DFFE   +            2    1    0    1  memory7_3 (:85)
+   -      2     -    C    06       DFFE   +            2    1    0    1  memory7_2 (:86)
+   -      2     -    B    04       DFFE   +            2    1    0    1  memory7_1 (:87)
+   -      2     -    A    02       DFFE   +            2    1    0    1  memory7_0 (:88)
+   -      4     -    B    03        OR2                1    3    1    0  :2276
+   -      1     -    B    03        OR2                1    2    0    1  :2279
+   -      2     -    B    03        OR2                1    2    0    1  :2282
+   -      1     -    B    08        OR2                1    2    0    1  :2285
+   -      3     -    B    03        OR2                2    2    0    1  :2289
+   -      3     -    B    08        OR2                2    2    0    1  :2290
+   -      5     -    B    16        OR2                1    3    1    0  :2297
+   -      1     -    B    19        OR2                1    2    0    1  :2300
+   -      3     -    B    19        OR2                1    2    0    1  :2303
+   -      2     -    B    19        OR2                1    2    0    1  :2306
+   -      3     -    B    16        OR2                2    2    0    1  :2310
+   -      2     -    B    16        OR2                2    2    0    1  :2311
+   -      4     -    A    15        OR2                1    3    1    0  :2318
+   -      2     -    A    18        OR2                1    2    0    1  :2321
+   -      3     -    A    18        OR2                1    2    0    1  :2324
+   -      1     -    A    18        OR2                1    2    0    1  :2327
+   -      3     -    A    15        OR2                2    2    0    1  :2331
+   -      2     -    A    15        OR2                2    2    0    1  :2332
+   -      7     -    C    05        OR2                1    3    1    0  :2339
+   -      3     -    A    07        OR2                1    2    0    1  :2342
+   -      1     -    A    07        OR2                1    2    0    1  :2345
+   -      2     -    A    07        OR2                1    2    0    1  :2348
+   -      2     -    C    05        OR2                2    2    0    1  :2352
+   -      3     -    C    05        OR2                2    2    0    1  :2353
+   -      3     -    C    17        OR2                1    3    1    0  :2360
+   -      1     -    C    20        OR2                1    2    0    1  :2363
+   -      3     -    C    20        OR2                1    2    0    1  :2366
+   -      2     -    C    20        OR2                1    2    0    1  :2369
+   -      2     -    C    17        OR2                2    2    0    1  :2373
+   -      4     -    C    17        OR2                2    2    0    1  :2374
+   -      5     -    C    06        OR2                1    3    1    0  :2381
+   -      1     -    C    11        OR2                1    2    0    1  :2384
+   -      2     -    C    11        OR2                1    2    0    1  :2387
+   -      3     -    C    11        OR2                1    2    0    1  :2390
+   -      3     -    C    06        OR2                2    2    0    1  :2394
+   -      4     -    C    06        OR2                2    2    0    1  :2395
+   -      5     -    B    04        OR2                1    3    1    0  :2402
+   -      3     -    B    04        OR2                1    2    0    1  :2405
+   -      1     -    B    10        OR2                1    2    0    1  :2408
+   -      4     -    B    04        OR2                1    2    0    1  :2411
+   -      1     -    A    01        OR2                2    2    0    1  :2415
+   -      6     -    B    04        OR2                2    2    0    1  :2416
+   -      5     -    A    02        OR2                1    3    1    0  :2423
+   -      3     -    A    02        OR2                1    2    0    1  :2426
+   -      4     -    A    02        OR2                1    2    0    1  :2429
+   -      3     -    A    01        OR2                1    2    0    1  :2432
+   -      6     -    A    01        OR2                2    2    0    1  :2436
+   -      8     -    A    02        OR2                2    2    0    1  :2437
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       6/ 96(  6%)     5/ 48( 10%)     2/ 48(  4%)    2/16( 12%)      2/16( 12%)     0/16(  0%)
+B:       6/ 96(  6%)     6/ 48( 12%)     2/ 48(  4%)    2/16( 12%)      3/16( 18%)     0/16(  0%)
+C:      10/ 96( 10%)     5/ 48( 10%)     1/ 48(  2%)    5/16( 31%)      3/16( 18%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      2/24(  8%)     1/4( 25%)      0/4(  0%)       0/4(  0%)
+02:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+03:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      3/24( 12%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+20:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+** CLOCK SIGNALS **
+
+Type     Fan-out       Name
+INPUT       64         clock
+
+
+Device-Specific Information:                     c:\booksoft\chap6\bmemory.rpt
+bmemory
+
+** EQUATIONS **
+
+clock    : INPUT;
+Memwrite : INPUT;
+read_address0 : INPUT;
+read_address1 : INPUT;
+read_address2 : INPUT;
+write_address0 : INPUT;
+write_address1 : INPUT;
+write_address2 : INPUT;
+write_data0 : INPUT;
+write_data1 : INPUT;
+write_data2 : INPUT;
+write_data3 : INPUT;
+write_data4 : INPUT;
+write_data5 : INPUT;
+write_data6 : INPUT;
+write_data7 : INPUT;
+
+-- Node name is ':32' = 'memory0_0' 
+-- Equation name is 'memory0_0', location is LC6_A2, type is buried.
+memory0_0 = DFFE( _EQ001, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ001 = !_LC2_C13 &  memory0_0
+         #  memory0_0 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data0;
+
+-- Node name is ':31' = 'memory0_1' 
+-- Equation name is 'memory0_1', location is LC3_B10, type is buried.
+memory0_1 = DFFE( _EQ002, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ002 = !_LC2_C13 &  memory0_1
+         #  memory0_1 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data1;
+
+-- Node name is ':30' = 'memory0_2' 
+-- Equation name is 'memory0_2', location is LC5_C11, type is buried.
+memory0_2 = DFFE( _EQ003, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ003 = !_LC2_C13 &  memory0_2
+         #  memory0_2 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data2;
+
+-- Node name is ':29' = 'memory0_3' 
+-- Equation name is 'memory0_3', location is LC5_C20, type is buried.
+memory0_3 = DFFE( _EQ004, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ004 = !_LC2_C13 &  memory0_3
+         #  memory0_3 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data3;
+
+-- Node name is ':28' = 'memory0_4' 
+-- Equation name is 'memory0_4', location is LC6_A7, type is buried.
+memory0_4 = DFFE( _EQ005, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ005 = !_LC2_C13 &  memory0_4
+         #  memory0_4 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data4;
+
+-- Node name is ':27' = 'memory0_5' 
+-- Equation name is 'memory0_5', location is LC6_A18, type is buried.
+memory0_5 = DFFE( _EQ006, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ006 = !_LC2_C13 &  memory0_5
+         #  memory0_5 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data5;
+
+-- Node name is ':26' = 'memory0_6' 
+-- Equation name is 'memory0_6', location is LC6_B19, type is buried.
+memory0_6 = DFFE( _EQ007, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ007 = !_LC2_C13 &  memory0_6
+         #  memory0_6 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data6;
+
+-- Node name is ':25' = 'memory0_7' 
+-- Equation name is 'memory0_7', location is LC6_B3, type is buried.
+memory0_7 = DFFE( _EQ008, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ008 = !_LC2_C13 &  memory0_7
+         #  memory0_7 &  write_address0
+         #  _LC2_C13 & !write_address0 &  write_data7;
+
+-- Node name is ':40' = 'memory1_0' 
+-- Equation name is 'memory1_0', location is LC7_A2, type is buried.
+memory1_0 = DFFE( _EQ009, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ009 = !_LC2_C13 &  memory1_0
+         #  memory1_0 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data0;
+
+-- Node name is ':39' = 'memory1_1' 
+-- Equation name is 'memory1_1', location is LC2_B10, type is buried.
+memory1_1 = DFFE( _EQ010, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ010 = !_LC2_C13 &  memory1_1
+         #  memory1_1 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data1;
+
+-- Node name is ':38' = 'memory1_2' 
+-- Equation name is 'memory1_2', location is LC4_C11, type is buried.
+memory1_2 = DFFE( _EQ011, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ011 = !_LC2_C13 &  memory1_2
+         #  memory1_2 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data2;
+
+-- Node name is ':37' = 'memory1_3' 
+-- Equation name is 'memory1_3', location is LC4_C20, type is buried.
+memory1_3 = DFFE( _EQ012, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ012 = !_LC2_C13 &  memory1_3
+         #  memory1_3 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data3;
+
+-- Node name is ':36' = 'memory1_4' 
+-- Equation name is 'memory1_4', location is LC4_A7, type is buried.
+memory1_4 = DFFE( _EQ013, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ013 = !_LC2_C13 &  memory1_4
+         #  memory1_4 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data4;
+
+-- Node name is ':35' = 'memory1_5' 
+-- Equation name is 'memory1_5', location is LC4_A18, type is buried.
+memory1_5 = DFFE( _EQ014, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ014 = !_LC2_C13 &  memory1_5
+         #  memory1_5 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data5;
+
+-- Node name is ':34' = 'memory1_6' 
+-- Equation name is 'memory1_6', location is LC4_B19, type is buried.
+memory1_6 = DFFE( _EQ015, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ015 = !_LC2_C13 &  memory1_6
+         #  memory1_6 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data6;
+
+-- Node name is ':33' = 'memory1_7' 
+-- Equation name is 'memory1_7', location is LC5_B3, type is buried.
+memory1_7 = DFFE( _EQ016, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ016 = !_LC2_C13 &  memory1_7
+         #  memory1_7 & !write_address0
+         #  _LC2_C13 &  write_address0 &  write_data7;
+
+-- Node name is ':48' = 'memory2_0' 
+-- Equation name is 'memory2_0', location is LC8_A1, type is buried.
+memory2_0 = DFFE( _EQ017, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ017 = !_LC1_C14 &  memory2_0
+         #  memory2_0 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data0;
+
+-- Node name is ':47' = 'memory2_1' 
+-- Equation name is 'memory2_1', location is LC7_B4, type is buried.
+memory2_1 = DFFE( _EQ018, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ018 = !_LC1_C14 &  memory2_1
+         #  memory2_1 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data1;
+
+-- Node name is ':46' = 'memory2_2' 
+-- Equation name is 'memory2_2', location is LC6_C11, type is buried.
+memory2_2 = DFFE( _EQ019, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ019 = !_LC1_C14 &  memory2_2
+         #  memory2_2 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data2;
+
+-- Node name is ':45' = 'memory2_3' 
+-- Equation name is 'memory2_3', location is LC6_C20, type is buried.
+memory2_3 = DFFE( _EQ020, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ020 = !_LC1_C14 &  memory2_3
+         #  memory2_3 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data3;
+
+-- Node name is ':44' = 'memory2_4' 
+-- Equation name is 'memory2_4', location is LC5_A7, type is buried.
+memory2_4 = DFFE( _EQ021, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ021 = !_LC1_C14 &  memory2_4
+         #  memory2_4 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data4;
+
+-- Node name is ':43' = 'memory2_5' 
+-- Equation name is 'memory2_5', location is LC5_A18, type is buried.
+memory2_5 = DFFE( _EQ022, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ022 = !_LC1_C14 &  memory2_5
+         #  memory2_5 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data5;
+
+-- Node name is ':42' = 'memory2_6' 
+-- Equation name is 'memory2_6', location is LC5_B19, type is buried.
+memory2_6 = DFFE( _EQ023, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ023 = !_LC1_C14 &  memory2_6
+         #  memory2_6 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data6;
+
+-- Node name is ':41' = 'memory2_7' 
+-- Equation name is 'memory2_7', location is LC4_B8, type is buried.
+memory2_7 = DFFE( _EQ024, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ024 = !_LC1_C14 &  memory2_7
+         #  memory2_7 &  write_address0
+         #  _LC1_C14 & !write_address0 &  write_data7;
+
+-- Node name is ':56' = 'memory3_0' 
+-- Equation name is 'memory3_0', location is LC2_A9, type is buried.
+memory3_0 = DFFE( _EQ025, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ025 = !_LC1_C14 &  memory3_0
+         #  memory3_0 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data0;
+
+-- Node name is ':55' = 'memory3_1' 
+-- Equation name is 'memory3_1', location is LC8_B4, type is buried.
+memory3_1 = DFFE( _EQ026, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ026 = !_LC1_C14 &  memory3_1
+         #  memory3_1 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data1;
+
+-- Node name is ':54' = 'memory3_2' 
+-- Equation name is 'memory3_2', location is LC7_C11, type is buried.
+memory3_2 = DFFE( _EQ027, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ027 = !_LC1_C14 &  memory3_2
+         #  memory3_2 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data2;
+
+-- Node name is ':53' = 'memory3_3' 
+-- Equation name is 'memory3_3', location is LC7_C20, type is buried.
+memory3_3 = DFFE( _EQ028, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ028 = !_LC1_C14 &  memory3_3
+         #  memory3_3 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data3;
+
+-- Node name is ':52' = 'memory3_4' 
+-- Equation name is 'memory3_4', location is LC7_A7, type is buried.
+memory3_4 = DFFE( _EQ029, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ029 = !_LC1_C14 &  memory3_4
+         #  memory3_4 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data4;
+
+-- Node name is ':51' = 'memory3_5' 
+-- Equation name is 'memory3_5', location is LC7_A18, type is buried.
+memory3_5 = DFFE( _EQ030, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ030 = !_LC1_C14 &  memory3_5
+         #  memory3_5 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data5;
+
+-- Node name is ':50' = 'memory3_6' 
+-- Equation name is 'memory3_6', location is LC7_B19, type is buried.
+memory3_6 = DFFE( _EQ031, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ031 = !_LC1_C14 &  memory3_6
+         #  memory3_6 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data6;
+
+-- Node name is ':49' = 'memory3_7' 
+-- Equation name is 'memory3_7', location is LC6_B8, type is buried.
+memory3_7 = DFFE( _EQ032, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ032 = !_LC1_C14 &  memory3_7
+         #  memory3_7 & !write_address0
+         #  _LC1_C14 &  write_address0 &  write_data7;
+
+-- Node name is ':64' = 'memory4_0' 
+-- Equation name is 'memory4_0', location is LC4_A1, type is buried.
+memory4_0 = DFFE( _EQ033, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ033 = !_LC7_C13 &  memory4_0
+         #  memory4_0 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data0;
+
+-- Node name is ':63' = 'memory4_1' 
+-- Equation name is 'memory4_1', location is LC2_A1, type is buried.
+memory4_1 = DFFE( _EQ034, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ034 = !_LC7_C13 &  memory4_1
+         #  memory4_1 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data1;
+
+-- Node name is ':62' = 'memory4_2' 
+-- Equation name is 'memory4_2', location is LC7_C6, type is buried.
+memory4_2 = DFFE( _EQ035, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ035 = !_LC7_C13 &  memory4_2
+         #  memory4_2 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data2;
+
+-- Node name is ':61' = 'memory4_3' 
+-- Equation name is 'memory4_3', location is LC7_C17, type is buried.
+memory4_3 = DFFE( _EQ036, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ036 = !_LC7_C13 &  memory4_3
+         #  memory4_3 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data3;
+
+-- Node name is ':60' = 'memory4_4' 
+-- Equation name is 'memory4_4', location is LC6_C5, type is buried.
+memory4_4 = DFFE( _EQ037, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ037 = !_LC7_C13 &  memory4_4
+         #  memory4_4 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data4;
+
+-- Node name is ':59' = 'memory4_5' 
+-- Equation name is 'memory4_5', location is LC7_A15, type is buried.
+memory4_5 = DFFE( _EQ038, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ038 = !_LC7_C13 &  memory4_5
+         #  memory4_5 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data5;
+
+-- Node name is ':58' = 'memory4_6' 
+-- Equation name is 'memory4_6', location is LC7_B16, type is buried.
+memory4_6 = DFFE( _EQ039, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ039 = !_LC7_C13 &  memory4_6
+         #  memory4_6 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data6;
+
+-- Node name is ':57' = 'memory4_7' 
+-- Equation name is 'memory4_7', location is LC8_B3, type is buried.
+memory4_7 = DFFE( _EQ040, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ040 = !_LC7_C13 &  memory4_7
+         #  memory4_7 &  write_address0
+         #  _LC7_C13 & !write_address0 &  write_data7;
+
+-- Node name is ':72' = 'memory5_0' 
+-- Equation name is 'memory5_0', location is LC7_A1, type is buried.
+memory5_0 = DFFE( _EQ041, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ041 = !_LC7_C13 &  memory5_0
+         #  memory5_0 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data0;
+
+-- Node name is ':71' = 'memory5_1' 
+-- Equation name is 'memory5_1', location is LC5_A1, type is buried.
+memory5_1 = DFFE( _EQ042, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ042 = !_LC7_C13 &  memory5_1
+         #  memory5_1 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data1;
+
+-- Node name is ':70' = 'memory5_2' 
+-- Equation name is 'memory5_2', location is LC6_C6, type is buried.
+memory5_2 = DFFE( _EQ043, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ043 = !_LC7_C13 &  memory5_2
+         #  memory5_2 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data2;
+
+-- Node name is ':69' = 'memory5_3' 
+-- Equation name is 'memory5_3', location is LC6_C17, type is buried.
+memory5_3 = DFFE( _EQ044, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ044 = !_LC7_C13 &  memory5_3
+         #  memory5_3 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data3;
+
+-- Node name is ':68' = 'memory5_4' 
+-- Equation name is 'memory5_4', location is LC5_C5, type is buried.
+memory5_4 = DFFE( _EQ045, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ045 = !_LC7_C13 &  memory5_4
+         #  memory5_4 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data4;
+
+-- Node name is ':67' = 'memory5_5' 
+-- Equation name is 'memory5_5', location is LC5_A15, type is buried.
+memory5_5 = DFFE( _EQ046, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ046 = !_LC7_C13 &  memory5_5
+         #  memory5_5 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data5;
+
+-- Node name is ':66' = 'memory5_6' 
+-- Equation name is 'memory5_6', location is LC4_B16, type is buried.
+memory5_6 = DFFE( _EQ047, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ047 = !_LC7_C13 &  memory5_6
+         #  memory5_6 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data6;
+
+-- Node name is ':65' = 'memory5_7' 
+-- Equation name is 'memory5_7', location is LC7_B3, type is buried.
+memory5_7 = DFFE( _EQ048, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ048 = !_LC7_C13 &  memory5_7
+         #  memory5_7 & !write_address0
+         #  _LC7_C13 &  write_address0 &  write_data7;
+
+-- Node name is ':80' = 'memory6_0' 
+-- Equation name is 'memory6_0', location is LC1_A2, type is buried.
+memory6_0 = DFFE( _EQ049, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ049 = !_LC3_C13 &  memory6_0
+         #  memory6_0 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data0;
+
+-- Node name is ':79' = 'memory6_1' 
+-- Equation name is 'memory6_1', location is LC1_B4, type is buried.
+memory6_1 = DFFE( _EQ050, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ050 = !_LC3_C13 &  memory6_1
+         #  memory6_1 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data1;
+
+-- Node name is ':78' = 'memory6_2' 
+-- Equation name is 'memory6_2', location is LC1_C6, type is buried.
+memory6_2 = DFFE( _EQ051, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ051 = !_LC3_C13 &  memory6_2
+         #  memory6_2 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data2;
+
+-- Node name is ':77' = 'memory6_3' 
+-- Equation name is 'memory6_3', location is LC5_C17, type is buried.
+memory6_3 = DFFE( _EQ052, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ052 = !_LC3_C13 &  memory6_3
+         #  memory6_3 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data3;
+
+-- Node name is ':76' = 'memory6_4' 
+-- Equation name is 'memory6_4', location is LC4_C5, type is buried.
+memory6_4 = DFFE( _EQ053, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ053 = !_LC3_C13 &  memory6_4
+         #  memory6_4 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data4;
+
+-- Node name is ':75' = 'memory6_5' 
+-- Equation name is 'memory6_5', location is LC6_A15, type is buried.
+memory6_5 = DFFE( _EQ054, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ054 = !_LC3_C13 &  memory6_5
+         #  memory6_5 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data5;
+
+-- Node name is ':74' = 'memory6_6' 
+-- Equation name is 'memory6_6', location is LC6_B16, type is buried.
+memory6_6 = DFFE( _EQ055, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ055 = !_LC3_C13 &  memory6_6
+         #  memory6_6 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data6;
+
+-- Node name is ':73' = 'memory6_7' 
+-- Equation name is 'memory6_7', location is LC5_B8, type is buried.
+memory6_7 = DFFE( _EQ056, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ056 = !_LC3_C13 &  memory6_7
+         #  memory6_7 &  write_address0
+         #  _LC3_C13 & !write_address0 &  write_data7;
+
+-- Node name is ':88' = 'memory7_0' 
+-- Equation name is 'memory7_0', location is LC2_A2, type is buried.
+memory7_0 = DFFE( _EQ057, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ057 = !_LC3_C13 &  memory7_0
+         #  memory7_0 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data0;
+
+-- Node name is ':87' = 'memory7_1' 
+-- Equation name is 'memory7_1', location is LC2_B4, type is buried.
+memory7_1 = DFFE( _EQ058, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ058 = !_LC3_C13 &  memory7_1
+         #  memory7_1 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data1;
+
+-- Node name is ':86' = 'memory7_2' 
+-- Equation name is 'memory7_2', location is LC2_C6, type is buried.
+memory7_2 = DFFE( _EQ059, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ059 = !_LC3_C13 &  memory7_2
+         #  memory7_2 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data2;
+
+-- Node name is ':85' = 'memory7_3' 
+-- Equation name is 'memory7_3', location is LC1_C17, type is buried.
+memory7_3 = DFFE( _EQ060, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ060 = !_LC3_C13 &  memory7_3
+         #  memory7_3 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data3;
+
+-- Node name is ':84' = 'memory7_4' 
+-- Equation name is 'memory7_4', location is LC1_C5, type is buried.
+memory7_4 = DFFE( _EQ061, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ061 = !_LC3_C13 &  memory7_4
+         #  memory7_4 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data4;
+
+-- Node name is ':83' = 'memory7_5' 
+-- Equation name is 'memory7_5', location is LC1_A15, type is buried.
+memory7_5 = DFFE( _EQ062, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ062 = !_LC3_C13 &  memory7_5
+         #  memory7_5 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data5;
+
+-- Node name is ':82' = 'memory7_6' 
+-- Equation name is 'memory7_6', location is LC1_B16, type is buried.
+memory7_6 = DFFE( _EQ063, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ063 = !_LC3_C13 &  memory7_6
+         #  memory7_6 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data6;
+
+-- Node name is ':81' = 'memory7_7' 
+-- Equation name is 'memory7_7', location is LC2_B8, type is buried.
+memory7_7 = DFFE( _EQ064, GLOBAL( clock),  VCC,  VCC,  VCC);
+  _EQ064 = !_LC3_C13 &  memory7_7
+         #  memory7_7 & !write_address0
+         #  _LC3_C13 &  write_address0 &  write_data7;
+
+-- Node name is 'Memwrite~1' 
+-- Equation name is 'Memwrite~1', location is LC1_C14, type is buried.
+-- synthesized logic cell 
+_LC1_C14 = LCELL( _EQ065);
+  _EQ065 =  Memwrite &  write_address1 & !write_address2;
+
+-- Node name is 'Memwrite~2' 
+-- Equation name is 'Memwrite~2', location is LC2_C13, type is buried.
+-- synthesized logic cell 
+_LC2_C13 = LCELL( _EQ066);
+  _EQ066 =  Memwrite & !write_address1 & !write_address2;
+
+-- Node name is 'Memwrite~3' 
+-- Equation name is 'Memwrite~3', location is LC3_C13, type is buried.
+-- synthesized logic cell 
+_LC3_C13 = LCELL( _EQ067);
+  _EQ067 =  Memwrite &  write_address1 &  write_address2;
+
+-- Node name is 'Memwrite~4' 
+-- Equation name is 'Memwrite~4', location is LC7_C13, type is buried.
+-- synthesized logic cell 
+_LC7_C13 = LCELL( _EQ068);
+  _EQ068 =  Memwrite & !write_address1 &  write_address2;
+
+-- Node name is 'read_data0' 
+-- Equation name is 'read_data0', type is output 
+read_data0 =  _LC5_A2;
+
+-- Node name is 'read_data1' 
+-- Equation name is 'read_data1', type is output 
+read_data1 =  _LC5_B4;
+
+-- Node name is 'read_data2' 
+-- Equation name is 'read_data2', type is output 
+read_data2 =  _LC5_C6;
+
+-- Node name is 'read_data3' 
+-- Equation name is 'read_data3', type is output 
+read_data3 =  _LC3_C17;
+
+-- Node name is 'read_data4' 
+-- Equation name is 'read_data4', type is output 
+read_data4 =  _LC7_C5;
+
+-- Node name is 'read_data5' 
+-- Equation name is 'read_data5', type is output 
+read_data5 =  _LC4_A15;
+
+-- Node name is 'read_data6' 
+-- Equation name is 'read_data6', type is output 
+read_data6 =  _LC5_B16;
+
+-- Node name is 'read_data7' 
+-- Equation name is 'read_data7', type is output 
+read_data7 =  _LC4_B3;
+
+-- Node name is ':2276' 
+-- Equation name is '_LC4_B3', type is buried 
+_LC4_B3  = LCELL( _EQ069);
+  _EQ069 =  _LC3_B8 &  read_address2
+         #  _LC3_B3 &  read_address2
+         #  _LC1_B3 & !read_address2;
+
+-- Node name is ':2279' 
+-- Equation name is '_LC1_B3', type is buried 
+_LC1_B3  = LCELL( _EQ070);
+  _EQ070 =  _LC1_B8 &  read_address1
+         #  _LC2_B3 & !read_address1;
+
+-- Node name is ':2282' 
+-- Equation name is '_LC2_B3', type is buried 
+_LC2_B3  = LCELL( _EQ071);
+  _EQ071 =  memory0_7 & !read_address0
+         #  memory1_7 &  read_address0;
+
+-- Node name is ':2285' 
+-- Equation name is '_LC1_B8', type is buried 
+_LC1_B8  = LCELL( _EQ072);
+  _EQ072 =  memory2_7 & !read_address0
+         #  memory3_7 &  read_address0;
+
+-- Node name is ':2289' 
+-- Equation name is '_LC3_B3', type is buried 
+_LC3_B3  = LCELL( _EQ073);
+  _EQ073 =  memory4_7 & !read_address0 & !read_address1
+         #  memory5_7 &  read_address0 & !read_address1;
+
+-- Node name is ':2290' 
+-- Equation name is '_LC3_B8', type is buried 
+_LC3_B8  = LCELL( _EQ074);
+  _EQ074 =  memory6_7 & !read_address0 &  read_address1
+         #  memory7_7 &  read_address0 &  read_address1;
+
+-- Node name is ':2297' 
+-- Equation name is '_LC5_B16', type is buried 
+_LC5_B16 = LCELL( _EQ075);
+  _EQ075 =  _LC2_B16 &  read_address2
+         #  _LC3_B16 &  read_address2
+         #  _LC1_B19 & !read_address2;
+
+-- Node name is ':2300' 
+-- Equation name is '_LC1_B19', type is buried 
+_LC1_B19 = LCELL( _EQ076);
+  _EQ076 =  _LC2_B19 &  read_address1
+         #  _LC3_B19 & !read_address1;
+
+-- Node name is ':2303' 
+-- Equation name is '_LC3_B19', type is buried 
+_LC3_B19 = LCELL( _EQ077);
+  _EQ077 =  memory0_6 & !read_address0
+         #  memory1_6 &  read_address0;
+
+-- Node name is ':2306' 
+-- Equation name is '_LC2_B19', type is buried 
+_LC2_B19 = LCELL( _EQ078);
+  _EQ078 =  memory2_6 & !read_address0
+         #  memory3_6 &  read_address0;
+
+-- Node name is ':2310' 
+-- Equation name is '_LC3_B16', type is buried 
+_LC3_B16 = LCELL( _EQ079);
+  _EQ079 =  memory4_6 & !read_address0 & !read_address1
+         #  memory5_6 &  read_address0 & !read_address1;
+
+-- Node name is ':2311' 
+-- Equation name is '_LC2_B16', type is buried 
+_LC2_B16 = LCELL( _EQ080);
+  _EQ080 =  memory6_6 & !read_address0 &  read_address1
+         #  memory7_6 &  read_address0 &  read_address1;
+
+-- Node name is ':2318' 
+-- Equation name is '_LC4_A15', type is buried 
+_LC4_A15 = LCELL( _EQ081);
+  _EQ081 =  _LC2_A15 &  read_address2
+         #  _LC3_A15 &  read_address2
+         #  _LC2_A18 & !read_address2;
+
+-- Node name is ':2321' 
+-- Equation name is '_LC2_A18', type is buried 
+_LC2_A18 = LCELL( _EQ082);
+  _EQ082 =  _LC1_A18 &  read_address1
+         #  _LC3_A18 & !read_address1;
+
+-- Node name is ':2324' 
+-- Equation name is '_LC3_A18', type is buried 
+_LC3_A18 = LCELL( _EQ083);
+  _EQ083 =  memory0_5 & !read_address0
+         #  memory1_5 &  read_address0;
+
+-- Node name is ':2327' 
+-- Equation name is '_LC1_A18', type is buried 
+_LC1_A18 = LCELL( _EQ084);
+  _EQ084 =  memory2_5 & !read_address0
+         #  memory3_5 &  read_address0;
+
+-- Node name is ':2331' 
+-- Equation name is '_LC3_A15', type is buried 
+_LC3_A15 = LCELL( _EQ085);
+  _EQ085 =  memory4_5 & !read_address0 & !read_address1
+         #  memory5_5 &  read_address0 & !read_address1;
+
+-- Node name is ':2332' 
+-- Equation name is '_LC2_A15', type is buried 
+_LC2_A15 = LCELL( _EQ086);
+  _EQ086 =  memory6_5 & !read_address0 &  read_address1
+         #  memory7_5 &  read_address0 &  read_address1;
+
+-- Node name is ':2339' 
+-- Equation name is '_LC7_C5', type is buried 
+_LC7_C5  = LCELL( _EQ087);
+  _EQ087 =  _LC3_C5 &  read_address2
+         #  _LC2_C5 &  read_address2
+         #  _LC3_A7 & !read_address2;
+
+-- Node name is ':2342' 
+-- Equation name is '_LC3_A7', type is buried 
+_LC3_A7  = LCELL( _EQ088);
+  _EQ088 =  _LC2_A7 &  read_address1
+         #  _LC1_A7 & !read_address1;
+
+-- Node name is ':2345' 
+-- Equation name is '_LC1_A7', type is buried 
+_LC1_A7  = LCELL( _EQ089);
+  _EQ089 =  memory0_4 & !read_address0
+         #  memory1_4 &  read_address0;
+
+-- Node name is ':2348' 
+-- Equation name is '_LC2_A7', type is buried 
+_LC2_A7  = LCELL( _EQ090);
+  _EQ090 =  memory2_4 & !read_address0
+         #  memory3_4 &  read_address0;
+
+-- Node name is ':2352' 
+-- Equation name is '_LC2_C5', type is buried 
+_LC2_C5  = LCELL( _EQ091);
+  _EQ091 =  memory4_4 & !read_address0 & !read_address1
+         #  memory5_4 &  read_address0 & !read_address1;
+
+-- Node name is ':2353' 
+-- Equation name is '_LC3_C5', type is buried 
+_LC3_C5  = LCELL( _EQ092);
+  _EQ092 =  memory6_4 & !read_address0 &  read_address1
+         #  memory7_4 &  read_address0 &  read_address1;
+
+-- Node name is ':2360' 
+-- Equation name is '_LC3_C17', type is buried 
+_LC3_C17 = LCELL( _EQ093);
+  _EQ093 =  _LC4_C17 &  read_address2
+         #  _LC2_C17 &  read_address2
+         #  _LC1_C20 & !read_address2;
+
+-- Node name is ':2363' 
+-- Equation name is '_LC1_C20', type is buried 
+_LC1_C20 = LCELL( _EQ094);
+  _EQ094 =  _LC2_C20 &  read_address1
+         #  _LC3_C20 & !read_address1;
+
+-- Node name is ':2366' 
+-- Equation name is '_LC3_C20', type is buried 
+_LC3_C20 = LCELL( _EQ095);
+  _EQ095 =  memory0_3 & !read_address0
+         #  memory1_3 &  read_address0;
+
+-- Node name is ':2369' 
+-- Equation name is '_LC2_C20', type is buried 
+_LC2_C20 = LCELL( _EQ096);
+  _EQ096 =  memory2_3 & !read_address0
+         #  memory3_3 &  read_address0;
+
+-- Node name is ':2373' 
+-- Equation name is '_LC2_C17', type is buried 
+_LC2_C17 = LCELL( _EQ097);
+  _EQ097 =  memory4_3 & !read_address0 & !read_address1
+         #  memory5_3 &  read_address0 & !read_address1;
+
+-- Node name is ':2374' 
+-- Equation name is '_LC4_C17', type is buried 
+_LC4_C17 = LCELL( _EQ098);
+  _EQ098 =  memory6_3 & !read_address0 &  read_address1
+         #  memory7_3 &  read_address0 &  read_address1;
+
+-- Node name is ':2381' 
+-- Equation name is '_LC5_C6', type is buried 
+_LC5_C6  = LCELL( _EQ099);
+  _EQ099 =  _LC4_C6 &  read_address2
+         #  _LC3_C6 &  read_address2
+         #  _LC1_C11 & !read_address2;
+
+-- Node name is ':2384' 
+-- Equation name is '_LC1_C11', type is buried 
+_LC1_C11 = LCELL( _EQ100);
+  _EQ100 =  _LC3_C11 &  read_address1
+         #  _LC2_C11 & !read_address1;
+
+-- Node name is ':2387' 
+-- Equation name is '_LC2_C11', type is buried 
+_LC2_C11 = LCELL( _EQ101);
+  _EQ101 =  memory0_2 & !read_address0
+         #  memory1_2 &  read_address0;
+
+-- Node name is ':2390' 
+-- Equation name is '_LC3_C11', type is buried 
+_LC3_C11 = LCELL( _EQ102);
+  _EQ102 =  memory2_2 & !read_address0
+         #  memory3_2 &  read_address0;
+
+-- Node name is ':2394' 
+-- Equation name is '_LC3_C6', type is buried 
+_LC3_C6  = LCELL( _EQ103);
+  _EQ103 =  memory4_2 & !read_address0 & !read_address1
+         #  memory5_2 &  read_address0 & !read_address1;
+
+-- Node name is ':2395' 
+-- Equation name is '_LC4_C6', type is buried 
+_LC4_C6  = LCELL( _EQ104);
+  _EQ104 =  memory6_2 & !read_address0 &  read_address1
+         #  memory7_2 &  read_address0 &  read_address1;
+
+-- Node name is ':2402' 
+-- Equation name is '_LC5_B4', type is buried 
+_LC5_B4  = LCELL( _EQ105);
+  _EQ105 =  _LC6_B4 &  read_address2
+         #  _LC1_A1 &  read_address2
+         #  _LC3_B4 & !read_address2;
+
+-- Node name is ':2405' 
+-- Equation name is '_LC3_B4', type is buried 
+_LC3_B4  = LCELL( _EQ106);
+  _EQ106 =  _LC4_B4 &  read_address1
+         #  _LC1_B10 & !read_address1;
+
+-- Node name is ':2408' 
+-- Equation name is '_LC1_B10', type is buried 
+_LC1_B10 = LCELL( _EQ107);
+  _EQ107 =  memory0_1 & !read_address0
+         #  memory1_1 &  read_address0;
+
+-- Node name is ':2411' 
+-- Equation name is '_LC4_B4', type is buried 
+_LC4_B4  = LCELL( _EQ108);
+  _EQ108 =  memory2_1 & !read_address0
+         #  memory3_1 &  read_address0;
+
+-- Node name is ':2415' 
+-- Equation name is '_LC1_A1', type is buried 
+_LC1_A1  = LCELL( _EQ109);
+  _EQ109 =  memory4_1 & !read_address0 & !read_address1
+         #  memory5_1 &  read_address0 & !read_address1;
+
+-- Node name is ':2416' 
+-- Equation name is '_LC6_B4', type is buried 
+_LC6_B4  = LCELL( _EQ110);
+  _EQ110 =  memory6_1 & !read_address0 &  read_address1
+         #  memory7_1 &  read_address0 &  read_address1;
+
+-- Node name is ':2423' 
+-- Equation name is '_LC5_A2', type is buried 
+_LC5_A2  = LCELL( _EQ111);
+  _EQ111 =  _LC8_A2 &  read_address2
+         #  _LC6_A1 &  read_address2
+         #  _LC3_A2 & !read_address2;
+
+-- Node name is ':2426' 
+-- Equation name is '_LC3_A2', type is buried 
+_LC3_A2  = LCELL( _EQ112);
+  _EQ112 =  _LC3_A1 &  read_address1
+         #  _LC4_A2 & !read_address1;
+
+-- Node name is ':2429' 
+-- Equation name is '_LC4_A2', type is buried 
+_LC4_A2  = LCELL( _EQ113);
+  _EQ113 =  memory0_0 & !read_address0
+         #  memory1_0 &  read_address0;
+
+-- Node name is ':2432' 
+-- Equation name is '_LC3_A1', type is buried 
+_LC3_A1  = LCELL( _EQ114);
+  _EQ114 =  memory2_0 & !read_address0
+         #  memory3_0 &  read_address0;
+
+-- Node name is ':2436' 
+-- Equation name is '_LC6_A1', type is buried 
+_LC6_A1  = LCELL( _EQ115);
+  _EQ115 =  memory4_0 & !read_address0 & !read_address1
+         #  memory5_0 &  read_address0 & !read_address1;
+
+-- Node name is ':2437' 
+-- Equation name is '_LC8_A2', type is buried 
+_LC8_A2  = LCELL( _EQ116);
+  _EQ116 =  memory6_0 & !read_address0 &  read_address1
+         #  memory7_0 &  read_address0 &  read_address1;
+
+
+
+Project Information                              c:\booksoft\chap6\bmemory.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:01
+   Logic Synthesizer                      00:00:01
+   Partitioner                            00:00:00
+   Fitter                                 00:00:01
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:03
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 13,957K

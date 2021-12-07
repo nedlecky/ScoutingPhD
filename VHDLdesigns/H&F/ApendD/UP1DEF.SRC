@@ -1,0 +1,58 @@
+ITLE	 ASSEMBLY LANGUAGE DEFINITION FILE FOR UP1 COMPUTER DESIGN
+WORD	 16
+WIDTH	 72
+LINES	 50
+;**********************************************************************
+;		UP1 Instruction Format
+;             ________________________
+;             | Opcode    |  Address |
+;             | 8-bits    |  8-bits  |
+;             |___________|__________|
+;**********************************************************************
+; INSTRUCTION OPCODE LABELS - MUST BE 8-BITS, 2 Hex DIGITS
+;**********************************************************************
+LADD:	      EQU     H#00
+LSTORE:	      EQU     H#01
+LLOAD:	      EQU     H#02
+LJUMP:	      EQU     H#03
+LJNEG:	      EQU     H#04
+LSUB:	      EQU     H#05
+LXOR:	      EQU     H#06
+LOR:	      EQU     H#07
+LAND:	      EQU     H#08
+LJPOS:	      EQU     H#09
+LZERO:	      EQU     H#0A
+LADDI:	      EQU     H#0B
+LSHL:	      EQU     H#0C
+LSHR:	      EQU     H#0D
+LIN:	      EQU     H#0E
+LOUT:         EQU     H#0F
+LWAIT:        EQU     H#10
+;**********************************************************************
+; DATA PSEUDO OPS
+;**********************************************************************
+;DB:	    DEF	    8VH#00     ;8-BIT DATA DIRECTIVE
+DW:	    DEF     16VH#0000  ;16-BIT DATA DIRECTIVE
+;**********************************************************************
+;ASSEMBLY LANGUAGE INSTRUCTIONS
+;**********************************************************************
+ADD:	    DEF     LADD,8VH#00
+STORE:	    DEF     LSTORE,8VH#00
+LOAD:	    DEF     LLOAD,8VH#00
+JUMP:	    DEF     LJUMP,8VH#00
+JNEG:	    DEF     LJNEG,8VH#00
+SUBT:	    DEF     LSUB,8VH#00
+XOR:	    DEF     LXOR,8VH#00
+OR:	    DEF     LOR,8VH#00
+AND:	    DEF     LAND,8VH#00
+JPOS:	    DEF     LJPOS,8VH#00
+ZERO:	    DEF     LZERO,8VH#00
+ADDI:	    DEF     LADDI,8VH#00
+SHL:	    DEF     LSHL,H#0,3VH#0
+SHR:	    DEF     LSHR,H#0,3VH#0
+IN:	    DEF     LIN,8VH#00
+OUT:	    DEF     LOUT,8VH#00
+WAIT:	    DEF     LWAIT,8VH#00
+END
+
+

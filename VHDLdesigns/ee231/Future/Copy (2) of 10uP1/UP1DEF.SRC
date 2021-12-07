@@ -1,0 +1,35 @@
+TITLE	 ASSEMBLY LANGUAGE DEFINITION FILE FOR MOST BASIC UP1 COMPUTER DESIGN
+WORD	 16
+WIDTH	 72
+LINES	 50
+
+;**********************************************************************
+;		UP1 Instruction Format
+;             ________________________
+;             | Opcode    |  Address |
+;             | 8-bits    |  8-bits  |
+;             |___________|__________|
+
+;**********************************************************************
+; INSTRUCTION OPCODE LABELS - MUST BE 8-BITS, 2 Hex DIGITS
+;**********************************************************************
+LADD:	      EQU	H#00
+LSTORE:	EQU	H#01
+LLOAD:	EQU	H#02
+LJUMP:	EQU	H#03
+
+;**********************************************************************
+; DATA PSEUDO OPS
+;**********************************************************************
+DW:		DEF	16VH#0000  ;16-BIT DATA DIRECTIVE
+
+;**********************************************************************
+;ASSEMBLY LANGUAGE INSTRUCTIONS
+;**********************************************************************
+ADD:		DEF	LADD,8VH#00
+STORE:	DEF	LSTORE,8VH#00
+LOAD:		DEF	LLOAD,8VH#00
+JUMP:		DEF	LJUMP,8VH#00
+END
+
+

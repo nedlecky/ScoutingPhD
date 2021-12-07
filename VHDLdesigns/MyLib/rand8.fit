@@ -1,0 +1,69 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 01/27/2002 17:59:35      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "rand8"
+BEGIN
+
+    DEVICE = "EPM7032SLC44-5";
+
+    "clk"                          : INPUT_PIN  = 43     ;
+    "rnd0"                         : OUTPUT_PIN = 34     ; -- LC23
+    "rnd1"                         : OUTPUT_PIN = 33     ; -- LC24
+    "rnd2"                         : OUTPUT_PIN = 37     ; -- LC21
+    "rnd3"                         : OUTPUT_PIN = 40     ; -- LC18
+    "rnd4"                         : OUTPUT_PIN = 41     ; -- LC17
+    "rnd5"                         : OUTPUT_PIN = 36     ; -- LC22
+    "rnd6"                         : OUTPUT_PIN = 39     ; -- LC19
+    "rnd7"                         : OUTPUT_PIN = 31     ; -- LC26
+    "~1~1"                         : LOCATION   = LC27   ; -- PIN 29
+    "~2~1"                         : LOCATION   = LC28   ; -- PIN 28
+    "~3~1"                         : LOCATION   = LC20   ; -- PIN 38
+    "~4~1"                         : LOCATION   = LC32   ; -- PIN 24
+    "~5~1"                         : LOCATION   = LC31   ; -- PIN 25
+    "~6~1"                         : LOCATION   = LC30   ; -- PIN 26
+    "~7~1"                         : LOCATION   = LC29   ; -- PIN 27
+    "~8~1"                         : LOCATION   = LC25   ; -- PIN 32
+
+END;
+
+INTERNAL_INFO "rand8"
+BEGIN
+	DEVICE = EPM7032SLC44-5;
+	LC26    : LORAX = "G39R0";
+	LC19    : LORAX = "G15R0";
+	LC22    : LORAX = "G31R0";
+	LC17    : LORAX = "G13R0";
+	LC18    : LORAX = "G14R0";
+	LC21    : LORAX = "G30R0";
+	LC24    : LORAX = "G33R0";
+	LC23    : LORAX = "G32R0";
+	LC25    : LORAX = "G38R0,PA18R0C1";
+	LC30    : LORAX = "G56R0,PA30R0C1";
+	LC29    : LORAX = "G55R0,PA27R0C1";
+	LC31    : LORAX = "G57R0,PA28R0C1";
+	LC32    : LORAX = "G58R0,PA29R0C1";
+	LC20    : LORAX = "G16R0,PA1R0C1";
+	LC28    : LORAX = "G41R0,PA20R0C1";
+	LC27    : LORAX = "G40R0,PA19R0C1";
+END;

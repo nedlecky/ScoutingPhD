@@ -1,0 +1,116 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "rippleaddn" ASSIGNED TO AN EPF10K10LC84-3
+x6                               : 1
+x14                              : 2
+x1                               : 3
+VCCINT                           : 4
+x5                               : 5
+RESERVED                         : 6
+y7                               : 7
+y4                               : 8
+s14                              : 9
+cnm1                             : 10
+y5                               : 11
+DATA0                            : 12
+DCLK                             : 13
+nCE                              : 14
+TDI                              : 15
+s1                               : 16
+s0                               : 17
+s3                               : 18
+y1                               : 19
+VCCINT                           : 20
+x15                              : 21
+s13                              : 22
+s15                              : 23
+s16                              : 24
+s12                              : 25
+GNDINT                           : 26
+s6                               : 27
+s5                               : 28
+s4                               : 29
+s7                               : 30
+MSEL0                            : 31
+MSEL1                            : 32
+VCCINT                           : 33
+nCONFIG                          : 34
+s2                               : 35
+RESERVED                         : 36
+y12                              : 37
+RESERVED                         : 38
+x3                               : 39
+VCCINT                           : 40
+GNDINT                           : 41
+x12                              : 42
+x4                               : 43
+x10                              : 44
+VCCINT                           : 45
+GNDINT                           : 46
+RESERVED                         : 47
+s10                              : 48
+s8                               : 49
+x11                              : 50
+y8                               : 51
+RESERVED                         : 52
+y10                              : 53
+y9                               : 54
+nSTATUS                          : 55
+TRST                             : 56
+TMS                              : 57
+x7                               : 58
+y6                               : 59
+s11                              : 60
+s9                               : 61
+x9                               : 62
+VCCINT                           : 63
+x13                              : 64
+y13                              : 65
+y15                              : 66
+y14                              : 67
+GNDINT                           : 68
+x0                               : 69
+x2                               : 70
+y3                               : 71
+y0                               : 72
+y2                               : 73
+TDO                              : 74
+nCEO                             : 75
+CONF_DONE                        : 76
+TCK                              : 77
+RESERVED                         : 78
+RESERVED                         : 79
+RESERVED                         : 80
+RESERVED                         : 81
+GNDINT                           : 82
+y11                              : 83
+x8                               : 84

@@ -1,0 +1,36 @@
+; Identical function to uP2 Test Program
+; Avoids pseudo-instructions in the loop
+; Dr. Ned Lecky
+; University of Vermont: EE 231 Digital Computer Design I
+
+TITLE EXAMPLE MIPS COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+LINES 50
+LIST F,W
+ORG H#00
+
+; Read in Instruction Macro Definitions
+INCLUDE MIPS.MAC
+
+;__________________________________________________________________
+;PROGRAM START
+;__________________________________________________________________
+
+start:	add	r1,r0,r0		; clear r1 (sum)
+		;addi	r2,h#0001,r0	; r2=1 (for decr)
+		lw	r2,const1%:,r0	; since no immediate yet, use memory=1
+		lw	r3,count%:,r0	; r3=count
+loop:		subt	r3,r3,r2		; decr count (note r2=1)
+		lw	r4,array%:,r3	; get array element into r4
+		add	r1,r4,r1		; sum it into r1
+		bne	r3,r0,loop%:	; wait until count=0
+		sw	r1,sum%:,r0		; save answer
+done:		beq	r0,r0,done%:	; all done
+
+;__________________________________________________________________
+; ADDRESSES FOR DATA VALUES
+;__________________________________________________________________
+count:	equ	h#20	; will contain count
+sum:		equ	h#21	; will get result
+const1:	equ	h#22	; will contain 1
+array:	equ	h#30	; start of data
+END

@@ -1,0 +1,29 @@
+-- List Summer based on program2.asm
+Depth = 256;
+Width = 32;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+[00..FF]: 00000000; -- nop (add r0,r0,r0)
+
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+00: 00421026;  --xor $2, $2, $2                    ; 9: xor  $2,$2,$2
+01: 3c011000;  --lui $1, 4096 [count]              ; 10: lw   $3,count
+02: 8c230020;  --lw $3, 32($1) [count]
+03: 00631820;  --add $3, $3, $3                    ; 11: add  $3,$3,$3
+04: 00631820;  --add $3, $3, $3                    ; 12: add  $3,$3,$3
+05: 3c011000;  --lui $1, 4096 [array]              ; 13: la   $4,array
+06: 34240030;  --ori $4, $1, 48 [array]
+07: 00832820;  --add $5, $4, $3                    ; 14: add  $5,$4,$3
+08: 20a5fffc;  --addi $5, $5, -4                   ; 15: loop: addi $5,$5,-4
+09: 8ca60000;  --lw $6, 0($5)                      ; 16: lw   $6,($5)
+0A: 00c21020;  --add $2, $6, $2                    ; 17: add  $2,$6,$2
+0B: 14a4fffd;  --bne $5, $4 ,-12 [loop-0x0040002c] ; 18: bne  $5,$4,loop
+0C: 3c011000;  --lui $1, 4096 [sum]                ; 19: sw   $2,sum
+0D: ac220024;  --sw $2, 36($1) [sum]
+0E: 0810000e;  --j 0x00400038 [end]                ; 20: j end
+End;

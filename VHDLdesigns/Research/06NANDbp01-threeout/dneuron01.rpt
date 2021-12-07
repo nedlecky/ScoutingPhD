@@ -1,0 +1,2238 @@
+Project Information     e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 01/29/2002 11:35:50
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+dneuron01
+      EPM7128SLC84-6       7        6        0      108     65          84 %
+
+User Pins:                 7        6        0  
+
+
+
+Project Information     e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clk' chosen for auto global Clock
+
+
+Project Information     e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+
+** FILE HIERARCHY **
+
+
+
+|syn_mux:21|
+|syn_mux:1|
+|syn_mux:17|
+|syn_mux:20|
+|syn_mux:19|
+|nand5:33|
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+***** Logic for device 'dneuron01' compiled without errors.
+
+
+
+
+Device: EPM7128SLC84-6
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+    MultiVolt I/O                              = OFF
+
+                       R           R                    R  R  R     R  R  R  
+                       E           E                    E  E  E     E  E  E  
+                       S           S  V                 S  S  S     S  S  S  
+                       E           E  C                 E  E  E  V  E  E  E  
+                       R           R  C                 R  R  R  C  R  R  R  
+                       V  G  e     V  I     G  G  c  G  V  V  V  C  V  V  V  
+              x  x  x  E  N  r  e  E  N  x  N  N  l  N  E  E  E  I  E  E  E  
+              4  3  1  D  D  r  1  D  T  2  D  D  k  D  D  D  D  O  D  D  D  
+            -----------------------------------------------------------------_ 
+          /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
+      x5 | 12                                                              74 | RESERVED 
+   VCCIO | 13                                                              73 | RESERVED 
+    #TDI | 14                                                              72 | GND 
+RESERVED | 15                                                              71 | #TDO 
+RESERVED | 16                                                              70 | RESERVED 
+RESERVED | 17                                                              69 | RESERVED 
+RESERVED | 18                                                              68 | RESERVED 
+     GND | 19                                                              67 | RESERVED 
+RESERVED | 20                                                              66 | VCCIO 
+RESERVED | 21                                                              65 | RESERVED 
+RESERVED | 22                        EPM7128SLC84-6                        64 | RESERVED 
+    #TMS | 23                                                              63 | RESERVED 
+RESERVED | 24                                                              62 | #TCK 
+RESERVED | 25                                                              61 | RESERVED 
+   VCCIO | 26                                                              60 | RESERVED 
+RESERVED | 27                                                              59 | GND 
+RESERVED | 28                                                              58 | RESERVED 
+RESERVED | 29                                                              57 | RESERVED 
+       y | 30                                                              56 | RESERVED 
+      e4 | 31                                                              55 | e3 
+     GND | 32                                                              54 | RESERVED 
+         |_  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  _| 
+           ------------------------------------------------------------------ 
+              R  R  R  R  R  V  R  R  e  G  V  e  R  R  G  R  R  R  R  R  V  
+              E  E  E  E  E  C  E  E  2  N  C  5  E  E  N  E  E  E  E  E  C  
+              S  S  S  S  S  C  S  S     D  C     S  S  D  S  S  S  S  S  C  
+              E  E  E  E  E  I  E  E        I     E  E     E  E  E  E  E  I  
+              R  R  R  R  R  O  R  R        N     R  R     R  R  R  R  R  O  
+              V  V  V  V  V     V  V        T     V  V     V  V  V  V  V     
+              E  E  E  E  E     E  E              E  E     E  E  E  E  E     
+              D  D  D  D  D     D  D              D  D     D  D  D  D  D     
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     4/16( 25%)   6/ 8( 75%)   0/16(  0%)  19/36( 52%) 
+B:    LC17 - LC32    13/16( 81%)   1/ 8( 12%)  11/16( 68%)  20/36( 55%) 
+C:    LC33 - LC48    16/16(100%)   3/ 8( 37%)  16/16(100%)  32/36( 88%) 
+D:    LC49 - LC64    13/16( 81%)   1/ 8( 12%)  16/16(100%)  32/36( 88%) 
+E:    LC65 - LC80    15/16( 93%)   1/ 8( 12%)  16/16(100%)  32/36( 88%) 
+F:    LC81 - LC96    15/16( 93%)   2/ 8( 25%)  16/16(100%)  32/36( 88%) 
+G:   LC97 - LC112    16/16(100%)   1/ 8( 12%)  16/16(100%)  28/36( 77%) 
+H:  LC113 - LC128    16/16(100%)   0/ 8(  0%)  16/16(100%)  28/36( 77%) 
+
+
+Total dedicated input pins used:                 2/4      ( 50%)
+Total I/O pins used:                            15/64     ( 23%)
+Total logic cells used:                        108/128    ( 84%)
+Total shareable expanders used:                 65/128    ( 50%)
+Total Turbo logic cells used:                  108/128    ( 84%)
+Total shareable expanders not available (n/a):  42/128    ( 32%)
+Average fan-in:                                  8.11
+Total fan-in:                                   876
+
+Total input pins required:                       7
+Total fast input logic cells required:           0
+Total output pins required:                      6
+Total bidirectional pins required:               0
+Total reserved pins required                     4
+Total logic cells required:                    108
+Total flipflops required:                       35
+Total product terms required:                  406
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          65
+
+Synthesized logic cells:                        72/ 128   ( 56%)
+
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  83      -   -       INPUT  G            0      0   0    0    0    0    0  clk
+   6   (13)  (A)      INPUT               0      0   0    0    0    0   14  err
+   9    (8)  (A)      INPUT               0      0   0    0    0    1   39  x1
+   2      -   -       INPUT               0      0   0    0    0    1   39  x2
+  10    (6)  (A)      INPUT               0      0   0    0    0    1   37  x3
+  11    (5)  (A)      INPUT               0      0   0    0    0    1   34  x4
+  12    (3)  (A)      INPUT               0      0   0    0    0    1   31  x5
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   5     14    A         FF   +  t        0      0   0    0    5    1    0  e1
+  41     49    D         FF   +  t        0      0   0    0    5    1    0  e2
+  55     85    F         FF   +  t        0      0   0    0    5    1    0  e3
+  31     35    C         FF   +  t        0      0   0    0    5    1    0  e4
+  44     65    E         FF   +  t        0      0   0    0    5    1    0  e5
+  30     37    C     OUTPUT      t       10      0   0    5   11    0    0  y
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -    113    H       SOFT    s t        1      0   1    5   10    1    0  |NAND5:33|~1~1~2
+   -    119    H       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:1|random3 (|SYN_MUX:1|:12)
+ (76)   120    H       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:1|random2 (|SYN_MUX:1|:13)
+ (77)   123    H       DFFE   +  t        0      0   0    0    1    1    2  |SYN_MUX:1|random1 (|SYN_MUX:1|:14)
+   -    121    H       DFFE   +  t        0      0   0    0    1    1    3  |SYN_MUX:1|random0 (|SYN_MUX:1|:15)
+   -     33    C       DFFE   +  t        0      0   0    0    6    2   35  |SYN_MUX:1|setup1 (|SYN_MUX:1|:17)
+ (12)     3    A       DFFE   +  t        0      0   0    0    3    1   46  |SYN_MUX:1|setup0 (|SYN_MUX:1|:18)
+   -     54    D       SOFT    s t        0      0   0    0    4    0    1  |SYN_MUX:1|~529~1
+   -     55    D       SOFT    s t        0      0   0    1    4    0    1  |SYN_MUX:1|~539~1
+   -    122    H       SOFT    s t        9      8   1    6   18    0    1  |SYN_MUX:1|~563~1
+   -    124    H       SOFT    s t        9      8   1    6   18    0    1  |SYN_MUX:1|~564~1
+ (80)   126    H       SOFT    s t        1      0   1    5   10    0    3  |SYN_MUX:1|~564~2
+ (65)   101    G       SOFT    s t        1      0   1    5    9    0    3  |SYN_MUX:1|~564~3
+ (24)    46    C       SOFT    s t        1      0   1    3    9    0    3  |SYN_MUX:1|~564~4
+ (79)   125    H       SOFT    s t        1      0   1    1    8    0    3  |SYN_MUX:1|~564~5
+   -     31    B       SOFT    s t        1      0   1    4    7    0    3  |SYN_MUX:1|~564~6
+ (15)    29    B       SOFT    s t        1      0   1    5    6    0    3  |SYN_MUX:1|~564~7
+   -    114    H       SOFT    s t        9      8   1    6   18    1    1  |SYN_MUX:1|~565~1
+ (73)   115    H      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:1|~614~1
+   -    116    H      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:1|~615~1
+ (74)   117    H      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:1|~616~1
+ (75)   118    H      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:1|~617~1
+ (70)   109    G       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:17|random3 (|SYN_MUX:17|:12)
+ (68)   105    G       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:17|random2 (|SYN_MUX:17|:13)
+ (67)   104    G       DFFE   +  t        0      0   0    0    1    1    2  |SYN_MUX:17|random1 (|SYN_MUX:17|:14)
+ (63)    97    G       DFFE   +  t        0      0   0    0    1    1    3  |SYN_MUX:17|random0 (|SYN_MUX:17|:15)
+ (29)    38    C       DFFE   +  t        0      0   0    0    6    2   37  |SYN_MUX:17|setup1 (|SYN_MUX:17|:17)
+   -     58    D       DFFE   +  t        0      0   0    0    3    1   46  |SYN_MUX:17|setup0 (|SYN_MUX:17|:18)
+   -     60    D       SOFT    s t        0      0   0    0    4    0    1  |SYN_MUX:17|~529~1
+   -     62    D       SOFT    s t        0      0   0    1    4    0    1  |SYN_MUX:17|~539~1
+   -     87    F       SOFT    s t       14     13   1    6   17    0    1  |SYN_MUX:17|~563~1
+   -     90    F       SOFT    s t       14     13   1    6   17    0    1  |SYN_MUX:17|~564~1
+   -    127    H       SOFT    s t        1      0   1    5   10    0    3  |SYN_MUX:17|~564~2
+   -     98    G       SOFT    s t        1      0   1    5    9    0    3  |SYN_MUX:17|~564~3
+   -     34    C       SOFT    s t        1      0   1    3    9    0    3  |SYN_MUX:17|~564~4
+ (14)    32    B       SOFT    s t        1      0   1    1    8    0    3  |SYN_MUX:17|~564~5
+ (22)    17    B       SOFT    s t        1      0   1    4    7    0    3  |SYN_MUX:17|~564~6
+ (57)    88    F       SOFT    s t       14     13   1    6   17    1    1  |SYN_MUX:17|~565~1
+ (64)    99    G      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:17|~614~1
+ (71)   112    G      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:17|~615~1
+   -    102    G      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:17|~616~1
+   -    103    G      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:17|~617~1
+ (23)    48    C       DFFE   +  t        0      0   0    0    1    0    3  |SYN_MUX:19|random3 (|SYN_MUX:19|:12)
+ (54)    83    F       DFFE   +  t        0      0   0    0    1    0    3  |SYN_MUX:19|random2 (|SYN_MUX:19|:13)
+   -     95    F       DFFE   +  t        0      0   0    0    1    1    2  |SYN_MUX:19|random1 (|SYN_MUX:19|:14)
+ (60)    93    F       DFFE   +  t        0      0   0    0    1    1    3  |SYN_MUX:19|random0 (|SYN_MUX:19|:15)
+   -     41    C       DFFE   +  t        0      0   0    0    6    2   37  |SYN_MUX:19|setup1 (|SYN_MUX:19|:17)
+   -     42    C       DFFE   +  t        0      0   0    0    3    1   42  |SYN_MUX:19|setup0 (|SYN_MUX:19|:18)
+   -     47    C       SOFT    s t        0      0   0    0    4    0    1  |SYN_MUX:19|~529~1
+ (28)    40    C       SOFT    s t        0      0   0    1    4    0    1  |SYN_MUX:19|~539~1
+   -     79    E       SOFT    s t       14     13   1    6   17    1    2  |SYN_MUX:19|~563~1
+   -     74    E       SOFT    s t       14     13   1    6   17    0    1  |SYN_MUX:19|~564~1
+ (81)   128    H       SOFT    s t        1      0   1    5   10    0    2  |SYN_MUX:19|~564~2
+   -     36    C       SOFT    s t        1      0   1    5    9    0    2  |SYN_MUX:19|~564~3
+ (25)    45    C       SOFT    s t        1      0   1    3    9    0    2  |SYN_MUX:19|~564~4
+ (50)    75    E       SOFT    s t        1      0   1    1    8    0    2  |SYN_MUX:19|~564~5
+   -     30    B       SOFT    s t        1      0   1    4    7    0    2  |SYN_MUX:19|~564~6
+   -     39    C      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:19|~614~1
+   -     92    F      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:19|~615~1
+   -     89    F      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:19|~616~1
+ (58)    91    F      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:19|~617~1
+   -     81    F       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:20|random3 (|SYN_MUX:20|:12)
+   -     18    B       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:20|random2 (|SYN_MUX:20|:13)
+ (48)    72    E       DFFE   +  t        0      0   0    0    1    1    2  |SYN_MUX:20|random1 (|SYN_MUX:20|:14)
+ (45)    67    E       DFFE   +  t        0      0   0    0    1    1    3  |SYN_MUX:20|random0 (|SYN_MUX:20|:15)
+   -      1    A       DFFE   +  t        0      0   0    0    6    2   38  |SYN_MUX:20|setup1 (|SYN_MUX:20|:17)
+ (56)    86    F       DFFE   +  t        0      0   0    0    3    1   44  |SYN_MUX:20|setup0 (|SYN_MUX:20|:18)
+   -     82    F       SOFT    s t        0      0   0    0    4    0    1  |SYN_MUX:20|~529~1
+ (61)    94    F       SOFT    s t        0      0   0    1    4    0    1  |SYN_MUX:20|~539~1
+ (37)    56    D       SOFT    s t       14     13   1    6   17    0    1  |SYN_MUX:20|~563~1
+ (34)    61    D       SOFT    s t       14     13   1    6   17    0    1  |SYN_MUX:20|~564~1
+   -    106    G       SOFT    s t        1      0   1    5   10    0    3  |SYN_MUX:20|~564~2
+ (27)    43    C       SOFT    s t        1      0   1    5    9    0    3  |SYN_MUX:20|~564~3
+ (16)    27    B       SOFT    s t        1      0   1    3    9    0    3  |SYN_MUX:20|~564~4
+   -     26    B       SOFT    s t        1      0   1    1    8    0    3  |SYN_MUX:20|~564~5
+ (17)    25    B       SOFT    s t        1      0   1    4    7    0    3  |SYN_MUX:20|~564~6
+ (36)    57    D       SOFT    s t       14     13   1    6   17    1    1  |SYN_MUX:20|~565~1
+   -     84    F      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:20|~614~1
+ (21)    19    B      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:20|~615~1
+   -     68    E      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:20|~616~1
+ (51)    77    E      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:20|~617~1
+ (52)    80    E       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:21|random3 (|SYN_MUX:21|:12)
+   -     78    E       DFFE   +  t        0      0   0    0    1    0    4  |SYN_MUX:21|random2 (|SYN_MUX:21|:13)
+ (40)    51    D       DFFE   +  t        0      0   0    0    1    1    2  |SYN_MUX:21|random1 (|SYN_MUX:21|:14)
+   -     50    D       DFFE   +  t        0      0   0    0    1    1    3  |SYN_MUX:21|random0 (|SYN_MUX:21|:15)
+   -      4    A       DFFE   +  t        0      0   0    0    6    2   35  |SYN_MUX:21|setup1 (|SYN_MUX:21|:17)
+   -     66    E       DFFE   +  t        0      0   0    0    3    1   42  |SYN_MUX:21|setup0 (|SYN_MUX:21|:18)
+   -     76    E       SOFT    s t        0      0   0    0    4    0    1  |SYN_MUX:21|~529~1
+ (49)    73    E       SOFT    s t        0      0   0    1    4    0    1  |SYN_MUX:21|~539~1
+   -    111    G       SOFT    s t        9      8   1    6   18    0    1  |SYN_MUX:21|~563~1
+   -    110    G       SOFT    s t        9      8   1    6   18    0    1  |SYN_MUX:21|~564~1
+   -    108    G       SOFT    s t        1      0   1    5   10    0    3  |SYN_MUX:21|~564~2
+   -     44    C       SOFT    s t        1      0   1    5    9    0    3  |SYN_MUX:21|~564~3
+   -     28    B       SOFT    s t        1      0   1    3    9    0    3  |SYN_MUX:21|~564~4
+ (69)   107    G       SOFT    s t        1      0   1    1    8    0    3  |SYN_MUX:21|~564~5
+ (18)    24    B       SOFT    s t        1      0   1    4    7    0    3  |SYN_MUX:21|~564~6
+ (20)    21    B       SOFT    s t        1      0   1    5    6    0    3  |SYN_MUX:21|~564~7
+   -    100    G       SOFT    s t        9      8   1    6   18    1    1  |SYN_MUX:21|~565~1
+   -     71    E      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:21|~614~1
+   -     70    E      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:21|~615~1
+   -     52    D      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:21|~616~1
+ (33)    64    D      LCELL    s t        0      0   0    0    1    0    2  |SYN_MUX:21|~617~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                 Logic cells placed in LAB 'A'
+        +------- LC14 e1
+        | +----- LC3 |SYN_MUX:1|setup0
+        | | +--- LC1 |SYN_MUX:20|setup1
+        | | | +- LC4 |SYN_MUX:21|setup1
+        | | | | 
+        | | | |   Other LABs fed by signals
+        | | | |   that feed LAB 'A'
+LC      | | | | | A B C D E F G H |     Logic cells that feed LAB 'A':
+LC14 -> * - - - | * - - - - - - - | <-- e1
+LC3  -> - * - - | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC1  -> - - * - | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC4  -> - - - * | * * * * * * * * | <-- |SYN_MUX:21|setup1
+
+Pin
+83   -> - - - - | - - - - - - - - | <-- clk
+2    -> - - - - | - * * * * * * * | <-- x2
+LC123-> * - - - | * - - * - - - - | <-- |SYN_MUX:1|random1
+LC121-> * - - - | * - * * - - - - | <-- |SYN_MUX:1|random0
+LC33 -> * - - - | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC55 -> - * - - | * - - - - - - - | <-- |SYN_MUX:1|~539~1
+LC114-> * * - - | * - - - - - - - | <-- |SYN_MUX:1|~565~1
+LC67 -> - - * - | * - - - - * - - | <-- |SYN_MUX:20|random0
+LC86 -> - - * - | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC82 -> - - * - | * - - - - - - - | <-- |SYN_MUX:20|~529~1
+LC56 -> - - * - | * - - - - - - - | <-- |SYN_MUX:20|~563~1
+LC61 -> - - * - | * - - - - - - - | <-- |SYN_MUX:20|~564~1
+LC50 -> - - - * | * - - - * - - - | <-- |SYN_MUX:21|random0
+LC66 -> - - - * | * * * * * * * * | <-- |SYN_MUX:21|setup0
+LC76 -> - - - * | * - - - - - - - | <-- |SYN_MUX:21|~529~1
+LC111-> - - - * | * - - - - - - - | <-- |SYN_MUX:21|~563~1
+LC110-> - - - * | * - - - - - - - | <-- |SYN_MUX:21|~564~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                   Logic cells placed in LAB 'B'
+        +------------------------- LC31 |SYN_MUX:1|~564~6
+        | +----------------------- LC29 |SYN_MUX:1|~564~7
+        | | +--------------------- LC32 |SYN_MUX:17|~564~5
+        | | | +------------------- LC17 |SYN_MUX:17|~564~6
+        | | | | +----------------- LC30 |SYN_MUX:19|~564~6
+        | | | | | +--------------- LC18 |SYN_MUX:20|random2
+        | | | | | | +------------- LC27 |SYN_MUX:20|~564~4
+        | | | | | | | +----------- LC26 |SYN_MUX:20|~564~5
+        | | | | | | | | +--------- LC25 |SYN_MUX:20|~564~6
+        | | | | | | | | | +------- LC19 |SYN_MUX:20|~615~1
+        | | | | | | | | | | +----- LC28 |SYN_MUX:21|~564~4
+        | | | | | | | | | | | +--- LC24 |SYN_MUX:21|~564~6
+        | | | | | | | | | | | | +- LC21 |SYN_MUX:21|~564~7
+        | | | | | | | | | | | | | 
+        | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'B':
+LC18 -> - - - - - - - * - - - - - | - * - * - - - - | <-- |SYN_MUX:20|random2
+LC19 -> - - - - - * - - - * - - - | - * - - - - - - | <-- |SYN_MUX:20|~615~1
+
+Pin
+83   -> - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+9    -> * * - * * - * - * - * * * | - * * * * * * * | <-- x1
+2    -> * * * * * - * - * - * * * | - * * * * * * * | <-- x2
+10   -> * * - * * - * * * - - * * | - * * * * * * * | <-- x3
+11   -> * * - * * - - - * - - - * | - * * * * * * * | <-- x4
+12   -> - * - - - - - - - - * * * | - * * * * * * * | <-- x5
+LC33 -> - * * - - - - * - - - - - | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC3  -> * * * * * - * * * - * * * | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC109-> - - * - - - - - - - - - - | - * - - - * - - | <-- |SYN_MUX:17|random3
+LC105-> - - * - - - - - - - - - - | - * - - - * - - | <-- |SYN_MUX:17|random2
+LC38 -> - - * - - - * * - - * - - | - * * * * * * * | <-- |SYN_MUX:17|setup1
+LC58 -> * * * * * - * * * - * * * | - * * * * * * * | <-- |SYN_MUX:17|setup0
+LC41 -> * - - * - - * - * - * * - | - * * * * * * * | <-- |SYN_MUX:19|setup1
+LC42 -> * * - * * - * - * - * * * | - * * * * * * * | <-- |SYN_MUX:19|setup0
+LC81 -> - - - - - - - * - - - - - | - * - * - - - - | <-- |SYN_MUX:20|random3
+LC1  -> - - * - * - * * - - * * - | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC86 -> * * * * * - * * * - * * * | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC4  -> * - - * * - * - * - * - * | * * * * * * * * | <-- |SYN_MUX:21|setup1
+LC66 -> * * - * * - * - * - * * * | * * * * * * * * | <-- |SYN_MUX:21|setup0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                         Logic cells placed in LAB 'C'
+        +------------------------------- LC35 e4
+        | +----------------------------- LC33 |SYN_MUX:1|setup1
+        | | +--------------------------- LC46 |SYN_MUX:1|~564~4
+        | | | +------------------------- LC38 |SYN_MUX:17|setup1
+        | | | | +----------------------- LC34 |SYN_MUX:17|~564~4
+        | | | | | +--------------------- LC48 |SYN_MUX:19|random3
+        | | | | | | +------------------- LC41 |SYN_MUX:19|setup1
+        | | | | | | | +----------------- LC42 |SYN_MUX:19|setup0
+        | | | | | | | | +--------------- LC47 |SYN_MUX:19|~529~1
+        | | | | | | | | | +------------- LC40 |SYN_MUX:19|~539~1
+        | | | | | | | | | | +----------- LC36 |SYN_MUX:19|~564~3
+        | | | | | | | | | | | +--------- LC45 |SYN_MUX:19|~564~4
+        | | | | | | | | | | | | +------- LC39 |SYN_MUX:19|~614~1
+        | | | | | | | | | | | | | +----- LC43 |SYN_MUX:20|~564~3
+        | | | | | | | | | | | | | | +--- LC44 |SYN_MUX:21|~564~3
+        | | | | | | | | | | | | | | | +- LC37 y
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'C':
+LC35 -> * - - - - - - - - - - - - - - - | - - * - - - - - | <-- e4
+LC33 -> - * * - - - - - - - * - - * * * | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC38 -> - - - * * - - - - - * * - * * * | - * * * * * * * | <-- |SYN_MUX:17|setup1
+LC41 -> * - * - * - * - * * * * - * - * | - * * * * * * * | <-- |SYN_MUX:19|setup1
+LC42 -> - - * - * - * * * * * * - * * * | - * * * * * * * | <-- |SYN_MUX:19|setup0
+LC47 -> - - - - - - * - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:19|~529~1
+LC40 -> - - - - - - - * - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:19|~539~1
+LC39 -> - - - - - * - - - - - - * - - - | - - * - - - - - | <-- |SYN_MUX:19|~614~1
+
+Pin
+83   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+9    -> - - * - * - - - - - * * - * * * | - * * * * * * * | <-- x1
+2    -> - - * - * - - - - - * * - * * * | - * * * * * * * | <-- x2
+10   -> - - * - * - - - - - * - - * * * | - * * * * * * * | <-- x3
+11   -> - - - - - - - - - * * * - * * * | - * * * * * * * | <-- x4
+12   -> - - - - - - - - - - * - - * * * | - * * * * * * * | <-- x5
+LC113-> - - - - - - - - - - - - - - - * | - - * - - - - - | <-- |NAND5:33|~1~1~2
+LC121-> - * - - - - - - - - - - - - - - | * - * * - - - - | <-- |SYN_MUX:1|random0
+LC3  -> - * * - * - - - - - * * - * * * | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC54 -> - * - - - - - - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:1|~529~1
+LC122-> - * - - - - - - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:1|~563~1
+LC124-> - * - - - - - - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:1|~564~1
+LC97 -> - - - * - - - - - - - - - - - - | - - * * - - - - | <-- |SYN_MUX:17|random0
+LC58 -> - - * * * - - - - - * * - * * * | - * * * * * * * | <-- |SYN_MUX:17|setup0
+LC60 -> - - - * - - - - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:17|~529~1
+LC87 -> - - - * - - - - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:17|~563~1
+LC90 -> - - - * - - - - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:17|~564~1
+LC95 -> * - - - - - - - * * - - - - - - | - - * - - - - - | <-- |SYN_MUX:19|random1
+LC93 -> * - - - - - * - * * - - - - - - | - - * - - - - - | <-- |SYN_MUX:19|random0
+LC79 -> * - - - - - * * - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:19|~563~1
+LC74 -> - - - - - - * - - - - - - - - - | - - * - - - - - | <-- |SYN_MUX:19|~564~1
+LC1  -> - - * - * - - - - - * * - * * * | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC86 -> - - * - * - - - - - * * - * * * | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC4  -> - - * - * - - - - - - * - - * * | * * * * * * * * | <-- |SYN_MUX:21|setup1
+LC66 -> - - * - * - - - - - * * - * * * | * * * * * * * * | <-- |SYN_MUX:21|setup0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                   Logic cells placed in LAB 'D'
+        +------------------------- LC49 e2
+        | +----------------------- LC54 |SYN_MUX:1|~529~1
+        | | +--------------------- LC55 |SYN_MUX:1|~539~1
+        | | | +------------------- LC58 |SYN_MUX:17|setup0
+        | | | | +----------------- LC60 |SYN_MUX:17|~529~1
+        | | | | | +--------------- LC62 |SYN_MUX:17|~539~1
+        | | | | | | +------------- LC56 |SYN_MUX:20|~563~1
+        | | | | | | | +----------- LC61 |SYN_MUX:20|~564~1
+        | | | | | | | | +--------- LC57 |SYN_MUX:20|~565~1
+        | | | | | | | | | +------- LC51 |SYN_MUX:21|random1
+        | | | | | | | | | | +----- LC50 |SYN_MUX:21|random0
+        | | | | | | | | | | | +--- LC52 |SYN_MUX:21|~616~1
+        | | | | | | | | | | | | +- LC64 |SYN_MUX:21|~617~1
+        | | | | | | | | | | | | | 
+        | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'D':
+LC49 -> * - - - - - - - - - - - - | - - - * - - - - | <-- e2
+LC58 -> - - - * * * * * * - - - - | - * * * * * * * | <-- |SYN_MUX:17|setup0
+LC62 -> - - - * - - - - - - - - - | - - - * - - - - | <-- |SYN_MUX:17|~539~1
+LC52 -> - - - - - - - - - * - * - | - - - * - - - - | <-- |SYN_MUX:21|~616~1
+LC64 -> - - - - - - - - - - * - * | - - - * - - - - | <-- |SYN_MUX:21|~617~1
+
+Pin
+83   -> - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+6    -> - - - - - - * * * - - - - | - - - * * * * * | <-- err
+9    -> - - * - - - * * * - - - - | - * * * * * * * | <-- x1
+2    -> - - - - - * * * * - - - - | - * * * * * * * | <-- x2
+10   -> - - - - - - * * * - - - - | - * * * * * * * | <-- x3
+11   -> - - - - - - * * * - - - - | - * * * * * * * | <-- x4
+12   -> - - - - - - * * * - - - - | - * * * * * * * | <-- x5
+LC123-> - * * - - - - - - - - - - | * - - * - - - - | <-- |SYN_MUX:1|random1
+LC121-> - * * - - - - - - - - - - | * - * * - - - - | <-- |SYN_MUX:1|random0
+LC33 -> - * * - - - * * * - - - - | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC3  -> - * * - - - * * * - - - - | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC104-> * - - - * * - - - - - - - | - - - * - - - - | <-- |SYN_MUX:17|random1
+LC97 -> * - - - * * - - - - - - - | - - * * - - - - | <-- |SYN_MUX:17|random0
+LC38 -> * - - - * * * * * - - - - | - * * * * * * * | <-- |SYN_MUX:17|setup1
+LC88 -> * - - * - - - - - - - - - | - - - * - - - - | <-- |SYN_MUX:17|~565~1
+LC41 -> - - - - - - * * * - - - - | - * * * * * * * | <-- |SYN_MUX:19|setup1
+LC42 -> - - - - - - * * * - - - - | - * * * * * * * | <-- |SYN_MUX:19|setup0
+LC81 -> - - - - - - * * * - - - - | - * - * - - - - | <-- |SYN_MUX:20|random3
+LC18 -> - - - - - - * * * - - - - | - * - * - - - - | <-- |SYN_MUX:20|random2
+LC1  -> - - - - - - * * * - - - - | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC86 -> - - - - - - * * * - - - - | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC106-> - - - - - - * * * - - - - | - - - * - - - - | <-- |SYN_MUX:20|~564~2
+LC43 -> - - - - - - * * * - - - - | - - - * - - - - | <-- |SYN_MUX:20|~564~3
+LC27 -> - - - - - - * * * - - - - | - - - * - - - - | <-- |SYN_MUX:20|~564~4
+LC26 -> - - - - - - * * * - - - - | - - - * - - - - | <-- |SYN_MUX:20|~564~5
+LC25 -> - - - - - - * * * - - - - | - - - * - - - - | <-- |SYN_MUX:20|~564~6
+LC4  -> - - - - - - * * * - - - - | * * * * * * * * | <-- |SYN_MUX:21|setup1
+LC66 -> - - - - - - * * * - - - - | * * * * * * * * | <-- |SYN_MUX:21|setup0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+                                       Logic cells placed in LAB 'E'
+        +----------------------------- LC65 e5
+        | +--------------------------- LC79 |SYN_MUX:19|~563~1
+        | | +------------------------- LC74 |SYN_MUX:19|~564~1
+        | | | +----------------------- LC75 |SYN_MUX:19|~564~5
+        | | | | +--------------------- LC72 |SYN_MUX:20|random1
+        | | | | | +------------------- LC67 |SYN_MUX:20|random0
+        | | | | | | +----------------- LC68 |SYN_MUX:20|~616~1
+        | | | | | | | +--------------- LC77 |SYN_MUX:20|~617~1
+        | | | | | | | | +------------- LC80 |SYN_MUX:21|random3
+        | | | | | | | | | +----------- LC78 |SYN_MUX:21|random2
+        | | | | | | | | | | +--------- LC66 |SYN_MUX:21|setup0
+        | | | | | | | | | | | +------- LC76 |SYN_MUX:21|~529~1
+        | | | | | | | | | | | | +----- LC73 |SYN_MUX:21|~539~1
+        | | | | | | | | | | | | | +--- LC71 |SYN_MUX:21|~614~1
+        | | | | | | | | | | | | | | +- LC70 |SYN_MUX:21|~615~1
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'E':
+LC65 -> * - - - - - - - - - - - - - - | - - - - * - - - | <-- e5
+LC75 -> - * * - - - - - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:19|~564~5
+LC68 -> - - - - * - * - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:20|~616~1
+LC77 -> - - - - - * - * - - - - - - - | - - - - * - - - | <-- |SYN_MUX:20|~617~1
+LC66 -> - * * - - - - - - - * * * - - | * * * * * * * * | <-- |SYN_MUX:21|setup0
+LC73 -> - - - - - - - - - - * - - - - | - - - - * - - - | <-- |SYN_MUX:21|~539~1
+LC71 -> - - - - - - - - * - - - - * - | - - - - * - - - | <-- |SYN_MUX:21|~614~1
+LC70 -> - - - - - - - - - * - - - - * | - - - - * - - - | <-- |SYN_MUX:21|~615~1
+
+Pin
+83   -> - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+6    -> - * * - - - - - - - - - - - - | - - - * * * * * | <-- err
+9    -> - * * - - - - - - - - - - - - | - * * * * * * * | <-- x1
+2    -> - * * - - - - - - - - - - - - | - * * * * * * * | <-- x2
+10   -> - * * - - - - - - - - - - - - | - * * * * * * * | <-- x3
+11   -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- x4
+12   -> - * * - - - - - - - - - * - - | - * * * * * * * | <-- x5
+LC33 -> - * * * - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC3  -> - * * * - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC38 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:17|setup1
+LC58 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:17|setup0
+LC48 -> - * * * - - - - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:19|random3
+LC83 -> - * * * - - - - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:19|random2
+LC41 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:19|setup1
+LC42 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:19|setup0
+LC128-> - * * - - - - - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:19|~564~2
+LC36 -> - * * - - - - - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:19|~564~3
+LC45 -> - * * - - - - - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:19|~564~4
+LC30 -> - * * - - - - - - - - - - - - | - - - - * - - - | <-- |SYN_MUX:19|~564~6
+LC1  -> - * * - - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC86 -> - * * - - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC51 -> * - - - - - - - - - - * * - - | - - - - * - - - | <-- |SYN_MUX:21|random1
+LC50 -> * - - - - - - - - - - * * - - | * - - - * - - - | <-- |SYN_MUX:21|random0
+LC4  -> * * * - - - - - - - - * * - - | * * * * * * * * | <-- |SYN_MUX:21|setup1
+LC100-> * - - - - - - - - - * - - - - | - - - - * - - - | <-- |SYN_MUX:21|~565~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'F':
+
+                                       Logic cells placed in LAB 'F'
+        +----------------------------- LC85 e3
+        | +--------------------------- LC87 |SYN_MUX:17|~563~1
+        | | +------------------------- LC90 |SYN_MUX:17|~564~1
+        | | | +----------------------- LC88 |SYN_MUX:17|~565~1
+        | | | | +--------------------- LC83 |SYN_MUX:19|random2
+        | | | | | +------------------- LC95 |SYN_MUX:19|random1
+        | | | | | | +----------------- LC93 |SYN_MUX:19|random0
+        | | | | | | | +--------------- LC92 |SYN_MUX:19|~615~1
+        | | | | | | | | +------------- LC89 |SYN_MUX:19|~616~1
+        | | | | | | | | | +----------- LC91 |SYN_MUX:19|~617~1
+        | | | | | | | | | | +--------- LC81 |SYN_MUX:20|random3
+        | | | | | | | | | | | +------- LC86 |SYN_MUX:20|setup0
+        | | | | | | | | | | | | +----- LC82 |SYN_MUX:20|~529~1
+        | | | | | | | | | | | | | +--- LC94 |SYN_MUX:20|~539~1
+        | | | | | | | | | | | | | | +- LC84 |SYN_MUX:20|~614~1
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'F':
+LC85 -> * - - - - - - - - - - - - - - | - - - - - * - - | <-- e3
+LC92 -> - - - - * - - * - - - - - - - | - - - - - * - - | <-- |SYN_MUX:19|~615~1
+LC89 -> - - - - - * - - * - - - - - - | - - - - - * - - | <-- |SYN_MUX:19|~616~1
+LC91 -> - - - - - - * - - * - - - - - | - - - - - * - - | <-- |SYN_MUX:19|~617~1
+LC86 -> - * * * - - - - - - - * * * - | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC94 -> - - - - - - - - - - - * - - - | - - - - - * - - | <-- |SYN_MUX:20|~539~1
+LC84 -> - - - - - - - - - - * - - - * | - - - - - * - - | <-- |SYN_MUX:20|~614~1
+
+Pin
+83   -> - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+6    -> - * * * - - - - - - - - - - - | - - - * * * * * | <-- err
+9    -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- x1
+2    -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- x2
+10   -> - * * * - - - - - - - - - * - | - * * * * * * * | <-- x3
+11   -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- x4
+12   -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- x5
+LC33 -> - * * * - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC3  -> - * * * - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC109-> - * * * - - - - - - - - - - - | - * - - - * - - | <-- |SYN_MUX:17|random3
+LC105-> - * * * - - - - - - - - - - - | - * - - - * - - | <-- |SYN_MUX:17|random2
+LC38 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:17|setup1
+LC58 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:17|setup0
+LC127-> - * * * - - - - - - - - - - - | - - - - - * - - | <-- |SYN_MUX:17|~564~2
+LC98 -> - * * * - - - - - - - - - - - | - - - - - * - - | <-- |SYN_MUX:17|~564~3
+LC34 -> - * * * - - - - - - - - - - - | - - - - - * - - | <-- |SYN_MUX:17|~564~4
+LC32 -> - * * * - - - - - - - - - - - | - - - - - * - - | <-- |SYN_MUX:17|~564~5
+LC17 -> - * * * - - - - - - - - - - - | - - - - - * - - | <-- |SYN_MUX:17|~564~6
+LC41 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:19|setup1
+LC42 -> - * * * - - - - - - - - - - - | - * * * * * * * | <-- |SYN_MUX:19|setup0
+LC72 -> * - - - - - - - - - - - * * - | - - - - - * - - | <-- |SYN_MUX:20|random1
+LC67 -> * - - - - - - - - - - - * * - | * - - - - * - - | <-- |SYN_MUX:20|random0
+LC1  -> * * * * - - - - - - - - * * - | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC57 -> * - - - - - - - - - - * - - - | - - - - - * - - | <-- |SYN_MUX:20|~565~1
+LC4  -> - * * * - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:21|setup1
+LC66 -> - * * * - - - - - - - - - - - | * * * * * * * * | <-- |SYN_MUX:21|setup0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'G':
+
+                                         Logic cells placed in LAB 'G'
+        +------------------------------- LC101 |SYN_MUX:1|~564~3
+        | +----------------------------- LC109 |SYN_MUX:17|random3
+        | | +--------------------------- LC105 |SYN_MUX:17|random2
+        | | | +------------------------- LC104 |SYN_MUX:17|random1
+        | | | | +----------------------- LC97 |SYN_MUX:17|random0
+        | | | | | +--------------------- LC98 |SYN_MUX:17|~564~3
+        | | | | | | +------------------- LC99 |SYN_MUX:17|~614~1
+        | | | | | | | +----------------- LC112 |SYN_MUX:17|~615~1
+        | | | | | | | | +--------------- LC102 |SYN_MUX:17|~616~1
+        | | | | | | | | | +------------- LC103 |SYN_MUX:17|~617~1
+        | | | | | | | | | | +----------- LC106 |SYN_MUX:20|~564~2
+        | | | | | | | | | | | +--------- LC111 |SYN_MUX:21|~563~1
+        | | | | | | | | | | | | +------- LC110 |SYN_MUX:21|~564~1
+        | | | | | | | | | | | | | +----- LC108 |SYN_MUX:21|~564~2
+        | | | | | | | | | | | | | | +--- LC107 |SYN_MUX:21|~564~5
+        | | | | | | | | | | | | | | | +- LC100 |SYN_MUX:21|~565~1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'G'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'G':
+LC99 -> - * - - - - * - - - - - - - - - | - - - - - - * - | <-- |SYN_MUX:17|~614~1
+LC112-> - - * - - - - * - - - - - - - - | - - - - - - * - | <-- |SYN_MUX:17|~615~1
+LC102-> - - - * - - - - * - - - - - - - | - - - - - - * - | <-- |SYN_MUX:17|~616~1
+LC103-> - - - - * - - - - * - - - - - - | - - - - - - * - | <-- |SYN_MUX:17|~617~1
+LC108-> - - - - - - - - - - - * * - - * | - - - - - - * - | <-- |SYN_MUX:21|~564~2
+LC107-> - - - - - - - - - - - * * - - * | - - - - - - * - | <-- |SYN_MUX:21|~564~5
+
+Pin
+83   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+6    -> - - - - - - - - - - - * * - - * | - - - * * * * * | <-- err
+9    -> * - - - - * - - - - * * * * - * | - * * * * * * * | <-- x1
+2    -> * - - - - * - - - - * * * * - * | - * * * * * * * | <-- x2
+10   -> * - - - - * - - - - * * * * - * | - * * * * * * * | <-- x3
+11   -> * - - - - * - - - - * * * * - * | - * * * * * * * | <-- x4
+12   -> * - - - - * - - - - * * * * * * | - * * * * * * * | <-- x5
+LC33 -> * - - - - * - - - - * * * * * * | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC3  -> * - - - - * - - - - * * * * * * | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC38 -> * - - - - * - - - - * * * * * * | - * * * * * * * | <-- |SYN_MUX:17|setup1
+LC58 -> * - - - - * - - - - * * * * * * | - * * * * * * * | <-- |SYN_MUX:17|setup0
+LC41 -> * - - - - * - - - - * * * * - * | - * * * * * * * | <-- |SYN_MUX:19|setup1
+LC42 -> * - - - - * - - - - * * * * - * | - * * * * * * * | <-- |SYN_MUX:19|setup0
+LC1  -> * - - - - * - - - - * * * * - * | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC86 -> * - - - - * - - - - * * * * - * | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC80 -> - - - - - - - - - - - * * - * * | - - - - - - * - | <-- |SYN_MUX:21|random3
+LC78 -> - - - - - - - - - - - * * - * * | - - - - - - * - | <-- |SYN_MUX:21|random2
+LC4  -> - - - - - - - - - - * * * * * * | * * * * * * * * | <-- |SYN_MUX:21|setup1
+LC66 -> * - - - - * - - - - * * * * * * | * * * * * * * * | <-- |SYN_MUX:21|setup0
+LC44 -> - - - - - - - - - - - * * - - * | - - - - - - * - | <-- |SYN_MUX:21|~564~3
+LC28 -> - - - - - - - - - - - * * - - * | - - - - - - * - | <-- |SYN_MUX:21|~564~4
+LC24 -> - - - - - - - - - - - * * - - * | - - - - - - * - | <-- |SYN_MUX:21|~564~6
+LC21 -> - - - - - - - - - - - * * - - * | - - - - - - * - | <-- |SYN_MUX:21|~564~7
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'H':
+
+                                         Logic cells placed in LAB 'H'
+        +------------------------------- LC113 |NAND5:33|~1~1~2
+        | +----------------------------- LC119 |SYN_MUX:1|random3
+        | | +--------------------------- LC120 |SYN_MUX:1|random2
+        | | | +------------------------- LC123 |SYN_MUX:1|random1
+        | | | | +----------------------- LC121 |SYN_MUX:1|random0
+        | | | | | +--------------------- LC122 |SYN_MUX:1|~563~1
+        | | | | | | +------------------- LC124 |SYN_MUX:1|~564~1
+        | | | | | | | +----------------- LC126 |SYN_MUX:1|~564~2
+        | | | | | | | | +--------------- LC125 |SYN_MUX:1|~564~5
+        | | | | | | | | | +------------- LC114 |SYN_MUX:1|~565~1
+        | | | | | | | | | | +----------- LC115 |SYN_MUX:1|~614~1
+        | | | | | | | | | | | +--------- LC116 |SYN_MUX:1|~615~1
+        | | | | | | | | | | | | +------- LC117 |SYN_MUX:1|~616~1
+        | | | | | | | | | | | | | +----- LC118 |SYN_MUX:1|~617~1
+        | | | | | | | | | | | | | | +--- LC127 |SYN_MUX:17|~564~2
+        | | | | | | | | | | | | | | | +- LC128 |SYN_MUX:19|~564~2
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'H'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'H':
+LC119-> - - - - - * * - * * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|random3
+LC120-> - - - - - * * - * * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|random2
+LC126-> - - - - - * * - - * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|~564~2
+LC125-> - - - - - * * - - * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|~564~5
+LC115-> - * - - - - - - - - * - - - - - | - - - - - - - * | <-- |SYN_MUX:1|~614~1
+LC116-> - - * - - - - - - - - * - - - - | - - - - - - - * | <-- |SYN_MUX:1|~615~1
+LC117-> - - - * - - - - - - - - * - - - | - - - - - - - * | <-- |SYN_MUX:1|~616~1
+LC118-> - - - - * - - - - - - - - * - - | - - - - - - - * | <-- |SYN_MUX:1|~617~1
+
+Pin
+83   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+6    -> - - - - - * * - - * - - - - - - | - - - * * * * * | <-- err
+9    -> * - - - - * * * * * - - - - * * | - * * * * * * * | <-- x1
+2    -> * - - - - * * * - * - - - - * * | - * * * * * * * | <-- x2
+10   -> * - - - - * * * - * - - - - * * | - * * * * * * * | <-- x3
+11   -> * - - - - * * * - * - - - - * * | - * * * * * * * | <-- x4
+12   -> * - - - - * * * - * - - - - * * | - * * * * * * * | <-- x5
+LC33 -> * - - - - * * * * * - - - - * * | * * * * * * * * | <-- |SYN_MUX:1|setup1
+LC3  -> * - - - - * * * * * - - - - * * | * * * * * * * * | <-- |SYN_MUX:1|setup0
+LC101-> - - - - - * * - - * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|~564~3
+LC46 -> - - - - - * * - - * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|~564~4
+LC31 -> - - - - - * * - - * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|~564~6
+LC29 -> - - - - - * * - - * - - - - - - | - - - - - - - * | <-- |SYN_MUX:1|~564~7
+LC38 -> * - - - - * * * * * - - - - * * | - * * * * * * * | <-- |SYN_MUX:17|setup1
+LC58 -> * - - - - * * * * * - - - - * * | - * * * * * * * | <-- |SYN_MUX:17|setup0
+LC41 -> * - - - - * * * - * - - - - * * | - * * * * * * * | <-- |SYN_MUX:19|setup1
+LC42 -> * - - - - * * * - * - - - - * * | - * * * * * * * | <-- |SYN_MUX:19|setup0
+LC1  -> * - - - - * * * * * - - - - * * | * * * * * * * * | <-- |SYN_MUX:20|setup1
+LC86 -> * - - - - * * * * * - - - - * * | * * * * * * * * | <-- |SYN_MUX:20|setup0
+LC4  -> * - - - - * * * - * - - - - * * | * * * * * * * * | <-- |SYN_MUX:21|setup1
+LC66 -> * - - - - * * * - * - - - - * * | * * * * * * * * | <-- |SYN_MUX:21|setup0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+dneuron01
+
+** EQUATIONS **
+
+clk      : INPUT;
+err      : INPUT;
+x1       : INPUT;
+x2       : INPUT;
+x3       : INPUT;
+x4       : INPUT;
+x5       : INPUT;
+
+-- Node name is 'e1' = '|SYN_MUX:1|:4' 
+-- Equation name is 'e1', type is output 
+ e1      = DFFE( _EQ001 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ001 =  _LC033 &  _LC114 & !_LC121 &  _LC123
+         #  e1 & !_LC114;
+
+-- Node name is 'e2' = '|SYN_MUX:17|:4' 
+-- Equation name is 'e2', type is output 
+ e2      = DFFE( _EQ002 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ002 =  _LC038 &  _LC088 & !_LC097 &  _LC104
+         #  e2 & !_LC088;
+
+-- Node name is 'e3' = '|SYN_MUX:20|:4' 
+-- Equation name is 'e3', type is output 
+ e3      = DFFE( _EQ003 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ003 =  _LC001 &  _LC057 & !_LC067 &  _LC072
+         #  e3 & !_LC057;
+
+-- Node name is 'e4' = '|SYN_MUX:19|:4' 
+-- Equation name is 'e4', type is output 
+ e4      = DFFE( _EQ004 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ004 =  _LC041 &  _LC079 & !_LC093 &  _LC095
+         #  e4 & !_LC079;
+
+-- Node name is 'e5' = '|SYN_MUX:21|:4' 
+-- Equation name is 'e5', type is output 
+ e5      = DFFE( _EQ005 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ005 =  _LC004 & !_LC050 &  _LC051 &  _LC100
+         #  e5 & !_LC100;
+
+-- Node name is 'y' 
+-- Equation name is 'y', location is LC037, type is output.
+ y       = LCELL( _EQ006 $  VCC);
+  _EQ006 = !_LC113 &  _X001 &  _X002 &  _X003 &  _X004 &  _X005 &  _X006 & 
+              _X007 &  _X008 &  _X009 &  _X010;
+  _X001  = EXP(!_LC003 & !_LC033);
+  _X002  = EXP(!_LC003 &  _LC033 & !x1);
+  _X003  = EXP( _LC004 & !_LC066 & !x5);
+  _X004  = EXP(!_LC038 & !_LC058);
+  _X005  = EXP(!_LC001 & !_LC086);
+  _X006  = EXP(!_LC041 & !_LC042);
+  _X007  = EXP(!_LC004 & !_LC066);
+  _X008  = EXP( _LC041 & !_LC042 & !x4);
+  _X009  = EXP( _LC038 & !_LC058 & !x2);
+  _X010  = EXP( _LC001 & !_LC086 & !x3);
+
+-- Node name is '|NAND5:33|~1~1~2' 
+-- Equation name is '_LC113', type is buried 
+-- synthesized logic cell 
+_LC113   = LCELL( _EQ007 $  GND);
+  _EQ007 =  _LC004 &  _LC066 &  x5
+         #  _LC041 &  _LC042 &  x4
+         #  _LC001 &  _LC086 &  x3
+         #  _LC038 &  _LC058 &  x2
+         #  _LC003 &  _LC033 &  x1;
+
+-- Node name is '|SYN_MUX:1|:15' = '|SYN_MUX:1|random0' 
+-- Equation name is '_LC121', type is buried 
+_LC121   = DFFE(!_LC118 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:1|:14' = '|SYN_MUX:1|random1' 
+-- Equation name is '_LC123', type is buried 
+_LC123   = DFFE(!_LC117 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:1|:13' = '|SYN_MUX:1|random2' 
+-- Equation name is '_LC120', type is buried 
+_LC120   = DFFE(!_LC116 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:1|:12' = '|SYN_MUX:1|random3' 
+-- Equation name is '_LC119', type is buried 
+_LC119   = DFFE(!_LC115 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:1|:18' = '|SYN_MUX:1|setup0' 
+-- Equation name is '_LC003', type is buried 
+_LC003   = DFFE( _EQ008 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ008 =  _LC055 &  _LC114
+         #  _LC003 & !_LC114;
+
+-- Node name is '|SYN_MUX:1|:17' = '|SYN_MUX:1|setup1' 
+-- Equation name is '_LC033', type is buried 
+_LC033   = DFFE( _EQ009 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ009 = !_LC003 & !_LC033 & !_LC121 &  _LC122
+         #  _LC054 &  _LC122
+         #  _LC033 & !_LC124;
+
+-- Node name is '|SYN_MUX:1|~529~1' 
+-- Equation name is '_LC054', type is buried 
+-- synthesized logic cell 
+_LC054   = LCELL( _EQ010 $  _LC033);
+  _EQ010 =  _LC033 &  _LC121 & !_LC123
+         #  _LC003 & !_LC033 & !_LC121;
+
+-- Node name is '|SYN_MUX:1|~539~1' 
+-- Equation name is '_LC055', type is buried 
+-- synthesized logic cell 
+_LC055   = LCELL( _EQ011 $ !_LC003);
+  _EQ011 =  _LC033 &  _LC121 &  x1
+         # !_LC033 & !_LC121 &  x1
+         #  _LC033 &  _LC123;
+
+-- Node name is '|SYN_MUX:1|~563~1' 
+-- Equation name is '_LC122', type is buried 
+-- synthesized logic cell 
+_LC122   = LCELL( _EQ012 $  _EQ013);
+  _EQ012 =  err & !_LC003 &  _LC004 & !_LC029 & !_LC031 &  _LC033 & !_LC046 & 
+              _LC066 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x5 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err & !_LC003 & !_LC029 & !_LC031 &  _LC033 &  _LC041 &  _LC042 & 
+             !_LC046 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x4 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err &  _LC001 & !_LC003 & !_LC029 & !_LC031 &  _LC033 & !_LC046 & 
+              _LC086 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x3 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err & !_LC003 & !_LC029 & !_LC031 &  _LC033 &  _LC038 & !_LC046 & 
+              _LC058 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x2 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018;
+  _X011  = EXP( _LC003 &  _LC119 & !x1);
+  _X012  = EXP( _LC003 & !_LC004 & !_LC033 & !_LC066);
+  _X013  = EXP( _LC003 & !_LC033 & !_LC041 & !_LC042);
+  _X014  = EXP(!_LC001 &  _LC003 & !_LC033 & !_LC086);
+  _X015  = EXP( _LC003 & !_LC033 & !_LC038 & !_LC058);
+  _X016  = EXP( _LC003 & !_LC033 &  _LC119);
+  _X017  = EXP( _LC003 & !_LC033 &  _LC120);
+  _X018  = EXP( _LC003 &  _LC120 & !x1);
+  _EQ013 =  err & !_LC029 & !_LC031 & !_LC046 & !_LC101 & !_LC125 & !_LC126 & 
+              _X011 &  _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 & 
+              _X018;
+  _X011  = EXP( _LC003 &  _LC119 & !x1);
+  _X012  = EXP( _LC003 & !_LC004 & !_LC033 & !_LC066);
+  _X013  = EXP( _LC003 & !_LC033 & !_LC041 & !_LC042);
+  _X014  = EXP(!_LC001 &  _LC003 & !_LC033 & !_LC086);
+  _X015  = EXP( _LC003 & !_LC033 & !_LC038 & !_LC058);
+  _X016  = EXP( _LC003 & !_LC033 &  _LC119);
+  _X017  = EXP( _LC003 & !_LC033 &  _LC120);
+  _X018  = EXP( _LC003 &  _LC120 & !x1);
+
+-- Node name is '|SYN_MUX:1|~564~1' 
+-- Equation name is '_LC124', type is buried 
+-- synthesized logic cell 
+_LC124   = LCELL( _EQ014 $  _EQ015);
+  _EQ014 =  err & !_LC003 &  _LC004 & !_LC029 & !_LC031 &  _LC033 & !_LC046 & 
+              _LC066 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x5 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err & !_LC003 & !_LC029 & !_LC031 &  _LC033 &  _LC041 &  _LC042 & 
+             !_LC046 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x4 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err &  _LC001 & !_LC003 & !_LC029 & !_LC031 &  _LC033 & !_LC046 & 
+              _LC086 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x3 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err & !_LC003 & !_LC029 & !_LC031 &  _LC033 &  _LC038 & !_LC046 & 
+              _LC058 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x2 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018;
+  _X011  = EXP( _LC003 &  _LC119 & !x1);
+  _X012  = EXP( _LC003 & !_LC004 & !_LC033 & !_LC066);
+  _X013  = EXP( _LC003 & !_LC033 & !_LC041 & !_LC042);
+  _X014  = EXP(!_LC001 &  _LC003 & !_LC033 & !_LC086);
+  _X015  = EXP( _LC003 & !_LC033 & !_LC038 & !_LC058);
+  _X016  = EXP( _LC003 & !_LC033 &  _LC119);
+  _X017  = EXP( _LC003 & !_LC033 &  _LC120);
+  _X018  = EXP( _LC003 &  _LC120 & !x1);
+  _EQ015 =  err & !_LC029 & !_LC031 & !_LC046 & !_LC101 & !_LC125 & !_LC126 & 
+              _X011 &  _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 & 
+              _X018;
+  _X011  = EXP( _LC003 &  _LC119 & !x1);
+  _X012  = EXP( _LC003 & !_LC004 & !_LC033 & !_LC066);
+  _X013  = EXP( _LC003 & !_LC033 & !_LC041 & !_LC042);
+  _X014  = EXP(!_LC001 &  _LC003 & !_LC033 & !_LC086);
+  _X015  = EXP( _LC003 & !_LC033 & !_LC038 & !_LC058);
+  _X016  = EXP( _LC003 & !_LC033 &  _LC119);
+  _X017  = EXP( _LC003 & !_LC033 &  _LC120);
+  _X018  = EXP( _LC003 &  _LC120 & !x1);
+
+-- Node name is '|SYN_MUX:1|~564~2' 
+-- Equation name is '_LC126', type is buried 
+-- synthesized logic cell 
+_LC126   = LCELL( _EQ016 $  GND);
+  _EQ016 =  _LC003 &  _LC038 &  _LC058 & !x1 &  x2
+         #  _LC001 &  _LC003 &  _LC086 & !x1 &  x3
+         #  _LC003 &  _LC041 &  _LC042 & !x1 &  x4
+         #  _LC003 &  _LC004 &  _LC066 & !x1 &  x5
+         #  _LC003 &  _LC004 & !_LC033 &  _LC066 &  x5;
+
+-- Node name is '|SYN_MUX:1|~564~3' 
+-- Equation name is '_LC101', type is buried 
+-- synthesized logic cell 
+_LC101   = LCELL( _EQ017 $  GND);
+  _EQ017 =  _LC003 & !_LC033 &  _LC041 &  _LC042 &  x4
+         #  _LC001 &  _LC003 & !_LC033 &  _LC086 &  x3
+         #  _LC003 & !_LC033 &  _LC038 &  _LC058 &  x2
+         # !_LC003 &  _LC033 & !_LC066 &  x1 & !x5
+         # !_LC003 &  _LC033 & !_LC042 &  x1 & !x4;
+
+-- Node name is '|SYN_MUX:1|~564~4' 
+-- Equation name is '_LC046', type is buried 
+-- synthesized logic cell 
+_LC046   = LCELL( _EQ018 $  GND);
+  _EQ018 = !_LC003 &  _LC033 & !_LC086 &  x1 & !x3
+         # !_LC003 &  _LC033 & !_LC058 &  x1 & !x2
+         # !_LC003 & !_LC004 &  _LC033 & !_LC066 &  x1
+         # !_LC003 &  _LC033 & !_LC041 & !_LC042 &  x1
+         # !_LC001 & !_LC003 &  _LC033 & !_LC086 &  x1;
+
+-- Node name is '|SYN_MUX:1|~564~5' 
+-- Equation name is '_LC125', type is buried 
+-- synthesized logic cell 
+_LC125   = LCELL( _EQ019 $  GND);
+  _EQ019 = !_LC003 &  _LC033 & !_LC038 & !_LC058 &  x1
+         # !_LC003 &  _LC033 &  _LC120 &  x1
+         # !_LC003 &  _LC033 &  _LC119 &  x1
+         #  _LC003 & !_LC038 & !_LC058 & !x1
+         # !_LC001 &  _LC003 & !_LC086 & !x1;
+
+-- Node name is '|SYN_MUX:1|~564~6' 
+-- Equation name is '_LC031', type is buried 
+-- synthesized logic cell 
+_LC031   = LCELL( _EQ020 $  GND);
+  _EQ020 =  _LC003 & !_LC041 & !_LC042 & !x1
+         #  _LC003 & !_LC004 & !_LC066 & !x1
+         #  _LC003 & !_LC058 & !x1 & !x2
+         #  _LC003 & !_LC086 & !x1 & !x3
+         #  _LC003 & !_LC042 & !x1 & !x4;
+
+-- Node name is '|SYN_MUX:1|~564~7' 
+-- Equation name is '_LC029', type is buried 
+-- synthesized logic cell 
+_LC029   = LCELL( _EQ021 $  GND);
+  _EQ021 =  _LC003 & !_LC066 & !x1 & !x5
+         #  _LC003 & !_LC033 & !_LC066 & !x5
+         #  _LC003 & !_LC033 & !_LC042 & !x4
+         #  _LC003 & !_LC033 & !_LC086 & !x3
+         #  _LC003 & !_LC033 & !_LC058 & !x2;
+
+-- Node name is '|SYN_MUX:1|~565~1' 
+-- Equation name is '_LC114', type is buried 
+-- synthesized logic cell 
+_LC114   = LCELL( _EQ022 $  _EQ023);
+  _EQ022 =  err & !_LC003 &  _LC004 & !_LC029 & !_LC031 &  _LC033 & !_LC046 & 
+              _LC066 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x5 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err & !_LC003 & !_LC029 & !_LC031 &  _LC033 &  _LC041 &  _LC042 & 
+             !_LC046 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x4 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err &  _LC001 & !_LC003 & !_LC029 & !_LC031 &  _LC033 & !_LC046 & 
+              _LC086 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x3 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018
+         #  err & !_LC003 & !_LC029 & !_LC031 &  _LC033 &  _LC038 & !_LC046 & 
+              _LC058 & !_LC101 & !_LC125 & !_LC126 &  x1 &  x2 &  _X011 & 
+              _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 &  _X018;
+  _X011  = EXP( _LC003 &  _LC119 & !x1);
+  _X012  = EXP( _LC003 & !_LC004 & !_LC033 & !_LC066);
+  _X013  = EXP( _LC003 & !_LC033 & !_LC041 & !_LC042);
+  _X014  = EXP(!_LC001 &  _LC003 & !_LC033 & !_LC086);
+  _X015  = EXP( _LC003 & !_LC033 & !_LC038 & !_LC058);
+  _X016  = EXP( _LC003 & !_LC033 &  _LC119);
+  _X017  = EXP( _LC003 & !_LC033 &  _LC120);
+  _X018  = EXP( _LC003 &  _LC120 & !x1);
+  _EQ023 =  err & !_LC029 & !_LC031 & !_LC046 & !_LC101 & !_LC125 & !_LC126 & 
+              _X011 &  _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017 & 
+              _X018;
+  _X011  = EXP( _LC003 &  _LC119 & !x1);
+  _X012  = EXP( _LC003 & !_LC004 & !_LC033 & !_LC066);
+  _X013  = EXP( _LC003 & !_LC033 & !_LC041 & !_LC042);
+  _X014  = EXP(!_LC001 &  _LC003 & !_LC033 & !_LC086);
+  _X015  = EXP( _LC003 & !_LC033 & !_LC038 & !_LC058);
+  _X016  = EXP( _LC003 & !_LC033 &  _LC119);
+  _X017  = EXP( _LC003 & !_LC033 &  _LC120);
+  _X018  = EXP( _LC003 &  _LC120 & !x1);
+
+-- Node name is '|SYN_MUX:1|~614~1' 
+-- Equation name is '_LC115', type is buried 
+-- synthesized logic cell 
+_LC115   = LCELL( GND $ !_LC115);
+
+-- Node name is '|SYN_MUX:1|~615~1' 
+-- Equation name is '_LC116', type is buried 
+-- synthesized logic cell 
+_LC116   = LCELL( GND $ !_LC116);
+
+-- Node name is '|SYN_MUX:1|~616~1' 
+-- Equation name is '_LC117', type is buried 
+-- synthesized logic cell 
+_LC117   = LCELL( GND $ !_LC117);
+
+-- Node name is '|SYN_MUX:1|~617~1' 
+-- Equation name is '_LC118', type is buried 
+-- synthesized logic cell 
+_LC118   = LCELL( GND $ !_LC118);
+
+-- Node name is '|SYN_MUX:17|:15' = '|SYN_MUX:17|random0' 
+-- Equation name is '_LC097', type is buried 
+_LC097   = DFFE(!_LC103 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:17|:14' = '|SYN_MUX:17|random1' 
+-- Equation name is '_LC104', type is buried 
+_LC104   = DFFE(!_LC102 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:17|:13' = '|SYN_MUX:17|random2' 
+-- Equation name is '_LC105', type is buried 
+_LC105   = DFFE(!_LC112 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:17|:12' = '|SYN_MUX:17|random3' 
+-- Equation name is '_LC109', type is buried 
+_LC109   = DFFE(!_LC099 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:17|:18' = '|SYN_MUX:17|setup0' 
+-- Equation name is '_LC058', type is buried 
+_LC058   = DFFE( _EQ024 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ024 =  _LC062 &  _LC088
+         #  _LC058 & !_LC088;
+
+-- Node name is '|SYN_MUX:17|:17' = '|SYN_MUX:17|setup1' 
+-- Equation name is '_LC038', type is buried 
+_LC038   = DFFE( _EQ025 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ025 = !_LC038 & !_LC058 &  _LC087 & !_LC097
+         #  _LC060 &  _LC087
+         #  _LC038 & !_LC090;
+
+-- Node name is '|SYN_MUX:17|~529~1' 
+-- Equation name is '_LC060', type is buried 
+-- synthesized logic cell 
+_LC060   = LCELL( _EQ026 $  _LC038);
+  _EQ026 =  _LC038 &  _LC097 & !_LC104
+         # !_LC038 &  _LC058 & !_LC097;
+
+-- Node name is '|SYN_MUX:17|~539~1' 
+-- Equation name is '_LC062', type is buried 
+-- synthesized logic cell 
+_LC062   = LCELL( _EQ027 $ !_LC058);
+  _EQ027 =  _LC038 &  _LC097 &  x2
+         # !_LC038 & !_LC097 &  x2
+         #  _LC038 &  _LC104;
+
+-- Node name is '|SYN_MUX:17|~563~1' 
+-- Equation name is '_LC087', type is buried 
+-- synthesized logic cell 
+_LC087   = LCELL( _EQ028 $  _EQ029);
+  _EQ028 =  err &  _LC004 & !_LC017 & !_LC032 & !_LC034 &  _LC038 & !_LC058 & 
+              _LC066 & !_LC098 & !_LC127 &  x2 &  x5 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err & !_LC017 & !_LC032 & !_LC034 &  _LC038 &  _LC041 &  _LC042 & 
+             !_LC058 & !_LC098 & !_LC127 &  x2 &  x4 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err &  _LC001 & !_LC017 & !_LC032 & !_LC034 &  _LC038 & !_LC058 & 
+              _LC086 & !_LC098 & !_LC127 &  x2 &  x3 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err &  _LC003 & !_LC017 & !_LC032 &  _LC033 & !_LC034 &  _LC038 & 
+             !_LC058 & !_LC098 & !_LC127 &  x1 &  x2 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031;
+  _X019  = EXP(!_LC001 & !_LC038 &  _LC058 & !_LC086);
+  _X020  = EXP( _LC058 & !_LC066 & !x2 & !x5);
+  _X021  = EXP(!_LC038 &  _LC058 & !_LC066 & !x5);
+  _X022  = EXP(!_LC038 & !_LC042 &  _LC058 & !x4);
+  _X023  = EXP(!_LC038 &  _LC058 & !_LC086 & !x3);
+  _X024  = EXP(!_LC003 & !_LC038 &  _LC058 & !x1);
+  _X025  = EXP(!_LC038 &  _LC058 &  _LC109);
+  _X026  = EXP(!_LC038 &  _LC058 &  _LC105);
+  _X027  = EXP( _LC058 &  _LC105 & !x2);
+  _X028  = EXP( _LC058 &  _LC109 & !x2);
+  _X029  = EXP(!_LC003 & !_LC033 & !_LC038 &  _LC058);
+  _X030  = EXP(!_LC004 & !_LC038 &  _LC058 & !_LC066);
+  _X031  = EXP(!_LC038 & !_LC041 & !_LC042 &  _LC058);
+  _EQ029 =  err & !_LC017 & !_LC032 & !_LC034 & !_LC098 & !_LC127 &  _X019 & 
+              _X020 &  _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 & 
+              _X027 &  _X028 &  _X029 &  _X030 &  _X031;
+  _X019  = EXP(!_LC001 & !_LC038 &  _LC058 & !_LC086);
+  _X020  = EXP( _LC058 & !_LC066 & !x2 & !x5);
+  _X021  = EXP(!_LC038 &  _LC058 & !_LC066 & !x5);
+  _X022  = EXP(!_LC038 & !_LC042 &  _LC058 & !x4);
+  _X023  = EXP(!_LC038 &  _LC058 & !_LC086 & !x3);
+  _X024  = EXP(!_LC003 & !_LC038 &  _LC058 & !x1);
+  _X025  = EXP(!_LC038 &  _LC058 &  _LC109);
+  _X026  = EXP(!_LC038 &  _LC058 &  _LC105);
+  _X027  = EXP( _LC058 &  _LC105 & !x2);
+  _X028  = EXP( _LC058 &  _LC109 & !x2);
+  _X029  = EXP(!_LC003 & !_LC033 & !_LC038 &  _LC058);
+  _X030  = EXP(!_LC004 & !_LC038 &  _LC058 & !_LC066);
+  _X031  = EXP(!_LC038 & !_LC041 & !_LC042 &  _LC058);
+
+-- Node name is '|SYN_MUX:17|~564~1' 
+-- Equation name is '_LC090', type is buried 
+-- synthesized logic cell 
+_LC090   = LCELL( _EQ030 $  _EQ031);
+  _EQ030 =  err &  _LC004 & !_LC017 & !_LC032 & !_LC034 &  _LC038 & !_LC058 & 
+              _LC066 & !_LC098 & !_LC127 &  x2 &  x5 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err & !_LC017 & !_LC032 & !_LC034 &  _LC038 &  _LC041 &  _LC042 & 
+             !_LC058 & !_LC098 & !_LC127 &  x2 &  x4 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err &  _LC001 & !_LC017 & !_LC032 & !_LC034 &  _LC038 & !_LC058 & 
+              _LC086 & !_LC098 & !_LC127 &  x2 &  x3 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err &  _LC003 & !_LC017 & !_LC032 &  _LC033 & !_LC034 &  _LC038 & 
+             !_LC058 & !_LC098 & !_LC127 &  x1 &  x2 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031;
+  _X019  = EXP(!_LC001 & !_LC038 &  _LC058 & !_LC086);
+  _X020  = EXP( _LC058 & !_LC066 & !x2 & !x5);
+  _X021  = EXP(!_LC038 &  _LC058 & !_LC066 & !x5);
+  _X022  = EXP(!_LC038 & !_LC042 &  _LC058 & !x4);
+  _X023  = EXP(!_LC038 &  _LC058 & !_LC086 & !x3);
+  _X024  = EXP(!_LC003 & !_LC038 &  _LC058 & !x1);
+  _X025  = EXP(!_LC038 &  _LC058 &  _LC109);
+  _X026  = EXP(!_LC038 &  _LC058 &  _LC105);
+  _X027  = EXP( _LC058 &  _LC105 & !x2);
+  _X028  = EXP( _LC058 &  _LC109 & !x2);
+  _X029  = EXP(!_LC003 & !_LC033 & !_LC038 &  _LC058);
+  _X030  = EXP(!_LC004 & !_LC038 &  _LC058 & !_LC066);
+  _X031  = EXP(!_LC038 & !_LC041 & !_LC042 &  _LC058);
+  _EQ031 =  err & !_LC017 & !_LC032 & !_LC034 & !_LC098 & !_LC127 &  _X019 & 
+              _X020 &  _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 & 
+              _X027 &  _X028 &  _X029 &  _X030 &  _X031;
+  _X019  = EXP(!_LC001 & !_LC038 &  _LC058 & !_LC086);
+  _X020  = EXP( _LC058 & !_LC066 & !x2 & !x5);
+  _X021  = EXP(!_LC038 &  _LC058 & !_LC066 & !x5);
+  _X022  = EXP(!_LC038 & !_LC042 &  _LC058 & !x4);
+  _X023  = EXP(!_LC038 &  _LC058 & !_LC086 & !x3);
+  _X024  = EXP(!_LC003 & !_LC038 &  _LC058 & !x1);
+  _X025  = EXP(!_LC038 &  _LC058 &  _LC109);
+  _X026  = EXP(!_LC038 &  _LC058 &  _LC105);
+  _X027  = EXP( _LC058 &  _LC105 & !x2);
+  _X028  = EXP( _LC058 &  _LC109 & !x2);
+  _X029  = EXP(!_LC003 & !_LC033 & !_LC038 &  _LC058);
+  _X030  = EXP(!_LC004 & !_LC038 &  _LC058 & !_LC066);
+  _X031  = EXP(!_LC038 & !_LC041 & !_LC042 &  _LC058);
+
+-- Node name is '|SYN_MUX:17|~564~2' 
+-- Equation name is '_LC127', type is buried 
+-- synthesized logic cell 
+_LC127   = LCELL( _EQ032 $  GND);
+  _EQ032 =  _LC003 &  _LC033 &  _LC058 &  x1 & !x2
+         #  _LC001 &  _LC058 &  _LC086 & !x2 &  x3
+         #  _LC041 &  _LC042 &  _LC058 & !x2 &  x4
+         #  _LC004 &  _LC058 &  _LC066 & !x2 &  x5
+         #  _LC004 & !_LC038 &  _LC058 &  _LC066 &  x5;
+
+-- Node name is '|SYN_MUX:17|~564~3' 
+-- Equation name is '_LC098', type is buried 
+-- synthesized logic cell 
+_LC098   = LCELL( _EQ033 $  GND);
+  _EQ033 = !_LC038 &  _LC041 &  _LC042 &  _LC058 &  x4
+         #  _LC001 & !_LC038 &  _LC058 &  _LC086 &  x3
+         #  _LC003 &  _LC033 & !_LC038 &  _LC058 &  x1
+         #  _LC038 & !_LC058 & !_LC066 &  x2 & !x5
+         #  _LC038 & !_LC042 & !_LC058 &  x2 & !x4;
+
+-- Node name is '|SYN_MUX:17|~564~4' 
+-- Equation name is '_LC034', type is buried 
+-- synthesized logic cell 
+_LC034   = LCELL( _EQ034 $  GND);
+  _EQ034 =  _LC038 & !_LC058 & !_LC086 &  x2 & !x3
+         # !_LC003 &  _LC038 & !_LC058 & !x1 &  x2
+         # !_LC004 &  _LC038 & !_LC058 & !_LC066 &  x2
+         #  _LC038 & !_LC041 & !_LC042 & !_LC058 &  x2
+         # !_LC001 &  _LC038 & !_LC058 & !_LC086 &  x2;
+
+-- Node name is '|SYN_MUX:17|~564~5' 
+-- Equation name is '_LC032', type is buried 
+-- synthesized logic cell 
+_LC032   = LCELL( _EQ035 $  GND);
+  _EQ035 = !_LC003 & !_LC033 &  _LC038 & !_LC058 &  x2
+         #  _LC038 & !_LC058 &  _LC105 &  x2
+         #  _LC038 & !_LC058 &  _LC109 &  x2
+         # !_LC003 & !_LC033 &  _LC058 & !x2
+         # !_LC001 &  _LC058 & !_LC086 & !x2;
+
+-- Node name is '|SYN_MUX:17|~564~6' 
+-- Equation name is '_LC017', type is buried 
+-- synthesized logic cell 
+_LC017   = LCELL( _EQ036 $  GND);
+  _EQ036 = !_LC041 & !_LC042 &  _LC058 & !x2
+         # !_LC004 &  _LC058 & !_LC066 & !x2
+         # !_LC003 &  _LC058 & !x1 & !x2
+         #  _LC058 & !_LC086 & !x2 & !x3
+         # !_LC042 &  _LC058 & !x2 & !x4;
+
+-- Node name is '|SYN_MUX:17|~565~1' 
+-- Equation name is '_LC088', type is buried 
+-- synthesized logic cell 
+_LC088   = LCELL( _EQ037 $  _EQ038);
+  _EQ037 =  err &  _LC004 & !_LC017 & !_LC032 & !_LC034 &  _LC038 & !_LC058 & 
+              _LC066 & !_LC098 & !_LC127 &  x2 &  x5 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err & !_LC017 & !_LC032 & !_LC034 &  _LC038 &  _LC041 &  _LC042 & 
+             !_LC058 & !_LC098 & !_LC127 &  x2 &  x4 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err &  _LC001 & !_LC017 & !_LC032 & !_LC034 &  _LC038 & !_LC058 & 
+              _LC086 & !_LC098 & !_LC127 &  x2 &  x3 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031
+         #  err &  _LC003 & !_LC017 & !_LC032 &  _LC033 & !_LC034 &  _LC038 & 
+             !_LC058 & !_LC098 & !_LC127 &  x1 &  x2 &  _X019 &  _X020 & 
+              _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029 &  _X030 &  _X031;
+  _X019  = EXP(!_LC001 & !_LC038 &  _LC058 & !_LC086);
+  _X020  = EXP( _LC058 & !_LC066 & !x2 & !x5);
+  _X021  = EXP(!_LC038 &  _LC058 & !_LC066 & !x5);
+  _X022  = EXP(!_LC038 & !_LC042 &  _LC058 & !x4);
+  _X023  = EXP(!_LC038 &  _LC058 & !_LC086 & !x3);
+  _X024  = EXP(!_LC003 & !_LC038 &  _LC058 & !x1);
+  _X025  = EXP(!_LC038 &  _LC058 &  _LC109);
+  _X026  = EXP(!_LC038 &  _LC058 &  _LC105);
+  _X027  = EXP( _LC058 &  _LC105 & !x2);
+  _X028  = EXP( _LC058 &  _LC109 & !x2);
+  _X029  = EXP(!_LC003 & !_LC033 & !_LC038 &  _LC058);
+  _X030  = EXP(!_LC004 & !_LC038 &  _LC058 & !_LC066);
+  _X031  = EXP(!_LC038 & !_LC041 & !_LC042 &  _LC058);
+  _EQ038 =  err & !_LC017 & !_LC032 & !_LC034 & !_LC098 & !_LC127 &  _X019 & 
+              _X020 &  _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  _X026 & 
+              _X027 &  _X028 &  _X029 &  _X030 &  _X031;
+  _X019  = EXP(!_LC001 & !_LC038 &  _LC058 & !_LC086);
+  _X020  = EXP( _LC058 & !_LC066 & !x2 & !x5);
+  _X021  = EXP(!_LC038 &  _LC058 & !_LC066 & !x5);
+  _X022  = EXP(!_LC038 & !_LC042 &  _LC058 & !x4);
+  _X023  = EXP(!_LC038 &  _LC058 & !_LC086 & !x3);
+  _X024  = EXP(!_LC003 & !_LC038 &  _LC058 & !x1);
+  _X025  = EXP(!_LC038 &  _LC058 &  _LC109);
+  _X026  = EXP(!_LC038 &  _LC058 &  _LC105);
+  _X027  = EXP( _LC058 &  _LC105 & !x2);
+  _X028  = EXP( _LC058 &  _LC109 & !x2);
+  _X029  = EXP(!_LC003 & !_LC033 & !_LC038 &  _LC058);
+  _X030  = EXP(!_LC004 & !_LC038 &  _LC058 & !_LC066);
+  _X031  = EXP(!_LC038 & !_LC041 & !_LC042 &  _LC058);
+
+-- Node name is '|SYN_MUX:17|~614~1' 
+-- Equation name is '_LC099', type is buried 
+-- synthesized logic cell 
+_LC099   = LCELL( GND $ !_LC099);
+
+-- Node name is '|SYN_MUX:17|~615~1' 
+-- Equation name is '_LC112', type is buried 
+-- synthesized logic cell 
+_LC112   = LCELL( GND $ !_LC112);
+
+-- Node name is '|SYN_MUX:17|~616~1' 
+-- Equation name is '_LC102', type is buried 
+-- synthesized logic cell 
+_LC102   = LCELL( GND $ !_LC102);
+
+-- Node name is '|SYN_MUX:17|~617~1' 
+-- Equation name is '_LC103', type is buried 
+-- synthesized logic cell 
+_LC103   = LCELL( GND $ !_LC103);
+
+-- Node name is '|SYN_MUX:19|:15' = '|SYN_MUX:19|random0' 
+-- Equation name is '_LC093', type is buried 
+_LC093   = DFFE(!_LC091 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:19|:14' = '|SYN_MUX:19|random1' 
+-- Equation name is '_LC095', type is buried 
+_LC095   = DFFE(!_LC089 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:19|:13' = '|SYN_MUX:19|random2' 
+-- Equation name is '_LC083', type is buried 
+_LC083   = DFFE(!_LC092 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:19|:12' = '|SYN_MUX:19|random3' 
+-- Equation name is '_LC048', type is buried 
+_LC048   = DFFE(!_LC039 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:19|:18' = '|SYN_MUX:19|setup0' 
+-- Equation name is '_LC042', type is buried 
+_LC042   = DFFE( _EQ039 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ039 =  _LC040 &  _LC079
+         #  _LC042 & !_LC079;
+
+-- Node name is '|SYN_MUX:19|:17' = '|SYN_MUX:19|setup1' 
+-- Equation name is '_LC041', type is buried 
+_LC041   = DFFE( _EQ040 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ040 = !_LC041 & !_LC042 &  _LC079 & !_LC093
+         #  _LC047 &  _LC079
+         #  _LC041 & !_LC074;
+
+-- Node name is '|SYN_MUX:19|~529~1' 
+-- Equation name is '_LC047', type is buried 
+-- synthesized logic cell 
+_LC047   = LCELL( _EQ041 $  _LC041);
+  _EQ041 =  _LC041 &  _LC093 & !_LC095
+         # !_LC041 &  _LC042 & !_LC093;
+
+-- Node name is '|SYN_MUX:19|~539~1' 
+-- Equation name is '_LC040', type is buried 
+-- synthesized logic cell 
+_LC040   = LCELL( _EQ042 $ !_LC042);
+  _EQ042 =  _LC041 &  _LC093 &  x4
+         # !_LC041 & !_LC093 &  x4
+         #  _LC041 &  _LC095;
+
+-- Node name is '|SYN_MUX:19|~563~1' 
+-- Equation name is '_LC079', type is buried 
+-- synthesized logic cell 
+_LC079   = LCELL( _EQ043 $  _EQ044);
+  _EQ043 =  err &  _LC004 & !_LC030 & !_LC036 &  _LC041 & !_LC042 & !_LC045 & 
+              _LC066 & !_LC075 & !_LC128 &  x4 &  x5 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044
+         #  err &  _LC001 & !_LC030 & !_LC036 &  _LC041 & !_LC042 & !_LC045 & 
+             !_LC075 &  _LC086 & !_LC128 &  x3 &  x4 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044
+         #  err & !_LC030 & !_LC036 &  _LC038 &  _LC041 & !_LC042 & !_LC045 & 
+              _LC058 & !_LC075 & !_LC128 &  x2 &  x4 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044
+         #  err &  _LC003 & !_LC030 &  _LC033 & !_LC036 &  _LC041 & !_LC042 & 
+             !_LC045 & !_LC075 & !_LC128 &  x1 &  x4 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044;
+  _X032  = EXP(!_LC038 & !_LC041 &  _LC042 & !_LC058);
+  _X033  = EXP( _LC042 & !_LC066 & !x4 & !x5);
+  _X034  = EXP(!_LC041 &  _LC042 & !_LC066 & !x5);
+  _X035  = EXP(!_LC041 &  _LC042 & !_LC086 & !x3);
+  _X036  = EXP(!_LC041 &  _LC042 & !_LC058 & !x2);
+  _X037  = EXP(!_LC003 & !_LC041 &  _LC042 & !x1);
+  _X038  = EXP(!_LC041 &  _LC042 &  _LC048);
+  _X039  = EXP(!_LC041 &  _LC042 &  _LC083);
+  _X040  = EXP( _LC042 &  _LC083 & !x4);
+  _X041  = EXP( _LC042 &  _LC048 & !x4);
+  _X042  = EXP(!_LC003 & !_LC033 & !_LC041 &  _LC042);
+  _X043  = EXP(!_LC004 & !_LC041 &  _LC042 & !_LC066);
+  _X044  = EXP(!_LC001 & !_LC041 &  _LC042 & !_LC086);
+  _EQ044 =  err & !_LC030 & !_LC036 & !_LC045 & !_LC075 & !_LC128 &  _X032 & 
+              _X033 &  _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 & 
+              _X040 &  _X041 &  _X042 &  _X043 &  _X044;
+  _X032  = EXP(!_LC038 & !_LC041 &  _LC042 & !_LC058);
+  _X033  = EXP( _LC042 & !_LC066 & !x4 & !x5);
+  _X034  = EXP(!_LC041 &  _LC042 & !_LC066 & !x5);
+  _X035  = EXP(!_LC041 &  _LC042 & !_LC086 & !x3);
+  _X036  = EXP(!_LC041 &  _LC042 & !_LC058 & !x2);
+  _X037  = EXP(!_LC003 & !_LC041 &  _LC042 & !x1);
+  _X038  = EXP(!_LC041 &  _LC042 &  _LC048);
+  _X039  = EXP(!_LC041 &  _LC042 &  _LC083);
+  _X040  = EXP( _LC042 &  _LC083 & !x4);
+  _X041  = EXP( _LC042 &  _LC048 & !x4);
+  _X042  = EXP(!_LC003 & !_LC033 & !_LC041 &  _LC042);
+  _X043  = EXP(!_LC004 & !_LC041 &  _LC042 & !_LC066);
+  _X044  = EXP(!_LC001 & !_LC041 &  _LC042 & !_LC086);
+
+-- Node name is '|SYN_MUX:19|~564~1' 
+-- Equation name is '_LC074', type is buried 
+-- synthesized logic cell 
+_LC074   = LCELL( _EQ045 $  _EQ046);
+  _EQ045 =  err &  _LC004 & !_LC030 & !_LC036 &  _LC041 & !_LC042 & !_LC045 & 
+              _LC066 & !_LC075 & !_LC128 &  x4 &  x5 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044
+         #  err &  _LC001 & !_LC030 & !_LC036 &  _LC041 & !_LC042 & !_LC045 & 
+             !_LC075 &  _LC086 & !_LC128 &  x3 &  x4 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044
+         #  err & !_LC030 & !_LC036 &  _LC038 &  _LC041 & !_LC042 & !_LC045 & 
+              _LC058 & !_LC075 & !_LC128 &  x2 &  x4 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044
+         #  err &  _LC003 & !_LC030 &  _LC033 & !_LC036 &  _LC041 & !_LC042 & 
+             !_LC045 & !_LC075 & !_LC128 &  x1 &  x4 &  _X032 &  _X033 & 
+              _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 & 
+              _X041 &  _X042 &  _X043 &  _X044;
+  _X032  = EXP(!_LC038 & !_LC041 &  _LC042 & !_LC058);
+  _X033  = EXP( _LC042 & !_LC066 & !x4 & !x5);
+  _X034  = EXP(!_LC041 &  _LC042 & !_LC066 & !x5);
+  _X035  = EXP(!_LC041 &  _LC042 & !_LC086 & !x3);
+  _X036  = EXP(!_LC041 &  _LC042 & !_LC058 & !x2);
+  _X037  = EXP(!_LC003 & !_LC041 &  _LC042 & !x1);
+  _X038  = EXP(!_LC041 &  _LC042 &  _LC048);
+  _X039  = EXP(!_LC041 &  _LC042 &  _LC083);
+  _X040  = EXP( _LC042 &  _LC083 & !x4);
+  _X041  = EXP( _LC042 &  _LC048 & !x4);
+  _X042  = EXP(!_LC003 & !_LC033 & !_LC041 &  _LC042);
+  _X043  = EXP(!_LC004 & !_LC041 &  _LC042 & !_LC066);
+  _X044  = EXP(!_LC001 & !_LC041 &  _LC042 & !_LC086);
+  _EQ046 =  err & !_LC030 & !_LC036 & !_LC045 & !_LC075 & !_LC128 &  _X032 & 
+              _X033 &  _X034 &  _X035 &  _X036 &  _X037 &  _X038 &  _X039 & 
+              _X040 &  _X041 &  _X042 &  _X043 &  _X044;
+  _X032  = EXP(!_LC038 & !_LC041 &  _LC042 & !_LC058);
+  _X033  = EXP( _LC042 & !_LC066 & !x4 & !x5);
+  _X034  = EXP(!_LC041 &  _LC042 & !_LC066 & !x5);
+  _X035  = EXP(!_LC041 &  _LC042 & !_LC086 & !x3);
+  _X036  = EXP(!_LC041 &  _LC042 & !_LC058 & !x2);
+  _X037  = EXP(!_LC003 & !_LC041 &  _LC042 & !x1);
+  _X038  = EXP(!_LC041 &  _LC042 &  _LC048);
+  _X039  = EXP(!_LC041 &  _LC042 &  _LC083);
+  _X040  = EXP( _LC042 &  _LC083 & !x4);
+  _X041  = EXP( _LC042 &  _LC048 & !x4);
+  _X042  = EXP(!_LC003 & !_LC033 & !_LC041 &  _LC042);
+  _X043  = EXP(!_LC004 & !_LC041 &  _LC042 & !_LC066);
+  _X044  = EXP(!_LC001 & !_LC041 &  _LC042 & !_LC086);
+
+-- Node name is '|SYN_MUX:19|~564~2' 
+-- Equation name is '_LC128', type is buried 
+-- synthesized logic cell 
+_LC128   = LCELL( _EQ047 $  GND);
+  _EQ047 =  _LC003 &  _LC033 &  _LC042 &  x1 & !x4
+         #  _LC038 &  _LC042 &  _LC058 &  x2 & !x4
+         #  _LC001 &  _LC042 &  _LC086 &  x3 & !x4
+         #  _LC004 &  _LC042 &  _LC066 & !x4 &  x5
+         #  _LC004 & !_LC041 &  _LC042 &  _LC066 &  x5;
+
+-- Node name is '|SYN_MUX:19|~564~3' 
+-- Equation name is '_LC036', type is buried 
+-- synthesized logic cell 
+_LC036   = LCELL( _EQ048 $  GND);
+  _EQ048 =  _LC001 & !_LC041 &  _LC042 &  _LC086 &  x3
+         #  _LC038 & !_LC041 &  _LC042 &  _LC058 &  x2
+         #  _LC003 &  _LC033 & !_LC041 &  _LC042 &  x1
+         #  _LC041 & !_LC042 & !_LC066 &  x4 & !x5
+         #  _LC041 & !_LC042 & !_LC086 & !x3 &  x4;
+
+-- Node name is '|SYN_MUX:19|~564~4' 
+-- Equation name is '_LC045', type is buried 
+-- synthesized logic cell 
+_LC045   = LCELL( _EQ049 $  GND);
+  _EQ049 =  _LC041 & !_LC042 & !_LC058 & !x2 &  x4
+         # !_LC003 &  _LC041 & !_LC042 & !x1 &  x4
+         # !_LC004 &  _LC041 & !_LC042 & !_LC066 &  x4
+         # !_LC001 &  _LC041 & !_LC042 & !_LC086 &  x4
+         # !_LC038 &  _LC041 & !_LC042 & !_LC058 &  x4;
+
+-- Node name is '|SYN_MUX:19|~564~5' 
+-- Equation name is '_LC075', type is buried 
+-- synthesized logic cell 
+_LC075   = LCELL( _EQ050 $  GND);
+  _EQ050 = !_LC003 & !_LC033 &  _LC041 & !_LC042 &  x4
+         #  _LC041 & !_LC042 &  _LC083 &  x4
+         #  _LC041 & !_LC042 &  _LC048 &  x4
+         # !_LC003 & !_LC033 &  _LC042 & !x4
+         # !_LC038 &  _LC042 & !_LC058 & !x4;
+
+-- Node name is '|SYN_MUX:19|~564~6' 
+-- Equation name is '_LC030', type is buried 
+-- synthesized logic cell 
+_LC030   = LCELL( _EQ051 $  GND);
+  _EQ051 = !_LC001 &  _LC042 & !_LC086 & !x4
+         # !_LC004 &  _LC042 & !_LC066 & !x4
+         # !_LC003 &  _LC042 & !x1 & !x4
+         #  _LC042 & !_LC058 & !x2 & !x4
+         #  _LC042 & !_LC086 & !x3 & !x4;
+
+-- Node name is '|SYN_MUX:19|~614~1' 
+-- Equation name is '_LC039', type is buried 
+-- synthesized logic cell 
+_LC039   = LCELL( GND $ !_LC039);
+
+-- Node name is '|SYN_MUX:19|~615~1' 
+-- Equation name is '_LC092', type is buried 
+-- synthesized logic cell 
+_LC092   = LCELL( GND $ !_LC092);
+
+-- Node name is '|SYN_MUX:19|~616~1' 
+-- Equation name is '_LC089', type is buried 
+-- synthesized logic cell 
+_LC089   = LCELL( GND $ !_LC089);
+
+-- Node name is '|SYN_MUX:19|~617~1' 
+-- Equation name is '_LC091', type is buried 
+-- synthesized logic cell 
+_LC091   = LCELL( GND $ !_LC091);
+
+-- Node name is '|SYN_MUX:20|:15' = '|SYN_MUX:20|random0' 
+-- Equation name is '_LC067', type is buried 
+_LC067   = DFFE(!_LC077 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:20|:14' = '|SYN_MUX:20|random1' 
+-- Equation name is '_LC072', type is buried 
+_LC072   = DFFE(!_LC068 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:20|:13' = '|SYN_MUX:20|random2' 
+-- Equation name is '_LC018', type is buried 
+_LC018   = DFFE(!_LC019 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:20|:12' = '|SYN_MUX:20|random3' 
+-- Equation name is '_LC081', type is buried 
+_LC081   = DFFE(!_LC084 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:20|:18' = '|SYN_MUX:20|setup0' 
+-- Equation name is '_LC086', type is buried 
+_LC086   = DFFE( _EQ052 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ052 =  _LC057 &  _LC094
+         # !_LC057 &  _LC086;
+
+-- Node name is '|SYN_MUX:20|:17' = '|SYN_MUX:20|setup1' 
+-- Equation name is '_LC001', type is buried 
+_LC001   = DFFE( _EQ053 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ053 = !_LC001 &  _LC056 & !_LC067 & !_LC086
+         #  _LC056 &  _LC082
+         #  _LC001 & !_LC061;
+
+-- Node name is '|SYN_MUX:20|~529~1' 
+-- Equation name is '_LC082', type is buried 
+-- synthesized logic cell 
+_LC082   = LCELL( _EQ054 $  _LC001);
+  _EQ054 =  _LC001 &  _LC067 & !_LC072
+         # !_LC001 & !_LC067 &  _LC086;
+
+-- Node name is '|SYN_MUX:20|~539~1' 
+-- Equation name is '_LC094', type is buried 
+-- synthesized logic cell 
+_LC094   = LCELL( _EQ055 $ !_LC086);
+  _EQ055 =  _LC001 &  _LC067 &  x3
+         # !_LC001 & !_LC067 &  x3
+         #  _LC001 &  _LC072;
+
+-- Node name is '|SYN_MUX:20|~563~1' 
+-- Equation name is '_LC056', type is buried 
+-- synthesized logic cell 
+_LC056   = LCELL( _EQ056 $  _EQ057);
+  _EQ056 =  err &  _LC001 &  _LC004 & !_LC025 & !_LC026 & !_LC027 & !_LC043 & 
+              _LC066 & !_LC086 & !_LC106 &  x3 &  x5 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 & !_LC025 & !_LC026 & !_LC027 &  _LC041 &  _LC042 & 
+             !_LC043 & !_LC086 & !_LC106 &  x3 &  x4 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 & !_LC025 & !_LC026 & !_LC027 &  _LC038 & !_LC043 & 
+              _LC058 & !_LC086 & !_LC106 &  x2 &  x3 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 &  _LC003 & !_LC025 & !_LC026 & !_LC027 &  _LC033 & 
+             !_LC043 & !_LC086 & !_LC106 &  x1 &  x3 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057;
+  _X045  = EXP(!_LC001 & !_LC038 & !_LC058 &  _LC086);
+  _X046  = EXP(!_LC066 &  _LC086 & !x3 & !x5);
+  _X047  = EXP(!_LC001 & !_LC066 &  _LC086 & !x5);
+  _X048  = EXP(!_LC001 & !_LC042 &  _LC086 & !x4);
+  _X049  = EXP(!_LC001 & !_LC058 &  _LC086 & !x2);
+  _X050  = EXP(!_LC001 & !_LC003 &  _LC086 & !x1);
+  _X051  = EXP(!_LC001 &  _LC081 &  _LC086);
+  _X052  = EXP(!_LC001 &  _LC018 &  _LC086);
+  _X053  = EXP( _LC018 &  _LC086 & !x3);
+  _X054  = EXP( _LC081 &  _LC086 & !x3);
+  _X055  = EXP(!_LC001 & !_LC003 & !_LC033 &  _LC086);
+  _X056  = EXP(!_LC001 & !_LC004 & !_LC066 &  _LC086);
+  _X057  = EXP(!_LC001 & !_LC041 & !_LC042 &  _LC086);
+  _EQ057 =  err & !_LC025 & !_LC026 & !_LC027 & !_LC043 & !_LC106 &  _X045 & 
+              _X046 &  _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 & 
+              _X053 &  _X054 &  _X055 &  _X056 &  _X057;
+  _X045  = EXP(!_LC001 & !_LC038 & !_LC058 &  _LC086);
+  _X046  = EXP(!_LC066 &  _LC086 & !x3 & !x5);
+  _X047  = EXP(!_LC001 & !_LC066 &  _LC086 & !x5);
+  _X048  = EXP(!_LC001 & !_LC042 &  _LC086 & !x4);
+  _X049  = EXP(!_LC001 & !_LC058 &  _LC086 & !x2);
+  _X050  = EXP(!_LC001 & !_LC003 &  _LC086 & !x1);
+  _X051  = EXP(!_LC001 &  _LC081 &  _LC086);
+  _X052  = EXP(!_LC001 &  _LC018 &  _LC086);
+  _X053  = EXP( _LC018 &  _LC086 & !x3);
+  _X054  = EXP( _LC081 &  _LC086 & !x3);
+  _X055  = EXP(!_LC001 & !_LC003 & !_LC033 &  _LC086);
+  _X056  = EXP(!_LC001 & !_LC004 & !_LC066 &  _LC086);
+  _X057  = EXP(!_LC001 & !_LC041 & !_LC042 &  _LC086);
+
+-- Node name is '|SYN_MUX:20|~564~1' 
+-- Equation name is '_LC061', type is buried 
+-- synthesized logic cell 
+_LC061   = LCELL( _EQ058 $  _EQ059);
+  _EQ058 =  err &  _LC001 &  _LC004 & !_LC025 & !_LC026 & !_LC027 & !_LC043 & 
+              _LC066 & !_LC086 & !_LC106 &  x3 &  x5 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 & !_LC025 & !_LC026 & !_LC027 &  _LC041 &  _LC042 & 
+             !_LC043 & !_LC086 & !_LC106 &  x3 &  x4 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 & !_LC025 & !_LC026 & !_LC027 &  _LC038 & !_LC043 & 
+              _LC058 & !_LC086 & !_LC106 &  x2 &  x3 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 &  _LC003 & !_LC025 & !_LC026 & !_LC027 &  _LC033 & 
+             !_LC043 & !_LC086 & !_LC106 &  x1 &  x3 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057;
+  _X045  = EXP(!_LC001 & !_LC038 & !_LC058 &  _LC086);
+  _X046  = EXP(!_LC066 &  _LC086 & !x3 & !x5);
+  _X047  = EXP(!_LC001 & !_LC066 &  _LC086 & !x5);
+  _X048  = EXP(!_LC001 & !_LC042 &  _LC086 & !x4);
+  _X049  = EXP(!_LC001 & !_LC058 &  _LC086 & !x2);
+  _X050  = EXP(!_LC001 & !_LC003 &  _LC086 & !x1);
+  _X051  = EXP(!_LC001 &  _LC081 &  _LC086);
+  _X052  = EXP(!_LC001 &  _LC018 &  _LC086);
+  _X053  = EXP( _LC018 &  _LC086 & !x3);
+  _X054  = EXP( _LC081 &  _LC086 & !x3);
+  _X055  = EXP(!_LC001 & !_LC003 & !_LC033 &  _LC086);
+  _X056  = EXP(!_LC001 & !_LC004 & !_LC066 &  _LC086);
+  _X057  = EXP(!_LC001 & !_LC041 & !_LC042 &  _LC086);
+  _EQ059 =  err & !_LC025 & !_LC026 & !_LC027 & !_LC043 & !_LC106 &  _X045 & 
+              _X046 &  _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 & 
+              _X053 &  _X054 &  _X055 &  _X056 &  _X057;
+  _X045  = EXP(!_LC001 & !_LC038 & !_LC058 &  _LC086);
+  _X046  = EXP(!_LC066 &  _LC086 & !x3 & !x5);
+  _X047  = EXP(!_LC001 & !_LC066 &  _LC086 & !x5);
+  _X048  = EXP(!_LC001 & !_LC042 &  _LC086 & !x4);
+  _X049  = EXP(!_LC001 & !_LC058 &  _LC086 & !x2);
+  _X050  = EXP(!_LC001 & !_LC003 &  _LC086 & !x1);
+  _X051  = EXP(!_LC001 &  _LC081 &  _LC086);
+  _X052  = EXP(!_LC001 &  _LC018 &  _LC086);
+  _X053  = EXP( _LC018 &  _LC086 & !x3);
+  _X054  = EXP( _LC081 &  _LC086 & !x3);
+  _X055  = EXP(!_LC001 & !_LC003 & !_LC033 &  _LC086);
+  _X056  = EXP(!_LC001 & !_LC004 & !_LC066 &  _LC086);
+  _X057  = EXP(!_LC001 & !_LC041 & !_LC042 &  _LC086);
+
+-- Node name is '|SYN_MUX:20|~564~2' 
+-- Equation name is '_LC106', type is buried 
+-- synthesized logic cell 
+_LC106   = LCELL( _EQ060 $  GND);
+  _EQ060 =  _LC003 &  _LC033 &  _LC086 &  x1 & !x3
+         #  _LC038 &  _LC058 &  _LC086 &  x2 & !x3
+         #  _LC041 &  _LC042 &  _LC086 & !x3 &  x4
+         #  _LC004 &  _LC066 &  _LC086 & !x3 &  x5
+         # !_LC001 &  _LC004 &  _LC066 &  _LC086 &  x5;
+
+-- Node name is '|SYN_MUX:20|~564~3' 
+-- Equation name is '_LC043', type is buried 
+-- synthesized logic cell 
+_LC043   = LCELL( _EQ061 $  GND);
+  _EQ061 = !_LC001 &  _LC041 &  _LC042 &  _LC086 &  x4
+         # !_LC001 &  _LC038 &  _LC058 &  _LC086 &  x2
+         # !_LC001 &  _LC003 &  _LC033 &  _LC086 &  x1
+         #  _LC001 & !_LC066 & !_LC086 &  x3 & !x5
+         #  _LC001 & !_LC042 & !_LC086 &  x3 & !x4;
+
+-- Node name is '|SYN_MUX:20|~564~4' 
+-- Equation name is '_LC027', type is buried 
+-- synthesized logic cell 
+_LC027   = LCELL( _EQ062 $  GND);
+  _EQ062 =  _LC001 & !_LC058 & !_LC086 & !x2 &  x3
+         #  _LC001 & !_LC003 & !_LC086 & !x1 &  x3
+         #  _LC001 & !_LC004 & !_LC066 & !_LC086 &  x3
+         #  _LC001 & !_LC041 & !_LC042 & !_LC086 &  x3
+         #  _LC001 & !_LC038 & !_LC058 & !_LC086 &  x3;
+
+-- Node name is '|SYN_MUX:20|~564~5' 
+-- Equation name is '_LC026', type is buried 
+-- synthesized logic cell 
+_LC026   = LCELL( _EQ063 $  GND);
+  _EQ063 =  _LC001 & !_LC003 & !_LC033 & !_LC086 &  x3
+         #  _LC001 &  _LC018 & !_LC086 &  x3
+         #  _LC001 &  _LC081 & !_LC086 &  x3
+         # !_LC003 & !_LC033 &  _LC086 & !x3
+         # !_LC038 & !_LC058 &  _LC086 & !x3;
+
+-- Node name is '|SYN_MUX:20|~564~6' 
+-- Equation name is '_LC025', type is buried 
+-- synthesized logic cell 
+_LC025   = LCELL( _EQ064 $  GND);
+  _EQ064 = !_LC041 & !_LC042 &  _LC086 & !x3
+         # !_LC004 & !_LC066 &  _LC086 & !x3
+         # !_LC003 &  _LC086 & !x1 & !x3
+         # !_LC058 &  _LC086 & !x2 & !x3
+         # !_LC042 &  _LC086 & !x3 & !x4;
+
+-- Node name is '|SYN_MUX:20|~565~1' 
+-- Equation name is '_LC057', type is buried 
+-- synthesized logic cell 
+_LC057   = LCELL( _EQ065 $  _EQ066);
+  _EQ065 =  err &  _LC001 &  _LC004 & !_LC025 & !_LC026 & !_LC027 & !_LC043 & 
+              _LC066 & !_LC086 & !_LC106 &  x3 &  x5 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 & !_LC025 & !_LC026 & !_LC027 &  _LC041 &  _LC042 & 
+             !_LC043 & !_LC086 & !_LC106 &  x3 &  x4 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 & !_LC025 & !_LC026 & !_LC027 &  _LC038 & !_LC043 & 
+              _LC058 & !_LC086 & !_LC106 &  x2 &  x3 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057
+         #  err &  _LC001 &  _LC003 & !_LC025 & !_LC026 & !_LC027 &  _LC033 & 
+             !_LC043 & !_LC086 & !_LC106 &  x1 &  x3 &  _X045 &  _X046 & 
+              _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 &  _X053 & 
+              _X054 &  _X055 &  _X056 &  _X057;
+  _X045  = EXP(!_LC001 & !_LC038 & !_LC058 &  _LC086);
+  _X046  = EXP(!_LC066 &  _LC086 & !x3 & !x5);
+  _X047  = EXP(!_LC001 & !_LC066 &  _LC086 & !x5);
+  _X048  = EXP(!_LC001 & !_LC042 &  _LC086 & !x4);
+  _X049  = EXP(!_LC001 & !_LC058 &  _LC086 & !x2);
+  _X050  = EXP(!_LC001 & !_LC003 &  _LC086 & !x1);
+  _X051  = EXP(!_LC001 &  _LC081 &  _LC086);
+  _X052  = EXP(!_LC001 &  _LC018 &  _LC086);
+  _X053  = EXP( _LC018 &  _LC086 & !x3);
+  _X054  = EXP( _LC081 &  _LC086 & !x3);
+  _X055  = EXP(!_LC001 & !_LC003 & !_LC033 &  _LC086);
+  _X056  = EXP(!_LC001 & !_LC004 & !_LC066 &  _LC086);
+  _X057  = EXP(!_LC001 & !_LC041 & !_LC042 &  _LC086);
+  _EQ066 =  err & !_LC025 & !_LC026 & !_LC027 & !_LC043 & !_LC106 &  _X045 & 
+              _X046 &  _X047 &  _X048 &  _X049 &  _X050 &  _X051 &  _X052 & 
+              _X053 &  _X054 &  _X055 &  _X056 &  _X057;
+  _X045  = EXP(!_LC001 & !_LC038 & !_LC058 &  _LC086);
+  _X046  = EXP(!_LC066 &  _LC086 & !x3 & !x5);
+  _X047  = EXP(!_LC001 & !_LC066 &  _LC086 & !x5);
+  _X048  = EXP(!_LC001 & !_LC042 &  _LC086 & !x4);
+  _X049  = EXP(!_LC001 & !_LC058 &  _LC086 & !x2);
+  _X050  = EXP(!_LC001 & !_LC003 &  _LC086 & !x1);
+  _X051  = EXP(!_LC001 &  _LC081 &  _LC086);
+  _X052  = EXP(!_LC001 &  _LC018 &  _LC086);
+  _X053  = EXP( _LC018 &  _LC086 & !x3);
+  _X054  = EXP( _LC081 &  _LC086 & !x3);
+  _X055  = EXP(!_LC001 & !_LC003 & !_LC033 &  _LC086);
+  _X056  = EXP(!_LC001 & !_LC004 & !_LC066 &  _LC086);
+  _X057  = EXP(!_LC001 & !_LC041 & !_LC042 &  _LC086);
+
+-- Node name is '|SYN_MUX:20|~614~1' 
+-- Equation name is '_LC084', type is buried 
+-- synthesized logic cell 
+_LC084   = LCELL( GND $ !_LC084);
+
+-- Node name is '|SYN_MUX:20|~615~1' 
+-- Equation name is '_LC019', type is buried 
+-- synthesized logic cell 
+_LC019   = LCELL( GND $ !_LC019);
+
+-- Node name is '|SYN_MUX:20|~616~1' 
+-- Equation name is '_LC068', type is buried 
+-- synthesized logic cell 
+_LC068   = LCELL( GND $ !_LC068);
+
+-- Node name is '|SYN_MUX:20|~617~1' 
+-- Equation name is '_LC077', type is buried 
+-- synthesized logic cell 
+_LC077   = LCELL( GND $ !_LC077);
+
+-- Node name is '|SYN_MUX:21|:15' = '|SYN_MUX:21|random0' 
+-- Equation name is '_LC050', type is buried 
+_LC050   = DFFE(!_LC064 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:21|:14' = '|SYN_MUX:21|random1' 
+-- Equation name is '_LC051', type is buried 
+_LC051   = DFFE(!_LC052 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:21|:13' = '|SYN_MUX:21|random2' 
+-- Equation name is '_LC078', type is buried 
+_LC078   = DFFE(!_LC070 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:21|:12' = '|SYN_MUX:21|random3' 
+-- Equation name is '_LC080', type is buried 
+_LC080   = DFFE(!_LC071 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|SYN_MUX:21|:18' = '|SYN_MUX:21|setup0' 
+-- Equation name is '_LC066', type is buried 
+_LC066   = DFFE( _EQ067 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ067 =  _LC073 &  _LC100
+         #  _LC066 & !_LC100;
+
+-- Node name is '|SYN_MUX:21|:17' = '|SYN_MUX:21|setup1' 
+-- Equation name is '_LC004', type is buried 
+_LC004   = DFFE( _EQ068 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ068 = !_LC004 & !_LC050 & !_LC066 &  _LC111
+         #  _LC076 &  _LC111
+         #  _LC004 & !_LC110;
+
+-- Node name is '|SYN_MUX:21|~529~1' 
+-- Equation name is '_LC076', type is buried 
+-- synthesized logic cell 
+_LC076   = LCELL( _EQ069 $  _LC004);
+  _EQ069 =  _LC004 &  _LC050 & !_LC051
+         # !_LC004 & !_LC050 &  _LC066;
+
+-- Node name is '|SYN_MUX:21|~539~1' 
+-- Equation name is '_LC073', type is buried 
+-- synthesized logic cell 
+_LC073   = LCELL( _EQ070 $ !_LC066);
+  _EQ070 =  _LC004 &  _LC050 &  x5
+         # !_LC004 & !_LC050 &  x5
+         #  _LC004 &  _LC051;
+
+-- Node name is '|SYN_MUX:21|~563~1' 
+-- Equation name is '_LC111', type is buried 
+-- synthesized logic cell 
+_LC111   = LCELL( _EQ071 $  _EQ072);
+  _EQ071 =  err &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC041 &  _LC042 & 
+             !_LC044 & !_LC066 & !_LC107 & !_LC108 &  x4 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC001 &  _LC004 & !_LC021 & !_LC024 & !_LC028 & !_LC044 & 
+             !_LC066 &  _LC086 & !_LC107 & !_LC108 &  x3 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC038 & !_LC044 & 
+              _LC058 & !_LC066 & !_LC107 & !_LC108 &  x2 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC003 &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC033 & 
+             !_LC044 & !_LC066 & !_LC107 & !_LC108 &  x1 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065;
+  _X058  = EXP( _LC066 &  _LC080 & !x5);
+  _X059  = EXP(!_LC004 & !_LC041 & !_LC042 &  _LC066);
+  _X060  = EXP(!_LC001 & !_LC004 &  _LC066 & !_LC086);
+  _X061  = EXP(!_LC004 & !_LC038 & !_LC058 &  _LC066);
+  _X062  = EXP(!_LC003 & !_LC004 & !_LC033 &  _LC066);
+  _X063  = EXP(!_LC004 &  _LC066 &  _LC080);
+  _X064  = EXP(!_LC004 &  _LC066 &  _LC078);
+  _X065  = EXP( _LC066 &  _LC078 & !x5);
+  _EQ072 =  err & !_LC021 & !_LC024 & !_LC028 & !_LC044 & !_LC107 & !_LC108 & 
+              _X058 &  _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 & 
+              _X065;
+  _X058  = EXP( _LC066 &  _LC080 & !x5);
+  _X059  = EXP(!_LC004 & !_LC041 & !_LC042 &  _LC066);
+  _X060  = EXP(!_LC001 & !_LC004 &  _LC066 & !_LC086);
+  _X061  = EXP(!_LC004 & !_LC038 & !_LC058 &  _LC066);
+  _X062  = EXP(!_LC003 & !_LC004 & !_LC033 &  _LC066);
+  _X063  = EXP(!_LC004 &  _LC066 &  _LC080);
+  _X064  = EXP(!_LC004 &  _LC066 &  _LC078);
+  _X065  = EXP( _LC066 &  _LC078 & !x5);
+
+-- Node name is '|SYN_MUX:21|~564~1' 
+-- Equation name is '_LC110', type is buried 
+-- synthesized logic cell 
+_LC110   = LCELL( _EQ073 $  _EQ074);
+  _EQ073 =  err &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC041 &  _LC042 & 
+             !_LC044 & !_LC066 & !_LC107 & !_LC108 &  x4 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC001 &  _LC004 & !_LC021 & !_LC024 & !_LC028 & !_LC044 & 
+             !_LC066 &  _LC086 & !_LC107 & !_LC108 &  x3 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC038 & !_LC044 & 
+              _LC058 & !_LC066 & !_LC107 & !_LC108 &  x2 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC003 &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC033 & 
+             !_LC044 & !_LC066 & !_LC107 & !_LC108 &  x1 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065;
+  _X058  = EXP( _LC066 &  _LC080 & !x5);
+  _X059  = EXP(!_LC004 & !_LC041 & !_LC042 &  _LC066);
+  _X060  = EXP(!_LC001 & !_LC004 &  _LC066 & !_LC086);
+  _X061  = EXP(!_LC004 & !_LC038 & !_LC058 &  _LC066);
+  _X062  = EXP(!_LC003 & !_LC004 & !_LC033 &  _LC066);
+  _X063  = EXP(!_LC004 &  _LC066 &  _LC080);
+  _X064  = EXP(!_LC004 &  _LC066 &  _LC078);
+  _X065  = EXP( _LC066 &  _LC078 & !x5);
+  _EQ074 =  err & !_LC021 & !_LC024 & !_LC028 & !_LC044 & !_LC107 & !_LC108 & 
+              _X058 &  _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 & 
+              _X065;
+  _X058  = EXP( _LC066 &  _LC080 & !x5);
+  _X059  = EXP(!_LC004 & !_LC041 & !_LC042 &  _LC066);
+  _X060  = EXP(!_LC001 & !_LC004 &  _LC066 & !_LC086);
+  _X061  = EXP(!_LC004 & !_LC038 & !_LC058 &  _LC066);
+  _X062  = EXP(!_LC003 & !_LC004 & !_LC033 &  _LC066);
+  _X063  = EXP(!_LC004 &  _LC066 &  _LC080);
+  _X064  = EXP(!_LC004 &  _LC066 &  _LC078);
+  _X065  = EXP( _LC066 &  _LC078 & !x5);
+
+-- Node name is '|SYN_MUX:21|~564~2' 
+-- Equation name is '_LC108', type is buried 
+-- synthesized logic cell 
+_LC108   = LCELL( _EQ075 $  GND);
+  _EQ075 =  _LC003 &  _LC033 &  _LC066 &  x1 & !x5
+         #  _LC038 &  _LC058 &  _LC066 &  x2 & !x5
+         #  _LC001 &  _LC066 &  _LC086 &  x3 & !x5
+         #  _LC041 &  _LC042 &  _LC066 &  x4 & !x5
+         # !_LC004 &  _LC041 &  _LC042 &  _LC066 &  x4;
+
+-- Node name is '|SYN_MUX:21|~564~3' 
+-- Equation name is '_LC044', type is buried 
+-- synthesized logic cell 
+_LC044   = LCELL( _EQ076 $  GND);
+  _EQ076 =  _LC001 & !_LC004 &  _LC066 &  _LC086 &  x3
+         # !_LC004 &  _LC038 &  _LC058 &  _LC066 &  x2
+         #  _LC003 & !_LC004 &  _LC033 &  _LC066 &  x1
+         #  _LC004 & !_LC042 & !_LC066 & !x4 &  x5
+         #  _LC004 & !_LC066 & !_LC086 & !x3 &  x5;
+
+-- Node name is '|SYN_MUX:21|~564~4' 
+-- Equation name is '_LC028', type is buried 
+-- synthesized logic cell 
+_LC028   = LCELL( _EQ077 $  GND);
+  _EQ077 =  _LC004 & !_LC058 & !_LC066 & !x2 &  x5
+         # !_LC003 &  _LC004 & !_LC066 & !x1 &  x5
+         #  _LC004 & !_LC041 & !_LC042 & !_LC066 &  x5
+         # !_LC001 &  _LC004 & !_LC066 & !_LC086 &  x5
+         #  _LC004 & !_LC038 & !_LC058 & !_LC066 &  x5;
+
+-- Node name is '|SYN_MUX:21|~564~5' 
+-- Equation name is '_LC107', type is buried 
+-- synthesized logic cell 
+_LC107   = LCELL( _EQ078 $  GND);
+  _EQ078 = !_LC003 &  _LC004 & !_LC033 & !_LC066 &  x5
+         #  _LC004 & !_LC066 &  _LC078 &  x5
+         #  _LC004 & !_LC066 &  _LC080 &  x5
+         # !_LC003 & !_LC033 &  _LC066 & !x5
+         # !_LC038 & !_LC058 &  _LC066 & !x5;
+
+-- Node name is '|SYN_MUX:21|~564~6' 
+-- Equation name is '_LC024', type is buried 
+-- synthesized logic cell 
+_LC024   = LCELL( _EQ079 $  GND);
+  _EQ079 = !_LC001 &  _LC066 & !_LC086 & !x5
+         # !_LC041 & !_LC042 &  _LC066 & !x5
+         # !_LC003 &  _LC066 & !x1 & !x5
+         # !_LC058 &  _LC066 & !x2 & !x5
+         #  _LC066 & !_LC086 & !x3 & !x5;
+
+-- Node name is '|SYN_MUX:21|~564~7' 
+-- Equation name is '_LC021', type is buried 
+-- synthesized logic cell 
+_LC021   = LCELL( _EQ080 $  GND);
+  _EQ080 = !_LC042 &  _LC066 & !x4 & !x5
+         # !_LC004 & !_LC042 &  _LC066 & !x4
+         # !_LC004 &  _LC066 & !_LC086 & !x3
+         # !_LC004 & !_LC058 &  _LC066 & !x2
+         # !_LC003 & !_LC004 &  _LC066 & !x1;
+
+-- Node name is '|SYN_MUX:21|~565~1' 
+-- Equation name is '_LC100', type is buried 
+-- synthesized logic cell 
+_LC100   = LCELL( _EQ081 $  _EQ082);
+  _EQ081 =  err &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC041 &  _LC042 & 
+             !_LC044 & !_LC066 & !_LC107 & !_LC108 &  x4 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC001 &  _LC004 & !_LC021 & !_LC024 & !_LC028 & !_LC044 & 
+             !_LC066 &  _LC086 & !_LC107 & !_LC108 &  x3 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC038 & !_LC044 & 
+              _LC058 & !_LC066 & !_LC107 & !_LC108 &  x2 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065
+         #  err &  _LC003 &  _LC004 & !_LC021 & !_LC024 & !_LC028 &  _LC033 & 
+             !_LC044 & !_LC066 & !_LC107 & !_LC108 &  x1 &  x5 &  _X058 & 
+              _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 &  _X065;
+  _X058  = EXP( _LC066 &  _LC080 & !x5);
+  _X059  = EXP(!_LC004 & !_LC041 & !_LC042 &  _LC066);
+  _X060  = EXP(!_LC001 & !_LC004 &  _LC066 & !_LC086);
+  _X061  = EXP(!_LC004 & !_LC038 & !_LC058 &  _LC066);
+  _X062  = EXP(!_LC003 & !_LC004 & !_LC033 &  _LC066);
+  _X063  = EXP(!_LC004 &  _LC066 &  _LC080);
+  _X064  = EXP(!_LC004 &  _LC066 &  _LC078);
+  _X065  = EXP( _LC066 &  _LC078 & !x5);
+  _EQ082 =  err & !_LC021 & !_LC024 & !_LC028 & !_LC044 & !_LC107 & !_LC108 & 
+              _X058 &  _X059 &  _X060 &  _X061 &  _X062 &  _X063 &  _X064 & 
+              _X065;
+  _X058  = EXP( _LC066 &  _LC080 & !x5);
+  _X059  = EXP(!_LC004 & !_LC041 & !_LC042 &  _LC066);
+  _X060  = EXP(!_LC001 & !_LC004 &  _LC066 & !_LC086);
+  _X061  = EXP(!_LC004 & !_LC038 & !_LC058 &  _LC066);
+  _X062  = EXP(!_LC003 & !_LC004 & !_LC033 &  _LC066);
+  _X063  = EXP(!_LC004 &  _LC066 &  _LC080);
+  _X064  = EXP(!_LC004 &  _LC066 &  _LC078);
+  _X065  = EXP( _LC066 &  _LC078 & !x5);
+
+-- Node name is '|SYN_MUX:21|~614~1' 
+-- Equation name is '_LC071', type is buried 
+-- synthesized logic cell 
+_LC071   = LCELL( GND $ !_LC071);
+
+-- Node name is '|SYN_MUX:21|~615~1' 
+-- Equation name is '_LC070', type is buried 
+-- synthesized logic cell 
+_LC070   = LCELL( GND $ !_LC070);
+
+-- Node name is '|SYN_MUX:21|~616~1' 
+-- Equation name is '_LC052', type is buried 
+-- synthesized logic cell 
+_LC052   = LCELL( GND $ !_LC052);
+
+-- Node name is '|SYN_MUX:21|~617~1' 
+-- Equation name is '_LC064', type is buried 
+-- synthesized logic cell 
+_LC064   = LCELL( GND $ !_LC064);
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information     e:\vhdldesigns\research\nandbp01-randper\dneuron01.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:01
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:04
+   Partitioner                            00:00:01
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:01
+   Assembler                              00:00:04
+   --------------------------             --------
+   Total Time                             00:00:11
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 10,426K

@@ -1,0 +1,47 @@
+--  EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+-- Altera Instruction Memory Initialization File
+Depth = 256;
+Width = 16;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+    [00..FF]: 00000000; -- nop
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+    00: 0280;   -- START:	LOAD LABEL1%:
+    01: 0B01;   --         ADDI 1%:
+    02: 0C01;   -- 	SHL  1
+    03: 0D02;   -- 	SHR  CON1%:
+    04: 080F;   --         AND  H#0F
+    05: 0780;   --         OR   H#80
+    06: 0581;   -- 	SUBT LABEL2%:
+    07: 0910;   -- 	JPOS ENDP%:
+    08: 0682;   -- 	XOR  LABEL3%:
+    09: 0087;   -- 	ADD  (TABLE1 + 3)%:
+    0A: 0410;   -- 	JNEG ENDP%:
+    0B: 0E01;   -- 	IN   SWITCH
+    0C: 0F00;   -- 	OUT  DISPLAY
+    0D: 0E10;   -- +        IN      PORT
+    0E: 0F10;   -- +        OUT     PORT
+    0F: 10C3;   --         WAIT B#11000011
+    10: 0180;   -- ENDP:	STORE LABEL1%:
+    11: 0311;   -- LOOP:   JUMP LOOP%: 
+    12: 03ED;   --         JUMP START<%:
+    13: 0313;   --         JUMP $%:
+    14: 0ACE;   -- LABEL1:	DW H#0ACE
+    15: 0000;   -- LABEL2: DW H#0000
+    16: FFFF;   -- LABEL3: DW H#FFFF    ;UNSIGNED LARGEST NUMBER
+    17: 7FFF;   -- LABEL4: DW H#7FFF    ;TWO'S COMPLEMENT LARGEST NUMBER
+    18: 0000;   -- TABLE1: DW H#0000
+    19: 0011;   -- 	DW H#0011
+    1A: 0022;   -- 	DW H#0022
+    1B: 0033;   -- 	DW H#0033
+    1C: 0044;   -- 	DW H#0044
+    1D: 0055;   -- 	DW H#0055
+    1E: 0066;   --     	DW H#0066
+    1F: 0077;   -- 	DW H#0077
+    20: 0088;   -- 	DW H#0088
+End;

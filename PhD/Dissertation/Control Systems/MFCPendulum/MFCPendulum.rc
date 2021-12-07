@@ -1,0 +1,521 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\MFCPendulum.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MFCPendulum.ico"
+IDR_MFCPENTYPE          ICON    DISCARDABLE     "res\\MFCPendulumDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_FILE_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Simulate"
+    BEGIN
+        MENUITEM "&Go",                         ID_SIMULATE_GO
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About MFCPendulum...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MFCPendulum"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MFCPendulum Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_SIMULATE DIALOG DISCARDABLE  0, 0, 242, 255
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simulation Driver"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "??",IDC_STATUS,5,222,227,12,SS_SUNKEN | WS_BORDER
+    PUSHBUTTON      "Simulate",IDC_SIMULATE,5,140,35,22
+    GROUPBOX        "Mechanical Parameters",IDC_STATIC,113,4,119,131
+    RTEXT           "Mass:",IDC_STATIC,141,16,35,10
+    EDITTEXT        IDC_EDIT_MASS,177,15,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_MASS,"msctls_updown32",UDS_ARROWKEYS,
+                    213,15,9,13
+    RTEXT           "Length:",IDC_STATIC,141,44,35,10
+    RTEXT           "Gravity:",IDC_STATIC,141,59,35,10
+    RTEXT           "Damping:",IDC_STATIC,141,30,35,10
+    EDITTEXT        IDC_EDIT_DAMPING,177,29,33,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LENGTH,177,43,33,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GRAVITY,177,57,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DAMPING,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,213,29,9,13
+    CONTROL         "Spin1",IDC_SPIN_LENGTH,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,213,43,9,13
+    CONTROL         "Spin1",IDC_SPIN_GRAVITY,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,213,57,9,13
+    GROUPBOX        "Initial Conditions",IDC_STATIC,5,4,102,44
+    RTEXT           "Max Input:",IDC_STATIC,123,86,53,10
+    EDITTEXT        IDC_EDIT_MAXINPUT,177,84,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_MAXINPUT,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,213,84,9,13
+    RTEXT           "Theta:",IDC_STATIC,16,19,35,10
+    EDITTEXT        IDC_EDIT_ITHETA,52,18,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ITHETA,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,88,18,9,13
+    RTEXT           "Omega:",IDC_STATIC,16,34,35,10
+    EDITTEXT        IDC_EDIT_IOMEGA,52,32,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_IOMEGA,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,87,32,9,13
+    GROUPBOX        "Final Conditions",IDC_STATIC,5,54,102,81
+    RTEXT           "Theta:",IDC_STATIC,16,69,35,10
+    EDITTEXT        IDC_EDIT_FTHETA,52,68,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_FTHETA,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,88,68,9,13
+    RTEXT           "Omega:",IDC_STATIC,16,83,35,10
+    EDITTEXT        IDC_EDIT_FOMEGA,52,82,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_FOMEGA,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,88,82,9,13
+    RTEXT           "Theta Tol:",IDC_STATIC,16,98,35,10
+    EDITTEXT        IDC_EDIT_THETATOL,52,96,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_THETATOL,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,88,96,9,13
+    RTEXT           "Omega Tol:",IDC_STATIC,11,112,40,10
+    EDITTEXT        IDC_EDIT_OMEGATOL,52,111,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_OMEGATOL,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,88,111,9,13
+    CTEXT           "Status:",IDC_STATIC,5,210,75,12,SS_SUNKEN
+    RTEXT           "Integrations/Step:",IDC_STATIC,117,153,59,10
+    EDITTEXT        IDC_EDIT_IPS,177,151,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_IPS,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,213,151,9,13
+    LTEXT           "??",IDC_STATUS2,5,236,227,12,SS_SUNKEN | WS_BORDER
+    RTEXT           "nScouts:",IDC_STATIC,139,166,37,10
+    EDITTEXT        IDC_EDIT_NSCOUTS,177,165,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_NSCOUTS,"msctls_updown32",UDS_ALIGNLEFT | 
+                    UDS_ARROWKEYS,213,165,9,13
+    RTEXT           "Max Steps:",IDC_STATIC,137,180,39,10
+    EDITTEXT        IDC_EDIT_MAXSTEPS,177,179,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_MAXSTEPS,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,213,179,9,13
+    GROUPBOX        "Scouting Parameters",IDC_STATIC,112,142,120,68
+    RTEXT           "Time Step:",IDC_STATIC,137,193,39,10
+    EDITTEXT        IDC_EDIT_TIMESTEP,177,193,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_TIMESTEP,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,213,193,9,13
+    RTEXT           "Min Input:",IDC_STATIC,123,98,53,10
+    EDITTEXT        IDC_EDIT_MININPUT,177,98,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_MININPUT,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,213,98,9,13
+    RTEXT           "Input Slew:",IDC_STATIC,123,113,53,10
+    EDITTEXT        IDC_EDIT_INPUTSLEW,177,111,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_INPUTSLEW,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,213,111,9,13
+    RTEXT           "Input Type:",IDC_STATIC,123,72,53,10
+    EDITTEXT        IDC_EDIT_INPUTTYPE,177,71,33,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_INPUTTYPE,"msctls_updown32",
+                    UDS_ALIGNLEFT | UDS_ARROWKEYS,213,71,9,13
+END
+
+IDD_GRAPH DIALOG DISCARDABLE  0, 0, 274, 161
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SCOUTING_DLG DIALOG DISCARDABLE  0, 0, 85, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Scouting Monitor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,15,31,50,14
+    CTEXT           "Scouting...",IDC_STATIC,16,13,52,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MFCPendulum MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MFCPendulum\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MFCPendulum.EXE\0"
+            VALUE "ProductName", "MFCPendulum Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SIMULATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 232
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_GRAPH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_SCOUTING_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MFCPendulum\n\nMFCPen\n\n\nMFCPendulum.Document\nMFCPen Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MFCPendulum"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\MFCPendulum.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

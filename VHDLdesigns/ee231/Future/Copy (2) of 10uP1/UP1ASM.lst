@@ -1,0 +1,27 @@
+HALE Listing: UP1ASM.SRC               Jan 19 20:26:53 2002        Page   1
+
+ Addr       Line  EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+
+               1 TITLE	 EXAMPLE UP1 COMPUTER ASSEMBLY LANGUAGE TEST PROGRAM
+               2 LIST F,W
+               3 LINES 50
+               4 
+               5 ;*********************************
+               6 ; PROGRAM AREA
+               7 ;*********************************
+00000          8 		ORG H#00
+00000 0210     9 START:	LOAD	MEM10%:
+00001 0011    10 		ADD	MEM11%:
+00002 0112    11 		STORE	MEM12%:
+00003 0212    12 		LOAD	MEM12%:	; just to see if it worked
+00004 0304    13 LOOP:		JUMP	LOOP%: 
+              14 
+              15 ;********************************
+              16 ; DATA FOR TEST PROGRAM
+              17 ;********************************
+00010         18 		ORG H#10
+00010 AAAA    19 MEM10:	DW H#AAAA
+00011 5555    20 MEM11:	DW H#5555
+00012 0000    21 MEM12:	DW H#0000
+              22 END
+              23 

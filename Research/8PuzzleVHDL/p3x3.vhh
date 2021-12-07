@@ -1,0 +1,9 @@
+ENTITY p3x3 IS
+    PORT (
+	clk : in std_logic  ; 
+	reinit : in std_logic  ; 
+	rand : in std_logic_vector (1 downto 0) ; 
+	init : in std_logic_vector (35 downto 0) ; 
+	solved : inout std_logic 
+    ) ;
+END p3x3 ;

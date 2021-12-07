@@ -1,0 +1,1 @@
+-m -yu -ys0 -e100 -w100 -o0 -ygs -fO -fP -v10 -dc37256 -pCY37256P160-83AC -a square.vhd -b p3x3.vhd -u 8PuzzleVHDL.hie 

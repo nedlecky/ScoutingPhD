@@ -1,0 +1,639 @@
+Project Information     c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 05/16/2002 10:29:23
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+SYN_MUX
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+syn_mux   EPM7032SLC44-5   4        2        0      26      23          81 %
+
+User Pins:                 4        2        0  
+
+
+
+Project Information     c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clk' chosen for auto global Clock
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+***** Logic for device 'syn_mux' compiled without errors.
+
+
+
+
+Device: EPM7032SLC44-5
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+
+                                               
+                 e                             
+              e  _                             
+              _  m                             
+              p  i                             
+              l  n     V  G  G  G  c  G  e     
+              u  u     C  N  N  N  l  N  r     
+              s  s  x  C  D  D  D  k  D  r  y  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+    #TDI |  7                                39 | RESERVED 
+RESERVED |  8                                38 | #TDO 
+RESERVED |  9                                37 | RESERVED 
+     GND | 10                                36 | RESERVED 
+RESERVED | 11                                35 | VCC 
+RESERVED | 12         EPM7032SLC44-5         34 | RESERVED 
+    #TMS | 13                                33 | RESERVED 
+RESERVED | 14                                32 | #TCK 
+     VCC | 15                                31 | RESERVED 
+RESERVED | 16                                30 | GND 
+RESERVED | 17                                29 | RESERVED 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              R  R  R  R  G  V  R  R  R  R  R  
+              E  E  E  E  N  C  E  E  E  E  E  
+              S  S  S  S  D  C  S  S  S  S  S  
+              E  E  E  E        E  E  E  E  E  
+              R  R  R  R        R  R  R  R  R  
+              V  V  V  V        V  V  V  V  V  
+              E  E  E  E        E  E  E  E  E  
+              D  D  D  D        D  D  D  D  D  
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16    10/16( 62%)   5/16( 31%)  13/16( 81%)  20/36( 55%) 
+B:    LC17 - LC32    16/16(100%)   4/16( 25%)  13/16( 81%)  17/36( 47%) 
+
+
+Total dedicated input pins used:                 1/4      ( 25%)
+Total I/O pins used:                             9/32     ( 28%)
+Total logic cells used:                         26/32     ( 81%)
+Total shareable expanders used:                 23/32     ( 71%)
+Total Turbo logic cells used:                   26/32     ( 81%)
+Total shareable expanders not available (n/a):   3/32     (  9%)
+Average fan-in:                                  3.50
+Total fan-in:                                    91
+
+Total input pins required:                       4
+Total fast input logic cells required:           0
+Total output pins required:                      2
+Total bidirectional pins required:               0
+Total reserved pins required                     4
+Total logic cells required:                     26
+Total flipflops required:                       15
+Total product terms required:                   74
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          23
+
+Synthesized logic cells:                        10/  32   ( 31%)
+
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
+   5    (2)  (A)      INPUT               0      0   0    0    0    1    4  e_minus
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    4  e_plus
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    4  x
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  41     17    B         FF   +  t       11      0   0    3    8    1    1  err
+  40     18    B     OUTPUT      t        0      0   0    1    2    0    0  y
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (37)    21    B       DFFE   +  t        0      0   0    0    1    0    1  flatch0_3 (:16)
+ (36)    22    B       DFFE   +  t        0      0   0    0    1    0    1  flatch0_2 (:17)
+ (34)    23    B       DFFE   +  t        0      0   0    0    1    0    1  flatch0_1 (:18)
+ (32)    25    B       DFFE   +  t        0      0   0    0    1    0    1  flatch0_0 (:19)
+ (29)    27    B       DFFE   +  t        0      0   0    0    1    0    1  flatch1_3 (:20)
+ (27)    29    B       DFFE   +  t        0      0   0    0    1    0    1  flatch1_2 (:21)
+ (12)     8    A       DFFE   +  t        0      0   0    0    1    0    1  flatch1_1 (:22)
+ (17)    12    A       DFFE   +  t        0      0   0    0    1    0    1  flatch1_0 (:23)
+  (4)     1    A       DFFE   +  t        0      0   0    0    2    1    4  random3 (:24)
+  (5)     2    A       DFFE   +  t        0      0   0    0    2    1    4  random2 (:25)
+  (9)     6    A       DFFE   +  t        0      0   0    0    2    1    4  random1 (:26)
+  (8)     5    A       DFFE   +  t        0      0   0    0    2    1    4  random0 (:27)
+  (7)     4    A       DFFE   +  t        7      0   1    3    6    2    4  setup1 (:29)
+  (6)     3    A       TFFE   +  t        6      0   0    3    7    2    4  setup0 (:30)
+ (24)    32    B       SOFT    s t        1      0   1    3    6    0    1  ~893~1
+ (28)    28    B       SOFT    s t        1      0   1    3    7    1    0  ~899~1
+ (31)    26    B      LCELL    s t        0      0   0    0    1    0    2  ~947~1
+ (33)    24    B      LCELL    s t        0      0   0    0    1    0    2  ~948~1
+ (38)    20    B      LCELL    s t        0      0   0    0    1    0    2  ~949~1
+ (39)    19    B      LCELL    s t        0      0   0    0    1    0    2  ~950~1
+ (25)    31    B      LCELL    s t        0      0   0    0    1    0    2  ~971~1
+ (26)    30    B      LCELL    s t        0      0   0    0    1    0    2  ~972~1
+ (19)    14    A      LCELL    s t        0      0   0    0    1    0    2  ~973~1
+ (18)    13    A      LCELL    s t        0      0   0    0    1    0    2  ~974~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                             Logic cells placed in LAB 'A'
+        +------------------- LC8 flatch1_1
+        | +----------------- LC12 flatch1_0
+        | | +--------------- LC1 random3
+        | | | +------------- LC2 random2
+        | | | | +----------- LC6 random1
+        | | | | | +--------- LC5 random0
+        | | | | | | +------- LC4 setup1
+        | | | | | | | +----- LC3 setup0
+        | | | | | | | | +--- LC14 ~973~1
+        | | | | | | | | | +- LC13 ~974~1
+        | | | | | | | | | | 
+        | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | |   that feed LAB 'A'
+LC      | | | | | | | | | | | A B |     Logic cells that feed LAB 'A':
+LC8  -> - - - - * - - - - - | * - | <-- flatch1_1
+LC12 -> - - - - - * - - - - | * - | <-- flatch1_0
+LC1  -> - - - - - - * * - - | * * | <-- random3
+LC2  -> - - - - - - * * - - | * * | <-- random2
+LC6  -> - - - - - - * * - - | * * | <-- random1
+LC5  -> - - - - - - * * - - | * * | <-- random0
+LC4  -> - - - - - - * * - - | * * | <-- setup1
+LC3  -> - - - - - - * * - - | * * | <-- setup0
+LC14 -> * - - - - - - - * - | * - | <-- ~973~1
+LC13 -> - * - - - - - - - * | * - | <-- ~974~1
+
+Pin
+43   -> - - - - - - - - - - | - - | <-- clk
+5    -> - - - - - - * * - - | * * | <-- e_minus
+6    -> - - - - - - * * - - | * * | <-- e_plus
+4    -> - - - - - - * * - - | * * | <-- x
+LC21 -> - - * - - - - - - - | * - | <-- flatch0_3
+LC22 -> - - - * - - - - - - | * - | <-- flatch0_2
+LC23 -> - - - - * - - - - - | * - | <-- flatch0_1
+LC25 -> - - - - - * - - - - | * - | <-- flatch0_0
+LC27 -> - - * - - - - - - - | * - | <-- flatch1_3
+LC29 -> - - - * - - - - - - | * - | <-- flatch1_2
+LC32 -> - - - - - - - * - - | * - | <-- ~893~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC17 err
+        | +----------------------------- LC18 y
+        | | +--------------------------- LC21 flatch0_3
+        | | | +------------------------- LC22 flatch0_2
+        | | | | +----------------------- LC23 flatch0_1
+        | | | | | +--------------------- LC25 flatch0_0
+        | | | | | | +------------------- LC27 flatch1_3
+        | | | | | | | +----------------- LC29 flatch1_2
+        | | | | | | | | +--------------- LC32 ~893~1
+        | | | | | | | | | +------------- LC28 ~899~1
+        | | | | | | | | | | +----------- LC26 ~947~1
+        | | | | | | | | | | | +--------- LC24 ~948~1
+        | | | | | | | | | | | | +------- LC20 ~949~1
+        | | | | | | | | | | | | | +----- LC19 ~950~1
+        | | | | | | | | | | | | | | +--- LC31 ~971~1
+        | | | | | | | | | | | | | | | +- LC30 ~972~1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> * - - - - - - - - * - - - - - - | - * | <-- err
+LC28 -> * - - - - - - - - - - - - - - - | - * | <-- ~899~1
+LC26 -> - - * - - - - - - - * - - - - - | - * | <-- ~947~1
+LC24 -> - - - * - - - - - - - * - - - - | - * | <-- ~948~1
+LC20 -> - - - - * - - - - - - - * - - - | - * | <-- ~949~1
+LC19 -> - - - - - * - - - - - - - * - - | - * | <-- ~950~1
+LC31 -> - - - - - - * - - - - - - - * - | - * | <-- ~971~1
+LC30 -> - - - - - - - * - - - - - - - * | - * | <-- ~972~1
+
+Pin
+43   -> - - - - - - - - - - - - - - - - | - - | <-- clk
+5    -> * - - - - - - - * * - - - - - - | * * | <-- e_minus
+6    -> * - - - - - - - * * - - - - - - | * * | <-- e_plus
+4    -> * * - - - - - - * * - - - - - - | * * | <-- x
+LC1  -> * - - - - - - - * * - - - - - - | * * | <-- random3
+LC2  -> * - - - - - - - * * - - - - - - | * * | <-- random2
+LC6  -> * - - - - - - - * * - - - - - - | * * | <-- random1
+LC5  -> * - - - - - - - * * - - - - - - | * * | <-- random0
+LC4  -> * * - - - - - - * * - - - - - - | * * | <-- setup1
+LC3  -> * * - - - - - - * * - - - - - - | * * | <-- setup0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+syn_mux
+
+** EQUATIONS **
+
+clk      : INPUT;
+e_minus  : INPUT;
+e_plus   : INPUT;
+x        : INPUT;
+
+-- Node name is 'err' = ':4' 
+-- Equation name is 'err', type is output 
+ err     = TFFE(!_EQ001, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ001 = !_LC028 &  _X001 &  _X002 &  _X003 &  _X004 &  _X005 &  _X006 & 
+              _X007 &  _X008 &  _X009 &  _X010 &  _X011;
+  _X001  = EXP( e_plus &  err & !setup0 & !setup1);
+  _X002  = EXP( e_plus &  err & !random1 &  setup0 &  setup1 &  x);
+  _X003  = EXP( e_minus &  err &  random0 & !random2 & !random3 &  setup0 & !x);
+  _X004  = EXP( e_plus &  err & !random1 & !setup0 & !x);
+  _X005  = EXP( e_plus &  err &  random0 & !setup0 & !x);
+  _X006  = EXP( e_minus &  err & !random2 & !random3 &  setup0 & !setup1);
+  _X007  = EXP( e_minus &  e_plus &  err & !random1 & !random2 & !random3);
+  _X008  = EXP( e_minus &  e_plus &  err &  random0 & !random2 & !random3);
+  _X009  = EXP( e_plus & !err & !random0 &  random1 & !setup0 &  setup1 & !x);
+  _X010  = EXP( e_plus &  err &  random0 &  setup0 &  setup1 &  x);
+  _X011  = EXP( e_minus &  err & !random1 & !random2 & !random3 &  setup0 & !x);
+
+-- Node name is ':19' = 'flatch0_0' 
+-- Equation name is 'flatch0_0', location is LC025, type is buried.
+flatch0_0 = DFFE(!_LC019 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':18' = 'flatch0_1' 
+-- Equation name is 'flatch0_1', location is LC023, type is buried.
+flatch0_1 = DFFE(!_LC020 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':17' = 'flatch0_2' 
+-- Equation name is 'flatch0_2', location is LC022, type is buried.
+flatch0_2 = DFFE(!_LC024 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':16' = 'flatch0_3' 
+-- Equation name is 'flatch0_3', location is LC021, type is buried.
+flatch0_3 = DFFE(!_LC026 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':23' = 'flatch1_0' 
+-- Equation name is 'flatch1_0', location is LC012, type is buried.
+flatch1_0 = DFFE(!_LC013 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':22' = 'flatch1_1' 
+-- Equation name is 'flatch1_1', location is LC008, type is buried.
+flatch1_1 = DFFE(!_LC014 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':21' = 'flatch1_2' 
+-- Equation name is 'flatch1_2', location is LC029, type is buried.
+flatch1_2 = DFFE(!_LC030 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':20' = 'flatch1_3' 
+-- Equation name is 'flatch1_3', location is LC027, type is buried.
+flatch1_3 = DFFE(!_LC031 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':27' = 'random0' 
+-- Equation name is 'random0', location is LC005, type is buried.
+random0  = DFFE( _EQ002 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ002 =  flatch0_0 & !flatch1_0
+         # !flatch0_0 &  flatch1_0;
+
+-- Node name is ':26' = 'random1' 
+-- Equation name is 'random1', location is LC006, type is buried.
+random1  = DFFE( _EQ003 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ003 =  flatch0_1 & !flatch1_1
+         # !flatch0_1 &  flatch1_1;
+
+-- Node name is ':25' = 'random2' 
+-- Equation name is 'random2', location is LC002, type is buried.
+random2  = DFFE( _EQ004 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ004 =  flatch0_2 & !flatch1_2
+         # !flatch0_2 &  flatch1_2;
+
+-- Node name is ':24' = 'random3' 
+-- Equation name is 'random3', location is LC001, type is buried.
+random3  = DFFE( flatch1_3 $  flatch0_3, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is ':30' = 'setup0' 
+-- Equation name is 'setup0', location is LC003, type is buried.
+setup0   = TFFE(!_EQ005, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ005 = !_LC032 &  _X012 &  _X013 &  _X014 &  _X015 &  _X016 &  _X017;
+  _X012  = EXP( e_minus &  random0 & !random2 & !random3 &  setup0 & !setup1);
+  _X013  = EXP( e_minus & !random2 & !random3 &  setup0 & !setup1 & !x);
+  _X014  = EXP( e_minus & !random1 & !random2 & !random3 &  setup0 & !x);
+  _X015  = EXP( e_plus &  random0 & !setup0 & !setup1);
+  _X016  = EXP( e_plus & !random1 & !setup0 & !x);
+  _X017  = EXP( e_plus & !setup0 & !setup1 & !x);
+
+-- Node name is ':29' = 'setup1' 
+-- Equation name is 'setup1', location is LC004, type is buried.
+setup1   = DFFE( _EQ006 $  _EQ007, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ006 =  e_minus &  random0 & !random1 & !random2 & !random3 &  setup0 & 
+             !x &  _X018 &  _X019 &  _X020 &  _X021 &  _X022 &  _X023
+         #  e_minus &  random0 & !random1 & !random2 & !random3 & !setup0 & 
+              x &  _X018 &  _X019 &  _X020 &  _X021 &  _X022 &  _X023
+         #  e_minus &  e_plus &  random0 & !random1 & !random2 & !random3 & 
+              _X018 &  _X019 &  _X020 &  _X021 &  _X022 &  _X023
+         #  e_plus &  random0 & !random1 &  setup0 &  x &  _X018 &  _X019 & 
+              _X020 &  _X021 &  _X022 &  _X023;
+  _X018  = EXP( e_plus &  random0 & !random1 & !setup0 & !x);
+  _X019  = EXP( random3 &  setup0 & !setup1);
+  _X020  = EXP( random2 &  setup0 & !setup1);
+  _X021  = EXP(!e_minus &  setup0 & !setup1);
+  _X022  = EXP(!e_plus & !setup0 & !setup1);
+  _X023  = EXP( random0 & !setup1);
+  _EQ007 =  _X018 &  _X019 &  _X020 &  _X021 &  _X022 &  _X023;
+  _X018  = EXP( e_plus &  random0 & !random1 & !setup0 & !x);
+  _X019  = EXP( random3 &  setup0 & !setup1);
+  _X020  = EXP( random2 &  setup0 & !setup1);
+  _X021  = EXP(!e_minus &  setup0 & !setup1);
+  _X022  = EXP(!e_plus & !setup0 & !setup1);
+  _X023  = EXP( random0 & !setup1);
+
+-- Node name is 'y' 
+-- Equation name is 'y', location is LC018, type is output.
+ y       = LCELL( _EQ008 $  setup0);
+  _EQ008 =  setup1 &  x;
+
+-- Node name is '~893~1' 
+-- Equation name is '~893~1', location is LC032, type is buried.
+-- synthesized logic cell 
+_LC032   = LCELL( _EQ009 $  GND);
+  _EQ009 =  e_minus & !e_plus & !random0 & !random1 & !random2 & !random3 & 
+             !setup0 &  setup1 &  x
+         #  e_plus & !random0 & !random1 &  random3 &  setup0 &  setup1 &  x
+         #  e_plus & !random0 & !random1 &  random2 &  setup0 &  setup1 &  x
+         # !e_minus &  e_plus & !random0 & !random1 &  setup0 &  setup1 &  x
+         #  e_minus &  e_plus & !random0 & !random1 & !random2 & !random3 & 
+              setup1;
+
+-- Node name is '~899~1' 
+-- Equation name is '~899~1', location is LC028, type is buried.
+-- synthesized logic cell 
+_LC028   = LCELL( _EQ010 $  GND);
+  _EQ010 =  e_minus & !err & !random0 &  random1 & !random2 & !random3 & 
+              setup0 &  setup1 & !x
+         #  e_minus & !err & !random0 &  random1 & !random2 & !random3 & 
+             !setup0 &  setup1 &  x
+         #  e_minus &  err &  random0 & !random2 & !random3 & !setup0 & 
+              setup1 &  x
+         #  e_minus &  err & !random1 & !random2 & !random3 & !setup0 & 
+              setup1 &  x
+         #  e_plus & !err & !random0 &  random1 &  setup0 &  setup1 &  x;
+
+-- Node name is '~947~1' 
+-- Equation name is '~947~1', location is LC026, type is buried.
+-- synthesized logic cell 
+_LC026   = LCELL( GND $ !_LC026);
+
+-- Node name is '~948~1' 
+-- Equation name is '~948~1', location is LC024, type is buried.
+-- synthesized logic cell 
+_LC024   = LCELL( GND $ !_LC024);
+
+-- Node name is '~949~1' 
+-- Equation name is '~949~1', location is LC020, type is buried.
+-- synthesized logic cell 
+_LC020   = LCELL( GND $ !_LC020);
+
+-- Node name is '~950~1' 
+-- Equation name is '~950~1', location is LC019, type is buried.
+-- synthesized logic cell 
+_LC019   = LCELL( GND $ !_LC019);
+
+-- Node name is '~971~1' 
+-- Equation name is '~971~1', location is LC031, type is buried.
+-- synthesized logic cell 
+_LC031   = LCELL( GND $ !_LC031);
+
+-- Node name is '~972~1' 
+-- Equation name is '~972~1', location is LC030, type is buried.
+-- synthesized logic cell 
+_LC030   = LCELL( GND $ !_LC030);
+
+-- Node name is '~973~1' 
+-- Equation name is '~973~1', location is LC014, type is buried.
+-- synthesized logic cell 
+_LC014   = LCELL( GND $ !_LC014);
+
+-- Node name is '~974~1' 
+-- Equation name is '~974~1', location is LC013, type is buried.
+-- synthesized logic cell 
+_LC013   = LCELL( GND $ !_LC013);
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information     c:\vhdldesigns\research\08nandbp01-3outxor\syn_mux.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:01
+   Partitioner                            00:00:00
+   Fitter                                 00:00:01
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:03
+   --------------------------             --------
+   Total Time                             00:00:05
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,928K

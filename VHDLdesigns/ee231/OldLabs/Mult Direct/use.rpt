@@ -1,0 +1,1299 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  use.vhd
+Options:    -m -yv2 -e10 -w100 -o2 -yga -fO -fP -v10 -dc344 -pCY7C344-20HC/HI use.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Sat Jan 24 16:23:31 1998
+
+Library 'work' => directory 'lc344'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\fulladd.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\nxnmult.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\compl.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\abs.vif'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Sat Jan 24 16:23:32 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\fulladd.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\nxnmult.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\compl.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\abs.vif'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'complementer_generic1'.
+Removing left side of wire:  rightones(0) <= '0'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'absolute_generic0'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'complementer_generic3'.
+Removing left side of wire:  rightones(0) <= '0'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'absolute_generic2'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'nxnmult_generic4'.
+Removing left side of wire:  zero <= '0'.
+Note:  Removing wires from arch. 'generic_instance' of entity 'complementer_generic5'.
+Removing left side of wire:  rightones(0) <= '0'.
+Note:  Removing wires from arch. 'signedmult_arch' of entity 'signedmult'.
+Removing left side of wire:  raw_prod(6) <= '0'.
+Removing right side of wire:  raw_prod(5) <= abs_prod(5).
+Removing right side of wire:  raw_prod(4) <= abs_prod(4).
+Removing right side of wire:  raw_prod(3) <= abs_prod(3).
+Removing right side of wire:  raw_prod(2) <= abs_prod(2).
+Removing right side of wire:  raw_prod(1) <= abs_prod(1).
+Removing right side of wire:  raw_prod(0) <= abs_prod(0).
+
+C:\warp\bin\tovif.exe:  No errors.
+
+
+C:\warp\bin\topld.exe V4 IR x77:  Synthesis and optimization
+Sat Jan 24 16:23:32 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\fulladd.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\nxnmult.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\compl.vif'.
+Linking 'C:\EE Courses\Ee231\Mult\lc344\abs.vif'.
+Linking 'C:\warp\lib\lc340\stdlogic\c340.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	a1_c_rightones_3
+	a1_xbar_3
+	a2_c_rightones_3
+	a2_xbar_3
+
+
+Deleted 4 User equations/components.
+Deleted 4 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing a1_xbar_0 to a1_c_rightones_1
+Aliasing a2_xbar_0 to a2_c_rightones_1
+Aliasing comp_prod_0 to c1_rightones_1
+Removing Lhs of wire a1_c_rightones_1[15] = a_0[3]
+Removing Lhs of wire a1_xbar_0[18] = a_0[3]
+Removing Lhs of wire a2_c_rightones_1[25] = b_0[7]
+Removing Lhs of wire a2_xbar_0[28] = b_0[7]
+Removing Rhs of wire raw_prod_0[44] = m1_andouts_0_0[35]
+Removing Rhs of wire raw_prod_5[57] = m1_sumouts_1_2[56]
+Removing Rhs of wire raw_prod_4[58] = m1_sumouts_1_1[55]
+Removing Rhs of wire raw_prod_3[59] = m1_sumouts_1_0[53]
+Removing Lhs of wire c1_rightones_1[60] = raw_prod_0[44]
+Removing Lhs of wire comp_prod_0[66] = raw_prod_0[44]
+Removing Rhs of wire comp_prod_6[72] = c1_rightones_6[65]
+
+------------------------------------------------------
+Aliased 0 equations, 11 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+Note:  Virtual equation for 'a1_c_rightones_2' has been expanded (cost = 4):
+a1_c_rightones_2 <= (a_0
+	OR a_1);
+
+Note:  Virtual equation for 'a1_xbar_1' has been expanded (cost = 2):
+a1_xbar_1 <= ((not a_0 and a_1)
+	OR (not a_1 and a_0));
+
+Note:  Virtual equation for 'a1_xbar_2' has been expanded (cost = 3):
+a1_xbar_2 <= ((not a_1 and not a_0 and a_2)
+	OR (not a_2 and a_0)
+	OR (not a_2 and a_1));
+
+Note:  Virtual equation for 'abs_a_2' has been expanded (cost = 36):
+abs_a_2 <= ((not a_1 and not a_0 and a_2)
+	OR (not a_2 and a_3 and a_0)
+	OR (not a_2 and a_3 and a_1)
+	OR (not a_3 and a_2));
+
+Note:  Virtual equation for 'abs_a_1' has been expanded (cost = 9):
+abs_a_1 <= ((not a_0 and a_1)
+	OR (not a_1 and a_3 and a_0)
+	OR (not a_3 and a_1));
+
+Note:  Virtual equation for 'abs_a_0' has been expanded (cost = 0):
+abs_a_0 <= (a_0);
+
+Note:  Virtual equation for 'a2_c_rightones_2' has been expanded (cost = 4):
+a2_c_rightones_2 <= (b_0
+	OR b_1);
+
+Note:  Virtual equation for 'a2_xbar_1' has been expanded (cost = 2):
+a2_xbar_1 <= ((not b_0 and b_1)
+	OR (not b_1 and b_0));
+
+Note:  Virtual equation for 'a2_xbar_2' has been expanded (cost = 3):
+a2_xbar_2 <= ((not b_1 and not b_0 and b_2)
+	OR (not b_2 and b_0)
+	OR (not b_2 and b_1));
+
+Note:  Virtual equation for 'abs_b_2' has been expanded (cost = 96):
+abs_b_2 <= ((not b_1 and not b_0 and b_2)
+	OR (not b_2 and b_3 and b_0)
+	OR (not b_2 and b_3 and b_1)
+	OR (not b_3 and b_2));
+
+Note:  Virtual equation for 'abs_b_1' has been expanded (cost = 72):
+abs_b_1 <= ((not b_0 and b_1)
+	OR (not b_1 and b_3 and b_0)
+	OR (not b_3 and b_1));
+
+Note:  Virtual equation for 'abs_b_0' has been expanded (cost = 0):
+abs_b_0 <= (b_0);
+
+Note:  Virtual equation for 'm1_andouts_0_1' has been expanded (cost = 9):
+m1_andouts_0_1 <= ((not a_0 and a_1 and b_0)
+	OR (not a_1 and a_3 and a_0 and b_0)
+	OR (not a_3 and a_1 and b_0));
+
+Note:  Virtual equation for 'm1_andouts_0_2' has been expanded (cost = 48):
+m1_andouts_0_2 <= ((not a_1 and not a_0 and a_2 and b_0)
+	OR (not a_2 and a_3 and a_0 and b_0)
+	OR (not a_2 and a_3 and a_1 and b_0)
+	OR (not a_3 and a_2 and b_0));
+
+Note:  Virtual equation for 'm1_andouts_1_0' has been expanded (cost = 60):
+m1_andouts_1_0 <= ((not b_0 and a_0 and b_1)
+	OR (not b_1 and a_0 and b_3 and b_0)
+	OR (not b_3 and a_0 and b_1));
+
+Note:  Virtual equation for 'm1_andouts_1_1' has been expanded (cost = 414):
+m1_andouts_1_1 <= ((not a_0 and not b_0 and a_1 and b_1)
+	OR (not a_0 and not b_1 and a_1 and b_3 and b_0)
+	OR (not a_0 and not b_3 and a_1 and b_1)
+	OR (not a_1 and not b_0 and a_3 and a_0 and b_1)
+	OR (not a_1 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_3 and a_3 and a_0 and b_1)
+	OR (not a_3 and not b_0 and a_1 and b_1)
+	OR (not a_3 and not b_1 and a_1 and b_3 and b_0)
+	OR (not a_3 and not b_3 and a_1 and b_1));
+
+Note:  Virtual equation for 'm1_andouts_1_2' has been expanded (cost = 72):
+m1_andouts_1_2 <= ((not a_1 and not a_0 and not b_0 and a_2 and b_1)
+	OR (not a_1 and not a_0 and not b_1 and a_2 and b_3 and b_0)
+	OR (not a_1 and not a_0 and not b_3 and a_2 and b_1)
+	OR (not a_2 and not b_0 and a_3 and a_0 and b_1)
+	OR (not a_2 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_2 and not b_3 and a_3 and a_0 and b_1)
+	OR (not a_2 and not b_0 and a_3 and a_1 and b_1)
+	OR (not a_2 and not b_1 and a_3 and a_1 and b_3 and b_0)
+	OR (not a_2 and not b_3 and a_3 and a_1 and b_1)
+	OR (not a_3 and not b_0 and a_2 and b_1)
+	OR (not a_3 and not b_1 and a_2 and b_3 and b_0)
+	OR (not a_3 and not b_3 and a_2 and b_1));
+
+Note:  Virtual equation for 'm1_andouts_2_0' has been expanded (cost = 24):
+m1_andouts_2_0 <= ((not b_1 and not b_0 and a_0 and b_2)
+	OR (not b_2 and a_0 and b_3 and b_0)
+	OR (not b_2 and a_0 and b_3 and b_1)
+	OR (not b_3 and a_0 and b_2));
+
+Note:  Virtual equation for 'm1_andouts_2_1' has been expanded (cost = 144):
+m1_andouts_2_1 <= ((not a_0 and not b_1 and not b_0 and a_1 and b_2)
+	OR (not a_0 and not b_2 and a_1 and b_3 and b_0)
+	OR (not a_0 and not b_2 and a_1 and b_3 and b_1)
+	OR (not a_0 and not b_3 and a_1 and b_2)
+	OR (not a_1 and not b_1 and not b_0 and a_3 and a_0 and b_2)
+	OR (not a_1 and not b_2 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_2 and a_3 and a_0 and b_3 and b_1)
+	OR (not a_1 and not b_3 and a_3 and a_0 and b_2)
+	OR (not a_3 and not b_1 and not b_0 and a_1 and b_2)
+	OR (not a_3 and not b_2 and a_1 and b_3 and b_0)
+	OR (not a_3 and not b_2 and a_1 and b_3 and b_1)
+	OR (not a_3 and not b_3 and a_1 and b_2));
+
+Note:  Virtual equation for 'm1_andouts_2_2' has been expanded (cost = 192):
+m1_andouts_2_2 <= ((not a_1 and not a_0 and not b_1 and not b_0 and a_2 and b_2)
+	OR (not a_1 and not a_0 and not b_2 and a_2 and b_3 and b_0)
+	OR (not a_1 and not a_0 and not b_2 and a_2 and b_3 and b_1)
+	OR (not a_1 and not a_0 and not b_3 and a_2 and b_2)
+	OR (not a_2 and not b_1 and not b_0 and a_3 and a_0 and b_2)
+	OR (not a_2 and not b_2 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_2 and not b_2 and a_3 and a_0 and b_3 and b_1)
+	OR (not a_2 and not b_3 and a_3 and a_0 and b_2)
+	OR (not a_2 and not b_1 and not b_0 and a_3 and a_1 and b_2)
+	OR (not a_2 and not b_2 and a_3 and a_1 and b_3 and b_0)
+	OR (not a_2 and not b_2 and a_3 and a_1 and b_3 and b_1)
+	OR (not a_2 and not b_3 and a_3 and a_1 and b_2)
+	OR (not a_3 and not b_1 and not b_0 and a_2 and b_2)
+	OR (not a_3 and not b_2 and a_2 and b_3 and b_0)
+	OR (not a_3 and not b_2 and a_2 and b_3 and b_1)
+	OR (not a_3 and not b_3 and a_2 and b_2));
+
+Note:  Virtual equation for 'm1_carryouts_0_0' has been expanded (cost = 400):
+m1_carryouts_0_0 <= ((not a_1 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_3 and a_3 and a_0 and b_1 and b_0)
+	OR (not a_3 and not b_1 and a_1 and a_0 and b_3 and b_0)
+	OR (not a_3 and not b_3 and a_1 and a_0 and b_1 and b_0));
+
+Note:  Virtual equation for 'm1_sumouts_0_0' has been expanded (cost = 416):
+m1_sumouts_0_0 <= ((not a_1 and not a_0 and a_2 and b_0)
+	OR (not a_2 and a_3 and a_0 and b_0)
+	OR (not a_2 and a_3 and a_1 and b_3 and b_1 and b_0)
+	OR (not a_2 and not b_3 and not b_1 and a_3 and a_1 and b_0)
+	OR (not a_3 and a_2 and b_3 and b_1 and b_0)
+	OR (not a_3 and not b_3 and not b_1 and a_2 and b_0)
+	OR (not a_3 and not a_1 and a_2 and b_0)
+	OR (not a_0 and not b_0 and a_1 and b_1)
+	OR (not a_0 and not b_1 and a_3 and a_2 and b_3 and b_0)
+	OR (not a_0 and not b_3 and a_3 and a_2 and a_1 and b_1)
+	OR (not a_1 and not b_0 and a_3 and a_0 and b_1)
+	OR (not a_3 and not b_0 and a_1 and b_1)
+	OR (not a_3 and not a_2 and not a_0 and not b_1 and a_1 and b_3 and b_0)
+	OR (not a_3 and not a_2 and not a_0 and not b_3 and a_1 and b_1)
+	OR (not a_3 and not b_1 and a_2 and a_0 and b_0)
+	OR (not a_3 and not b_3 and a_2 and a_0 and b_0));
+
+Note:  Virtual equation for 'm1_carryouts_0_1' has been expanded (cost = 496):
+m1_carryouts_0_1 <= ((not a_1 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_3 and a_3 and a_0 and b_1 and b_0)
+	OR (not a_3 and not b_1 and a_1 and a_0 and b_3 and b_0)
+	OR (not a_3 and not b_3 and a_1 and a_0 and b_1 and b_0)
+	OR (not a_2 and not a_0 and not b_1 and a_3 and a_1 and b_3 and b_0)
+	OR (not a_2 and not a_0 and not b_3 and a_3 and a_1 and b_1 and b_0)
+	OR (not a_3 and not b_1 and a_2 and a_1 and b_3 and b_0)
+	OR (not a_3 and not b_3 and a_2 and a_1 and b_1 and b_0));
+
+Note:  Virtual equation for 'm1_sumouts_0_1' has been expanded (cost = 1122):
+m1_sumouts_0_1 <= ((not a_1 and not a_0 and not b_0 and a_2 and b_1)
+	OR (not a_1 and not b_1 and a_2 and b_3 and b_0)
+	OR (not a_1 and not a_0 and not b_3 and a_2 and b_1)
+	OR (not a_2 and not b_0 and a_3 and a_0 and b_1)
+	OR (not a_2 and not b_1 and a_1 and a_0 and b_3 and b_0)
+	OR (not a_2 and not b_3 and a_3 and a_1 and a_0 and b_1)
+	OR (not a_2 and not b_0 and a_3 and a_1 and b_1)
+	OR (not a_3 and not b_0 and a_2 and b_1)
+	OR (not a_3 and not a_1 and not b_3 and a_2 and b_1)
+	OR (not a_1 and not b_3 and a_2 and b_1 and b_0)
+	OR (not a_2 and not b_3 and a_1 and a_0 and b_1 and b_0));
+
+Note:  Virtual equation for 'm1_sumouts_0_2' has been expanded (cost = 780):
+m1_sumouts_0_2 <= ((not a_2 and not a_1 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_2 and not a_1 and not b_3 and a_3 and a_0 and b_1 and b_0)
+	OR (not a_2 and not a_0 and not b_1 and a_3 and a_1 and b_3 and b_0)
+	OR (not a_2 and not a_0 and not b_3 and a_3 and a_1 and b_1 and b_0)
+	OR (not a_3 and not b_1 and a_2 and a_1 and b_3 and b_0)
+	OR (not a_3 and not b_3 and a_2 and a_1 and b_1 and b_0));
+
+Note:  Virtual equation for 'm1_carryouts_1_0' has been expanded (cost = 1616):
+m1_carryouts_1_0 <= ((not a_2 and not b_2 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_3 and not b_2 and a_2 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_2 and not b_0 and a_3 and a_0 and b_3 and b_1)
+	OR (not a_3 and not b_2 and not b_0 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_2 and not b_3 and a_3 and a_0 and b_2 and b_0)
+	OR (not a_3 and not b_3 and a_2 and a_0 and b_2 and b_0)
+	OR (not a_1 and not b_3 and not b_0 and a_3 and a_0 and b_2 and b_1)
+	OR (not a_3 and not b_3 and not b_0 and a_1 and a_0 and b_2 and b_1));
+
+Note:  Virtual equation for 'm1_carryouts_1_1' has been expanded (cost = 2960):
+m1_carryouts_1_1 <= ((not a_3 and not b_2 and not b_1 and a_2 and a_0 and b_3 and b_0)
+	OR (not a_2 and not a_1 and not b_2 and a_3 and a_0 and b_3 and b_1)
+	OR (not a_1 and not b_3 and a_3 and a_0 and b_2 and b_1)
+	OR (not a_2 and not b_2 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_2 and not b_3 and a_3 and a_0 and b_2 and b_1 and b_0)
+	OR (not a_3 and not b_2 and a_2 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_3 and not b_3 and a_1 and a_0 and b_2 and b_1)
+	OR (not a_3 and not b_3 and a_2 and a_0 and b_2 and b_1 and b_0)
+	OR (not a_2 and not a_1 and not b_2 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_2 and not b_0 and a_3 and a_0 and b_3 and b_1)
+	OR (not a_2 and not a_1 and not b_3 and a_3 and a_0 and b_2 and b_0)
+	OR (not a_3 and not b_2 and a_2 and a_1 and a_0 and b_3 and b_0)
+	OR (not a_3 and not b_2 and not b_0 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_3 and not b_3 and a_2 and a_1 and a_0 and b_2 and b_0)
+	OR (not a_2 and not a_0 and not b_2 and not b_0 and a_3 and a_1 and b_3 and b_1)
+	OR (not a_3 and not b_2 and not b_0 and a_2 and a_1 and b_3 and b_1)
+	OR (not a_2 and not a_0 and not b_3 and not b_0 and a_3 and a_1 and b_2 and b_1)
+	OR (not a_3 and not b_3 and not b_0 and a_2 and a_1 and b_2 and b_1)
+	OR (not a_1 and not b_2 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_3 and not b_2 and not b_1 and a_1 and a_0 and b_3 and b_0));
+
+
+Substituting virtuals - pass 2:
+
+Note:  Virtual equation for 'raw_prod_5' has been expanded (cost = 255):
+raw_prod_5 <= ((not a_2 and not a_1 and not b_2 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_2 and not a_1 and not b_3 and a_3 and a_0 and b_2 and b_1)
+	OR (not a_3 and not b_2 and not b_1 and a_2 and a_0 and b_3 and b_0)
+	OR (not a_3 and not b_3 and a_2 and a_1 and b_2 and b_1)
+	OR (not a_2 and not b_2 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_2 and not a_1 and not b_2 and a_3 and a_0 and b_3 and b_1)
+	OR (not a_2 and not b_3 and a_3 and a_0 and b_2 and b_1 and b_0)
+	OR (not a_2 and not a_1 and not b_3 and a_3 and a_0 and b_2 and b_0)
+	OR (not a_2 and not a_0 and not b_2 and not b_0 and a_3 and a_1 and b_3 and b_1)
+	OR (not a_2 and not a_0 and not b_3 and a_3 and a_1 and b_2 and b_1)
+	OR (not a_3 and not b_2 and a_2 and a_1 and a_0 and b_3 and b_0)
+	OR (not a_3 and not b_2 and a_2 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_3 and not b_2 and not b_0 and a_2 and a_1 and b_3 and b_1)
+	OR (not a_3 and not b_3 and a_2 and a_0 and b_2 and b_1 and b_0)
+	OR (not a_3 and not b_3 and a_2 and a_1 and a_0 and b_2 and b_0)
+	OR (not a_2 and not b_2 and not b_1 and a_3 and a_1 and b_3 and b_0)
+	OR (not a_3 and not b_2 and not b_1 and a_2 and a_1 and b_3 and b_0));
+
+Note:  Virtual equation for 'raw_prod_4' has been expanded (cost = 510):
+raw_prod_4 <= ((not a_1 and not a_0 and not b_1 and not b_0 and a_2 and b_2)
+	OR (not a_1 and not a_0 and not b_2 and a_2 and b_3 and b_0)
+	OR (not a_1 and not a_0 and not b_2 and a_2 and b_3 and b_1)
+	OR (not a_1 and not a_0 and not b_3 and a_2 and b_2)
+	OR (not a_2 and not b_1 and not b_0 and a_3 and a_0 and b_2)
+	OR (not a_2 and not b_2 and a_3 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_2 and not b_3 and not b_0 and a_3 and a_1 and a_0 and b_2)
+	OR (not a_2 and not b_3 and not b_1 and a_3 and a_1 and b_2)
+	OR (not a_2 and not b_1 and not b_0 and a_3 and a_1 and b_2)
+	OR (not a_2 and not b_2 and a_3 and a_1 and b_3 and b_1 and b_0)
+	OR (not a_3 and not b_1 and not b_0 and a_2 and b_2)
+	OR (not a_3 and not a_0 and not b_2 and a_2 and b_3 and b_1 and b_0)
+	OR (not a_3 and not a_1 and not b_2 and a_2 and b_3 and b_1)
+	OR (not a_3 and not a_1 and not b_3 and not b_0 and a_2 and b_2)
+	OR (not a_3 and not a_0 and not b_3 and not b_1 and a_2 and b_2)
+	OR (not a_3 and not a_1 and not b_3 and not b_1 and a_2 and b_2)
+	OR (not a_2 and not a_1 and not b_1 and a_3 and a_0 and b_3 and b_2)
+	OR (not a_2 and not a_0 and not b_1 and a_3 and a_1 and b_2)
+	OR (not a_3 and not b_1 and a_2 and a_1 and b_3 and b_2)
+	OR (not a_3 and not a_0 and not b_1 and a_2 and a_1 and b_2)
+	OR (not a_2 and not a_1 and not b_3 and a_3 and a_0 and b_1 and b_0)
+	OR (not a_2 and not a_0 and not b_2 and a_3 and a_1 and b_1 and b_0)
+	OR (not a_3 and not b_3 and not b_2 and a_2 and a_1 and b_1 and b_0)
+	OR (not a_3 and not a_0 and not b_2 and a_2 and a_1 and b_1 and b_0)
+	OR (not a_1 and not b_3 and a_3 and a_2 and b_2 and b_1)
+	OR (not a_1 and not b_2 and not b_0 and a_2 and b_3 and b_1)
+	OR (not a_1 and not b_2 and not b_1 and a_3 and a_2 and b_3 and b_0)
+	OR (not a_2 and not b_3 and not b_0 and a_1 and a_0 and b_2 and b_1)
+	OR (not a_2 and not b_2 and not b_0 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_3 and not a_2 and not b_3 and a_1 and a_0 and b_2 and b_1)
+	OR (not a_3 and not b_2 and not b_1 and a_1 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_2 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_3 and a_3 and a_0 and b_2 and b_1 and b_0)
+	OR (not a_3 and not b_3 and a_1 and a_0 and b_2 and b_1 and b_0));
+
+Note:  Virtual equation for 'raw_prod_3' has been expanded (cost = 525):
+raw_prod_3 <= ((not a_0 and not b_1 and not b_0 and a_1 and b_2)
+	OR (not a_0 and not b_2 and a_1 and b_3 and b_0)
+	OR (not a_0 and not b_2 and a_3 and a_2 and a_1 and b_3 and b_1)
+	OR (not a_3 and not a_2 and not a_0 and not b_2 and a_1 and b_3 and b_1)
+	OR (not a_3 and not a_2 and not b_2 and a_1 and b_3 and b_1 and b_0)
+	OR (not a_0 and not b_3 and a_1 and b_2 and b_0)
+	OR (not a_0 and not b_3 and a_3 and a_2 and a_1 and b_2)
+	OR (not a_0 and not b_3 and not b_1 and a_1 and b_2)
+	OR (not a_3 and not a_2 and not a_0 and not b_3 and a_1 and b_2)
+	OR (not a_1 and not b_1 and not b_0 and a_3 and a_0 and b_2)
+	OR (not a_1 and not b_2 and a_2 and a_0 and b_1 and b_0)
+	OR (not a_1 and not b_3 and not b_1 and a_3 and a_2 and a_0 and b_2)
+	OR (not a_3 and not b_1 and not b_0 and a_1 and b_2)
+	OR (not a_3 and not a_2 and not b_3 and not b_1 and a_1 and b_2)
+	OR (not a_1 and not a_0 and not b_1 and a_2 and b_3 and b_0)
+	OR (not a_1 and not b_1 and a_2 and b_3 and b_2 and b_0)
+	OR (not a_2 and not b_1 and a_1 and a_0 and b_3 and b_2 and b_0)
+	OR (not a_1 and not a_0 and not b_0 and a_2 and b_1)
+	OR (not a_2 and not b_0 and a_3 and a_0 and b_1)
+	OR (not a_2 and not b_0 and a_3 and a_1 and b_3 and b_2 and b_1)
+	OR (not a_3 and not b_0 and a_2 and b_3 and b_2 and b_1)
+	OR (not a_2 and not b_0 and a_3 and a_1 and a_0 and b_1)
+	OR (not a_2 and not b_2 and a_3 and a_1 and a_0 and b_1)
+	OR (not a_1 and not a_0 and not b_3 and a_2 and b_1)
+	OR (not a_2 and not b_3 and not b_2 and not b_0 and a_3 and a_1 and b_1)
+	OR (not a_3 and not b_3 and not b_2 and not b_0 and a_2 and b_1)
+	OR (not a_3 and not a_1 and not b_3 and not b_2 and a_2 and b_1)
+	OR (not a_3 and not a_1 and not b_0 and a_2 and b_1)
+	OR (not a_1 and not b_3 and not b_2 and a_2 and b_1 and b_0)
+	OR (not a_2 and not b_3 and not b_2 and a_1 and a_0 and b_1 and b_0)
+	OR (not a_2 and not b_1 and a_3 and a_1 and a_0 and b_2 and b_0)
+	OR (not a_3 and not a_1 and not b_2 and a_2 and a_0 and b_1)
+	OR (not a_3 and not a_1 and not b_1 and a_2 and a_0 and b_2 and b_0)
+	OR (not a_3 and not b_2 and not b_0 and a_2 and a_0 and b_1)
+	OR (not a_3 and not b_3 and not b_0 and a_2 and a_0 and b_1));
+
+Note:  Virtual equation for 'raw_prod_2' has been expanded (cost = 555):
+raw_prod_2 <= ((not b_1 and not b_0 and a_0 and b_2)
+	OR (not b_2 and a_3 and a_2 and a_0 and b_3 and b_0)
+	OR (not a_3 and not a_2 and not b_2 and a_0 and b_3 and b_0)
+	OR (not b_2 and not b_0 and a_3 and a_1 and b_3 and b_1)
+	OR (not a_3 and not a_2 and not a_1 and not b_2 and a_0 and b_3 and b_1)
+	OR (not a_3 and not a_1 and not b_2 and not b_0 and a_0 and b_3 and b_1)
+	OR (not b_3 and a_3 and a_2 and a_0 and b_2 and b_0)
+	OR (not b_3 and not b_1 and a_3 and a_2 and a_1 and a_0 and b_2)
+	OR (not b_3 and not b_0 and a_3 and a_1 and a_0 and b_2)
+	OR (not a_3 and not a_2 and not a_1 and not b_3 and a_0 and b_2)
+	OR (not a_3 and not a_2 and not b_3 and a_0 and b_2 and b_0)
+	OR (not a_3 and not a_2 and not b_3 and not b_1 and a_0 and b_2)
+	OR (not a_3 and not a_1 and not b_3 and not b_0 and a_0 and b_2)
+	OR (not a_1 and not a_0 and a_2 and b_0)
+	OR (not a_2 and a_3 and a_0 and b_3 and b_2 and b_0)
+	OR (not a_2 and a_3 and a_1 and b_3 and b_2 and b_1 and b_0)
+	OR (not a_3 and a_2 and b_3 and b_2 and b_1 and b_0)
+	OR (not a_0 and not b_0 and a_1 and b_1)
+	OR (not a_1 and not b_0 and a_3 and a_0 and b_3 and b_2)
+	OR (not a_3 and not b_0 and a_1 and b_3 and b_2 and b_1)
+	OR (not a_3 and not a_1 and a_2 and b_3 and b_2 and b_0)
+	OR (not a_0 and not b_1 and a_3 and a_2 and b_3 and b_0)
+	OR (not a_3 and not a_2 and not a_0 and not b_1 and a_1 and b_3 and b_0)
+	OR (not a_3 and a_2 and a_0 and b_3 and b_2 and b_0)
+	OR (not a_2 and not a_0 and a_3 and a_1 and b_3 and b_1)
+	OR (not a_2 and not a_0 and not b_3 and not b_1 and a_3 and a_1 and b_0)
+	OR (not a_3 and not a_0 and a_2 and b_3 and b_1 and b_0)
+	OR (not a_3 and not a_0 and not b_3 and not b_1 and a_2 and b_0)
+	OR (not a_0 and not b_3 and a_3 and a_2 and a_1 and b_1)
+	OR (not a_3 and not a_2 and not a_0 and not b_3 and a_1 and b_1)
+	OR (not a_2 and not b_3 and not b_2 and a_3 and a_0 and b_0)
+	OR (not a_2 and not b_3 and not b_2 and not b_1 and a_3 and a_1 and b_0)
+	OR (not a_3 and not b_3 and not b_2 and not b_1 and a_2 and b_0)
+	OR (not a_3 and not a_1 and not b_3 and not b_2 and a_2 and b_0)
+	OR (not a_1 and not b_3 and not b_2 and not b_0 and a_3 and a_0 and b_1)
+	OR (not a_3 and not b_3 and not b_2 and not b_0 and a_1 and b_1)
+	OR (not a_3 and not b_3 and not b_2 and a_2 and a_0 and b_0));
+
+Note:  Virtual equation for 'raw_prod_1' has been expanded (cost = 150):
+raw_prod_1 <= ((not a_0 and a_1 and b_0)
+	OR (not a_1 and a_3 and a_0 and b_3 and b_1)
+	OR (not a_1 and not b_3 and not b_1 and a_3 and a_0 and b_0)
+	OR (not a_3 and a_1 and b_3 and b_1 and b_0)
+	OR (not a_3 and not b_3 and not b_1 and a_1 and b_0)
+	OR (not b_0 and a_0 and b_1)
+	OR (not b_1 and a_3 and a_1 and b_3 and b_0)
+	OR (not b_3 and a_3 and a_1 and a_0 and b_1)
+	OR (not a_3 and not a_1 and not b_1 and a_0 and b_3 and b_0)
+	OR (not a_3 and not a_1 and not b_3 and a_0 and b_1));
+
+Note:  Virtual equation for 'raw_prod_0' has been expanded (cost = 75):
+raw_prod_0 <= ((a_0 and b_0));
+
+Note:  Virtual equation for 'c1_rightones_2' has been expanded (cost = 470):
+c1_rightones_2 <= ((a_0 and b_0)
+	OR (a_1 and b_0)
+	OR (a_0 and b_1));
+
+Note:  Virtual equation for 'c1_rightones_3' has been expanded (cost = 1472):
+c1_rightones_3 <= ((a_0 and b_0)
+	OR (a_1 and b_0)
+	OR (a_0 and b_1)
+	OR (a_0 and b_2)
+	OR (a_1 and b_1)
+	OR (a_2 and b_0));
+
+Note:  Virtual equation for 'c1_rightones_4' has been expanded (cost = 4944):
+c1_rightones_4 <= ((a_0 and b_0)
+	OR (a_1 and b_0)
+	OR (a_0 and b_1)
+	OR (a_0 and b_2)
+	OR (a_1 and b_1)
+	OR (a_2 and b_0)
+	OR (a_1 and b_2)
+	OR (a_2 and b_1));
+
+Note:  Virtual equation for 'c1_rightones_5' has been expanded (cost = 2464):
+c1_rightones_5 <= ((a_0 and b_0)
+	OR (a_1 and b_0)
+	OR (a_0 and b_1)
+	OR (a_0 and b_2)
+	OR (a_1 and b_1)
+	OR (a_2 and b_0)
+	OR (a_1 and b_2)
+	OR (a_2 and b_1)
+	OR (a_2 and b_2));
+
+
+Substituting virtuals - pass 3:
+
+Note:  Virtual equation for 'comp_prod_6' has been expanded (cost = 18):
+comp_prod_6 <= ((a_0 and b_0)
+	OR (a_1 and b_0)
+	OR (a_0 and b_1)
+	OR (a_0 and b_2)
+	OR (a_1 and b_1)
+	OR (a_2 and b_0)
+	OR (a_1 and b_2)
+	OR (a_2 and b_1)
+	OR (a_2 and b_2));
+
+Note:  Virtual equation for 'comp_prod_5' has been expanded (cost = 92):
+comp_prod_5 <= ((a_3 and a_2 and b_0)
+	OR (a_3 and a_2 and b_1)
+	OR (a_3 and a_2 and b_2)
+	OR (a_3 and a_1 and a_0 and b_3 and b_1)
+	OR (a_0 and b_3 and b_2)
+	OR (a_1 and b_3 and b_2)
+	OR (a_2 and b_3 and b_2)
+	OR (a_3 and a_1 and b_3 and b_1 and b_0)
+	OR (not b_1 and not b_0 and a_0 and b_2)
+	OR (not b_1 and not b_0 and a_1 and b_2)
+	OR (not b_1 and not b_0 and a_2 and b_2)
+	OR (not a_1 and not a_0 and a_2 and b_0)
+	OR (not a_1 and not a_0 and a_2 and b_1)
+	OR (not a_1 and not a_0 and a_2 and b_2)
+	OR (not b_0 and a_3 and a_1 and a_0 and b_1)
+	OR (not b_0 and a_3 and a_1 and a_0 and b_2)
+	OR (not b_3 and not b_1 and a_3 and a_1 and b_0)
+	OR (not b_1 and a_3 and a_1 and b_2)
+	OR (not b_3 and not b_2 and a_0 and b_0)
+	OR (not b_3 and not b_2 and a_1 and b_0)
+	OR (not b_3 and not b_2 and a_0 and b_1)
+	OR (not b_3 and not b_2 and a_1 and b_1)
+	OR (not b_3 and not b_2 and a_2 and b_0)
+	OR (not b_3 and not b_2 and a_2 and b_1)
+	OR (not a_0 and not b_3 and not b_1 and a_1 and b_0)
+	OR (not a_0 and not b_3 and not b_1 and a_2 and b_0)
+	OR (not a_0 and not b_1 and a_1 and b_2)
+	OR (not a_0 and not b_1 and a_2 and b_2)
+	OR (not a_0 and a_1 and b_3 and b_1 and b_0)
+	OR (not a_0 and a_2 and b_3 and b_1 and b_0)
+	OR (not a_3 and not a_1 and a_0 and b_3 and b_1)
+	OR (not a_1 and a_2 and b_3 and b_1)
+	OR (not a_3 and not a_2 and a_0 and b_0)
+	OR (not a_3 and not a_2 and a_1 and b_0)
+	OR (not a_3 and not a_2 and a_0 and b_1)
+	OR (not a_3 and not a_2 and a_0 and b_2)
+	OR (not a_3 and not a_2 and a_1 and b_1)
+	OR (not a_3 and not a_2 and a_1 and b_2)
+	OR (not a_3 and not a_1 and not b_3 and not b_1 and a_0 and b_0)
+	OR (not a_3 and not a_1 and not b_1 and a_0 and b_2)
+	OR (not a_1 and not b_3 and not b_1 and a_2 and b_0)
+	OR (not a_1 and not b_1 and a_2 and b_2)
+	OR (not a_3 and not a_1 and not b_0 and a_0 and b_1)
+	OR (not a_3 and not a_1 and not b_0 and a_0 and b_2)
+	OR (not a_1 and not b_0 and a_2 and b_1)
+	OR (not a_1 and not b_0 and a_2 and b_2));
+
+Note:  Virtual equation for 'comp_prod_4' has been expanded (cost = 92):
+comp_prod_4 <= ((not a_1 and not a_0 and not b_1 and not b_0 and a_2 and b_2)
+	OR (a_3 and a_2 and b_3 and b_2 and b_0)
+	OR (a_3 and a_2 and a_0 and b_3 and b_2)
+	OR (a_3 and a_2 and a_1 and b_0)
+	OR (a_3 and a_2 and a_1 and b_1)
+	OR (a_3 and a_2 and a_1 and b_2)
+	OR (not b_1 and a_3 and a_2 and a_0 and b_2)
+	OR (a_0 and b_3 and b_2 and b_1)
+	OR (a_1 and b_3 and b_2 and b_1)
+	OR (a_2 and b_3 and b_2 and b_1)
+	OR (not a_0 and a_1 and b_2 and b_1)
+	OR (not b_0 and a_2 and a_1 and b_1)
+	OR (not b_3 and not b_1 and a_2 and a_1 and a_0 and b_0)
+	OR (not a_3 and not a_1 and a_0 and b_2 and b_1 and b_0)
+	OR (not a_1 and a_2 and b_3 and b_2 and b_0)
+	OR (a_3 and a_1 and b_2 and b_1 and b_0)
+	OR (not a_2 and a_1 and a_0 and b_3 and b_2 and b_0)
+	OR (not a_2 and not a_1 and not b_0 and a_0 and b_2 and b_1)
+	OR (not a_2 and not a_1 and not b_3 and not b_1 and a_0 and b_0)
+	OR (not a_3 and not a_2 and a_0 and b_3 and b_2)
+	OR (not a_3 and not a_2 and a_1 and b_3 and b_2)
+	OR (not a_3 and not a_2 and not b_1 and a_0 and b_2)
+	OR (not a_3 and not a_2 and not b_1 and a_1 and b_2)
+	OR (not a_3 and not a_2 and not a_0 and a_1 and b_0)
+	OR (not a_3 and not a_2 and not a_0 and a_1 and b_1)
+	OR (not a_3 and not a_2 and not a_0 and a_1 and b_2)
+	OR (not a_3 and not a_2 and not a_1 and a_0 and b_2)
+	OR (a_2 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_2 and not b_3 and not b_2 and a_1 and a_0 and b_0)
+	OR (not a_2 and not b_3 and not b_2 and a_1 and a_0 and b_1)
+	OR (not a_3 and not a_2 and not b_2 and a_1 and b_1 and b_0)
+	OR (not a_0 and not b_0 and a_1 and b_1)
+	OR (not a_0 and not b_2 and not b_1 and a_1 and b_0)
+	OR (not b_3 and not b_2 and not b_1 and a_0 and b_0)
+	OR (not b_3 and not b_2 and not b_1 and a_1 and b_0)
+	OR (not b_3 and not b_2 and not b_1 and a_2 and b_0)
+	OR (not b_2 and not b_1 and a_3 and a_1 and b_0)
+	OR (not a_1 and a_3 and a_0 and b_3 and b_1 and b_0)
+	OR (not a_2 and not a_1 and a_0 and b_3 and b_1)
+	OR (not a_3 and not a_1 and not b_2 and not b_1 and a_0 and b_0)
+	OR (not a_3 and not a_1 and not b_3 and not b_2 and a_0 and b_0)
+	OR (not a_3 and not a_1 and not b_3 and not b_2 and a_0 and b_1)
+	OR (not a_1 and not b_3 and not b_2 and a_2 and b_0)
+	OR (not a_1 and not b_3 and not b_2 and a_2 and b_1)
+	OR (not a_1 and not b_3 and not b_2 and not b_0 and a_0 and b_1)
+	OR (not b_3 and not b_2 and not b_0 and a_2 and b_1));
+
+Note:  Virtual equation for 'comp_prod_3' has been expanded (cost = 62):
+comp_prod_3 <= ((not a_0 and not b_1 and not b_0 and a_1 and b_2)
+	OR (not a_1 and not a_0 and not b_0 and a_2 and b_1)
+	OR (a_3 and a_2 and a_1 and b_3 and b_2 and b_1)
+	OR (a_1 and b_3 and b_2 and b_1 and b_0)
+	OR (a_2 and a_1 and a_0 and b_0)
+	OR (a_3 and a_2 and a_1 and a_0 and b_1)
+	OR (a_3 and a_2 and a_1 and a_0 and b_2)
+	OR (not a_3 and not a_0 and not b_2 and not b_0 and a_2 and b_3 and b_1)
+	OR (not b_3 and not b_2 and a_2 and a_1 and b_0)
+	OR (not b_3 and not b_2 and a_3 and a_2 and a_1 and b_1)
+	OR (not a_3 and not a_0 and not b_3 and not b_0 and a_2 and b_2 and b_1)
+	OR (a_0 and b_2 and b_1 and b_0)
+	OR (not a_1 and not a_0 and a_2 and b_3 and b_1)
+	OR (not b_0 and a_3 and a_2 and a_0 and b_1)
+	OR (not a_2 and not a_1 and a_0 and b_0)
+	OR (not a_2 and not a_0 and not b_3 and not b_0 and a_3 and a_1 and b_2)
+	OR (not a_3 and not a_2 and a_0 and b_2 and b_1)
+	OR (not a_3 and not a_2 and a_1 and b_3 and b_2 and b_1)
+	OR (not a_3 and not a_2 and not a_1 and a_0 and b_1)
+	OR (not a_3 and not a_2 and not a_1 and a_0 and b_2)
+	OR (not a_2 and not a_0 and not b_2 and not b_0 and a_3 and a_1 and b_3 and b_1)
+	OR (not a_0 and not b_3 and not b_2 and a_1 and b_0)
+	OR (not a_3 and not a_2 and not b_0 and a_0 and b_1)
+	OR (not a_3 and not a_2 and not a_0 and not b_3 and not b_2 and a_1 and b_1)
+	OR (not a_3 and not a_2 and not b_3 and not b_2 and not b_0 and a_1 and b_1)
+	OR (not b_1 and not b_0 and a_3 and a_1 and b_2)
+	OR (not a_0 and a_1 and b_3 and b_2 and b_0)
+	OR (not b_3 and not b_2 and not b_1 and a_1 and b_0)
+	OR (not b_2 and not b_1 and a_0 and b_0)
+	OR (not a_3 and not a_1 and not b_1 and not b_0 and a_0 and b_2)
+	OR (not a_1 and not a_0 and not b_3 and not b_1 and a_2 and b_0));
+
+Note:  Virtual equation for 'comp_prod_2' has been expanded (cost = 54):
+comp_prod_2 <= ((not b_1 and not b_0 and a_0 and b_2)
+	OR (not a_0 and not b_0 and a_1 and b_1)
+	OR (not a_1 and not a_0 and a_2 and b_0)
+	OR (a_3 and a_2 and a_0 and b_3 and b_2 and b_0)
+	OR (not b_0 and a_3 and a_1 and b_3 and b_2 and b_1)
+	OR (not a_2 and not b_3 and a_3 and a_0 and b_2 and b_0)
+	OR (not a_1 and not b_3 and not b_0 and a_3 and a_0 and b_2)
+	OR (not a_2 and not b_2 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_1 and not b_2 and not b_0 and a_3 and a_0 and b_3 and b_1)
+	OR (not b_3 and not b_2 and a_3 and a_2 and a_0 and b_0)
+	OR (not b_3 and not b_2 and not b_0 and a_3 and a_1 and b_1)
+	OR (not a_0 and a_3 and a_2 and b_3 and b_1 and b_0)
+	OR (not a_2 and not a_0 and not b_3 and a_3 and a_1 and b_1)
+	OR (not a_0 and not b_3 and not b_1 and a_3 and a_2 and b_0)
+	OR (not a_2 and not a_0 and not b_1 and a_3 and a_1 and b_3 and b_0)
+	OR (not a_3 and not b_2 and a_2 and a_0 and b_3 and b_0)
+	OR (not a_3 and not a_0 and not b_1 and a_2 and b_3 and b_0)
+	OR (not a_3 and not a_2 and a_0 and b_3 and b_2 and b_0)
+	OR (not a_3 and not a_2 and not a_0 and a_1 and b_3 and b_1)
+	OR (not a_3 and not b_2 and not b_0 and a_1 and b_3 and b_1)
+	OR (not a_3 and not a_1 and not b_0 and a_0 and b_3 and b_2)
+	OR (not a_3 and not b_3 and a_2 and a_0 and b_2 and b_0)
+	OR (not a_3 and not b_3 and not b_0 and a_1 and b_2 and b_1)
+	OR (not a_3 and not a_2 and not b_3 and not b_2 and a_0 and b_0)
+	OR (not a_3 and not a_1 and not b_3 and not b_2 and not b_0 and a_0 and b_1)
+	OR (not a_3 and not a_0 and not b_3 and a_2 and b_1 and b_0)
+	OR (not a_3 and not a_2 and not a_0 and not b_3 and not b_1 and a_1 and b_0));
+
+Note:  Virtual equation for 'comp_prod_1' has been expanded (cost = 20):
+comp_prod_1 <= ((not a_0 and a_1 and b_0)
+	OR (not b_0 and a_0 and b_1)
+	OR (a_3 and a_1 and a_0 and b_3 and b_1)
+	OR (not a_3 and not b_3 and a_1 and a_0 and b_1)
+	OR (not b_3 and not b_1 and a_3 and a_1 and b_0)
+	OR (not a_3 and not b_1 and a_1 and b_3 and b_0)
+	OR (not a_1 and not b_3 and a_3 and a_0 and b_1)
+	OR (not a_3 and not a_1 and a_0 and b_3 and b_1)
+	OR (not a_1 and not b_1 and a_3 and a_0 and b_3 and b_0)
+	OR (not a_3 and not a_1 and not b_3 and not b_1 and a_0 and b_0));
+
+
+Substituting virtuals - pass 4:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 43 signals.
+	Turned 0 signals into soft nodes.
+	Maximum expansion cost was set at 10.
+----------------------------------------------------------
+Created 73 PLD nodes.
+Note:  Removed unneeded node 'a1_c_rightones_1'.
+Note:  Removed unneeded node 'a1_c_rightones_2'.
+Note:  Removed unneeded node 'a1_c_rightones_3'.
+Note:  Removed unneeded node 'a1_xbar_0'.
+Note:  Removed unneeded node 'a1_xbar_1'.
+Note:  Removed unneeded node 'a1_xbar_2'.
+Note:  Removed unneeded node 'a1_xbar_3'.
+Note:  Removed unneeded node 'abs_a_2'.
+Note:  Removed unneeded node 'abs_a_1'.
+Note:  Removed unneeded node 'abs_a_0'.
+Note:  Removed unneeded node 'a2_c_rightones_1'.
+Note:  Removed unneeded node 'a2_c_rightones_2'.
+Note:  Removed unneeded node 'a2_c_rightones_3'.
+Note:  Removed unneeded node 'a2_xbar_0'.
+Note:  Removed unneeded node 'a2_xbar_1'.
+Note:  Removed unneeded node 'a2_xbar_2'.
+Note:  Removed unneeded node 'a2_xbar_3'.
+Note:  Removed unneeded node 'abs_b_2'.
+Note:  Removed unneeded node 'abs_b_1'.
+Note:  Removed unneeded node 'abs_b_0'.
+Note:  Removed unneeded node 'm1_andouts_0_0'.
+Note:  Removed unneeded node 'm1_andouts_0_1'.
+Note:  Removed unneeded node 'm1_andouts_0_2'.
+Note:  Removed unneeded node 'm1_andouts_1_0'.
+Note:  Removed unneeded node 'm1_andouts_1_1'.
+Note:  Removed unneeded node 'm1_andouts_1_2'.
+Note:  Removed unneeded node 'm1_andouts_2_0'.
+Note:  Removed unneeded node 'm1_andouts_2_1'.
+Note:  Removed unneeded node 'm1_andouts_2_2'.
+Note:  Removed unneeded node 'raw_prod_0'.
+Note:  Removed unneeded node 'raw_prod_1'.
+Note:  Removed unneeded node 'm1_carryouts_0_0'.
+Note:  Removed unneeded node 'm1_sumouts_0_0'.
+Note:  Removed unneeded node 'm1_carryouts_0_1'.
+Note:  Removed unneeded node 'm1_sumouts_0_1'.
+Note:  Removed unneeded node 'm1_sumouts_0_2'.
+Note:  Removed unneeded node 'raw_prod_2'.
+Note:  Removed unneeded node 'm1_carryouts_1_0'.
+Note:  Removed unneeded node 'm1_sumouts_1_0'.
+Note:  Removed unneeded node 'm1_carryouts_1_1'.
+Note:  Removed unneeded node 'm1_sumouts_1_1'.
+Note:  Removed unneeded node 'm1_sumouts_1_2'.
+Note:  Removed unneeded node 'raw_prod_5'.
+Note:  Removed unneeded node 'raw_prod_4'.
+Note:  Removed unneeded node 'raw_prod_3'.
+Note:  Removed unneeded node 'c1_rightones_1'.
+Note:  Removed unneeded node 'c1_rightones_2'.
+Note:  Removed unneeded node 'c1_rightones_3'.
+Note:  Removed unneeded node 'c1_rightones_4'.
+Note:  Removed unneeded node 'c1_rightones_5'.
+Note:  Removed unneeded node 'c1_rightones_6'.
+Note:  Removed unneeded node 'comp_prod_0'.
+Note:  Removed unneeded node 'comp_prod_1'.
+Note:  Removed unneeded node 'comp_prod_2'.
+Note:  Removed unneeded node 'comp_prod_3'.
+Note:  Removed unneeded node 'comp_prod_4'.
+Note:  Removed unneeded node 'comp_prod_5'.
+Note:  Removed unneeded node 'comp_prod_6'.
+
+C:\warp\bin\topld.exe:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN HEADER INFORMATION  (16:23:33)
+
+Input File(s): use.pla
+Device       : C344A
+Package      : CY7C344-20HC/HI
+ReportFile   : use.rpt
+
+Program Controls:
+                 None.
+
+Signal Requests:
+    GROUP DT-OPT ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (16:23:33)
+
+Messages:
+  Information: Optimizing logic using best output polarity for signals:
+         prod_1 prod_2 prod_3 prod_4 prod_5 prod_6
+
+  Information: Selected logic optimization OFF for signals:
+         prod_0
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (16:23:33)
+
+Messages:
+  Information: Factoring output logic for signal prod_1.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN EQUATIONS           (16:23:34)
+
+
+    /E_92 =
+          a_2 * a_0 * /b_2 * b_0 
+
+    /E_91 =
+          /a_2 * a_0 * b_2 * b_0 
+
+    /E_90 =
+          a_1 * /b_2 * b_1 * /b_0 
+
+    /E_89 =
+          /a_2 * a_1 * /a_0 * b_1 
+
+    /E_88 =
+          a_0 * b_2 * /b_1 * /b_0 
+
+    /E_87 =
+          /a_1 * a_0 * b_2 * /b_0 
+
+    /E_86 =
+          a_2 * /a_0 * /b_1 * b_0 
+
+    /E_85 =
+          a_2 * /a_1 * /a_0 * b_0 
+
+    /E_84 =
+          a_1 * /a_0 * b_1 * /b_0 
+
+    /E_83 =
+          a_2 * /a_1 * b_2 * /b_1 * b_0 * a_3 * b_3 
+
+    /E_82 =
+          /a_2 * a_1 * /b_2 * b_1 * b_0 * a_3 * b_3 
+
+    /E_81 =
+          a_2 * a_0 * b_1 * /b_0 * /b_3 
+
+    /E_80 =
+          a_0 * /b_2 * /b_1 * b_0 * a_3 * /b_3 
+
+    /E_79 =
+          a_1 * /a_0 * b_2 * b_0 * /a_3 
+
+    /E_78 =
+          /a_2 * /a_1 * a_0 * b_0 * /a_3 * b_3 
+
+    /E_77 =
+          a_0 * b_2 * b_1 * b_0 * /a_3 * b_3 
+
+    /E_76 =
+          a_2 * a_1 * a_0 * b_0 * a_3 * /b_3 
+
+    /E_75 =
+          /a_2 * a_1 * a_0 * /b_2 * b_1 * b_0 * /a_3 * /b_3 
+
+    /E_74 =
+          /a_2 * a_1 * a_0 * b_2 * /b_1 * b_0 * a_3 * b_3 
+
+    /E_73 =
+          a_2 * /a_1 * a_0 * /b_2 * b_1 * b_0 * a_3 * b_3 
+
+    /E_72 =
+          a_2 * /a_1 * a_0 * b_2 * /b_1 * b_0 * /a_3 * /b_3 
+
+    /E_71 =
+          /a_2 * a_1 * b_2 * /b_1 * /a_3 * /b_3 
+
+    /E_70 =
+          a_2 * /a_1 * /b_2 * b_1 * /a_3 * /b_3 
+
+    /E_69 =
+          /a_1 * a_0 * b_2 * /b_1 * /b_0 * b_3 
+
+    /E_68 =
+          a_2 * /a_1 * /a_0 * /b_1 * b_0 * a_3 
+
+    /E_67 =
+          a_0 * /b_2 * /b_1 * b_0 * /a_3 * b_3 
+
+    /E_66 =
+          /a_2 * /a_1 * a_0 * b_0 * a_3 * /b_3 
+
+    /E_65 =
+          a_2 * /a_0 * /b_2 * b_1 * /b_0 
+
+    /E_64 =
+          /a_2 * a_1 * /a_0 * b_2 * /b_0 
+
+    /E_63 =
+          a_0 * b_2 * b_1 * b_0 * a_3 * /b_3 
+
+    /E_62 =
+          a_2 * a_1 * a_0 * b_0 * /a_3 * b_3 
+
+    /E_61 =
+          a_1 * /a_0 * b_2 * /b_1 * /b_0 
+
+    /E_60 =
+          a_2 * /a_1 * /a_0 * b_1 * /b_0 
+
+    /E_59 =
+          a_1 * b_2 * /b_1 * /b_0 * /b_3 
+
+    /E_58 =
+          a_2 * /a_1 * /a_0 * b_1 * /a_3 
+
+    /E_57 =
+          /a_2 * a_0 * b_1 * /b_0 * b_3 
+
+    /E_56 =
+          a_1 * /a_0 * /b_2 * b_0 * a_3 
+
+    /E_55 =
+          a_2 * a_1 * b_1 * /b_0 * /a_3 * b_3 
+
+    /E_54 =
+          a_1 * /a_0 * b_1 * /b_0 * /a_3 * b_3 
+
+    /E_53 =
+          a_2 * /a_1 * b_2 * b_1 * /b_0 * /a_3 
+
+    /E_52 =
+          a_2 * a_1 * /a_0 * b_2 * /b_1 * /b_3 
+
+    /E_51 =
+          /a_1 * a_0 * /b_2 * /b_1 * b_0 * b_3 
+
+    /E_50 =
+          a_1 * /a_0 * b_1 * /b_0 * a_3 * /b_3 
+
+    /E_49 =
+          a_2 * /a_1 * b_2 * /b_1 * b_0 * /a_3 
+
+    /E_48 =
+          /a_2 * a_0 * b_2 * /b_1 * /b_0 * b_3 
+
+    /E_47 =
+          a_2 * /a_1 * /a_0 * /b_2 * b_0 * a_3 
+
+    /E_46 =
+          /a_2 * /a_1 * a_0 * /b_1 * b_0 * b_3 
+
+    /E_45 =
+          /a_1 * a_0 * /b_1 * b_0 * a_3 * /b_3 
+
+    /E_44 =
+          a_1 * b_2 * b_1 * b_0 * a_3 * /b_3 
+
+    /E_43 =
+          a_2 * /b_2 * b_1 * a_3 * /b_3 
+
+    /E_42 =
+          a_2 * a_1 * b_2 * a_3 * /b_3 
+
+    /E_41 =
+          /a_2 * a_1 * b_2 * /a_3 * b_3 
+
+    /E_40 =
+          a_2 * a_1 * a_0 * b_1 * b_0 * /a_3 
+
+    /E_39 =
+          a_2 * b_2 * b_1 * /a_3 * b_3 
+
+    /E_38 =
+          /a_2 * /a_1 * a_0 * b_1 * /b_0 * a_3 * /b_3 
+
+    /E_37 =
+          a_1 * /a_0 * /b_2 * /b_1 * b_0 * /a_3 * b_3 
+
+    /E_36 =
+          a_2 * /a_1 * /a_0 * b_2 * /b_1 * /b_0 
+
+    /E_35 =
+          a_1 * /b_2 * /b_1 * b_0 * a_3 * /b_3 
+
+    /E_34 =
+          /a_2 * /a_1 * a_0 * b_1 * /a_3 * b_3 
+
+    /E_33 =
+          /a_2 * a_1 * /a_0 * b_2 * /b_1 * b_3 
+
+    /E_32 =
+          /a_2 * a_1 * a_0 * /b_2 * b_1 * a_3 
+
+    /E_31 =
+          a_2 * /a_1 * /b_2 * b_1 * /b_0 * a_3 
+
+    /E_30 =
+          /a_2 * a_1 * /b_2 * b_1 * b_0 * b_3 
+
+    /E_29 =
+          /a_2 * a_1 * a_0 * b_2 * b_1 * /a_3 
+
+    /E_28 =
+          a_2 * a_1 * /b_2 * b_1 * b_0 * /b_3 
+
+    /E_27 =
+          a_2 * b_2 * /b_1 * /b_0 * /b_3 
+
+    /E_26 =
+          a_2 * /a_1 * /a_0 * b_2 * /a_3 
+
+    /E_25 =
+          a_2 * a_1 * /b_2 * /b_1 * b_3 
+
+    /E_24 =
+          /a_2 * /a_1 * b_2 * b_1 * /b_3 
+
+    /E_23 =
+          a_2 * a_0 * /b_2 * /b_1 * b_3 
+
+    /E_22 =
+          /a_2 * /a_1 * b_2 * b_0 * /b_3 
+
+    /E_21 =
+          a_2 * a_1 * a_0 * /b_2 * b_3 
+
+    /E_20 =
+          /a_2 * b_2 * b_1 * b_0 * /b_3 
+
+    /E_19 =
+          /a_2 * /a_0 * b_2 * b_1 * /b_3 
+
+    /E_18 =
+          a_1 * a_0 * /b_0 * a_3 * b_3 
+
+    /E_17 =
+          a_2 * a_1 * /b_2 * /b_0 * b_3 
+
+    /E_16 =
+          a_1 * b_1 * b_0 * a_3 * b_3 
+
+    /E_15 =
+          /a_1 * /a_0 * /a_3 * /b_3 
+
+    /E_14 =
+          /a_1 * /b_0 * /a_3 * /b_3 
+
+    /E_13 =
+          /a_0 * /b_1 * /a_3 * /b_3 
+
+    /E_12 =
+          /b_1 * /b_0 * /a_3 * /b_3 
+
+    /E_11 =
+          /a_1 * /b_1 * /a_3 * /b_3 
+
+    /E_10 =
+          /a_2 * /a_1 * /a_0 
+
+    /E_9 =
+          /b_2 * /b_1 * /b_0 
+
+    /E_8 =
+          b_2 * a_3 * b_3 
+
+    /E_7 =
+          a_2 * a_3 * b_3 
+
+    /E_6 =
+          /b_2 * /a_3 * /b_3 
+
+    /E_5 =
+          /a_2 * /a_3 * /b_3 
+
+    /E_4 =
+          /b_2 * /b_1 * /b_0 
+
+    /E_3 =
+          /a_2 * /a_1 * /a_0 
+
+    /E_2 =
+          /a_3 * /b_3 
+
+    /E_1 =
+          a_3 * b_3 
+
+    /F_2 =
+          a_1 * b_0 
+
+    /F_1 =
+          a_0 * b_1 
+
+    prod_0 =
+          a_0 * b_0 
+
+    prod_6 =
+          E_1 * E_2 * E_3 * E_4 
+
+    prod_5 =
+          E_5 * E_6 * E_7 * E_8 * E_9 * E_10 * E_11 * E_12 * E_13 * E_14 * 
+          E_15 * E_16 * E_17 * E_18 * E_19 * E_20 * E_21 * E_22 * E_23 * 
+          E_24 * E_25 
+
+    /prod_4 =
+          E_26 * E_27 * E_28 * E_29 * E_30 * E_31 * E_32 * E_33 * E_34 * 
+          E_35 * E_36 * E_37 * E_38 * E_39 * E_40 * E_41 * E_42 * E_43 * 
+          E_44 * E_45 * E_46 * E_47 * E_48 * E_49 * E_50 * E_51 * E_52 * 
+          E_53 * E_54 * E_55 
+
+    /prod_3 =
+          E_56 * E_57 * E_58 * E_59 * E_60 * E_61 * E_62 * E_63 * E_64 * 
+          E_65 * E_66 * E_67 * E_68 * E_69 * E_70 * E_71 * E_72 * E_73 * 
+          E_74 * E_75 * E_76 * E_77 * E_78 * E_79 * E_80 * E_81 * E_82 * 
+          E_83 
+
+    /prod_2 =
+          E_84 * E_85 * E_86 * E_87 * E_88 * E_89 * E_90 * E_91 * E_92 
+
+    prod_1 =
+          a_1 * b_0 * F_1 
+        + a_0 * b_1 * F_2 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN RULE CHECK          (16:23:34)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (16:23:34)
+
+Messages:
+  Information: Checking for duplicate NODE logic.
+  Information: Duplicate Node Logic, replacing E_4 with E_9.
+  Information: Duplicate Node Logic, replacing E_3 with E_10.
+  Information: Separating expander logic.
+  Information: Merging expanders E_27, E_28 ---> E_26.
+  Information: Merging expanders E_30, E_31 ---> E_29.
+  Information: Merging expanders E_33, E_34 ---> E_32.
+  Information: Merging expanders E_36, E_37 ---> E_35.
+  Information: Merging expanders E_39, E_40 ---> E_38.
+  Information: Merging expanders E_42, E_43 ---> E_41.
+  Information: Merging expanders E_45, E_46 ---> E_44.
+  Information: Merging expanders E_48, E_49 ---> E_47.
+  Information: Merging expanders E_51, E_52 ---> E_50.
+  Information: Merging expanders E_54, E_55 ---> E_53.
+
+                    Device:  C344A
+                    Package: CY7C344-20HC/HI
+
+                      u  u  u        u  u 
+                      n  n  n        n  n 
+                      u  u  u        u  u 
+                      s  s  s  V  G  s  s 
+                      e  e  e  C  N  e  e 
+                      d  d  d  C  D  d  d 
+                      |  |  |  |  |  |  | 
+                    ________________________
+                    | 4  3  2  1  28 27 26 |
+                    |                      |
+             unused_| 5                  25|_unused        
+                a_1_| 6                  24|_unused        
+                a_2_| 7                  23|_a_0           
+                b_3_| 8                  22|_b_2           
+                a_3_| 9                  21|_b_1           
+             prod_1_|10                  20|_b_0           
+             prod_2_|11                  19|_unused        
+                    |                      |
+                    | 12 13 14 15 16 17 18 |
+                    ________________________
+                      |  |  |  |  |  |  | 
+                      p  p  V  G  p  p  p 
+                      r  r  C  N  r  r  r 
+                      o  o  C  D  o  o  o 
+                      d  d        d  d  d 
+                      _  _        _  _  _ 
+                      3  4        5  6  0 
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+RESOURCE ALLOCATION        (16:23:34)
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    7  |    7  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    7  |   16  |
+                 | Buried Macrocells  |   10  |   16  |
+                 | Expander Terms     |   62  |   64  |
+                 ______________________________________
+                                          87  /  104   = 83  %
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 |  3  |  prod_1          |   2  |   3  |
+                 |  4  |  prod_2          |   1  |   3  |
+                 |  5  |  prod_3          |   1  |   3  |
+                 |  6  |  prod_4          |   1  |   3  |
+                 |  9  |  prod_5          |   1  |   3  |
+                 | 10  |  prod_6          |   1  |   3  |
+                 | 11  |  prod_0          |   1  |   3  |
+                 | 12  |  Unused          |   0  |   3  |
+                 | 17  |  Unused          |   0  |   3  |
+                 | 18  |  Unused          |   0  |   3  |
+                 | 19  |  Unused          |   0  |   3  |
+                 | 20  |  Unused          |   0  |   3  |
+                 | 23  |  Unused          |   0  |   3  |
+                 | 24  |  Unused          |   0  |   3  |
+                 | 25  |  Unused          |   0  |   3  |
+                 | 26  |  Unused          |   0  |   3  |
+                 | 29  |  E_53            |   3  |   3  |
+                 | 30  |  E_50            |   3  |   3  |
+                 | 31  |  E_47            |   3  |   3  |
+                 | 32  |  E_44            |   3  |   3  |
+                 | 33  |  E_41            |   3  |   3  |
+                 | 34  |  E_38            |   3  |   3  |
+                 | 35  |  E_35            |   3  |   3  |
+                 | 36  |  E_32            |   3  |   3  |
+                 | 37  |  E_29            |   3  |   3  |
+                 | 38  |  E_26            |   3  |   3  |
+                 | 39  |  Unused          |   0  |   3  |
+                 | 40  |  Unused          |   0  |   3  |
+                 | 41  |  Unused          |   0  |   3  |
+                 | 42  |  Unused          |   0  |   3  |
+                 | 43  |  Unused          |   0  |   3  |
+                 | 44  |  Unused          |   0  |   3  |
+                 ________________________________________
+                                             38  /  96   = 39  %
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+JEDEC ASSEMBLE             (16:23:34)
+
+Messages:
+  Information: Output file 'use.jed' created.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 16:23:34

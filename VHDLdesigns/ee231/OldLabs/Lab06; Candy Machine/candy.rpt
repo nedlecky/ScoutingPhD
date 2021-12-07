@@ -1,0 +1,2945 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  candy.vhd
+Options:    -m -q -e10 -w100 -o2 -ygs -fO -fK -v10 -dc375i -pCY7C375I-125AC candy.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Sun Feb 22 20:28:35 1998
+
+Library 'work' => directory 'lc375i'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+candy.vhd (line 94, col 19):  Note: Substituting module 'cmp_vi_ss' for '>='.
+candy.vhd (line 101, col 42):  Note: Substituting module 'add_vi_ss' for '+'.
+candy.vhd (line 102, col 41):  Note: Substituting module 'add_vi_ss' for '+'.
+candy.vhd (line 103, col 44):  Note: Substituting module 'add_vi_ss' for '+'.
+candy.vhd (line 122, col 24):  Note: Substituting module 'cmp_vv_ss' for '>='.
+candy.vhd (line 127, col 30):  Note: Substituting module 'sub_vv_ss' for '-'.
+candy.vhd (line 149, col 24):  Note: Substituting module 'cmp_vi_ss' for '>='.
+candy.vhd (line 151, col 27):  Note: Substituting module 'sub_vi_ss' for '-'.
+candy.vhd (line 152, col 24):  Note: Substituting module 'cmp_vi_ss' for '>='.
+candy.vhd (line 154, col 27):  Note: Substituting module 'sub_vi_ss' for '-'.
+candy.vhd (line 155, col 23):  Note: Substituting module 'cmp_vi_ss' for '>='.
+candy.vhd (line 157, col 26):  Note: Substituting module 'sub_vi_ss' for '-'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Sun Feb 22 20:28:35 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\warp\lib\common\stdlogic\madd_sub.vif'.
+
+C:\warp\bin\tovif.exe:  No errors.
+
+
+C:\warp\bin\topld.exe V4 IR x77:  Synthesis and optimization
+Sun Feb 22 20:28:37 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\warp\lib\common\stdlogic\madd_sub.vif'.
+Linking 'C:\warp\lib\lc370\stdlogic\c370.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+Deleted 0 User equations/components.
+Deleted 0 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 117 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+Note:  Virtual signal cmp_vv_ss_MODGEN_5 with ( cost: 59598 or cost_inv: 32)  > 30000 or with size: 7 > 256 has been made a (soft) node.
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 78 signals.
+	Turned 1 signals into soft nodes.
+	Maximum expansion cost was set at 10.
+----------------------------------------------------------
+Created 281 PLD nodes.
+
+C:\warp\bin\topld.exe:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN HEADER INFORMATION  (20:28:48)
+
+Input File(s): candy.pla
+Device       : c375i
+Package      : CY7C375I-125AC
+ReportFile   : candy.rpt
+
+Program Controls:
+                 None.
+
+Signal Requests:
+    GROUP DT-OPT ALL
+    GROUP KEEPPOL ALL
+    GROUP SOFT cmp_vv_ss_MODGEN_5 
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (20:28:48)
+
+Messages:
+  Information: Process virtual 'cmp_vv_ss_MODGEN_5' ... converted to NODE.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_c_4' ... expanded.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_r_4' ... expanded.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_e_4' ... expanded.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_ci_2' ... expanded.
+  Information: Process virtual 'MODULE_3_g1_a0_gx_u0_lti_0' ... expanded.
+  Information: Process virtual 'budget_0D' ... expanded.
+  Information: Process virtual 'budget_1D' ... expanded.
+  Information: Process virtual 'budget_2D' ... expanded.
+  Information: Process virtual 'budget_3D' ... expanded.
+  Information: Process virtual 'makechangeD' ... expanded.
+  Information: Process virtual 'budget_4D' ... expanded.
+  Information: Process virtual 'givedimeD' ... expanded.
+  Information: Process virtual 'givenickelD' ... expanded.
+  Information: Process virtual 'givequarterD' ... expanded.
+  Information: Process virtual 'godispenseD' ... expanded.
+  Information: Process virtual 'fallthruD' ... expanded.
+  Information: Process virtual 'keepD' ... expanded.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_ci_4' ... expanded.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_ri_4' ... expanded.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_ei_4' ... expanded.
+  Information: Process virtual 'MODULE_11_g1_a0_g0_u0_c_0' ... expanded.
+  Information: Process virtual 'MODULE_3_g1_a0_gx_u0_lt_2' ... expanded.
+  Information: Process virtual 'budget_0' ... converted to NODE.
+  Information: Process virtual 'budget_1' ... converted to NODE.
+  Information: Process virtual 'budget_2' ... converted to NODE.
+  Information: Process virtual 'budget_3' ... converted to NODE.
+  Information: Process virtual 'makechange' ... converted to NODE.
+  Information: Process virtual 'budget_4' ... converted to NODE.
+  Information: Generating both D & T register equations for signal budget_0.D
+  Information: Expanding XOR equation found on signal budget_0.T
+  Information: Generating both D & T register equations for signal budget_1.D
+  Information: Expanding XOR equation found on signal budget_1.T
+  Information: Generating both D & T register equations for signal budget_2.D
+  Information: Expanding XOR equation found on signal budget_2.T
+  Information: Generating both D & T register equations for signal budget_3.D
+  Information: Expanding XOR equation found on signal budget_3.T
+  Information: Generating both D & T register equations for signal makechange.D
+  Information: Expanding XOR equation found on signal makechange.T
+  Information: Generating both D & T register equations for signal budget_4.D
+  Information: Expanding XOR equation found on signal budget_4.T
+  Information: Generating both D & T register equations for signal givedime.D
+  Information: Expanding XOR equation found on signal givedime.T
+  Information: Generating both D & T register equations for signal givenickel.D
+  Information: Expanding XOR equation found on signal givenickel.T
+  Information: Generating both D & T register equations for signal givequarter.D
+  Information: Expanding XOR equation found on signal givequarter.T
+  Information: Generating both D & T register equations for signal godispense.D
+  Information: Expanding XOR equation found on signal godispense.T
+  Information: Generating both D & T register equations for signal fallthru.D
+  Information: Expanding XOR equation found on signal fallthru.T
+  Information: Generating both D & T register equations for signal keep.D
+  Information: Expanding XOR equation found on signal keep.T
+  Information: Optimizing logic without changing polarity for signals:
+         budget_0.D budget_0.T budget_1.D budget_1.T budget_2.D budget_2.T
+         budget_3.D budget_3.T makechange.D makechange.T budget_4.D budget_4.T
+         givedime.D givedime.T givenickel.D givenickel.T givequarter.D
+         givequarter.T godispense.D godispense.T fallthru.D fallthru.T keep.D
+         keep.T cmp_vv_ss_MODGEN_5 MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3
+         MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u2
+         MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u1
+         MODULE_11_g1_a0_g0_u0_gs_g1_us0 MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+         price_0 price_1 price_2 price_3 price_4
+
+  Information: Selected logic optimization OFF for signals:
+         budget_0.C budget_1.C budget_2.C budget_3.C makechange.C budget_4.C
+         givedime.C givenickel.C givequarter.C godispense.C fallthru.C keep.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (20:28:51)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+  Information: Selecting D register equation as minimal for signal keep
+  Information: Selecting D register equation as minimal for signal fallthru
+  Information: Selecting D register equation as minimal for signal godispense
+  Information: Selecting D register equation as minimal for signal givequarter
+  Information: Selecting D register equation as minimal for signal givenickel
+  Information: Selecting D register equation as minimal for signal givedime
+  Information: Selecting T register equation as minimal for signal budget_4
+  Information: Sum-Splitting output logic for signal budget_4.
+  Information: Selecting T register equation as minimal for signal makechange
+  Information: Selecting T register equation as minimal for signal budget_3
+  Information: Sum-Splitting output logic for signal budget_3.
+  Information: Selecting T register equation as minimal for signal budget_2
+  Information: Sum-Splitting output logic for signal budget_2.
+  Information: Selecting T register equation as minimal for signal budget_1
+  Information: Sum-Splitting output logic for signal budget_1.
+  Information: Selecting T register equation as minimal for signal budget_0
+  Information: Sum-Splitting output logic for signal budget_0.
+  Information: Optimizing Banked Preset/Reset requirements.
+  Information: Optimizing logic without changing polarity for signals:
+         keep.D fallthru.D godispense.D givequarter.D givenickel.D givedime.D
+         budget_4.T makechange.T budget_3.T budget_2.T budget_1.T budget_0.T
+         MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u2
+         MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u1
+         MODULE_3_g1_a0_gx_u0_gne_0_c3_u1 MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3
+         price_4 price_3 MODULE_11_g1_a0_g0_u0_gs_g1_us0 price_2 price_1
+         cmp_vv_ss_MODGEN_5 price_0
+
+  Information: Optimizing logic using best output polarity for signals:
+         S_32 S_31 S_30 S_29 S_28 S_27 S_26 S_25 S_24 S_23 S_22 S_21 S_20 S_19
+         S_18 S_17 S_16 S_15 S_14 S_13 S_12 S_11 S_10 S_9 S_8 S_7 S_6 S_5 S_4
+         S_3 S_2 S_1
+
+  Information: Selected logic optimization OFF for signals:
+         keep.AP keep.AR keep.C fallthru.AP fallthru.AR fallthru.C
+         godispense.AP godispense.AR godispense.C givequarter.AP
+         givequarter.AR givequarter.C givenickel.AP givenickel.AR givenickel.C
+         givedime.AP givedime.AR givedime.C budget_4.AP budget_4.AR budget_4.C
+         makechange.AP makechange.AR makechange.C budget_3.AP budget_3.AR
+         budget_3.C budget_2.AP budget_2.AR budget_2.C budget_1.AP budget_1.AR
+         budget_1.C budget_0.AP budget_0.AR budget_0.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (20:28:52)
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN EQUATIONS           (20:28:52)
+
+
+    budget_0.T =
+          S_32.CMB 
+        + S_31.CMB 
+        + S_30.CMB 
+        + S_29.CMB 
+
+    budget_0.AP =
+          GND
+
+    budget_0.AR =
+          GND
+
+    budget_0.C =
+          masterclk 
+
+    budget_1.T =
+          S_28.CMB 
+        + S_27.CMB 
+        + S_26.CMB 
+        + S_25.CMB 
+        + S_24.CMB 
+
+    budget_1.AP =
+          GND
+
+    budget_1.AR =
+          GND
+
+    budget_1.C =
+          masterclk 
+
+    budget_2.T =
+          S_23.CMB 
+        + S_22.CMB 
+        + S_21.CMB 
+        + S_20.CMB 
+        + S_19.CMB 
+        + S_18.CMB 
+        + S_17.CMB 
+        + S_16.CMB 
+
+    budget_2.AP =
+          GND
+
+    budget_2.AR =
+          GND
+
+    budget_2.C =
+          masterclk 
+
+    budget_3.T =
+          S_15.CMB 
+        + S_14.CMB 
+        + S_13.CMB 
+        + S_12.CMB 
+        + S_11.CMB 
+        + S_10.CMB 
+        + S_9.CMB 
+        + S_8.CMB 
+        + S_7.CMB 
+
+    budget_3.AP =
+          GND
+
+    budget_3.AR =
+          GND
+
+    budget_3.C =
+          masterclk 
+
+    makechange.T =
+          /budget_4.Q * /budget_3.Q * /budget_1.Q * /budget_0.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /budget_4.Q * /budget_3.Q * /budget_2.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /makechange.Q * gotreturn 
+
+    makechange.AP =
+          GND
+
+    makechange.AR =
+          GND
+
+    makechange.C =
+          masterclk 
+
+    budget_4.T =
+          S_6.CMB 
+        + S_5.CMB 
+        + S_4.CMB 
+        + S_3.CMB 
+        + S_2.CMB 
+        + S_1.CMB 
+
+    budget_4.AP =
+          GND
+
+    budget_4.AR =
+          GND
+
+    budget_4.C =
+          masterclk 
+
+    givedime.D =
+          budget_4.Q * /budget_2.Q * /budget_1.Q * /budget_0.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /budget_4.Q * budget_3.Q * budget_1.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_4.Q * budget_3.Q * budget_2.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * /budget_3.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + /reset * givedime.Q * /makechange.Q 
+        + /reset * godispense.Q * givedime.Q 
+
+    givedime.AP =
+          GND
+
+    givedime.AR =
+          GND
+
+    givedime.C =
+          masterclk 
+
+    givenickel.D =
+          /budget_4.Q * budget_3.Q * /budget_2.Q * /budget_1.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /budget_4.Q * /budget_3.Q * budget_2.Q * budget_0.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /budget_4.Q * /budget_3.Q * budget_2.Q * budget_1.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /reset * givenickel.Q * /makechange.Q 
+        + /reset * godispense.Q * givenickel.Q 
+
+    givenickel.AP =
+          GND
+
+    givenickel.AR =
+          GND
+
+    givenickel.C =
+          masterclk 
+
+    givequarter.D =
+          budget_4.Q * budget_3.Q * budget_0.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /reset * givequarter.Q * /makechange.Q 
+        + /reset * godispense.Q * givequarter.Q 
+
+    givequarter.AP =
+          GND
+
+    givequarter.AR =
+          GND
+
+    givequarter.C =
+          masterclk 
+
+    godispense.D =
+          /reset * gotselect * godispense.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB 
+
+    godispense.AP =
+          GND
+
+    godispense.AR =
+          GND
+
+    godispense.C =
+          masterclk 
+
+    fallthru.D =
+          budget_4.Q * budget_3.Q * budget_0.Q * gotcoin 
+        + budget_4.Q * budget_3.Q * budget_1.Q * gotcoin 
+        + budget_4.Q * budget_3.Q * budget_2.Q * gotcoin 
+        + /reset * gotcoin * fallthru.Q 
+
+    fallthru.AP =
+          GND
+
+    fallthru.AR =
+          GND
+
+    fallthru.C =
+          masterclk 
+
+    keep.D =
+          budget_4.Q * budget_3.Q * budget_0.Q * /reset * gotcoin * keep.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * /reset * gotcoin * keep.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * /reset * gotcoin * keep.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 
+        + /budget_3.Q * gotcoin * cointype_0 
+        + /budget_4.Q * gotcoin * cointype_0 
+        + /budget_3.Q * gotcoin * cointype_1 
+        + /budget_4.Q * gotcoin * cointype_1 
+
+    keep.AP =
+          GND
+
+    keep.AR =
+          GND
+
+    keep.C =
+          masterclk 
+
+    MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3 =
+          MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u2.CMB 
+        + MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u1.CMB 
+
+    MODULE_3_g1_a0_gx_u0_gne_0_c3_u1 =
+          /budget_0.Q * price_2.CMB * price_0.CMB * price_1.CMB 
+        + /budget_1.Q * /budget_0.Q * price_2.CMB * price_0.CMB 
+        + /budget_2.Q * /budget_0.Q * price_0.CMB * price_1.CMB 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * price_0.CMB 
+        + /budget_1.Q * price_2.CMB * price_1.CMB 
+        + /budget_2.Q * /budget_1.Q * price_1.CMB 
+        + /budget_2.Q * price_2.CMB 
+
+    price_4 =
+          selection_2 * selection_0 
+        + selection_2 * selection_1 
+        + selection_3 
+
+    MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u2 =
+          price_2.CMB * price_3.CMB 
+        + /budget_2.Q * price_3.CMB 
+        + /budget_3.Q * price_2.CMB 
+        + /budget_3.Q * /budget_2.Q 
+
+    MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u1 =
+          /budget_2.Q * price_2.CMB * price_3.CMB 
+        + /budget_3.Q * /budget_2.Q * price_2.CMB 
+        + /budget_3.Q * price_3.CMB 
+
+    MODULE_11_g1_a0_g0_u0_gs_g1_us0 =
+          /budget_0.Q * price_0.CMB * price_1.CMB 
+        + /budget_1.Q * /budget_0.Q * price_0.CMB 
+        + /budget_1.Q * price_1.CMB 
+
+    price_1 =
+          /selection_3 * /selection_1 * /selection_0 
+        + /selection_3 * /selection_2 
+
+    price_0 =
+          selection_2 * /selection_1 * /selection_0 
+        + /selection_3 * /selection_2 
+        + /selection_2 * selection_1 
+        + selection_3 * selection_2 
+
+    S_32 =
+          budget_0.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          /makechange.Q 
+        + budget_0.Q * reset * /cointype_1 * /gotselect * /makechange.Q 
+        + budget_0.Q * reset * /cointype_1 * /cmp_vv_ss_MODGEN_5.CMB * 
+          givequarter.Q 
+        + budget_0.Q * reset * /cointype_1 * /cmp_vv_ss_MODGEN_5.CMB * 
+          /makechange.Q 
+        + /budget_3.Q * gotcoin * cointype_0 * /gotselect * godispense.Q 
+        + /budget_3.Q * gotcoin * cointype_0 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * gotcoin * cointype_0 * /gotselect * givedime.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * /gotselect * givenickel.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * /gotselect * givequarter.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * /cmp_vv_ss_MODGEN_5.CMB * 
+          givedime.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * /cmp_vv_ss_MODGEN_5.CMB * 
+          givenickel.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * /gotselect * godispense.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * /gotselect * /makechange.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * /cmp_vv_ss_MODGEN_5.CMB * 
+          givequarter.Q 
+        + /budget_4.Q * gotcoin * cointype_0 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * gotcoin * cointype_0 * /cmp_vv_ss_MODGEN_5.CMB * 
+          /makechange.Q 
+
+    /S_31 =
+          gotselect * /godispense.Q * cmp_vv_ss_MODGEN_5.CMB * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_3.Q * /cmp_vv_ss_MODGEN_5.CMB * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_3.Q * /gotselect * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q * makechange.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * /price_0.CMB 
+        + /budget_3.Q * /cointype_0 * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_3.Q * /reset * /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_3.Q * /budget_0.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_3.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /cointype_0 * /gotselect 
+        + /budget_3.Q * /gotcoin * /gotselect 
+        + budget_3.Q * /reset * /gotselect 
+        + budget_3.Q * /budget_0.Q * /gotselect 
+        + /budget_4.Q * budget_3.Q * /gotselect 
+
+    /S_30 =
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + gotselect * /godispense.Q * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q 
+        + gotcoin * /godispense.Q * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q 
+        + gotcoin * gotselect * /godispense.Q * /givenickel.Q * 
+          /givedime.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB 
+        + gotcoin * cointype_1 
+        + /reset 
+        + /budget_0.Q 
+
+    S_29 =
+          /budget_4.Q * /budget_3.Q * budget_2.Q * budget_1.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /budget_4.Q * budget_3.Q * /budget_2.Q * /budget_1.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_0.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_4.Q * /budget_3.Q * budget_0.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * givenickel.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * godispense.Q 
+
+    price_3 =
+          selection_2 * /selection_1 * /selection_0 
+        + /selection_2 * selection_1 
+        + /selection_3 * /selection_2 
+        + selection_3 * selection_2 
+
+    price_2 =
+          /selection_2 * /selection_1 
+        + /selection_3 
+
+    S_28 =
+          budget_4.Q * /budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * /gotselect * 
+          givenickel.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * /gotselect * 
+          /makechange.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * /gotselect * 
+          givequarter.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * /gotselect * 
+          givenickel.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + budget_1.Q * reset * /gotcoin * /gotselect * givedime.Q 
+        + budget_1.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givedime.Q 
+        + budget_1.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givenickel.Q 
+        + budget_1.Q * reset * /cointype_0 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_1.Q * reset * /gotcoin * /gotselect * /makechange.Q 
+        + budget_1.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          /makechange.Q 
+        + budget_1.Q * reset * /cointype_0 * /cmp_vv_ss_MODGEN_5.CMB * 
+          /makechange.Q 
+
+    S_27 =
+          budget_3.Q * /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * 
+          cointype_1 * /cointype_0 * /gotselect 
+        + budget_3.Q * /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * 
+          cointype_1 * /cointype_0 * /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * /gotselect * 
+          /makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * /gotselect * 
+          godispense.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * /budget_3.Q * budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * /gotselect * 
+          givenickel.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * /gotselect * 
+          givedime.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * /gotselect * 
+          givequarter.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * /gotselect * 
+          godispense.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+
+    /S_26 =
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + gotcoin * gotselect * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q 
+        + gotselect * /godispense.Q * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q 
+        + cointype_0 * /godispense.Q * /givequarter.Q * /givenickel.Q 
+        + cointype_0 * gotselect * /godispense.Q * /givequarter.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB 
+        + gotcoin * cointype_0 
+        + /reset 
+        + /budget_1.Q 
+
+    /S_25 =
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /budget_0.Q * price_0.CMB * price_1.CMB 
+        + budget_0.Q * /price_1.CMB 
+        + /price_0.CMB * /price_1.CMB 
+        + /cmp_vv_ss_MODGEN_5.CMB 
+        + /gotselect 
+
+    S_24 =
+          /budget_4.Q * /budget_2.Q * budget_1.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_4.Q * budget_3.Q * budget_2.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_1.Q * /budget_0.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_3.Q * /budget_0.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * /budget_3.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * /gotselect * 
+          givedime.Q 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + budget_4.Q * /budget_3.Q * budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect 
+        + /budget_4.Q * budget_0.Q * gotcoin * cointype_0 * /gotselect * 
+          /makechange.Q 
+        + budget_4.Q * /budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * /gotselect * 
+          givequarter.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * /gotselect * 
+          givedime.Q 
+        + /budget_4.Q * gotcoin * cointype_1 * /cointype_0 * /gotselect * 
+          godispense.Q 
+
+    S_23 =
+          /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givenickel.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * godispense.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givenickel.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givenickel.Q * price_2.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+
+    S_22 =
+          budget_2.Q * reset * /gotcoin * /gotselect * /makechange.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givequarter.Q * price_2.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * godispense.Q * cmp_vv_ss_MODGEN_5.CMB * price_2.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * /price_2.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givenickel.Q * /price_2.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givequarter.Q * 
+          /price_2.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * godispense.Q * cmp_vv_ss_MODGEN_5.CMB * /price_2.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+
+    S_21 =
+          budget_4.Q * budget_3.Q * budget_2.Q * reset * /gotselect * 
+          /makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * /gotselect * 
+          givenickel.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * /gotselect * 
+          givedime.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * price_2.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + budget_2.Q * reset * /gotcoin * /gotselect * godispense.Q 
+        + budget_2.Q * reset * /gotcoin * /gotselect * givequarter.Q 
+        + budget_2.Q * reset * /gotcoin * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_2.Q * reset * /gotcoin * /gotselect * givenickel.Q 
+        + budget_2.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givequarter.Q 
+        + budget_2.Q * reset * /gotcoin * /gotselect * givedime.Q 
+        + budget_2.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givenickel.Q 
+        + budget_2.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givedime.Q 
+
+    S_20 =
+          /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * godispense.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * /gotselect * 
+          givequarter.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * /gotselect * 
+          godispense.Q 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * /gotselect * 
+          givedime.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * /gotselect * 
+          givenickel.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * /gotselect * 
+          givequarter.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * /gotselect * 
+          /makechange.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q * 
+          /price_2.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+
+    S_19 =
+          /budget_3.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givequarter.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * godispense.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givedime.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givenickel.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * /makechange.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givequarter.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * godispense.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_4.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_2.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          /makechange.Q 
+
+    S_18 =
+          /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givedime.Q 
+        + /budget_3.Q * budget_1.Q * budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givenickel.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * godispense.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_4.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givenickel.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q * price_2.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+
+    S_17 =
+          budget_4.Q * /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * 
+          /cointype_1 * cointype_0 * /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * 
+          /cointype_1 * cointype_0 * /gotselect 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * godispense.Q 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givenickel.Q 
+        + budget_4.Q * /budget_3.Q * /budget_1.Q * gotcoin * /cointype_1 * 
+          cointype_0 * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givenickel.Q 
+        + budget_2.Q * reset * /cointype_1 * /cointype_0 * /gotselect * 
+          godispense.Q 
+
+    S_16 =
+          /budget_4.Q * budget_3.Q * /budget_1.Q * budget_0.Q * 
+          /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + budget_2.Q * /budget_1.Q * /budget_0.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * /budget_1.Q * /budget_0.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * /budget_3.Q * /budget_1.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_4.Q * /budget_3.Q * budget_2.Q * /godispense.Q * 
+          /givequarter.Q * /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * godispense.Q 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_1.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + budget_4.Q * /budget_3.Q * /budget_1.Q * gotcoin * /cointype_1 * 
+          cointype_0 * /gotselect 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * /budget_1.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+
+    S_15 =
+          gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * /price_2.CMB * 
+          price_3.CMB * /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + /budget_4.Q * budget_3.Q * reset * /cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * 
+          /gotselect 
+        + /budget_4.Q * budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * /gotselect * 
+          /makechange.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * /gotselect * 
+          givenickel.Q 
+        + /budget_4.Q * budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * 
+          /gotselect 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_4.Q * budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * /gotselect * 
+          /makechange.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * /gotselect * 
+          givedime.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * /gotselect 
+
+    S_14 =
+          budget_3.Q * /budget_1.Q * reset * /cointype_0 * /gotselect * 
+          givequarter.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + gotselect * godispense.Q * cmp_vv_ss_MODGEN_5.CMB * price_2.CMB * 
+          /price_3.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q * price_2.CMB * 
+          /price_3.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * price_2.CMB * 
+          /price_3.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givenickel.Q * price_2.CMB * 
+          /price_3.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givequarter.Q * price_2.CMB * 
+          /price_3.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * godispense.Q * cmp_vv_ss_MODGEN_5.CMB * /price_2.CMB * 
+          price_3.CMB * /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + budget_2.Q * gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q * 
+          /price_2.CMB * price_3.CMB 
+        + budget_2.Q * gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * 
+          /price_2.CMB * price_3.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givenickel.Q * /price_2.CMB * 
+          price_3.CMB * /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + budget_2.Q * gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q * 
+          price_3.CMB * /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + budget_2.Q * gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * 
+          price_3.CMB * /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + budget_2.Q * gotselect * cmp_vv_ss_MODGEN_5.CMB * givenickel.Q * 
+          price_3.CMB * /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givequarter.Q * 
+          /price_2.CMB * price_3.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+
+    S_13 =
+          /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * /gotselect * 
+          givedime.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_4.Q * budget_3.Q * reset * /cointype_1 * /cointype_0 * 
+          /gotselect 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * /gotselect * 
+          givenickel.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * /gotselect * 
+          givequarter.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * budget_3.Q * budget_0.Q * reset * /gotselect 
+        + budget_3.Q * reset * /gotcoin * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_3.Q * reset * /gotcoin * /gotselect * givedime.Q 
+        + budget_3.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givenickel.Q 
+        + budget_3.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givequarter.Q 
+        + budget_3.Q * reset * /gotcoin * /gotselect * godispense.Q 
+        + budget_3.Q * reset * /gotcoin * /gotselect * givenickel.Q 
+        + budget_3.Q * reset * /gotcoin * /gotselect * givequarter.Q 
+
+    S_12 =
+          budget_4.Q * budget_3.Q * budget_0.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_3.Q * reset * /gotcoin * /gotselect * /makechange.Q 
+        + budget_3.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          givedime.Q 
+        + budget_3.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB * 
+          /makechange.Q 
+
+    S_11 =
+          /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_4.Q * budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * 
+          cointype_0 * /gotselect 
+        + /budget_3.Q * budget_2.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * /gotselect * 
+          givequarter.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * /gotselect * 
+          godispense.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * /gotselect * 
+          givedime.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * /gotselect * 
+          givenickel.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * godispense.Q * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * /gotselect * 
+          godispense.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * /gotselect * 
+          /makechange.Q 
+        + budget_3.Q * /budget_1.Q * reset * /cointype_0 * /gotselect * 
+          godispense.Q 
+        + budget_3.Q * budget_2.Q * /budget_1.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+
+    S_10 =
+          budget_3.Q * budget_0.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givenickel.Q 
+        + /budget_3.Q * budget_2.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_4.Q * budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          cointype_0 * /gotselect 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * /makechange.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * godispense.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givedime.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givenickel.Q 
+        + /budget_2.Q * /budget_1.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          /gotselect * givequarter.Q 
+        + budget_3.Q * budget_2.Q * /budget_1.Q * reset * /gotselect 
+
+    /S_9 =
+          /godispense.Q * /givequarter.Q * /givenickel.Q * makechange.Q * 
+          price_3.CMB 
+        + /godispense.Q * /givequarter.Q * /givenickel.Q * price_3.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + /godispense.Q * /givequarter.Q * /givenickel.Q * /givedime.Q * 
+          makechange.Q 
+        + /godispense.Q * /givequarter.Q * price_2.CMB * price_3.CMB 
+        + /budget_2.Q * makechange.Q * price_3.CMB 
+        + price_2.CMB * price_3.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + /price_2.CMB * /price_3.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + /budget_2.Q * price_3.CMB * MODULE_11_g1_a0_g0_u0_gs_g1_us0.CMB 
+        + /budget_2.Q * price_2.CMB * price_3.CMB 
+        + budget_2.Q * /price_3.CMB 
+        + /cmp_vv_ss_MODGEN_5.CMB 
+        + /gotselect 
+
+    S_8 =
+          budget_4.Q * budget_1.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_4.Q * budget_3.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_2.Q * /godispense.Q * /givequarter.Q * 
+          /givenickel.Q * /givedime.Q * makechange.Q 
+        + /budget_4.Q * budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * 
+          cointype_0 * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * 
+          cointype_0 * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * budget_2.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * givenickel.Q 
+        + /budget_3.Q * budget_2.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_3.Q * budget_2.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * budget_2.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * budget_2.Q * /budget_0.Q * gotcoin * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+
+    /S_7 =
+          /budget_3.Q * /godispense.Q * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q * makechange.Q 
+        + /budget_0.Q * /godispense.Q * cmp_vv_ss_MODGEN_5.CMB * 
+          /givedime.Q 
+        + /budget_0.Q * /godispense.Q * /givenickel.Q * /givedime.Q 
+        + /budget_1.Q * budget_0.Q * gotselect 
+        + /budget_0.Q * gotselect * /givenickel.Q 
+        + /budget_1.Q * budget_0.Q * /godispense.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB 
+        + budget_0.Q * cointype_1 
+        + budget_4.Q * budget_3.Q 
+        + /budget_2.Q * /budget_1.Q 
+        + /budget_2.Q * /budget_0.Q 
+        + budget_3.Q * /budget_1.Q 
+        + budget_3.Q * /budget_0.Q 
+        + /cointype_0 
+        + /gotcoin 
+
+    /S_6 =
+          budget_2.Q * budget_1.Q * gotcoin * cmp_vv_ss_MODGEN_5.CMB * 
+          /givequarter.Q * /givenickel.Q 
+        + budget_2.Q * gotselect * /godispense.Q * /givequarter.Q 
+        + budget_2.Q * budget_1.Q * budget_0.Q * gotcoin 
+        + gotcoin * /godispense.Q * /givequarter.Q * /givenickel.Q 
+        + /reset * /gotcoin 
+        + /budget_4.Q * /gotcoin 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB 
+        + /gotcoin * gotselect 
+        + gotcoin * /cointype_0 
+        + gotcoin * /cointype_1 
+        + budget_3.Q * gotcoin 
+
+    S_5 =
+          /budget_4.Q * budget_3.Q * budget_2.Q * gotcoin * /cointype_1 * 
+          cointype_0 * godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givequarter.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givenickel.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * godispense.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givequarter.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          godispense.Q * /cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_4.Q * budget_3.Q * gotcoin * cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + budget_4.Q * reset * /gotcoin * /cmp_vv_ss_MODGEN_5.CMB 
+
+    /S_4 =
+          /budget_3.Q * /godispense.Q * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q * makechange.Q 
+        + /budget_4.Q * cointype_0 * /godispense.Q * /givedime.Q * 
+          makechange.Q 
+        + cointype_0 * gotselect * /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_3.Q * gotselect 
+        + /budget_4.Q * cointype_1 * cointype_0 
+        + /budget_4.Q * budget_3.Q * /cointype_0 
+        + budget_4.Q * budget_3.Q * /reset 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB 
+        + /budget_3.Q * cointype_0 
+        + /budget_3.Q * /cointype_1 
+        + /budget_4.Q * /gotcoin 
+        + /budget_3.Q * /budget_1.Q 
+        + /budget_3.Q * /gotcoin 
+        + /budget_2.Q 
+
+    S_3 =
+          budget_4.Q * /godispense.Q * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q * makechange.Q 
+        + budget_4.Q * budget_3.Q * budget_0.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * reset * /cointype_1 * /cointype_0 * /gotselect 
+        + budget_4.Q * reset * /cointype_1 * /cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * price_4.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givenickel.Q * price_4.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givequarter.Q * price_4.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * godispense.Q * cmp_vv_ss_MODGEN_5.CMB * price_4.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q * 
+          /price_4.CMB * MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givedime.Q * /price_4.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givenickel.Q * /price_4.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * givequarter.Q * 
+          /price_4.CMB * MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + gotselect * godispense.Q * cmp_vv_ss_MODGEN_5.CMB * /price_4.CMB * 
+          MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+
+    S_2 =
+          /budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * cointype_0 * 
+          /gotselect * godispense.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givenickel.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_3.Q * /budget_0.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * cointype_0 * 
+          /gotselect * givedime.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * givedime.Q 
+        + /budget_3.Q * /budget_2.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * cointype_0 * 
+          /gotselect * /makechange.Q 
+        + /budget_3.Q * /budget_1.Q * gotcoin * cointype_1 * cointype_0 * 
+          /cmp_vv_ss_MODGEN_5.CMB * /makechange.Q 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB * /makechange.Q * price_4.CMB * 
+          /MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3.CMB 
+        + budget_4.Q * budget_3.Q * budget_0.Q * reset * /gotselect 
+        + budget_4.Q * budget_3.Q * budget_2.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * /gotselect 
+        + budget_4.Q * budget_3.Q * budget_1.Q * reset * 
+          /cmp_vv_ss_MODGEN_5.CMB 
+
+    /S_1 =
+          cointype_0 * /godispense.Q * /givequarter.Q * /givenickel.Q * 
+          /givedime.Q * makechange.Q 
+        + /budget_1.Q * cointype_0 * /givequarter.Q * /givenickel.Q 
+        + /budget_0.Q * cointype_0 * /givequarter.Q * /givenickel.Q 
+        + /budget_2.Q * budget_1.Q * /budget_0.Q 
+        + /budget_4.Q * /budget_2.Q * /budget_1.Q 
+        + budget_2.Q * /cointype_0 
+        + budget_0.Q * /cointype_0 
+        + cointype_1 * cointype_0 
+        + budget_4.Q * /cointype_1 
+        + gotselect * cmp_vv_ss_MODGEN_5.CMB 
+        + /gotcoin 
+        + /budget_3.Q 
+
+    cmp_vv_ss_MODGEN_5 =
+          /price_3.CMB * /price_4.CMB * 
+          /MODULE_3_g1_a0_gx_u0_gne_0_c3_u1.CMB 
+        + budget_3.Q * /price_4.CMB * 
+          /MODULE_3_g1_a0_gx_u0_gne_0_c3_u1.CMB 
+        + budget_4.Q * /price_3.CMB * 
+          /MODULE_3_g1_a0_gx_u0_gne_0_c3_u1.CMB 
+        + budget_4.Q * budget_3.Q * /MODULE_3_g1_a0_gx_u0_gne_0_c3_u1.CMB 
+        + budget_3.Q * /price_3.CMB * /price_4.CMB 
+        + budget_4.Q * budget_3.Q * /price_3.CMB 
+        + budget_4.Q * /price_4.CMB 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN RULE CHECK          (20:28:52)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PARTITION LOGIC            (20:28:53)
+
+Messages:
+  Information: Checking design is strictly SYNCHRONOUS.
+  Information: Initializing Logic Block structures.
+  Information: Forming input seeds.
+  Information: Checking for duplicate NODE logic.
+  Information: Duplicate Node Logic, replacing price_0 with price_3.
+  Information: Forming input seeds.
+  Information: Assigning fixed logic to Logic Blocks.
+  Information: Separating output logic set to GND/VCC.
+  Information: Processing banked global preset, reset and output enable.
+  Information: Validating Logic Block's with pre-placed signals.
+  Information: Assigning initializing equations to empty Logic Blocks.
+  Information: Separating output combinatorial logic.
+  Information: Separating disjoint output logic.
+  Information: Assigning floating outputs to Logic Blocks.
+  Information: Compacting Logic Block interconnect.
+  .+.+........................................................
+  Information: Separating disjoint output logic.
+  Information: Assigning floating outputs to Logic Blocks.
+  Information: Assigning floating outputs to Logic Blocks.
+  Information: Minimizing interconnect between Logic Blocks.
+  ..++...+.......
+Start=20:28:54  End=20:28:55
+  Information: Assigning floating inputs to Logic Blocks.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (20:28:55)
+
+Messages:
+  Information: Fitting signals to Logic Block A.
+  Information: Fitting signals to Logic Block B.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block C.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ..+................+..............................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ..+................+..............................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block D.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block E.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block F.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block G.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ...+................+.............................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block H.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  .....+...........................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Routing signals to Logic Blocks.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK A PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |UNUSED
+++++++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |[i/p]
+................................................................++++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  0 
+Total count of unique Product Terms  =  0 
+Total Product Terms to be assigned   =  0 
+Max Product Terms used / available   =   0 /  80   = 0.0  %
+
+
+Control Signals for Logic Block A
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block A
+                 ____________________________________________
+                 |   |* not used:161                    |   |                 
+                 |   |* not used:162                    |   |                 
+                 |   |* not used:163                    |   |                 
+                 |   |* not used:164                    |   |                 
+                 |   |* not used:165                    |143|* not used       
+                 |   |* not used:166                    |   |                 
+                 |   |* not used:167                    |144|* not used       
+                 |   |* not used:168                    |   |                 
+                 |   |* not used:169                    |145|* not used       
+                 |   |* not used:170                    |   |                 
+                 |   |* not used:171                    |146|* not used       
+                 |   |* not used:172                    |   |                 
+                 |   |* not used:173                    |147|* not used       
+                 |   |* not used:174                    |   |                 
+                 |   |* not used:175                    |148|* not used       
+                 |   |* not used:176                    |   |                 
+                 |   |* not used:177                    |149|* not used       
+                 |   |* not used:178                    |   |                 
+                 |   |* not used:179                    |150|* not used       
+                 |   |* not used:180                    |   |                 
+                 |   |* not used:181                    |152|* not used       
+                 |   |* not used:182                    |   |                 
+                 |   |* not used:183                    |153|* not used       
+                 |   |* not used:184                    |   |                 
+                 |   |* not used:185                    |154|* not used       
+                 |   |* not used:186                    |   |                 
+                 |   |* not used:187                    |155|* not used       
+                 |   |* not used:188                    |   |                 
+                 |   |* not used:189                    |156|* not used       
+                 |   |* not used:190                    |   |                 
+                 |   |* not used:191                    |157|* not used       
+                 |   |* not used:192                    |   |                 
+                 |   |* not used:193                    |158|* not used       
+                 |   |* not used:194                    |   |                 
+                 |   |* not used:195                    |159|= cointype_0     
+                 |   |* not used:196                    |   |                 
+                 |   |* not used:197                    |   |                 
+                 |   |* not used:198                    |   |                 
+                 |   |* not used:199                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    1  |   16  |
+                 | PIM Input Connects |    0  |   36  |
+                 ______________________________________
+                                           1  /   52   = 1   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK B PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(S_21)
+XXXXXXXXXXXXXXXX................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |[i/p]
+..........++++++++++++++++......................................................
+| 3 |(price_2)
+..............++XX++++++++++++..................................................
+| 4 |(MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u1)
+..................XXX+++++++++++++..............................................
+| 5 |(price_4)
+......................XXX+++++++++++++..........................................
+| 6 |(MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u2)
+..........................XXXX++++++++++++......................................
+| 7 |(MODULE_3_g1_a0_gx_u0_gne_0_c3_u1)
+..............................XXXX++XX++X+++++..................................
+| 8 |(cmp_vv_ss_MODGEN_5)
+..................................XX++X+++++XX++XX..............................
+| 9 |(S_22)
+......................................+X++XX++XX++++XX..........................
+|10 |(price_3)
+..........................................++++++++XX++++XX......................
+|11 |(price_1)
+..............................................++++X+++X+++++++..................
+|12 |(S_12)
+..................................................+++++X++++XX+X++..............
+|13 |(MODULE_11_g1_a0_g0_u0_gs_g1_us0)
+......................................................++++X+++++XX++++..........
+|14 |(S_25)
+..........................................................XX++X+++X+++++XX......
+|15 |(S_9)
+................................................................++XXXXXXXXXX++XX
+________________________________________________________________________________
+
+Total count of outputs placed        =  14 
+Total count of unique Product Terms  =  74 
+Total Product Terms to be assigned   =  80 
+Max Product Terms used / available   =  75 /  80   = 93.76 %
+
+
+Control Signals for Logic Block B
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block B
+                 ____________________________________________
+                 |   |= >selection_3                    |   |                 
+                 |   |= >selection_2                    |   |                 
+                 |   |* not used:202                    |   |                 
+                 |   |= >makechange.Q                   |   |                 
+                 |   |= >selection_0                    |  2|= (S_21)         
+                 |   |= >selection_1                    |   |                 
+                 |   |= >givenickel.Q                   |  3|* not used       
+                 |   |* not used:207                    |   |                 
+                 |   |= >givequarter.Q                  |  4|= cointype_1     
+                 |   |* not used:209                    |   |                 
+                 |   |= >budget_4.Q                     |  5|= (price_2)      
+                 |   |* not used:211                    |   |                 
+                 |   |= >budget_1.Q                     |  6|= (MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u1) 
+                 |   |= >cmp_vv_ss_M..                  |   |                 
+                 |   |= >MODULE_11_g..                  |  7|= (price_4)      
+                 |   |= >givedime.Q                     |   |                 
+                 |   |* not used:216                    |  8|= (MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u2) 
+                 |   |* not used:217                    |   |                 
+                 |   |= >godispense.Q                   |  9|= (MODULE_3_g1_a0_gx_u0_gne_0_c3_u1) 
+                 |   |= >price_3.CMB                    |   |                 
+                 |   |* not used:220                    | 11|= (cmp_vv_ss_MODGEN_5) 
+                 |   |= >price_2.CMB                    |   |                 
+                 |   |= >budget_2.Q                     | 12|= (S_22)         
+                 |   |= >price_4.CMB                    |   |                 
+                 |   |* not used:224                    | 13|= (price_3)      
+                 |   |= >price_1.CMB                    |   |                 
+                 |   |= >budget_0.Q                     | 14|= (price_1)      
+                 |   |= >budget_3.Q                     |   |                 
+                 |   |* not used:228                    | 15|= (S_12)         
+                 |   |* not used:229                    |   |                 
+                 |   |* not used:230                    | 16|= (MODULE_11_g1_a0_g0_u0_gs_g1_us0) 
+                 |   |= >reset                          |   |                 
+                 |   |= >MODULE_3_g1..                  | 17|= (S_25)         
+                 |   |= >gotcoin                        |   |                 
+                 |   |* not used:234                    | 18|= (S_9)          
+                 |   |* not used:235                    |   |                 
+                 |   |= >gotselect                      |   |                 
+                 |   |* not used:237                    |   |                 
+                 |   |* not used:238                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   15  |   16  |
+                 | PIM Input Connects |   24  |   36  |
+                 ______________________________________
+                                          39  /   52   = 75  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK C PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(S_29)
+XXXXXXXXXXXXXXXX................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |(S_26)
+..............++XXX+XX++XX++XX..................................................
+| 4 |(S_30)
+..................+XXXXXXXX+++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |(S_13)
+..............................XXXXXXXXXXXXXXXX..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |(S_28)
+..............................................XXXXXXXXXXXXXXXX..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |(S_7)
+................................................................XXXXXXXXXXXXXXX+
+________________________________________________________________________________
+
+Total count of outputs placed        =  6 
+Total count of unique Product Terms  =  75 
+Total Product Terms to be assigned   =  80 
+Max Product Terms used / available   =  76 /  80   = 95.1  %
+
+
+Control Signals for Logic Block C
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block C
+                 ____________________________________________
+                 |   |= >budget_4.Q                     |   |                 
+                 |   |= >budget_2.Q                     |   |                 
+                 |   |* not used:241                    |   |                 
+                 |   |* not used:242                    |   |                 
+                 |   |= >gotcoin                        | 23|= (S_29)         
+                 |   |* not used:244                    |   |                 
+                 |   |= >budget_3.Q                     | 24|* not used       
+                 |   |= >givenickel.Q                   |   |                 
+                 |   |= >makechange.Q                   | 25|* not used       
+                 |   |= >godispense.Q                   |   |                 
+                 |   |= >givequarter.Q                  | 26|= (S_26)         
+                 |   |* not used:250                    |   |                 
+                 |   |* not used:251                    | 27|= (S_30)         
+                 |   |= >cmp_vv_ss_M..                  |   |                 
+                 |   |* not used:253                    | 28|* not used       
+                 |   |= >gotselect                      |   |                 
+                 |   |* not used:255                    | 29|* not used       
+                 |   |= >givedime.Q                     |   |                 
+                 |   |* not used:257                    | 30|= (S_13)         
+                 |   |* not used:258                    |   |                 
+                 |   |* not used:259                    | 32|* not used       
+                 |   |= >cointype_1                     |   |                 
+                 |   |= >budget_1.Q                     | 33|* not used       
+                 |   |= >reset                          |   |                 
+                 |   |* not used:263                    | 34|* not used       
+                 |   |* not used:264                    |   |                 
+                 |   |= >budget_0.Q                     | 35|= (S_28)         
+                 |   |* not used:266                    |   |                 
+                 |   |* not used:267                    | 36|* not used       
+                 |   |* not used:268                    |   |                 
+                 |   |* not used:269                    | 37|* not used       
+                 |   |* not used:270                    |   |                 
+                 |   |* not used:271                    | 38|= gotcoin        
+                 |   |= >cointype_0                     |   |                 
+                 |   |* not used:273                    | 39|= (S_7)          
+                 |   |* not used:274                    |   |                 
+                 |   |* not used:275                    |   |                 
+                 |   |* not used:276                    |   |                 
+                 |   |* not used:277                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    7  |   16  |
+                 | PIM Input Connects |   16  |   36  |
+                 ______________________________________
+                                          23  /   52   = 44  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK D PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(S_32)
+XXXXXXXXXXXXXXXX................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |(S_8)
+..................XXXXXXXXXXXXXXXX..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |(S_16)
+..................................XXXXXXXXXXXXXXXX..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |(S_6)
+..................................................XXXXXXXXX+XX++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |(S_5)
+................................................................XXXXXXXXXXXXXXXX
+________________________________________________________________________________
+
+Total count of outputs placed        =  5 
+Total count of unique Product Terms  =  75 
+Total Product Terms to be assigned   =  75 
+Max Product Terms used / available   =  75 /  80   = 93.76 %
+
+
+Control Signals for Logic Block D
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block D
+                 ____________________________________________
+                 |   |= >budget_0.Q                     |   |                 
+                 |   |= >budget_1.Q                     |   |                 
+                 |   |= >budget_2.Q                     |   |                 
+                 |   |= >budget_4.Q                     |   |                 
+                 |   |* not used:282                    | 42|= (S_32)         
+                 |   |* not used:283                    |   |                 
+                 |   |* not used:284                    | 43|* not used       
+                 |   |= >gotselect                      |   |                 
+                 |   |= >givenickel.Q                   | 44|* not used       
+                 |   |* not used:287                    |   |                 
+                 |   |= >godispense.Q                   | 45|* not used       
+                 |   |> not used:289                    |   |                 
+                 |   |= >givequarter.Q                  | 46|= (S_8)          
+                 |   |= >cmp_vv_ss_M..                  |   |                 
+                 |   |> not used:292                    | 47|* not used       
+                 |   |> not used:293                    |   |                 
+                 |   |> not used:294                    | 48|* not used       
+                 |   |= >budget_3.Q                     |   |                 
+                 |   |= >gotcoin                        | 49|* not used       
+                 |   |= >givedime.Q                     |   |                 
+                 |   |> not used:298                    | 51|= (S_16)         
+                 |   |= >cointype_0                     |   |                 
+                 |   |> not used:300                    | 52|* not used       
+                 |   |= >makechange.Q                   |   |                 
+                 |   |= >reset                          | 53|* not used       
+                 |   |> not used:303                    |   |                 
+                 |   |> not used:304                    | 54|* not used       
+                 |   |> not used:305                    |   |                 
+                 |   |> not used:306                    | 55|= (S_6)          
+                 |   |> not used:307                    |   |                 
+                 |   |> not used:308                    | 56|* not used       
+                 |   |> not used:309                    |   |                 
+                 |   |> not used:310                    | 57|= reset          
+                 |   |> not used:311                    |   |                 
+                 |   |= >cointype_1                     | 58|= (S_5)          
+                 |   |> not used:313                    |   |                 
+                 |   |> not used:314                    |   |                 
+                 |   |> not used:315                    |   |                 
+                 |   |> not used:316                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    6  |   16  |
+                 | PIM Input Connects |   16  |   36  |
+                 ______________________________________
+                                          22  /   52   = 42  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK E PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(S_27)
+XXXXXXXXXXXXXXXX................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |(S_11)
+..................XXXXXXXXXXXXXXXX..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |(S_17)
+..................................XXXXXXXXXXXXXXXX..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |(S_4)
+..................................................XXXXXXXXXXXXXX++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |(S_10)
+................................................................XXXXXXXXXXXXXXXX
+________________________________________________________________________________
+
+Total count of outputs placed        =  5 
+Total count of unique Product Terms  =  78 
+Total Product Terms to be assigned   =  78 
+Max Product Terms used / available   =  78 /  80   = 97.51 %
+
+
+Control Signals for Logic Block E
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block E
+                 ____________________________________________
+                 |   |= >budget_0.Q                     |   |                 
+                 |   |= >budget_1.Q                     |   |                 
+                 |   |= >budget_2.Q                     |   |                 
+                 |   |= >budget_4.Q                     |   |                 
+                 |   |> not used:321                    | 63|= (S_27)         
+                 |   |> not used:322                    |   |                 
+                 |   |> not used:323                    | 64|* not used       
+                 |   |= >gotselect                      |   |                 
+                 |   |= >budget_3.Q                     | 65|* not used       
+                 |   |> not used:326                    |   |                 
+                 |   |= >godispense.Q                   | 66|* not used       
+                 |   |> not used:328                    |   |                 
+                 |   |= >givequarter.Q                  | 67|= (S_11)         
+                 |   |= >makechange.Q                   |   |                 
+                 |   |> not used:331                    | 68|* not used       
+                 |   |> not used:332                    |   |                 
+                 |   |> not used:333                    | 69|* not used       
+                 |   |> not used:334                    |   |                 
+                 |   |= >givenickel.Q                   | 70|* not used       
+                 |   |= >givedime.Q                     |   |                 
+                 |   |> not used:337                    | 72|= (S_17)         
+                 |   |= >cointype_0                     |   |                 
+                 |   |> not used:339                    | 73|* not used       
+                 |   |> not used:340                    |   |                 
+                 |   |= >reset                          | 74|* not used       
+                 |   |> not used:342                    |   |                 
+                 |   |= >cmp_vv_ss_M..                  | 75|* not used       
+                 |   |> not used:344                    |   |                 
+                 |   |= >gotcoin                        | 76|= (S_4)          
+                 |   |> not used:346                    |   |                 
+                 |   |> not used:347                    | 77|* not used       
+                 |   |> not used:348                    |   |                 
+                 |   |> not used:349                    | 78|= gotreturn      
+                 |   |> not used:350                    |   |                 
+                 |   |= >cointype_1                     | 79|= (S_10)         
+                 |   |> not used:352                    |   |                 
+                 |   |> not used:353                    |   |                 
+                 |   |> not used:354                    |   |                 
+                 |   |> not used:355                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    6  |   16  |
+                 | PIM Input Connects |   16  |   36  |
+                 ______________________________________
+                                          22  /   52   = 42  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK F PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(S_18)
+XXXXXXXXXXXXXXXX................................................................
+| 1 |(MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3)
+......++++++++++XX++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |(S_23)
+..................XXXXXXXXXXXXXXXX..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |(S_14)
+..................................XXXXXXXXXXXXXXXX..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |(S_15)
+..................................................XXXXXXXXXXXXXXXX..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |[i/p]
+..........................................................++++++++++++++++......
+|15 |(S_31)
+................................................................++XXXXXXXXXXXXXX
+________________________________________________________________________________
+
+Total count of outputs placed        =  6 
+Total count of unique Product Terms  =  80 
+Total Product Terms to be assigned   =  80 
+Max Product Terms used / available   =  80 /  80   = 100.0  %
+
+
+Control Signals for Logic Block F
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block F
+                 ____________________________________________
+                 |   |= >budget_1.Q                     |   |                 
+                 |   |= >budget_2.Q                     |   |                 
+                 |   |= >price_3.CMB                    |   |                 
+                 |   |> not used:359                    |   |                 
+                 |   |= >gotcoin                        | 82|= (S_18)         
+                 |   |> not used:361                    |   |                 
+                 |   |= >budget_3.Q                     | 83|= (MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3) 
+                 |   |= >givenickel.Q                   |   |                 
+                 |   |= >makechange.Q                   | 84|* not used       
+                 |   |= >godispense.Q                   |   |                 
+                 |   |= >givequarter.Q                  | 85|* not used       
+                 |   |= >MODULE_11_g..                  |   |                 
+                 |   |> not used:368                    | 86|= (S_23)         
+                 |   |= >budget_0.Q                     |   |                 
+                 |   |= >budget_4.Q                     | 87|* not used       
+                 |   |= >gotselect                      |   |                 
+                 |   |= >price_2.CMB                    | 88|* not used       
+                 |   |= >givedime.Q                     |   |                 
+                 |   |> not used:374                    | 89|* not used       
+                 |   |= >MODULE_11_g..                  |   |                 
+                 |   |> not used:376                    | 91|= (S_14)         
+                 |   |= >cointype_1                     |   |                 
+                 |   |= >MODULE_11_g..                  | 92|* not used       
+                 |   |= >reset                          |   |                 
+                 |   |> not used:380                    | 93|* not used       
+                 |   |> not used:381                    |   |                 
+                 |   |= >cmp_vv_ss_M..                  | 94|* not used       
+                 |   |> not used:383                    |   |                 
+                 |   |> not used:384                    | 95|= (S_15)         
+                 |   |> not used:385                    |   |                 
+                 |   |> not used:386                    | 96|* not used       
+                 |   |> not used:387                    |   |                 
+                 |   |> not used:388                    | 97|= gotselect      
+                 |   |= >cointype_0                     |   |                 
+                 |   |> not used:390                    | 98|= (S_31)         
+                 |   |> not used:391                    |   |                 
+                 |   |> not used:392                    |   |                 
+                 |   |> not used:393                    |   |                 
+                 |   |> not used:394                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    7  |   16  |
+                 | PIM Input Connects |   21  |   36  |
+                 ______________________________________
+                                          28  /   52   = 53  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK G PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(S_24)
+XXXXXXXXXXXXXXXX................................................................
+| 1 |(budget_4)
+......++++++++++XXXXXX..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |(budget_1)
+..................++++XXXXX+++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |(budget_0)
+..............................XXXX++++++++++++..................................
+| 8 |(S_20)
+..................................XXXXXXXXXXXXXXXX..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |(S_3)
+..................................................XXXXXXXXXXXXX+++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |(S_2)
+................................................................XXXXXXXXXXXXXXXX
+________________________________________________________________________________
+
+Total count of outputs placed        =  7 
+Total count of unique Product Terms  =  76 
+Total Product Terms to be assigned   =  76 
+Max Product Terms used / available   =  76 /  80   = 95.1  %
+
+
+Control Signals for Logic Block G
+---------------------------------
+CLK pin  19 : masterclk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block G
+                 ____________________________________________
+                 |   |= >budget_0.Q                     |   |                 
+                 |   |= >S_29.CMB                       |   |                 
+                 |   |> not used:397                    |   |                 
+                 |   |= >price_4.CMB                    |   |                 
+                 |   |= >budget_3.Q                     |103|= (S_24)         
+                 |   |= >gotselect                      |   |                 
+                 |   |= >givenickel.Q                   |104|= (budget_4)     
+                 |   |> not used:402                    |   |                 
+                 |   |= >cointype_1                     |105|* not used       
+                 |   |> not used:404                    |   |                 
+                 |   |= >S_6.CMB                        |106|* not used       
+                 |   |= >cointype_0                     |   |                 
+                 |   |= >budget_1.Q                     |107|= (budget_1)     
+                 |   |= >cmp_vv_ss_M..                  |   |                 
+                 |   |= >MODULE_11_g..                  |108|* not used       
+                 |   |= >givedime.Q                     |   |                 
+                 |   |= >S_30.CMB                       |109|* not used       
+                 |   |= >givequarter.Q                  |   |                 
+                 |   |= >godispense.Q                   |110|= (budget_0)     
+                 |   |= >S_27.CMB                       |   |                 
+                 |   |= >S_26.CMB                       |112|= (S_20)         
+                 |   |= >S_3.CMB                        |   |                 
+                 |   |= >reset                          |113|* not used       
+                 |   |= >S_25.CMB                       |   |                 
+                 |   |= >S_32.CMB                       |114|* not used       
+                 |   |= >MODULE_11_g..                  |   |                 
+                 |   |= >S_24.CMB                       |115|* not used       
+                 |   |= >makechange.Q                   |   |                 
+                 |   |= >price_2.CMB                    |116|= (S_3)          
+                 |   |= >S_28.CMB                       |   |                 
+                 |   |= >S_1.CMB                        |117|* not used       
+                 |   |= >S_5.CMB                        |   |                 
+                 |   |= >budget_2.Q                     |118|* not used       
+                 |   |= >gotcoin                        |   |                 
+                 |   |= >S_2.CMB                        |119|= (S_2)          
+                 |   |> not used:430                    |   |                 
+                 |   |= >S_31.CMB                       |   |                 
+                 |   |= >S_4.CMB                        |   |                 
+                 |   |= >budget_4.Q                     |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    7  |   16  |
+                 | PIM Input Connects |   35  |   36  |
+                 ______________________________________
+                                          42  /   52   = 80  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK H PLACEMENT   (20:28:55)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(S_19)
+XXXXXXXXXXXXXXXX................................................................
+| 1 |fallthru
+......++++++++++XX++XX..........................................................
+| 2 |(makechange)
+..........++++++++XX++++XX......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |keep
+..................++++XX++XXXXX+XX..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |(budget_3)
+..........................+++++X++XXXXXXXX......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |givedime
+..................................++++++++XXXX++XX..............................
+| 9 |givenickel
+......................................++++++++XX++X+XX..........................
+|10 |givequarter
+..........................................+++++++++X++XXXX......................
+|11 |godispense
+..............................................++++++++++++XX++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |(S_1)
+..........................................................X+XXXXXXXXXXX+++......
+|15 |(budget_2)
+................................................................+++++++XXXXXXXX+
+________________________________________________________________________________
+
+Total count of outputs placed        =  11 
+Total count of unique Product Terms  =  79 
+Total Product Terms to be assigned   =  80 
+Max Product Terms used / available   =  79 /  80   = 98.76 %
+
+
+Control Signals for Logic Block H
+---------------------------------
+CLK pin  19 : masterclk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block H
+                 ____________________________________________
+                 |   |= >budget_0.Q                     |   |                 
+                 |   |= >gotreturn                      |   |                 
+                 |   |= >budget_3.Q                     |   |                 
+                 |   |= >cointype_0                     |   |                 
+                 |   |= >givedime.Q                     |122|= (S_19)         
+                 |   |= >S_21.CMB                       |   |                 
+                 |   |= >givequarter.Q                  |123|= fallthru       
+                 |   |= >godispense.Q                   |   |                 
+                 |   |= >S_7.CMB                        |124|= (makechange)   
+                 |   |= >S_17.CMB                       |   |                 
+                 |   |= >fallthru.Q                     |125|* not used       
+                 |   |= >budget_1.Q                     |   |                 
+                 |   |= >makechange.Q                   |126|= keep           
+                 |   |= >cmp_vv_ss_M..                  |   |                 
+                 |   |= >S_12.CMB                       |127|* not used       
+                 |   |= >givenickel.Q                   |   |                 
+                 |   |= >S_11.CMB                       |128|= (budget_3)     
+                 |   |= >S_10.CMB                       |   |                 
+                 |   |= >S_13.CMB                       |129|* not used       
+                 |   |= >S_22.CMB                       |   |                 
+                 |   |= >S_19.CMB                       |131|= givedime       
+                 |   |= >budget_4.Q                     |   |                 
+                 |   |= >S_14.CMB                       |132|= givenickel     
+                 |   |= >keep.Q                         |   |                 
+                 |   |= >S_9.CMB                        |133|= givequarter    
+                 |   |= >S_15.CMB                       |   |                 
+                 |   |= >S_20.CMB                       |134|= godispense     
+                 |   |> not used:461                    |   |                 
+                 |   |= >S_23.CMB                       |135|* not used       
+                 |   |= >gotcoin                        |   |                 
+                 |   |= >reset                          |136|* not used       
+                 |   |= >budget_2.Q                     |   |                 
+                 |   |= >S_8.CMB                        |137|= (S_1)          
+                 |   |> not used:467                    |   |                 
+                 |   |= >cointype_1                     |138|= (budget_2)     
+                 |   |= >gotselect                      |   |                 
+                 |   |= >S_16.CMB                       |   |                 
+                 |   |= >S_18.CMB                       |   |                 
+                 |   |> not used:472                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   11  |   16  |
+                 | PIM Input Connects |   36  |   36  |
+                 ______________________________________
+                                          47  /   52   = 90  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (20:28:55)
+
+
+Device:  c375i
+Package: CY7C375I-125AC
+
+                  1  :  GND
+                  2  :  (S_21)
+                  3  :  Not Used
+                  4  :  cointype_1
+                  5  :  (price_2)
+                  6  :  (MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u1)
+                  7  :  (price_4)
+                  8  :  (MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_gss_u2)
+                  9  :  (MODULE_3_g1_a0_gx_u0_gne_0_c3_u1)
+                 10  :  GND
+                 11  :  (cmp_vv_ss_MODGEN_5)
+                 12  :  (S_22)
+                 13  :  (price_3)
+                 14  :  (price_1)
+                 15  :  (S_12)
+                 16  :  (MODULE_11_g1_a0_g0_u0_gs_g1_us0)
+                 17  :  (S_25)
+                 18  :  (S_9)
+                 19  :  masterclk
+                 20  :  VCC
+                 21  :  GND
+                 22  :  selection_0
+                 23  :  (S_29)
+                 24  :  Not Used
+                 25  :  Not Used
+                 26  :  (S_26)
+                 27  :  (S_30)
+                 28  :  Not Used
+                 29  :  Not Used
+                 30  :  (S_13)
+                 31  :  GND
+                 32  :  Not Used
+                 33  :  Not Used
+                 34  :  Not Used
+                 35  :  (S_28)
+                 36  :  Not Used
+                 37  :  Not Used
+                 38  :  gotcoin
+                 39  :  (S_7)
+                 40  :  VCC
+                 41  :  GND
+                 42  :  (S_32)
+                 43  :  Not Used
+                 44  :  Not Used
+                 45  :  Not Used
+                 46  :  (S_8)
+                 47  :  Not Used
+                 48  :  Not Used
+                 49  :  Not Used
+                 50  :  GND
+                 51  :  (S_16)
+                 52  :  Not Used
+                 53  :  Not Used
+                 54  :  Not Used
+                 55  :  (S_6)
+                 56  :  Not Used
+                 57  :  reset
+                 58  :  (S_5)
+                 59  :  selection_1
+                 60  :  VCC
+                 61  :  GND
+                 62  :  VCC
+                 63  :  (S_27)
+                 64  :  Not Used
+                 65  :  Not Used
+                 66  :  Not Used
+                 67  :  (S_11)
+                 68  :  Not Used
+                 69  :  Not Used
+                 70  :  Not Used
+                 71  :  GND
+                 72  :  (S_17)
+                 73  :  Not Used
+                 74  :  Not Used
+                 75  :  Not Used
+                 76  :  (S_4)
+                 77  :  Not Used
+                 78  :  gotreturn
+                 79  :  (S_10)
+                 80  :  VCC
+                 81  :  GND
+                 82  :  (S_18)
+                 83  :  (MODULE_11_g1_a0_g0_u0_gs_t1_gs0_1_u3)
+                 84  :  Not Used
+                 85  :  Not Used
+                 86  :  (S_23)
+                 87  :  Not Used
+                 88  :  Not Used
+                 89  :  Not Used
+                 90  :  GND
+                 91  :  (S_14)
+                 92  :  Not Used
+                 93  :  Not Used
+                 94  :  Not Used
+                 95  :  (S_15)
+                 96  :  Not Used
+                 97  :  gotselect
+                 98  :  (S_31)
+                 99  :  selection_2
+                100  :  VCC
+                101  :  GND
+                102  :  selection_3
+                103  :  (S_24)
+                104  :  (budget_4)
+                105  :  Not Used
+                106  :  Not Used
+                107  :  (budget_1)
+                108  :  Not Used
+                109  :  Not Used
+                110  :  (budget_0)
+                111  :  GND
+                112  :  (S_20)
+                113  :  Not Used
+                114  :  Not Used
+                115  :  Not Used
+                116  :  (S_3)
+                117  :  Not Used
+                118  :  Not Used
+                119  :  (S_2)
+                120  :  VCC
+                121  :  GND
+                122  :  (S_19)
+                123  :  fallthru
+                124  :  (makechange)
+                125  :  Not Used
+                126  :  keep
+                127  :  Not Used
+                128  :  (budget_3)
+                129  :  Not Used
+                130  :  GND
+                131  :  givedime
+                132  :  givenickel
+                133  :  givequarter
+                134  :  godispense
+                135  :  Not Used
+                136  :  Not Used
+                137  :  (S_1)
+                138  :  (budget_2)
+                139  :  VPP
+                140  :  VCC
+                141  :  GND
+                142  :  VCC
+                143  :  Not Used
+                144  :  Not Used
+                145  :  Not Used
+                146  :  Not Used
+                147  :  Not Used
+                148  :  Not Used
+                149  :  Not Used
+                150  :  Not Used
+                151  :  GND
+                152  :  Not Used
+                153  :  Not Used
+                154  :  Not Used
+                155  :  Not Used
+                156  :  Not Used
+                157  :  Not Used
+                158  :  Not Used
+                159  :  cointype_0
+                160  :  VCC
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    1  |    1  |
+                 | Clock/Inputs       |    4  |    4  |
+                 | I/O Macrocells     |   60  |  128  |
+                 ______________________________________
+                                          65  /  133   = 48  %
+
+
+
+                                      Required     Max (Available)
+          CLOCK/LATCH ENABLE signals     1            4
+          Input REG/LATCH signals        0            4
+          Input PIN signals              4            4
+          Input PINs using I/O cells     6            6
+          Output PIN signals            54          122
+
+
+          Total PIN signals             65          133
+          Macrocells Used               54          128
+          Unique Product Terms         519          640
+
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PRESET/RESET AND OUTPUT ENABLE COMBINATIONS
+
+PRESET: NONE-COMBINATORIAL
+RESET : NONE-COMBINATORIAL
+Total unique inputs =  29 
+count of combinatorial equations =  42 
+==>OE: GND or VCC
+   count of OE equations =  42 
+
+
+PRESET: GND
+RESET : GND
+Used by Logic Blocks: GH
+Total unique inputs =  51 
+count of registered equations =  12 
+==>OE: GND or VCC
+   count of OE equations =  12 
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+TIMING PATH ANALYSIS       (20:28:55) using Package: CY7C375I-125AC
+
+Messages:
+
+----------------------------------------------------------------------------
+Signal Name | Delay Type  |   tmax   | Path Description
+----------------------------------------------------------------------------
+reg::(budget_4)[104]
+inp::selection_2
+---->price_2
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_6
+              tS              26.5 ns    5 passes
+inp::budget_0.Q
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_6
+              tSCS            24.5 ns    4 passes
+out::budget_4
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(budget_1)[107]
+inp::selection_2
+---->price_2
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_28
+              tS              26.5 ns    5 passes
+inp::budget_0.Q
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_28
+              tSCS            24.5 ns    4 passes
+out::budget_1
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(budget_0)[110]
+inp::selection_2
+---->price_2
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_32
+              tS              26.5 ns    5 passes
+inp::budget_0.Q
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_32
+              tSCS            24.5 ns    4 passes
+out::budget_0
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::fallthru[123]
+inp::gotcoin
+              tS              4.5 ns     1 pass
+inp::budget_4.Q
+              tSCS            8.0 ns     1 pass
+out::fallthru
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(makechange)[124]
+inp::selection_2
+---->price_2
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+              tS              21.0 ns    4 passes
+inp::budget_0.Q
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+              tSCS            19.0 ns    3 passes
+out::makechange
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::keep[126]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::budget_4.Q
+              tSCS            8.0 ns     1 pass
+out::keep
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(budget_3)[128]
+inp::selection_2
+---->price_2
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_15
+              tS              26.5 ns    5 passes
+inp::budget_0.Q
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_15
+              tSCS            24.5 ns    4 passes
+out::budget_3
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::givedime[131]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::budget_4.Q
+              tSCS            8.0 ns     1 pass
+out::givedime
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::givenickel[132]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::budget_4.Q
+              tSCS            8.0 ns     1 pass
+out::givenickel
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::givequarter[133]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::budget_4.Q
+              tSCS            8.0 ns     1 pass
+out::givequarter
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::godispense[134]
+inp::selection_2
+---->price_2
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+              tS              21.0 ns    4 passes
+inp::budget_0.Q
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+              tSCS            19.0 ns    3 passes
+out::godispense
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(budget_2)[138]
+inp::selection_2
+---->price_2
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_23
+              tS              26.5 ns    5 passes
+inp::budget_0.Q
+---->MODULE_3_g1_a0_gx_u0_gne_0_c3_u1
+---->cmp_vv_ss_MODGEN_5
+---->S_23
+              tSCS            24.5 ns    4 passes
+out::budget_2
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+
+Worst Case Path Summary
+-----------------------
+
+                     tS = 26.5 ns for budget_4.T
+                   tSCS = 24.5 ns for budget_4.T
+                    tCO = 6.5 ns for budget_4.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+JEDEC ASSEMBLE             (20:28:55)
+
+Messages:
+  Information: Processing JEDEC for Logic Block 1.
+  Information: Processing JEDEC for Logic Block 2.
+  Information: Processing JEDEC for Logic Block 3.
+  Information: Processing JEDEC for Logic Block 4.
+  Information: Processing JEDEC for Logic Block 5.
+  Information: Processing JEDEC for Logic Block 6.
+  Information: Processing JEDEC for Logic Block 7.
+  Information: Processing JEDEC for Logic Block 8.
+  Information: JEDEC output file 'candy.jed' created.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 20:28:55

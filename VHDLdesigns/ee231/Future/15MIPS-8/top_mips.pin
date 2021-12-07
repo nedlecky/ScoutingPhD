@@ -1,0 +1,272 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "top_mips" ASSIGNED TO AN EPF10K70RC240-4
+TCK                              : 1
+CONF_DONE                        : 2
+nCEO                             : 3
+TDO                              : 4
+VCCINT                           : 5
+RESERVED                         : 6
+instruction_out3                 : 7
+pc2                              : 8
+instruction_out28                : 9
+GNDINT                           : 10
+instruction_out26                : 11
+RESERVED                         : 12
+RESERVED                         : 13
+RESERVED                         : 14
+instruction_out24                : 15
+VCCINT                           : 16
+instruction_out9                 : 17
+instruction_out8                 : 18
+RESERVED                         : 19
+instruction_out19                : 20
+RESERVED                         : 21
+GNDINT                           : 22
+instruction_out14                : 23
+instruction_out15                : 24
+instruction_out7                 : 25
+RESERVED                         : 26
+VCCINT                           : 27
+RESERVED                         : 28
+read_data_1_out4                 : 29
+RESERVED                         : 30
+instruction_out27                : 31
+GNDINT                           : 32
+RESERVED                         : 33
+RESERVED                         : 34
+RESERVED                         : 35
+pc6                              : 36
+VCCINT                           : 37
+instruction_out30                : 38
+RESERVED                         : 39
+instruction_out11                : 40
+instruction_out1                 : 41
+GNDINT                           : 42
+instruction_out22                : 43
+read_data_1_out0                 : 44
+alu_result_out0                  : 45
+RESERVED                         : 46
+VCCINT                           : 47
+read_data_1_out7                 : 48
+instruction_out4                 : 49
+instruction_out2                 : 50
+RESERVED                         : 51
+GNDINT                           : 52
+instruction_out10                : 53
+RESERVED                         : 54
+instruction_out23                : 55
+RESERVED                         : 56
+VCCINT                           : 57
+TMS                              : 58
+TRST                             : 59
+nSTATUS                          : 60
+RESERVED                         : 61
+RESERVED                         : 62
+RESERVED                         : 63
+RESERVED                         : 64
+RESERVED                         : 65
+RESERVED                         : 66
+RESERVED                         : 67
+RESERVED                         : 68
+GNDINT                           : 69
+RESERVED                         : 70
+RESERVED                         : 71
+RESERVED                         : 72
+RESERVED                         : 73
+RESERVED                         : 74
+RESERVED                         : 75
+RESERVED                         : 76
+VCCINT                           : 77
+RESERVED                         : 78
+RESERVED                         : 79
+RESERVED                         : 80
+RESERVED                         : 81
+RESERVED                         : 82
+RESERVED                         : 83
+RESERVED                         : 84
+GNDINT                           : 85
+RESERVED                         : 86
+RESERVED                         : 87
+RESERVED                         : 88
+VCCINT                           : 89
+reset                            : 90
+clock                            : 91
+GNDINT                           : 92
+GNDINT                           : 93
+RESERVED                         : 94
+RESERVED                         : 95
+VCCINT                           : 96
+RESERVED                         : 97
+RESERVED                         : 98
+RESERVED                         : 99
+RESERVED                         : 100
+read_data_2_out0                 : 101
+RESERVED                         : 102
+read_data_2_out3                 : 103
+GNDINT                           : 104
+read_data_2_out2                 : 105
+zero_out                         : 106
+alu_result_out4                  : 107
+pc4                              : 108
+RESERVED                         : 109
+RESERVED                         : 110
+RESERVED                         : 111
+VCCINT                           : 112
+RESERVED                         : 113
+RESERVED                         : 114
+RESERVED                         : 115
+RESERVED                         : 116
+alu_result_out2                  : 117
+read_data_2_out1                 : 118
+pc5                              : 119
+RESERVED                         : 120
+nCONFIG                          : 121
+VCCINT                           : 122
+MSEL1                            : 123
+MSEL0                            : 124
+GNDINT                           : 125
+pc0                              : 126
+pc1                              : 127
+instruction_out17                : 128
+write_data_out7                  : 129
+VCCINT                           : 130
+write_data_out2                  : 131
+read_data_1_out3                 : 132
+instruction_out6                 : 133
+instruction_out0                 : 134
+GNDINT                           : 135
+instruction_out5                 : 136
+read_data_1_out2                 : 137
+write_data_out4                  : 138
+alu_result_out1                  : 139
+VCCINT                           : 140
+write_data_out0                  : 141
+write_data_out1                  : 142
+read_data_2_out6                 : 143
+write_data_out3                  : 144
+GNDINT                           : 145
+branch_out                       : 146
+RESERVED                         : 147
+RESERVED                         : 148
+RESERVED                         : 149
+VCCINT                           : 150
+RESERVED                         : 151
+instruction_out18                : 152
+write_data_out5                  : 153
+alu_result_out5                  : 154
+GNDINT                           : 155
+read_data_2_out5                 : 156
+RESERVED                         : 157
+instruction_out21                : 158
+RESERVED                         : 159
+VCCINT                           : 160
+pc7                              : 161
+instruction_out12                : 162
+instruction_out16                : 163
+regwrite_out                     : 164
+GNDINT                           : 165
+read_data_2_out7                 : 166
+instruction_out20                : 167
+instruction_out13                : 168
+pc3                              : 169
+VCCINT                           : 170
+instruction_out25                : 171
+write_data_out6                  : 172
+instruction_out31                : 173
+instruction_out29                : 174
+RESERVED                         : 175
+GNDINT                           : 176
+TDI                              : 177
+nCE                              : 178
+DCLK                             : 179
+DATA0                            : 180
+RESERVED                         : 181
+RESERVED                         : 182
+RESERVED                         : 183
+RESERVED                         : 184
+RESERVED                         : 185
+RESERVED                         : 186
+RESERVED                         : 187
+RESERVED                         : 188
+VCCINT                           : 189
+alu_result_out7                  : 190
+read_data_1_out1                 : 191
+RESERVED                         : 192
+alu_result_out6                  : 193
+RESERVED                         : 194
+RESERVED                         : 195
+read_data_1_out6                 : 196
+GNDINT                           : 197
+RESERVED                         : 198
+RESERVED                         : 199
+memwrite_out                     : 200
+read_data_2_out4                 : 201
+RESERVED                         : 202
+alu_result_out3                  : 203
+RESERVED                         : 204
+VCCINT                           : 205
+RESERVED                         : 206
+RESERVED                         : 207
+RESERVED                         : 208
+read_data_1_out5                 : 209
+GNDINT                           : 210
+GNDINT                           : 211
+GNDINT                           : 212
+RESERVED                         : 213
+RESERVED                         : 214
+RESERVED                         : 215
+GNDINT                           : 216
+RESERVED                         : 217
+RESERVED                         : 218
+RESERVED                         : 219
+RESERVED                         : 220
+RESERVED                         : 221
+RESERVED                         : 222
+RESERVED                         : 223
+VCCINT                           : 224
+RESERVED                         : 225
+RESERVED                         : 226
+RESERVED                         : 227
+RESERVED                         : 228
+RESERVED                         : 229
+RESERVED                         : 230
+RESERVED                         : 231
+GNDINT                           : 232
+RESERVED                         : 233
+RESERVED                         : 234
+RESERVED                         : 235
+RESERVED                         : 236
+RESERVED                         : 237
+RESERVED                         : 238
+RESERVED                         : 239
+RESERVED                         : 240

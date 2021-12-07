@@ -1,0 +1,1138 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  fsm.vhd
+Options:    -q -o2 -ygs -fO -fP -v10 -dc346 -pCY7C346B-15HC fsm.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Wed Jan 21 09:17:36 1998
+
+Library 'work' => directory 'lc346'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\work\ttfctn.vif'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Wed Jan 21 09:17:37 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\work\ttfctn.vif'.
+
+C:\warp\bin\tovif.exe:  No errors.
+
+
+C:\warp\bin\topld.exe V4 IR x77:  Synthesis and optimization
+Wed Jan 21 09:17:37 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\work\ttfctn.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 14 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum expansion cost was set at 10.
+----------------------------------------------------------
+Created 28 PLD nodes.
+
+C:\warp\bin\topld.exe:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN HEADER INFORMATION  (09:17:37)
+
+Input File(s): fsm.pla
+Device       : c346
+Package      : CY7C346B-15HC
+ReportFile   : fsm.rpt
+
+Program Controls:
+                 None.
+
+Signal Requests:
+    GROUP DT-OPT ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (09:17:37)
+
+Messages:
+  Information: Process virtual 'table_out_3' ... expanded.
+  Information: Process virtual 'table_out_2' ... expanded.
+  Information: Process virtual 'table_out_1' ... expanded.
+  Information: Process virtual 'table_out_4D' ... expanded.
+  Information: Process virtual 'table_out_3D' ... expanded.
+  Information: Process virtual 'table_out_2D' ... expanded.
+  Information: Process virtual 'table_out_1D' ... expanded.
+  Information: Process virtual 'table_out_0D' ... expanded.
+  Information: Process virtual 'state_3' ... converted to NODE.
+  Information: Process virtual 'state_2' ... converted to NODE.
+  Information: Process virtual 'state_1' ... converted to NODE.
+  Information: Process virtual 'table_out_0' ... converted to NODE.
+  Information: Generating both D & T register equations for signal y.D
+  Information: Expanding XOR equation found on signal y.T
+  Information: Expanding XOR equation found on signal y.Tbar
+  Information: Generating both D & T register equations for signal table_out_0.D
+  Information: Expanding XOR equation found on signal table_out_0.T
+  Information: Expanding XOR equation found on signal table_out_0.Tbar
+  Information: Generating both D & T register equations for signal state_3.D
+  Information: Expanding XOR equation found on signal state_3.T
+  Information: Expanding XOR equation found on signal state_3.Tbar
+  Information: Generating both D & T register equations for signal state_2.D
+  Information: Expanding XOR equation found on signal state_2.T
+  Information: Expanding XOR equation found on signal state_2.Tbar
+  Information: Generating both D & T register equations for signal state_1.D
+  Information: Expanding XOR equation found on signal state_1.T
+  Information: Expanding XOR equation found on signal state_1.Tbar
+  Information: Optimizing logic without changing polarity for signals:
+         y.T table_out_0.T state_3.T state_2.T state_1.T
+
+  Information: Optimizing logic and selecting Active Low output for signals:
+         y.AR table_out_0.AR state_3.AR state_2.AR state_1.AR
+
+  Information: Optimizing logic and selecting Active High output for signals:
+         y.Tbar y.C table_out_0.Tbar table_out_0.C state_3.Tbar state_3.C
+         state_2.Tbar state_2.C state_1.Tbar state_1.C
+
+  Information: Optimizing logic using best output polarity for signals:
+         table_out_0.D state_3.D state_2.D state_1.D
+
+  Information: Selected logic optimization OFF for signals:
+         y.D
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (09:17:37)
+
+Messages:
+  Information: Synthesizing XOR logic for signal state_1.D.
+  Information: Selecting D register equation as minimal for signal state_1
+  Information: Selecting D register equation as minimal for signal state_2
+  Information: Factoring output logic for signal state_2.
+  Information: Synthesizing XOR logic for signal state_3.D.
+  Information: Selecting D register equation as minimal for signal state_3
+  Information: Synthesizing XOR logic for signal table_out_0.D.
+  Information: Selecting D register equation as minimal for signal table_out_0
+  Information: Selecting D register equation as minimal for signal y
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN EQUATIONS           (09:17:37)
+
+
+    /F_1 =
+          id * state_1.Q * state_2.Q 
+
+    state_1.D.X2 =
+          /table_out_0.Q * state_2.Q * /state_3.Q 
+
+    state_1.D.X1 =
+          /id * table_out_0.Q * /state_1.Q * state_2.Q * /state_3.Q 
+        + id * /table_out_0.Q * state_2.Q * state_3.Q 
+        + /table_out_0.Q * /state_1.Q * state_2.Q * state_3.Q 
+
+    /state_1.AR =
+          /rst 
+
+    state_1.C =
+          clk 
+
+    state_2.D =
+          /id * table_out_0.Q * state_1.Q * /state_2.Q * /state_3.Q 
+        + /table_out_0.Q * state_3.Q * F_1 
+        + /id * /state_1.Q * state_3.Q 
+
+    /state_2.AR =
+          /rst 
+
+    state_2.C =
+          clk 
+
+    state_3.D.X2 =
+          id * state_1.Q * /state_2.Q * /state_3.Q 
+
+    state_3.D.X1 =
+          id * /table_out_0.Q * /state_2.Q * state_3.Q 
+        + id * table_out_0.Q * /state_1.Q 
+        + id * /state_1.Q * state_2.Q 
+
+    /state_3.AR =
+          /rst 
+
+    state_3.C =
+          clk 
+
+    table_out_0.D.X2 =
+          /id * table_out_0.Q * /state_1.Q * /state_2.Q 
+
+    table_out_0.D.X1 =
+          /table_out_0.Q * state_1.Q * state_3.Q 
+        + id * /table_out_0.Q * state_1.Q 
+        + /table_out_0.Q * state_1.Q * /state_2.Q 
+
+    /table_out_0.AR =
+          /rst 
+
+    table_out_0.C =
+          clk 
+
+    y.D =
+          /id * table_out_0.Q * /state_1.Q * /state_2.Q * state_3.Q 
+
+    /y.AR =
+          /rst 
+
+    y.C =
+          clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN RULE CHECK          (09:17:37)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PARTITION LOGIC            (09:17:37)
+
+Messages:
+  Information: Initializing Logic Array Block (LAB) structures.
+  Information: Processing Global Clock Pin.
+  Information: Assigning fixed logic to LABs.
+  Information: Checking expander usage for pre-placed signals.
+  Information: Separating expander logic.
+  Information: Forming input seeds.
+  Information: Validating LAB's with pre-placed signals.
+  Information: Locating best global input signals.
+  Information: Separating output logic set to GND/VCC.
+  Information: Assigning initializing equations to empty LABs.
+  Information: Separating output node logic.
+  Information: Compacting LAB interconnect.
+  .+....
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (09:17:37)
+
+Messages:
+  Information: Fitting signals to LAB 1.
+  Information: Fitting signals to LAB 2.
+  Information: Fitting signals to LAB 3.
+  Information: Fitting signals to LAB 4.
+  Information: Fitting signals to LAB 5.
+  Information: Fitting signals to LAB 6.
+  Information: Fitting signals to LAB 7.
+  Information: Fitting signals to LAB 8.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 1 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 1
+                 __________________________________________
+       not used *|59|                    not used:101 *| 8|* not used       
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+       not used *|64|                                  |  |                 
+       not used *|65|                    not used:102 *| 9|* not used       
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                                  |  |                 
+       not used *|71|> not used:173      not used:103 *|10|* not used       
+       not used *|72|> not used:174                   +|  |+                
+       not used *| 9|> not used:175                   +|  |+                
+       not used *|10|> not used:176                    |  |                 
+       not used *|11|> not used:177      not used:104 *|11|* not used       
+       not used *|14|> not used:178                   +|  |+                
+       not used *|15|> not used:179                   +|  |+                
+       not used *|16|> not used:180                    |  |                 
+       not used *|17|> not used:181      not used:105 *|12|* not used       
+       not used *|20|> not used:182                   +|  |+                
+       not used *|21|> not used:183                   +|  |+                
+       not used *|22|> not used:184                    |  |                 
+                 |  |> not used:185      not used:106 *|13|* not used       
+                 |  |> not used:186                   +|  |+                
+                 |  |> not used:187                   +|  |+                
+                 |  |> not used:188                    |  |                 
+                 |  |> not used:189      not used:107 *|  |                 
+                 |  |> not used:190                   +|  |+                
+                 |  |> not used:191                   +|  |+                
+                 |  |> not used:192       not used:85 *|  |                 
+                 |  |> not used:193      not used:108 *|  |                 
+                 |  |> not used:194                   +|  |+                
+                 |  |> not used:195                   +|  |+                
+                 |  |> not used:196       not used:86 *|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 2 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 2
+                 __________________________________________
+       not used *|59|                    not used:110 *|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+       not used *|64|                     not used:87 *|  |                 
+       not used *|65|                    not used:111 *|  |                 
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                     not used:88 *|  |                 
+       not used *|71|> not used:197      not used:112 *|21|* not used       
+       not used *|72|> not used:198                   +|  |+                
+       not used *| 9|> not used:199                   +|  |+                
+       not used *|10|> not used:200                    |  |                 
+       not used *|11|> not used:201      not used:113 *|18|* not used       
+       not used *|14|> not used:202                   +|  |+                
+       not used *|15|> not used:203                   +|  |+                
+       not used *|16|> not used:204                    |  |                 
+       not used *|17|> not used:205      not used:114 *|17|* not used       
+       not used *|20|> not used:206                   +|  |+                
+       not used *|21|> not used:207                   +|  |+                
+       not used *|22|> not used:208                    |  |                 
+                 |  |> not used:209      not used:115 *|16|* not used       
+                 |  |> not used:210                   +|  |+                
+                 |  |> not used:211                   +|  |+                
+                 |  |> not used:212                    |  |                 
+                 |  |> not used:213      not used:116 *|15|* not used       
+                 |  |> not used:214                   +|  |+                
+                 |  |> not used:215                   +|  |+                
+                 |  |> not used:216                    |  |                 
+                 |  |> not used:217      not used:117 *|14|* not used       
+                 |  |> not used:218                   +|  |+                
+                 |  |> not used:219                   +|  |+                
+                 |  |> not used:220                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 3 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 3
+                 __________________________________________
+       not used *|59|                    not used:119 *|22|* not used       
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+       not used *|64|                                  |  |                 
+       not used *|65|                    not used:120 *|25|* not used       
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                                  |  |                 
+       not used *|71|> not used:221      not used:121 *|26|* not used       
+       not used *|72|> not used:222                   +|  |+                
+       not used *| 9|> not used:223                   +|  |+                
+       not used *|10|> not used:224                    |  |                 
+       not used *|11|> not used:225      not used:122 *|27|* not used       
+       not used *|14|> not used:226                   +|  |+                
+       not used *|15|> not used:227                   +|  |+                
+       not used *|16|> not used:228                    |  |                 
+       not used *|17|> not used:229      not used:123 *|28|* not used       
+       not used *|20|> not used:230                   +|  |+                
+       not used *|21|> not used:231                   +|  |+                
+       not used *|22|> not used:232                    |  |                 
+                 |  |> not used:233      not used:124 *|29|* not used       
+                 |  |> not used:234                   +|  |+                
+                 |  |> not used:235                   +|  |+                
+                 |  |> not used:236                    |  |                 
+                 |  |> not used:237      not used:125 *|  |                 
+                 |  |> not used:238                   +|  |+                
+                 |  |> not used:239                   +|  |+                
+                 |  |> not used:240       not used:89 *|  |                 
+                 |  |> not used:241      not used:126 *|  |                 
+                 |  |> not used:242                   +|  |+                
+                 |  |> not used:243                   +|  |+                
+                 |  |> not used:244       not used:90 *|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 4 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 4
+                 __________________________________________
+       not used *|59|                    not used:128 *|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+       not used *|64|                   (table_out_0) =|  |                 
+       not used *|65|                    not used:129 *|  |                 
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                     not used:92 *|  |                 
+       not used *|71|= >state_1          not used:130 *|35|* not used       
+       not used *|72|= >state_2                       +|  |+                
+       not used *| 9|= >state_3                       +|  |+                
+       not used *|10|> not used:248                    |  |                 
+       not used *|11|> not used:249      not used:131 *|34|* not used       
+       not used *|14|> not used:250                   +|  |+                
+       not used *|15|> not used:251                   +|  |+                
+       not used *|16|> not used:252                    |  |                 
+       not used *|17|> not used:253      not used:132 *|33|* not used       
+       not used *|20|> not used:254                   +|  |+                
+       not used *|21|> not used:255                   +|  |+                
+       not used *|22|> not used:256                    |  |                 
+                 |  |> not used:257      not used:133 *|32|* not used       
+                 |  |> not used:258                   +|  |+                
+                 |  |> not used:259                   +|  |+                
+                 |  |> not used:260                    |  |                 
+                 |  |> not used:261      not used:134 *|31|* not used       
+                 |  |> not used:262                   +|  |+                
+                 |  |> not used:263                   +|  |+                
+                 |  |> not used:264                    |  |                 
+                 |  |> not used:265      not used:135 *|30|* not used       
+                 |  |> not used:266                   +|  |+                
+                 |  |> not used:267                   +|  |+                
+                 |  |> not used:268                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    1  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    3  |   24  |
+                 ______________________________________
+                                           7  /   92   = 7   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 5 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 5
+                 __________________________________________
+       not used *|59|                       (state_1) =|50|= y              
+       not used *|60|                                 +|  |= (F_1)          
+       not used *|61|                                 +|  |+                
+       not used *|64|                                  |  |                 
+       not used *|65|                    not used:138 *|51|* not used       
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                                  |  |                 
+       not used *|71|= >table_out_0      not used:139 *|52|* not used       
+       not used *|72|> not used:270                   +|  |+                
+       not used *| 9|> not used:271                   +|  |+                
+       not used *|10|> not used:272                    |  |                 
+       not used *|11|> not used:273      not used:140 *|53|* not used       
+       not used *|14|> not used:274                   +|  |+                
+       not used *|15|> not used:275                   +|  |+                
+       not used *|16|> not used:276                    |  |                 
+       not used *|17|> not used:277      not used:141 *|54|* not used       
+       not used *|20|> not used:278                   +|  |+                
+       not used *|21|> not used:279                   +|  |+                
+       not used *|22|> not used:278                    |  |                 
+                 |  |> not used:281      not used:142 *|55|* not used       
+                 |  |> not used:282                   +|  |+                
+                 |  |> not used:283                   +|  |+                
+                 |  |> not used:284                    |  |                 
+                 |  |> not used:285      not used:143 *|  |                 
+                 |  |> not used:286                   +|  |+                
+                 |  |> not used:287                   +|  |+                
+                 |  |> not used:288         (state_2) =|  |                 
+                 |  |> not used:289      not used:144 *|  |                 
+                 |  |> not used:290                   +|  |+                
+                 |  |> not used:291                   +|  |+                
+                 |  |> not used:292         (state_3) =|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    1  |    6  |
+                 | Buried Macrocells  |    3  |   10  |
+                 | Expander Terms     |    1  |   32  |
+                 | PIA Input Connects |    1  |   24  |
+                 ______________________________________
+                                           9  /   92   = 9   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 6 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 6
+                 __________________________________________
+       not used *|59|                    not used:146 *|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+       not used *|64|                     not used:95 *|  |                 
+       not used *|65|                    not used:147 *|  |                 
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                     not used:96 *|  |                 
+       not used *|71|> not used:293      not used:148 *|63|* not used       
+       not used *|72|> not used:294                   +|  |+                
+       not used *| 9|> not used:295                   +|  |+                
+       not used *|10|> not used:296                    |  |                 
+       not used *|11|> not used:297      not used:149 *|60|* not used       
+       not used *|14|> not used:298                   +|  |+                
+       not used *|15|> not used:299                   +|  |+                
+       not used *|16|> not used:300                    |  |                 
+       not used *|17|> not used:301      not used:150 *|59|* not used       
+       not used *|20|> not used:302                   +|  |+                
+       not used *|21|> not used:303                   +|  |+                
+       not used *|22|> not used:304                    |  |                 
+                 |  |> not used:305      not used:151 *|58|* not used       
+                 |  |> not used:306                   +|  |+                
+                 |  |> not used:307                   +|  |+                
+                 |  |> not used:308                    |  |                 
+                 |  |> not used:309      not used:152 *|57|* not used       
+                 |  |> not used:310                   +|  |+                
+                 |  |> not used:311                   +|  |+                
+                 |  |> not used:312                    |  |                 
+                 |  |> not used:313      not used:153 *|56|* not used       
+                 |  |> not used:314                   +|  |+                
+                 |  |> not used:315                   +|  |+                
+                 |  |> not used:316                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 7 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 7
+                 __________________________________________
+       not used *|59|                    not used:155 *|64|* not used       
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+       not used *|64|                                  |  |                 
+       not used *|65|                    not used:156 *|67|* not used       
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                                  |  |                 
+       not used *|71|> not used:317      not used:157 *|68|* not used       
+       not used *|72|> not used:318                   +|  |+                
+       not used *| 9|> not used:319                   +|  |+                
+       not used *|10|> not used:320                    |  |                 
+       not used *|11|> not used:321      not used:158 *|69|* not used       
+       not used *|14|> not used:322                   +|  |+                
+       not used *|15|> not used:323                   +|  |+                
+       not used *|16|> not used:324                    |  |                 
+       not used *|17|> not used:325      not used:159 *|70|* not used       
+       not used *|20|> not used:326                   +|  |+                
+       not used *|21|> not used:327                   +|  |+                
+       not used *|22|> not used:328                    |  |                 
+                 |  |> not used:329      not used:160 *|71|* not used       
+                 |  |> not used:330                   +|  |+                
+                 |  |> not used:331                   +|  |+                
+                 |  |> not used:332                    |  |                 
+                 |  |> not used:333      not used:161 *|  |                 
+                 |  |> not used:334                   +|  |+                
+                 |  |> not used:335                   +|  |+                
+                 |  |> not used:336       not used:97 *|  |                 
+                 |  |> not used:337      not used:162 *|  |                 
+                 |  |> not used:338                   +|  |+                
+                 |  |> not used:339                   +|  |+                
+                 |  |> not used:340       not used:98 *|  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LAB 8 SIGNAL PLACEMENT  (09:17:37)
+
+Messages:
+
+
+                                  LAB 8
+                 __________________________________________
+       not used *|59|                    not used:164 *|  |                 
+       not used *|60|                                 +|  |+                
+       not used *|61|                                 +|  |+                
+       not used *|64|                     not used:99 *|  |                 
+       not used *|65|                    not used:165 *|  |                 
+       not used *|66|                                 +|  |+                
+       not used *|67|                                 +|  |+                
+       not used *|70|                    not used:100 *|  |                 
+       not used *|71|> not used:341      not used:166 *|77|* not used       
+       not used *|72|> not used:342                   +|  |+                
+       not used *| 9|> not used:343                   +|  |+                
+       not used *|10|> not used:344                    |  |                 
+       not used *|11|> not used:345      not used:167 *|76|* not used       
+       not used *|14|> not used:346                   +|  |+                
+       not used *|15|> not used:347                   +|  |+                
+       not used *|16|> not used:348                    |  |                 
+       not used *|17|> not used:349      not used:168 *|75|* not used       
+       not used *|20|> not used:350                   +|  |+                
+       not used *|21|> not used:351                   +|  |+                
+       not used *|22|> not used:352                    |  |                 
+                 |  |> not used:353      not used:169 *|74|* not used       
+                 |  |> not used:354                   +|  |+                
+                 |  |> not used:355                   +|  |+                
+                 |  |> not used:356                    |  |                 
+                 |  |> not used:357      not used:170 *|73|* not used       
+                 |  |> not used:358                   +|  |+                
+                 |  |> not used:359                   +|  |+                
+                 |  |> not used:360                    |  |                 
+                 |  |> not used:361      not used:171 *|72|* not used       
+                 |  |> not used:362                   +|  |+                
+                 |  |> not used:363                   +|  |+                
+                 |  |> not used:364                    |  |                 
+                 __________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    0  |    6  |
+                 | Buried Macrocells  |    0  |   10  |
+                 | Expander Terms     |    0  |   32  |
+                 | PIA Input Connects |    0  |   24  |
+                 ______________________________________
+                                           3  /   92   = 3   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (09:17:37)
+
+Messages:
+  Information: PIN Signal Placement Table.
+                  1  :  clk
+                  2  :  Not Used
+                  3  :  Not Used
+                  4  :  Not Used
+                  5  :  Not Used
+                  6  :  Not Used
+                  7  :  Not Used
+                  8  :  Not Used
+                  9  :  Not Used
+                 10  :  Not Used
+                 11  :  Not Used
+                 12  :  Not Used
+                 13  :  Not Used
+                 14  :  Not Used
+                 15  :  Not Used
+                 16  :  Not Used
+                 17  :  Not Used
+                 18  :  Not Used
+                 19  :  Not Used
+                 20  :  Not Used
+                 21  :  Not Used
+                 22  :  Not Used
+                 23  :  Not Used
+                 24  :  Not Used
+                 25  :  Not Used
+                 26  :  Not Used
+                 27  :  Not Used
+                 28  :  Not Used
+                 29  :  Not Used
+                 30  :  Not Used
+                 31  :  Not Used
+                 32  :  Not Used
+                 33  :  Not Used
+                 34  :  Not Used
+                 35  :  Not Used
+                 36  :  Not Used
+                 37  :  Not Used
+                 38  :  Not Used
+                 39  :  Not Used
+                 40  :  Not Used
+                 41  :  Not Used
+                 42  :  Not Used
+                 43  :  Not Used
+                 44  :  Not Used
+                 45  :  Not Used
+                 46  :  Not Used
+                 47  :  Not Used
+                 48  :  Not Used
+                 49  :  Not Used
+                 50  :  y
+                 51  :  Not Used
+                 52  :  Not Used
+                 53  :  Not Used
+                 54  :  Not Used
+                 55  :  Not Used
+                 56  :  Not Used
+                 57  :  Not Used
+                 58  :  Not Used
+                 59  :  Not Used
+                 60  :  Not Used
+                 61  :  Not Used
+                 62  :  Not Used
+                 63  :  Not Used
+                 64  :  Not Used
+                 65  :  Not Used
+                 66  :  Not Used
+                 67  :  Not Used
+                 68  :  Not Used
+                 69  :  Not Used
+                 70  :  Not Used
+                 71  :  Not Used
+                 72  :  Not Used
+                 73  :  Not Used
+                 74  :  Not Used
+                 75  :  Not Used
+                 76  :  Not Used
+                 77  :  Not Used
+                 78  :  Not Used
+                 79  :  Not Used
+                 80  :  Not Used
+                 81  :  Not Used
+                 82  :  Not Used
+                 83  :  rst
+                 84  :  id
+
+
+  Information: NODE Signal Placement Table.
+                 91  :  (table_out_0)
+                 93  :  (state_2)
+                 94  :  (state_3)
+                137  :  (state_1)
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 |  8  |  Unused          |   0  |   3  |
+                 |  9  |  Unused          |   0  |   3  |
+                 | 10  |  Unused          |   0  |   3  |
+                 | 11  |  Unused          |   0  |   3  |
+                 | 12  |  Unused          |   0  |   3  |
+                 | 13  |  Unused          |   0  |   3  |
+                 | 14  |  Unused          |   0  |   3  |
+                 | 15  |  Unused          |   0  |   3  |
+                 | 16  |  Unused          |   0  |   3  |
+                 | 17  |  Unused          |   0  |   3  |
+                 | 18  |  Unused          |   0  |   3  |
+                 | 21  |  Unused          |   0  |   3  |
+                 | 22  |  Unused          |   0  |   3  |
+                 | 25  |  Unused          |   0  |   3  |
+                 | 26  |  Unused          |   0  |   3  |
+                 | 27  |  Unused          |   0  |   3  |
+                 | 28  |  Unused          |   0  |   3  |
+                 | 29  |  Unused          |   0  |   3  |
+                 | 30  |  Unused          |   0  |   3  |
+                 | 31  |  Unused          |   0  |   3  |
+                 | 32  |  Unused          |   0  |   3  |
+                 | 33  |  Unused          |   0  |   3  |
+                 | 34  |  Unused          |   0  |   3  |
+                 | 35  |  Unused          |   0  |   3  |
+                 | 50  |  y               |   1  |   3  |
+                 | 51  |  Unused          |   0  |   3  |
+                 | 52  |  Unused          |   0  |   3  |
+                 | 53  |  Unused          |   0  |   3  |
+                 | 54  |  Unused          |   0  |   3  |
+                 | 55  |  Unused          |   0  |   3  |
+                 | 56  |  Unused          |   0  |   3  |
+                 | 57  |  Unused          |   0  |   3  |
+                 | 58  |  Unused          |   0  |   3  |
+                 | 59  |  Unused          |   0  |   3  |
+                 | 60  |  Unused          |   0  |   3  |
+                 | 63  |  Unused          |   0  |   3  |
+                 | 64  |  Unused          |   0  |   3  |
+                 | 67  |  Unused          |   0  |   3  |
+                 | 68  |  Unused          |   0  |   3  |
+                 | 69  |  Unused          |   0  |   3  |
+                 | 70  |  Unused          |   0  |   3  |
+                 | 71  |  Unused          |   0  |   3  |
+                 | 72  |  Unused          |   0  |   3  |
+                 | 73  |  Unused          |   0  |   3  |
+                 | 74  |  Unused          |   0  |   3  |
+                 | 75  |  Unused          |   0  |   3  |
+                 | 76  |  Unused          |   0  |   3  |
+                 | 77  |  Unused          |   0  |   3  |
+                 | 85  |  Unused          |   0  |   3  |
+                 | 86  |  Unused          |   0  |   3  |
+                 | 87  |  Unused          |   0  |   3  |
+                 | 88  |  Unused          |   0  |   3  |
+                 | 89  |  Unused          |   0  |   3  |
+                 | 90  |  Unused          |   0  |   3  |
+                 | 91  |  table_out_0     |   3  |   3  |
+                 | 92  |  Unused          |   0  |   3  |
+                 | 93  |  state_2         |   3  |   3  |
+                 | 94  |  state_3         |   3  |   3  |
+                 | 95  |  Unused          |   0  |   3  |
+                 | 96  |  Unused          |   0  |   3  |
+                 | 97  |  Unused          |   0  |   3  |
+                 | 98  |  Unused          |   0  |   3  |
+                 | 99  |  Unused          |   0  |   3  |
+                 |100  |  Unused          |   0  |   3  |
+                 |101  |  Unused          |   0  |   3  |
+                 |102  |  Unused          |   0  |   3  |
+                 |103  |  Unused          |   0  |   3  |
+                 |104  |  Unused          |   0  |   3  |
+                 |105  |  Unused          |   0  |   3  |
+                 |106  |  Unused          |   0  |   3  |
+                 |107  |  Unused          |   0  |   3  |
+                 |108  |  Unused          |   0  |   3  |
+                 |109  |  Unused          |   0  |   1  |
+                 |110  |  Unused          |   0  |   3  |
+                 |111  |  Unused          |   0  |   3  |
+                 |112  |  Unused          |   0  |   3  |
+                 |113  |  Unused          |   0  |   3  |
+                 |114  |  Unused          |   0  |   3  |
+                 |115  |  Unused          |   0  |   3  |
+                 |116  |  Unused          |   0  |   3  |
+                 |117  |  Unused          |   0  |   3  |
+                 |118  |  Unused          |   0  |   1  |
+                 |119  |  Unused          |   0  |   3  |
+                 |120  |  Unused          |   0  |   3  |
+                 |121  |  Unused          |   0  |   3  |
+                 |122  |  Unused          |   0  |   3  |
+                 |123  |  Unused          |   0  |   3  |
+                 |124  |  Unused          |   0  |   3  |
+                 |125  |  Unused          |   0  |   3  |
+                 |126  |  Unused          |   0  |   3  |
+                 |127  |  Unused          |   0  |   1  |
+                 |128  |  Unused          |   0  |   3  |
+                 |129  |  Unused          |   0  |   3  |
+                 |130  |  Unused          |   0  |   3  |
+                 |131  |  Unused          |   0  |   3  |
+                 |132  |  Unused          |   0  |   3  |
+                 |133  |  Unused          |   0  |   3  |
+                 |134  |  Unused          |   0  |   3  |
+                 |135  |  Unused          |   0  |   3  |
+                 |136  |  Unused          |   0  |   1  |
+                 |137  |  state_1         |   3  |   3  |
+                 |138  |  Unused          |   0  |   3  |
+                 |139  |  Unused          |   0  |   3  |
+                 |140  |  Unused          |   0  |   3  |
+                 |141  |  Unused          |   0  |   3  |
+                 |142  |  Unused          |   0  |   3  |
+                 |143  |  Unused          |   0  |   3  |
+                 |144  |  Unused          |   0  |   3  |
+                 |145  |  Unused          |   0  |   1  |
+                 |146  |  Unused          |   0  |   3  |
+                 |147  |  Unused          |   0  |   3  |
+                 |148  |  Unused          |   0  |   3  |
+                 |149  |  Unused          |   0  |   3  |
+                 |150  |  Unused          |   0  |   3  |
+                 |151  |  Unused          |   0  |   3  |
+                 |152  |  Unused          |   0  |   3  |
+                 |153  |  Unused          |   0  |   3  |
+                 |154  |  Unused          |   0  |   1  |
+                 |155  |  Unused          |   0  |   3  |
+                 |156  |  Unused          |   0  |   3  |
+                 |157  |  Unused          |   0  |   3  |
+                 |158  |  Unused          |   0  |   3  |
+                 |159  |  Unused          |   0  |   3  |
+                 |160  |  Unused          |   0  |   3  |
+                 |161  |  Unused          |   0  |   3  |
+                 |162  |  Unused          |   0  |   3  |
+                 |163  |  Unused          |   0  |   1  |
+                 |164  |  Unused          |   0  |   3  |
+                 |165  |  Unused          |   0  |   3  |
+                 |166  |  Unused          |   0  |   3  |
+                 |167  |  Unused          |   0  |   3  |
+                 |168  |  Unused          |   0  |   3  |
+                 |169  |  Unused          |   0  |   3  |
+                 |170  |  Unused          |   0  |   3  |
+                 |171  |  Unused          |   0  |   3  |
+                 |172  |  Unused          |   0  |   1  |
+                 ________________________________________
+                                             13  / 392   = 3   %
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    2  |   19  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    1  |   48  |
+                 | Buried Macrocells  |    4  |   80  |
+                 | Expander Terms     |    1  |  256  |
+                 | PIA Input Connects |    4  |  192  |
+                 ______________________________________
+                                          13  /  596   = 2   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+TIMING PATH ANALYSIS       (09:17:37) using Package: CY7C346B-15HC
+
+Messages:
+
+----------------------------------------------------------------------------
+Signal Name | Delay Type  |   tmax   | Path Description
+----------------------------------------------------------------------------
+ff::y.D[ 50 ]
+ip::id
+              tmaxDFF_SU      15.0 ns  tIN+tLAD+tSU
+ip::table_out_0.Q
+              tmaxDFF_Q2Q     24.0 ns  tRD+tFD+tPIA+tLAD+tSU
+ip::rst
+              tmaxAR          11.0 ns  tIN+tLAC+tCLR
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(table_out_0).D[ 91 ]
+ip::id
+              tmaxDFF_SU      15.0 ns  tIN+tLAD+tSU
+ip::state_1.Q
+              tmaxDFF_Q2Q     24.0 ns  tRD+tFD+tPIA+tLAD+tSU
+ip::rst
+              tmaxAR          11.0 ns  tIN+tLAC+tCLR
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(state_2).D[ 93 ]
+ip::id
+              tmaxDFF_SU      23.0 ns  tIN+tEXP+tLAD+tSU
+ip::table_out_0.Q
+              tmaxDFF_Q2Q     24.0 ns  tRD+tFD+tPIA+tLAD+tSU
+ip::rst
+              tmaxAR          11.0 ns  tIN+tLAC+tCLR
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(state_3).D[ 94 ]
+ip::id
+              tmaxDFF_SU      15.0 ns  tIN+tLAD+tSU
+ip::table_out_0.Q
+              tmaxDFF_Q2Q     24.0 ns  tRD+tFD+tPIA+tLAD+tSU
+ip::rst
+              tmaxAR          11.0 ns  tIN+tLAC+tCLR
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+ff::(state_1).D[ 137 ]
+ip::id
+              tmaxDFF_SU      15.0 ns  tIN+tLAD+tSU
+ip::table_out_0.Q
+              tmaxDFF_Q2Q     24.0 ns  tRD+tFD+tPIA+tLAD+tSU
+ip::rst
+              tmaxAR          11.0 ns  tIN+tLAC+tCLR
+ip::clk
+              tmaxCLK         3.0 ns   tIN+tICS
+----------------------------------------------------------------------------
+
+Worst Case Path Summary
+-----------------------
+
+Worst case PIN->D, tmax = 23.0 ns for state_2.D
+Worst case Q->Q,   tmax = 24.0 ns for y.D
+Worst case CLK->Q, tmax = 3.0 ns for y.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        MAX2JED.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+JEDEC ASSEMBLE             (09:17:37)
+
+Messages:
+  Information: Processing JEDEC for LAB 1.
+  Information: Processing JEDEC for LAB 2.
+  Information: Processing JEDEC for LAB 3.
+  Information: Processing JEDEC for LAB 4.
+  Information: Processing JEDEC for LAB 5.
+  Information: Processing JEDEC for LAB 6.
+  Information: Processing JEDEC for LAB 7.
+  Information: Processing JEDEC for LAB 8.
+  Information: Processing JEDEC for Switch Matrix PLA.
+  Information: JEDEC output file 'fsm.jed' created.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 09:17:37

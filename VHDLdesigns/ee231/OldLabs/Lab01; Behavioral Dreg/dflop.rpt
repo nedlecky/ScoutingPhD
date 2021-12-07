@@ -1,0 +1,40 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  dflop.vhd
+Options:    -q -yv2 -e10 -w100 -o2 -ygs -fO -fP -v10 -dc344 -pCY7C344-20HC/HI -a dflop.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Wed Jan 21 13:44:35 1998
+
+Library 'work' => directory 'lc344'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Wed Jan 21 13:44:35 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Note:  Removing wires from arch. 'archdflop' of entity 'dflop'.
+Added entity 'dflop' to library 'work'
+Added architecture 'archdflop' to library 'work'
+
+C:\warp\bin\tovif.exe:  No errors.
+

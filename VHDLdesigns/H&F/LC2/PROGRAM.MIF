@@ -1,0 +1,21 @@
+DEPTH = 256;	% Memory depth and width are required	%
+WIDTH = 16;		% Enter a decimal number	%
+
+ADDRESS_RADIX = HEX;	% Address and value radixes are optional	%
+DATA_RADIX = HEX;		% Enter BIN, DEC, HEX, or OCT; unless 	%
+						% otherwise specified, radixes = HEX	%
+-- Specify values for addresses, which can be single address or range
+CONTENT
+	BEGIN
+[00..FF]	:	0000;	% Range--Every address from 00 to FF = 0000 (Default)	%
+	00		:	240D;	% LD R2, address D %
+	01		:	260E;	% LD R3, address E %
+	02		:	18C2;   % ADD R4,R3,R2 %
+	03		:	380F;	% ST R4, address F %
+	04		:	0204;   % BRP address 4 %
+	05		:	0805;  	% BRP address 4 %
+	0D		:	AAAA;	% DATA Area %
+	0E		:	5555;
+	0F		:	0000;
+END ;	
+

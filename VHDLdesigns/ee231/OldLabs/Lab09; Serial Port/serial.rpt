@@ -1,0 +1,2513 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 4 IR x77
+  -|               |-   Copyright (C) 1991, 1992, 1993,
+   |_______________|    1994, 1995, 1996, 1997 Cypress Semiconductor
+     | | | | | | |
+
+======================================================================
+Compiling:  serial.vhd
+Options:    -m -q -e10 -w100 -o2 -ygs -fO -fK -v10 -dc375i -pCY7C375I-125AC serial.vhd
+======================================================================
+
+C:\warp\bin\vhdlfe.exe V4 IR x77:  VHDL parser
+Mon Feb 23 13:04:21 1998
+
+Library 'work' => directory 'lc375i'
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\warp\lib\ieee\work'
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+serial.vhd (line 81, col 25):  Note: Substituting module 'cmp_vv_ss' for '='.
+serial.vhd (line 87, col 30):  Note: Substituting module 'sub_vi_ss' for '-'.
+serial.vhd (line 98, col 24):  Note: Substituting module 'cmp_vv_ss' for '='.
+serial.vhd (line 103, col 28):  Note: Substituting module 'sub_vi_ss' for '-'.
+
+C:\warp\bin\vhdlfe.exe:  No errors.
+
+
+C:\warp\bin\tovif.exe V4 IR x77:  High-level synthesis
+Mon Feb 23 13:04:22 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+
+C:\warp\bin\tovif.exe:  No errors.
+
+
+C:\warp\bin\topld.exe V4 IR x77:  Synthesis and optimization
+Mon Feb 23 13:04:22 1998
+
+Linking 'C:\warp\lib\common\work\cypress.vif'.
+Linking 'C:\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_mth.vif'.
+Linking 'C:\warp\lib\common\stdlogic\mod_gen.vif'.
+Linking 'C:\warp\lib\lc370\stdlogic\c370.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 29 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 21 signals.
+	Turned 0 signals into soft nodes.
+	Maximum expansion cost was set at 10.
+----------------------------------------------------------
+Created 132 PLD nodes.
+
+C:\warp\bin\topld.exe:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN HEADER INFORMATION  (13:04:23)
+
+Input File(s): serial.pla
+Device       : c375i
+Package      : CY7C375I-125AC
+ReportFile   : serial.rpt
+
+Program Controls:
+                 None.
+
+Signal Requests:
+    GROUP DT-OPT ALL
+    GROUP KEEPPOL ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (13:04:23)
+
+Messages:
+  Information: Process virtual 'inreg_0D' ... expanded.
+  Information: Process virtual 'inreg_1D' ... expanded.
+  Information: Process virtual 'inreg_2D' ... expanded.
+  Information: Process virtual 'inreg_3D' ... expanded.
+  Information: Process virtual 'inreg_4D' ... expanded.
+  Information: Process virtual 'inreg_5D' ... expanded.
+  Information: Process virtual 'inreg_6D' ... expanded.
+  Information: Process virtual 'inreg_7D' ... expanded.
+  Information: Process virtual 'outreg_0D' ... expanded.
+  Information: Process virtual 'outreg_1D' ... expanded.
+  Information: Process virtual 'outreg_2D' ... expanded.
+  Information: Process virtual 'outreg_3D' ... expanded.
+  Information: Process virtual 'outreg_4D' ... expanded.
+  Information: Process virtual 'outreg_5D' ... expanded.
+  Information: Process virtual 'outreg_6D' ... expanded.
+  Information: Process virtual 'outreg_7D' ... expanded.
+  Information: Process virtual 'outreg_8D' ... expanded.
+  Information: Process virtual 'outcount_0D' ... expanded.
+  Information: Process virtual 'outcount_1D' ... expanded.
+  Information: Process virtual 'outcount_2D' ... expanded.
+  Information: Process virtual 'outcount_3D' ... expanded.
+  Information: Process virtual 'incount_0D' ... expanded.
+  Information: Process virtual 'incount_1D' ... expanded.
+  Information: Process virtual 'incount_2D' ... expanded.
+  Information: Process virtual 'receiveD' ... expanded.
+  Information: Process virtual 'incount_3D' ... expanded.
+  Information: Process virtual 'sendD' ... expanded.
+  Information: Process virtual 'soutD' ... expanded.
+  Information: Process virtual 'data_0D' ... expanded.
+  Information: Process virtual 'data_1D' ... expanded.
+  Information: Process virtual 'data_2D' ... expanded.
+  Information: Process virtual 'data_3D' ... expanded.
+  Information: Process virtual 'data_4D' ... expanded.
+  Information: Process virtual 'data_5D' ... expanded.
+  Information: Process virtual 'data_6D' ... expanded.
+  Information: Process virtual 'data_7D' ... expanded.
+  Information: Process virtual 'writeintD' ... expanded.
+  Information: Process virtual 'readintD' ... expanded.
+  Information: Process virtual 'inreg_0' ... converted to NODE.
+  Information: Process virtual 'inreg_1' ... converted to NODE.
+  Information: Process virtual 'inreg_2' ... converted to NODE.
+  Information: Process virtual 'inreg_3' ... converted to NODE.
+  Information: Process virtual 'inreg_4' ... converted to NODE.
+  Information: Process virtual 'inreg_5' ... converted to NODE.
+  Information: Process virtual 'inreg_6' ... converted to NODE.
+  Information: Process virtual 'inreg_7' ... converted to NODE.
+  Information: Process virtual 'outreg_0' ... converted to NODE.
+  Information: Process virtual 'outreg_1' ... converted to NODE.
+  Information: Process virtual 'outreg_2' ... converted to NODE.
+  Information: Process virtual 'outreg_3' ... converted to NODE.
+  Information: Process virtual 'outreg_4' ... converted to NODE.
+  Information: Process virtual 'outreg_5' ... converted to NODE.
+  Information: Process virtual 'outreg_6' ... converted to NODE.
+  Information: Process virtual 'outreg_7' ... converted to NODE.
+  Information: Process virtual 'outreg_8' ... converted to NODE.
+  Information: Process virtual 'outcount_0' ... converted to NODE.
+  Information: Process virtual 'outcount_1' ... converted to NODE.
+  Information: Process virtual 'outcount_2' ... converted to NODE.
+  Information: Process virtual 'outcount_3' ... converted to NODE.
+  Information: Process virtual 'incount_0' ... converted to NODE.
+  Information: Process virtual 'incount_1' ... converted to NODE.
+  Information: Process virtual 'incount_2' ... converted to NODE.
+  Information: Process virtual 'receive' ... converted to NODE.
+  Information: Process virtual 'incount_3' ... converted to NODE.
+  Information: Process virtual 'send' ... converted to NODE.
+  Information: Generating both D & T register equations for signal inreg_0.D
+  Information: Expanding XOR equation found on signal inreg_0.T
+  Information: Generating both D & T register equations for signal inreg_1.D
+  Information: Expanding XOR equation found on signal inreg_1.T
+  Information: Generating both D & T register equations for signal inreg_2.D
+  Information: Expanding XOR equation found on signal inreg_2.T
+  Information: Generating both D & T register equations for signal inreg_3.D
+  Information: Expanding XOR equation found on signal inreg_3.T
+  Information: Generating both D & T register equations for signal inreg_4.D
+  Information: Expanding XOR equation found on signal inreg_4.T
+  Information: Generating both D & T register equations for signal inreg_5.D
+  Information: Expanding XOR equation found on signal inreg_5.T
+  Information: Generating both D & T register equations for signal inreg_6.D
+  Information: Expanding XOR equation found on signal inreg_6.T
+  Information: Generating both D & T register equations for signal inreg_7.D
+  Information: Expanding XOR equation found on signal inreg_7.T
+  Information: Generating both D & T register equations for signal outreg_0.D
+  Information: Expanding XOR equation found on signal outreg_0.T
+  Information: Generating both D & T register equations for signal outreg_1.D
+  Information: Expanding XOR equation found on signal outreg_1.T
+  Information: Generating both D & T register equations for signal outreg_2.D
+  Information: Expanding XOR equation found on signal outreg_2.T
+  Information: Generating both D & T register equations for signal outreg_3.D
+  Information: Expanding XOR equation found on signal outreg_3.T
+  Information: Generating both D & T register equations for signal outreg_4.D
+  Information: Expanding XOR equation found on signal outreg_4.T
+  Information: Generating both D & T register equations for signal outreg_5.D
+  Information: Expanding XOR equation found on signal outreg_5.T
+  Information: Generating both D & T register equations for signal outreg_6.D
+  Information: Expanding XOR equation found on signal outreg_6.T
+  Information: Generating both D & T register equations for signal outreg_7.D
+  Information: Expanding XOR equation found on signal outreg_7.T
+  Information: Generating both D & T register equations for signal outreg_8.D
+  Information: Expanding XOR equation found on signal outreg_8.T
+  Information: Generating both D & T register equations for signal outcount_0.D
+  Information: Expanding XOR equation found on signal outcount_0.T
+  Information: Generating both D & T register equations for signal outcount_1.D
+  Information: Expanding XOR equation found on signal outcount_1.T
+  Information: Generating both D & T register equations for signal outcount_2.D
+  Information: Expanding XOR equation found on signal outcount_2.T
+  Information: Generating both D & T register equations for signal outcount_3.D
+  Information: Expanding XOR equation found on signal outcount_3.T
+  Information: Generating both D & T register equations for signal incount_0.D
+  Information: Expanding XOR equation found on signal incount_0.T
+  Information: Generating both D & T register equations for signal incount_1.D
+  Information: Expanding XOR equation found on signal incount_1.T
+  Information: Generating both D & T register equations for signal incount_2.D
+  Information: Expanding XOR equation found on signal incount_2.T
+  Information: Generating both D & T register equations for signal receive.D
+  Information: Expanding XOR equation found on signal receive.T
+  Information: Generating both D & T register equations for signal incount_3.D
+  Information: Expanding XOR equation found on signal incount_3.T
+  Information: Generating both D & T register equations for signal send.D
+  Information: Expanding XOR equation found on signal send.T
+  Information: Generating both D & T register equations for signal sout.D
+  Information: Expanding XOR equation found on signal sout.T
+  Information: Generating both D & T register equations for signal data_0.D
+  Information: Expanding XOR equation found on signal data_0.T
+  Information: Generating both D & T register equations for signal data_1.D
+  Information: Expanding XOR equation found on signal data_1.T
+  Information: Generating both D & T register equations for signal data_2.D
+  Information: Expanding XOR equation found on signal data_2.T
+  Information: Generating both D & T register equations for signal data_3.D
+  Information: Expanding XOR equation found on signal data_3.T
+  Information: Generating both D & T register equations for signal data_4.D
+  Information: Expanding XOR equation found on signal data_4.T
+  Information: Generating both D & T register equations for signal data_5.D
+  Information: Expanding XOR equation found on signal data_5.T
+  Information: Generating both D & T register equations for signal data_6.D
+  Information: Expanding XOR equation found on signal data_6.T
+  Information: Generating both D & T register equations for signal data_7.D
+  Information: Expanding XOR equation found on signal data_7.T
+  Information: Generating both D & T register equations for signal writeint.D
+  Information: Expanding XOR equation found on signal writeint.T
+  Information: Generating both D & T register equations for signal readint.D
+  Information: Expanding XOR equation found on signal readint.T
+  Information: Optimizing logic without changing polarity for signals:
+         inreg_0.D inreg_0.T inreg_1.D inreg_1.T inreg_2.D inreg_2.T inreg_3.D
+         inreg_3.T inreg_4.D inreg_4.T inreg_5.D inreg_5.T inreg_6.D inreg_6.T
+         inreg_7.D inreg_7.T outreg_0.D outreg_0.T outreg_1.D outreg_1.T
+         outreg_2.D outreg_2.T outreg_3.D outreg_3.T outreg_4.D outreg_4.T
+         outreg_5.D outreg_5.T outreg_6.D outreg_6.T outreg_7.D outreg_7.T
+         outreg_8.D outcount_0.D outcount_0.T outcount_1.D outcount_1.T
+         outcount_2.D outcount_2.T outcount_3.D outcount_3.T incount_0.D
+         incount_0.T incount_1.D incount_1.T incount_2.D incount_2.T receive.D
+         receive.T incount_3.D incount_3.T send.D send.T sout.D sout.T
+         data_0.D data_0.T data_1.D data_1.T data_2.D data_2.T data_3.D
+         data_3.T data_4.D data_4.T data_5.D data_5.T data_6.D data_6.T
+         data_7.D data_7.T writeint.D writeint.T readint.D readint.T
+
+  Information: Selected logic optimization OFF for signals:
+         inreg_0.C inreg_1.C inreg_2.C inreg_3.C inreg_4.C inreg_5.C inreg_6.C
+         inreg_7.C outreg_0.C outreg_1.C outreg_2.C outreg_3.C outreg_4.C
+         outreg_5.C outreg_6.C outreg_7.C outreg_8.T outreg_8.C outcount_0.C
+         outcount_1.C outcount_2.C outcount_3.C incount_0.C incount_1.C
+         incount_2.C receive.C incount_3.C send.C sout.C data_0.C data_1.C
+         data_2.C data_3.C data_4.C data_5.C data_6.C data_7.C writeint.C
+         readint.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     19/JUL/96    [v3.22A] 4 IR x77
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+OPTIMIZATION OPTIONS       (13:04:23)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+  Information: Selecting D register equation as minimal for signal readint
+  Information: Selecting D register equation as minimal for signal writeint
+  Information: Selecting D register equation as minimal for signal data_7
+  Information: Selecting D register equation as minimal for signal data_6
+  Information: Selecting D register equation as minimal for signal data_5
+  Information: Selecting D register equation as minimal for signal data_4
+  Information: Selecting D register equation as minimal for signal data_3
+  Information: Selecting D register equation as minimal for signal data_2
+  Information: Selecting D register equation as minimal for signal data_1
+  Information: Selecting D register equation as minimal for signal data_0
+  Information: Selecting D register equation as minimal for signal sout
+  Information: Selecting T register equation as minimal for signal send
+  Information: Selecting T register equation as minimal for signal incount_3
+  Information: Selecting T register equation as minimal for signal receive
+  Information: Selecting T register equation as minimal for signal incount_2
+  Information: Selecting T register equation as minimal for signal incount_1
+  Information: Selecting D register equation as minimal for signal incount_0
+  Information: Selecting T register equation as minimal for signal outcount_3
+  Information: Selecting T register equation as minimal for signal outcount_2
+  Information: Selecting T register equation as minimal for signal outcount_1
+  Information: Selecting D register equation as minimal for signal outcount_0
+  Information: Selecting T register equation as minimal for signal outreg_8
+  Information: Selecting T register equation as minimal for signal outreg_7
+  Information: Selecting T register equation as minimal for signal outreg_6
+  Information: Selecting T register equation as minimal for signal outreg_5
+  Information: Selecting T register equation as minimal for signal outreg_4
+  Information: Selecting T register equation as minimal for signal outreg_3
+  Information: Selecting T register equation as minimal for signal outreg_2
+  Information: Selecting T register equation as minimal for signal outreg_1
+  Information: Selecting T register equation as minimal for signal outreg_0
+  Information: Selecting D register equation as minimal for signal inreg_7
+  Information: Selecting D register equation as minimal for signal inreg_6
+  Information: Selecting D register equation as minimal for signal inreg_5
+  Information: Selecting D register equation as minimal for signal inreg_4
+  Information: Selecting D register equation as minimal for signal inreg_3
+  Information: Selecting D register equation as minimal for signal inreg_2
+  Information: Selecting D register equation as minimal for signal inreg_1
+  Information: Selecting D register equation as minimal for signal inreg_0
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN EQUATIONS           (13:04:24)
+
+
+    readint.D =
+          incount_3.Q * receive.Q * incount_2.Q * incount_1.Q * 
+          incount_0.Q 
+        + receive.Q * readint.Q 
+
+    readint.AP =
+          GND
+
+    readint.AR =
+          GND
+
+    readint.C =
+          clk 
+
+    writeint.D =
+          send.Q * outcount_3.Q * outcount_2.Q * outcount_1.Q * 
+          outcount_0.Q 
+        + send.Q * writeint.Q 
+
+    writeint.AP =
+          GND
+
+    writeint.AR =
+          GND
+
+    writeint.C =
+          clk 
+
+    data_7.D =
+          inreg_7.Q * read 
+        + data_7.Q * /read 
+
+    data_7.AP =
+          GND
+
+    data_7.AR =
+          GND
+
+    data_7.C =
+          clk 
+
+    data_6.D =
+          inreg_6.Q * read 
+        + data_6.Q * /read 
+
+    data_6.AP =
+          GND
+
+    data_6.AR =
+          GND
+
+    data_6.C =
+          clk 
+
+    data_5.D =
+          inreg_5.Q * read 
+        + data_5.Q * /read 
+
+    data_5.AP =
+          GND
+
+    data_5.AR =
+          GND
+
+    data_5.C =
+          clk 
+
+    data_4.D =
+          inreg_4.Q * read 
+        + data_4.Q * /read 
+
+    data_4.AP =
+          GND
+
+    data_4.AR =
+          GND
+
+    data_4.C =
+          clk 
+
+    data_3.D =
+          inreg_3.Q * read 
+        + data_3.Q * /read 
+
+    data_3.AP =
+          GND
+
+    data_3.AR =
+          GND
+
+    data_3.C =
+          clk 
+
+    data_2.D =
+          inreg_2.Q * read 
+        + data_2.Q * /read 
+
+    data_2.AP =
+          GND
+
+    data_2.AR =
+          GND
+
+    data_2.C =
+          clk 
+
+    data_1.D =
+          inreg_1.Q * read 
+        + data_1.Q * /read 
+
+    data_1.AP =
+          GND
+
+    data_1.AR =
+          GND
+
+    data_1.C =
+          clk 
+
+    data_0.D =
+          inreg_0.Q * read 
+        + data_0.Q * /read 
+
+    data_0.AP =
+          GND
+
+    data_0.AR =
+          GND
+
+    data_0.C =
+          clk 
+
+    sout.D =
+          send.Q * outcount_3.Q * /outcount_2.Q * /outcount_1.Q * 
+          /outcount_0.Q * outreg_8.Q 
+        + send.Q * outreg_7.Q * /outcount_3.Q * outcount_2.Q * 
+          outcount_1.Q * outcount_0.Q 
+        + send.Q * outreg_3.Q * /outcount_3.Q * /outcount_2.Q * 
+          outcount_1.Q * outcount_0.Q 
+        + send.Q * outreg_5.Q * /outcount_3.Q * outcount_2.Q * 
+          /outcount_1.Q * outcount_0.Q 
+        + send.Q * outreg_6.Q * /outcount_3.Q * outcount_2.Q * 
+          outcount_1.Q * /outcount_0.Q 
+        + send.Q * outreg_1.Q * /outcount_3.Q * /outcount_2.Q * 
+          /outcount_1.Q * outcount_0.Q 
+        + send.Q * outreg_2.Q * /outcount_3.Q * /outcount_2.Q * 
+          outcount_1.Q * /outcount_0.Q 
+        + send.Q * outreg_4.Q * /outcount_3.Q * outcount_2.Q * 
+          /outcount_1.Q * /outcount_0.Q 
+        + send.Q * outreg_0.Q * /outcount_3.Q * /outcount_2.Q * 
+          /outcount_1.Q * /outcount_0.Q 
+        + /send.Q * sout.Q 
+
+    sout.AP =
+          GND
+
+    sout.AR =
+          GND
+
+    sout.C =
+          clk 
+
+    send.T =
+          send.Q * outcount_3.Q * outcount_2.Q * outcount_1.Q * 
+          outcount_0.Q 
+        + /send.Q * write 
+        + send.Q * reset 
+
+    send.AP =
+          GND
+
+    send.AR =
+          GND
+
+    send.C =
+          clk 
+
+    incount_3.T =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * reset 
+        + receive.Q * /incount_2.Q * /incount_1.Q * /incount_0.Q 
+        + incount_3.Q * /receive.Q * sin 
+        + incount_3.Q * /receive.Q * reset 
+
+    incount_3.AP =
+          GND
+
+    incount_3.AR =
+          GND
+
+    incount_3.C =
+          clk 
+
+    receive.T =
+          incount_3.Q * receive.Q * incount_2.Q * incount_1.Q * 
+          incount_0.Q 
+        + /receive.Q * sin 
+
+    receive.AP =
+          GND
+
+    receive.AR =
+          GND
+
+    receive.C =
+          clk 
+
+    incount_2.T =
+          incount_3.Q * receive.Q * incount_2.Q * incount_1.Q * 
+          incount_0.Q * reset 
+        + /receive.Q * incount_2.Q * /sin * reset 
+        + receive.Q * /incount_1.Q * /incount_0.Q 
+        + /receive.Q * /incount_2.Q * sin 
+
+    incount_2.AP =
+          GND
+
+    incount_2.AR =
+          GND
+
+    incount_2.C =
+          clk 
+
+    incount_1.T =
+          incount_3.Q * receive.Q * incount_2.Q * incount_1.Q * reset 
+        + /receive.Q * incount_1.Q * /sin * reset 
+        + /receive.Q * /incount_1.Q * sin 
+        + receive.Q * /incount_0.Q 
+
+    incount_1.AP =
+          GND
+
+    incount_1.AR =
+          GND
+
+    incount_1.C =
+          clk 
+
+    incount_0.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * /reset 
+        + /receive.Q * incount_0.Q * /reset 
+        + receive.Q * /incount_0.Q 
+        + /receive.Q * sin 
+
+    incount_0.AP =
+          GND
+
+    incount_0.AR =
+          GND
+
+    incount_0.C =
+          clk 
+
+    outcount_3.T =
+          send.Q * outcount_3.Q * outcount_2.Q * outcount_1.Q * 
+          outcount_0.Q * reset 
+        + send.Q * /outcount_2.Q * /outcount_1.Q * /outcount_0.Q 
+        + /send.Q * /write * outcount_3.Q * reset 
+        + /send.Q * write * /outcount_3.Q 
+
+    outcount_3.AP =
+          GND
+
+    outcount_3.AR =
+          GND
+
+    outcount_3.C =
+          clk 
+
+    outcount_2.T =
+          outcount_3.Q * outcount_2.Q * outcount_1.Q * outcount_0.Q * 
+          reset 
+        + send.Q * /outcount_1.Q * /outcount_0.Q 
+        + /send.Q * write * outcount_2.Q 
+        + /send.Q * outcount_2.Q * reset 
+
+    outcount_2.AP =
+          GND
+
+    outcount_2.AR =
+          GND
+
+    outcount_2.C =
+          clk 
+
+    outcount_1.T =
+          outcount_3.Q * outcount_2.Q * outcount_1.Q * reset 
+        + /send.Q * write * outcount_1.Q 
+        + /send.Q * outcount_1.Q * reset 
+        + send.Q * /outcount_0.Q 
+
+    outcount_1.AP =
+          GND
+
+    outcount_1.AR =
+          GND
+
+    outcount_1.C =
+          clk 
+
+    outcount_0.D =
+          send.Q * outcount_3.Q * outcount_2.Q * outcount_1.Q * /reset 
+        + /send.Q * /write * outcount_0.Q * /reset 
+        + send.Q * /outcount_0.Q 
+
+    outcount_0.AP =
+          GND
+
+    outcount_0.AR =
+          GND
+
+    outcount_0.C =
+          clk 
+
+    outreg_8.T =
+          /send.Q * write * /outreg_8.Q 
+
+    outreg_8.AP =
+          GND
+
+    outreg_8.AR =
+          GND
+
+    outreg_8.C =
+          clk 
+
+    outreg_7.T =
+          /send.Q * write * data_7.Q * /outreg_7.Q 
+        + /send.Q * write * /data_7.Q * outreg_7.Q 
+
+    outreg_7.AP =
+          GND
+
+    outreg_7.AR =
+          GND
+
+    outreg_7.C =
+          clk 
+
+    outreg_6.T =
+          /send.Q * write * data_6.Q * /outreg_6.Q 
+        + /send.Q * write * /data_6.Q * outreg_6.Q 
+
+    outreg_6.AP =
+          GND
+
+    outreg_6.AR =
+          GND
+
+    outreg_6.C =
+          clk 
+
+    outreg_5.T =
+          /send.Q * write * data_5.Q * /outreg_5.Q 
+        + /send.Q * write * /data_5.Q * outreg_5.Q 
+
+    outreg_5.AP =
+          GND
+
+    outreg_5.AR =
+          GND
+
+    outreg_5.C =
+          clk 
+
+    outreg_4.T =
+          /send.Q * write * data_4.Q * /outreg_4.Q 
+        + /send.Q * write * /data_4.Q * outreg_4.Q 
+
+    outreg_4.AP =
+          GND
+
+    outreg_4.AR =
+          GND
+
+    outreg_4.C =
+          clk 
+
+    outreg_3.T =
+          /send.Q * write * data_3.Q * /outreg_3.Q 
+        + /send.Q * write * /data_3.Q * outreg_3.Q 
+
+    outreg_3.AP =
+          GND
+
+    outreg_3.AR =
+          GND
+
+    outreg_3.C =
+          clk 
+
+    outreg_2.T =
+          /send.Q * write * data_2.Q * /outreg_2.Q 
+        + /send.Q * write * /data_2.Q * outreg_2.Q 
+
+    outreg_2.AP =
+          GND
+
+    outreg_2.AR =
+          GND
+
+    outreg_2.C =
+          clk 
+
+    outreg_1.T =
+          /send.Q * data_1.Q * /outreg_1.Q * write 
+        + /send.Q * /data_1.Q * outreg_1.Q * write 
+
+    outreg_1.AP =
+          GND
+
+    outreg_1.AR =
+          GND
+
+    outreg_1.C =
+          clk 
+
+    outreg_0.T =
+          /send.Q * data_0.Q * /outreg_0.Q * write 
+        + /send.Q * /data_0.Q * outreg_0.Q * write 
+
+    outreg_0.AP =
+          GND
+
+    outreg_0.AR =
+          GND
+
+    outreg_0.C =
+          clk 
+
+    inreg_7.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_7.Q 
+        + receive.Q * /incount_0.Q * inreg_6.Q 
+        + receive.Q * /incount_1.Q * inreg_6.Q 
+        + receive.Q * /incount_2.Q * inreg_6.Q 
+        + /incount_3.Q * receive.Q * inreg_6.Q 
+        + /receive.Q * inreg_7.Q 
+
+    inreg_7.AP =
+          GND
+
+    inreg_7.AR =
+          GND
+
+    inreg_7.C =
+          clk 
+
+    inreg_6.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_6.Q 
+        + receive.Q * /incount_0.Q * inreg_5.Q 
+        + receive.Q * /incount_1.Q * inreg_5.Q 
+        + receive.Q * /incount_2.Q * inreg_5.Q 
+        + /incount_3.Q * receive.Q * inreg_5.Q 
+        + /receive.Q * inreg_6.Q 
+
+    inreg_6.AP =
+          GND
+
+    inreg_6.AR =
+          GND
+
+    inreg_6.C =
+          clk 
+
+    inreg_5.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_5.Q 
+        + receive.Q * /incount_0.Q * inreg_4.Q 
+        + receive.Q * /incount_1.Q * inreg_4.Q 
+        + receive.Q * /incount_2.Q * inreg_4.Q 
+        + /incount_3.Q * receive.Q * inreg_4.Q 
+        + /receive.Q * inreg_5.Q 
+
+    inreg_5.AP =
+          GND
+
+    inreg_5.AR =
+          GND
+
+    inreg_5.C =
+          clk 
+
+    inreg_4.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_4.Q 
+        + receive.Q * /incount_0.Q * inreg_3.Q 
+        + receive.Q * /incount_1.Q * inreg_3.Q 
+        + receive.Q * /incount_2.Q * inreg_3.Q 
+        + /incount_3.Q * receive.Q * inreg_3.Q 
+        + /receive.Q * inreg_4.Q 
+
+    inreg_4.AP =
+          GND
+
+    inreg_4.AR =
+          GND
+
+    inreg_4.C =
+          clk 
+
+    inreg_3.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_3.Q 
+        + receive.Q * /incount_0.Q * inreg_2.Q 
+        + receive.Q * /incount_1.Q * inreg_2.Q 
+        + receive.Q * /incount_2.Q * inreg_2.Q 
+        + /incount_3.Q * receive.Q * inreg_2.Q 
+        + /receive.Q * inreg_3.Q 
+
+    inreg_3.AP =
+          GND
+
+    inreg_3.AR =
+          GND
+
+    inreg_3.C =
+          clk 
+
+    inreg_2.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_2.Q 
+        + receive.Q * /incount_0.Q * inreg_1.Q 
+        + receive.Q * /incount_1.Q * inreg_1.Q 
+        + receive.Q * /incount_2.Q * inreg_1.Q 
+        + /incount_3.Q * receive.Q * inreg_1.Q 
+        + /receive.Q * inreg_2.Q 
+
+    inreg_2.AP =
+          GND
+
+    inreg_2.AR =
+          GND
+
+    inreg_2.C =
+          clk 
+
+    inreg_1.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_1.Q 
+        + receive.Q * /incount_0.Q * inreg_0.Q 
+        + receive.Q * /incount_1.Q * inreg_0.Q 
+        + receive.Q * /incount_2.Q * inreg_0.Q 
+        + /incount_3.Q * receive.Q * inreg_0.Q 
+        + /receive.Q * inreg_1.Q 
+
+    inreg_1.AP =
+          GND
+
+    inreg_1.AR =
+          GND
+
+    inreg_1.C =
+          clk 
+
+    inreg_0.D =
+          incount_3.Q * incount_2.Q * incount_1.Q * incount_0.Q * 
+          inreg_0.Q 
+        + receive.Q * /incount_0.Q * sin 
+        + receive.Q * /incount_1.Q * sin 
+        + receive.Q * /incount_2.Q * sin 
+        + /incount_3.Q * receive.Q * sin 
+        + /receive.Q * inreg_0.Q 
+
+    inreg_0.AP =
+          GND
+
+    inreg_0.AR =
+          GND
+
+    inreg_0.C =
+          clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN RULE CHECK          (13:04:24)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PARTITION LOGIC            (13:04:25)
+
+Messages:
+  Information: Checking design is strictly SYNCHRONOUS.
+  Information: Initializing Logic Block structures.
+  Information: Forming input seeds.
+  Information: Checking for duplicate NODE logic.
+  Information: Forming input seeds.
+  Information: Assigning fixed logic to Logic Blocks.
+  Information: Separating output logic set to GND/VCC.
+  Information: Processing banked global preset, reset and output enable.
+  Information: Validating Logic Block's with pre-placed signals.
+  Information: Assigning initializing equations to empty Logic Blocks.
+  Information: Separating output combinatorial logic.
+  Information: Separating disjoint output logic.
+  Information: Assigning floating outputs to Logic Blocks.
+  Information: Compacting Logic Block interconnect.
+  .+.+.+..........................................
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (13:04:25)
+
+Messages:
+  Information: Fitting signals to Logic Block A.
+  Information: Fitting signals to Logic Block B.
+  Information: Fitting signals to Logic Block C.
+  Information: Fitting signals to Logic Block D.
+  Information: Fitting signals to Logic Block E.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ...+.............................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block F.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block G.
+  Information: Assigning Signals to Macrocells.
+  Information: Assigning Product Terms to Allocator
+  Information: Fitting signals to Logic Block H.
+  Information: Assigning Signals to Macrocells.
+  Information: Improving Macrocell Assignment
+  ................
+  Information: Assigning Product Terms to Allocator
+  Information: Routing signals to Logic Blocks.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK A PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |UNUSED
+++++++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |UNUSED
+................................................................++++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  0 
+Total count of unique Product Terms  =  0 
+Total Product Terms to be assigned   =  0 
+Max Product Terms used / available   =   0 /  80   = 0.0  %
+
+
+Control Signals for Logic Block A
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block A
+                 ____________________________________________
+                 |   |* not used:161                    |   |                 
+                 |   |* not used:162                    |   |                 
+                 |   |* not used:163                    |   |                 
+                 |   |* not used:164                    |   |                 
+                 |   |* not used:165                    |143|* not used       
+                 |   |* not used:166                    |   |                 
+                 |   |* not used:167                    |144|* not used       
+                 |   |* not used:168                    |   |                 
+                 |   |* not used:169                    |145|* not used       
+                 |   |* not used:170                    |   |                 
+                 |   |* not used:171                    |146|* not used       
+                 |   |* not used:172                    |   |                 
+                 |   |* not used:173                    |147|* not used       
+                 |   |* not used:174                    |   |                 
+                 |   |* not used:175                    |148|* not used       
+                 |   |* not used:176                    |   |                 
+                 |   |* not used:177                    |149|* not used       
+                 |   |* not used:178                    |   |                 
+                 |   |* not used:179                    |150|* not used       
+                 |   |* not used:180                    |   |                 
+                 |   |* not used:181                    |152|* not used       
+                 |   |* not used:182                    |   |                 
+                 |   |* not used:183                    |153|* not used       
+                 |   |* not used:184                    |   |                 
+                 |   |* not used:185                    |154|* not used       
+                 |   |* not used:186                    |   |                 
+                 |   |* not used:187                    |155|* not used       
+                 |   |* not used:188                    |   |                 
+                 |   |* not used:189                    |156|* not used       
+                 |   |* not used:190                    |   |                 
+                 |   |* not used:191                    |157|* not used       
+                 |   |* not used:192                    |   |                 
+                 |   |* not used:193                    |158|* not used       
+                 |   |* not used:194                    |   |                 
+                 |   |* not used:195                    |159|* not used       
+                 |   |* not used:196                    |   |                 
+                 |   |* not used:197                    |   |                 
+                 |   |* not used:198                    |   |                 
+                 |   |* not used:199                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    0  |   16  |
+                 | PIM Input Connects |    0  |   36  |
+                 ______________________________________
+                                           0  /   52   = 0   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK B PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |UNUSED
+++++++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |UNUSED
+................................................................++++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  0 
+Total count of unique Product Terms  =  0 
+Total Product Terms to be assigned   =  0 
+Max Product Terms used / available   =   0 /  80   = 0.0  %
+
+
+Control Signals for Logic Block B
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block B
+                 ____________________________________________
+                 |   |* not used:200                    |   |                 
+                 |   |* not used:201                    |   |                 
+                 |   |* not used:202                    |   |                 
+                 |   |* not used:203                    |   |                 
+                 |   |* not used:204                    |  2|* not used       
+                 |   |* not used:205                    |   |                 
+                 |   |* not used:206                    |  3|* not used       
+                 |   |* not used:207                    |   |                 
+                 |   |* not used:208                    |  4|* not used       
+                 |   |* not used:209                    |   |                 
+                 |   |* not used:210                    |  5|* not used       
+                 |   |* not used:211                    |   |                 
+                 |   |* not used:212                    |  6|* not used       
+                 |   |* not used:213                    |   |                 
+                 |   |* not used:214                    |  7|* not used       
+                 |   |* not used:215                    |   |                 
+                 |   |* not used:216                    |  8|* not used       
+                 |   |* not used:217                    |   |                 
+                 |   |* not used:218                    |  9|* not used       
+                 |   |* not used:219                    |   |                 
+                 |   |* not used:220                    | 11|* not used       
+                 |   |* not used:221                    |   |                 
+                 |   |* not used:222                    | 12|* not used       
+                 |   |* not used:223                    |   |                 
+                 |   |* not used:224                    | 13|* not used       
+                 |   |* not used:225                    |   |                 
+                 |   |* not used:226                    | 14|* not used       
+                 |   |* not used:227                    |   |                 
+                 |   |* not used:228                    | 15|* not used       
+                 |   |* not used:229                    |   |                 
+                 |   |* not used:230                    | 16|* not used       
+                 |   |* not used:231                    |   |                 
+                 |   |* not used:232                    | 17|* not used       
+                 |   |* not used:233                    |   |                 
+                 |   |* not used:234                    | 18|* not used       
+                 |   |* not used:235                    |   |                 
+                 |   |* not used:236                    |   |                 
+                 |   |* not used:237                    |   |                 
+                 |   |* not used:238                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    0  |   16  |
+                 | PIM Input Connects |    0  |   36  |
+                 ______________________________________
+                                           0  /   52   = 0   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK C PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |UNUSED
+++++++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |UNUSED
+................................................................++++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  0 
+Total count of unique Product Terms  =  0 
+Total Product Terms to be assigned   =  0 
+Max Product Terms used / available   =   0 /  80   = 0.0  %
+
+
+Control Signals for Logic Block C
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block C
+                 ____________________________________________
+                 |   |* not used:239                    |   |                 
+                 |   |* not used:240                    |   |                 
+                 |   |* not used:241                    |   |                 
+                 |   |* not used:242                    |   |                 
+                 |   |* not used:243                    | 23|* not used       
+                 |   |* not used:244                    |   |                 
+                 |   |* not used:245                    | 24|* not used       
+                 |   |* not used:246                    |   |                 
+                 |   |* not used:247                    | 25|* not used       
+                 |   |* not used:248                    |   |                 
+                 |   |* not used:249                    | 26|* not used       
+                 |   |* not used:250                    |   |                 
+                 |   |* not used:251                    | 27|* not used       
+                 |   |* not used:252                    |   |                 
+                 |   |* not used:253                    | 28|* not used       
+                 |   |* not used:254                    |   |                 
+                 |   |* not used:255                    | 29|* not used       
+                 |   |* not used:256                    |   |                 
+                 |   |* not used:257                    | 30|* not used       
+                 |   |* not used:258                    |   |                 
+                 |   |* not used:259                    | 32|* not used       
+                 |   |* not used:260                    |   |                 
+                 |   |* not used:261                    | 33|* not used       
+                 |   |* not used:262                    |   |                 
+                 |   |* not used:263                    | 34|* not used       
+                 |   |* not used:264                    |   |                 
+                 |   |* not used:265                    | 35|* not used       
+                 |   |* not used:266                    |   |                 
+                 |   |* not used:267                    | 36|* not used       
+                 |   |* not used:268                    |   |                 
+                 |   |* not used:269                    | 37|* not used       
+                 |   |* not used:270                    |   |                 
+                 |   |* not used:271                    | 38|* not used       
+                 |   |* not used:272                    |   |                 
+                 |   |* not used:273                    | 39|* not used       
+                 |   |* not used:274                    |   |                 
+                 |   |* not used:275                    |   |                 
+                 |   |* not used:276                    |   |                 
+                 |   |* not used:277                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    0  |   16  |
+                 | PIM Input Connects |    0  |   36  |
+                 ______________________________________
+                                           0  /   52   = 0   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK D PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |UNUSED
+++++++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |UNUSED
+................................................................++++++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  0 
+Total count of unique Product Terms  =  0 
+Total Product Terms to be assigned   =  0 
+Max Product Terms used / available   =   0 /  80   = 0.0  %
+
+
+Control Signals for Logic Block D
+---------------------------------
+CLK pin  19 : <not used>
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : <not used>
+RESET       : <not used>
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block D
+                 ____________________________________________
+                 |   |* not used:278                    |   |                 
+                 |   |* not used:279                    |   |                 
+                 |   |* not used:280                    |   |                 
+                 |   |* not used:281                    |   |                 
+                 |   |* not used:282                    | 42|* not used       
+                 |   |* not used:283                    |   |                 
+                 |   |* not used:284                    | 43|* not used       
+                 |   |* not used:285                    |   |                 
+                 |   |* not used:286                    | 44|* not used       
+                 |   |* not used:287                    |   |                 
+                 |   |* not used:288                    | 45|* not used       
+                 |   |> not used:289                    |   |                 
+                 |   |> not used:290                    | 46|* not used       
+                 |   |> not used:291                    |   |                 
+                 |   |> not used:292                    | 47|* not used       
+                 |   |> not used:293                    |   |                 
+                 |   |> not used:294                    | 48|* not used       
+                 |   |> not used:295                    |   |                 
+                 |   |> not used:296                    | 49|* not used       
+                 |   |> not used:297                    |   |                 
+                 |   |> not used:298                    | 51|* not used       
+                 |   |> not used:299                    |   |                 
+                 |   |> not used:300                    | 52|* not used       
+                 |   |> not used:301                    |   |                 
+                 |   |> not used:302                    | 53|* not used       
+                 |   |> not used:303                    |   |                 
+                 |   |> not used:304                    | 54|* not used       
+                 |   |> not used:305                    |   |                 
+                 |   |> not used:306                    | 55|* not used       
+                 |   |> not used:307                    |   |                 
+                 |   |> not used:308                    | 56|* not used       
+                 |   |> not used:309                    |   |                 
+                 |   |> not used:310                    | 57|* not used       
+                 |   |> not used:311                    |   |                 
+                 |   |> not used:312                    | 58|* not used       
+                 |   |> not used:313                    |   |                 
+                 |   |> not used:314                    |   |                 
+                 |   |> not used:315                    |   |                 
+                 |   |> not used:316                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    0  |   16  |
+                 | PIM Input Connects |    0  |   36  |
+                 ______________________________________
+                                           0  /   52   = 0   %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK E PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(inreg_0)
+XXXXXX++++++++++................................................................
+| 1 |data_1
+......XX++++++++++++++..........................................................
+| 2 |readint
+..........X+++X+++++++++++......................................................
+| 3 |(receive)
+..............X+++X+++++++++++..................................................
+| 4 |(incount_0)
+..................XXXX++++++++++++..............................................
+| 5 |(inreg_2)
+......................XXXXXX++++++++++..........................................
+| 6 |(inreg_4)
+..........................++XX++XX++++++XX......................................
+| 7 |(inreg_7)
+..............................XX++++XX++++++XX..................................
+| 8 |(inreg_6)
+..................................XX++XX++++++++XX..............................
+| 9 |(inreg_5)
+......................................++++XX++XX++++XX..........................
+|10 |(inreg_3)
+..........................................++++++++XX++XXXX......................
+|11 |(incount_2)
+..............................................++++++++++++XXXX..................
+|12 |data_3
+..................................................++++++++++++XX++..............
+|13 |data_2
+......................................................++++++++++XX++++..........
+|14 |data_0
+..........................................................++++++++XX++++++......
+|15 |(inreg_1)
+................................................................++++XXXXXX++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  16 
+Total count of unique Product Terms  =  66 
+Total Product Terms to be assigned   =  68 
+Max Product Terms used / available   =  66 /  80   = 82.51 %
+
+
+Control Signals for Logic Block E
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block E
+                 ____________________________________________
+                 |   |= >incount_0.Q                    |   |                 
+                 |   |= >data_0.Q                       |   |                 
+                 |   |= >inreg_4.Q                      |   |                 
+                 |   |> not used:320                    |   |                 
+                 |   |= >read                           | 63|= (inreg_0)      
+                 |   |= >sin                            |   |                 
+                 |   |= >inreg_3.Q                      | 64|= data_1         
+                 |   |= >inreg_1.Q                      |   |                 
+                 |   |= >incount_3.Q                    | 65|= readint        
+                 |   |= >inreg_0.Q                      |   |                 
+                 |   |= >reset                          | 66|= (receive)      
+                 |   |= >readint.Q                      |   |                 
+                 |   |= >incount_2.Q                    | 67|= (incount_0)    
+                 |   |= >inreg_5.Q                      |   |                 
+                 |   |> not used:331                    | 68|= (inreg_2)      
+                 |   |= >inreg_6.Q                      |   |                 
+                 |   |> not used:333                    | 69|= (inreg_4)      
+                 |   |> not used:334                    |   |                 
+                 |   |= >data_1.Q                       | 70|= (inreg_7)      
+                 |   |= >incount_1.Q                    |   |                 
+                 |   |= >receive.Q                      | 72|= (inreg_6)      
+                 |   |> not used:338                    |   |                 
+                 |   |= >inreg_2.Q                      | 73|= (inreg_5)      
+                 |   |> not used:340                    |   |                 
+                 |   |= >inreg_7.Q                      | 74|= (inreg_3)      
+                 |   |> not used:342                    |   |                 
+                 |   |> not used:343                    | 75|= (incount_2)    
+                 |   |> not used:344                    |   |                 
+                 |   |> not used:345                    | 76|= data_3         
+                 |   |> not used:346                    |   |                 
+                 |   |> not used:347                    | 77|= data_2         
+                 |   |> not used:348                    |   |                 
+                 |   |= >data_3.Q                       | 78|= data_0         
+                 |   |> not used:350                    |   |                 
+                 |   |> not used:351                    | 79|= (inreg_1)      
+                 |   |= >data_2.Q                       |   |                 
+                 |   |> not used:353                    |   |                 
+                 |   |> not used:354                    |   |                 
+                 |   |> not used:355                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   16  |   16  |
+                 | PIM Input Connects |   21  |   36  |
+                 ______________________________________
+                                          37  /   52   = 71  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK F PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |sout
+XXXXXXXXXX++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |(send)
+..............................XXX+++++++++++++..................................
+| 8 |(outcount_0)
+..................................XX++X+++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |(outcount_3)
+................................................................XXXX++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  4 
+Total count of unique Product Terms  =  20 
+Total Product Terms to be assigned   =  20 
+Max Product Terms used / available   =  20 /  80   = 25.1  %
+
+
+Control Signals for Logic Block F
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block F
+                 ____________________________________________
+                 |   |= >outreg_8.Q                     |   |                 
+                 |   |= >outcount_2.Q                   |   |                 
+                 |   |> not used:358                    |   |                 
+                 |   |= >outreg_7.Q                     |   |                 
+                 |   |= >outreg_5.Q                     | 82|= sout           
+                 |   |> not used:361                    |   |                 
+                 |   |= >outcount_1.Q                   | 83|* not used       
+                 |   |= >reset                          |   |                 
+                 |   |= >outreg_1.Q                     | 84|* not used       
+                 |   |= >send.Q                         |   |                 
+                 |   |= >outreg_0.Q                     | 85|* not used       
+                 |   |= >outcount_3.Q                   |   |                 
+                 |   |= >outreg_3.Q                     | 86|* not used       
+                 |   |> not used:369                    |   |                 
+                 |   |> not used:370                    | 87|* not used       
+                 |   |> not used:371                    |   |                 
+                 |   |> not used:372                    | 88|* not used       
+                 |   |= >outcount_0.Q                   |   |                 
+                 |   |> not used:374                    | 89|= (send)         
+                 |   |= >outreg_6.Q                     |   |                 
+                 |   |> not used:376                    | 91|= (outcount_0)   
+                 |   |= >outreg_2.Q                     |   |                 
+                 |   |= >sout.Q                         | 92|* not used       
+                 |   |> not used:379                    |   |                 
+                 |   |> not used:380                    | 93|* not used       
+                 |   |> not used:381                    |   |                 
+                 |   |> not used:382                    | 94|* not used       
+                 |   |> not used:383                    |   |                 
+                 |   |> not used:384                    | 95|* not used       
+                 |   |> not used:385                    |   |                 
+                 |   |= >outreg_4.Q                     | 96|* not used       
+                 |   |> not used:387                    |   |                 
+                 |   |> not used:388                    | 97|* not used       
+                 |   |> not used:389                    |   |                 
+                 |   |> not used:390                    | 98|= (outcount_3)   
+                 |   |> not used:391                    |   |                 
+                 |   |= >write                          |   |                 
+                 |   |> not used:393                    |   |                 
+                 |   |> not used:394                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    4  |   16  |
+                 | PIM Input Connects |   17  |   36  |
+                 ______________________________________
+                                          21  /   52   = 40  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK G PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(incount_1)
+XXXX++++++++++++................................................................
+| 1 |UNUSED
+......++++++++++++++++..........................................................
+| 2 |UNUSED
+..........++++++++++++++++......................................................
+| 3 |UNUSED
+..............++++++++++++++++..................................................
+| 4 |UNUSED
+..................++++++++++++++++..............................................
+| 5 |UNUSED
+......................++++++++++++++++..........................................
+| 6 |UNUSED
+..........................++++++++++++++++......................................
+| 7 |UNUSED
+..............................++++++++++++++++..................................
+| 8 |UNUSED
+..................................++++++++++++++++..............................
+| 9 |UNUSED
+......................................++++++++++++++++..........................
+|10 |UNUSED
+..........................................++++++++++++++++......................
+|11 |UNUSED
+..............................................++++++++++++++++..................
+|12 |UNUSED
+..................................................++++++++++++++++..............
+|13 |UNUSED
+......................................................++++++++++++++++..........
+|14 |UNUSED
+..........................................................++++++++++++++++......
+|15 |(incount_3)
+................................................................XXXX++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  2 
+Total count of unique Product Terms  =  8 
+Total Product Terms to be assigned   =  8 
+Max Product Terms used / available   =   8 /  80   = 10.1  %
+
+
+Control Signals for Logic Block G
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block G
+                 ____________________________________________
+                 |   |> not used:395                    |   |                 
+                 |   |= >sin                            |   |                 
+                 |   |> not used:397                    |   |                 
+                 |   |> not used:398                    |   |                 
+                 |   |= >reset                          |103|= (incount_1)    
+                 |   |> not used:400                    |   |                 
+                 |   |> not used:401                    |104|* not used       
+                 |   |= >incount_2.Q                    |   |                 
+                 |   |= >incount_1.Q                    |105|* not used       
+                 |   |> not used:404                    |   |                 
+                 |   |> not used:405                    |106|* not used       
+                 |   |> not used:406                    |   |                 
+                 |   |= >receive.Q                      |107|* not used       
+                 |   |> not used:408                    |   |                 
+                 |   |> not used:409                    |108|* not used       
+                 |   |> not used:410                    |   |                 
+                 |   |> not used:411                    |109|* not used       
+                 |   |> not used:412                    |   |                 
+                 |   |> not used:413                    |110|* not used       
+                 |   |> not used:414                    |   |                 
+                 |   |> not used:415                    |112|* not used       
+                 |   |= >incount_3.Q                    |   |                 
+                 |   |> not used:417                    |113|* not used       
+                 |   |= >incount_0.Q                    |   |                 
+                 |   |> not used:419                    |114|* not used       
+                 |   |> not used:420                    |   |                 
+                 |   |> not used:421                    |115|* not used       
+                 |   |> not used:422                    |   |                 
+                 |   |> not used:423                    |116|* not used       
+                 |   |> not used:424                    |   |                 
+                 |   |> not used:425                    |117|* not used       
+                 |   |> not used:426                    |   |                 
+                 |   |> not used:427                    |118|* not used       
+                 |   |> not used:428                    |   |                 
+                 |   |> not used:429                    |119|= (incount_3)    
+                 |   |> not used:430                    |   |                 
+                 |   |> not used:431                    |   |                 
+                 |   |> not used:432                    |   |                 
+                 |   |> not used:433                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |    2  |   16  |
+                 | PIM Input Connects |    7  |   36  |
+                 ______________________________________
+                                           9  /   52   = 17  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+LOGIC BLOCK H PLACEMENT   (13:04:25)
+
+Messages:
+
+
+________________________________________________________________________________
+          1111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+________________________________________________________________________________
+| 0 |(outcount_1)
+XXXX++++++++++++................................................................
+| 1 |(outreg_0)
+......XX++++++++++++++..........................................................
+| 2 |(outreg_1)
+..........XX++++++++++++++......................................................
+| 3 |(outreg_3)
+..............XX++++++++++++++..................................................
+| 4 |(outreg_5)
+..................XX++++++++++++++..............................................
+| 5 |(outreg_7)
+......................XX++++++++++++++..........................................
+| 6 |data_5
+..........................XX++++++++++++++......................................
+| 7 |data_7
+..............................XX++++++++++++++..................................
+| 8 |writeint
+..................................XX++++++++++++++..............................
+| 9 |data_6
+......................................XX++++++++++++++..........................
+|10 |data_4
+..........................................XX++++++++++++++......................
+|11 |(outreg_6)
+..............................................XX++++++++++++++..................
+|12 |(outreg_4)
+..................................................XX++++++++++++++..............
+|13 |(outreg_2)
+......................................................XX++++++++++++++..........
+|14 |(outreg_8)
+..........................................................X+++++++++++++++......
+|15 |(outcount_2)
+................................................................XXXX++++++++++++
+________________________________________________________________________________
+
+Total count of outputs placed        =  16 
+Total count of unique Product Terms  =  35 
+Total Product Terms to be assigned   =  35 
+Max Product Terms used / available   =  35 /  80   = 43.76 %
+
+
+Control Signals for Logic Block H
+---------------------------------
+CLK pin  19 : clk
+CLK pin  22 : <not used>
+CLK pin  99 : <not used>
+CLK pin 102 : <not used>
+PRESET      : GND
+RESET       : GND
+OE 0        : <not used>
+OE 1        : <not used>
+OE 2        : <not used>
+OE 3        : <not used>
+
+
+
+                              Logic Block H
+                 ____________________________________________
+                 |   |= >data_2.Q                       |   |                 
+                 |   |= >outreg_7.Q                     |   |                 
+                 |   |= >data_0.Q                       |   |                 
+                 |   |= >data_7.Q                       |   |                 
+                 |   |= >writeint.Q                     |122|= (outcount_1)   
+                 |   |= >outcount_3.Q                   |   |                 
+                 |   |= >data_4.Q                       |123|= (outreg_0)     
+                 |   |= >outreg_6.Q                     |   |                 
+                 |   |= >outreg_4.Q                     |124|= (outreg_1)     
+                 |   |= >outreg_2.Q                     |   |                 
+                 |   |= >send.Q                         |125|= (outreg_3)     
+                 |   |= >outcount_2.Q                   |   |                 
+                 |   |= >outcount_0.Q                   |126|= (outreg_5)     
+                 |   |> not used:447                    |   |                 
+                 |   |> not used:448                    |127|= (outreg_7)     
+                 |   |= >data_6.Q                       |   |                 
+                 |   |= >write                          |128|= data_5         
+                 |   |= >data_1.Q                       |   |                 
+                 |   |= >inreg_4.Q                      |129|= data_7         
+                 |   |= >outreg_8.Q                     |   |                 
+                 |   |= >inreg_6.Q                      |131|= writeint       
+                 |   |= >read                           |   |                 
+                 |   |= >outreg_1.Q                     |132|= data_6         
+                 |   |= >outreg_0.Q                     |   |                 
+                 |   |> not used:458                    |133|= data_4         
+                 |   |= >outreg_3.Q                     |   |                 
+                 |   |= >inreg_7.Q                      |134|= (outreg_6)     
+                 |   |> not used:461                    |   |                 
+                 |   |= >inreg_5.Q                      |135|= (outreg_4)     
+                 |   |= >reset                          |   |                 
+                 |   |= >outcount_1.Q                   |136|= (outreg_2)     
+                 |   |> not used:465                    |   |                 
+                 |   |= >outreg_5.Q                     |137|= (outreg_8)     
+                 |   |= >data_3.Q                       |   |                 
+                 |   |= >data_5.Q                       |138|= (outcount_2)   
+                 |   |> not used:469                    |   |                 
+                 |   |> not used:470                    |   |                 
+                 |   |> not used:471                    |   |                 
+                 |   |> not used:472                    |   |                 
+                 ____________________________________________
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | I/O Macrocells     |   16  |   16  |
+                 | PIM Input Connects |   30  |   36  |
+                 ______________________________________
+                                          46  /   52   = 88  %
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+DESIGN SIGNAL PLACEMENT    (13:04:25)
+
+
+Device:  c375i
+Package: CY7C375I-125AC
+
+                  1  :  GND
+                  2  :  Not Used
+                  3  :  Not Used
+                  4  :  Not Used
+                  5  :  Not Used
+                  6  :  Not Used
+                  7  :  Not Used
+                  8  :  Not Used
+                  9  :  Not Used
+                 10  :  GND
+                 11  :  Not Used
+                 12  :  Not Used
+                 13  :  Not Used
+                 14  :  Not Used
+                 15  :  Not Used
+                 16  :  Not Used
+                 17  :  Not Used
+                 18  :  Not Used
+                 19  :  clk
+                 20  :  VCC
+                 21  :  GND
+                 22  :  reset
+                 23  :  Not Used
+                 24  :  Not Used
+                 25  :  Not Used
+                 26  :  Not Used
+                 27  :  Not Used
+                 28  :  Not Used
+                 29  :  Not Used
+                 30  :  Not Used
+                 31  :  GND
+                 32  :  Not Used
+                 33  :  Not Used
+                 34  :  Not Used
+                 35  :  Not Used
+                 36  :  Not Used
+                 37  :  Not Used
+                 38  :  Not Used
+                 39  :  Not Used
+                 40  :  VCC
+                 41  :  GND
+                 42  :  Not Used
+                 43  :  Not Used
+                 44  :  Not Used
+                 45  :  Not Used
+                 46  :  Not Used
+                 47  :  Not Used
+                 48  :  Not Used
+                 49  :  Not Used
+                 50  :  GND
+                 51  :  Not Used
+                 52  :  Not Used
+                 53  :  Not Used
+                 54  :  Not Used
+                 55  :  Not Used
+                 56  :  Not Used
+                 57  :  Not Used
+                 58  :  Not Used
+                 59  :  write
+                 60  :  VCC
+                 61  :  GND
+                 62  :  VCC
+                 63  :  (inreg_0)
+                 64  :  data_1
+                 65  :  readint
+                 66  :  (receive)
+                 67  :  (incount_0)
+                 68  :  (inreg_2)
+                 69  :  (inreg_4)
+                 70  :  (inreg_7)
+                 71  :  GND
+                 72  :  (inreg_6)
+                 73  :  (inreg_5)
+                 74  :  (inreg_3)
+                 75  :  (incount_2)
+                 76  :  data_3
+                 77  :  data_2
+                 78  :  data_0
+                 79  :  (inreg_1)
+                 80  :  VCC
+                 81  :  GND
+                 82  :  sout
+                 83  :  Not Used
+                 84  :  Not Used
+                 85  :  Not Used
+                 86  :  Not Used
+                 87  :  Not Used
+                 88  :  Not Used
+                 89  :  (send)
+                 90  :  GND
+                 91  :  (outcount_0)
+                 92  :  Not Used
+                 93  :  Not Used
+                 94  :  Not Used
+                 95  :  Not Used
+                 96  :  Not Used
+                 97  :  Not Used
+                 98  :  (outcount_3)
+                 99  :  sin
+                100  :  VCC
+                101  :  GND
+                102  :  read
+                103  :  (incount_1)
+                104  :  Not Used
+                105  :  Not Used
+                106  :  Not Used
+                107  :  Not Used
+                108  :  Not Used
+                109  :  Not Used
+                110  :  Not Used
+                111  :  GND
+                112  :  Not Used
+                113  :  Not Used
+                114  :  Not Used
+                115  :  Not Used
+                116  :  Not Used
+                117  :  Not Used
+                118  :  Not Used
+                119  :  (incount_3)
+                120  :  VCC
+                121  :  GND
+                122  :  (outcount_1)
+                123  :  (outreg_0)
+                124  :  (outreg_1)
+                125  :  (outreg_3)
+                126  :  (outreg_5)
+                127  :  (outreg_7)
+                128  :  data_5
+                129  :  data_7
+                130  :  GND
+                131  :  writeint
+                132  :  data_6
+                133  :  data_4
+                134  :  (outreg_6)
+                135  :  (outreg_4)
+                136  :  (outreg_2)
+                137  :  (outreg_8)
+                138  :  (outcount_2)
+                139  :  VPP
+                140  :  VCC
+                141  :  GND
+                142  :  VCC
+                143  :  Not Used
+                144  :  Not Used
+                145  :  Not Used
+                146  :  Not Used
+                147  :  Not Used
+                148  :  Not Used
+                149  :  Not Used
+                150  :  Not Used
+                151  :  GND
+                152  :  Not Used
+                153  :  Not Used
+                154  :  Not Used
+                155  :  Not Used
+                156  :  Not Used
+                157  :  Not Used
+                158  :  Not Used
+                159  :  Not Used
+                160  :  VCC
+
+
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    1  |    1  |
+                 | Clock/Inputs       |    4  |    4  |
+                 | I/O Macrocells     |   38  |  128  |
+                 ______________________________________
+                                          43  /  133   = 32  %
+
+
+
+                                      Required     Max (Available)
+          CLOCK/LATCH ENABLE signals     1            4
+          Input REG/LATCH signals        0            4
+          Input PIN signals              4            4
+          Input PINs using I/O cells     0            0
+          Output PIN signals            38          128
+
+
+          Total PIN signals             43          133
+          Macrocells Used               38          128
+          Unique Product Terms         126          640
+
+
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+PRESET/RESET AND OUTPUT ENABLE COMBINATIONS
+
+PRESET: GND
+RESET : GND
+Used by Logic Blocks: EFGH
+Total unique inputs =  42 
+count of registered equations =  38 
+==>OE: GND or VCC
+   count of OE equations =  38 
+
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+TIMING PATH ANALYSIS       (13:04:25) using Package: CY7C375I-125AC
+
+Messages:
+
+----------------------------------------------------------------------------
+Signal Name | Delay Type  |   tmax   | Path Description
+----------------------------------------------------------------------------
+reg::(inreg_0)[63]
+inp::sin
+              tS              4.5 ns     1 pass
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_0
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_1[64]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_1.Q
+              tSCS            8.0 ns     1 pass
+out::data_1
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::readint[65]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::readint
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(receive)[66]
+inp::sin
+              tS              4.5 ns     1 pass
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::receive
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(incount_0)[67]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::incount_0
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(inreg_2)[68]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_2
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(inreg_4)[69]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_4
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(inreg_7)[70]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_7
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(inreg_6)[72]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_6
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(inreg_5)[73]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_5
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(inreg_3)[74]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_3
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(incount_2)[75]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::incount_2
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_3[76]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_3.Q
+              tSCS            8.0 ns     1 pass
+out::data_3
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_2[77]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_2.Q
+              tSCS            8.0 ns     1 pass
+out::data_2
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_0[78]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_0.Q
+              tSCS            8.0 ns     1 pass
+out::data_0
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(inreg_1)[79]
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::inreg_1
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::sout[82]
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::sout
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(send)[89]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::send
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outcount_0)[91]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outcount_0
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outcount_3)[98]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outcount_3
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(incount_1)[103]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::incount_1
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(incount_3)[119]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::incount_3.Q
+              tSCS            8.0 ns     1 pass
+out::incount_3
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outcount_1)[122]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::outcount_3.Q
+              tSCS            8.0 ns     1 pass
+out::outcount_1
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_0)[123]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_0
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_1)[124]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_1
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_3)[125]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_3
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_5)[126]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_5
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_7)[127]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_7
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_5[128]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_5.Q
+              tSCS            8.0 ns     1 pass
+out::data_5
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_7[129]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_7.Q
+              tSCS            8.0 ns     1 pass
+out::data_7
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::writeint[131]
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::writeint
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_6[132]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_6.Q
+              tSCS            8.0 ns     1 pass
+out::data_6
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::data_4[133]
+inp::read
+              tS              4.5 ns     1 pass
+inp::inreg_4.Q
+              tSCS            8.0 ns     1 pass
+out::data_4
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_6)[134]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_6
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_4)[135]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_4
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_2)[136]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_2
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outreg_8)[137]
+inp::write
+              tS              4.5 ns     1 pass
+inp::send.Q
+              tSCS            8.0 ns     1 pass
+out::outreg_8
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+reg::(outcount_2)[138]
+inp::reset
+              tS              4.5 ns     1 pass
+inp::outcount_3.Q
+              tSCS            8.0 ns     1 pass
+out::outcount_2
+              tCO             6.5 ns   
+----------------------------------------------------------------------------
+
+Worst Case Path Summary
+-----------------------
+
+                     tS = 4.5 ns for inreg_0.D
+                   tSCS = 8.0 ns for inreg_0.D
+                    tCO = 6.5 ns for inreg_0.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        C37XFIT.EXE    01/MAR/97    [v4.00 ] 4 IR x77
+
+JEDEC ASSEMBLE             (13:04:25)
+
+Messages:
+  Information: Processing JEDEC for Logic Block 1.
+  Information: Processing JEDEC for Logic Block 2.
+  Information: Processing JEDEC for Logic Block 3.
+  Information: Processing JEDEC for Logic Block 4.
+  Information: Processing JEDEC for Logic Block 5.
+  Information: Processing JEDEC for Logic Block 6.
+  Information: Processing JEDEC for Logic Block 7.
+  Information: Processing JEDEC for Logic Block 8.
+  Information: JEDEC output file 'serial.jed' created.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 13:04:25

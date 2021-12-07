@@ -1,0 +1,105 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.1 06/12/2001            
+-- Compiled: 03/01/2002 19:33:37      
+
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "control"
+BEGIN
+
+    DEVICE = "EPF10K10LC84-3";
+
+    "Opcode0"                      : INPUT_PIN  = 2      ;
+    "Opcode1"                      : INPUT_PIN  = 42     ;
+    "Opcode2"                      : INPUT_PIN  = 43     ;
+    "Opcode3"                      : INPUT_PIN  = 1      ;
+    "Opcode4"                      : INPUT_PIN  = 44     ;
+    "Opcode5"                      : INPUT_PIN  = 84     ;
+    "ALUop0"                       : OUTPUT_PIN = 25     ;
+    "ALUop1"                       : OUTPUT_PIN = 65     ;
+    "ALUSrc"                       : OUTPUT_PIN = 23     ;
+    "Branch"                       : OUTPUT_PIN = 67     ;
+    "MemRead"                      : OUTPUT_PIN = 24     ;
+    "MemtoReg"                     : OUTPUT_PIN = 66     ;
+    "MemWrite"                     : OUTPUT_PIN = 21     ;
+    "RegDst"                       : OUTPUT_PIN = 64     ;
+    "RegWrite"                     : OUTPUT_PIN = 22     ;
+    "Op_Buf0"                      : LOCATION   = LC1_B1 ;
+    "Op_Buf1"                      : LOCATION   = LC3_B8 ;
+    "Op_Buf2"                      : LOCATION   = LC7_B11;
+    "Op_Buf3"                      : LOCATION   = LC5_B11;
+    "Op_Buf4"                      : LOCATION   = LC1_B7 ;
+    "Op_Buf5"                      : LOCATION   = LC7_B8 ;
+    ":195"                         : LOCATION   = LC5_B8 ;
+    "~195~1"                       : LOCATION   = LC4_B8 ;
+    "~195~2"                       : LOCATION   = LC6_B8 ;
+    ":215"                         : LOCATION   = LC6_B11;
+    "~215~1"                       : LOCATION   = LC2_B8 ;
+    "~215~2"                       : LOCATION   = LC3_B11;
+    ":235"                         : LOCATION   = LC1_B11;
+    ":255"                         : LOCATION   = LC8_B8 ;
+    "~255~1"                       : LOCATION   = LC1_B8 ;
+    ":275"                         : LOCATION   = LC4_B11;
+    ":277"                         : LOCATION   = LC2_B11;
+
+END;
+
+INTERNAL_INFO "control"
+BEGIN
+	DEVICE = EPF10K10LC84-3;
+    LC1_B1  : LORAX = "1:MSW0R1C0,G39R1,PA20R1C7->LC4_B8,->LC2_B8|";
+    LC7_B11 : LORAX = "1:MSW6R1C10,HHL31R1,PA4R1C7->LC6_B8,->LC5_B8,->LC1_B8,->LC8_B8|";
+    LC5_B11 : LORAX = "1:MSW4R1C10,HHL44R1,PA19R1C7->LC6_B8,->LC5_B8,->LC1_B8,->LC8_B8|";
+    LC1_B7  : LORAX = "1:MSW0R1C6,HHL22R1,PA2R1C7->LC4_B8,->LC2_B8|";
+    OD1P2   : LORAX = "1:FB1|2:FH1R1,PA20R1C0->LC1_B1||";
+    OD3P42  : LORAX = "1:FB3|2:FH3R1,PA5R1C7->LC3_B8||";
+    OD5P43  : LORAX = "1:FB5|2:CH1R1,PA7R1C10->LC7_B11||";
+    OD4P1   : LORAX = "1:FB4|2:CH0R1,PA19R1C10->LC5_B11||";
+    OD2P44  : LORAX = "1:FB2|2:FH2R1,PA6R1C6->LC1_B7||";
+    OD0P84  : LORAX = "1:FB0|2:FH0R1,PA0R1C7->LC7_B8||";
+    LC6_B8  : LORAX = "1:MSW6R1C6,G92R1->OH6R1P64|";
+    LC5_B8  : LORAX = "1:MSW4R1C7,G59R1->OH4R1P65,2:PA1R1C10->LC2_B11||";
+    LC2_B8  : LORAX = "1:MSW1R1C7,HHL11R1,PA4R1C10->LC3_B11,->LC6_B11,->LC1_B11,->LC4_B11|";
+    LC3_B11 : LORAX = "1:MSW2R1C10,G10R1->OH2R1P66|";
+    LC6_B11 : LORAX = "1:MSW5R1C11,HHL39R1->OH13R1P24|";
+    LC1_B11 : LORAX = "1:MSW0R1C10,HHL18R1->OH8R1P21|";
+    LC1_B8  : LORAX = "1:MSW0R1C7,G38R1->OH0R1P67|";
+    LC8_B8  : LORAX = "1:MSW7R1C7,HHL35R1->OH15R1P25|";
+    LC4_B11 : LORAX = "1:MSW3R1C11,HHL10R1->OH11R1P23|";
+    LC2_B11 : LORAX = "1:MSW1R1C10,G16R1->OH9R1P22|";
+	LC1_B1  : LORAX2 = "X, X, X, OD1P2";
+	LC3_B8  : LORAX2 = "X, X, X, OD3P42";
+	LC7_B11 : LORAX2 = "X, X, X, OD5P43";
+	LC5_B11 : LORAX2 = "X, X, X, OD4P1";
+	LC1_B7  : LORAX2 = "X, X, X, OD2P44";
+	LC7_B8  : LORAX2 = "X, X, X, OD0P84";
+	LC4_B8  : LORAX2 = "X, LC1_B1, LC3_B8, LC1_B7";
+	LC6_B8  : LORAX2 = "LC7_B11, LC5_B11, LC4_B8, LC7_B8";
+	LC5_B8  : LORAX2 = "LC7_B11, LC5_B11, LC4_B8, LC7_B8";
+	LC2_B8  : LORAX2 = "LC7_B8, LC1_B7, LC3_B8, LC1_B1";
+	LC3_B11 : LORAX2 = "X, LC5_B11, LC7_B11, LC2_B8";
+	LC6_B11 : LORAX2 = "X, LC5_B11, LC7_B11, LC2_B8";
+	LC1_B11 : LORAX2 = "X, LC5_B11, LC7_B11, LC2_B8";
+	LC1_B8  : LORAX2 = "LC7_B11, LC5_B11, LC4_B8, LC7_B8";
+	LC8_B8  : LORAX2 = "LC7_B11, LC5_B11, LC4_B8, LC7_B8";
+	LC4_B11 : LORAX2 = "LC5_B11, LC7_B11, LC6_B11, LC2_B8";
+	LC2_B11 : LORAX2 = "X, X, LC5_B8, LC6_B11";
+END;
